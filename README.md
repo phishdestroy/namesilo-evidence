@@ -330,16 +330,42 @@ So this case is not going to walk off.
 
 ---
 
-## Mirrors
+## Mirrors & Permanent Copies
 
-This story is being kept alive in multiple places, intentionally:
+This story is being kept alive in multiple places, intentionally. Every link below is a separate surface that would require a separate legal action to remove. Good luck.
+
+### IPFS — Permanent, Decentralized, No "Report" Button
+
+- **ENS + IPFS:** [`phishdestroy.eth.limo`](https://phishdestroy.eth.limo/) — Ethereum Name Service → IPFS. No server, no host, no takedown mechanism.
+- **IPFS CID:** `bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`
+- **Evidence page:** [`phishdestroy.eth.limo/evidence.html`](https://phishdestroy.eth.limo/evidence.html) — all 16 screenshots, articles, Medium mirror, Wayback links
+- **4EVERLAND hosting:** [`ipfs-archive-nsdim0vd-phishdestroy.ipfs.4everland.app`](https://ipfs-archive-nsdim0vd-phishdestroy.ipfs.4everland.app/)
+- **IPFS Gateways (all serve the same CID):**
+  - [`dweb.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`](https://dweb.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y/)
+  - [`4everland.io/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`](https://4everland.io/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y/)
+  - [`w3s.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`](https://w3s.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y/)
+  - [`nftstorage.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`](https://nftstorage.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y/)
+  - [`gateway.ipfs.io/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`](https://gateway.ipfs.io/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y/)
+
+### Web — Traditional Hosting
 
 - **Canonical:** [phishdestroy.io/namesilo-killed-our-twitter](https://phishdestroy.io/namesilo-killed-our-twitter)
 - **Medium:** [phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam](https://phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam-then-took-down-our-twitter-4904d15d531e)
-- **GitHub Pages mirror:** [`docs/index.html`](docs/index.html) (deploy via Settings -> Pages -> /docs)
-- **GhostArchive (NameSilo's tweet):** [ghostarchive.org/archive/CXXZ0](https://ghostarchive.org/archive/CXXZ0)
+- **GitHub Pages mirror:** [`docs/index.html`](docs/index.html)
 - **GitHub evidence repo (this one):** the file you are reading right now
-- **IPFS / Arweave:** CID and TX ID published after pinning (see [`DEPLOY.md`](DEPLOY.md))
+- **Codeberg mirror:** [codeberg.org/phishdestroy/namesilo-evidence](https://codeberg.org/phishdestroy/namesilo-evidence)
+
+### Third-Party Archives (we don't control these)
+
+- **GhostArchive (NameSilo's tweet):** [ghostarchive.org/archive/CXXZ0](https://ghostarchive.org/archive/CXXZ0)
+- **Wayback — PhishDestroy GitHub:** [web.archive.org snapshot](https://web.archive.org/web/20260508165746/https://github.com/phishdestroy)
+- **Wayback — This repo:** [web.archive.org snapshot](https://web.archive.org/web/20260508165630/https://github.com/phishdestroy/namesilo-evidence)
+- **Wayback — xmrwallet.com (live scam):** [web.archive.org snapshot](https://web.archive.org/web/20260411223411/https://www.xmrwallet.com/)
+- **Wayback — xmrwallet.cc (clone, taken down):** [web.archive.org snapshot](https://web.archive.org/web/20260223024911/https://www.xmrwallet.cc/)
+- **Wayback — xmrwallet.biz (clone, taken down):** [web.archive.org snapshot](https://web.archive.org/web/20260220194352/https://www.xmrwallet.biz/)
+- **Wayback — xmrwallet.me (clone, taken down):** [web.archive.org snapshot](https://web.archive.org/web/20260312042503/https://www.xmrwallet.me/)
+- **Wayback — xmrwallet investigation:** [web.archive.org snapshot](https://web.archive.org/web/20260508085233/https://github.com/phishdestroy/DO-NOT-USE-xmrwallet-com)
+- **Wayback — xmrwallet GitHub Pages:** [web.archive.org snapshot](https://web.archive.org/web/20260508085233/https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/)
 
 > Cut down one link. Five more grow back. We run on the **Hydra principle**.
 
