@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <url>
+    <loc>https://phishdestroy.io/namesilo-killed-our-twitter</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <news:news>
+      <news:publication>
+        <news:name>PhishDestroy Research</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-04-30</news:publication_date>
+      <news:title>NameSilo Is Protecting xmrwallet.com — A $20M Crypto Drainer Cover-Up</news:title>
+      <news:keywords>NameSilo, xmrwallet, Monero drainer, ICANN compliance, registrar abuse, X Gold Checkmark</news:keywords>
+    </news:news>
+    <image:image>
+      <image:loc>https://phishdestroy.io/namesilo-killed-our-twitter/evidence/03-namesilo-statement-mar13.png</image:loc>
+      <image:title>NameSilo official tweet defending xmrwallet.com (March 13, 2026)</image:title>
+      <image:caption>NameSilo's public statement under the PhishDestroy investigation thread, archived at GhostArchive.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://phishdestroy.io/namesilo-killed-our-twitter/evidence/06-x-support-no-violation.png</image:loc>
+      <image:title>X Support email: 'no violation, restored to full functionality'</image:title>
+      <image:caption>X's automated systems cleared @Phish_Destroy on appeal — the lock is still in place.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://phishdestroy.io/namesilo-killed-our-twitter/evidence/01-operator-email-feb16.png</image:loc>
+      <image:title>Operator's first email — February 16, 2026</image:title>
+      <image:caption>The xmrwallet.com operator (N.R.) asks PhishDestroy to remove the abuse report.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://phishdestroy.io/namesilo-killed-our-twitter/evidence/01-phishdestroy-reply-feb16.png</image:loc>
+      <image:title>PhishDestroy's technical reply — February 16, 2026</image:title>
+      <image:caption>Full technical breakdown of xmrwallet.com's server-side key exfiltration.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://phishdestroy.io/namesilo-killed-our-twitter/evidence/04-tweet-namesilo-is-lying.png</image:loc>
+      <image:title>'@NameSilo is lying' — March 16, 2026</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://phishdestroy.io/namesilo-killed-our-twitter/evidence/04-tweet-press-secretary.png</image:loc>
+      <image:title>NameSilo as press secretary for a $2M+ Monero theft operation</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://phishdestroy.io/namesilo-killed-our-twitter/evidence/04-tweet-honest-question.png</image:loc>
+      <image:title>'Who is this operator to you?' — March 16, 2026</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://phishdestroy.io/namesilo-killed-our-twitter/evidence/04-tweet-cryptopus-quote.png</image:loc>
+      <image:title>Third-party reporting: XMRWallet shutdown, $10M+ stolen (Feb 22, 2026)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://phishdestroy.io/namesilo-killed-our-twitter/evidence/06-x-support-subject-restored.png</image:loc>
+      <image:title>X Support subject line: 'Your account has been restored'</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://phishdestroy.io/namesilo-killed-our-twitter/evidence/09-phishdestroy-platform.png</image:loc>
+      <image:title>PhishDestroy Threat Intelligence Platform</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://phishdestroy.io/xmrwallet-namesilo-exposed</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://github.com/phishdestroy/namesilo-xmrwallet-coverup</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

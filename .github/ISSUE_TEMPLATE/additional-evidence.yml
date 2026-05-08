@@ -1,0 +1,67 @@
+name: "Additional evidence about NameSilo / xmrwallet"
+description: "Submit screenshots, correspondence, or links that strengthen the public case file."
+title: "[Evidence] "
+labels: ["evidence", "review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before you submit
+
+        We particularly value:
+
+        - **Abuse-report submissions to NameSilo that were ignored or returned with "no violation"**, especially with ticket IDs and delivery receipts.
+        - **Direct correspondence with `xmrwallet[.]com` operators.**
+        - **Documentation of takedown attempts** (DMCA, platform reports, search-engine delisting) targeting legitimate research on this case.
+        - **Information about the "njan la" reseller** and its relationship to NameSilo.
+
+        Sensitive raw materials (full email headers, etc.) should go to **[abuse@phishdestroy.io](mailto:abuse@phishdestroy.io)** — this Issue is for the public-safe summary.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of evidence
+      options:
+        - "NameSilo abuse-report submission ignored / 'no violation'"
+        - "Direct correspondence with xmrwallet operator"
+        - "Takedown / delisting attempt against legitimate research"
+        - "njan la reseller information"
+        - "Other NameSilo-protected scam domain"
+        - "Other (specify below)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Public-safe summary
+      description: What does the evidence show? Keep this brief and avoid personal identifiers.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence-attached
+    attributes:
+      label: Evidence attached
+      description: Drop screenshots into this field, or describe what you will send via email. **Do not paste raw email headers in a public Issue.**
+
+  - type: dropdown
+    id: contact
+    attributes:
+      label: How would you like to follow up?
+      options:
+        - "Public follow-up in this Issue is fine"
+        - "Email me at the address I'll provide via email"
+        - "I will email abuse@phishdestroy.io with raw materials"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: consent
+    attributes:
+      label: Consent to publish (after PhishDestroy review)
+      options:
+        - "Yes — this Issue can be made public after redaction."
+        - "No — keep confidential. I will follow up by email."
+    validations:
+      required: true

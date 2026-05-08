@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PhishDestroy Research — NameSilo / xmrwallet investigation</title>
+    <link>https://phishdestroy.io/namesilo-killed-our-twitter</link>
+    <description>Permanent evidence repository: NameSilo's public defense of xmrwallet.com, the underlying technical proof that the defense was false, and the ongoing pressure campaign against the researchers.</description>
+    <language>en-us</language>
+    <copyright>CC BY 4.0 — PhishDestroy Research</copyright>
+    <managingEditor>abuse@phishdestroy.io (PhishDestroy Research)</managingEditor>
+    <webMaster>abuse@phishdestroy.io (PhishDestroy Research)</webMaster>
+    <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
+    <lastBuildDate>Thu, 07 May 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://phishdestroy.io/namesilo-killed-our-twitter/feed.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://phishdestroy.io/namesilo-killed-our-twitter/evidence/03-namesilo-statement-mar13.png</url>
+      <title>PhishDestroy Research — NameSilo / xmrwallet investigation</title>
+      <link>https://phishdestroy.io/namesilo-killed-our-twitter</link>
+    </image>
+
+    <item>
+      <title>NameSilo Is Protecting xmrwallet.com — A $20M Crypto Drainer Cover-Up</title>
+      <link>https://phishdestroy.io/namesilo-killed-our-twitter</link>
+      <guid isPermaLink="true">https://phishdestroy.io/namesilo-killed-our-twitter</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:creator>PhishDestroy Research</dc:creator>
+      <category>Cybersecurity</category>
+      <category>Cryptocurrency</category>
+      <category>Registrar abuse</category>
+      <category>NameSilo</category>
+      <category>xmrwallet</category>
+      <description><![CDATA[A US ICANN-accredited registrar publicly defended xmrwallet.com — a 10-year, $20M Monero drainer — denied 20+ delivery-receipted abuse reports, offered to scrub the operator's VirusTotal record, then used X Gold Checkmark support to lock our research account. X's own automation cleared us. The lock is still there. Full evidence, archived, SHA-256 fingerprinted.]]></description>
+    </item>
+
+    <item>
+      <title>The Connection: How NameSilo Outed Itself</title>
+      <link>https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/CONNECTION.md</link>
+      <guid isPermaLink="true">https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/CONNECTION.md</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:creator>PhishDestroy Research</dc:creator>
+      <category>Investigation</category>
+      <description><![CDATA[Evidence chain linking NameSilo, LLC to the operator of xmrwallet.com. Operator's "Feel free to subpoena the domain registrar" line of Feb 17 2026, NameSilo's matching public defense of Mar 13, the structural identity of their rhetorical posture, and the comparative table against PDR / WebNic / NICENIC who acted on identical evidence.]]></description>
+    </item>
+
+    <item>
+      <title>The Lies: NameSilo's March 13 Statement, Sentence by Sentence</title>
+      <link>https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/THE-LIES.md</link>
+      <guid isPermaLink="true">https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/THE-LIES.md</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:creator>PhishDestroy Research</dc:creator>
+      <category>Investigation</category>
+      <description><![CDATA[Four sentences, four falsehoods. The "compromised" framing collapses against the public technical breakdown. The "no abuse reports" claim collapses against PhishDestroy's portal logs. The "extensive review" claim collapses against the operator's own emails. The "remove from VT reports" commitment is stated as written and damning as written.]]></description>
+    </item>
+
+    <item>
+      <title>The Pressure Campaign: Documented Attempts to Erase This Story</title>
+      <link>https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/PRESSURE.md</link>
+      <guid isPermaLink="true">https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/PRESSURE.md</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:creator>PhishDestroy Research</dc:creator>
+      <category>Investigation</category>
+      <description><![CDATA[X / Twitter account locked via paid Gold Checkmark live-support channel after rebutting NameSilo. X's own automation cleared the appeal in writing — the lock remains. Bing search delisting attempts. DDoS traffic correlated with NameSilo's "njan la" reseller infrastructure. The pressure campaign is the strongest secondary evidence of the underlying connection.]]></description>
+    </item>
+
+    <item>
+      <title>Full technical investigation: xmrwallet.com server-side key exfiltration</title>
+      <link>https://phishdestroy.io/xmrwallet-namesilo-exposed</link>
+      <guid isPermaLink="true">https://phishdestroy.io/xmrwallet-namesilo-exposed</guid>
+      <pubDate>Mon, 17 Mar 2026 00:00:00 GMT</pubDate>
+      <dc:creator>PhishDestroy Research</dc:creator>
+      <category>Cybersecurity</category>
+      <description><![CDATA[Eight PHP endpoints. Server-side private-key exfiltration. Base64 transmission to operator infrastructure. session_key carrying full wallet address and private view key. Full reproducible breakdown.]]></description>
+    </item>
+
+  </channel>
+</rss>

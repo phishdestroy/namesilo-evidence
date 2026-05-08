@@ -1,2 +1,24 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Ensure evidence is treated as immutable binary
+evidence/*.png         binary
+docs/evidence/*.png    binary
+*.png                  binary
+
+# Normalize text files
+*.md                   text eol=lf
+*.txt                  text eol=lf
+*.cff                  text eol=lf
+*.html                 text eol=lf
+*.css                  text eol=lf
+*.xml                  text eol=lf
+*.yml                  text eol=lf
+LICENSE                text eol=lf
+.gitattributes         text eol=lf
+.gitignore             text eol=lf
+
+# Don't count this article as code in language stats
+README.md              linguist-documentation=false
+CONNECTION.md          linguist-documentation=false
+THE-LIES.md            linguist-documentation=false
+PRESSURE.md            linguist-documentation=false
+EVIDENCE_INDEX.md      linguist-documentation=false
+SOURCES.md             linguist-documentation=false

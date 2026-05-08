@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Confidential victim report"
+    url: "mailto:report@phishdestroy.io"
+    about: "If you have lost funds to xmrwallet[.]com and prefer not to file a public Issue, email report@phishdestroy.io directly."
+  - name: "Sensitive evidence (full email headers, raw materials)"
+    url: "mailto:abuse@phishdestroy.io"
+    about: "For raw materials, ICANN compliance contact, or law-enforcement liaison. Do not paste sensitive material into public Issues."
+  - name: "Read the full case file"
+    url: "https://phishdestroy.io/namesilo-killed-our-twitter"
+    about: "The canonical article — same content, mirrored on the main PhishDestroy site."

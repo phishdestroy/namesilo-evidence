@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: "NameSilo / xmrwallet.com — Evidence Repository"
+message: "If you cite this evidence in a filing, publication, or research paper, please use the metadata below."
+type: dataset
+authors:
+  - name: "PhishDestroy Research"
+    email: abuse@phishdestroy.io
+    website: "https://phishdestroy.io"
+abstract: >-
+  Public evidence package documenting NameSilo's March 13, 2026 statement
+  defending xmrwallet.com (a 10-year, ~$10M-$20M Monero drainer), the
+  underlying technical evidence that the statement was false, and the
+  subsequent pressure campaign against PhishDestroy Research, including
+  the still-unresolved lock of the @Phish_Destroy account on X / Twitter.
+  Includes ten verbatim screenshots, SHA-256 fingerprinted, with explicit
+  consent for legal, regulatory, journalistic, and law-enforcement use.
+keywords:
+  - NameSilo
+  - xmrwallet
+  - Monero
+  - cryptocurrency drainer
+  - private key theft
+  - registrar abuse
+  - ICANN compliance
+  - X Gold Checkmark
+  - censorship
+  - PhishDestroy
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+url: "https://phishdestroy.io/namesilo-killed-our-twitter"
+repository-code: "https://github.com/phishdestroy/namesilo-xmrwallet-coverup"
+date-released: "2026-04-30"
+version: "1.0.0"
+identifiers:
+  - type: url
+    value: "https://ghostarchive.org/archive/CXXZ0"
+    description: "GhostArchive permanent copy of NameSilo's public statement of March 13, 2026"
