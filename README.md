@@ -150,6 +150,56 @@ After we posted the receipts publicly and escalated to ICANN, our account was pe
 
 ---
 
+## Exhibit E — The GhostArchive receipts (they can't delete these)
+
+These are from the [GhostArchive snapshot](https://ghostarchive.org/archive/CXXZ0) taken **before** they started deleting. The full tweet thread, archived March 16, 2026. NameSilo's official reply is visible. Our responses are visible. The timestamps are visible. Everything they tried to make disappear is right here.
+
+<div align="center">
+
+![GhostArchive snapshot — @Phish_Destroy confronting @namesilo on March 12: 9 reports is no joke anymore. Stop letting this old man scam people. NiceNIC, WebNic, Key-Systems, PDR all banned his domains. NameSilo protects him. XMRWallet.com SCAM banner visible.](evidence/12-ghostarchive-namesilo-tweet-top.png)
+
+*GhostArchive — our original tweet confronting NameSilo, March 12. "9 reports is no joke anymore. Stop letting this old man scam people." Below it: NameSilo's official reply with the four lies. Archived before they could touch it.*
+
+</div>
+
+<div align="center">
+
+![GhostArchive snapshot — NameSilo's full official reply: Our Abuse team conducted an in-depth review... domain was compromised... no abuse reports received... working to get website delisted from VT reports. 8:08 PM March 12, 2026. 11.3K views.](evidence/13-ghostarchive-namesilo-tweet-full.png)
+
+*The full NameSilo, LLC (IANA #1479) tweet — every word. "The registrant is also working to get the website delisted from VT reports." A registrar helping a scammer erase security warnings. They said this. Out loud. 11.3K people saw it.*
+
+</div>
+
+## Exhibit F — The thread they killed (archived copies)
+
+These tweets were published on @Phish_Destroy on **March 14, 2026** — two days before the account was locked. They confronted NameSilo directly, called out the lies, and documented everything. NameSilo's response was not to answer — it was to get the account locked.
+
+<div align="center">
+
+![Tweet thread March 14 — I am not going to prove anything further to the registrar. Google exists, the public record exists. The hack story is a lie and the claim that there were no earlier reports is also a lie. Reports from PhishDestroy existed. Good luck to you and your Russian scammer.](evidence/14-tweet-thread-mar14-lies-exposed.png)
+
+*@Phish_Destroy, March 14: "The 'hack' story is a lie, and the claim that there were no earlier reports is also a lie. Reports from PhishDestroy existed, and this can be verified even through public tweets. So good luck to you and your Russian scammer."*
+
+</div>
+
+<div align="center">
+
+![Tweet thread March 14 — Your abuse department is a disgrace. For 10 years you have been protecting a scammer. Do you not have enough evidence? What is happening here is illegal. This old lying Russian fraudster and his fake website are not some mystery.](evidence/15-tweet-thread-mar14-abuse-dept-disgrace.png)
+
+*@Phish_Destroy, March 14: "Your abuse department is a disgrace. For 10 years you have been protecting a scammer, and even now you have done absolutely nothing. What is happening here is illegal." Plus: the GitHub PR screenshot — "We believe that truth is better than your profit."*
+
+</div>
+
+<div align="center">
+
+![Tweet March 14 — New service from NameSilo: their abuse team is helping scammers get VirusTotal bans removed. I honestly thought that after NICENIC nothing could surprise me anymore — but you still managed to surprise me. Abuse Report Complaint Filed, Abuse Report Ignored infographic.](evidence/16-tweet-mar14-vt-delisting-service.png)
+
+*@Phish_Destroy, March 14: "New service from NameSilo: helping scammers get VirusTotal bans removed." The infographic shows the cycle: Abuse Report filed → Complaint Filed → Abuse Report Ignored → NameSilo: "the domain was compromised" → "working to get delisted from VT." All while archived snapshots from 2021-2022 prove the malicious activity was always there.*
+
+</div>
+
+---
+
 ## The connection — in one paragraph
 
 A scammer running a ten-year crypto drainer, on $550-a-month bulletproof hosting in Belize, behind Russian DDoS-Guard, wrote to us on **February 17, 2026**: *"Feel free to subpoena the domain registrar for my information."* Twenty-four days later, on **March 13, 2026**, that same registrar — **NameSilo, LLC (IANA #1479)** — published an official tweet calling him **"the victim"** of a hypothetical hack, denying our 20+ abuse reports ever arrived, and announcing a public commitment to **clean up his VirusTotal detections**. Three other registrars (PDR, WebNic, NICENIC) holding the same domain looked at the same evidence and **suspended in days**. NameSilo, LLC (IANA #1479) wrote a press release for him. **They put the connection in public themselves.** This repository is the receipts.
