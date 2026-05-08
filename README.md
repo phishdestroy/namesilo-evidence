@@ -21,6 +21,18 @@ SEO topics: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, i
 
 ---
 
+> **A note on what you're reading and why we were ready.**
+>
+> We knew the operator's playbook before NameSilo, LLC (IANA #1479) ever opened their mouth. We'd been watching since 2016. We'd seen him delete real victim reviews off Trustpilot. We'd seen the fake DMCAs on GitHub. We'd seen the puppet Twitter accounts mass-reporting researchers. We'd seen the 50+ paid SEO articles burying the complaints. We'd seen him scrub BitcoinTalk threads, nuke YouTube videos, wipe Reddit posts. Eight years of the same pattern: never answer the evidence, just make the person who published it disappear.
+>
+> So when NameSilo, LLC (IANA #1479) posted their official defense of him — four sentences, four lies, on a public channel, from a verified corporate account — we didn't panic. We archived it. Instantly. GhostArchive, Wayback, local capture, SHA-256 hash. Before they could blink. Because we already knew this registrar was going to do exactly what the scammer always does: try to erase the receipts. They did. On schedule. With their paid Gold Checkmark support channel on X.
+>
+> They think they're clever. They're not. They're predictable. Every move they've made, we anticipated. Every surface they've taken down, we'd already mirrored. Every complaint they've filed, we've logged. They operate like the evidence will eventually go away. It won't.
+>
+> One more thing: **the $10M-$20M number is a floor, not a ceiling.** Eight years, thousands of wallets, operator-side key exfiltration on every single login — the real number is significantly higher. We use the conservative estimate because we only publish what we can prove. But we know. And the on-chain analysis, when it's complete, is going to make this README look like the opening statement.
+>
+> And to NameSilo, LLC (IANA #1479): you publicly committed — in writing, from your official account — to helping a confirmed scammer get his VirusTotal detections removed. **You said that. Out loud. On the internet. While the drainer was still live.** You really thought nobody would keep the receipt?
+>
 > **Let's get one thing straight.** This is not a cry for help. We don't need sympathy, petitions, or outrage. We are not victims here — the people who lost their Monero on `xmrwallet[.]com` are. We are researchers. We document. We publish. We archive. That's what we do.
 >
 > What you are looking at is a **flat evidence file**. Screenshots. Emails. Timestamps. Hashes. Every claim sourced, every exhibit fingerprinted, every lie cross-referenced against the liar's own words.
