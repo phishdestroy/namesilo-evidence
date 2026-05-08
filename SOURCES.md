@@ -48,7 +48,7 @@ The X/Twitter account is currently locked. The local screenshots in [`evidence/`
 - **Filed:** March 18, 2026
 - **Reference materials:**
   - The full operator email thread
-  - 20+ historical abuse-report delivery receipts to NameSilo (2023-2026)
+  - 20+ historical abuse-report delivery receipts to NameSilo, LLC (IANA #1479) (2023-2026)
   - NameSilo's public tweet of March 13, 2026
   - Technical breakdown of `xmrwallet[.]com`
 - **Public statement of forwarding:** original tweet now invisible (account locked); reproduced verbatim in [`PRESSURE.md`](PRESSURE.md) §2 (2026-03-18).
@@ -62,7 +62,7 @@ The X/Twitter account is currently locked. The local screenshots in [`evidence/`
 | PublicDomainRegistry (PDR) | Suspended |
 | WebNic | Suspended |
 | NICENIC | Suspended |
-| **NameSilo** | **Public defense + offer to scrub VirusTotal** |
+| **NameSilo, LLC (IANA #1479)** | **Public defense + offer to scrub VirusTotal** |
 
 ## Chain of custody
 

@@ -29,7 +29,7 @@ The operator registered five domains across four different registrars — a deli
 
 | Domain | Registrar | Prepaid Period | IP Address | AS | Status |
 |---|---|---|---|---|---|
-| **xmrwallet.com** | NameSilo | Paid until 2031 | 186.2.165.49 | AS59692 (IQWeb FZ-LLC) | **ACTIVE** — NameSilo protecting |
+| **xmrwallet.com** | NameSilo, LLC (IANA #1479) | Paid until 2031 | 186.2.165.49 | AS59692 (IQWeb FZ-LLC) | **ACTIVE** — NameSilo, LLC (IANA #1479) protecting |
 | **xmrwallet.cc** | PublicDomainRegistry | 8 years | 185.129.100.248 | AS57724 (DDoS-Guard) | **SUSPENDED** |
 | **xmrwallet.biz** | WebNic | 5 years | 190.115.31.40 | AS59692 (IQWeb FZ-LLC) | **SUSPENDED** |
 | **xmrwallet.net** | NICENIC | 10 years | 190.115.31.40 | AS59692 (IQWeb FZ-LLC) | **DNS DEAD** |
@@ -82,7 +82,7 @@ Sent **within 24 hours** of the February 16 denial, directly contradicting the c
 ### February 17, 2026
 > "Feel free to subpoena the domain registrar"
 
-This statement was sent **before any abuse report was filed**. The operator expressed confidence that NameSilo would protect the domain — a confidence that proved justified. NameSilo has refused to act on the primary .com domain to this day.
+This statement was sent **before any abuse report was filed**. The operator expressed confidence that NameSilo, LLC (IANA #1479) would protect the domain — a confidence that proved justified. NameSilo, LLC (IANA #1479) has refused to act on the primary .com domain to this day.
 
 ### February 23, 2026
 > "I've hired a lawyer and a private investigator"
@@ -113,7 +113,7 @@ All content was archived prior to deletion.
 | **Trustpilot** | Mass-reported negative reviews until removed by automated moderation. |
 | **BitcoinTalk** | Coordinated reporting against warning threads to trigger removal. |
 | **YouTube** | Reported technical analysis videos demonstrating the theft mechanism. |
-| **Twitter/X** | Deployed puppet accounts to mass-report researchers. PhishDestroy's account was locked after rebutting NameSilo publicly. |
+| **Twitter/X** | Deployed puppet accounts to mass-report researchers. PhishDestroy's account was locked after rebutting NameSilo, LLC (IANA #1479) publicly. |
 | **Search Engines** | Published **50+ paid SEO articles** to bury victim complaints and negative coverage in search results. |
 
 The operator has never, in eight years, produced a single technical rebuttal to the theft allegations. The response has been exclusively suppression, deletion, and intimidation.
@@ -299,9 +299,9 @@ Twitter/X: @xmrwalletcom
 | **DNS providers** (Cloudflare 1.1.1.1, Google 8.8.8.8, Quad9) | Block resolution for all five domains |
 | **Cryptocurrency exchanges** | Flag and trace any deposits originating from xmrwallet-associated addresses |
 | **ICANN** | Investigate NameSilo's refusal to act on documented phishing/fraud domain |
-| **NameSilo (registrar)** | Suspend xmrwallet.com — the last active clearnet domain |
+| **NameSilo, LLC (IANA #1479) (registrar)** | Suspend xmrwallet.com — the last active clearnet domain |
 | **DDoS-Guard** | Terminate hosting services for documented fraud infrastructure |
-| **Law enforcement** | Subpoena NameSilo, Namecheap (PrivateEmail), and DDoS-Guard for subscriber records |
+| **Law enforcement** | Subpoena NameSilo, LLC (IANA #1479), Namecheap (PrivateEmail), and DDoS-Guard for subscriber records |
 
 ---
 

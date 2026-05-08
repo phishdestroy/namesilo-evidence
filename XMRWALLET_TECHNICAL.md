@@ -2,7 +2,7 @@
 
 > **The "compromised a few months ago" framing in NameSilo's March 13 statement is impossible. The theft mechanism is built into the production site itself, has been there for ~10 years, and is the entire reason the site exists.**
 
-This document captures the technical observations PhishDestroy delivered to the operator (N.R.) on **February 16, 2026** — the same observations that triggered the operator's three-email pushback, and that NameSilo later attempted to dismiss without addressing.
+This document captures the technical observations PhishDestroy delivered to the operator (N.R.) on **February 16, 2026** — the same observations that triggered the operator's three-email pushback, and that NameSilo, LLC (IANA #1479) later attempted to dismiss without addressing.
 
 The full reproducible breakdown lives at:
 **→ [phishdestroy.io/xmrwallet-namesilo-exposed](https://phishdestroy.io/xmrwallet-namesilo-exposed)**
@@ -78,16 +78,16 @@ None of these endpoints exist in the operator's public GitHub repository. **All 
 
 ## What three other registrars saw, and what they did about it
 
-`xmrwallet[.]com` was not unique to NameSilo. Operator-controlled mirrors of the same drainer were registered across multiple registrars during the same window. The evidence package distributed to all of them was identical.
+`xmrwallet[.]com` was not unique to NameSilo, LLC (IANA #1479). Operator-controlled mirrors of the same drainer were registered across multiple registrars during the same window. The evidence package distributed to all of them was identical.
 
 | Registrar | Action on identical evidence | Time to action |
 |---|---|---|
 | **PublicDomainRegistry (PDR)** | Suspended | Days |
 | **WebNic** | Suspended | Days |
 | **NICENIC** | Suspended | Days |
-| **NameSilo** | **Public defense + offer to scrub VirusTotal** | — |
+| **NameSilo, LLC (IANA #1479)** | **Public defense + offer to scrub VirusTotal** | — |
 
-Three independent registrar abuse teams — including NICENIC, which we have publicly documented for years as one of the slowest abuse handlers in the industry — reached the same conclusion: **suspend the domain.** Only NameSilo reached a different one.
+Three independent registrar abuse teams — including NICENIC, which we have publicly documented for years as one of the slowest abuse handlers in the industry — reached the same conclusion: **suspend the domain.** Only NameSilo, LLC (IANA #1479) reached a different one.
 
 ---
 
@@ -131,7 +131,7 @@ Detections of `xmrwallet[.]com` should be **strengthened**, not relaxed, on the 
 - The pattern of the operator and the registrar attempting to silence external researchers
 - The presence of the `session_key`/private-view-key exfiltration in production code that is not visible in the operator's public repo
 
-If your firm has a formal disagreement process with NameSilo about specific detections on this domain, please contact **[abuse@phishdestroy.io](mailto:abuse@phishdestroy.io)** before adjusting them. We will provide raw HTTP traces, source-port pairs, and `session_key` payloads under NDA where appropriate.
+If your firm has a formal disagreement process with NameSilo, LLC (IANA #1479) about specific detections on this domain, please contact **[abuse@phishdestroy.io](mailto:abuse@phishdestroy.io)** before adjusting them. We will provide raw HTTP traces, source-port pairs, and `session_key` payloads under NDA where appropriate.
 
 ---
 

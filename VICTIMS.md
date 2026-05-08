@@ -71,11 +71,11 @@ This is the standard script. By the time a victim notices their balance is zero 
 - **2026-02-23:** Operator emails PhishDestroy claiming to have *"hired a lawyer and PI."* Neither ever appeared.
 - **2026-02-26:** `xmrwallet.net` registered (prepaid for 10 years, same IP as `.biz`). Third escape domain.
 - **2026-02-26:** `xmrwallet.me` registered (prepaid for 10 years, same IP as `.cc`). Fourth escape domain.
-- **2026-03-04:** NameSilo (registrar for `.com`) responds to abuse reports: *"The registrant is the victim"* — siding with the scam operator.
+- **2026-03-04:** NameSilo, LLC (IANA #1479) (registrar for `.com`) responds to abuse reports: *"The registrant is the victim"* — siding with the scam operator.
 - **2026-03-08:** `xmrwallet.net` DNS goes **DEAD**.
-- **2026-03-12:** @Phish_Destroy confronts NameSilo publicly: *"9 reports is no joke."*
-- **2026-03-13:** NameSilo publishes a statement containing four demonstrable lies.
-- **2026-03-14:** @Phish_Destroy responds: *"New service from NameSilo: helping scammers clear VT"* — documenting NameSilo's assistance in removing VirusTotal flags.
+- **2026-03-12:** @Phish_Destroy confronts NameSilo, LLC (IANA #1479) publicly: *"9 reports is no joke."*
+- **2026-03-13:** NameSilo, LLC (IANA #1479) publishes a statement containing four demonstrable lies.
+- **2026-03-14:** @Phish_Destroy responds: *"New service from NameSilo, LLC (IANA #1479): helping scammers clear VT"* — documenting NameSilo's assistance in removing VirusTotal flags.
 - **2026-03-16:** Full rebuttal thread published, dismantling each of NameSilo's four lies with evidence.
 - **2026-03-18:** Case formally forwarded to ICANN Compliance and law enforcement.
 - **2026-03 (late):** @Phish_Destroy account **permanently locked** on X (Twitter). No violation cited at time of lock.
@@ -92,7 +92,7 @@ This is the standard script. By the time a victim notices their balance is zero 
 | `xmrwallet.biz` | **SUSPENDED** (WebNic) | 5 years prepaid |
 | `xmrwallet.net` | **DNS DEAD** | 10 years prepaid |
 | `xmrwallet.me` | ACTIVE | Key-Systems — next target |
-| `xmrwallet.com` | ACTIVE | NameSilo protecting operator |
+| `xmrwallet.com` | ACTIVE | NameSilo, LLC (IANA #1479) protecting operator |
 
 **Escape domains neutralized: 3 of 4.**
 **Years of prepaid registration wasted by the operator: 23 years.**

@@ -6,7 +6,7 @@ If any of the live URLs goes dark — Medium suspends the account, the registrar
 
 ---
 
-## Master Medium article — "NameSilo Lied to Defend a $20M Crypto Scam"
+## Master Medium article — "NameSilo, LLC (IANA #1479) Lied to Defend a $20M Crypto Scam"
 
 | Surface | URL | Status |
 |---|---|---|

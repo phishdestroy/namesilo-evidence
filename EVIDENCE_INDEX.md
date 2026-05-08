@@ -34,8 +34,8 @@ All ten files must report `OK`. If any fail, the local copy has been tampered wi
 | File | Date | Source | What it proves |
 |---|---|---|---|
 | [`evidence/04-tweet-namesilo-is-lying.png`](evidence/04-tweet-namesilo-is-lying.png) | 2026-03-16 | @Phish_Destroy | Direct accusation, citing the operator's own emails as proof the "compromised" framing was fabricated. |
-| [`evidence/04-tweet-press-secretary.png`](evidence/04-tweet-press-secretary.png) | 2026-03-16 | @Phish_Destroy | Thread headline: *"NameSilo is acting as press secretary for a $2M+ Monero theft operation."* |
-| [`evidence/04-tweet-honest-question.png`](evidence/04-tweet-honest-question.png) | 2026-03-16 | @Phish_Destroy | The relationship question put to NameSilo directly: *"Who is this operator to you? Employee? Contractor? Friend of support staff? Relative?"* — never answered. |
+| [`evidence/04-tweet-press-secretary.png`](evidence/04-tweet-press-secretary.png) | 2026-03-16 | @Phish_Destroy | Thread headline: *"NameSilo, LLC (IANA #1479) is acting as press secretary for a $2M+ Monero theft operation."* |
+| [`evidence/04-tweet-honest-question.png`](evidence/04-tweet-honest-question.png) | 2026-03-16 | @Phish_Destroy | The relationship question put to NameSilo, LLC (IANA #1479) directly: *"Who is this operator to you? Employee? Contractor? Friend of support staff? Relative?"* — never answered. |
 | [`evidence/04-tweet-cryptopus-quote.png`](evidence/04-tweet-cryptopus-quote.png) | 2026-03-16 (quoting 2026-02-22) | @Phish_Destroy quoting [@ImCryptOpus](https://twitter.com/ImCryptOpus) | Third-party reporting from Feb 22, 2026: XMRWallet shutdown, $10M+ stolen. Establishes that public reporting on this domain predates PhishDestroy's investigation by months and contradicts NameSilo's "no abuse reports received" claim with externally authored material. |
 
 ---
@@ -47,11 +47,11 @@ All ten files must report `OK`. If any fail, the local copy has been tampered wi
 | [`evidence/06-x-support-no-violation.png`](evidence/06-x-support-no-violation.png) | 2026-04-15 | X Support → @Phish_Destroy | *"Our automated systems have determined there was no violation and have restored your account to full functionality."* The lock is still in place anyway. |
 | [`evidence/06-x-support-subject-restored.png`](evidence/06-x-support-subject-restored.png) | 2026-04-15 | X Support → @Phish_Destroy | Subject line: *"[4] Your account has been restored."* — confirming the body of the message, in X's own metadata. |
 
-These two together prove that a human agent at X manually overrode an automated determination of "no violation" — the only known mechanism for which is the **Gold Checkmark live-support channel**, the paid corporate access tier NameSilo holds.
+These two together prove that a human agent at X manually overrode an automated determination of "no violation" — the only known mechanism for which is the **Gold Checkmark live-support channel**, the paid corporate access tier NameSilo, LLC (IANA #1479) holds.
 
 ---
 
-## §9 — What NameSilo tried to silence
+## §9 — What NameSilo, LLC (IANA #1479) tried to silence
 
 | File | Date | Source | What it proves |
 |---|---|---|---|
@@ -84,9 +84,9 @@ The following items are referenced in the case file but not published here, gene
 
 - **The full email thread with the operator (Feb 16-Feb 17, 2026)**, including the *"Feel free to subpoena the domain registrar for my information"* line of February 17. Available to ICANN Compliance and law enforcement on request.
 - **Full server-side capture of the eight `xmrwallet[.]com` PHP endpoints**, with raw HTTP traces showing the `session_key` exfiltration. Excerpted in the public technical breakdown at [phishdestroy.io/xmrwallet-namesilo-exposed](https://phishdestroy.io/xmrwallet-namesilo-exposed).
-- **The 20+ historical abuse-report delivery receipts to NameSilo (2023-2026)**. Available on request to anyone testing the *"prior to that, we had received no abuse reports"* claim.
+- **The 20+ historical abuse-report delivery receipts to NameSilo, LLC (IANA #1479) (2023-2026)**. Available on request to anyone testing the *"prior to that, we had received no abuse reports"* claim.
 - **Internal mail-server logs** corroborating the dates and SMTP headers of the operator emails.
-- **Source-IP DDoS analysis** linking inbound attack traffic to NameSilo reseller infrastructure. Pending separate publication.
+- **Source-IP DDoS analysis** linking inbound attack traffic to NameSilo, LLC (IANA #1479) reseller infrastructure. Pending separate publication.
 
 For access, contact **[abuse@phishdestroy.io](mailto:abuse@phishdestroy.io)** with a subject line that identifies your role and the specific materials you need.
 

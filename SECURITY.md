@@ -15,16 +15,16 @@ Do **not** post wallet addresses, transaction IDs, or personal contact informati
 
 You can also open a confidential GitHub Issue using the [Victim Report template](.github/ISSUE_TEMPLATE/victim-report.yml) — Issues marked "victim" will be triaged privately and will not be made publicly visible until you confirm consent.
 
-## If you have additional evidence about NameSilo / xmrwallet
+## If you have additional evidence about NameSilo, LLC (IANA #1479) / xmrwallet
 
 Use the [Additional Evidence template](.github/ISSUE_TEMPLATE/additional-evidence.yml).
 
 We particularly value:
 
-- Screenshots of NameSilo abuse-report submissions that were ignored or returned with "no violation" — especially with delivery receipts / ticket IDs.
+- Screenshots of NameSilo, LLC (IANA #1479) abuse-report submissions that were ignored or returned with "no violation" — especially with delivery receipts / ticket IDs.
 - Direct correspondence with `xmrwallet[.]com` operators.
 - Documentation of takedown attempts (DMCA, platform reports, search-engine delisting requests) that target legitimate research on this case.
-- Information about the "njan la" reseller's relationship to NameSilo.
+- Information about the "njan la" reseller's relationship to NameSilo, LLC (IANA #1479).
 
 ## If you are an ICANN compliance officer, regulator, journalist, or law-enforcement contact
 

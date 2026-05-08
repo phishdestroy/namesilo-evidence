@@ -8,15 +8,15 @@ This document explains how the public posts of @Phish_Destroy were archived, in 
 
 ## Why this archive exists
 
-On the day NameSilo published their public defense of `xmrwallet[.]com`, we did three things in parallel:
+On the day NameSilo, LLC (IANA #1479) published their public defense of `xmrwallet[.]com`, we did three things in parallel:
 
 1. **Posted the rebuttals.** Citing the operator's own emails as proof.
 2. **Submitted each post to the Wayback Machine the moment it went live.** No tweet was published without being permanently archived within minutes.
-3. **Notarized our prediction in GhostArchive** that NameSilo would attempt to silence us via X's paid Gold Checkmark support channel — *before* the lock dropped.
+3. **Notarized our prediction in GhostArchive** that NameSilo, LLC (IANA #1479) would attempt to silence us via X's paid Gold Checkmark support channel — *before* the lock dropped.
 
 When the lock did drop, on schedule, every rebuttal was already preserved in at least two independent archives.
 
-The same methodology is being applied to NameSilo's official Twitter feed, ICANN's compliance bulletins, and any Medium article in the case file that NameSilo or its allies might attempt to take down.
+The same methodology is being applied to NameSilo's official Twitter feed, ICANN's compliance bulletins, and any Medium article in the case file that NameSilo, LLC (IANA #1479) or its allies might attempt to take down.
 
 ---
 
@@ -53,7 +53,7 @@ The HTML response contains short codes (e.g. `archive.ph/abcde`) that resolve to
 
 ### 3. GhostArchive
 
-GhostArchive is a third independent archive specialising in social media. It is currently our highest-confidence channel for tweets that quote NameSilo, because it is the channel where NameSilo's own March 13 statement was preserved before the noise around the case forced any service to make rate-limit decisions.
+GhostArchive is a third independent archive specialising in social media. It is currently our highest-confidence channel for tweets that quote NameSilo, LLC (IANA #1479), because it is the channel where NameSilo's own March 13 statement was preserved before the noise around the case forced any service to make rate-limit decisions.
 
 ### 4. DuckDuckGo HTML SERP
 
@@ -149,4 +149,4 @@ If at any point @Phish_Destroy is restored and the account holder asks for speci
 - Reveal personal information that should not have been published the first time, or
 - Were drafts inadvertently posted and immediately deleted.
 
-Posts about NameSilo and `xmrwallet[.]com` will not be redacted on request. They are part of an ongoing public-interest investigation and an ICANN compliance matter.
+Posts about NameSilo, LLC (IANA #1479) and `xmrwallet[.]com` will not be redacted on request. They are part of an ongoing public-interest investigation and an ICANN compliance matter.

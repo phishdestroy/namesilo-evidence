@@ -31,7 +31,7 @@
 | Party | Identity | Role |
 |---|---|---|
 | **The operator** | Alias `nathroy` / initials N.R. Email: `royn5094@protonmail.com`. | Runs `xmrwallet[.]com` — a ~10-year Monero private-key drainer. Est. $10M-$20M stolen. Hosting: $550/mo bulletproof in Belize, behind Russian DDoS-Guard. Owns at least 7 related domains, 5 of which were suspended by other registrars. Paid for some domains **10 years** in advance. |
-| **The registrar** | **NameSilo, LLC** — US-based, ICANN-accredited domain registrar (Phoenix, AZ). X/Twitter: [@namesilo](https://twitter.com/namesilo). Holds a **Gold Checkmark** (Verified Organization) on X — paid corporate tier with direct access to live human X moderators. | Holds `xmrwallet.com` registration. Publicly defended the operator on March 13, 2026. Refused to suspend. Committed in writing to helping operator scrub VirusTotal detections. |
+| **The registrar** | **NameSilo, LLC (IANA #1479)** — US-based, ICANN-accredited domain registrar (Phoenix, AZ). X/Twitter: [@namesilo](https://twitter.com/namesilo). Holds a **Gold Checkmark** (Verified Organization) on X — paid corporate tier with direct access to live human X moderators. | Holds `xmrwallet.com` registration. Publicly defended the operator on March 13, 2026. Refused to suspend. Committed in writing to helping operator scrub VirusTotal detections. |
 | **The researchers** | **PhishDestroy Research** — anti-phishing threat intelligence. X/Twitter: [@Phish_Destroy](https://twitter.com/Phish_Destroy) (currently locked). 350,000+ malicious domains documented. 54+ trusted partners. | Reported the domain (20+ times since 2023), published technical breakdown, posted public rebuttals, escalated to ICANN Contractual Compliance on March 18, 2026. Account locked on X after publishing the receipts. |
 
 ---
@@ -46,10 +46,10 @@
 | **2026-02-16** | PhishDestroy replies same day with full technical breakdown. Warning: *"What happens next depends entirely on how you choose to proceed."* | [Exhibit 11](#exhibit-11--phishdestroy-reply) |
 | **2026-02-17** | Operator responds: **"Feel free to subpoena the domain registrar for my information."** | [Evidence H](#10-evidence-h--the-subpoena-line) |
 | **2026-02-22** | @ImCryptOpus tweets: XMRWallet shut down, $10M+ stolen. Third-party reporting predates NameSilo's statement. | [Exhibit 07](#exhibit-07--cryptopus-quote) |
-| **2026-03-12** | @Phish_Destroy confronts NameSilo: *"9 reports is no joke anymore."* | [Exhibit 08](#exhibit-08--confrontation-tweets) |
-| **2026-03-13** | **NameSilo publishes the four-lie statement.** Calls operator "the victim." Denies abuse reports. Commits to scrubbing VirusTotal. | [Exhibit 08](#exhibit-08--confrontation-tweets), [Evidence B](#4-evidence-b--namesilos-statement-four-lies) |
-| **2026-03-14** | @Phish_Destroy replies: *"New service from NameSilo: helping scammers get VirusTotal bans removed."* | [Exhibit 08](#exhibit-08--confrontation-tweets) |
-| **2026-03-16** | @Phish_Destroy publishes full rebuttal thread. 4+ tweets. Tags NameSilo, other registrars. | [Evidence C](#5-evidence-c--the-public-rebuttal-tweets) |
+| **2026-03-12** | @Phish_Destroy confronts NameSilo, LLC (IANA #1479): *"9 reports is no joke anymore."* | [Exhibit 08](#exhibit-08--confrontation-tweets) |
+| **2026-03-13** | **NameSilo, LLC (IANA #1479) publishes the four-lie statement.** Calls operator "the victim." Denies abuse reports. Commits to scrubbing VirusTotal. | [Exhibit 08](#exhibit-08--confrontation-tweets), [Evidence B](#4-evidence-b--namesilos-statement-four-lies) |
+| **2026-03-14** | @Phish_Destroy replies: *"New service from NameSilo, LLC (IANA #1479): helping scammers get VirusTotal bans removed."* | [Exhibit 08](#exhibit-08--confrontation-tweets) |
+| **2026-03-16** | @Phish_Destroy publishes full rebuttal thread. 4+ tweets. Tags NameSilo, LLC (IANA #1479), other registrars. | [Evidence C](#5-evidence-c--the-public-rebuttal-tweets) |
 | **2026-03-18** | @Phish_Destroy escalates to ICANN Compliance + law enforcement, publicly. | [Exhibit 03](#exhibit-03--namesilo-is-lying) |
 | **2026-03-??** | **@Phish_Destroy permanently locked.** X email: *"violation against inauthentic behaviors."* No tweet cited. No rule named. | [Evidence D](#6-evidence-d--the-smoking-gun) |
 | **2026-04-15** | X Support appeal result: **"no violation, restored to full functionality."** Account **still locked.** Gold subscription **still billed.** | [Evidence D](#6-evidence-d--the-smoking-gun) |
@@ -170,7 +170,7 @@
 
 ### Exhibit 08 — Confrontation tweets + NameSilo's reply
 
-The NameSilo statement was published as a **direct reply** to @Phish_Destroy's investigation thread. The screenshots capture the full context.
+The NameSilo, LLC (IANA #1479) statement was published as a **direct reply** to @Phish_Destroy's investigation thread. The screenshots capture the full context.
 
 **March 12, @Phish_Destroy (verbatim):**
 
@@ -186,7 +186,7 @@ The NameSilo statement was published as a **direct reply** to @Phish_Destroy's i
 
 **March 14, @Phish_Destroy reply (verbatim):**
 
-> New service from NameSilo: their abuse team is helping scammers get VirusTotal bans removed, even though the malicious activity is still there and has always been there. We have already documented this, proved it, and helped get several related domains flagged.
+> New service from NameSilo, LLC (IANA #1479): their abuse team is helping scammers get VirusTotal bans removed, even though the malicious activity is still there and has always been there. We have already documented this, proved it, and helped get several related domains flagged.
 >
 > Please repost pic.x.com/1hBahW4hZ2
 
@@ -211,7 +211,7 @@ The NameSilo statement was published as a **direct reply** to @Phish_Destroy's i
 - Production-only parameters (`session_key`, `verification`, `timestamp`, encrypted payload) that do not exist in the public GitHub repo
 - Non-standard `type == 'swept'` transaction — server-side sweep, not user-initiated
 
-**What "compromise" would look like if real:** A diff between the GitHub repo and deployed code. DNS/hosting/TLS changes around the compromise window. An incident-response statement naming the vector. **NameSilo provided none of this. The operator provided none of this.**
+**What "compromise" would look like if real:** A diff between the GitHub repo and deployed code. DNS/hosting/TLS changes around the compromise window. An incident-response statement naming the vector. **NameSilo, LLC (IANA #1479) provided none of this. The operator provided none of this.**
 
 **Disproven by:** Technical breakdown at [phishdestroy.io/xmrwallet-namesilo-exposed](https://phishdestroy.io/xmrwallet-namesilo-exposed); operator's own email defending the site as his own work ([Exhibit 10](#exhibit-10--operator-email))
 
@@ -229,7 +229,7 @@ Beyond PhishDestroy: the CryptOpus tweet of February 22, 2026 ([Exhibit 07](#exh
 
 **Two possible readings:**
 1. NameSilo's abuse team genuinely doesn't know what reports it received → ICANN compliance failure
-2. NameSilo knows and lied → deliberate false public statement
+2. NameSilo, LLC (IANA #1479) knows and lied → deliberate false public statement
 
 **Disproven by:** PhishDestroy delivery receipts (forwarded to ICANN Compliance March 18, 2026); CryptOpus tweet; @Phish_Destroy Mar 12 tweet citing "9 reports"
 
@@ -257,7 +257,7 @@ NameSilo's tweet then adopted a "compromise" narrative the operator himself neve
 
 **NameSilo's claim:** They committed publicly to helping the operator get `xmrwallet[.]com` removed from VirusTotal's threat detections.
 
-**The truth:** This sentence is the most damning, and NameSilo did not lie about it — they actually said it and meant it. Consider what is being committed to:
+**The truth:** This sentence is the most damning, and NameSilo, LLC (IANA #1479) did not lie about it — they actually said it and meant it. Consider what is being committed to:
 
 - A registrar's small in-house abuse team
 - Looking at a phishing site flagged by **6+ authoritative security vendors** (Fortune-500-grade telemetry providers)
@@ -290,11 +290,11 @@ All tweets by @Phish_Destroy (Gold Checkmark, ~6.5K followers, 45K posts, never 
 >
 > They claimed xmrwallet[.]com was "compromised" — hacked by a third party.
 >
-> The operator's own emails to us, written BEFORE NameSilo got involved, prove the "hack" story was fabricated.
+> The operator's own emails to us, written BEFORE NameSilo, LLC (IANA #1479) got involved, prove the "hack" story was fabricated.
 >
 > We have the receipts.
 >
-> #xmrwallet #NameSilo #MoneroScam
+> #xmrwallet #NameSilo, LLC (IANA #1479) #MoneroScam
 
 **Also visible in same screenshot — ICANN escalation tweet (March 18):**
 
@@ -316,7 +316,7 @@ All tweets by @Phish_Destroy (Gold Checkmark, ~6.5K followers, 45K posts, never 
 
 > THREAD: @NameSilo is acting as press secretary for a $2M+ Monero theft operation.
 > xmrwallet[.]com steals private keys since 2016. 6 security vendors flag it. 3 registrars suspended it.
-> NameSilo called the scammer "the victim" and is helping him remove @virustotal warnings.
+> NameSilo, LLC (IANA #1479) called the scammer "the victim" and is helping him remove @virustotal warnings.
 > Our pic.x.com/4gqu7zRvr5
 
 **Thread replies (verbatim):**
@@ -357,9 +357,9 @@ All tweets by @Phish_Destroy (Gold Checkmark, ~6.5K followers, 45K posts, never 
 
 > We've now proven that @NameSilo's abuse team intentionally lied in their public response.
 >
-> The operator's emails — written before NameSilo got involved — contradict every claim they made.
+> The operator's emails — written before NameSilo, LLC (IANA #1479) got involved — contradict every claim they made.
 >
-> NameSilo is covering for this operator. The reason is theirs to explain.
+> NameSilo, LLC (IANA #1479) is covering for this operator. The reason is theirs to explain.
 >
 > Our job was [Show more]
 
@@ -393,7 +393,7 @@ All tweets by @Phish_Destroy (Gold Checkmark, ~6.5K followers, 45K posts, never 
 
 The **Gold Checkmark** (Verified Organization) on X costs organizations real money per month. Its main perk: **direct access to a live human support agent at X**. Not the automated system. A person.
 
-Both NameSilo and PhishDestroy hold one. PhishDestroy bought it assuming it would protect against drive-by troll reports. NameSilo used theirs to file a takedown.
+Both NameSilo, LLC (IANA #1479) and PhishDestroy hold one. PhishDestroy bought it assuming it would protect against drive-by troll reports. NameSilo, LLC (IANA #1479) used theirs to file a takedown.
 
 ### Email #1 — The lock
 
@@ -427,7 +427,7 @@ After the ICANN escalation tweet (March 18), @Phish_Destroy was permanently lock
 2. X's **own system** sent a restoration email with the subject line `[4] Your account has been restored`.
 3. The account is **still locked** as of May 2026.
 4. The Gold Checkmark subscription is **still being billed**.
-5. PhishDestroy **cannot access their own posts** — the tweets rebutting NameSilo are invisible to the account that authored them.
+5. PhishDestroy **cannot access their own posts** — the tweets rebutting NameSilo, LLC (IANA #1479) are invisible to the account that authored them.
 6. No third email retracted Email #2. It stands, contradicting reality.
 
 ### Only two possible readings
@@ -454,10 +454,10 @@ The same evidence package was sent to all registrars holding operator-linked mir
 | **PublicDomainRegistry (PDR)** | **Suspended** | Days |
 | **WebNic** | **Suspended** | Days |
 | **NICENIC** | **Suspended** | Days |
-| **NameSilo** | Public defense + offer to scrub VirusTotal | **Never** |
+| **NameSilo, LLC (IANA #1479)** | Public defense + offer to scrub VirusTotal | **Never** |
 
 **Key context:**
-- NICENIC is documented by PhishDestroy as one of the slowest and laziest abuse handlers on the internet. **NICENIC still suspended.** NameSilo did not.
+- NICENIC is documented by PhishDestroy as one of the slowest and laziest abuse handlers on the internet. **NICENIC still suspended.** NameSilo, LLC (IANA #1479) did not.
 - The operator had **7 domains** across multiple registrars. **5 were successfully blocked.** (Source: Exhibit 06 thread: *"it's not one of the 7 domains, 5 of which were successfully blocked"*)
 - The operator had paid for some domains **10 years in advance** — infrastructure-level investment in a scam operation, not a casual project.
 - **Key-Systems GmbH** was also confronted by @Phish_Destroy for ignoring 6 reports on `xmrwallet[.]me` (Source: Exhibit 06 thread)
@@ -497,7 +497,7 @@ The production site diverges from the public GitHub repository. The production s
 **Screenshot:** [`evidence/09-phishdestroy-platform.png`](evidence/09-phishdestroy-platform.png)
 **SHA-256:** `de5b430bb4cad5a422ddf1bb6a8c348fffdf0673e7ea8bfface4fb312f46b087`
 
-The PhishDestroy Threat Intelligence Platform: 350,000+ malicious domains scanned, 54+ trusted partners. This is the operation NameSilo tried to silence — not a hobbyist account, not a troll, not a competitor.
+The PhishDestroy Threat Intelligence Platform: 350,000+ malicious domains scanned, 54+ trusted partners. This is the operation NameSilo, LLC (IANA #1479) tried to silence — not a hobbyist account, not a troll, not a competitor.
 
 ---
 
@@ -514,7 +514,7 @@ The operator has a documented, years-long history of suppressing critics:
 - Targeted **X/Twitter researchers** via puppet accounts and the report button
 - **Actively wiping reviews** and trying to take down entire GitHub accounts (documented in Exhibit 06: *"The owner is actively wiping reviews and trying to take down entire GitHub accounts. Like client, like registrar."*)
 
-### G2 — NameSilo replicates the pattern (March 2026+)
+### G2 — NameSilo, LLC (IANA #1479) replicates the pattern (March 2026+)
 
 | Action | Status |
 |---|---|
@@ -533,7 +533,7 @@ The operator has a documented, years-long history of suppressing critics:
 
 ### G4 — Why the pressure campaign is itself evidence
 
-Registrars whose customers are caught running scams **do not behave this way.** The normal response is silence. NameSilo:
+Registrars whose customers are caught running scams **do not behave this way.** The normal response is silence. NameSilo, LLC (IANA #1479):
 - Published a public defense
 - Committed to scrubbing security detections
 - Paid for and used platform-level access to silence the witness
@@ -545,7 +545,7 @@ Registrars whose customers are caught running scams **do not behave this way.** 
 
 ## 10. EVIDENCE H — The subpoena line
 
-**Date:** February 17, 2026 — **24 days before NameSilo published their defense**
+**Date:** February 17, 2026 — **24 days before NameSilo, LLC (IANA #1479) published their defense**
 **From:** Operator (N.R.)
 **To:** `abuse@phishdestroy.io`
 
@@ -569,7 +569,7 @@ Twenty-four days later, that registrar called him "the victim" in public.
 |---|---|---|---|
 | 10 | Operator email (Feb 16) | [`01-operator-email-feb16.png`](evidence/01-operator-email-feb16.png) | `919b5ee4c0f3a889381c644b557736d35625c69abaddd0ec7a8251eb514b0111` |
 | 11 | PhishDestroy reply (Feb 16) | [`01-phishdestroy-reply-feb16.png`](evidence/01-phishdestroy-reply-feb16.png) | `ecced35149dbf19dff7399cd86708d28aff7b8ab044e132c4c92cafbe222a753` |
-| 08 | NameSilo statement + context (Mar 12-14) | [`03-namesilo-statement-mar13.png`](evidence/03-namesilo-statement-mar13.png) | `ad29e1d3d4803ff37c88ef860bef6de9e62f6ce533657f2e5c5460eb2e0b8ebf` |
+| 08 | NameSilo, LLC (IANA #1479) statement + context (Mar 12-14) | [`03-namesilo-statement-mar13.png`](evidence/03-namesilo-statement-mar13.png) | `ad29e1d3d4803ff37c88ef860bef6de9e62f6ce533657f2e5c5460eb2e0b8ebf` |
 | 03 | "@NameSilo is lying" + ICANN tweet (Mar 16-18) | [`04-tweet-namesilo-is-lying.png`](evidence/04-tweet-namesilo-is-lying.png) | `c556e13ff0e4265cbba76b6a518f0862dee67467c1b264181e27eef8046eda6a` |
 | 04 | "Honest question" + "we've proven" (Mar 16) | [`04-tweet-honest-question.png`](evidence/04-tweet-honest-question.png) | `bbb0ecd0b7164bf91ace59bc0de01ae953a828a34765b36b89e07479e76ee674` |
 | 06 | "Press secretary" thread (Mar 16) | [`04-tweet-press-secretary.png`](evidence/04-tweet-press-secretary.png) | `c9007cb4acf1a264fb82e36a57708a1c35e4b6824eb2734a6a7dff095588bd84` |
@@ -614,7 +614,7 @@ This story lives on every surface that will hold it. If any mirror goes down, th
 
 ### Immutable / decentralized archiving plan
 
-Because NameSilo and the operator are actively attempting to erase every surface, we use **different jurisdictions + different protocols**. A US DMCA takedown doesn't work on a German server. A platform complaint doesn't work on a blockchain. A hosting takedown doesn't work on IPFS. They would need to file in 10+ different places under 10+ different legal frameworks simultaneously. That's the point.
+Because NameSilo, LLC (IANA #1479) and the operator are actively attempting to erase every surface, we use **different jurisdictions + different protocols**. A US DMCA takedown doesn't work on a German server. A platform complaint doesn't work on a blockchain. A hosting takedown doesn't work on IPFS. They would need to file in 10+ different places under 10+ different legal frameworks simultaneously. That's the point.
 
 **Layer 1 — Blockchain / permanent (no takedowns possible):**
 1. **IPFS** — Pin evidence/ + key docs via web3.storage/Pinata. Content-addressed = immutable. Anyone can re-pin the CID.
@@ -673,7 +673,7 @@ Every mirror they have to take down costs them time, money, and public credibili
 | Material | Available to |
 |---|---|
 | Full operator email thread (Feb 16-17, 2026), including "subpoena the registrar" line | ICANN Compliance, law enforcement, court order |
-| 20+ NameSilo abuse-report delivery receipts (2023-2026) | ICANN Compliance, anyone testing the "no abuse reports" claim |
+| 20+ NameSilo, LLC (IANA #1479) abuse-report delivery receipts (2023-2026) | ICANN Compliance, anyone testing the "no abuse reports" claim |
 | Server-side capture of 8 `xmrwallet[.]com` PHP endpoints | ICANN Compliance, security vendors, prosecutors |
 | Source-IP DDoS analysis (NameSilo/"njan la" infrastructure) | Public on phishdestroy.io when complete |
 | Internal SMTP/DKIM headers for operator emails | Court order, ICANN Compliance |

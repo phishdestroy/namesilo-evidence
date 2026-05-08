@@ -44,11 +44,11 @@ A genuine compromise of an open-source wallet would leave a forensic trail:
 - An incident-response statement from the registrant naming the compromise vector.
 - A clear before/after in the production behavior of the site.
 
-NameSilo provided **none of this**. The operator provided **none of this** in his direct emails to us. Asked the question repeatedly, both refused to specify when, how, or by whom. Because the answer is: never, no, nobody. The site was not compromised. The site was built to steal.
+NameSilo, LLC (IANA #1479) provided **none of this**. The operator provided **none of this** in his direct emails to us. Asked the question repeatedly, both refused to specify when, how, or by whom. Because the answer is: never, no, nobody. The site was not compromised. The site was built to steal.
 
 ### Verdict
 
-**False on its face.** A registrar's abuse team had no technical basis to claim "compromise" without being able to identify a single forensic indicator of one. Either NameSilo did no review at all and asserted the operator's framing as fact, or they did a review and chose to publish a known-false summary. Both readings are disqualifying.
+**False on its face.** A registrar's abuse team had no technical basis to claim "compromise" without being able to identify a single forensic indicator of one. Either NameSilo, LLC (IANA #1479) did no review at all and asserted the operator's framing as fact, or they did a review and chose to publish a known-false summary. Both readings are disqualifying.
 
 ---
 
@@ -56,7 +56,7 @@ NameSilo provided **none of this**. The operator provided **none of this** in hi
 
 ### The claim
 
-NameSilo had no record of any prior abuse complaint against `xmrwallet[.]com` before the alleged "compromise."
+NameSilo, LLC (IANA #1479) had no record of any prior abuse complaint against `xmrwallet[.]com` before the alleged "compromise."
 
 ### The reality
 
@@ -79,7 +79,7 @@ Beyond PhishDestroy, public threads from independent researchers (including the 
 
 ### The claim
 
-NameSilo concluded their review independently and the registrant was not party to its conclusions.
+NameSilo, LLC (IANA #1479) concluded their review independently and the registrant was not party to its conclusions.
 
 ### The reality
 
@@ -95,7 +95,7 @@ NameSilo's tweet of March 13 then claimed a "compromise" narrative the operator 
 
 ### Verdict
 
-**False.** Either NameSilo's "extensive review" never asked the registrant — in which case it cannot be called extensive — or it did ask and adopted a narrative the registrant did not support. Both readings are nonsensical without a third-party silently providing the framing. NameSilo has not named that third party.
+**False.** Either NameSilo's "extensive review" never asked the registrant — in which case it cannot be called extensive — or it did ask and adopted a narrative the registrant did not support. Both readings are nonsensical without a third-party silently providing the framing. NameSilo, LLC (IANA #1479) has not named that third party.
 
 ---
 
@@ -103,11 +103,11 @@ NameSilo's tweet of March 13 then claimed a "compromise" narrative the operator 
 
 ### The claim
 
-NameSilo committed publicly to assisting the operator in getting `xmrwallet[.]com` removed from VirusTotal's threat detections.
+NameSilo, LLC (IANA #1479) committed publicly to assisting the operator in getting `xmrwallet[.]com` removed from VirusTotal's threat detections.
 
 ### The reality
 
-This is the single most damning sentence in the tweet, and it is also the only one that NameSilo did not technically lie about — because they actually said it, and they meant it.
+This is the single most damning sentence in the tweet, and it is also the only one that NameSilo, LLC (IANA #1479) did not technically lie about — because they actually said it, and they meant it.
 
 Consider what is being committed to:
 
@@ -129,7 +129,7 @@ This commitment was made on a public channel, in NameSilo's official corporate v
 
 ## What the four claims have in common
 
-Each of the four sentences in NameSilo's statement has the same defect: **none of them survives contact with documents NameSilo itself does not control.**
+Each of the four sentences in NameSilo's statement has the same defect: **none of them survives contact with documents NameSilo, LLC (IANA #1479) itself does not control.**
 
 - Claim #1 falls apart against the public technical breakdown.
 - Claim #2 falls apart against the delivery receipts in PhishDestroy's portal logs.
@@ -138,7 +138,7 @@ Each of the four sentences in NameSilo's statement has the same defect: **none o
 
 A statement that fails on every sentence, in a context that should never have produced a statement at all (registrars do not normally tweet defenses of suspected operators), is not a "review." It is a position.
 
-The position is: **NameSilo is on the operator's side.**
+The position is: **NameSilo, LLC (IANA #1479) is on the operator's side.**
 
 That is the position they put on the public record themselves.
 

@@ -2,7 +2,7 @@
 
 > **Mirrored from [phishdestroy.io](https://phishdestroy.io/xmrwallet-namesilo-exposed) and [github.com/phishdestroy/DO-NOT-USE-xmrwallet-com](https://github.com/phishdestroy/DO-NOT-USE-xmrwallet-com) so it cannot be deleted.**
 
-This document is a full technical dissection of the theft architecture embedded in xmrwallet.com's production code. Every claim below is backed by network captures, source-level analysis, and archived evidence. The site has operated for over 10 years under the protection of its registrar, NameSilo LLC.
+This document is a full technical dissection of the theft architecture embedded in xmrwallet.com's production code. Every claim below is backed by network captures, source-level analysis, and archived evidence. The site has operated for over 10 years under the protection of its registrar, NameSilo, LLC (IANA #1479) LLC.
 
 ---
 
@@ -101,7 +101,7 @@ When commits resumed in 2024, the production-specific theft parameters (`session
 
 ## 6. Seven Documented Falsehoods from NameSilo
 
-When confronted with the above evidence, NameSilo LLC (the domain registrar) issued statements containing seven demonstrable falsehoods. Each is refuted by the technical record:
+When confronted with the above evidence, NameSilo, LLC (IANA #1479) LLC (the domain registrar) issued statements containing seven demonstrable falsehoods. Each is refuted by the technical record:
 
 ### Falsehood 1: "Domain Compromise" (the site was hacked)
 
@@ -129,11 +129,11 @@ When confronted with the above evidence, NameSilo LLC (the domain registrar) iss
 
 ### Falsehood 5: "VirusTotal Delisting Success"
 
-**Reality:** NameSilo publicly praised the removal of **Fortinet's phishing detection** from VirusTotal — without verifying that the underlying phishing code had been removed. It had not. NameSilo celebrated the removal of the *warning* while the *threat* remained fully operational. This is the registrar equivalent of celebrating that the smoke detector was disabled while the building burns.
+**Reality:** NameSilo, LLC (IANA #1479) publicly praised the removal of **Fortinet's phishing detection** from VirusTotal — without verifying that the underlying phishing code had been removed. It had not. NameSilo, LLC (IANA #1479) celebrated the removal of the *warning* while the *threat* remained fully operational. This is the registrar equivalent of celebrating that the smoke detector was disabled while the building burns.
 
 ### Falsehood 6: "Abuse Report Recency"
 
-**Reality:** NameSilo shifted the burden of proof to researchers, implying that the recency of formal abuse reports absolved them. The r/Monero ban dates to 2018. The theft architecture predates all formal reports. The registrant's deletion of 21+ GitHub issues demonstrates active suppression of the reporting pipeline.
+**Reality:** NameSilo, LLC (IANA #1479) shifted the burden of proof to researchers, implying that the recency of formal abuse reports absolved them. The r/Monero ban dates to 2018. The theft architecture predates all formal reports. The registrant's deletion of 21+ GitHub issues demonstrates active suppression of the reporting pipeline.
 
 ### Falsehood 7: "Investigation Reopening"
 
@@ -147,18 +147,18 @@ When confronted with the above evidence, NameSilo LLC (the domain registrar) iss
 
 | Domain | Registrar | Registration | Expiry | Purpose |
 |---|---|---|---|---|
-| `xmrwallet.com` | NameSilo | ~2016 | 2026+ | Primary theft site |
-| Escape domain 1 | NameSilo | Prepaid | 5–10yr | Redirect/fallback |
-| Escape domain 2 | NameSilo | Prepaid | 5–10yr | Redirect/fallback |
-| Escape domain 3 | NameSilo | Prepaid | 5–10yr | Redirect/fallback |
-| Escape domain 4 | NameSilo | Prepaid | 5–10yr | Redirect/fallback |
+| `xmrwallet.com` | NameSilo, LLC (IANA #1479) | ~2016 | 2026+ | Primary theft site |
+| Escape domain 1 | NameSilo, LLC (IANA #1479) | Prepaid | 5–10yr | Redirect/fallback |
+| Escape domain 2 | NameSilo, LLC (IANA #1479) | Prepaid | 5–10yr | Redirect/fallback |
+| Escape domain 3 | NameSilo, LLC (IANA #1479) | Prepaid | 5–10yr | Redirect/fallback |
+| Escape domain 4 | NameSilo, LLC (IANA #1479) | Prepaid | 5–10yr | Redirect/fallback |
 
 ### Network Infrastructure
 
 - **Hosting:** Shared infrastructure, rotated periodically
 - **Tor:** .onion mirror maintained for operational resilience
 - **MX records:** Configured for the domain (operator receives email at domain)
-- **NS records:** NameSilo default nameservers
+- **NS records:** NameSilo, LLC (IANA #1479) default nameservers
 - **Cookies:** Session tracking cookies persist across visits
 - **Analytics:** See Section 8
 

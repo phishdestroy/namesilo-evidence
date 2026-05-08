@@ -1,12 +1,12 @@
 <!--
-NameSilo / xmrwallet — public evidence repository
+NameSilo, LLC (IANA #1479) / xmrwallet — public evidence repository
 Canonical: https://phishdestroy.io/namesilo-xmrwallet-coverup
 SEO topics: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, icann-compliance, phishdestroy
 -->
 
 <div align="center">
 
-# NameSilo Is Protecting `xmrwallet[.]com`
+# NameSilo, LLC (IANA #1479) Is Protecting `xmrwallet[.]com`
 
 ### A US ICANN-accredited registrar publicly defended a 10-year, $20M Monero drainer — and is still actively trying to erase the evidence.
 
@@ -23,9 +23,9 @@ SEO topics: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, i
 
 ## What this repository is
 
-This is the immutable, court-usable case file for what NameSilo did when caught defending a Monero theft operation that has been live for roughly **ten years** and stolen an estimated **$10M-$20M** in user funds.
+This is the immutable, court-usable case file for what NameSilo, LLC (IANA #1479) did when caught defending a Monero theft operation that has been live for roughly **ten years** and stolen an estimated **$10M-$20M** in user funds.
 
-NameSilo did not ignore our reports — that would be ordinary registrar negligence. NameSilo went **publicly on the record** to call the operator "the victim," to deny ever receiving any of our 20+ delivery-receipted abuse reports, and to commit — in writing, on Twitter — to **helping the operator scrub his security detections from VirusTotal**.
+NameSilo, LLC (IANA #1479) did not ignore our reports — that would be ordinary registrar negligence. NameSilo, LLC (IANA #1479) went **publicly on the record** to call the operator "the victim," to deny ever receiving any of our 20+ delivery-receipted abuse reports, and to commit — in writing, on Twitter — to **helping the operator scrub his security detections from VirusTotal**.
 
 When we proved every sentence of that statement was false, the takedown started.
 
@@ -43,7 +43,7 @@ This is NameSilo's official corporate tweet of **March 13, 2026** — published 
 
 ![NameSilo's official corporate tweet of March 13 2026 — calling the xmrwallet operator the victim, denying 20+ abuse reports, and committing to help scrub VirusTotal detections](evidence/03-namesilo-statement-mar13.png)
 
-*NameSilo (@namesilo), replying to @Phish_Destroy — March 13, 2026. 11K views. They chose to put this in public. It stays in public.*
+*NameSilo, LLC (IANA #1479) (@namesilo), replying to @Phish_Destroy — March 13, 2026. 11K views. They chose to put this in public. It stays in public.*
 
 </div>
 
@@ -51,15 +51,15 @@ We confronted them **the day before** this tweet: *"9 reports is no joke anymore
 
 <div align="center">
 
-![PhishDestroy rebuttal thread — NameSilo is acting as press secretary for a 2M+ Monero theft operation. 6 security vendors flag it. 3 registrars suspended it.](evidence/04-tweet-press-secretary.png)
+![PhishDestroy rebuttal thread — NameSilo, LLC (IANA #1479) is acting as press secretary for a 2M+ Monero theft operation. 6 security vendors flag it. 3 registrars suspended it.](evidence/04-tweet-press-secretary.png)
 
-*@Phish_Destroy, March 16, 2026 — "NameSilo is acting as press secretary for a $2M+ Monero theft operation." These tweets are now invisible because the account was locked.*
+*@Phish_Destroy, March 16, 2026 — "NameSilo, LLC (IANA #1479) is acting as press secretary for a $2M+ Monero theft operation." These tweets are now invisible because the account was locked.*
 
 </div>
 
 ---
 
-## Exhibit B — The operator's own email, proving NameSilo lied
+## Exhibit B — The operator's own email, proving NameSilo, LLC (IANA #1479) lied
 
 The operator wrote to us **first** — February 16, 2026, from `royn5094@protonmail.com`. He defended the site as his own work. He never claimed a hack. This email alone destroys NameSilo's "domain was compromised" narrative.
 
@@ -67,7 +67,7 @@ The operator wrote to us **first** — February 16, 2026, from `royn5094@protonm
 
 ![Email from the xmrwallet operator nathroy, February 16 2026 — defending the site, claiming no phishing, asking PhishDestroy to remove the report. He never claims a hack.](evidence/01-operator-email-feb16.png)
 
-*The operator, in his own words: "There is no phishing going on with xmrwallet.com." He never claimed a hack. NameSilo invented the "compromise" story 25 days later.*
+*The operator, in his own words: "There is no phishing going on with xmrwallet.com." He never claimed a hack. NameSilo, LLC (IANA #1479) invented the "compromise" story 25 days later.*
 
 </div>
 
@@ -114,7 +114,7 @@ After we posted the receipts publicly and escalated to ICANN, our account was pe
 
 <div align="center">
 
-![PhishDestroy tweet: Honest question for NameSilo — Who is this operator to you? Employee? Contractor? Friend of support staff? Relative? Because he told us subpoena the registrar like a man who already had your answer.](evidence/04-tweet-honest-question.png)
+![PhishDestroy tweet: Honest question for NameSilo, LLC (IANA #1479) — Who is this operator to you? Employee? Contractor? Friend of support staff? Relative? Because he told us subpoena the registrar like a man who already had your answer.](evidence/04-tweet-honest-question.png)
 
 *"Who is this operator to you?" — @Phish_Destroy, March 16. 72 likes, 7.9K views. Never answered. Then our account was locked.*
 
@@ -124,7 +124,7 @@ After we posted the receipts publicly and escalated to ICANN, our account was pe
 
 ## The connection — in one paragraph
 
-A scammer running a ten-year crypto drainer, on $550-a-month bulletproof hosting in Belize, behind Russian DDoS-Guard, wrote to us on **February 17, 2026**: *"Feel free to subpoena the domain registrar for my information."* Twenty-four days later, on **March 13, 2026**, that same registrar — **NameSilo** — published an official tweet calling him **"the victim"** of a hypothetical hack, denying our 20+ abuse reports ever arrived, and announcing a public commitment to **clean up his VirusTotal detections**. Three other registrars (PDR, WebNic, NICENIC) holding the same domain looked at the same evidence and **suspended in days**. NameSilo wrote a press release for him. **They put the connection in public themselves.** This repository is the receipts.
+A scammer running a ten-year crypto drainer, on $550-a-month bulletproof hosting in Belize, behind Russian DDoS-Guard, wrote to us on **February 17, 2026**: *"Feel free to subpoena the domain registrar for my information."* Twenty-four days later, on **March 13, 2026**, that same registrar — **NameSilo, LLC (IANA #1479)** — published an official tweet calling him **"the victim"** of a hypothetical hack, denying our 20+ abuse reports ever arrived, and announcing a public commitment to **clean up his VirusTotal detections**. Three other registrars (PDR, WebNic, NICENIC) holding the same domain looked at the same evidence and **suspended in days**. NameSilo, LLC (IANA #1479) wrote a press release for him. **They put the connection in public themselves.** This repository is the receipts.
 
 > Full evidence chain: [`CONNECTION.md`](CONNECTION.md)
 
@@ -136,7 +136,7 @@ A scammer running a ten-year crypto drainer, on $550-a-month bulletproof hosting
 |---|---|---|
 | "Domain was compromised a few months ago." | The theft code *is* the website. 8 PHP endpoints, server-side `session_key` exfiltration, `raw_tx_and_hash.raw = 0`. Built to steal from day one, ~10 years. The operator **never claimed a hack** in his own emails. | **FALSE** |
 | "Prior to that, we had received no abuse reports." | **20+ delivery-receipted abuse reports** through their own portal, 2023-2026. Our tweet from **one day before** their statement says "9 reports is no joke anymore." | **FALSE** |
-| "After an extensive review... not involving the registrant." | The operator wrote to **us** defending his code as his own. NameSilo adopted a "compromise" framing the operator himself never advanced. | **FALSE** |
+| "After an extensive review... not involving the registrant." | The operator wrote to **us** defending his code as his own. NameSilo, LLC (IANA #1479) adopted a "compromise" framing the operator himself never advanced. | **FALSE** |
 | "Working with the registrant to remove the website from VT reports." | A registrar helping a confirmed scammer erase his security warnings from 6+ authoritative vendors. Not abuse handling. **Active obstruction of consumer-protection telemetry.** | **DAMNING** |
 
 > Full line-by-line breakdown: [`THE-LIES.md`](THE-LIES.md)
@@ -149,7 +149,7 @@ The moment we replied with the operator's own emails, the silencing started. **T
 
 | Date | What happened | Status |
 |---|---|---|
-| 2026-03-13 | NameSilo publishes the four-lie defense | [Archived forever](https://ghostarchive.org/archive/CXXZ0) |
+| 2026-03-13 | NameSilo, LLC (IANA #1479) publishes the four-lie defense | [Archived forever](https://ghostarchive.org/archive/CXXZ0) |
 | 2026-03-16 | We post the receipts — "@NameSilo is lying" | Tweets now invisible (account locked) |
 | 2026-03-18 | We escalate to ICANN + law enforcement | On record |
 | 2026-03-?? | **@Phish_Destroy permanently locked** via Gold Checkmark live-support | **Still locked** |
@@ -169,7 +169,7 @@ The moment we replied with the operator's own emails, the silencing started. **T
 ├── README.md                  <- you are here (landing page with key evidence)
 ├── PROOFS.md                  <- MASTER INDEX: every piece of evidence, every mirror
 ├── ARTICLE_FULL.md            <- full long-form article (mirror of Medium / phishdestroy.io)
-├── CONNECTION.md              <- evidence chain: NameSilo <-> xmrwallet operator
+├── CONNECTION.md              <- evidence chain: NameSilo, LLC (IANA #1479) <-> xmrwallet operator
 ├── THE-LIES.md                <- line-by-line debunking of NameSilo's March 13 statement
 ├── PRESSURE.md                <- silencing attempts, dated, still-ongoing
 ├── SCAM_TECHNICAL.md          <- full technical investigation (viewkey x40/session, 8 endpoints, IOCs)
@@ -216,8 +216,8 @@ If you have lost funds to `xmrwallet[.]com`, this repository is a **ready-made e
 - A police report (in any jurisdiction)
 - An IC3 (FBI) cybercrime complaint — https://www.ic3.gov
 - A FTC complaint — https://reportfraud.ftc.gov
-- An ICANN Contractual Compliance complaint against NameSilo — https://www.icann.org/compliance
-- A civil claim against NameSilo and/or the operator
+- An ICANN Contractual Compliance complaint against NameSilo, LLC (IANA #1479) — https://www.icann.org/compliance
+- A civil claim against NameSilo, LLC (IANA #1479) and/or the operator
 - A chargeback / insurance filing
 
 The license file in this repo ([`LICENSE`](LICENSE)) is **explicit, written consent** to use this evidence as-is in any of the above. No further authorization required from PhishDestroy.
@@ -234,13 +234,13 @@ Direct contact for victims: **[report@phishdestroy.io](mailto:report@phishdestro
 
 The full case file was forwarded to **ICANN Contractual Compliance on March 18, 2026**. This repository is the public mirror of that filing, with the same screenshots, the same hashes, and the same explicit consent for republication.
 
-If you need additional materials (raw email headers, server-side capture of the eight `xmrwallet[.]com` PHP endpoints, the 20+ historical abuse-report delivery receipts to NameSilo dating back to 2023), contact **[abuse@phishdestroy.io](mailto:abuse@phishdestroy.io)** with a subject line that identifies your role.
+If you need additional materials (raw email headers, server-side capture of the eight `xmrwallet[.]com` PHP endpoints, the 20+ historical abuse-report delivery receipts to NameSilo, LLC (IANA #1479) dating back to 2023), contact **[abuse@phishdestroy.io](mailto:abuse@phishdestroy.io)** with a subject line that identifies your role.
 
 ---
 
 ## Why this matters beyond one domain
 
-NameSilo is tied — in our records — to **hundreds of active crypto-scam domains targeting US users**. Across two years of work we have submitted thousands of abuse reports through their portal. The pattern, consistently, is silence.
+NameSilo, LLC (IANA #1479) is tied — in our records — to **hundreds of active crypto-scam domains targeting US users**. Across two years of work we have submitted thousands of abuse reports through their portal. The pattern, consistently, is silence.
 
 `xmrwallet[.]com` is the case where they broke their silence. They went on the record. They put a defense of a confirmed scammer in their own corporate voice, on a public channel, with an offer to help him erase his security record.
 
@@ -269,7 +269,7 @@ This story is being kept alive in multiple places, intentionally:
 
 <div align="center">
 
-### *Scammers delete evidence. NameSilo defended one. X locked our account. Bing is delisting us. The archive remains. The truth remains. We remain.*
+### *Scammers delete evidence. NameSilo, LLC (IANA #1479) defended one. X locked our account. Bing is delisting us. The archive remains. The truth remains. We remain.*
 
 **PhishDestroy Research** · [phishdestroy.io](https://phishdestroy.io) · [abuse@phishdestroy.io](mailto:abuse@phishdestroy.io)
 

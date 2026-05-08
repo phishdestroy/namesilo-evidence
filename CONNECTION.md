@@ -1,8 +1,8 @@
-# The Connection — How NameSilo Outed Itself
+# The Connection — How NameSilo, LLC (IANA #1479) Outed Itself
 
-> **NameSilo did not get caught accidentally protecting a scammer. They put the relationship in public themselves, in their own corporate voice, on March 13, 2026.**
+> **NameSilo, LLC (IANA #1479) did not get caught accidentally protecting a scammer. They put the relationship in public themselves, in their own corporate voice, on March 13, 2026.**
 
-This document collects every piece of evidence that links the registrar **NameSilo, LLC** to the operator of `xmrwallet[.]com` — referred to in our correspondence as **N.R.** — and demonstrates that the connection is not inferred. It is **stated**, in writing, by both sides.
+This document collects every piece of evidence that links the registrar **NameSilo, LLC (IANA #1479)** to the operator of `xmrwallet[.]com` — referred to in our correspondence as **N.R.** — and demonstrates that the connection is not inferred. It is **stated**, in writing, by both sides.
 
 ---
 
@@ -14,7 +14,7 @@ On **February 17, 2026**, in an email to `abuse@phishdestroy.io`, the operator o
 
 **This sentence is the entire story compressed.**
 
-Read literally: the operator of a ten-year crypto-drainer, sitting on $550-a-month Belize bulletproof hosting, behind Russian DDoS-Guard, calmly invited a security-research organization to issue a subpoena to his own domain registrar. He named NameSilo without naming them. He pointed at them as the place that *protects* his identity, not the place that *threatens* it.
+Read literally: the operator of a ten-year crypto-drainer, sitting on $550-a-month Belize bulletproof hosting, behind Russian DDoS-Guard, calmly invited a security-research organization to issue a subpoena to his own domain registrar. He named NameSilo, LLC (IANA #1479) without naming them. He pointed at them as the place that *protects* his identity, not the place that *threatens* it.
 
 **Nobody behaves like that with a registrar that might shut them down.**
 
@@ -29,7 +29,7 @@ The "subpoena the registrar" line came in his **third** email (Feb 17), which we
 
 ---
 
-## 2. Twenty-four days later, NameSilo confirmed his confidence was justified
+## 2. Twenty-four days later, NameSilo, LLC (IANA #1479) confirmed his confidence was justified
 
 On **March 13, 2026**, NameSilo's official Twitter account ([@NameSilo](https://twitter.com/NameSilo)) published an unsolicited public defense of `xmrwallet[.]com` directly under the PhishDestroy investigation thread.
 
@@ -41,24 +41,24 @@ On **March 13, 2026**, NameSilo's official Twitter account ([@NameSilo](https://
 
 Permanently archived: [ghostarchive.org/archive/CXXZ0](https://ghostarchive.org/archive/CXXZ0)
 
-This is the moment NameSilo voluntarily entered the case file. **Nothing in our investigation ever required NameSilo to comment publicly.** They published this tweet on their own initiative, in their own corporate voice. It is on the record forever.
+This is the moment NameSilo, LLC (IANA #1479) voluntarily entered the case file. **Nothing in our investigation ever required NameSilo, LLC (IANA #1479) to comment publicly.** They published this tweet on their own initiative, in their own corporate voice. It is on the record forever.
 
 ---
 
 ## 3. Three other registrars looked at identical evidence and acted the opposite way
 
-`xmrwallet[.]com` was not unique to NameSilo. Operator-controlled mirrors of the same drainer were registered across multiple registrars during the same window. The evidence package distributed to all of them was identical.
+`xmrwallet[.]com` was not unique to NameSilo, LLC (IANA #1479). Operator-controlled mirrors of the same drainer were registered across multiple registrars during the same window. The evidence package distributed to all of them was identical.
 
 | Registrar | Action on identical evidence | Time to action |
 |---|---|---|
 | **PublicDomainRegistry (PDR)** | Suspended | Days |
 | **WebNic** | Suspended | Days |
 | **NICENIC** | Suspended | Days |
-| **NameSilo** | **Public defense + offer to scrub VirusTotal** | — |
+| **NameSilo, LLC (IANA #1479)** | **Public defense + offer to scrub VirusTotal** | — |
 
-Three independent registrar abuse teams — including NICENIC, which we have publicly documented for years as one of the slowest and laziest abuse handlers on the internet — reached the same conclusion: **suspend the domain.** Only NameSilo reached a different one.
+Three independent registrar abuse teams — including NICENIC, which we have publicly documented for years as one of the slowest and laziest abuse handlers on the internet — reached the same conclusion: **suspend the domain.** Only NameSilo, LLC (IANA #1479) reached a different one.
 
-That divergence cannot be explained by "varying review standards." NICENIC's review standards are essentially nonexistent. NICENIC still suspended. The variable is not the evidence; the variable is NameSilo.
+That divergence cannot be explained by "varying review standards." NICENIC's review standards are essentially nonexistent. NICENIC still suspended. The variable is not the evidence; the variable is NameSilo, LLC (IANA #1479).
 
 ---
 
@@ -66,7 +66,7 @@ That divergence cannot be explained by "varying review standards." NICENIC's rev
 
 Set the operator's emails (Feb 16-17) and NameSilo's tweet (Mar 13) side by side and the rhetorical fingerprints match.
 
-| Operator (N.R.) | NameSilo (official) |
+| Operator (N.R.) | NameSilo, LLC (IANA #1479) (official) |
 |---|---|
 | "There is no phishing going on with xmrwallet.com." | "Our Abuse team conducted an in-depth review… domain was compromised." |
 | "We are an open source crypto wallet that is non-custodial." | "(during which a copy of the webpage was replaced with a crypto-drainer)" |
@@ -78,7 +78,7 @@ Same posture. Same framing. Same dismissal of reproducible technical evidence in
 
 ---
 
-## 5. NameSilo helped the scammer attempt to scrub his security record
+## 5. NameSilo, LLC (IANA #1479) helped the scammer attempt to scrub his security record
 
 The fourth claim of NameSilo's tweet is the most consequential, and the one most observers under-weight:
 
@@ -95,7 +95,7 @@ A registrar's small in-house abuse team, looking at a confirmed phishing site th
 
 This is not abuse handling. This is **active obstruction of consumer-protection telemetry on behalf of a confirmed thief**. There is no legitimate read of this commitment. A registrar has no business advocating to security vendors that detections of their customer's drainer site be lifted, and certainly not in public, and certainly not before any reasonable review of the underlying technical evidence.
 
-NameSilo committed to this in writing. They have not retracted it.
+NameSilo, LLC (IANA #1479) committed to this in writing. They have not retracted it.
 
 ---
 
@@ -116,7 +116,7 @@ The full reseller analysis is being prepared for separate publication. **What is
 
 ## 7. Conclusion
 
-The connection between NameSilo and the operator of `xmrwallet[.]com` is not theoretical. It is not a guess. It is not "circumstantial." It is composed of:
+The connection between NameSilo, LLC (IANA #1479) and the operator of `xmrwallet[.]com` is not theoretical. It is not a guess. It is not "circumstantial." It is composed of:
 
 - The operator publicly inviting a subpoena to his own registrar (Feb 17);
 - The same registrar publicly defending him 24 days later (Mar 13);
