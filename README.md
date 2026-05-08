@@ -21,6 +21,20 @@ SEO topics: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, i
 
 ---
 
+> **Let's get one thing straight.** This is not a cry for help. We don't need sympathy, petitions, or outrage. We are not victims here — the people who lost their Monero on `xmrwallet[.]com` are. We are researchers. We document. We publish. We archive. That's what we do.
+>
+> What you are looking at is a **flat evidence file**. Screenshots. Emails. Timestamps. Hashes. Every claim sourced, every exhibit fingerprinted, every lie cross-referenced against the liar's own words.
+>
+> NameSilo, LLC (IANA #1479) and the operator have spent **eight years** pressing the "report" button on every platform that hosts the truth about them. They deleted GitHub issues. They mass-reported victim reviews. They filed fake DMCAs. They got our Twitter locked. They're trying to delist us from Bing right now. **They have never — not once, in eight years — produced a single technical rebuttal.** Not one line of code. Not one network capture. Not one counter-argument. Just the report button, over and over, on every surface they can reach.
+>
+> That is not the behavior of people who have been falsely accused. That is the behavior of people who know exactly what they did and have no answer except to make the evidence disappear.
+>
+> **It's not disappearing.** This repo is mirrored, hashed, archived, pinned to IPFS, and spread across jurisdictions they'd need a dozen separate legal actions to touch. Every takedown attempt gets logged as another entry in [`PRESSURE.md`](PRESSURE.md). Every deleted review gets noted in [`VICTIMS.md`](VICTIMS.md). Every fake DMCA gets documented in [`SECURITY.md`](SECURITY.md).
+>
+> They're not erasing anything. They're building our case for us.
+
+---
+
 ## What this repository is
 
 This is the immutable, court-usable case file for what NameSilo, LLC (IANA #1479) did when caught defending a Monero theft operation that has been live for roughly **ten years** and stolen an estimated **$10M-$20M** in user funds.

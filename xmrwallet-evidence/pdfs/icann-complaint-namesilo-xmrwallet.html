@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ICANN Compliance Complaint — NameSilo LLC — Registrar Misconduct re: xmrwallet.com</title>
+<style>
+    @page { size: A4; margin: 25mm 20mm 25mm 20mm; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 11pt; line-height: 1.7; color: #1a1a1a; background: #fff; max-width: 210mm; margin: 0 auto; padding: 20mm; }
+
+    /* Header */
+    .letterhead { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 3px solid #c0392b; padding-bottom: 14px; margin-bottom: 24px; }
+    .letterhead-left { }
+    .letterhead-org { font-size: 16pt; font-weight: 700; color: #c0392b; letter-spacing: 0.5px; }
+    .letterhead-sub { font-size: 8.5pt; color: #666; letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
+    .letterhead-right { text-align: right; font-size: 8.5pt; color: #555; line-height: 1.6; }
+
+    /* Classification banner */
+    .classification { background: #c0392b; color: #fff; text-align: center; font-size: 8pt; letter-spacing: 3px; text-transform: uppercase; padding: 4px 0; margin-bottom: 20px; font-weight: 600; }
+
+    /* Date & addressee */
+    .date { font-size: 10pt; color: #444; margin-bottom: 16px; }
+    .addressee { margin-bottom: 20px; font-size: 10pt; line-height: 1.6; }
+    .addressee strong { color: #1a1a1a; }
+
+    /* Subject line */
+    .subject { background: #f8f8f8; border-left: 4px solid #c0392b; padding: 10px 16px; margin-bottom: 20px; font-size: 10.5pt; }
+    .subject strong { color: #c0392b; }
+
+    /* Body */
+    p { margin-bottom: 12px; text-align: justify; }
+
+    h2 { font-size: 12pt; color: #c0392b; margin: 24px 0 10px 0; padding-bottom: 4px; border-bottom: 1px solid #e0e0e0; }
+    h3 { font-size: 11pt; color: #333; margin: 16px 0 8px 0; }
+
+    /* Evidence table */
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 16px 0; font-size: 10pt; }
+    th { background: #2c3e50; color: #fff; text-align: left; padding: 8px 10px; font-size: 8.5pt; letter-spacing: 0.5px; text-transform: uppercase; }
+    td { padding: 7px 10px; border-bottom: 1px solid #e0e0e0; vertical-align: top; }
+    tr:nth-child(even) { background: #fafafa; }
+    .status-suspended { color: #27ae60; font-weight: 600; }
+    .status-refused { color: #c0392b; font-weight: 700; }
+    .status-dead { color: #7f8c8d; font-weight: 600; }
+
+    /* Blockquote for emails */
+    blockquote { border-left: 3px solid #c0392b; background: #fdf2f2; padding: 10px 14px; margin: 10px 0 14px 0; font-style: italic; color: #333; font-size: 10.5pt; }
+    blockquote .src { font-style: normal; font-size: 8.5pt; color: #888; display: block; margin-top: 4px; }
+
+    /* Numbered findings */
+    ol { margin: 8px 0 14px 20px; }
+    ol li { margin-bottom: 6px; }
+    ul { margin: 6px 0 12px 18px; }
+    ul li { margin-bottom: 4px; }
+
+    /* Highlight box */
+    .highlight { background: #fff3cd; border: 1px solid #ffc107; padding: 10px 14px; margin: 14px 0; border-radius: 3px; font-size: 10.5pt; }
+    .critical { background: #fdf2f2; border: 1px solid #c0392b; padding: 10px 14px; margin: 14px 0; border-radius: 3px; }
+
+    /* Footer */
+    .signature { margin-top: 30px; padding-top: 16px; }
+    .sig-name { font-weight: 700; font-size: 11pt; }
+    .sig-title { font-size: 9.5pt; color: #555; }
+    .sig-contact { font-size: 8.5pt; color: #888; margin-top: 6px; line-height: 1.5; }
+
+    .footer-line { border-top: 2px solid #c0392b; margin-top: 30px; padding-top: 10px; font-size: 7.5pt; color: #999; text-align: center; }
+
+    /* Page break hints */
+    .page-break { page-break-before: always; }
+
+    /* Print */
+    @media print {
+        body { padding: 0; max-width: none; }
+        .no-print { display: none; }
+    }
+</style>
+</head>
+<body>
+
+<div class="letterhead">
+    <div class="letterhead-left">
+        <div class="letterhead-org">PhishDestroy Research</div>
+        <div class="letterhead-sub">Cybersecurity Threat Intelligence &amp; Domain Abuse Investigation</div>
+    </div>
+    <div class="letterhead-right">
+        phishdestroy.io<br>
+        phishdestroy@proton.me<br>
+        github.com/phishdestroy<br>
+        PGP: available on request
+    </div>
+</div>
+
+<div class="classification">Formal Compliance Complaint &mdash; Registrar Misconduct</div>
+
+<div class="date">March 17, 2026</div>
+
+<div class="addressee">
+    <strong>ICANN Contractual Compliance</strong><br>
+    Internet Corporation for Assigned Names and Numbers<br>
+    12025 Waterfront Drive, Suite 300<br>
+    Los Angeles, CA 90094-2536, United States<br><br>
+    <strong>Via:</strong> https://www.icann.org/compliance/complaint<br>
+    <strong>Copy to:</strong> compliance@icann.org
+</div>
+
+<div class="subject">
+    <strong>RE:</strong> Formal complaint against <strong>NameSilo, LLC</strong> (IANA ID: 1479) for violation of the Registrar Accreditation Agreement (RAA) in connection with domain <strong>xmrwallet.com</strong> &mdash; fabrication of abuse response, aiding active fraud operation, obstruction of multi-registrar enforcement action.
+</div>
+
+<p>Dear ICANN Compliance Team,</p>
+
+<p>We are submitting this formal complaint in our capacity as cybersecurity researchers who have conducted an extensive technical investigation into the domain <strong>xmrwallet.com</strong>, a confirmed Monero cryptocurrency theft operation active since 2016. We believe it is our professional and ethical obligation to escalate this matter to ICANN, as the registrar of record &mdash; <strong>NameSilo, LLC</strong> &mdash; has not only failed to act on a well-documented abuse report, but has actively fabricated a defense for the domain operator and assisted in undermining security vendor classifications.</p>
+
+<p>This complaint is supported by technical evidence, the operator's own email correspondence, and the independent enforcement actions of three other ICANN-accredited registrars who reviewed the same evidence and suspended the operator's domains.</p>
+
+<!-- ============================================ -->
+<h2>1. Background: The xmrwallet.com Fraud Operation</h2>
+
+<p>xmrwallet.com is a web-based Monero wallet that presents itself as a privacy-focused open-source tool. Our investigation, conducted between February and March 2026, established through live network capture and source code analysis that the site performs two distinct theft mechanisms:</p>
+
+<ol>
+    <li><strong>Private View Key Exfiltration:</strong> On every API request, the user's private Monero view key is transmitted to the server encoded as Base64 within a <code>session_key</code> parameter. This key is sent 40+ times per session across 8 PHP endpoints. The operator can monitor all wallet balances and incoming transactions in real time.</li>
+    <li><strong>Server-Side Transaction Hijacking:</strong> When a user initiates a transaction, the client-built transaction is discarded (<code>raw_tx_and_hash.raw = 0</code>) and replaced by a server-constructed transaction that redirects funds to an address controlled by the operator. A custom theft marker (<code>type == 'swept'</code>), absent from the Monero protocol, is used to track stolen transactions.</li>
+</ol>
+
+<p>The operation has been active since <strong>August 29, 2016</strong> (domain registration date). We have documented <strong>15+ victims</strong> with confirmed losses exceeding <strong>$2M USD equivalent</strong> in Monero (XMR). The operator is identified as <strong>Nathalie Roy</strong> (Canada), GitHub username: nathroy (ID: 39167759), email: royn5094@protonmail.com.</p>
+
+<p>Full technical evidence is publicly available at:<br>
+<strong>https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/</strong></p>
+
+<!-- ============================================ -->
+<h2>2. Three Registrars Suspended &mdash; NameSilo Refused</h2>
+
+<p>Following publication of our findings, the operator registered four escape domains across four different registrars to maintain operations in the event of takedown. We submitted identical evidence packages to all registrars. The results were as follows:</p>
+
+<table>
+    <thead>
+        <tr><th>Domain</th><th>Registrar</th><th>IANA ID</th><th>Action Taken</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>xmrwallet.cc</td><td>PublicDomainRegistry (PDR Ltd.)</td><td>303</td><td class="status-suspended">SUSPENDED</td></tr>
+        <tr><td>xmrwallet.biz</td><td>WebNic.cc</td><td>460</td><td class="status-suspended">SUSPENDED</td></tr>
+        <tr><td>xmrwallet.net</td><td>NICENIC International</td><td>2225</td><td class="status-dead">DNS DEAD (abuse action)</td></tr>
+        <tr><td><strong>xmrwallet.com</strong></td><td><strong>NameSilo, LLC</strong></td><td><strong>1479</strong></td><td class="status-refused">REFUSED TO ACT</td></tr>
+    </tbody>
+</table>
+
+<p>Three independent, ICANN-accredited registrars in three different jurisdictions reviewed the same evidence and independently concluded that enforcement action was warranted. <strong>NameSilo was the sole exception.</strong></p>
+
+<!-- ============================================ -->
+<h2>3. NameSilo's Response: Fabricated &ldquo;Compromise&rdquo; Narrative</h2>
+
+<p>On <strong>March 4, 2026</strong>, NameSilo's abuse team responded to our report with the following position:</p>
+
+<ul>
+    <li>The site was &ldquo;compromised&rdquo; &mdash; i.e., hacked by an unauthorized third party</li>
+    <li>The operator is &ldquo;the victim&rdquo; of this compromise</li>
+    <li>Therefore, no enforcement action would be taken</li>
+</ul>
+
+<p><strong>NameSilo provided zero technical evidence for this claim.</strong> No forensic report. No server logs. No timeline of the alleged breach. No identification of the alleged third party. No explanation of how malicious code was maintained across multiple domains, servers, and a Tor hidden service simultaneously for years.</p>
+
+<div class="critical">
+<strong>Critical:</strong> The &ldquo;compromise&rdquo; narrative is contradicted by the operator's own email correspondence with our research team, written <em>before</em> NameSilo was contacted and before the &ldquo;compromise&rdquo; story existed.
+</div>
+
+<!-- ============================================ -->
+<h2>4. The Operator's Own Emails Contradict NameSilo's Claims</h2>
+
+<p>Between <strong>February 16 and February 23, 2026</strong>, the xmrwallet.com operator emailed PhishDestroy directly from <code>royn5094@protonmail.com</code>. These communications occurred <em>before</em> we filed any abuse report with NameSilo. The operator's own words prove that no compromise occurred:</p>
+
+<h3>Email #1 &mdash; February 16, 2026</h3>
+<blockquote>
+    &ldquo;We don't store seeds or keys, everything is done in your browser locally. Please remove your report. N.R.&rdquo;
+    <span class="src">From: royn5094@protonmail.com &rarr; PhishDestroy</span>
+</blockquote>
+<p><strong>Significance:</strong> First person (&ldquo;we&rdquo;). Defends the site as his own operation. No mention of any compromise or unauthorized access. Meanwhile, live network capture confirms <code>session_key = Base64(private_view_key)</code> transmitted to the server 40+ times per session.</p>
+
+<h3>Email #2 &mdash; February 17, 2026</h3>
+<blockquote>
+    &ldquo;This is the data we need to offer the service.&rdquo;
+    <span class="src">From: royn5094@protonmail.com &rarr; PhishDestroy</span>
+</blockquote>
+<p><strong>Significance:</strong> Within 24 hours, the operator contradicts his own prior statement. Yesterday: &ldquo;we don't store keys.&rdquo; Today: &ldquo;this is the data we need.&rdquo; Still first person. Still no mention of any hack.</p>
+
+<h3>Email #3 &mdash; February 17, 2026</h3>
+<blockquote>
+    &ldquo;Feel free to subpoena the domain registrar for my information to submit a complaint in the courts.&rdquo;
+    <span class="src">From: royn5094@protonmail.com &rarr; PhishDestroy</span>
+</blockquote>
+
+<div class="highlight">
+<strong>This statement is the most significant piece of evidence in this complaint.</strong> It was written on February 17 &mdash; before we contacted NameSilo, before any abuse report was filed, and before the &ldquo;compromise&rdquo; story existed. An operator running $550/month bulletproof hosting behind DDoS-Guard (specifically to resist takedowns) does not casually invite registrar scrutiny &mdash; unless he already knows the registrar will protect him. He did not say &ldquo;subpoena the hosting provider.&rdquo; He specifically said &ldquo;subpoena <em>the registrar</em>&rdquo; &mdash; NameSilo &mdash; with complete confidence.
+</div>
+
+<h3>Email #4 &mdash; February 23, 2026</h3>
+<blockquote>
+    &ldquo;I've hired a lawyer and a private investigator.&rdquo;<br>
+    &ldquo;Trezor and Ledger also get their view keys.&rdquo;
+    <span class="src">From: royn5094@protonmail.com &rarr; PhishDestroy</span>
+</blockquote>
+<p><strong>Significance:</strong> Sent the same day xmrwallet.cc and xmrwallet.biz were suspended. The lawyer never materialized. The claim that &ldquo;Trezor and Ledger also get view keys&rdquo; is technically illiterate &mdash; Trezor is a hardware wallet with no server component. Still no mention of any compromise. Still defends the code as his own.</p>
+
+<!-- ============================================ -->
+<h2 class="page-break">5. Timeline: The &ldquo;Compromise&rdquo; Story Was Fabricated After the Fact</h2>
+
+<table>
+    <thead>
+        <tr><th>Date</th><th>Event</th><th>Who mentioned &ldquo;hack&rdquo;?</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Feb 16</td><td>Operator emails: &ldquo;We don't store keys&rdquo;</td><td>Nobody</td></tr>
+        <tr><td>Feb 17</td><td>Operator emails: &ldquo;This is the data we need&rdquo;</td><td>Nobody</td></tr>
+        <tr><td>Feb 17</td><td>Operator emails: &ldquo;Subpoena the registrar&rdquo;</td><td>Nobody</td></tr>
+        <tr><td>Feb 23</td><td>Operator emails: &ldquo;I've hired a lawyer&rdquo;</td><td>Nobody</td></tr>
+        <tr><td>Feb 23</td><td>xmrwallet.cc and .biz SUSPENDED</td><td>Nobody</td></tr>
+        <tr><td><strong>Mar 4</strong></td><td><strong>NameSilo responds to abuse report</strong></td><td class="status-refused"><strong>NameSilo</strong></td></tr>
+    </tbody>
+</table>
+
+<p>The operator communicated with us four times. In every communication, he used first person, defended the code as his own creation, and never once referenced any hack, compromise, or unauthorized third-party access. <strong>The &ldquo;compromise&rdquo; narrative appeared for the first time on March 4 &mdash; in NameSilo's response.</strong> Not from the operator. From NameSilo.</p>
+
+<!-- ============================================ -->
+<h2>6. Additional Misconduct: VirusTotal Flag Removal</h2>
+
+<p>At the time of our investigation, xmrwallet.com was flagged as malicious by multiple security vendors on VirusTotal, including <strong>Fortinet</strong> (Phishing), <strong>ESET</strong>, <strong>Sophos</strong>, and others. Following NameSilo's involvement, the operator initiated removal of these security classifications. NameSilo's &ldquo;compromise&rdquo; narrative was used as justification to request delisting from threat intelligence databases.</p>
+
+<p>This constitutes active assistance in undermining the cybersecurity ecosystem's ability to protect users from a confirmed fraud operation.</p>
+
+<!-- ============================================ -->
+<h2>7. Specific RAA Violations</h2>
+
+<p>We believe NameSilo's conduct violates the following provisions of the 2013 Registrar Accreditation Agreement:</p>
+
+<ol>
+    <li><strong>Section 3.18 &mdash; Abuse Contact and Abuse Handling:</strong> NameSilo is required to &ldquo;take reasonable and prompt steps to investigate and respond appropriately to any reports of abuse.&rdquo; Fabricating an exculpatory narrative without evidence and in contradiction to the operator's own statements does not constitute an appropriate response.</li>
+    <li><strong>Section 3.18.1 &mdash; Abuse Point of Contact:</strong> NameSilo's abuse team functioned not as a neutral compliance body but as an advocate for the reported party, actively constructing a defense rather than investigating the report.</li>
+    <li><strong>Section 3.7.7 &mdash; WHOIS Accuracy:</strong> The operator maintains WHOIS privacy while conducting documented fraud. NameSilo's refusal to act on the domain preserves this protection for an active theft operation.</li>
+    <li><strong>ICANN Consensus Policy &mdash; DNS Abuse:</strong> Phishing and fraud constitute DNS abuse under ICANN's framework. NameSilo's response does not meet the standard of reasonable investigation expected of an accredited registrar.</li>
+</ol>
+
+<!-- ============================================ -->
+<h2>8. Evidentiary Record</h2>
+
+<p>The following evidence is publicly available and verifiable:</p>
+
+<table>
+    <thead>
+        <tr><th>Evidence</th><th>Location</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Full technical investigation (code analysis, network captures)</td><td>https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/</td></tr>
+        <tr><td>NameSilo cover-up analysis with operator email evidence</td><td>https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/posts/post-namesilo-xmrwallet-coverup.html</td></tr>
+        <tr><td>Archived deleted GitHub issues #35 and #36</td><td>https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/deleted.html</td></tr>
+        <tr><td>VirusTotal classification (multiple vendors)</td><td>https://www.virustotal.com/gui/domain/www.xmrwallet.com</td></tr>
+        <tr><td>Medium article with full analysis</td><td>https://phishdestroy.medium.com/xmrwallet-com-2953f35b8a79</td></tr>
+        <tr><td>GitHub repository with all evidence archived</td><td>https://github.com/phishdestroy/DO-NOT-USE-xmrwallet-com</td></tr>
+        <tr><td>Operator email screenshots (4 emails, Feb 16&ndash;23)</td><td>Available in the NameSilo cover-up analysis page above</td></tr>
+    </tbody>
+</table>
+
+<p>Operator email correspondence originals are preserved and can be provided to ICANN upon request with full headers for authentication.</p>
+
+<!-- ============================================ -->
+<h2>9. Requested Actions</h2>
+
+<p>We respectfully request that ICANN Contractual Compliance:</p>
+
+<ol>
+    <li><strong>Investigate NameSilo's handling of abuse report</strong> regarding xmrwallet.com, including the basis for their &ldquo;compromise&rdquo; determination and whether any technical evidence was produced.</li>
+    <li><strong>Determine whether NameSilo's abuse team has a conflict of interest</strong> or undisclosed relationship with the operator of xmrwallet.com, given the operator's foreknowledge that NameSilo would not act (&ldquo;subpoena the registrar&rdquo;).</li>
+    <li><strong>Review NameSilo's compliance with RAA Section 3.18</strong> regarding their obligation to investigate and respond appropriately to abuse reports.</li>
+    <li><strong>Consider enforcement action</strong> including formal notice of breach, remediation requirements, or referral for further investigation.</li>
+    <li><strong>Suspend or place serverHold on xmrwallet.com</strong> pending investigation, consistent with the actions taken by three other accredited registrars on the operator's other domains.</li>
+</ol>
+
+<!-- ============================================ -->
+<h2>10. Conclusion</h2>
+
+<p>As cybersecurity professionals, we consider it our duty to escalate this matter. The evidence is unambiguous: the operator built this theft infrastructure, maintains it across multiple domains and a Tor hidden service, and has been stealing cryptocurrency from users since 2016. Three ICANN-accredited registrars independently confirmed this assessment. NameSilo not only failed to act but actively constructed a false narrative to protect the operator.</p>
+
+<p>We do not make this complaint lightly. We have exhausted all available channels with NameSilo directly. Their abuse team's response was not negligent &mdash; it was deliberately protective of a confirmed fraud operation. The operator's own words, written before NameSilo's involvement, prove that the &ldquo;compromise&rdquo; story is a fabrication.</p>
+
+<p>We are available for further discussion, evidence submission, or technical briefing at ICANN's convenience.</p>
+
+<!-- ============================================ -->
+<div class="signature">
+    <p>Respectfully submitted,</p>
+    <br><br>
+    <div class="sig-name">PhishDestroy Research</div>
+    <div class="sig-title">Cybersecurity Threat Intelligence &amp; Domain Abuse Investigation</div>
+    <div class="sig-contact">
+        Web: https://phishdestroy.io<br>
+        Email: phishdestroy@proton.me<br>
+        GitHub: https://github.com/phishdestroy<br>
+        Twitter/X: @Phish_Destroy<br>
+        Telegram: @destroy_phish
+    </div>
+</div>
+
+<div class="footer-line">
+    PhishDestroy Research &mdash; ICANN Compliance Complaint &mdash; NameSilo LLC (IANA 1479) &mdash; xmrwallet.com &mdash; March 17, 2026<br>
+    This document and its attachments contain evidence of criminal activity submitted for regulatory review. Distribution authorized.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,478 @@
+var can_login_now = 1;
+function server_error_create(errormsg) {
+  alert(errormsg);
+  window.location.href = "/app.html#/login.html";
+}
+$("#login_account").submit(function (e) {
+  e.preventDefault();
+  if (can_login_now == 0) {
+    return;
+  }
+  can_login_now = 0;
+  msgBox = document.getElementById("message-box");
+  captchaContainer = document.getElementById("captcha-container");
+  submitBtn = document.getElementById("buttonlogin");
+  captchaLoader = document.getElementById("captcha-loader");
+  captchaInstructions = document.getElementById("captcha-instructions");
+
+  // Draggable Logic
+  dropZone = document.getElementById("drop-zone");
+  dragItem = document.getElementById("drag-item");
+
+  // Helper functions to get exact coordinates whether it's touch or mouse
+  function getClientX(e) {
+    if (e.touches) {
+      return e.touches[0].clientX;
+    } else {
+      return e.clientX;
+    }
+  }
+  function getClientY(e) {
+    if (e.touches) {
+      return e.touches[0].clientY;
+    } else {
+      return e.clientY;
+    }
+  }
+  function handleDragStart(e) {
+    isDragging = true;
+    trajectory = [];
+    let startX = parseFloat(dragItem.style.left) || 10;
+    let startY = parseFloat(dragItem.style.top) || 65;
+    trajectory.push({
+      x: startX,
+      y: startY,
+      t: Date.now()
+    });
+  }
+  function handleDragMove(e) {
+    if (!isDragging) {
+      return;
+    }
+
+    // Prevent default touch behavior (scrolling) while dragging
+    if (e.cancelable) {
+      e.preventDefault();
+    }
+    const rect = dropZone.getBoundingClientRect();
+    let x = getClientX(e) - rect.left;
+    let y = getClientY(e) - rect.top;
+
+    // Boundary checks
+    if (x < 0) {
+      x = 0;
+    }
+    if (x > 300) {
+      x = 300;
+    }
+    if (y < 0) {
+      y = 0;
+    }
+    if (y > 150) {
+      y = 150;
+    }
+    dragItem.style.left = x + "px";
+    dragItem.style.top = y + "px";
+    let roundX = Math.round(x);
+    let roundY = Math.round(y);
+
+    // FIX: Only record to trajectory if the mouse/finger actually moved to a new pixel.
+    // This prevents "0 wobble" false-positives caused by touchmove firing while standing still.
+    if (roundX !== lastTrackedX || roundY !== lastTrackedY) {
+      trajectory.push({
+        x: roundX,
+        y: roundY,
+        t: Date.now()
+      });
+      lastTrackedX = roundX;
+      lastTrackedY = roundY;
+    }
+  }
+  async function handleDragEnd(e) {
+    if (!isDragging) {
+      return;
+    }
+    isDragging = false;
+    finalX = parseFloat(dragItem.style.left);
+    finalY = parseFloat(dragItem.style.top);
+    await minePoW();
+  }
+
+  // Attach Mouse Events
+  dragItem.addEventListener("mousedown", handleDragStart);
+  document.addEventListener("mousemove", handleDragMove, {
+    passive: false
+  });
+  document.addEventListener("mouseup", handleDragEnd);
+
+  // Attach Touch Events (Mobile) 
+  dragItem.addEventListener("touchstart", handleDragStart, {
+    passive: false
+  });
+  document.addEventListener("touchmove", handleDragMove, {
+    passive: false
+  });
+  document.addEventListener("touchend", handleDragEnd);
+
+  // CPU-Intensive Proof of Work Function
+  async function minePoW() {
+    if (!powParams) {
+      return;
+    }
+    document.getElementById("pow-status").textContent = "Verifying cryptographic proof... (Generating CPU load)";
+    submitBtn.disabled = true;
+
+    // Yield to browser UI render before locking up CPU
+    await new Promise(r => setTimeout(r, 50));
+    const {
+      pow_c,
+      pow_t,
+      pow_prime
+    } = powParams;
+    let nonce = 0;
+
+    // Mining Loop: Find (nonce^2 + C) % Prime == T
+    while (true) {
+      // Because JavaScript numbers are double precision floats, 
+      // Number.MAX_SAFE_INTEGER easily supports this math.
+      let calc = (nonce * nonce + pow_c) % pow_prime;
+      if (calc === pow_t) {
+        solvedNonce = nonce;
+        break;
+      }
+      nonce++;
+
+      // Failsafe to prevent freezing forever
+      if (nonce > 5000000) {
+        break;
+      }
+    }
+    document.getElementById("pow-status").textContent = "Security verified. Ready.";
+    submitBtn.disabled = false;
+    submitBtn.click();
+  }
+
+  // Connect to Backend Generator
+  async function loadCaptcha() {
+    // 1. Show Container, Show Loader, Hide Puzzle
+    captchaContainer.style.display = "block";
+    dropZone.style.display = "none";
+    captchaLoader.style.display = "block";
+    captchaInstructions.textContent = "Loading secure challenge...";
+    document.getElementById("pow-status").textContent = "";
+    submitBtn.disabled = true;
+    try {
+      const res = await fetch("captcha_api.php");
+      const data = await res.json();
+      if (data.status === "success") {
+        // 2. Data arrived. Hide Loader, Show Puzzle
+        captchaLoader.style.display = "none";
+        dropZone.style.display = "block";
+        captchaInstructions.textContent = "Drag the red dot entirely inside the dark circle.";
+        document.getElementById("captcha-bg").src = data.image;
+        powParams = {
+          pow_c: data.pow_c,
+          pow_t: data.pow_t,
+          pow_prime: data.pow_prime
+        };
+
+        // Reset drag item
+        dragItem.style.left = data.start_x + "px";
+        dragItem.style.top = data.start_y + "px";
+        trajectory = [];
+        solvedNonce = null;
+        submitBtn.disabled = false;
+      }
+    } catch (error) {
+      captchaLoader.style.display = "none";
+      msgBox.innerHTML = "Failed to load security challenge. Please check your connection.";
+      msgBox.style.color = "red";
+      submitBtn.disabled = false;
+    }
+  }
+  var addedData = "";
+  if (captchaContainer.style.display === "block") {
+    if (solvedNonce === null) {
+      msgBox.textContent = "Please interact with the puzzle first.";
+      msgBox.style.color = "red";
+      can_login_now = 1;
+      return false;
+    }
+    addedData = "&final_x=" + encodeURIComponent(finalX) + "&final_y=" + encodeURIComponent(finalY) + "&trajectory=" + encodeURIComponent(JSON.stringify(trajectory)) + "&pow_nonce=" + encodeURIComponent(solvedNonce);
+  }
+  $("#buttonlogin").html("&nbsp;<img src=\"i/loadingaccount.svg\" alt=\"loading account...\" style=\"position: absolute; margin-top: -44px; margin-left: -55px;\">");
+  account_timeout = new Date().getTime();
+  try {
+    if (moneroSeed() == false) {
+      $("#buttonlogin").html("<span data-i18n=\"button_enter_my_account\">ENTER MY ACCOUNT</span>");
+      alert("Invalid login information!");
+      can_login_now = 1;
+      return;
+    }
+  } catch (e) {
+    $("#buttonlogin").html("<span data-i18n=\"button_enter_my_account\">ENTER MY ACCOUNT</span>");
+    server_error_create("Invalid Login Information!");
+    can_login_now = 1;
+    return;
+  }
+  var url = "auth.php";
+  var maxRetries = 3;
+  var retryCount = 0;
+  var _ge_tobytes = Module.cwrap("ge_tobytes", "void", ["number", "number"]);
+  function bytesToHex(bytes) {
+    return Array.from(bytes, byte => byte.toString(16).padStart(2, "0")).join("");
+  }
+  function stringToHex(str) {
+    const bytes = new TextEncoder().encode(str);
+    return bytesToHex(bytes);
+  }
+  function signMessage(message, privateSpendKey) {
+    try {
+      if (!privateSpendKey || !/^[0-9a-fA-F]{64}$/.test(privateSpendKey)) {
+        return null;
+      }
+
+      // FIX: Convert message to hex of bytes before hashing
+      const messageHex = stringToHex(message);
+      const messageHash = cnUtil.cn_fast_hash(messageHex);
+      if (!messageHash || messageHash.length !== 64) {
+        return null;
+      }
+      const publicSpendKey = cnUtil.sec_key_to_pub(privateSpendKey);
+      if (!publicSpendKey || publicSpendKey.length !== 64) {
+        return null;
+      }
+
+      // 3. Generate nonce `r` and compute the point `R = r * G`
+      const r = cnUtil.random_scalar();
+      if (!r || r.length !== 64) {
+        return null;
+      }
+      const R_encoded_hex = cnUtil.ge_scalarmult_base(r);
+      if (!R_encoded_hex || R_encoded_hex.length !== 64) {
+        return null;
+      }
+
+      // 4. Create challenge `e = H(R || P || M)`
+      const challengeData = R_encoded_hex + publicSpendKey + messageHash;
+      let e = cnUtil.cn_fast_hash(challengeData);
+      e = cnUtil.sc_reduce32(e); // Reduce to a valid scalar
+      if (!e || e.length !== 64) {
+        return null;
+      }
+
+      // 5. Compute `s = r + e * a` (where a is the private spend key)
+      const eTimesPrivate = cnUtil.sc_mul(e, privateSpendKey);
+      if (!eTimesPrivate || eTimesPrivate.length !== 64) {
+        return null;
+      }
+      const s = cnUtil.sc_add(r, eTimesPrivate);
+      if (!s || s.length !== 64) {
+        return null;
+      }
+
+      // The final signature is `(R, s)` concatenated
+      const signature = R_encoded_hex + s;
+
+      // This is often what is returned for verification purposes
+      const verification = publicSpendKey + signature;
+      return verification;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  // Function to convert a number to a 4-byte little-endian hex string
+  function toLittleEndianHex(num) {
+    const buf = new ArrayBuffer(4);
+    const view = new DataView(buf);
+    view.setUint32(0, num, true); // true for little-endian
+    const bytes = new Uint8Array(buf);
+    return Array.from(bytes).map(b => ("0" + b.toString(16)).slice(-2)).join("");
+  }
+  function get_subaddress(publicSpendHex, privateViewHex, majorIndex, minorIndex) {
+    // Validate input parameters
+    if (!publicSpendHex || publicSpendHex.length !== 64 || !cnUtil.valid_hex(publicSpendHex)) {
+      throw new Error("Invalid public spend key: must be a 64-character hex string");
+    }
+    if (!privateViewHex || privateViewHex.length !== 64 || !cnUtil.valid_hex(privateViewHex)) {
+      throw new Error("Invalid private view key: must be a 64-character hex string");
+    }
+    if (!Number.isInteger(majorIndex) || majorIndex < 0) {
+      throw new Error("Major index must be a non-negative integer");
+    }
+    if (!Number.isInteger(minorIndex) || minorIndex < 0) {
+      throw new Error("Minor index must be a non-negative integer");
+    }
+
+    // Step 1: Compute the subaddress secret key scalar
+    // "SubAddr\0" prefix in hex (null-terminated string "SubAddr")
+    const subAddrPrefix = "5375624164647200"; // Hex for "SubAddr\0"
+    // Convert indices to 4-byte little-endian hex
+    const majorIndexHex = toLittleEndianHex(majorIndex);
+    const minorIndexHex = toLittleEndianHex(minorIndex);
+    // Concatenate data for hashing
+    const data = subAddrPrefix + privateViewHex + majorIndexHex + minorIndexHex;
+
+    // Hash the concatenated data to get a scalar
+    let m = cnUtil.cn_fast_hash(data);
+    m = cnUtil.sc_reduce32(m); // Reduce to a valid scalar in the Ed25519 field
+
+    // Step 2: Compute the subaddress public spend key
+    // Compute m * G (base point) to get a point
+    const mG = cnUtil.ge_scalarmult_base(m);
+
+    // Add mG to the main public spend key (B + mG)
+    const subaddressPublicSpend = cnUtil.ge_add(publicSpendHex, mG);
+
+    // Step 3: Use the main wallet's public view key (unchanged for subaddresses)
+    // In Monero, subaddresses share the same public view key as the main address within the same account
+    const subaddressPublicView = keys.view.pub; // Assuming 'keys' is accessible; otherwise, must be passed
+
+    // Return the subaddress keys
+    return {
+      spend: {
+        pub: subaddressPublicSpend
+      },
+      view: {
+        pub: subaddressPublicView
+      }
+    };
+  }
+
+  // Helper function to encode public keys as a subaddress with the correct prefix (starting with '8')
+  function encode_subaddress(spendPub, viewPub) {
+    const prefix = cnUtil.encode_varint(moneroConfig.subAddressPrefix); // Use subaddress prefix from config (should be 42 for mainnet)
+    const data = prefix + spendPub + viewPub;
+    const checksum = cnUtil.cn_fast_hash(data).slice(0, cnUtil.ADDRESS_CHECKSUM_SIZE * 2);
+    return cnBase58.encode(data + checksum);
+  }
+  function generateAddresses(keys) {
+    temp_subaddresses = [];
+    try {
+      const numSubaddressesToGenerate = 5;
+      const majorIndex = 0;
+      for (let i = 1; i < numSubaddressesToGenerate; i++) {
+        const minorIndex = i;
+        let subaddressKeys;
+        if (majorIndex === 0 && minorIndex === 0) {
+          subaddressKeys = {
+            spend: {
+              pub: keys.spend.pub
+            },
+            view: {
+              pub: keys.view.pub
+            }
+          };
+        } else {
+          subaddressKeys = get_subaddress(keys.spend.pub, keys.view.sec, majorIndex, minorIndex);
+        }
+        temp_subaddresses.push(encode_subaddress(subaddressKeys.spend.pub, subaddressKeys.view.pub));
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  function makeAuthRequest() {
+    sign_seed = document.getElementById("private_seed").value.trim();
+    sign_seed = sign_seed.replace(/\s\s+/g, " ");
+    sign_seed = sign_seed.replace(/\n/g, " ");
+    sign_seed = sign_seed.trim();
+    var sign_seedlang = findseedlanguage(sign_seed);
+    if (sign_seedlang != "german") {
+      sign_seed = sign_seed.toLowerCase();
+    }
+    if (sign_seedlang == "") {
+      sign_seed = sign_seed.toLowerCase();
+      sign_seedlang = findseedlanguage(sign_seed);
+    }
+    sign_seed = mn_decode(sign_seed, sign_seedlang);
+    sign_keys = cnUtil.create_address(sign_seed);
+    let logindata = $("#login_account").serialize();
+    let timestampdata = new Date().getTime().toString();
+    let messagedata = "monerowallet:" + timestampdata;
+    let privateSpendKey = sign_keys.spend.sec;
+    let signedMessage = signMessage(messagedata, privateSpendKey);
+    let requestData = logindata + "&timestamp=" + encodeURIComponent(timestampdata) + "&verification=" + encodeURIComponent(signedMessage) + addedData;
+    $.ajax({
+      type: "POST",
+      url: url,
+      data: requestData,
+      contentType: "application/x-www-form-urlencoded"
+    }).done(function (data) {
+      retryCount = 0;
+      var returned_data = data.split(":");
+      if (returned_data.length == 3) {
+        if (returned_data[0] == "1") {
+          xmrwallet_viewkey = document.getElementById("public_viewkey").value.trim();
+          xmrwallet_address = document.getElementById("public_address").value.trim();
+          xmrwallet_spendkey = document.getElementById("private_spendkey").value.trim();
+          xmrwallet_seed = document.getElementById("private_seed").value.trim();
+          xmrwallet_seed = xmrwallet_seed.replace(/\s\s+/g, " ");
+          xmrwallet_seed = xmrwallet_seed.replace(/\n/g, " ");
+          xmrwallet_realseed = xmrwallet_seed.trim();
+          var seedlang = findseedlanguage(xmrwallet_realseed);
+          if (seedlang != "german") {
+            xmrwallet_realseed = xmrwallet_realseed.toLowerCase();
+          }
+          if (seedlang == "") {
+            xmrwallet_realseed = xmrwallet_realseed.toLowerCase();
+            seedlang = findseedlanguage(xmrwallet_realseed);
+          }
+          xmrwallet_realseed = mn_decode(xmrwallet_realseed, seedlang);
+          main_keys = cnUtil.create_address(xmrwallet_realseed);
+          generateAddresses(main_keys);
+          session_id = returned_data[1];
+          session_key = returned_data[2] + ":" + btoa(xmrwallet_address) + ":" + btoa(xmrwallet_viewkey);
+          window.location.hash = "#/dashboard.html";
+        } else if (retryCount < maxRetries) {
+          retryCount++;
+          console.warn("AJAX request failed. Retrying... (Attempt " + retryCount + " of " + maxRetries + ")");
+          makeAuthRequest();
+        } else {
+          console.error("AJAX request failed after " + maxRetries + " retries. Displaying error.");
+          $("#buttonlogin").html("<span data-i18n=\"button_enter_my_account\">ENTER MY ACCOUNT</span>");
+          server_error_create(returned_data[1]);
+          can_login_now = 1;
+        }
+      } else {
+        var block_retry_auth = 0;
+        if (returned_data.length == 2) {
+          if (returned_data[0] == "0") {
+            if (returned_data[1] == "75" || returned_data[1] == "76" || returned_data[1] == "77" || returned_data[1] == "78" || returned_data[1] == "79" || returned_data[1] == "80") {
+              msgBox.textContent = "";
+              msgBox.style.color = "#dc3545";
+              loadCaptcha();
+              can_login_now = 1;
+              block_retry_auth = 1;
+            }
+          }
+        }
+        if (block_retry_auth == 0) {
+          if (retryCount < maxRetries) {
+            retryCount++;
+            console.warn("AJAX request failed. Retrying... (Attempt " + retryCount + " of " + maxRetries + ")");
+            makeAuthRequest();
+          } else {
+            console.error("AJAX request failed after " + maxRetries + " retries. Displaying error.");
+            $("#buttonlogin").html("<span data-i18n=\"button_enter_my_account\">ENTER MY ACCOUNT</span>");
+            server_error_create(returned_data[1]);
+            can_login_now = 1;
+          }
+        }
+      }
+    }).fail(function () {
+      if (retryCount < maxRetries) {
+        retryCount++;
+        console.warn("AJAX request failed. Retrying... (Attempt " + retryCount + " of " + maxRetries + ")");
+        makeAuthRequest();
+      } else {
+        console.error("AJAX request failed after " + maxRetries + " retries. Displaying error.");
+        $("#buttonlogin").html("<span data-i18n=\"button_enter_my_account\">ENTER MY ACCOUNT</span>");
+        server_error_create("Unknown Error, Try again");
+        can_login_now = 1;
+      }
+    });
+  }
+  makeAuthRequest();
+});
