@@ -1,6 +1,6 @@
 <!--
 NameSilo, LLC (IANA #1479) / xmrwallet — public evidence repository
-Canonical: https://phishdestroy.io/namesilo-xmrwallet-coverup
+Canonical: https://phishdestroy.io/namesilo-evidence
 SEO topics: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, icann-compliance, phishdestroy
 -->
 
@@ -226,8 +226,8 @@ The moment we replied with the operator's own emails, the silencing started. **T
 Every screenshot in `evidence/` has a SHA-256 fingerprint in [`EVIDENCE_HASHES.txt`](EVIDENCE_HASHES.txt). To check that nothing has been tampered with:
 
 ```bash
-git clone https://github.com/phishdestroy/namesilo-xmrwallet-coverup.git
-cd namesilo-xmrwallet-coverup/evidence
+git clone https://github.com/phishdestroy/namesilo-evidence.git
+cd namesilo-evidence/evidence
 sha256sum -c ../EVIDENCE_HASHES.txt
 ```
 

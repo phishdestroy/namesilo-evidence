@@ -591,11 +591,11 @@ This story lives on every surface that will hold it. If any mirror goes down, th
 | Surface | URL | Type | Can they delete it? |
 |---|---|---|---|
 | **Canonical site** | [phishdestroy.io/namesilo-killed-our-twitter](https://phishdestroy.io/namesilo-killed-our-twitter) | HTML | Only via hosting provider |
-| **GitHub repo** | [github.com/phishdestroy/namesilo-xmrwallet-coverup](https://github.com/phishdestroy/namesilo-xmrwallet-coverup) | Markdown + evidence/ | DMCA only (US) |
-| **GitHub Pages** | [phishdestroy.github.io/namesilo-xmrwallet-coverup](https://phishdestroy.github.io/namesilo-xmrwallet-coverup/) | HTML mirror | Same as above |
-| **Codeberg** | codeberg.org/phishdestroy/namesilo-xmrwallet-coverup | Full repo mirror | Germany — DMCA doesn't apply |
-| **GitLab** | gitlab.com/phishdestroy/namesilo-xmrwallet-coverup | Full repo mirror | Different company, different process |
-| **SourceHut** | sr.ht/~phishdestroy/namesilo-xmrwallet-coverup | Full repo mirror | Minimal platform, different jurisdiction |
+| **GitHub repo** | [github.com/phishdestroy/namesilo-evidence](https://github.com/phishdestroy/namesilo-evidence) | Markdown + evidence/ | DMCA only (US) |
+| **GitHub Pages** | [phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence/) | HTML mirror | Same as above |
+| **Codeberg** | codeberg.org/phishdestroy/namesilo-evidence | Full repo mirror | Germany — DMCA doesn't apply |
+| **GitLab** | gitlab.com/phishdestroy/namesilo-evidence | Full repo mirror | Different company, different process |
+| **SourceHut** | sr.ht/~phishdestroy/namesilo-evidence | Full repo mirror | Minimal platform, different jurisdiction |
 | **Medium (main)** | [phishdestroy.medium.com/namesilo-lied...](https://phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam-then-took-down-our-twitter-4904d15d531e) | Article | Platform moderation |
 | **Medium (earlier)** | [phishdestroy.medium.com/xmrwallet-com...](https://phishdestroy.medium.com/xmrwallet-com-2953f35b8a79) | Article | Platform moderation |
 | **dev.to** | dev.to/phishdestroy/namesilo-lied | Article | Community platform, hard to suppress |
@@ -641,10 +641,10 @@ Because NameSilo, LLC (IANA #1479) and the operator are actively attempting to e
 
 **Layer 5 — Wayback pre-formed save links:**
 - `https://web.archive.org/save/https://phishdestroy.io/namesilo-killed-our-twitter`
-- `https://web.archive.org/save/https://github.com/phishdestroy/namesilo-xmrwallet-coverup`
+- `https://web.archive.org/save/https://github.com/phishdestroy/namesilo-evidence`
 - `https://web.archive.org/save/https://phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam-then-took-down-our-twitter-4904d15d531e`
-- `https://web.archive.org/save/https://codeberg.org/phishdestroy/namesilo-xmrwallet-coverup`
-- `https://web.archive.org/save/https://gitlab.com/phishdestroy/namesilo-xmrwallet-coverup`
+- `https://web.archive.org/save/https://codeberg.org/phishdestroy/namesilo-evidence`
+- `https://web.archive.org/save/https://gitlab.com/phishdestroy/namesilo-evidence`
 
 ### How to help mirror
 
@@ -652,13 +652,13 @@ If you want to help keep this alive:
 
 ```bash
 # Clone and pin to IPFS
-git clone https://github.com/phishdestroy/namesilo-xmrwallet-coverup.git
-cd namesilo-xmrwallet-coverup
+git clone https://github.com/phishdestroy/namesilo-evidence.git
+cd namesilo-evidence
 ipfs add -r evidence/ PROOFS.md README.md
 # Share the CID
 
 # Submit to Wayback Machine
-curl -s "https://web.archive.org/save/https://github.com/phishdestroy/namesilo-xmrwallet-coverup"
+curl -s "https://web.archive.org/save/https://github.com/phishdestroy/namesilo-evidence"
 
 # Submit to archive.today
 # Paste URL at https://archive.ph/
@@ -685,8 +685,8 @@ Contact: **[abuse@phishdestroy.io](mailto:abuse@phishdestroy.io)** — subject l
 ## 14. How to verify
 
 ```bash
-git clone https://github.com/phishdestroy/namesilo-xmrwallet-coverup.git
-cd namesilo-xmrwallet-coverup/evidence
+git clone https://github.com/phishdestroy/namesilo-evidence.git
+cd namesilo-evidence/evidence
 sha256sum -c ../EVIDENCE_HASHES.txt
 ```
 

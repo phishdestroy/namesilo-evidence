@@ -2,7 +2,7 @@
 
 *The full long-form investigation. Mirrored here so it cannot be silently taken down.*
 
-**Mirrors of this article:** [phishdestroy.io](https://phishdestroy.io/namesilo-killed-our-twitter) · [Medium](https://phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam-then-took-down-our-twitter-4904d15d531e) · this GitHub repo · [GitHub Pages](https://phishdestroy.github.io/namesilo-xmrwallet-coverup/)
+**Mirrors of this article:** [phishdestroy.io](https://phishdestroy.io/namesilo-killed-our-twitter) · [Medium](https://phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam-then-took-down-our-twitter-4904d15d531e) · this GitHub repo · [GitHub Pages](https://phishdestroy.github.io/namesilo-evidence/)
 
 **Compact version:** [`README.md`](README.md) · **Connection:** [`CONNECTION.md`](CONNECTION.md) · **Lies:** [`THE-LIES.md`](THE-LIES.md) · **Pressure:** [`PRESSURE.md`](PRESSURE.md) · **Evidence:** [`EVIDENCE_INDEX.md`](EVIDENCE_INDEX.md)
 

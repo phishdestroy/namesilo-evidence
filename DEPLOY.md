@@ -1,4 +1,4 @@
-# Deploy guide — `namesilo-xmrwallet-coverup`
+# Deploy guide — `namesilo-evidence`
 
 Two artifacts in this directory:
 
@@ -9,14 +9,14 @@ Two artifacts in this directory:
 
 ## 1 · Push the repo
 
-Recommended GitHub repo name: **`namesilo-xmrwallet-coverup`** (matches the URLs already baked into the docs).
+Recommended GitHub repo name: **`namesilo-evidence`** (matches the URLs already baked into the docs).
 
 ```bash
 cd proof-repo
 git init -b main
 git add .
 git commit -m "Public release: NameSilo / xmrwallet evidence package"
-git remote add origin git@github.com:phishdestroy/namesilo-xmrwallet-coverup.git
+git remote add origin git@github.com:phishdestroy/namesilo-evidence.git
 git push -u origin main
 ```
 
@@ -50,7 +50,7 @@ GitHub repo → **Settings → Pages**:
 - **Branch:** `main`, folder: `/docs`
 - **Save**.
 
-Default URL: `https://phishdestroy.github.io/namesilo-xmrwallet-coverup/`
+Default URL: `https://phishdestroy.github.io/namesilo-evidence/`
 
 ### Custom domain
 
@@ -61,8 +61,8 @@ Edit `docs/CNAME` (currently `namesilo-xmrwallet.phishdestroy.io`) to whatever s
 ## 3 · Verify integrity from a fresh clone
 
 ```bash
-git clone https://github.com/phishdestroy/namesilo-xmrwallet-coverup.git
-cd namesilo-xmrwallet-coverup/evidence
+git clone https://github.com/phishdestroy/namesilo-evidence.git
+cd namesilo-evidence/evidence
 sha256sum -c ../EVIDENCE_HASHES.txt
 ```
 
@@ -74,10 +74,10 @@ All ten files should report `OK`.
 
 ```bash
 # Wayback Machine — submit the GitHub repo
-curl -X POST "https://web.archive.org/save/https://github.com/phishdestroy/namesilo-xmrwallet-coverup"
+curl -X POST "https://web.archive.org/save/https://github.com/phishdestroy/namesilo-evidence"
 
 # Wayback Machine — submit the GitHub Pages mirror
-curl -X POST "https://web.archive.org/save/https://phishdestroy.github.io/namesilo-xmrwallet-coverup/"
+curl -X POST "https://web.archive.org/save/https://phishdestroy.github.io/namesilo-evidence/"
 
 # archive.today / archive.ph — manual: paste URL on https://archive.ph/
 # GhostArchive — manual: paste URL on https://ghostarchive.org/
@@ -189,15 +189,15 @@ git push
 # === Codeberg (Germany — DMCA doesn't apply) ===
 # Create account at codeberg.org, then:
 cd proof-repo
-git remote add codeberg https://codeberg.org/phishdestroy/namesilo-xmrwallet-coverup.git
+git remote add codeberg https://codeberg.org/phishdestroy/namesilo-evidence.git
 git push codeberg main
 
 # === GitLab (Netherlands — different company, different legal) ===
-git remote add gitlab https://gitlab.com/phishdestroy/namesilo-xmrwallet-coverup.git
+git remote add gitlab https://gitlab.com/phishdestroy/namesilo-evidence.git
 git push gitlab main
 
 # === SourceHut (indie, minimal, owner-operated) ===
-git remote add sourcehut git@git.sr.ht:~phishdestroy/namesilo-xmrwallet-coverup
+git remote add sourcehut git@git.sr.ht:~phishdestroy/namesilo-evidence
 git push sourcehut main
 
 # === Radicle (P2P git — no central server at all) ===
@@ -270,15 +270,15 @@ The more nodes pin the CID, the harder it is to take down. **Each pin is free. E
 ```bash
 # === Wayback Machine ===
 URLS=(
-  "https://github.com/phishdestroy/namesilo-xmrwallet-coverup"
-  "https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/PROOFS.md"
-  "https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/CONNECTION.md"
-  "https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/THE-LIES.md"
-  "https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/PRESSURE.md"
-  "https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/EVIDENCE_INDEX.md"
-  "https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/ARTICLE_FULL.md"
-  "https://github.com/phishdestroy/namesilo-xmrwallet-coverup/blob/main/XMRWALLET_TECHNICAL.md"
-  "https://phishdestroy.github.io/namesilo-xmrwallet-coverup/"
+  "https://github.com/phishdestroy/namesilo-evidence"
+  "https://github.com/phishdestroy/namesilo-evidence/blob/main/PROOFS.md"
+  "https://github.com/phishdestroy/namesilo-evidence/blob/main/CONNECTION.md"
+  "https://github.com/phishdestroy/namesilo-evidence/blob/main/THE-LIES.md"
+  "https://github.com/phishdestroy/namesilo-evidence/blob/main/PRESSURE.md"
+  "https://github.com/phishdestroy/namesilo-evidence/blob/main/EVIDENCE_INDEX.md"
+  "https://github.com/phishdestroy/namesilo-evidence/blob/main/ARTICLE_FULL.md"
+  "https://github.com/phishdestroy/namesilo-evidence/blob/main/XMRWALLET_TECHNICAL.md"
+  "https://phishdestroy.github.io/namesilo-evidence/"
   "https://phishdestroy.io/namesilo-killed-our-twitter"
   "https://phishdestroy.io/xmrwallet-namesilo-exposed"
   "https://phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam-then-took-down-our-twitter-4904d15d531e"
@@ -321,7 +321,7 @@ Once the repo is live and the GitHub Pages mirror resolves:
 - [ ] Add the GitHub repo URL to `phishdestroy.io/namesilo-killed-our-twitter` as a "GitHub mirror" link
 - [ ] Add the GitHub repo URL to the Medium article (canonical_url tag pointing to phishdestroy.io)
 - [ ] Verify Open Graph preview at:
-  - https://opengraph.dev/?url=https://phishdestroy.github.io/namesilo-xmrwallet-coverup/
+  - https://opengraph.dev/?url=https://phishdestroy.github.io/namesilo-evidence/
   - https://cards-dev.twitter.com/validator
   - https://www.opengraph.xyz/
 - [ ] Submit the sitemap to Google Search Console: `https://phishdestroy.io/namesilo-killed-our-twitter/sitemap.xml`

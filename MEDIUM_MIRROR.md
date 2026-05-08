@@ -57,9 +57,9 @@ Permanently archived **before** any deletion attempt could succeed:
 
 | Repo | URL | Purpose |
 |---|---|---|
-| `namesilo-xmrwallet-coverup` (this repo) | https://github.com/phishdestroy/namesilo-xmrwallet-coverup | The cover-up case file |
+| `namesilo-evidence` (this repo) | https://github.com/phishdestroy/namesilo-evidence | The cover-up case file |
 | `DO-NOT-USE-xmrwallet-com` | https://github.com/phishdestroy/DO-NOT-USE-xmrwallet-com | Earlier technical evidence |
-| GitHub Pages mirror (this repo, `docs/`) | https://phishdestroy.github.io/namesilo-xmrwallet-coverup/ | SEO-optimized static-site copy |
+| GitHub Pages mirror (this repo, `docs/`) | https://phishdestroy.github.io/namesilo-evidence/ | SEO-optimized static-site copy |
 | Custom domain (planned) | https://namesilo-xmrwallet.phishdestroy.io | via `docs/CNAME` |
 
 ---
@@ -74,9 +74,9 @@ URLS=(
   "https://phishdestroy.io/xmrwallet-namesilo-exposed"
   "https://phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam-then-took-down-our-twitter-4904d15d531e"
   "https://phishdestroy.medium.com/xmrwallet-com-2953f35b8a79"
-  "https://github.com/phishdestroy/namesilo-xmrwallet-coverup"
+  "https://github.com/phishdestroy/namesilo-evidence"
   "https://github.com/phishdestroy/DO-NOT-USE-xmrwallet-com"
-  "https://phishdestroy.github.io/namesilo-xmrwallet-coverup/"
+  "https://phishdestroy.github.io/namesilo-evidence/"
 )
 for u in "${URLS[@]}"; do
   echo "[wayback] $u"

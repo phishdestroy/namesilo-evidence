@@ -8,8 +8,8 @@ Every external claim referenced in this repository, with at least one immutable 
 - **Medium:** https://phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam-then-took-down-our-twitter-4904d15d531e
 - **Earlier scam write-up:** https://phishdestroy.medium.com/xmrwallet-com-2953f35b8a79
 - **dev.to:** see `article.devto.md` in upstream working tree (pending publication)
-- **GitHub repo (this one):** https://github.com/phishdestroy/namesilo-xmrwallet-coverup
-- **GitHub Pages mirror:** https://phishdestroy.github.io/namesilo-xmrwallet-coverup/
+- **GitHub repo (this one):** https://github.com/phishdestroy/namesilo-evidence
+- **GitHub Pages mirror:** https://phishdestroy.github.io/namesilo-evidence/
 
 ## NameSilo's public statement of March 13, 2026
 
@@ -76,8 +76,8 @@ The X/Twitter account is currently locked. The local screenshots in [`evidence/`
 To verify the integrity of every screenshot in this repository:
 
 ```bash
-git clone https://github.com/phishdestroy/namesilo-xmrwallet-coverup.git
-cd namesilo-xmrwallet-coverup/evidence
+git clone https://github.com/phishdestroy/namesilo-evidence.git
+cd namesilo-evidence/evidence
 sha256sum -c ../EVIDENCE_HASHES.txt
 ```
 
