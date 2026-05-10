@@ -337,15 +337,15 @@ This story is being kept alive in multiple places, intentionally. Every link bel
 ### IPFS — Permanent, Decentralized, No "Report" Button
 
 - **ENS + IPFS:** [`phishdestroy.eth.limo`](https://phishdestroy.eth.limo/) — Ethereum Name Service → IPFS. No server, no host, no takedown mechanism.
-- **IPFS CID:** `bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`
+- **IPFS CID:** `bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq`
 - **Evidence page:** [`phishdestroy.eth.limo/evidence.html`](https://phishdestroy.eth.limo/evidence.html) — all 16 screenshots, articles, Medium mirror, Wayback links
 - **4EVERLAND hosting:** [`ipfs-archive-nsdim0vd-phishdestroy.ipfs.4everland.app`](https://ipfs-archive-nsdim0vd-phishdestroy.ipfs.4everland.app/)
 - **IPFS Gateways (all serve the same CID):**
-  - [`dweb.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`](https://dweb.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y/)
-  - [`4everland.io/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`](https://4everland.io/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y/)
-  - [`w3s.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`](https://w3s.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y/)
-  - [`nftstorage.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`](https://nftstorage.link/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y/)
-  - [`gateway.ipfs.io/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y`](https://gateway.ipfs.io/ipfs/bafybeibjtofdum5r3dldvu4wmwpilm7smtc2nn3c2moe7gpnhpv5unn63y/)
+  - [`dweb.link/ipfs/bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq`](https://dweb.link/ipfs/bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq/)
+  - [`4everland.io/ipfs/bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq`](https://4everland.io/ipfs/bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq/)
+  - [`w3s.link/ipfs/bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq`](https://w3s.link/ipfs/bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq/)
+  - [`nftstorage.link/ipfs/bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq`](https://nftstorage.link/ipfs/bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq/)
+  - [`gateway.ipfs.io/ipfs/bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq`](https://gateway.ipfs.io/ipfs/bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq/)
 
 ### Web — Traditional Hosting
 
