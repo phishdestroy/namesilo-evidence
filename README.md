@@ -49,6 +49,10 @@ But experience in scams definitely doesn’t mean intelligence. You’ll see exa
 And yes, this isn't even the beginning—this is just the premiere. The main feature is coming later, so grab your popcorn. 
 
 As for the Russian scammers—you'd better learn to swim, pack your prison bags, and whatever you do, **don't drop the soap**. <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Soap.webp" alt="Soap" width="25" height="25" /> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Food%20and%20Drink/Bottle%20With%20Popping%20Cork.webp" alt="Bottle With Popping Cork" width="25" height="25" />
+<img width="834" height="456" alt="image" src="https://github.com/user-attachments/assets/1bc7eeb5-66ce-4120-a104-5ddbd99ef7cf" />
+
+The reaction of these foolish Russians to the truth when it becomes impossible to delete... *boo-hoo?* 
+It's way too early for tears. For now, go ahead and try suing **IPFS**—we'll just pretend there aren't 5 different providers and automated deployments backing it up.
 
 
 > **A note on what you're reading and why we were ready.**
