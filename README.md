@@ -23,6 +23,34 @@ SEO topics: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, i
 
 ---
 
+
+### 🚨 Quick Update
+
+Since **NameSilo** <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Mouse%20Face.webp" alt="Mouse Face" width="25" height="25" /> has a team of Russian scammers (proven), they got scared—just like any Russian scammers would. They stopped protecting their domain and transferred it to **Namecheap**. 
+
+**[The first part of the investigation is here]([#](https://phishdestroy.eth.limo/))**  https://phishdestroy.eth.limo/
+
+This investigation will **not** be concluded until there are clear answers: what are Russian scammers doing inside a registrar that buys domains from itself to launder money?
+NameSilo has been actively involved in scams and covering up negative publicity for years—specifically regarding its “awesome” domain registrar and its fraudulent activities. 
+
+Should we turn a blind eye to **12 Russian scammers** with extensive experience in shady schemes? Did no one see anything? They claim they didn’t get anything out of it, and that they don’t even buy domains from themselves—yet their design is just *so* awesome! 
+
+But experience in scams definitely doesn’t mean intelligence. You’ll see exactly that in our investigation, as we outsmarted the old-timers at their own game.
+
+**Spoiler alert:** he is an interesting guy. People don't like his articles and the worldview he expresses in Russian—and judging by his older posts, they never did. (He is simply very narrow-minded, which is clearly evident from his other projects and their designs).
+
+🚨 **Mikhail Chudinov — DevOps** *(full infrastructure access)*
+* **Location:** Argentina (crypto-haven relocation)
+* **Background:** Head of IT at **SuperKopilka** (a Russian financial pyramid, collapsed in 2017) for ~10 years. 
+* **Other Roles:** COO at AtomX.online (crypto project), Poker Club Manager at Red Rock. 
+* **Self-described:** “Crypto enthusiast.”
+
+> ⚠️ **Takeaway:** This person holds the DevOps keys to all NameSilo infrastructure. His resume is literally: financial pyramid + poker + crypto.
+And yes, this isn't even the beginning—this is just the premiere. The main feature is coming later, so grab your popcorn. 
+
+As for the Russian scammers—you'd better learn to swim, pack your prison bags, and whatever you do, **don't drop the soap**. <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Soap.webp" alt="Soap" width="25" height="25" /> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Food%20and%20Drink/Bottle%20With%20Popping%20Cork.webp" alt="Bottle With Popping Cork" width="25" height="25" />
+
+
 > **A note on what you're reading and why we were ready.**
 >
 > We knew the operator's playbook before NameSilo, LLC (IANA #1479) ever opened their mouth. We'd been watching since 2016. We'd seen him delete real victim reviews off Trustpilot. We'd seen the fake DMCAs on GitHub. We'd seen the puppet Twitter accounts mass-reporting researchers. We'd seen the 50+ paid SEO articles burying the complaints. We'd seen him scrub BitcoinTalk threads, nuke YouTube videos, wipe Reddit posts. Eight years of the same pattern: never answer the evidence, just make the person who published it disappear.
