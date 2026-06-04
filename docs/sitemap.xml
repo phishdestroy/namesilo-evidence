@@ -77,4 +77,25 @@
     <priority>0.9</priority>
   </url>
 
+
+  <url>
+    <loc>https://phishdestroy.io/namesilo-evidence/namesilo-scan</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://phishdestroy.io/namesilo-evidence/namesilo-clusters</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://phishdestroy.io/namesilo-evidence/namesilo-domains</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
