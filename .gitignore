@@ -1,20 +1,22 @@
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Editors
-.vscode/
-.idea/
-*.swp
-*~
 
 # Build outputs
-dist/
-build/
-node_modules/
-
+# Editors
 # Local notes — never commit working drafts
+# OS
+*.swp
+*~
+.DS_Store
+.idea/
+.vscode/
 NOTES.md
 TODO.md
+Thumbs.db
+build/
+desktop.ini
+dist/
 draft-*.md
+node_modules/
+pkg/raw_data/*.csv
+pkg/raw_data/*.jsonl
+pkg/raw_data/*.json
+pkg/1479_full.csv

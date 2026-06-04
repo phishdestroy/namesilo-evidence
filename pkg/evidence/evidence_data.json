@@ -1,0 +1,333 @@
+{
+  "sample_phish": [
+    "a2milk-aqjvnt.rest",
+    "ab-inbev-kqvtx.icu",
+    "abb-aqjvnt.rest",
+    "aberdeentjrzql.info",
+    "ablv-aqjvntps.rest",
+    "abordo-blqzen.rest",
+    "aboukir-kqvtx.icu",
+    "absheron-kqvtx.icu",
+    "acb-aqjvntps.rest",
+    "acecook-blqzenua.rest",
+    "acelera-lqzvmra.rest",
+    "acig-mznpr.icu",
+    "acuario-aqjvntps.rest",
+    "acuario-bxqtuv.rest",
+    "adaro-aqjvntps.rest",
+    "adecco-hqzvlma.rest",
+    "adidas-eg-tkwse.icu",
+    "aditum-bzsqme.rest",
+    "adnoc-gwvpa.icu",
+    "adriatic-tkwse.icu",
+    "adriaticmarinas-vqjpl.icu",
+    "aerodromi-kqvtx.icu",
+    "aeroflot-jqvzmla.rest",
+    "aerogal-cqmdse.rest",
+    "aerolineas-pqzvrna.rest",
+    "aeromexico-aqjvntps.rest",
+    "afhold-blqzen.rest",
+    "afran-bxqtuv.rest",
+    "afriquia-kqvtx.icu",
+    "afterpay-blqzen.rest"
+  ],
+  "gambling_data": [
+    [
+      "-1854647327",
+      "NEGO/BOLA Network",
+      [
+        "nego178.com",
+        "bola108.org",
+        "anda89.com",
+        "apidewa99.com",
+        "bisa77.net"
+      ],
+      2341
+    ],
+    [
+      "84092912",
+      "APACE/KOMPAK Network",
+      [
+        "apace99.com",
+        "kompak138.org",
+        "mafiabola99.org",
+        "mentos69.org",
+        "monata138.org"
+      ],
+      2296
+    ],
+    [
+      "-143797184",
+      "Kimmikka/Puputoto Network",
+      [
+        "kimmikka.com",
+        "puputoto.net",
+        "kudawinx.com",
+        "lalatwin.com",
+        "borototo.net"
+      ],
+      2278
+    ],
+    [
+      "1311399074",
+      "Pio4D / Politogel Network",
+      [
+        "pio4d.net",
+        "piototo.net",
+        "politogel.net",
+        "yang4d.net",
+        "yang77.net"
+      ],
+      1767
+    ],
+    [
+      "1280084436",
+      "IBUKOTA / IX88 Network",
+      [
+        "ibukota33.org",
+        "ix88.org",
+        "bosslot168.net",
+        "dewi168login.com",
+        "savaya555.org"
+      ],
+      1742
+    ],
+    [
+      "661119750",
+      "JIWA4D / Made4D Network",
+      [
+        "jiwa4d.net",
+        "made4d.net",
+        "gio4d.org",
+        "luxury178.org",
+        "man988.org"
+      ],
+      1697
+    ],
+    [
+      "385780157",
+      "KOMPAS / LUNAR Network",
+      [
+        "kompas33.net",
+        "lunar78.net",
+        "lunar89.net",
+        "mentogel.net",
+        "demen888.com"
+      ],
+      1487
+    ],
+    [
+      "59565267",
+      "BOLA212 / AKBAR Network",
+      [
+        "bola212.org",
+        "bola3388.org",
+        "akbar888.com",
+        "aliran88.com",
+        "aliran999.com"
+      ],
+      1436
+    ],
+    [
+      "-679793015",
+      "HONGKONGQQ / ASAHAN Network",
+      [
+        "hongkongqq.org",
+        "asahan69.net",
+        "bangka69.net",
+        "bantu188.net",
+        "barokah69.net"
+      ],
+      1423
+    ],
+    [
+      "-1907179084",
+      "BETDICE / BETHANA Global",
+      [
+        "betdice.org",
+        "bethana.org",
+        "candawin.org",
+        "liverpoolbet.net",
+        "ceo33.org"
+      ],
+      1396
+    ],
+    [
+      "715096239",
+      "MURAD3 / VVN111 Network",
+      [
+        "murad3.com",
+        "vvn111.com",
+        "detik238.net",
+        "mimi30.net",
+        "jakarta89.org"
+      ],
+      1335
+    ]
+  ],
+  "suspicious_ns": [
+    {
+      "domain": "838slot.net",
+      "title": "Welcome to 838slot.net"
+    },
+    {
+      "domain": "9mmbet.online",
+      "title": "Welcome to 9mmbet.online"
+    },
+    {
+      "domain": "adultaffiliates.link",
+      "title": "adultaffiliates.link"
+    },
+    {
+      "domain": "ahhaslot88.net",
+      "title": "Welcome to ahhaslot88.net"
+    },
+    {
+      "domain": "aiadultgame.net",
+      "title": "Welcome to aiadultgame.net"
+    },
+    {
+      "domain": "alphabetvr.org",
+      "title": "Welcome to alphabetvr.org"
+    },
+    {
+      "domain": "ampbonanzaslot88.pro",
+      "title": "ampbonanzaslot88.pro"
+    },
+    {
+      "domain": "badbettie.global",
+      "title": "Welcome to badbettie.global"
+    },
+    {
+      "domain": "bestelivecasinos.info",
+      "title": "Welcome to bestelivecasinos.info"
+    },
+    {
+      "domain": "betasurveys.net",
+      "title": "Welcome to betasurveys.net"
+    },
+    {
+      "domain": "betfiery.icu",
+      "title": "betfiery.icu"
+    },
+    {
+      "domain": "betfiery.info",
+      "title": "betfiery.info"
+    },
+    {
+      "domain": "betfiery.online",
+      "title": "betfiery.online"
+    },
+    {
+      "domain": "betfiery.store",
+      "title": "betfiery.store"
+    },
+    {
+      "domain": "betgede.site",
+      "title": "Welcome to betgede.site"
+    },
+    {
+      "domain": "betgede.top",
+      "title": "Welcome to betgede.top"
+    },
+    {
+      "domain": "betgede.xyz",
+      "title": "Welcome to betgede.xyz"
+    },
+    {
+      "domain": "bethlehemnh.net",
+      "title": "Welcome to bethlehemnh.net"
+    },
+    {
+      "domain": "betnflonline.net",
+      "title": "Welcome to betnflonline.net"
+    },
+    {
+      "domain": "better-hair.net",
+      "title": "Welcome to better-hair.net"
+    },
+    {
+      "domain": "bettercallbrett.net",
+      "title": "Welcome to bettercallbrett.net"
+    },
+    {
+      "domain": "betterlightingbrighterfuture.com",
+      "title": "betterlightingbrighterfuture.com is for sale"
+    },
+    {
+      "domain": "betthethao.net",
+      "title": "Welcome to betthethao.net"
+    },
+    {
+      "domain": "betz.info",
+      "title": "betz.info"
+    },
+    {
+      "domain": "bisex101.net",
+      "title": "Welcome to bisex101.net"
+    },
+    {
+      "domain": "bizzocasino.one",
+      "title": "Welcome to bizzocasino.one"
+    },
+    {
+      "domain": "bmwslot.net",
+      "title": "Welcome to bmwslot.net"
+    },
+    {
+      "domain": "bobotohslot.info",
+      "title": "Welcome to bobotohslot.info"
+    },
+    {
+      "domain": "bonsexe.net",
+      "title": "Welcome to bonsexe.net"
+    },
+    {
+      "domain": "buildbotbetter.net",
+      "title": "Welcome to buildbotbetter.net"
+    }
+  ],
+  "cn_clusters": [
+    [
+      "-606577425",
+      "91JQ \u5c31\u8981\u6fc0\u60c5",
+      3915,
+      "\u4e2d\u6587\u6210\u4eba\u5185\u5bb9\u5e73\u53f0",
+      [
+        "91jq157jq.work",
+        "91jq178jq.work",
+        "91jqtv.work",
+        "91jq1jq.work"
+      ]
+    ],
+    [
+      "-186475843",
+      "992kp \u5feb\u6a02\u770b\u7247",
+      3858,
+      "\u4e2d\u6587\u76d7\u7248\u5f71\u7247\u5e73\u53f0",
+      [
+        "337bj24.xyz",
+        "qqd8qqd.xyz",
+        "qqp3qqp.xyz",
+        "39icao.xyz"
+      ]
+    ],
+    [
+      "-1901236982",
+      "nc18 \u5ae9\u8349\u5165\u53e3",
+      2798,
+      "\u4e2d\u6587\u6210\u4eba\u5185\u5bb9\u5e73\u53f0",
+      [
+        "332t332.xyz",
+        "332y332.xyz",
+        "336f336.xyz",
+        "886u886.xyz"
+      ]
+    ]
+  ],
+  "total_phish": 3726,
+  "total_gambling": 19198,
+  "total_cn": 10571,
+  "total_ns": 7438,
+  "total_suspicious_ns": 144
+}

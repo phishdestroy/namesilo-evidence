@@ -1,0 +1,198 @@
+====================================================================
+  NAMESILO DOMAINS — GARBAGE ANALYSIS REPORT
+  [Historical — initial scan pass, pre-rescan baseline]
+====================================================================
+  Total domains attempted:     3,397,413
+  Failed to connect (dead):    3,242,664  (95.4%)
+  Successfully fetched:          154,749  (4.6%)
+
+────────────────────────────────────────────────────────────────────
+  PAGE TYPE BREAKDOWN
+────────────────────────────────────────────────────────────────────
+  Parking pages (registrar placeholder)              3,726  (  0.1%)
+  Domain for sale                                        1  (  0.0%)
+  Default server page (Apache/nginx/cPanel)            636  (  0.0%)
+  Coming soon / Under construction                     551  (  0.0%)
+  Empty page (< 2KB / < 20 words)                   79,597  (  2.3%)
+  Low content (20-199 words)                         14,294  (  0.4%)
+  Redirect to external domain                         3,156  (  0.1%)
+  404 Not Found                                         774  (  0.0%)
+  5xx Server Error                                      557  (  0.0%)
+  Active page with forms (potential phishing)         4,315  (  0.1%)
+  Active content (200+ words)                        47,142  (  1.4%)
+
+  TOTAL JUNK (parking+empty+default+sale+soon):      98,805  (  2.9%)
+  TOTAL DEAD (no HTTP response):                  3,242,664  ( 95.4%)
+  TOTAL GARBAGE (junk + dead):
+  -> 3,341,469 of 3,397,413 = 98.4%
+
+────────────────────────────────────────────────────────────────────
+  PARKING SERVICES
+────────────────────────────────────────────────────────────────────
+  namesilo                    862  (  0.0%)
+    -> harmonybola.com | Welcome to harmonybola.com
+    -> harpentfoundation.com | harpentfoundation.com
+    -> harrietdenton.com | Welcome to harrietdenton.com
+    -> harttaylor.com | Welcome to harttaylor.com
+    -> harymartinez.com | Welcome to harymartinez.com
+  sedo                        259  (  0.0%)
+    -> bildschirmschoner.org | World | Domains | Hosting | SSL
+    -> aimatou.com | aimatou.com is For Sale
+    -> wedding-photography-cost.click | wedding-photography-cost.click
+    -> 18x78.com | 18x78.com - Adult Resources
+    -> bloof.com | World | Domains | Hosting | SSL
+  godaddy                     121  (  0.0%)
+    -> taobaopartners.vip | taobaopartners.vip
+    -> birdjinn.com | 404 Not Found
+    -> muchbetter.world | Your world. Much Better.
+    -> gdour.com | gdour.com
+    -> bytenbits.com | bytenbits.com
+  dan                          39  (  0.0%)
+    -> 224dan.com | Chinese adult content
+    -> cartorder.xyz | cartorder.xyz is for sale
+    -> 334dan.com | Chinese adult content
+    -> 335dan.com | Chinese video streaming
+    -> csasudan.com | Sudanese maritime agency
+  uniregistry                  14  (  0.0%)
+    -> harta999.com | HARTA999 Indonesian gambling
+    -> biru123.com | BIRU123 Indonesian gambling
+    -> menara11.com | MENARA11 Indonesian gambling
+    -> mentordeempresas.com | Business mentor site
+    -> dinda4d.com | DINDA4D Indonesian gambling
+  parkingcrew                   1  (  0.0%)
+    -> apptracking.com | ERRP | Expired Registration Recovery Policy
+  afternic                      1  (  0.0%)
+    -> ifsum.com | Demo Homepage
+
+────────────────────────────────────────────────────────────────────
+  DUPLICATES — FAVICON HASH CLUSTERS
+  (single hash = thousands of domains sharing one template)
+────────────────────────────────────────────────────────────────────
+     1,118 domains  mmh3=509258457     e.g.: igmihti.lat, ilainto.lat, ileevti.lat
+       588 domains  mmh3=1420087666    e.g.: 934hsck.com, 938hsck.com, 941hsck.com
+       529 domains  mmh3=-1854647327   e.g.: saku777.org, jeruk88.org, surat88.org
+       389 domains  mmh3=59565267      e.g.: surat303.org, bosmuda88.net, wisma168.net
+       357 domains  mmh3=-1901236982   e.g.: 3ncwz.com, 3ncyz.com, nctc16.xyz
+       315 domains  mmh3=1390137261    e.g.: 9539yh.com, 9553yh.com, 9572yh.com
+       301 domains  mmh3=1772144425    e.g.: aipabbs.com, aipapapa.com, aiqdy.com
+       292 domains  mmh3=-2109980150   e.g.: aimiys.com, 93nnn.com, 93pppp.com
+       282 domains  mmh3=-1849004702   e.g.: htnew07.vip, 6sjp4yk3.vip, evg0xlql.vip
+       274 domains  mmh3=1899675440    e.g.: 940hsck.com, 944hsck.com, 951hsck.com
+       264 domains  mmh3=-634689799    e.g.: ainipa2.com, aippys.com, aiweinai.com
+       245 domains  mmh3=57920713      e.g.: aixiubbs.com, 9393qq.com, 9393ss.com
+       220 domains  mmh3=-1274840928   e.g.: gerhana168.net, evos777.net, keluargatoto.org
+       188 domains  mmh3=-606577425    e.g.: 971ab.com, 99d20.com, 99d23.com
+       168 domains  mmh3=-824476120    e.g.: 49kvkv.com, 91ddx.com, xxa22.com
+  -> Total domains in top clusters: 6,307
+
+────────────────────────────────────────────────────────────────────
+  DUPLICATES — BODY SIMHASH CLUSTERS
+  (identical or near-identical content)
+────────────────────────────────────────────────────────────────────
+    35,261 domains  sh=aba93f0a496b3bcd  e.g.: harmonylamp.com, harmonyreset.com, harmonyweight.com
+    12,364 domains  sh=e6a0f485b46548e3  e.g.: dil.lat, fablewynth.lat, fetchora.lat
+     5,693 domains  sh=933b9e3f64b5f885  e.g.: mg62.lol, medic.life, 1mg7b.lol
+     3,964 domains  sh=fda25483a4611456  e.g.: dungeonmart.biz, kopigajahmada.biz, harmonysolutions4u.com
+     3,449 domains  sh=efa0d085a44108f1  e.g.: harmuniplus.com, hartanahselangorkl.com, hartgraveshomes.com
+     2,801 domains  sh=ed245c02a46414c3  e.g.: harmonyspaatgiovanni.com, harrykaranja.com, harrypotterfan.com
+     2,313 domains  sh=b5141042a54585e3  e.g.: harmonyhomeske.com, harrisburgheatingandcooling.com, hasanhossaingroup.com
+     2,078 domains  sh=d76191854d0d1c14  e.g.: mdg89.net, nuklir69.net, nuklir777.net
+     1,450 domains  sh=f4a01006f0948743  e.g.: vip6.lol, sipari.lol, bkplay.icu
+     1,364 domains  sh=b7a61002a44cbc6d  e.g.: harnishgroup.com, hartpublishingusa.com, hashratecapital.com
+     1,283 domains  sh=820512e2784b3db1  e.g.: resimedia.help, glyphology.info, viouth.online
+       962 domains  sh=bda67083ad4494c5  e.g.: hatestudio.com, hatsbytin.com, aimarketinc.com
+       951 domains  sh=ceee4c57af1294f4  e.g.: 9679yl.com, 97sbvip.com, 987yl.com
+       810 domains  sh=bfccbbeff0d392b4  e.g.: haultaildrivers.com, hellboxarmory.com, aimfury.com
+       787 domains  sh=d9bbef4c69e96a4d  e.g.: aivora.help, best-slots.help, lottery7xm.info
+  -> Total domains in top clusters: 78,610
+
+────────────────────────────────────────────────────────────────────
+  DUPLICATES — TITLE CLUSTERS
+  (thousands of domains with identical page title = same template)
+────────────────────────────────────────────────────────────────────
+    35,261 domains  title="406 Not Acceptable"  e.g.: harmonylamp.com, harmonyreset.com, harmonyweight.com
+    15,462 domains  title="One moment, please...Loader"  e.g.: dungeonmart.biz, kopigajahmada.biz, harmonyhomeske.com
+    12,379 domains  title="Redirecting..."  e.g.: dil.lat, fablewynth.lat, fetchora.lat
+     4,595 domains  title="Loading"  e.g.: 78556.biz, hee33.com, aimiys.com
+     2,790 domains  title="403 Forbidden"  e.g.: clickformatch.life, connectyourheart.life, fastmatchnow.life
+     1,861 domains  title="404 Not Found"  e.g.: jj-adams.life, location-guide.info, trilonaibot.life
+     1,009 domains  title="Loading, please wait..."  e.g.: 9584z.com, 9679yl.com, 97sbvip.com
+       897 domains  title="Verifying your connection..."  e.g.: jpmonclasale.vip, debiox.vip, magyarcare.vip
+       603 domains  title="Just a moment..."  e.g.: xsf.life, verify-id234445.life, de-de.homes
+       588 domains  title="Checking your browser..."  e.g.: ramhome.link, hasely.com, hdgf.com
+       521 domains  title="Random Redirect Page"  e.g.: htnew07.vip, 6sjp4yk3.vip, evg0xlql.vip
+       515 domains  title="Index of /"  e.g.: nitol.life, hauahz.info, hauaqu.info
+       451 domains  title="Success!"  e.g.: wisestrength.info, wisestrengthhub.info, wisestrengthlife.info
+       353 domains  title="503 Service Temporarily Unavailable"  e.g.: vitalbalancefg.info, crystalkohri.com, cp10.xyz
+       310 domains  title="Welcome to nginx!"  e.g.: vitalbasics.info, vitalbasicsa.info, vitalbasicsb.info
+  -> Total domains in top clusters: 78,980
+
+────────────────────────────────────────────────────────────────────
+  INFRASTRUCTURE
+────────────────────────────────────────────────────────────────────
+  Unique server fingerprints:     1,908
+  Cloudflare-fronted domains:     9,730  (6.3% of responding)
+  Domains with Set-Cookie:       13,363  (8.6%)
+
+────────────────────────────────────────────────────────────────────
+  CONTENT — WORD COUNT DISTRIBUTION
+────────────────────────────────────────────────────────────────────
+  0 words             15,532  (  0.5%)  ####################
+  1-19 words          52,660  (  1.6%)  ########################################
+  20-49 words          6,748  (  0.2%)  ########
+  50-199 words        21,210  (  0.6%)  ###########################
+  200+ words          58,599  (  1.7%)  ########################################
+
+────────────────────────────────────────────────────────────────────
+  TOP REDIRECT DESTINATIONS
+────────────────────────────────────────────────────────────────────
+        87  -> g97ymiydew7ca.top
+        84  -> l5hss3.top
+        17  -> caramba.com
+        11  -> domaindollars.com
+         9  -> gamingdomains.co
+         7  -> 33cctt.com
+         5  -> defining.com
+         5  -> nametraders.com
+         5  -> gigadomains.co
+         5  -> vodkacasino7.skin
+         5  -> karmagroup.com
+         4  -> y6fp.p1-w26520.com:26521
+         4  -> turkifsaclub133.sbs
+         4  -> coinednames.com
+         4  -> brandolo.com
+         4  -> 650dhx650.com
+         3  -> portfolio.adobe.com
+         3  -> amateurmaturepictures.com
+         3  -> libo888.cc
+         3  -> giganames.com
+
+────────────────────────────────────────────────────────────────────
+  ERROR BREAKDOWN (domains did not respond)
+────────────────────────────────────────────────────────────────────
+  timeout                   2,631,221
+  connection_refused          605,892
+  other                         5,551
+
+────────────────────────────────────────────────────────────────────
+  TLS CN — WILDCARD CERTIFICATES (shared hosting)
+────────────────────────────────────────────────────────────────────
+
+────────────────────────────────────────────────────────────────────
+  META GENERATOR
+────────────────────────────────────────────────────────────────────
+     1,752  AMP Plugin v2.5.5; mode=standard
+       469  WordPress 7.0
+       203  AMP Plugin v2.5.3; mode=standard
+       150  WordPress 6.9.4
+        95  [unreadable/corrupted encoding]
+        88  Elementor 4.1.1; features: e_font_icon_svg, additional
+        85  Elementor 4.1.1; features: additional_custom_breakpoints
+        74  AMP Plugin v2.5.2; mode=standard
+        73  WordPress 2.5
+        68  MSHTML 8.00.6001.23580
+        65  Powered by WPBakery Page Builder
+        57  Site Kit by Google 1.180.0
+        49  AMP Plugin v2.5.4; mode=standard
+        48  Starfield Technologies; Go Daddy Website Builder 8
+        44  WordPress 6.8.5

@@ -1,0 +1,70 @@
+========================================================================
+NAMESILO REGISTRAR ABUSE INVESTIGATION
+FORENSIC EVIDENCE MANIFEST
+========================================================================
+
+Generated (UTC): 2026-06-03T02:43:04Z
+
+DATASET SUMMARY
+----------------------------------------
+  total_namesilo_domains                        5269357
+  domains_without_dns                           1871944
+  domains_with_dns_scanned                      3397413
+  dead_no_response                              2255310
+  active_responded                              1129114
+  active_pct_of_total                             21.4%
+  total_junk_pct_of_total                         87.3%
+
+KEY CRIMINAL FINDINGS
+----------------------------------------
+  brand_phishing_domains                             3,726
+  indonesian_gambling_domains                       24,349
+  chinese_adult_piracy_domains                      10,571
+  namesilo_self_parked_domains                       7,438
+  namesilo_self_parked_gambling_adult                  144
+  single_server_fingerprint_domains                328,230
+  cloudflare_flagged_phishing_on_that_server         2,062
+
+EVIDENCE FILE INTEGRITY (SHA-256)
+------------------------------------------------------------------------
+  70782d6b6312f27533267fc34977a971b90c5ab394e075d76ba25d22bd866f23
+  domains_to_scan.jsonl  (498.7 MB)
+  Input domain list (3,397,413 NameSilo domains with DNS)
+
+  b0d6cc1c80b2964593b310029fde4b7f4aeac6c702baaecae78359beab84b0f6
+  final_garbage.jsonl  (467.1 MB)
+  Complete scan results — non-dead records (1,129,114 domains)
+
+  e8224d3fd4928de67a5ba995a727c11fa28e6cbdb2e5a1cf4a8f78b1387181aa
+  all_missing_results.jsonl  (303.6 MB)
+  Rescan results — previously unscanned 894K domains
+
+  3f3d36ebc97fb97ef6ac492f66ff8301f80a98a161f28e726850863a8ac76f8e
+  garbage_5s.jsonl  (245.4 MB)
+  Initial scan results — 911,188 non-dead records
+
+  2e3f06488ba39e8b953d454d31c206f4a478285bd7aed375453bb3973a295839
+  report.html  (0.6 MB)
+  Investigation report HTML
+
+  dd533dfa46077ba6c5bf204cd984f53fd4308f395d293a3e7ac561c596990907
+  1479_full.csv  (348.0 MB)
+  Source CSV — complete NameSilo registrar dump (5,269,357 domains)
+
+
+MANIFEST INTEGRITY
+------------------------------------------------------------------------
+  af7f81f859e1f7a3a0a8fa19a4ab92d94c1be7750e6b63e1e46ea0020c0f624b
+  evidence_manifest.json (this file, self-referential hash)
+
+VERIFICATION
+----------------------------------------
+  To verify file integrity, run on any system:
+    sha256sum <filename>
+  and compare with the hash listed above.
+  Any discrepancy indicates file modification after this manifest was generated.
+
+SCAN INFRASTRUCTURE
+----------------------------------------
+  - AWS Lambda: namesilo-scanner function, us-east-1, up to 400 concurrent
+  - GCP Cloud Run: domain-scanner-job, us-central1
