@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+import re, os
+
+BASE = 'C:/Users/admin/Documents/GitHub/namesilo-evidence/docs/'
+
+with open(BASE + 'namesilo-scan.html', 'rb') as f:
+    scan = f.read().decode('utf-8', 'replace')
+style_block = re.search(r'<style>.*?</style>', scan, re.DOTALL).group()
+
+page = '''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -19,232 +27,7 @@
 <link rel="canonical" href="https://phishdestroy.github.io/namesilo-evidence/">
 <link rel="icon" href="https://phishdestroy.eth.limo/assets/favicon-32x32.png" type="image/png">
 <meta name="llms-txt" content="https://phishdestroy.github.io/namesilo-evidence/llms.txt">
-<style>
-:root{
-  --bg:#000;--s1:#070b12;--s2:#0c1018;--s3:#111720;
-  --bdr:rgba(255,255,255,.08);--bdr2:rgba(255,255,255,.04);
-  --tx:#f0f6fc;--tx2:#8b949e;--tx3:#484f58;
-  --cy:#6ea8d7;--rd:#da3633;--gn:#3fb950;--or:#c0a060;--vi:#8b5cf6;
-  --sb:260px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:14px}
-body{background:var(--bg);color:var(--tx);font-family:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none}
-
-/* ── LAYOUT ── */
-.layout{display:grid;grid-template-columns:var(--sb) minmax(0,1fr);min-height:100vh}
-
-/* ── SIDEBAR ── */
-.sb{position:sticky;top:0;height:100vh;background:var(--bg);padding:20px 14px;overflow-y:auto;border-right:1px solid var(--bdr);scrollbar-width:thin;scrollbar-color:var(--s3) transparent;display:flex;flex-direction:column}
-.brand{padding:0 6px 18px;border-bottom:1px solid var(--bdr);margin-bottom:18px}
-.brand strong{display:block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--cy)}
-.brand span{display:block;margin-top:4px;color:var(--tx2);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
-.brand em{display:block;margin-top:2px;color:var(--tx3);font-size:10px;font-family:"JetBrains Mono",monospace;font-style:normal}
-.nav-g{display:grid;gap:2px}
-.nav-label{font-size:10px;font-weight:700;text-transform:uppercase;color:var(--tx3);padding:10px 6px 3px;letter-spacing:.06em}
-.nav-g a{display:flex;align-items:center;color:var(--tx2);padding:6px 10px;border-radius:3px;font-size:12px;font-family:"JetBrains Mono",monospace;transition:.12s;border-left:2px solid transparent}
-.nav-g a:hover{color:var(--tx);background:var(--s2);border-left-color:var(--bdr)}
-.nav-g a.on{color:var(--cy);background:var(--s1);border-left-color:var(--cy)}
-.sb-footer{margin-top:auto;padding-top:16px;border-top:1px solid var(--bdr)}
-.sb-footer a{display:block;color:var(--tx3);font-size:10px;font-family:"JetBrains Mono",monospace;padding:5px 6px;border-radius:3px;transition:.12s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sb-footer a:hover{color:var(--cy)}
-
-/* ── MAIN ── */
-.main{background:var(--s1);min-width:0}
-
-/* ── HERO ── */
-.hero{position:relative;padding:52px 40px 44px;border-bottom:1px solid var(--bdr);overflow:hidden;background:var(--bg)}
-.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(110,168,215,.13) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
-.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 100% 60% at 50% 110%,transparent 55%,#000 100%);pointer-events:none}
-.hero-inner{position:relative;z-index:1}
-.hero-badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
-.hb{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:600;padding:3px 10px;border:1px solid;text-transform:uppercase;letter-spacing:.06em}
-.hb.live{color:var(--rd);border-color:rgba(218,54,51,.3);background:rgba(218,54,51,.05)}
-.hb.live::before{content:'● ';animation:blink 2s step-end infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-.hb.tlp{color:var(--tx2);border-color:var(--bdr)}
-.hb.iana{color:var(--cy);border-color:rgba(110,168,215,.25);background:rgba(110,168,215,.04)}
-.hero h1{font-size:34px;font-weight:300;letter-spacing:-.04em;line-height:1.18;color:var(--tx);margin-bottom:6px}
-.hero h1 strong{font-weight:800}
-.hero-sub{font-size:12px;color:var(--tx3);font-family:"JetBrains Mono",monospace;letter-spacing:.03em;margin-bottom:34px}
-
-/* ── HERO STATS ── */
-.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border:1px solid var(--bdr);margin-bottom:28px}
-.hs{background:var(--s1);padding:20px 18px;position:relative;overflow:hidden}
-.hs::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px}
-.hs.cy::after{background:var(--cy)}.hs.rd::after{background:var(--rd)}.hs.or::after{background:var(--or)}.hs.vi::after{background:var(--vi)}
-.hs-val{font-size:32px;font-weight:300;font-family:"JetBrains Mono",monospace;line-height:1;margin-bottom:5px}
-.hs.cy .hs-val{color:var(--cy)}.hs.rd .hs-val{color:var(--rd)}.hs.or .hs-val{color:var(--or)}.hs.vi .hs-val{color:var(--vi)}
-.hs-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3)}
-
-/* ── TERMINAL ── */
-.term{background:#000;border:1px solid var(--bdr);font-family:"JetBrains Mono",monospace;font-size:11.5px;line-height:1.7;overflow:hidden}
-.term-bar{background:var(--s2);border-bottom:1px solid var(--bdr);padding:8px 14px;display:flex;align-items:center;gap:7px}
-.td{width:11px;height:11px;border-radius:50%}
-.term-title{font-size:11px;color:var(--tx3);margin-left:6px;flex:1;text-align:center}
-.term-body{padding:18px 22px;overflow-x:auto}
-.term-body pre{white-space:pre;color:var(--tx2);font-size:11.5px}
-.tc{color:var(--tx3)}.tg{color:var(--gn)}.tr{color:var(--rd)}.to{color:var(--or)}.tcy{color:var(--cy)}.tv{color:var(--vi)}.tw{color:var(--tx)}.tdim{color:#2a3140}
-
-/* ── CONTENT ── */
-.content{padding:0 40px 100px}
-
-/* ── SECTION TITLE ── */
-.st{display:flex;align-items:center;gap:12px;margin:44px 0 20px}
-.st h2{font-size:12px;font-weight:600;color:var(--tx);font-family:"JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.07em;white-space:nowrap}
-.st .ln{flex:1;height:1px;background:var(--bdr)}
-
-/* ── KPI ROW ── */
-.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border:1px solid var(--bdr);margin-bottom:32px}
-.kpi{background:var(--bg);padding:20px 18px}
-.kpi .lbl{font-size:10px;font-weight:700;text-transform:uppercase;color:var(--tx3);letter-spacing:.06em;margin-bottom:10px}
-.kpi .val{font-size:28px;font-weight:300;font-family:"JetBrains Mono",monospace;line-height:1;margin-bottom:5px}
-.kpi .note{font-size:11px;color:var(--tx2);font-family:"JetBrains Mono",monospace}
-.kpi.c-cy .val{color:var(--cy)}.kpi.c-rd .val{color:var(--rd)}.kpi.c-or .val{color:var(--or)}.kpi.c-gn .val{color:var(--gn)}
-
-/* ── PANEL ── */
-.panel{background:var(--s2);border:1px solid var(--bdr);padding:22px}
-.panel h3{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--tx3);border-bottom:1px solid var(--bdr);padding-bottom:8px;margin-bottom:16px}
-.panel p{font-size:13px;color:var(--tx2);line-height:1.8;margin-bottom:10px}
-.panel p:last-child{margin-bottom:0}
-.panel strong{color:var(--tx);font-weight:600}
-.panel em{font-style:normal;color:var(--or);font-weight:600}
-.hi-rd{color:var(--rd);font-weight:600}
-
-/* ── GRIDS ── */
-.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
-.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.g2x1{display:grid;grid-template-columns:2fr 1fr;gap:16px}
-
-/* ── MINI CARDS ── */
-.mc{background:var(--bg);border:1px solid var(--bdr);border-left:2px solid var(--tx3);padding:14px 16px}
-.mc.rd{border-left-color:var(--rd)}.mc.or{border-left-color:var(--or)}.mc.cy{border-left-color:var(--cy)}.mc.gn{border-left-color:var(--gn)}.mc.vi{border-left-color:var(--vi)}
-.mc-lbl{font-size:10px;font-weight:700;text-transform:uppercase;color:var(--tx2);font-family:"JetBrains Mono",monospace;letter-spacing:.04em;margin-bottom:6px;display:block}
-.mc-val{font-size:24px;font-weight:300;font-family:"JetBrains Mono",monospace;line-height:1;display:block}
-.mc.rd .mc-val{color:var(--rd)}.mc.or .mc-val{color:var(--or)}.mc.cy .mc-val{color:var(--cy)}.mc.gn .mc-val{color:var(--gn)}.mc.vi .mc-val{color:var(--vi)}
-.mc-sub{font-size:10px;color:var(--tx3);margin-top:4px;display:block;font-family:"JetBrains Mono",monospace}
-
-/* ── TABLES ── */
-table{width:100%;border-collapse:collapse}
-th{text-align:left;padding:9px 10px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);border-bottom:1px solid var(--bdr);font-family:"JetBrains Mono",monospace}
-td{padding:9px 10px;border-bottom:1px solid var(--bdr2);font-size:12px;vertical-align:middle}
-tbody tr:hover{background:rgba(255,255,255,.015)}
-.nr{text-align:right;font-family:"JetBrains Mono",monospace;color:var(--tx2)}
-.mono{font-family:"JetBrains Mono",monospace;color:var(--cy);font-size:11px}
-.rd-txt{color:var(--rd)}.or-txt{color:var(--or)}.cy-txt{color:var(--cy)}.gn-txt{color:var(--gn)}.vi-txt{color:var(--vi)}
-
-/* ── BARS ── */
-.bar{height:3px;background:var(--s3);margin-top:5px;border-radius:1px;overflow:hidden;width:100%}
-.bar span{display:block;height:100%;border-radius:1px;background:var(--tx3)}
-.bar.rd span{background:var(--rd)}.bar.or span{background:var(--or)}.bar.cy span{background:var(--cy)}.bar.gn span{background:var(--gn)}
-
-/* ── INLINE BADGES ── */
-.b{display:inline-flex;align-items:center;padding:2px 7px;font-size:10px;font-weight:500;font-family:"JetBrains Mono",monospace;letter-spacing:.04em;text-transform:uppercase;border:1px solid transparent;white-space:nowrap}
-.b.rd{background:rgba(218,54,51,.08);color:var(--rd);border-color:rgba(218,54,51,.18)}
-.b.or{background:rgba(192,160,96,.08);color:var(--or);border-color:rgba(192,160,96,.18)}
-.b.cy{background:rgba(110,168,215,.08);color:var(--cy);border-color:rgba(110,168,215,.18)}
-.b.vi{background:rgba(139,92,246,.08);color:var(--vi);border-color:rgba(139,92,246,.18)}
-.b.nt{background:var(--s3);color:var(--tx2);border-color:var(--bdr)}
-
-/* ── CODE ── */
-code{font-family:"JetBrains Mono",monospace;font-size:11px;padding:1px 5px;background:var(--bg);border:1px solid var(--bdr);color:var(--cy)}
-.dom-list{display:flex;flex-wrap:wrap;gap:4px}
-
-/* ── HASH / COPY ── */
-.hash-row{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start;padding:14px 0;border-bottom:1px solid var(--bdr2)}
-.hash-row:last-child{border-bottom:none}
-.hash-name{font-size:12px;font-weight:600;color:var(--tx);margin-bottom:3px}
-.hash-desc{font-size:11px;color:var(--tx2);margin-bottom:3px;line-height:1.6}
-.hash-size{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx3)}
-.hash-rhs{text-align:right;display:flex;flex-direction:column;gap:6px;min-width:0}
-.hash-val{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--cy);padding:5px 8px;background:rgba(110,168,215,.04);border:1px solid rgba(110,168,215,.1);word-break:break-all;line-height:1.6;max-width:340px;align-self:flex-end}
-.copy-btn{font-family:"JetBrains Mono",monospace;font-size:10px;padding:4px 12px;border:1px solid var(--bdr);background:var(--bg);color:var(--tx3);cursor:pointer;transition:.15s;letter-spacing:.05em;text-transform:uppercase;align-self:flex-end}
-.copy-btn:hover{color:var(--cy);border-color:rgba(110,168,215,.25);background:rgba(110,168,215,.04)}
-.copy-btn.copied{color:var(--gn);border-color:rgba(63,185,80,.3);background:rgba(63,185,80,.05)}
-
-/* ── ALERTS ── */
-.alert{padding:14px 18px;border:1px solid;margin:12px 0;font-size:12px;line-height:1.8}
-.alert.rd{background:rgba(218,54,51,.04);border-color:rgba(218,54,51,.15);border-left:3px solid var(--rd);color:var(--tx2)}
-.alert.rd strong{color:var(--rd)}
-.alert.or{background:rgba(192,160,96,.04);border-color:rgba(192,160,96,.15);border-left:3px solid var(--or);color:var(--tx2)}
-.alert.or strong{color:var(--or)}
-.alert.gn{background:rgba(63,185,80,.04);border-color:rgba(63,185,80,.12);border-left:3px solid var(--gn);color:var(--tx2)}
-.alert.gn strong{color:var(--gn)}
-
-/* ── METHODOLOGY LIST ── */
-.ml{list-style:none;padding:0;margin:0}
-.ml li{padding:6px 0 6px 16px;position:relative;font-size:12px;color:var(--tx2);line-height:1.75;border-bottom:1px solid var(--bdr2)}
-.ml li:last-child{border-bottom:none}
-.ml li::before{content:'';position:absolute;left:0;top:13px;width:5px;height:5px;border-radius:50%;background:var(--tx3)}
-.ml li strong{color:var(--tx)}
-.ml.cy li::before{background:var(--cy)}.ml.rd li::before{background:var(--rd)}
-
-/* ── KW GRID ── */
-.kw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.kw-item{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:var(--bg);border:1px solid var(--bdr);gap:8px}
-.kw-word{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--tx)}
-.kw-cnt{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--tx2);flex-shrink:0}
-.kw-item.rl{border-left:2px solid var(--rd)}.kw-item.ol{border-left:2px solid var(--or)}.kw-item.vl{border-left:2px solid var(--vi)}
-
-/* ── INT NOTICE ── */
-.int-notice{background:rgba(63,185,80,.04);border:1px solid rgba(63,185,80,.15);border-left:2px solid var(--gn);padding:14px 18px;margin-bottom:20px;font-size:12px;color:var(--tx2);line-height:1.8}
-.int-notice strong{color:var(--gn)}
-
-/* ── AUTH GRID ── */
-.auth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.auth{background:var(--bg);border:1px solid var(--bdr);padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
-.auth-icon{font-size:20px;flex-shrink:0;margin-top:1px}
-.auth h4{font-size:12px;font-weight:600;color:var(--tx);margin-bottom:4px}
-.auth p{font-size:11px;color:var(--tx2);line-height:1.75}
-.auth a{color:var(--cy);font-family:"JetBrains Mono",monospace;font-size:10px;display:inline-block;margin-top:4px}
-
-/* ── DONUT + LEGEND ── */
-.pop-wrap{display:flex;align-items:center;gap:22px;flex-wrap:wrap;padding:4px 0}
-.donut{position:relative;width:130px;height:130px;flex-shrink:0}
-.donut-ring{width:130px;height:130px;border-radius:50%;background:conic-gradient(#2a3140 0% 35.5%,#1a2030 35.5% 78.3%,#6b7280 78.3% 84.4%,#6ea8d7 84.4% 97.4%,#da3633 97.4% 100%)}
-.donut-hole{position:absolute;inset:27%;border-radius:50%;background:var(--s2);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:600;text-align:center;line-height:1.5;color:var(--tx3)}
-.leg{flex:1;min-width:150px;display:grid;gap:7px}
-.leg-row{display:flex;align-items:center;gap:9px}
-.leg-dot{width:9px;height:9px;border-radius:2px;flex-shrink:0}
-.leg-lbl{font-size:12px;color:var(--tx2);flex:1}
-.leg-val{font-size:12px;font-weight:600;font-family:"JetBrains Mono",monospace;color:var(--tx)}
-
-/* ── FOOTER ── */
-footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
-.f-l strong{display:block;font-size:12px;font-weight:600;color:var(--cy);margin-bottom:4px}
-.f-l p{font-size:11px;color:var(--tx3);line-height:1.7}
-.f-r a{display:block;font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx3);margin-top:3px;transition:.12s}
-.f-r a:hover{color:var(--cy)}
-
-/* ── SCROLL REVEAL ── */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
-.reveal.in{opacity:1;transform:none}
-
-/* ── MOBILE TOGGLE ── */
-.mob-nav{display:none;position:fixed;top:12px;left:12px;z-index:200;background:var(--s2);border:1px solid var(--bdr);padding:8px 10px;cursor:pointer;font-size:16px;line-height:1;color:var(--tx2)}
-.mob-nav:hover{color:var(--cy)}
-.sb-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:149}
-
-/* ── RESPONSIVE ── */
-@media(max-width:1100px){
-  .layout{grid-template-columns:1fr}
-  .sb{display:none;position:fixed;top:0;left:0;height:100vh;z-index:150;width:260px;transform:translateX(-100%);transition:transform .22s ease}
-  .sb.open{display:flex;transform:translateX(0)}
-  .sb-overlay.open{display:block}
-  .mob-nav{display:flex}
-  .g2x1,.g2,.g3,.g4,.kpi-row,.auth-grid,.kw-grid,.hero-stats{grid-template-columns:1fr}
-  .hero,.content{padding-left:20px;padding-right:20px}
-  .hero{padding-top:52px}
-}
-@media(max-width:600px){
-  .hero h1{font-size:24px}
-  .hash-row{grid-template-columns:1fr}
-  .hash-val,.hash-rhs{max-width:100%;align-self:flex-start}
-  .content{padding-bottom:60px}
-}
-</style>
+''' + style_block + '''
 <style>
 .hub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:24px 0}
 .hub-card{background:var(--s2);border:1px solid var(--bdr);border-radius:8px;padding:20px 22px;display:flex;flex-direction:column;transition:.15s;text-decoration:none;color:inherit}
@@ -443,7 +226,22 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--bdr);display:
 </div>
 
 <div class="panel reveal" style="margin-top:16px">
-<div class="tl-row"><span class="tl-date">2016</span><div class="tl-text">xmrwallet.com goes live. <code>session_key</code> silently exfiltrates private view key on every login.</div></div><div class="tl-row"><span class="tl-date">2023–2026</span><div class="tl-text">PhishDestroy: 20+ delivery-receipted abuse reports → <code>abuse@namesilo.com</code>. <strong>Zero action.</strong></div></div><div class="tl-row"><span class="tl-date">Feb 16, 2026</span><div class="tl-text">Operator emails PhishDestroy: "There is no phishing." No hack claim. Site defended as own work.</div></div><div class="tl-row"><span class="tl-date">Mar 12, 2026</span><div class="tl-text">PhishDestroy public tweet: "9 reports is no joke anymore."</div></div><div class="tl-row"><span class="tl-date">Mar 13, 2026</span><div class="tl-text"><strong>NameSilo official tweet</strong> (11,300 views): four false claims, offer to scrub VirusTotal. PDR, WebNic, NICENIC: suspended same domain within days.</div></div><div class="tl-row"><span class="tl-date">Mar 16, 2026</span><div class="tl-text">PhishDestroy publishes operator emails. @Phish_Destroy account locked via X Gold Checkmark support.</div></div><div class="tl-row"><span class="tl-date">Mar 18, 2026</span><div class="tl-text">Full case submitted to <strong>ICANN Contractual Compliance</strong>.</div></div><div class="tl-row"><span class="tl-date">Apr 15, 2026</span><div class="tl-text">X automation: "no violation, restored to full functionality." <strong>Lock not lifted.</strong></div></div><div class="tl-row"><span class="tl-date">May 11, 2026</span><div class="tl-text">NameSilo legal threat tweet. Zero factual rebuttal. <a href="https://github.com/phishdestroy/namesilo-evidence/blob/main/case/NAMESILO-RESPONSE-MAY2026.md" style="color:var(--cy)">Documented →</a></div></div><div class="tl-row"><span class="tl-date">May 2026</span><div class="tl-text">DMCA filed against this investigation. Keyword/geo suppression detected. xmrwallet domain transferred to Namecheap.</div></div><div class="tl-row"><span class="tl-date">Jun 2026</span><div class="tl-text">Zone scan complete: 5,269,357 domains, 87.3% dead/parked. Site remains live. Investigation continues.</div></div>
+''' + ''.join([
+    '<div class="tl-row"><span class="tl-date">%s</span><div class="tl-text">%s</div></div>' % (d, t)
+    for d, t in [
+        ('2016', 'xmrwallet.com goes live. <code>session_key</code> silently exfiltrates private view key on every login.'),
+        ('2023–2026', 'PhishDestroy: 20+ delivery-receipted abuse reports → <code>abuse@namesilo.com</code>. <strong>Zero action.</strong>'),
+        ('Feb 16, 2026', 'Operator emails PhishDestroy: "There is no phishing." No hack claim. Site defended as own work.'),
+        ('Mar 12, 2026', 'PhishDestroy public tweet: "9 reports is no joke anymore."'),
+        ('Mar 13, 2026', '<strong>NameSilo official tweet</strong> (11,300 views): four false claims, offer to scrub VirusTotal. PDR, WebNic, NICENIC: suspended same domain within days.'),
+        ('Mar 16, 2026', 'PhishDestroy publishes operator emails. @Phish_Destroy account locked via X Gold Checkmark support.'),
+        ('Mar 18, 2026', 'Full case submitted to <strong>ICANN Contractual Compliance</strong>.'),
+        ('Apr 15, 2026', 'X automation: "no violation, restored to full functionality." <strong>Lock not lifted.</strong>'),
+        ('May 11, 2026', 'NameSilo legal threat tweet. Zero factual rebuttal. <a href="https://github.com/phishdestroy/namesilo-evidence/blob/main/case/NAMESILO-RESPONSE-MAY2026.md" style="color:var(--cy)">Documented →</a>'),
+        ('May 2026', 'DMCA filed against this investigation. Keyword/geo suppression detected. xmrwallet domain transferred to Namecheap.'),
+        ('Jun 2026', 'Zone scan complete: 5,269,357 domains, 87.3% dead/parked. Site remains live. Investigation continues.'),
+    ]
+]) + '''
 </div>
 
 <!-- FOR VICTIMS / REGULATORS -->
@@ -522,4 +320,8 @@ var _ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isInte
 document.querySelectorAll(".reveal").forEach(function(el){_ro.observe(el);});
 </script>
 </body>
-</html>
+</html>'''
+
+with open(BASE + 'index.html', 'wb') as f:
+    f.write(page.encode('utf-8'))
+print('Done:', os.path.getsize(BASE + 'index.html'), 'bytes')
