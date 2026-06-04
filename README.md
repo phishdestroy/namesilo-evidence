@@ -12,7 +12,7 @@ SEO topics: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, i
 
 *NameSilo, LLC really doesn't like this text. Not because it's false — because they wrote the original themselves. Their official tweet defending a $20M Monero drainer is Exhibit A below. Since they can't dispute the evidence, they dispute the existence of anyone who publishes it: mass complaints to X/Twitter (our account locked — X cleared us in writing, lock stayed), Bing and Google delisting requests against phishdestroy.io, and the operator's lifetime hobby — mass-reporting real victim reviews on Trustpilot (100+ removed reviews, partially verifiable via Web Archive and rating hash history — authorities can request Trustpilot's full deletion logs). Our Twitter threads tagging @NameSilo with abuse reports go back one and two years — they killed those accounts too. We have copies of everything. Their entire strategy right now is simple: don't answer for what they're part of and erase every trace that it happened. It's not working.*
 
-**[Master proof index &rarr;](PROOFS.md)** &nbsp;·&nbsp; **[Full article &rarr;](ARTICLE_FULL.md)** &nbsp;·&nbsp; **[The Connection &rarr;](CONNECTION.md)** &nbsp;·&nbsp; **[The Lies &rarr;](THE-LIES.md)** &nbsp;·&nbsp; **[Pressure Campaign &rarr;](PRESSURE.md)** &nbsp;·&nbsp; **[Technical breakdown &rarr;](SCAM_TECHNICAL.md)** &nbsp;·&nbsp; **[Operator dossier &rarr;](OPERATOR_PROFILE.md)** &nbsp;·&nbsp; **[Victims &amp; timeline &rarr;](VICTIMS.md)** &nbsp;·&nbsp; **[Evidence Index &rarr;](EVIDENCE_INDEX.md)**
+**[Master proof index &rarr;](PROOFS.md)** &nbsp;·&nbsp; **[Full article &rarr;](ARTICLE_FULL.md)** &nbsp;·&nbsp; **[The Connection &rarr;](CONNECTION.md)** &nbsp;·&nbsp; **[The Lies &rarr;](THE-LIES.md)** &nbsp;·&nbsp; **[Pressure Campaign &rarr;](PRESSURE.md)** &nbsp;·&nbsp; **[Technical breakdown &rarr;](SCAM_TECHNICAL.md)** &nbsp;·&nbsp; **[Operator dossier &rarr;](OPERATOR_PROFILE.md)** &nbsp;·&nbsp; **[Victims &amp; timeline &rarr;](VICTIMS.md)** &nbsp;·&nbsp; **[Evidence Index &rarr;](EVIDENCE_INDEX.md)** &nbsp;·&nbsp; **[Full Dossier &rarr;](INVESTIGATION_DOSSIER_EN.md)**
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](LICENSE)
 [![Evidence: SHA-256 verified](https://img.shields.io/badge/evidence-SHA--256_verified-green.svg)](EVIDENCE_HASHES.txt)
@@ -20,6 +20,25 @@ SEO topics: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, i
 [![Canonical: phishdestroy.io](https://img.shields.io/badge/canonical-phishdestroy.io-red.svg)](https://phishdestroy.io)
 
 </div>
+
+---
+
+## 📂 Repository Index
+
+| Document | Description |
+|----------|-------------|
+| [PROOFS.md](PROOFS.md) | Master evidence index — all exhibits with SHA-256 hashes |
+| [ARTICLE_FULL.md](ARTICLE_FULL.md) | Full investigative article |
+| [INVESTIGATION_DOSSIER_EN.md](INVESTIGATION_DOSSIER_EN.md) | Complete investigation dossier — victims, timeline, technical proof |
+| [CONNECTION.md](CONNECTION.md) | How NameSilo is connected to the xmrwallet operator |
+| [THE-LIES.md](THE-LIES.md) | Point-by-point rebuttal of NameSilo's March 13 public statement |
+| [NAMESILO-RESPONSE-MAY2026.md](NAMESILO-RESPONSE-MAY2026.md) | NameSilo's May 11 legal threat tweet — documented and archived |
+| [NAMESILO_DOMAIN_ANOMALY_REPORT.md](NAMESILO_DOMAIN_ANOMALY_REPORT.md) | Statistical analysis: NameSilo is an outlier across 8 registrars |
+| [PRESSURE.md](PRESSURE.md) | Suppression campaign — Twitter lock, DMCA abuse, Trustpilot removals |
+| [SCAM_TECHNICAL.md](SCAM_TECHNICAL.md) | Technical breakdown of the xmrwallet drainer mechanism |
+| [OPERATOR_PROFILE.md](OPERATOR_PROFILE.md) | Operator dossier — 10-year history |
+| [VICTIMS.md](VICTIMS.md) | Victim accounts and confirmed losses |
+| [SOURCES.md](SOURCES.md) | All primary sources |
 
 ---
 
@@ -38,7 +57,26 @@ We obtained and processed NameSilo's **complete zone file** — every active dom
 
 > Raw scan data (JSONL/CSV, up to 499MB) available in [`pkg/raw_data/`](pkg/raw_data/) as gzip archives.
 
-</div>
+| Report | Description |
+|--------|-------------|
+| **[PrivacyGuardian Shield →](https://phishdestroy.github.io/namesilo-evidence/namesilo-privacyguardian.html)** | 183,419 malicious domains behind NameSilo's own WHOIS privacy service |
+
+---
+
+## 🖼️ Evidence Diagrams
+
+Visual forensic diagrams available in [`docs/assets/`](docs/assets/):
+
+| Diagram | Description |
+|---------|-------------|
+| [Money Flow](docs/assets/diagram-money-flow.png) | How funds move through the xmrwallet operation |
+| [Operator Network](docs/assets/diagram-operator-network.png) | Infrastructure and actor connections |
+| [Timeline](docs/assets/diagram-timeline.png) | 10-year operation timeline |
+| [Theft Mechanism](docs/assets/diagram-theft-mechanism.png) | Technical theft flow — private view key exfiltration |
+| [Suppression Campaign](docs/assets/diagram-suppression.png) | Platform abuse and evidence erasure tactics |
+| [Domain Infrastructure](docs/assets/diagram-domain-infra.png) | Domain registration and hosting patterns |
+
+
 
 ---
 

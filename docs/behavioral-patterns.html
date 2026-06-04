@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Behavioral Pattern Analysis — xmrwallet Operator vs NameSilo</title>
+<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#000;--s1:#070b12;--s2:#0c1018;--s3:#111720;--bdr:rgba(255,255,255,.06);--bdr2:rgba(255,255,255,.03);--tx:#f0f6fc;--tx2:#8b949e;--tx3:#484f58;--cy:#6ea8d7;--rd:#da3633;--gn:#3fb950;--or:#c0a060}
+body{background:var(--bg);color:var(--tx);font-family:Inter,-apple-system,system-ui,sans-serif;line-height:1.6;padding:20px}
+::selection{background:rgba(0,240,255,.15)}
+a{color:var(--cy);text-decoration:none}a:hover{color:#fff}
+.container{max-width:1100px;margin:0 auto}
+header{padding:40px 0 30px;border-bottom:1px solid var(--bdr);margin-bottom:30px}
+h1{font-size:26px;font-weight:800;margin-bottom:8px}
+h1 span{color:var(--rd)}
+.subtitle{color:var(--tx2);font-size:13px;line-height:1.8}
+.back{display:inline-block;margin-bottom:20px;font-size:13px;color:var(--tx3);border:1px solid var(--bdr);padding:6px 14px;border-radius:8px;transition:.2s}
+.back:hover{border-color:var(--cy);color:var(--cy)}
+
+.verdict{background:linear-gradient(135deg,rgba(255,51,85,.08),rgba(255,51,85,.02));border:1px solid rgba(255,51,85,.2);border-radius:16px;padding:24px 28px;margin:24px 0}
+.verdict h2{font-size:18px;color:var(--rd);margin-bottom:10px}
+.verdict p{font-size:13px;color:var(--tx2);line-height:1.8}
+.verdict strong{color:var(--rd)}
+
+.pattern-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:30px 0;border:1px solid var(--bdr);border-radius:16px;overflow:hidden}
+.pattern-header{background:var(--s1);padding:14px 20px;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid var(--bdr)}
+.pattern-header.left{border-right:1px solid var(--bdr);color:var(--or)}
+.pattern-header.right{color:var(--rd)}
+.pattern-row{display:contents}
+.pattern-cell{padding:14px 20px;font-size:13px;color:var(--tx2);line-height:1.7;border-bottom:1px solid var(--bdr)}
+.pattern-cell.left{border-right:1px solid var(--bdr);background:rgba(212,160,64,.02)}
+.pattern-cell.right{background:rgba(255,51,85,.02)}
+.pattern-cell strong{color:var(--tx)}
+.pattern-cell .match{color:var(--rd);font-weight:700;font-size:11px;display:block;margin-top:4px}
+.pattern-label{font-size:10px;color:var(--cy);text-transform:uppercase;letter-spacing:1px;padding:10px 20px;background:rgba(0,240,255,.03);grid-column:1/-1;border-bottom:1px solid var(--bdr);font-weight:700}
+
+h2{font-size:18px;font-weight:700;margin:36px 0 14px;padding:12px 16px;border-left:3px solid var(--cy);background:var(--s1);border-radius:0 10px 10px 0}
+h2 .n{color:var(--tx3);font-size:12px;font-weight:400;margin-left:8px}
+
+.pr-card{background:var(--s1);border:1px solid var(--bdr);border-radius:14px;padding:20px 24px;margin:10px 0;transition:.3s}
+.pr-card:hover{border-color:rgba(0,240,255,.12);background:var(--s2)}
+.pr-card .entity{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:700;margin-bottom:8px}
+.pr-card .entity.xmr{color:var(--or)}
+.pr-card .entity.ns{color:var(--rd)}
+.pr-card .pr-title{font-size:14px;font-weight:600;color:var(--cy);margin-bottom:4px}
+.pr-card .pr-date{font-size:11px;color:var(--tx3);margin-bottom:6px}
+.pr-card .pr-detail{font-size:12px;color:var(--tx2);line-height:1.7}
+.pr-card .pr-contact{font-size:11px;color:var(--gn);margin-top:6px;padding:6px 10px;background:rgba(46,160,67,.05);border-radius:6px;border:1px solid rgba(46,160,67,.1)}
+
+.evidence-box{background:var(--s1);border:1px solid var(--bdr);border-radius:14px;padding:20px 24px;margin:16px 0}
+.evidence-box h3{font-size:14px;font-weight:700;margin-bottom:10px;color:var(--cy)}
+.evidence-box p{font-size:13px;color:var(--tx2);line-height:1.8;margin-bottom:8px}
+.evidence-box ul{list-style:none;padding:0}
+.evidence-box li{font-size:12px;color:var(--tx2);padding:6px 0;border-bottom:1px solid var(--bdr);line-height:1.6}
+.evidence-box li:last-child{border-bottom:none}
+.evidence-box li strong{color:var(--tx)}
+.evidence-box .cost{color:var(--or);font-weight:700}
+
+.threat-box{background:rgba(255,51,85,.04);border:1px solid rgba(255,51,85,.15);border-radius:14px;padding:20px 24px;margin:16px 0}
+.threat-box h3{font-size:14px;font-weight:700;margin-bottom:10px;color:var(--rd)}
+.threat-box p{font-size:13px;color:var(--tx2);line-height:1.8}
+
+.stats{display:flex;gap:14px;flex-wrap:wrap;margin:24px 0}
+.stat{background:var(--s1);border:1px solid var(--bdr);border-radius:12px;padding:14px 18px;flex:1;min-width:130px}
+.stat-n{font-size:24px;font-weight:800;font-variant-numeric:tabular-nums}
+.stat-l{font-size:10px;color:var(--tx3);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+
+.timeline{margin:20px 0;border-left:2px solid var(--bdr);padding-left:20px}
+.timeline-item{margin:16px 0;position:relative}
+.timeline-item::before{content:'';position:absolute;left:-25px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--cy);border:2px solid var(--bg)}
+.timeline-item.threat::before{background:var(--rd)}
+.timeline-item .tl-date{font-size:11px;color:var(--tx3);font-weight:700}
+.timeline-item .tl-text{font-size:13px;color:var(--tx2);line-height:1.7;margin-top:4px}
+.timeline-item .tl-entity{font-size:10px;text-transform:uppercase;letter-spacing:1px;font-weight:700;margin-bottom:2px}
+.timeline-item .tl-entity.xmr{color:var(--or)}
+.timeline-item .tl-entity.ns{color:var(--rd)}
+
+.methodology{background:var(--s1);border:1px solid var(--bdr);border-radius:12px;padding:16px 20px;margin:24px 0;font-size:11px;color:var(--tx3);line-height:1.8}
+.methodology strong{color:var(--tx2)}
+footer{margin-top:40px;padding:20px 0;border-top:1px solid var(--bdr);font-size:11px;color:var(--tx3);text-align:center}
+
+@media(max-width:700px){
+.pattern-grid{grid-template-columns:1fr;}.pattern-header.left,.pattern-cell.left{border-right:none}
+.sidenav{display:none}
+}
+.sidenav{position:fixed;top:50%;right:12px;transform:translateY(-50%);z-index:100;display:flex;flex-direction:column;gap:2px;background:rgba(7,11,18,.92);border:1px solid var(--bdr);border-radius:10px;padding:8px 6px;backdrop-filter:blur(8px);max-height:80vh;overflow-y:auto}
+.sidenav a{display:block;padding:5px 10px;font-size:10px;color:var(--tx3);text-decoration:none;border-radius:4px;transition:.2s;white-space:nowrap;max-width:160px;overflow:hidden;text-overflow:ellipsis}
+.sidenav a:hover{color:var(--cy);background:rgba(0,240,255,.06)}
+.sidenav a.sep{border-top:1px solid var(--bdr);margin-top:4px;padding-top:8px}
+
+#bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.6}
+</style>
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+
+<nav class="sidenav">
+<a href="#top">Top</a>
+<a href="#timeline">How We Got Here</a>
+<a href="#evidence-map">Evidence Map</a>
+<a href="#patterns">8 Patterns</a>
+<a href="#links" class="sep">Link Footprint</a>
+<a href="#prnewswire">PR Newswire</a>
+<a href="#response-tl">Response Timeline</a>
+<a href="#improbability">Improbability</a>
+<a href="#financials" class="sep">Financials</a>
+<a href="#tested">What Happened</a>
+<a href="#note">PhishDestroy Note</a>
+<a href="#final">Final Words</a>
+</nav>
+
+<div class="container">
+<a id="top" class="back" href="../index.html">&larr; Back to PhishDestroy</a>
+<header>
+<h1>Behavioral Pattern Analysis: <span>xmrwallet Operator vs NameSilo</span></h1>
+<p class="subtitle">We weren't looking for this. While investigating xmrwallet.com's fraud infrastructure and NameSilo's role in protecting it, we noticed something unexpected: both entities use the same premium PR distribution service (PR Newswire/Cision), both have almost no organic web presence, and both respond to evidence with threats instead of facts. We followed the evidence. This is what it shows.</p>
+</header>
+
+<div style="margin:24px 0;padding:28px;background:var(--s1);border:1px solid var(--bdr);border-radius:16px">
+<h2 id="timeline" style="margin:0 0 20px;padding:0;border:none;background:none;font-size:16px;color:var(--cy);text-transform:uppercase;letter-spacing:2px">How We Got Here</h2>
+<div style="display:grid;grid-template-columns:40px 1fr;gap:0;font-size:13px;color:var(--tx2);line-height:1.7">
+
+<div style="display:flex;flex-direction:column;align-items:center"><div style="width:28px;height:28px;border-radius:50%;background:var(--tx3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--bg)">1</div><div style="width:2px;flex:1;background:var(--bdr)"></div></div>
+<div style="padding:4px 0 20px 12px"><strong style="color:var(--tx)">xmrwallet.com steals Monero for ~8 years.</strong> Server-side transaction hijacking. Hundreds of victims. GitHub issues, Reddit PSAs, BitcoinTalk warnings, Trustpilot reviews &mdash; all documenting theft since 2018.</div>
+
+<div style="display:flex;flex-direction:column;align-items:center"><div style="width:28px;height:28px;border-radius:50%;background:var(--tx3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--bg)">2</div><div style="width:2px;flex:1;background:var(--bdr)"></div></div>
+<div style="padding:4px 0 20px 12px"><strong style="color:var(--tx)">Victims report to NameSilo.</strong> 31+ abuse reports since 2018 from multiple researchers and victims. NameSilo's response: <strong style="color:var(--rd)">"We had received no abuse reports."</strong></div>
+
+<div style="display:flex;flex-direction:column;align-items:center"><div style="width:28px;height:28px;border-radius:50%;background:var(--cy);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--bg)">3</div><div style="width:2px;flex:1;background:var(--bdr)"></div></div>
+<div style="padding:4px 0 20px 12px"><strong style="color:var(--cy)">PhishDestroy enters.</strong> Professional abuse report with technical evidence: viewkey exfiltration, code analysis, victim transaction IDs. We contact the operator directly.</div>
+
+<div style="display:flex;flex-direction:column;align-items:center"><div style="width:28px;height:28px;border-radius:50%;background:var(--or);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--bg)">4</div><div style="width:2px;flex:1;background:var(--bdr)"></div></div>
+<div style="padding:4px 0 20px 12px"><strong style="color:var(--or)">Operator responds &mdash; with lies.</strong> Feb 16: <em>"We don't store seeds or keys."</em> Feb 17: <em>"This is the data we need."</em> (Contradicts himself in 24 hours.) Then: <em>"Feel free to subpoena the domain registrar."</em> <a href="xmrwallet-evidence/operator-emails/">[Emails archived]</a></div>
+
+<div style="display:flex;flex-direction:column;align-items:center"><div style="width:28px;height:28px;border-radius:50%;background:var(--gn);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--bg)">5</div><div style="width:2px;flex:1;background:var(--bdr)"></div></div>
+<div style="padding:4px 0 20px 12px"><strong style="color:var(--gn)">We respond professionally.</strong> Technical analysis published. Domains suspended through other registrars (.cc, .biz &mdash; registrars that actually read reports). Operator loses 4 domains registered for 5-10 years each.</div>
+
+<div style="display:flex;flex-direction:column;align-items:center"><div style="width:28px;height:28px;border-radius:50%;background:var(--rd);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--bg)">6</div><div style="width:2px;flex:1;background:var(--bdr)"></div></div>
+<div style="padding:4px 0 20px 12px"><strong style="color:var(--rd)">Operator escalates to threats.</strong> Feb 23: <em>"I've hired a lawyer and a private investigator."</em> No lawyer ever appeared. He deletes GitHub issues #35 and #36 (evidence destruction). <a href="xmrwallet-evidence/operator-emails/">[Email archived]</a></div>
+
+<div style="display:flex;flex-direction:column;align-items:center"><div style="width:28px;height:28px;border-radius:50%;background:var(--rd);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--bg)">7</div><div style="width:2px;flex:1;background:var(--bdr)"></div></div>
+<div style="padding:4px 0 20px 12px"><strong style="color:var(--rd)">NameSilo joins the defense.</strong> Publicly declares operator innocent. Fabricates "compromise" story. Offers to remove VirusTotal detections. Uses X Gold Checkmark to lock our account. <a href="../screenshots/namesilo-twitter-response-2026-05-12.png">[Tweet screenshot]</a></div>
+
+<div style="display:flex;flex-direction:column;align-items:center"><div style="width:28px;height:28px;border-radius:50%;background:var(--cy);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--bg)">8</div><div style="width:2px;flex:1;background:var(--bdr)"></div></div>
+<div style="padding:4px 0 20px 12px"><strong style="color:var(--cy)">We go deeper.</strong> Domain analysis (5.18M domains, 81.5% dead). Trustpilot forensics (deletions proved by Wayback). PR Newswire connection discovered. SERP analysis. Financial audit. Everything archived on Arweave, IPFS, GitHub. <strong style="color:var(--tx)">This page is the result.</strong></div>
+
+<div style="display:flex;flex-direction:column;align-items:center"><div style="width:28px;height:28px;border-radius:50%;background:var(--rd);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--bg)">9</div><div style="width:2px;flex:1;background:var(--bdr)"></div></div>
+<div style="padding:4px 0 4px 12px"><strong style="color:var(--rd)">Their response: threats, doxxing, silence.</strong> NameSilo tweets: <em>"halt your falsehoods or face legal action."</em> An insider tries to doxx our researcher by country. Zero facts addressed. Zero evidence disputed. <strong style="color:var(--tx)">Predictable. Documented. Permanent.</strong></div>
+
+</div>
+</div>
+
+<div style="margin:24px 0;padding:24px 28px;background:rgba(255,51,85,.03);border:1px solid rgba(255,51,85,.12);border-radius:16px">
+<h2 id="evidence-map" style="margin:0 0 16px;padding:0;border:none;background:none;font-size:14px;color:var(--rd);text-transform:uppercase;letter-spacing:2px">Evidence Map &mdash; Every Claim, Every Proof</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px">
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--rd)">
+<strong style="color:var(--tx)">xmrwallet steals Monero</strong><br>
+<span style="color:var(--tx2)">GitHub Issue #35 (deleted by operator, archived by us). 80+ Trustpilot reviews. Reddit PSAs. BitcoinTalk. Code analysis: viewkey exfiltration.</span><br>
+<a href="../xmrwallet-trustpilot.html" style="font-size:10px">[Trustpilot reviews]</a> <a href="../xmrwallet-twitter.html" style="font-size:10px">[Twitter evidence]</a>
+</div>
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--rd)">
+<strong style="color:var(--tx)">NameSilo refuses to ban them</strong><br>
+<span style="color:var(--tx2)">31+ abuse reports since 2018. FTC sent an official warning letter (Dec 2024). ICANN complaints. BBB complaints. NameSilo: "we had received no abuse reports." Domain still active today.</span><br>
+<a href="THE-LIES.md" style="font-size:10px">[Lies debunked]</a> <a href="PROOFS.md" style="font-size:10px">[Proofs]</a>
+</div>
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--or)">
+<strong style="color:var(--tx)">Operator lies in emails</strong><br>
+<span style="color:var(--tx2)">Feb 16: "we don't store keys." Feb 17: "this is the data we need" (contradiction). Feb 17: "subpoena the registrar." Feb 23: "hired a lawyer" (never appeared).</span><br>
+<a href="xmrwallet-evidence/operator-emails/" style="font-size:10px">[3 original .eml files + 2 extracts]</a>
+</div>
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--or)">
+<strong style="color:var(--tx)">Both buy paid articles</strong><br>
+<span style="color:var(--tx2)">xmrwallet: Kwork (500 rub), cryptopotato, newsbtc, captainaltcoin, PR Newswire ($500-1500). NameSilo: PR Newswire (12 releases), Forbes ($50K+), Yahoo Finance ("paid press release").</span><br>
+<a href="../screenshots/yahoo-namesilo-paid-label.png" style="font-size:10px">[Yahoo paid label]</a> <a href="../screenshots/forbes-namesilo-disclosure-clean.png" style="font-size:10px">[Forbes disclosure]</a> <a href="pr-newswire-pages/" style="font-size:10px">[15 cached pages]</a>
+</div>
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--rd)">
+<strong style="color:var(--tx)">NameSilo launders through phantom domains</strong><br>
+<span style="color:var(--tx2)">$65.5M revenue. 81.5% domains dead. 99.65% zero traffic. Serial patterns (37K groups). Bulk spikes (25 days with 10K+ registrations). First profit ever in 2025 ($2.2M).</span><br>
+<a href="domain-evidence.html" style="font-size:10px">[Domain anomaly report]</a> <a href="pr-newswire-pages/" style="font-size:10px">[Financial filings]</a>
+</div>
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--rd)">
+<strong style="color:var(--tx)">Both delete Trustpilot reviews</strong><br>
+<span style="color:var(--tx2)">xmrwallet: 7+ deleted (Wayback proof). Victim Erma Powell's verified review deleted as "guideline breach." NameSilo: 129 deleted in 4 months (2,609 → 2,480). Rating artificially recovered 4.5 → 4.7.</span><br>
+<a href="../screenshots/trustpilot-admin-deleted-review-erma-powell.png" style="font-size:10px">[Victim screenshot]</a> <a href="../screenshots/wayback-xmrwallet-tp-2024-05-10-top.png" style="font-size:10px">[Wayback xmrwallet 2024]</a> <a href="../screenshots/wayback-namesilo-tp-20230101.png" style="font-size:10px">[Wayback NameSilo 2023]</a> <a href="../screenshots/wayback-namesilo-tp-20260101.png" style="font-size:10px">[Wayback NameSilo 2026]</a> <a href="trustpilot-deletion-evidence.json" style="font-size:10px">[Full data]</a>
+</div>
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--rd)">
+<strong style="color:var(--tx)">They deleted our Twitter account</strong><br>
+<span style="color:var(--tx2)">@Phish_Destroy locked after tagging ICANN. X's own automation cleared us: "no violation found, account restored." Still locked. Gold Checkmark override = paid censorship.</span><br>
+<a href="evidence/06-x-support-no-violation.png" style="font-size:10px">[X Support email]</a> <a href="PRESSURE.md" style="font-size:10px">[Full pressure campaign]</a>
+</div>
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--rd)">
+<strong style="color:var(--tx)">NameSilo publicly defends the scammer</strong><br>
+<span style="color:var(--tx2)">Official tweet: "claims are false, libelous and defamatory... undergo legal action." Offered to help remove VirusTotal detections. Fabricated "compromise" story contradicted by operator's own emails.</span><br>
+<a href="../screenshots/namesilo-twitter-response-2026-05-12.png" style="font-size:10px">[Tweet screenshot]</a> <a href="evidence/12-ghostarchive-namesilo-tweet-top.png" style="font-size:10px">[GhostArchive]</a>
+</div>
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--cy)">
+<strong style="color:var(--tx)">Same PR platform (PR Newswire)</strong><br>
+<span style="color:var(--tx2)">"Volunteer wallet" and publicly-traded registrar both use Cision/PR Newswire. xmrwallet releases posted 1 day before NameSilo's. Same platform, same week. Fake phone (+1 300-227-473).</span><br>
+<a href="pr-newswire-connection.json" style="font-size:10px">[Connection data]</a> <a href="serp-evidence.html" style="font-size:10px">[SERP evidence]</a>
+</div>
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--cy)">
+<strong style="color:var(--tx)">Zero organic coverage for both</strong><br>
+<span style="color:var(--tx2)">xmrwallet: 94 referring domains (crypto-spam). NameSilo: 102 (exchange filings, coupons). Google + Bing SERP scraped. Neither has independent journalism. Both exist on paid placement only.</span><br>
+<a href="pr-newswire-pages/xmrwallet_google.txt" style="font-size:10px">[xmrwallet Google]</a> <a href="pr-newswire-pages/namesilo_google.txt" style="font-size:10px">[NameSilo Google]</a> <a href="pr-newswire-pages/xmrwallet_bing.txt" style="font-size:10px">[xmrwallet Bing]</a> <a href="pr-newswire-pages/namesilo_bing.txt" style="font-size:10px">[NameSilo Bing]</a>
+</div>
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--rd)">
+<strong style="color:var(--tx)">Insider tried to doxx researcher</strong><br>
+<span style="color:var(--tx2)">@bhabhiezayn (Paul Andreola associate) screenshotted researcher's country, posted as taunt, then deleted tweet. Archived before deletion.</span><br>
+<a href="../screenshots/bhabhiezayn-dox-attempt.png" style="font-size:10px">[Screenshot 1]</a> <a href="../screenshots/bhabhiezayn-dox-image.png" style="font-size:10px">[Screenshot 2]</a>
+</div>
+
+<div style="padding:10px 14px;background:var(--s1);border-radius:8px;border-left:3px solid var(--gn)">
+<strong style="color:var(--tx)">Operator wrote farewell letter</strong><br>
+<span style="color:var(--tx2)">May 5, 2026: posted closure announcement. Signed "The Creator." Admits investigation forced shutdown. Contains verifiable lies. Domain still active. NameSilo still hasn't suspended it.</span><br>
+<a href="xmrwallet-evidence/operator-farewell-may2026.html" style="font-size:10px">[Full farewell letter]</a>
+</div>
+
+</div>
+</div>
+
+<div class="stats">
+<div class="stat"><div class="stat-n" style="color:var(--rd)">8</div><div class="stat-l">Matching Patterns</div></div>
+<div class="stat"><div class="stat-n" style="color:var(--or)">1</div><div class="stat-l">Shared PR Platform</div></div>
+<div class="stat"><div class="stat-n" style="color:var(--cy)">94</div><div class="stat-l">xmrwallet Referring Domains</div></div>
+<div class="stat"><div class="stat-n" style="color:var(--cy)">102</div><div class="stat-l">NameSilo Referring Domains</div></div>
+<div class="stat"><div class="stat-n" style="color:var(--rd)">~0</div><div class="stat-l">Organic Coverage</div></div>
+</div>
+
+<div class="verdict">
+<h2>The Pattern</h2>
+<p>When confronted with evidence of fraud, both the scam operator and the registrar protecting them respond the same way: <strong>not with facts, not with transparency, not with action &mdash; but with paid press releases, legal threats, and manufactured legitimacy.</strong></p>
+<p style="margin-top:10px">Both use <strong>PR Newswire (Cision)</strong> &mdash; the same premium PR distribution platform. Both have almost no organic web presence: xmrwallet has 94 referring domains (almost all paid crypto-spam sites), NameSilo has 102 (mostly exchange filings and coupon sites). Neither entity has real organic coverage. Both rely entirely on paid placement. One buys Kwork SEO spam for 500 rubles. The other buys PR Newswire releases for $500+. <strong>Same approach. Different budget. Or the same budget.</strong></p>
+<p style="margin-top:10px">A "volunteer open-source wallet" publishing press releases on a platform designed for publicly-traded companies is not normal. It's someone with access to a corporate PR account &mdash; or the same PR agent.</p>
+</div>
+
+<h2 id="patterns">Side-by-Side Comparison <span class="n">8 matching behavioral patterns</span></h2>
+
+<div class="pattern-grid">
+<div class="pattern-header left">xmrwallet.com / "Nathalie Roy"</div>
+<div class="pattern-header right">NameSilo Technologies Corp</div>
+
+<div class="pattern-label">Pattern 1: Paid PR Instead of Transparency</div>
+<div class="pattern-cell left">
+<strong>Uses PR Newswire</strong> ($500-1500/release) to publish press releases about "charity support", "Tor integration", and "privacy access". An anonymous "volunteer project" spending thousands on premium PR distribution.
+<span class="match">Service: PR Newswire (Cision)</span>
+</div>
+<div class="pattern-cell right">
+<strong>Uses PR Newswire</strong> for investor relations, milestone announcements ("6 Million Domains"), and year-end results. When confronted with abuse evidence, responds with PR &mdash; not with action.
+<span class="match">Service: PR Newswire (Cision)</span>
+</div>
+
+<div class="pattern-label">Pattern 2: Threats Instead of Arguments</div>
+<div class="pattern-cell left">
+<strong>"Nathalie Roy"</strong> sends threatening emails to PhishDestroy volunteers. Instead of addressing the evidence of stolen funds, threatens legal action. No substantive response to any technical finding.
+</div>
+<div class="pattern-cell right">
+<strong>NameSilo's Twitter/X response</strong> (May 11, 2026): <em>"Your claims are false, libelous and defamatory... halt your falsehoods towards us or we will be forced to undergo legal action."</em> Instead of addressing the FTC warning letter, BBB complaints, and documented abuse &mdash; legal threats. Zero engagement with specific evidence. <a href="../screenshots/namesilo-twitter-response-2026-05-12.png">[Screenshot]</a> <a href="https://x.com/namesilo/status/2053874303037219046">[Original tweet]</a>
+</div>
+
+<div class="pattern-label">Pattern 3: Manufactured Legitimacy</div>
+<div class="pattern-cell left">
+<strong>Buys Kwork services</strong> (500 rubles) for SEO spam. Buys PR Newswire releases. Runs coordinated Twitter bot campaigns (44 bot tweets documented). Creates appearance of legitimate crypto project.
+</div>
+<div class="pattern-cell right">
+<strong>Uses PR Newswire releases</strong> on investor pages (CSE: URL). Touts domain count milestones while hosting documented phishing infrastructure. Uses "in-depth review" claims without evidence of actual review.
+</div>
+
+<div class="pattern-label">Pattern 4: Zero Engagement With Evidence</div>
+<div class="pattern-cell left">
+<strong>GitHub Issue #35</strong> documents the theft mechanism with code analysis. Trustpilot reviews (80+) document stolen funds. Zero response from operator to any technical evidence.
+</div>
+<div class="pattern-cell right">
+<strong>FTC sent 2 warning letters.</strong> BBB complaints filed. ICANN complaints submitted. PhishDestroy provided detailed abuse report with evidence. Response: "we had received no abuse reports" and "in-depth review found no issues."
+</div>
+
+<div class="pattern-label">Pattern 5: Trustpilot Bot Farms &mdash; Both Delete Negatives, Both Buy Positives</div>
+<div class="pattern-cell left">
+<strong>xmrwallet Trustpilot &mdash; Wayback Machine proves deletions:</strong> May 2024 snapshot shows <strong>45 reviews, rating 3.6</strong> (27% one-star). Current scrape: <strong>80 reviews, rating shifted to 51% five-star</strong> (22.5% one-star). We compared names: <strong>7 reviews deleted from page 1 alone</strong>, including:
+<br>&bull; <strong>"Elmo T. Johnson"</strong> &mdash; "XMRWallet swindled my funds. <strong>1200 monero was vanished</strong>" &mdash; DELETED
+<br>&bull; <strong>"B.Costa"</strong> &mdash; "Nathalie solved it" &mdash; DELETED (mentions operator by name!)
+<br>&bull; <strong>2 verified reviews</strong> (with Trustpilot checkmark) &mdash; DELETED
+<br>&bull; <strong>3 bot reviews</strong> ("Thomas", "Jabari Rivera", "Evelyn Malik") &mdash; their own bots, deleted after serving purpose
+<br><strong>Victim testimony:</strong> <strong>"Erma Powell"</strong> (verified Trustpilot account, green checkmark) posted a 1-star review on Apr 22, 2024: <em>"I'm in a panic, I created a wallet on the official site, put money in and the developers took everything, the code on github has nothing to do with this site. Do something about it."</em> An unprompted, verified victim report. Trustpilot removed it: <strong>"This review was removed for breaching Trustpilot's Guidelines for Reviewers."</strong> The victim sent us the screenshot of her deleted review. A verified user reporting stolen funds &mdash; deleted as a "guideline breach." Wayback Machine confirms: <a href="https://web.archive.org/web/20240510154440/https://www.trustpilot.com/review/www.xmrwallet.com">May 2024 snapshot</a> shows 45 reviews &mdash; today there are 80, but at least 7 names from that snapshot are gone. Erma Powell's review doesn't appear in any snapshot because it was removed within days of posting. We know because she told us. We have more.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:10px 0">
+<a href="../screenshots/trustpilot-admin-deleted-review-erma-powell.png"><img src="../screenshots/trustpilot-admin-deleted-review-erma-powell.png" alt="Victim Erma Powell - deleted Trustpilot review" style="max-width:440px;width:100%;border-radius:10px;border:1px solid var(--bdr)"></a>
+<a href="../screenshots/wayback-xmrwallet-tp-2024-05-10-top.png"><img src="../screenshots/wayback-xmrwallet-tp-2024-05-10-top.png" alt="Wayback Machine - xmrwallet Trustpilot May 2024 - 45 reviews" style="max-width:440px;width:100%;border-radius:10px;border:1px solid var(--bdr)"></a>
+</div>
+<p>
+<br>Pages 2-3 (25 more reviews) were not cached by Wayback. Actual deletion count is far higher. The result: a scam wallet maintained a rating <strong>higher than top crypto exchanges</strong>. <a href="../xmrwallet-trustpilot.html">[Browse 80 surviving]</a> <a href="trustpilot-deletion-evidence.json">[Deletion evidence JSON]</a>
+</div>
+<div class="pattern-cell right">
+<strong>NameSilo Trustpilot &mdash; Wayback Machine proves deletions:</strong> Jan 2026 snapshot shows <strong>2,609 reviews</strong>. Current scrape (May 2026): <strong>2,480 reviews</strong>. That's <strong>129 reviews deleted in 4 months.</strong> Rating trajectory: 4.7 (2023) &rarr; 4.5 (2024) &rarr; 4.7 (2025) &mdash; rating <strong>recovered</strong> despite adding 600+ reviews. This only happens when negatives are deleted faster than they arrive. 92% bot manipulation probability (independent AI analysis). Low-quality 5-star from single-review accounts praising "Leonid." 57 perfect reviews from Hong Kong. <a href="../namesilo-trustpilot.html">[Browse 2,480 surviving]</a>
+<span class="match">Both delete reviews. xmrwallet: 7+ confirmed deleted (Wayback proof). NameSilo: 129 deleted in 4 months (Wayback proof). Same platform. Same manipulation.</span>
+</div>
+
+<div class="pattern-label">Pattern 6: Deny, Deflect, Disappear</div>
+<div class="pattern-cell left">
+<strong>Zero engagement with evidence.</strong> GitHub Issue #35 documents the theft mechanism with code analysis. 80+ Trustpilot reviews document stolen funds. Reddit PSAs, BitcoinTalk warnings. Operator response: silence, then threats, then evidence destruction (deleted GitHub issues).
+</div>
+<div class="pattern-cell right">
+<strong>"In-depth review"</strong> with zero documentation. No abuse report acknowledgment despite an FTC warning letter. Claims to have reviewed domains that are documented phishing infrastructure. When pressed: <em>"halt your falsehoods or we will be forced to undergo legal action."</em>
+</div>
+
+<div class="pattern-label">Pattern 7: Disproportionate Spending</div>
+<div class="pattern-cell left">
+<strong>"Volunteer project"</strong> that spends $1,500+ on PR Newswire, buys Twitter/X Gold ($200/month), runs coordinated bot campaigns, purchases Kwork SEO services. Where does the money come from for a "free volunteer wallet"?
+</div>
+<div class="pattern-cell right">
+<strong>Publicly-traded company</strong> (CSE: URL) spending on PR Newswire for investor relations while refusing to invest in basic abuse prevention. Revenue from domain registrations, including phishing domains, funds the PR machine.
+</div>
+
+<div class="pattern-label">Pattern 8: Same Response to DDoS/Attack Claims</div>
+<div class="pattern-cell left">
+<strong>xmrwallet.com disappears periodically.</strong> Resurfaces at new hosting. Uses Tor as "privacy" justification. No transparency about infrastructure changes.
+</div>
+<div class="pattern-cell right">
+<strong>phishdestroy.io hit with DDoS</strong> through njal.la-registered domains after publishing investigation. NameSilo's response: silence. No investigation into who registered the attack domains.
+</div>
+</div>
+
+<h2 id="links">Link Footprint Analysis <span class="n">What Google and Bing actually return</span></h2>
+
+<div class="evidence-box">
+<h3>Neither Entity Has Organic Coverage</h3>
+<p>We scraped the top 100 results from Google and Bing for both "xmrwallet" and "namesilo". The results are revealing: <strong>neither entity has meaningful organic web presence.</strong> Both survive entirely on paid placement, platform profiles, and auto-syndicated PR releases.</p>
+<ul>
+<li><strong>xmrwallet Google results:</strong> 100 links &mdash; almost all are paid crypto-spam sites (cryptopotato, newsbtc, captainaltcoin, forexcrunch, beincrypto), Kwork-seeded articles, and scam warnings</li>
+<li><strong>xmrwallet Bing results:</strong> 122 links &mdash; same pattern, plus guru99 affiliate pages in 5+ languages, ChatGPT results (Bing hallucination)</li>
+<li><strong>NameSilo Google results:</strong> 97 links &mdash; exchange filings (CSE, Yahoo Finance), coupon sites (couponfollow), review blogs, DNS tutorials, and PR Newswire syndications</li>
+<li><strong>NameSilo Bing results:</strong> 121 links &mdash; same pattern plus BBB complaints, FTC warning letter, Forbes review</li>
+</ul>
+<p><strong>Key finding:</strong> Neither entity has earned organic media coverage. No independent investigative journalism (until PhishDestroy). No industry analyst coverage. No technical community recognition. Both exist in a bubble of paid placement and auto-syndicated PR.</p>
+</div>
+
+<div class="evidence-box">
+<h3>xmrwallet's Paid Link Network</h3>
+<p>The xmrwallet SERP results reveal a <strong>purchased link network</strong> across crypto-spam sites:</p>
+<ul>
+<li><strong>cryptopotato.com</strong> &mdash; paid "review" article positioning xmrwallet as "convenient and simple"</li>
+<li><strong>newsbtc.com</strong> &mdash; sponsored article: "The First Web-based Anonymous Monero Wallet"</li>
+<li><strong>captainaltcoin.com</strong> &mdash; paid inclusion in "Best Monero Wallets" listicle</li>
+<li><strong>forexcrunch.com</strong> &mdash; paid announcement of Tor browser launch (2018)</li>
+<li><strong>beincrypto.com</strong> &mdash; paid inclusion in wallet comparison articles</li>
+<li><strong>medium.com/@oliviasmith1978</strong> &mdash; fake "review" by sock puppet account (appears twice)</li>
+<li><strong>peakd.com, steemit.com, spark.ru</strong> &mdash; blog-spam on free platforms</li>
+<li><strong>prnewswire.com</strong> &mdash; paid press release ($500-1,500 per release)</li>
+<li><strong>Various weebly.com sites</strong> &mdash; auto-generated spam microsites</li>
+</ul>
+<p>Total estimated spend on SEO/PR: <span class="cost">$5,000 &mdash; $15,000+</span> for a "free volunteer project."</p>
+</div>
+
+<div class="evidence-box">
+<h3>NameSilo's PR Infrastructure</h3>
+<p>NameSilo uses PR Newswire as its <strong>primary investor relations channel</strong>. The full PR distribution chain:</p>
+<ul>
+<li><strong>PR Newswire (prnewswire.com)</strong> &mdash; primary distribution, 10+ releases documented. All quarterly reports, acquisitions, corporate updates</li>
+<li><strong>Newswire.ca</strong> &mdash; Canadian distributor, mirrors PR Newswire releases (NameSilo is Canadian-incorporated)</li>
+<li><strong>CSE (thecse.com)</strong> &mdash; Canadian Securities Exchange mandatory filings</li>
+<li><strong>SEDAR+</strong> &mdash; Canadian equivalent of SEC EDGAR</li>
+<li><strong>Stockwatch</strong> &mdash; financial news syndication</li>
+<li><strong>Yahoo Finance / Nasdaq / Moomoo</strong> &mdash; auto-syndicated from PR Newswire</li>
+<li><strong>Placera.se</strong> &mdash; Swedish financial news site. NameSilo buys placement for press releases, writes about itself in third person. <a href="pr-newswire-pages/placera-se-namesilo-shorturl.html">[Cached page]</a></li>
+<li><strong>Morningstar.com</strong> &mdash; financial data platform, auto-syndicated from PR Newswire</li>
+</ul>
+<p>All quarterly reports, acquisitions, and corporate updates flow: <strong>PR Newswire &rarr; newswire.ca &rarr; Yahoo Finance/Nasdaq automatically.</strong> PR Newswire is their primary and most used PR channel. NameSilo's stock page on Yahoo Finance (<a href="https://finance.yahoo.com/quote/URLOF/">URLOF</a>) and Morningstar cite these PR Newswire releases directly as the source of company news. It's their corporate voice.</p>
+<p style="margin-top:10px"><strong>We discovered this connection by accident.</strong> While reviewing NameSilo's CSE listing and stock exchange page, we noticed all their press releases were distributed via PR Newswire. Then we checked xmrwallet's PR releases &mdash; same platform. A "volunteer open-source Monero wallet" uses the same premium corporate PR distribution service as a publicly-traded Canadian registrar. With a fake phone number (+1 300-227-473) and a persona ("Nathalie Roy, Founder"). This is either someone with access to NameSilo's corporate PR Newswire account, or someone using the same PR agent. A volunteer does not independently discover and purchase $500-1,500 PR Newswire distribution.</p>
+</div>
+
+<h2 id="prnewswire">PR Newswire Releases <span class="n">All cached, 15 pages archived</span></h2>
+
+<div class="evidence-box">
+<h3>Archived Evidence</h3>
+<p>All PR Newswire pages for both entities have been downloaded and preserved in our archive. 15 HTML files totaling ~3MB. These pages may be modified or removed &mdash; our copies are permanent.</p>
+<ul>
+<li><strong>xmrwallet releases:</strong> 3 pages archived (<a href="pr-newswire-pages/">browse</a>)</li>
+<li><strong>NameSilo releases:</strong> 12 pages archived (<a href="pr-newswire-pages/">browse</a>)</li>
+<li><strong>Google SERP dumps:</strong> <a href="pr-newswire-pages/xmrwallet_google.txt">xmrwallet (100 links)</a> &middot; <a href="pr-newswire-pages/namesilo_google.txt">NameSilo (97 links)</a></li>
+<li><strong>Bing SERP dumps:</strong> <a href="pr-newswire-pages/xmrwallet_bing.txt">xmrwallet (122 links)</a> &middot; <a href="pr-newswire-pages/namesilo_bing.txt">NameSilo (121 links)</a></li>
+</ul>
+</div>
+
+<div class="pr-card">
+<div class="entity xmr">xmrwallet.com</div>
+<div class="pr-title">XMRWallet Expands Privacy Access with Full Tor Network Integration</div>
+<div class="pr-date">January 21, 2026</div>
+<div class="pr-detail">Published on PR Newswire. Announces Tor integration as a "privacy" feature. Positions the scam wallet as a legitimate privacy tool.</div>
+<div class="pr-contact">Contact listed: Nathalie Roy (Founder), [email protected], +1 300-227-473</div>
+</div>
+
+<div class="pr-card">
+<div class="entity xmr">xmrwallet.com</div>
+<div class="pr-title">XMR Wallet Upgrade Website to Support Charities and Developing Countries</div>
+<div class="pr-date">April 19, 2023</div>
+<div class="pr-detail">"Support Charities" &mdash; a wallet that steals user funds publishes a PR release about charity. The irony would be funny if real people weren't losing real money.</div>
+</div>
+
+<div class="pr-card">
+<div class="entity xmr">xmrwallet.com</div>
+<div class="pr-title">Companies Embrace Cryptocurrency to Grow Business in 2023</div>
+<div class="pr-date">September 26, 2023</div>
+<div class="pr-detail">Generic crypto-industry PR release. Designed to make xmrwallet.com appear as a legitimate industry participant rather than a documented scam operation.</div>
+</div>
+
+<div class="pr-card">
+<div class="entity ns">NameSilo Technologies Corp</div>
+<div class="pr-title">NameSilo Technologies Corp. Announces 2025 Year-End Results</div>
+<div class="pr-date">May 1, 2026</div>
+<div class="pr-detail">Investor relations release on PR Newswire. Revenue from managing 6M+ domains, including those hosting phishing operations they refuse to act on.</div>
+</div>
+
+<div class="pr-card">
+<div class="entity ns">NameSilo Technologies Corp</div>
+<div class="pr-title">NameSilo Surpasses 6 Million Domains Under Management</div>
+<div class="pr-date">January 22, 2026</div>
+<div class="pr-detail">Published <strong>one day after</strong> xmrwallet's Tor integration release. Same platform, same week. Celebrates domain count milestone. Doesn't mention what percentage of those 6M domains are used for fraud.</div>
+</div>
+
+<div class="pr-card">
+<div class="entity ns">NameSilo Technologies Corp</div>
+<div class="pr-title">NameSilo Technologies Corp. Closes Strategic Acquisition of Reach Systems</div>
+<div class="pr-date">February 2026</div>
+<div class="pr-detail">Corporate acquisition announcement. PR Newswire is NameSilo's primary channel for all investor communications.</div>
+</div>
+
+<div class="pr-card">
+<div class="entity ns">NameSilo Technologies Corp</div>
+<div class="pr-title">NameSilo Technologies Corp. Announces Q3 2025 Results</div>
+<div class="pr-date">November 2025</div>
+<div class="pr-detail">Quarterly financial results. All syndicated automatically to Yahoo Finance, Nasdaq, Moomoo, Morningstar via PR Newswire &rarr; newswire.ca pipeline.</div>
+</div>
+
+<div class="pr-card">
+<div class="entity ns">NameSilo Technologies Corp</div>
+<div class="pr-title">+ 9 More NameSilo Releases on PR Newswire</div>
+<div class="pr-date">2025 &mdash; 2026</div>
+<div class="pr-detail">Q1/Q2/Q3 results, Sewervue acquisition (LOI + definitive agreement), CommerceHQ acquisition, subsidiary $560K sale, Reach Systems LOI + close. <strong>All 12 releases archived in our evidence folder.</strong> <a href="pr-newswire-pages/">Browse all cached pages &rarr;</a></div>
+</div>
+
+<h2 id="response-tl">Response Timeline <span class="n">How both entities respond to evidence</span></h2>
+
+<div class="timeline">
+<div class="timeline-item">
+<div class="tl-entity xmr">xmrwallet operator</div>
+<div class="tl-date">2023 &mdash; 2025</div>
+<div class="tl-text">GitHub Issue #35 filed documenting theft mechanism. Trustpilot reviews accumulate (80+). Reddit PSA warnings posted. BitcoinTalk alerts. YouTube exposures. <strong>Operator response: silence. Zero engagement with any evidence.</strong></div>
+</div>
+<div class="timeline-item">
+<div class="tl-entity ns">NameSilo</div>
+<div class="tl-date">December 2024</div>
+<div class="tl-text">FTC sends official warning letter about domains registered through NameSilo impersonating the FTC itself. BBB complaints filed. ICANN complaints submitted. <strong>NameSilo response: "we had received no abuse reports."</strong></div>
+</div>
+<div class="timeline-item threat">
+<div class="tl-entity xmr">xmrwallet operator</div>
+<div class="tl-date">Early 2026</div>
+<div class="tl-text">"Nathalie Roy" sends threatening emails to PhishDestroy volunteers. Instead of addressing stolen funds evidence &mdash; threats. <strong>Pattern: threats replace arguments.</strong></div>
+</div>
+<div class="timeline-item">
+<div class="tl-entity xmr">xmrwallet operator</div>
+<div class="tl-date">January 21, 2026</div>
+<div class="tl-text">Publishes PR Newswire release about "Tor Network Integration" &mdash; $500-1500 for manufactured legitimacy instead of addressing theft reports.</div>
+</div>
+<div class="timeline-item">
+<div class="tl-entity ns">NameSilo</div>
+<div class="tl-date">January 22, 2026</div>
+<div class="tl-text">Publishes PR Newswire release: "Surpasses 6 Million Domains." One day after xmrwallet's PR release. Both using the same platform, same week.</div>
+</div>
+<div class="timeline-item">
+<div class="tl-entity ns">NameSilo</div>
+<div class="tl-date">April 2026</div>
+<div class="tl-text">PhishDestroy submits detailed abuse report with evidence. NameSilo claims "in-depth review" found no issues. <strong>Zero documentation of review process.</strong></div>
+</div>
+<div class="timeline-item threat">
+<div class="tl-entity ns">NameSilo</div>
+<div class="tl-date">May 11, 2026</div>
+<div class="tl-text">Responds on Twitter/X: <em>"Your claims are false, libelous and defamatory. NameSilo takes action and reviews all abuse reports submitted to us... halt your falsehoods towards us or we will be forced to undergo legal action."</em> 107 replies, 417 views. <strong>Threats of legal action instead of addressing a single piece of evidence. Same pattern as "Nathalie Roy."</strong> <a href="../screenshots/namesilo-twitter-response-2026-05-12.png">[Screenshot]</a></div>
+</div>
+</div>
+
+<h2 id="improbability">The Improbability Argument <span class="n">Statistical and behavioral coincidences</span></h2>
+
+<div class="verdict">
+<h2>Three Improbable Coincidences</h2>
+<p>Consider these three facts together:</p>
+<p style="margin-top:10px"><strong>1. The operator invites us to subpoena the registrar &mdash; and the registrar helps him.</strong> On February 17, 2026, the xmrwallet operator emailed PhishDestroy: <em>"Feel free to subpoena the domain registrar for my information."</em> A guy running a ten-year crypto drainer, on $550/month bulletproof hosting in Belize, behind Russian DDoS-Guard, calmly invited a security research organization to subpoena his own registrar. Nobody behaves like that with a registrar that might shut them down. <strong>He already knew how NameSilo would react.</strong> And he was right &mdash; NameSilo not only refused to act, they publicly offered to help him remove VirusTotal security detections. The operator later escalated: <em>"I've hired a lawyer and a private investigator"</em> (February 23). No lawyer ever appeared. No PI ever made contact. But the confidence was real &mdash; because NameSilo had his back. <strong>This is not an adversarial relationship. This is a partnership.</strong></p>
+<p style="margin-top:10px"><strong>2. A registrar ignores 10 years of theft reports &mdash; while laundering millions through phantom domains.</strong> xmrwallet.com has been documented stealing funds since at least 2018. GitHub issues, Trustpilot reviews, Reddit PSA threads, BitcoinTalk warnings, an FTC warning letter, ICANN complaints &mdash; all publicly available. NameSilo claims "we had received no abuse reports" and their "in-depth review found no issues." Meanwhile, the same registrar manages 5.18 million domains of which 81.5% are dead, with 615% registration spikes and serial-pattern bulk purchases (37,375 groups of sequential domains like 3967a.app/3967b.app/3967c.app). The revenue from these phantom registrations is millions of dollars annually. A company actively processing millions in suspicious domain registrations has a financial interest in not investigating fraud &mdash; because investigation leads to questions about their own revenue.</p>
+<p style="margin-top:10px"><strong>3. Both entities have nearly identical web footprints &mdash; almost no organic presence.</strong> xmrwallet: 94 referring domains, almost all purchased crypto-spam articles and Kwork-seeded links. NameSilo: 102 referring domains, mostly exchange filings, coupon affiliates, and DNS tutorials. Neither has earned organic media coverage. Both rely entirely on paid placement. Both use the same PR distribution platform (PR Newswire/Cision). The probability of a random "volunteer wallet" independently choosing the same premium corporate PR service as one specific publicly-traded Canadian registrar is vanishingly small.</p>
+<p style="margin-top:10px">Each coincidence alone might be explained away. <strong>Together, they describe a single operation: a scam wallet generates stolen crypto, the registrar launders it through phantom domain registrations, and both entities protect each other from scrutiny using threats, paid PR, and coordinated silence.</strong></p>
+</div>
+
+<div class="threat-box">
+<h3>Why Does a "Volunteer Wallet" Behave Like a Corporation?</h3>
+<p>xmrwallet.com claims to be a free, volunteer-run Monero wallet. Yet the operator:</p>
+<p>&bull; Pays <strong>$500-1,500 per PR Newswire release</strong> (at least 3 releases = $1,500-4,500)<br>
+&bull; Pays <strong>$200/month for Twitter/X Gold</strong> verification<br>
+&bull; Runs <strong>coordinated bot campaigns</strong> on Twitter (44+ bot accounts documented)<br>
+&bull; Buys <strong>Kwork SEO services</strong> for link spam<br>
+&bull; Lists a <strong>contact phone number</strong> (+1 300-227-473) and named founder on PR releases<br>
+&bull; Has <strong>zero organic coverage</strong> &mdash; 94 referring domains, almost all purchased</p>
+<p>This spending pattern is not consistent with volunteer work. It is consistent with an operation that has a <strong>revenue source</strong> &mdash; and the documented revenue source is <strong>stolen Monero from wallet users</strong>.</p>
+</div>
+
+<div class="threat-box">
+<h3>Why Does a Registrar Respond Like a Scam Operator?</h3>
+<p>NameSilo Technologies Corp (CSE: URL, ICANN #1479) is a publicly-traded company managing 6 million domains. Yet when confronted with evidence of abuse, they:</p>
+<p>&bull; <strong>Deny receiving abuse reports</strong> that were demonstrably submitted<br>
+&bull; Claim <strong>"in-depth review"</strong> with zero documentation or transparency<br>
+&bull; Respond with <strong>"halt your falsehoods or we will be forced to undergo legal action"</strong> instead of facts<br>
+&bull; Use <strong>PR Newswire releases</strong> to project legitimacy while refusing basic abuse prevention<br>
+&bull; <strong>Ignore FTC warning letter</strong> (Dec 2024) without public acknowledgment<br>
+&bull; Have <strong>102 referring domains</strong> with almost no organic coverage &mdash; same void as the scam they protect</p>
+<p>A registrar managing 6 million domains should respond to abuse evidence with transparency and action. Instead, NameSilo responds with the same playbook as the scam operator they protect: <strong>deny, deflect, threaten, buy PR.</strong></p>
+</div>
+
+<div class="evidence-box">
+<h3>What a Normal Response Looks Like</h3>
+<p>For comparison, here's how legitimate registrars respond to documented fraud:</p>
+<ul>
+<li><strong>Namecheap:</strong> Acknowledges reports, provides ticket numbers, suspends confirmed abuse domains within 24-48 hours</li>
+<li><strong>Cloudflare:</strong> Published transparency reports, dedicated abuse team, automated takedown workflows</li>
+<li><strong>Porkbun:</strong> Responsive abuse handling, proactive communication, transparent process</li>
+<li><strong>Normal response:</strong> Acknowledge &rarr; Investigate &rarr; Document &rarr; Act &rarr; Report back</li>
+<li><strong>NameSilo response:</strong> Deny &rarr; "In-depth review" &rarr; Threaten legal action &rarr; PR release</li>
+<li><strong>xmrwallet response:</strong> Silence &rarr; Threaten volunteers &rarr; PR release &rarr; More bot tweets</li>
+<li><strong>The pattern is identical.</strong></li>
+</ul>
+</div>
+
+<h2 id="financials">NameSilo Financials <span class="n">Follow the money</span></h2>
+
+<div class="evidence-box">
+<h3>The Numbers: $65.5M Revenue, $2.2M Net Income, 6.26M Domains</h3>
+<p>NameSilo Technologies Corp (CSE: URL, OTC: URLOF) reported 2025 year-end results via &mdash; of course &mdash; a paid PR Newswire release. Key figures:</p>
+<ul>
+<li><strong>Annual Revenue:</strong> <span class="cost">$65,468,311</span> (up 18.5% from $55.2M in 2024)</li>
+<li><strong>Net Income:</strong> <span class="cost">$2,192,261</span> (first profit ever &mdash; 2024 was a loss of -$304K)</li>
+<li><strong>Operating Cash Flow:</strong> <span class="cost">$9,736,395</span></li>
+<li><strong>Cash on hand:</strong> <span class="cost">$3,600,332</span></li>
+<li><strong>Domains under management:</strong> <span class="cost">6.26 million</span> from ~160 countries</li>
+<li><strong>Deferred revenue:</strong> <span class="cost">$32,750,108</span> (prepaid domain registrations)</li>
+<li><strong>Debt:</strong> <span class="cost">$0</span> (recently paid off)</li>
+<li><strong>CEO:</strong> Paul Andreola &mdash; <strong>CEO NameSilo LLC:</strong> Kristaps Ronka</li>
+<li><strong>Growth:</strong> From $10.6M revenue / 1.85M domains (2017) to $65.5M / 6.26M (2025)</li>
+</ul>
+</div>
+
+<div class="threat-box">
+<h3>Where Does $65.5M Come From?</h3>
+<p>NameSilo's revenue is domain registrations. At an average of ~$10 per domain per year, 6.26 million domains = ~$62.6M. The math checks out. But here's the question:</p>
+<p>&bull; <strong>81.5% of their domains are dead</strong> (our analysis of 5.18M sample). That's ~5.1M dead domains generating ~$51M in revenue annually.<br>
+&bull; <strong>99.65% show zero confirmed traffic.</strong> Who pays $10/year to renew a domain nobody visits?<br>
+&bull; <strong>Serial registration patterns:</strong> 37,375 groups of sequential domains (3967a.app/3967b.app/3967c.app). Not organic registrations.<br>
+&bull; <strong>Bulk spikes:</strong> 25 days with 10,000+ registrations each. Not organic growth.<br>
+&bull; <strong>Net income of $2.2M</strong> on revenue from mostly-dead domains. This is the first year they turned a profit. The business model runs on volume &mdash; millions of domains that nobody uses, renewed year after year.</p>
+<p>A company whose revenue depends on millions of phantom domain registrations has a <strong>financial incentive to not investigate abuse</strong> &mdash; because investigation reveals that most of their "customers" aren't real.</p>
+</div>
+
+<div class="evidence-box">
+<h3>PR Newswire as Fake Journalism</h3>
+<p>Every NameSilo "news article" on Yahoo Finance, Morningstar, Nasdaq, Moomoo, and Placera.se is the <strong>same PR Newswire press release</strong> &mdash; written by NameSilo, about NameSilo, in third person, distributed as "news." The PR Newswire label says <strong>"This is a paid press release."</strong> But the syndication makes it look like media coverage.</p>
+<p>The pipeline: NameSilo writes a press release about itself &rarr; pays PR Newswire $500-1,500 &rarr; PR Newswire syndicates to Yahoo Finance, Morningstar, newswire.ca &rarr; these appear as "news articles" on financial platforms &rarr; NameSilo cites them on their CSE listing page as "media coverage." It's a company <strong>paying to cite itself as a source.</strong></p>
+<p>The platforms themselves say so:</p>
+<p>&bull; <strong>Yahoo Finance</strong> shows a grey banner: <em>"This is a paid press release. Contact the press release distributor directly with any inquiries."</em> With CISION logo. The platform has no editorial involvement &mdash; NameSilo writes the content, pays for distribution, Yahoo publishes it unedited.</p>
+<a href="../screenshots/yahoo-namesilo-paid-label.png"><img src="../screenshots/yahoo-namesilo-paid-label.png" alt="Yahoo Finance paid press release label" style="width:100%;max-width:900px;border-radius:10px;border:1px solid var(--bdr);margin:10px 0"></a>
+<p>&bull; <strong>Forbes Advisor</strong> shows: <em>"We earn a commission from partner firms"</em> + "Advertiser Disclosure." This is not independent journalism &mdash; it's a paid review placement (~$50,000+). Forbes provides the template, NameSilo pays for the slot.</p>
+<a href="../screenshots/forbes-namesilo-disclosure-clean.png"><img src="../screenshots/forbes-namesilo-disclosure-clean.png" alt="Forbes Advisor advertiser disclosure" style="width:100%;max-width:900px;border-radius:10px;border:1px solid var(--bdr);margin:10px 0"></a>
+<p>&bull; <strong>Placera.se</strong> (Swedish financial site) publishes NameSilo press releases verbatim &mdash; company writing about itself in third person, syndicated as "financial news." <a href="pr-newswire-pages/placera-se-namesilo-shorturl.html">[Cached page]</a></p>
+<p>xmrwallet does the exact same thing. Same platform. Same trick. Different budget. Or the same budget.</p>
+</div>
+
+<div class="evidence-box">
+<h3>What Does Canada Get?</h3>
+<p>NameSilo Technologies Corp is incorporated in British Columbia, Canada. Listed on CSE (Canadian Securities Exchange). Their contribution to the Canadian economy:</p>
+<ul>
+<li><strong>Net income of $2.2M</strong> &mdash; first profitable year ever. Prior years: losses. Tax contribution: minimal.</li>
+<li><strong>Employees:</strong> Not disclosed in filings. The LLC operates from Phoenix, Arizona (US).</li>
+<li><strong>Canadian presence:</strong> A Vancouver mailing address and a CSE listing. The actual domain business (NameSilo LLC) is a US entity.</li>
+<li><strong>Acquisitions:</strong> SewerVue Technologies (robotic sewer inspection), Reach Systems, CommerceHQ, ShortURL. Diversifying away from domains &mdash; or building a conglomerate to obscure the core business?</li>
+<li><strong>What Canada gets:</strong> A company that brings zero tax revenue (losses until 2025), operates from the US, hosts documented phishing infrastructure, ignores FTC warning letters, and uses a CSE listing for legitimacy while managing 5+ million dead domains.</li>
+</ul>
+</div>
+
+<div style="margin:36px 0;background:linear-gradient(135deg,rgba(255,215,0,.06),rgba(255,51,85,.03));border:1px solid rgba(255,215,0,.18);border-radius:16px;padding:28px 32px;position:relative;overflow:hidden">
+<div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--yl),var(--rd))"></div>
+<h2 style="margin:0 0 8px;padding:0;border:none;background:none;font-size:10px;color:var(--yl);text-transform:uppercase;letter-spacing:4px">The Falsification Test</h2>
+<p style="font-size:16px;font-weight:800;color:var(--tx);margin-bottom:16px">Run any registrar through these criteria. Only one matches.</p>
+<p style="font-size:12px;color:var(--tx2);margin-bottom:20px;line-height:1.7">Take Namecheap, Porkbun, Tucows, GoDaddy &mdash; any registrar on Earth &mdash; and compare it to xmrwallet.com using the criteria below. You will find zero matches. Now run NameSilo. Every single line lights up.</p>
+
+<div style="font-size:12px;color:var(--tx2);line-height:1.7;display:flex;flex-direction:column;gap:6px;margin-bottom:20px">
+<div style="padding:8px 12px;background:rgba(255,51,85,.04);border-radius:6px;border-left:3px solid var(--rd)"><strong style="color:var(--rd)">1.</strong> Operator invites subpoena of his own registrar. Not afraid. Registrar fabricates a cover story he never asked for.</div>
+<div style="padding:8px 12px;background:rgba(255,51,85,.04);border-radius:6px;border-left:3px solid var(--rd)"><strong style="color:var(--rd)">2.</strong> Registrar offers to remove VirusTotal detections. No registrar in history has done this.</div>
+<div style="padding:8px 12px;background:rgba(255,138,43,.04);border-radius:6px;border-left:3px solid var(--or)"><strong style="color:var(--or)">3.</strong> Same response style: threats instead of arguments. Same arrogance. Same void where substance should be.</div>
+<div style="padding:8px 12px;background:rgba(255,138,43,.04);border-radius:6px;border-left:3px solid var(--or)"><strong style="color:var(--or)">4.</strong> Same PR pipeline. PR Newswire costs $195&ndash;249/yr membership + $805&ndash;3,000+ per release. Built for publicly-traded companies. Free alternatives exist. Yet a "volunteer wallet" (zero donations, fake phone, $550/mo DDoS-Guard in Russia, deleted source code) publishes there &mdash; same platform where NameSilo files CSE quarterly earnings. Contact listed: "Nathalie Roy, +1&nbsp;300-227-473" (fake &mdash; area code 300 doesn't exist), 407923@email4pr.com (PR Newswire enterprise relay), promoting <em>"discreet financial tools for charitable organizations."</em> A $100M theft operation posing as charity infrastructure on a stock-price platform. The release announces "Tor Network Integration" for an "open-source" project whose <strong style="color:var(--rd)">last GitHub commit was Nov 6, 2018</strong> &mdash; 7+ years before the release. No Tor code was ever committed. The "open-source" repo is a 2018 audit prop. They paid $800+ to advertise a feature that doesn't exist in their codebase.</div>
+<div style="padding:8px 12px;background:rgba(255,138,43,.04);border-radius:6px;border-left:3px solid var(--or)"><strong style="color:var(--or)">5.</strong> Same Trustpilot playbook. Both delete negatives. Both plant bots. Victim reporting theft = deleted. Bot writing "Leonid was very helpful" = approved.</div>
+<div style="padding:8px 12px;background:rgba(255,215,0,.04);border-radius:6px;border-left:3px solid var(--yl)"><strong style="color:var(--yl)">6.</strong> Same suppression: DMCAs, mass-reporting, evidence destruction. Not disproval &mdash; erasure.</div>
+<div style="padding:8px 12px;background:rgba(255,215,0,.04);border-radius:6px;border-left:3px solid var(--yl)"><strong style="color:var(--yl)">7.</strong> Zero organic coverage for both. 94 vs 102 referring domains. Namecheap has thousands. GoDaddy tens of thousands. Every NameSilo "article" is self-written and paid to syndicate.</div>
+<div style="padding:8px 12px;background:rgba(0,240,255,.03);border-radius:6px;border-left:3px solid var(--cy)"><strong style="color:var(--cy)">8.</strong> C$5.9M in "digital currency" on the balance sheet. 81.5% dead domains. $50.8M phantom revenue. Then they bought a sewer inspection company.</div>
+<div style="padding:8px 12px;background:rgba(0,240,255,.03);border-radius:6px;border-left:3px solid var(--cy)"><strong style="color:var(--cy)">9.</strong> When cornered: evidence destruction. Operator deletes GitHub code. NameSilo locks Twitter via Gold Checkmark. Insider doxxes researcher, deletes tweets. Farewell letter posted. Domain still active.</div>
+</div>
+
+<div style="background:rgba(255,215,0,.08);border:1px solid rgba(255,215,0,.2);border-radius:10px;padding:16px 20px;text-align:center">
+<p style="font-size:13px;color:var(--tx);font-weight:600;line-height:1.7;margin-bottom:6px">Run this on Namecheap. On Porkbun. On Tucows. How many match?</p>
+<p style="font-size:14px;font-weight:900;color:var(--yl)">Zero. Only NameSilo. Every line. Every time.</p>
+
+<p style="font-size:12px;color:var(--tx2);line-height:1.8;margin-top:14px"><strong style="color:var(--yl)">Note on methodology:</strong> All SERP dumps are provided as raw text files. If you believe our analysis is not objective &mdash; replicate it. We also provide <a href="../namesilo-trustpilot.html" style="color:var(--cy)">all 2,480 surviving NameSilo Trustpilot reviews</a>. Pay attention to how many 5-star reviews mention <strong style="color:var(--rd)">"Leonid"</strong> by name &mdash; and how many verified victims were deleted as "guideline breaches."</p>
+
+<p style="font-size:12px;color:var(--tx2);line-height:1.8;margin-top:10px"><strong style="color:var(--yl)">The PR pipeline:</strong> NameSilo writes about themselves in third person &rarr; pays PR Newswire $805+ &rarr; Yahoo Finance publishes with label "paid press release" &rarr; CSE stock page shows "media coverage" &rarr; investors see "news." Nobody wrote about them. Every "fastest-growing registrar" headline is their own copywriter. And the same pipeline publishes releases for a "volunteer wallet" with zero donations, a fake phone, and a codebase frozen since 2018. <strong style="color:var(--rd)">Same pipeline. Same copywriter. Same entity.</strong></p>
+</div>
+
+<div style="margin-top:16px;background:rgba(0,0,0,.3);border:1px solid var(--bdr);border-radius:10px;padding:16px 20px">
+<p style="font-size:10px;font-weight:700;color:var(--cy);text-transform:uppercase;letter-spacing:2px;margin-bottom:10px">SERP proof &mdash; PR Newswire in search results</p>
+<p style="font-size:11px;color:var(--tx2);margin-bottom:10px;line-height:1.7">We scraped Google + Bing for all four entities (SerpAPI, same methodology). PR Newswire column:</p>
+<div style="font-size:11px;line-height:2;color:var(--tx2);font-family:monospace">
+<strong style="color:var(--rd)">xmrwallet:</strong> 3 PR Newswire results (222 total, 94 unique domains)<br>
+<strong style="color:var(--rd)">NameSilo:</strong> 38 PR Newswire results (218 total, 102 unique domains)<br>
+<strong style="color:var(--gn)">Namecheap:</strong> 0 PR Newswire results (178 total)<br>
+<strong style="color:var(--gn)">NiceNIC:</strong> 0 PR Newswire results (77 total)
+</div>
+<p style="font-size:10px;font-weight:700;color:var(--cy);text-transform:uppercase;letter-spacing:2px;margin-top:12px;margin-bottom:6px">Wallet test</p>
+<p style="font-size:11px;color:var(--tx2);line-height:1.7;margin-bottom:6px">We also scraped SERP for <strong style="color:var(--gn)">Cake Wallet</strong> and <strong style="color:var(--gn)">getmonero.org</strong>. If xmrwallet is a real wallet, it should look like them:</p>
+<div style="font-size:10px;line-height:1.8;color:var(--tx2);font-family:monospace;margin-bottom:8px">
+PR Newswire: xmrwallet=<strong style="color:var(--rd)">3</strong> CakeWallet=<strong style="color:var(--gn)">0</strong> getmonero=<strong style="color:var(--gn)">0</strong> NameSilo=<strong style="color:var(--rd)">37</strong><br>
+Crypto spam: xmrwallet=<strong style="color:var(--rd)">10</strong> CakeWallet=<strong style="color:var(--gn)">0</strong> getmonero=<strong style="color:var(--gn)">0</strong><br>
+Legit news: xmrwallet=<strong style="color:var(--rd)">0</strong> CakeWallet=<strong style="color:var(--gn)">2</strong><br>
+</div>
+<p style="font-size:11px;color:var(--tx3);line-height:1.7;margin-bottom:8px"><strong style="color:var(--rd)">No legitimate wallet uses PR Newswire or buys crypto-spam articles.</strong> xmrwallet's SERP matches NameSilo, not Cake Wallet. It's not a wallet &mdash; it's a PR operation with a theft backend.</p>
+
+<p style="font-size:10px;font-weight:700;color:var(--cy);text-transform:uppercase;letter-spacing:2px;margin-top:8px;margin-bottom:6px">Registrar test</p>
+<p style="font-size:11px;color:var(--tx3);margin-top:8px;line-height:1.7">Namecheap is the 6th largest registrar. NiceNIC is one of the worst. <strong style="color:var(--tx2)">Neither uses PR Newswire.</strong> Only xmrwallet and NameSilo. Raw dumps: <a href="pr-newswire-pages/namecheap_comparison_google.txt">NC Google</a> &middot; <a href="pr-newswire-pages/namecheap_comparison_bing.txt">NC Bing</a> &middot; <a href="pr-newswire-pages/nicenic_comparison_google.txt">NiceNIC Google</a> &middot; <a href="pr-newswire-pages/nicenic_comparison_bing.txt">NiceNIC Bing</a></p>
+</div>
+</div>
+
+<div class="verdict" style="margin-top:36px">
+<h2 id="note" style="color:var(--tx)">A Note From PhishDestroy</h2>
+<p>We have a victim's own screenshot of her deleted review. We have Wayback Machine snapshots proving reviews disappeared &mdash; 7 confirmed from xmrwallet, 129 from NameSilo in four months. We have PR Newswire releases from both entities on the same platform. We have the operator's email inviting us to subpoena his own registrar. We have NameSilo's public tweet threatening legal action instead of addressing a single piece of evidence. We have Yahoo Finance's own label: <em>"This is a paid press release."</em> We have Forbes' own disclaimer: <em>"We earn a commission."</em></p>
+<p style="margin-top:10px"><strong>We are fully confident in every claim on this page.</strong> Every screenshot is real. Every Wayback Machine link is publicly verifiable. Every PR Newswire page is archived. Every deleted review name can be cross-referenced. We did not fabricate a single data point. We did not need to.</p>
+<p style="margin-top:10px">And we have more. Much more. What you see here is what we chose to publish today. There is evidence we are holding back &mdash; not because it's weak, but because we release it when it matters most. Every time they lie, we publish another layer. Every time they threaten, we add another mirror. Every time they delete, we've already archived.</p>
+<p style="margin-top:14px;font-size:15px;line-height:2">Ask yourself &mdash; honestly &mdash; can there really be this many coincidences?</p>
+
+<p style="margin-top:12px">A scam operator invites you to subpoena his own registrar &mdash; and isn't afraid of the answer. Then he threatens you with lawyers who never appear. A "volunteer" running a "free open-source wallet" spends $500&ndash;1,500 per press release on the same corporate PR platform where his registrar files quarterly earnings. The registrar &mdash; a publicly-traded company &mdash; goes on Twitter and declares this client innocent, publicly commits to helping him remove VirusTotal detections, and tells researchers to <em>"halt your falsehoods or face legal action."</em> Not a word about the evidence. Not a single fact addressed.</p>
+
+<p style="margin-top:12px">Both entities maintain Trustpilot pages that nobody organically reads &mdash; and both obsessively clean them. Both delete negative reviews. Both plant low-quality bots. Both buy paid articles to prop up products that can't earn organic coverage on their own. Look at NameSilo's website &mdash; a registrar managing 6 million domains with a UI their own CEO admits needs a "complete UX overhaul" after seven years. Now look at xmrwallet's promotional materials &mdash; SEO articles ordered on Kwork for 500 rubles, bot tweets from accounts with anime avatars, PR Newswire releases about "charity support." The same level of taste. The same contempt for the audience. You think this is a coincidence? Or do they simply not ban themselves?</p>
+
+<p style="margin-top:12px">We have documentation of <strong>31+ abuse reports submitted since 2018.</strong> Eight years of reports. NameSilo says they received none. We killed four of the operator's domains &mdash; domains registered for five to ten years each. He had paid for a decade of infrastructure because he believed it was untouchable. When we took them down, one by one &mdash; .cc through one registrar, .biz through another, each time through registrars that actually read abuse reports &mdash; the operator understood that the game had changed. But the real asset in this operation was never xmrwallet.com. xmrwallet is the storefront. <strong>The bank &mdash; the laundromat &mdash; has always been NameSilo.</strong></p>
+
+<p style="margin-top:12px">We'll be direct: we have a good nose for this particular type of operator. Untalented. Predictable. Russian-speaking, based on the forensic trail. We haven't identified them by legal name yet &mdash; but we are close, and they know it. Every threat they send leaves a trace. Every review they delete confirms the pattern. Every false DMCA they file adds another exhibit. The psychology of deception is remarkably consistent: when cornered, fraudsters do not produce evidence &mdash; they produce threats. And these two entities, when cornered, produce exactly the same threats, in exactly the same tone, through exactly the same channels.</p>
+
+<p style="margin-top:12px">So I'll ask the question plainly: <strong>what is our motive?</strong></p>
+
+<p style="margin-top:12px">PhishDestroy is a volunteer initiative. We do not sell domains. We do not compete with NameSilo. We do not hold short positions on their stock. We have no commercial interest in this investigation whatsoever. We have spent months &mdash; thousands of hours &mdash; documenting evidence, building archives, deploying to permanent immutable storage. For free. Nobody pays us. Nobody asked us to do this. We do it because people are losing money and the systems designed to protect them are failing.</p>
+
+<p style="margin-top:12px">So you have two options. Either we are deranged individuals who have dedicated an unreasonable amount of time to fabricating elaborate evidence against a random Canadian domain registrar, for no discernible personal gain &mdash; or <strong>they are exactly what eight years of evidence says they are:</strong> a registrar that profits from fraud, shelters a theft operation, deletes criticism, manufactures reviews, threatens researchers, ignores regulators, and hides behind press releases it writes about itself in third person.</p>
+</div>
+
+<h2 id="tested" style="border-left-color:var(--rd)">What Happened When We Tested Them <span class="n">May 11&ndash;12, 2026</span></h2>
+
+<p>We tagged NameSilo on Twitter. Not by accident &mdash; deliberately. We wanted to see how they would respond when confronted publicly with the evidence. We already knew the answer, because fraud operators are predictable. The psychology of deception follows patterns: when cornered, they never engage with facts. They threaten. They deflect. They produce lawyers instead of evidence.</p>
+
+<p style="margin-top:12px">Here is NameSilo's official response:</p>
+<a href="../screenshots/namesilo-twitter-response-2026-05-12.png"><img src="../screenshots/namesilo-twitter-response-2026-05-12.png" alt="NameSilo Twitter response - threats instead of facts" style="width:100%;max-width:900px;border-radius:10px;border:1px solid var(--bdr);margin:10px 0"></a>
+<p><em>"Your claims are false, libelous and defamatory. NameSilo takes action and reviews all abuse reports submitted to us... halt your falsehoods towards us or we will be forced to undergo legal action."</em></p>
+<p style="margin-top:8px">Not a single fact addressed. Not a single piece of evidence disputed. No mention of the FTC letters. No mention of the 31+ abuse reports. No mention of the Trustpilot deletions. No mention of the PR Newswire connection. Just threats &mdash; word for word the same response the xmrwallet operator gives. Same language. Same tone. Same void where the substance should be. Either they share a playbook, or they share a person.</p>
+
+<p style="margin-top:16px">Then it escalated. Within hours, an account called <a href="https://x.com/bhabhiezayn">@bhabhiezayn</a> &mdash; an insider or associate of NameSilo CEO Paul Andreola &mdash; joined the thread. His contribution to the discussion about documented fraud, stolen funds, and deleted victim reviews? He screenshotted a phone showing a PhishDestroy researcher's country (Kenya), circled it, and posted it as a taunt: <em>"AHAHAHAHAHA What's the matter, buddy?"</em></p>
+<p style="margin-top:8px">Then he realized what he'd done &mdash; exposed himself as someone with access to user data or internal information &mdash; and deleted the tweet. But we already had the screenshots. The deleted post is still visible in the thread as "[This Post was deleted by the Post author]."</p>
+
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:14px 0">
+<a href="../screenshots/bhabhiezayn-dox-attempt.png"><img src="../screenshots/bhabhiezayn-dox-attempt.png" alt="@bhabhiezayn doxxing attempt and deleted tweet" style="max-width:440px;width:100%;border-radius:10px;border:1px solid var(--bdr)"></a>
+<a href="../screenshots/bhabhiezayn-dox-image.png"><img src="../screenshots/bhabhiezayn-dox-image.png" alt="Screenshot showing deleted doxxing tweet" style="max-width:440px;width:100%;border-radius:10px;border:1px solid var(--bdr)"></a>
+</div>
+
+<p style="margin-top:8px"><strong>This is their entire response to eight years of documented fraud:</strong> legal threats from the official account, and doxxing from an associate's account. Not a single fact. Not a single rebuttal. Not a single piece of counter-evidence. Because there is none.</p>
+
+<h2 id="final" style="border-left-color:var(--rd)">Final Words</h2>
+
+<p>We have published a fraction of what we hold. There is more &mdash; and it will be released when it matters most.</p>
+
+<p style="margin-top:12px"><strong>To Trustpilot:</strong> You deleted verified victim reviews and kept bot reviews. You enabled a scam wallet to maintain a rating higher than legitimate cryptocurrency exchanges. Here is what you deleted &mdash; a verified user, green checkmark, unprompted review, reporting stolen funds:</p>
+<a href="../screenshots/trustpilot-admin-deleted-review-erma-powell.png"><img src="../screenshots/trustpilot-admin-deleted-review-erma-powell.png" alt="Erma Powell - verified victim review deleted by Trustpilot" style="width:100%;max-width:500px;border-radius:10px;border:1px solid rgba(255,51,85,.3);margin:10px 0"></a>
+<p><em>"I'm in a panic, I created a wallet on the official site, put money in and the developers took everything."</em> &mdash; Deleted as <strong>"breaching Trustpilot's Guidelines for Reviewers."</strong> A victim reporting theft is a guideline breach. A bot writing "Leonid was very helpful" is not. We have Wayback Machine proof of 129 NameSilo reviews and 7+ xmrwallet reviews erased from your platform. We have more surprises that will show your role in enabling this fraud. Stop deleting victim reports. Start deleting bot reviews.</p>
+
+<p style="margin-top:12px"><strong>To OpenAI / ChatGPT:</strong> You recommended xmrwallet.com to users as a legitimate Monero wallet. People trusted your recommendation. People lost money. That recommendation generated revenue for a theft operation and enabled laundering. We have the screenshots. Fix it.</p>
+
+<p style="margin-top:12px"><strong>To anyone who covered for this operation</strong> &mdash; knowingly or through negligence &mdash; we have much more prepared. Every time you delete, we publish. Every time you threaten, we archive. Every time you lie, we release the next layer. We would genuinely love to interview one of these operators after an arrest. Until then, we document. And we do not stop.</p>
+
+<p style="margin-top:14px;font-size:15px"><strong>The evidence speaks for itself.</strong></p>
+</div>
+
+<div class="methodology">
+<strong>Methodology:</strong> PR Newswire releases found via DuckDuckGo search (SerpAPI) and direct prnewswire.com queries. Trustpilot deletion evidence from Wayback Machine snapshots: <a href="https://web.archive.org/web/20240510154440/https://www.trustpilot.com/review/www.xmrwallet.com">xmrwallet May 2024</a> (45 reviews, 3.6★) vs current scrape (80 reviews). <a href="https://web.archive.org/web/20260105192016/https://www.trustpilot.com/review/www.namesilo.com">NameSilo Jan 2026</a> (2,609 reviews) vs current scrape (2,480 = 129 deleted). Behavioral patterns documented from PhishDestroy's direct interactions with both entities, public records (FTC letters, BBB complaints, ICANN filings), social media evidence (Twitter/X scrape of 44 tweets). All evidence independently verifiable. <strong>Supporting data:</strong> <a href="pr-newswire-connection.json">PR Newswire Connection (JSON)</a> &middot; <a href="serp-evidence.html">SERP Evidence</a> &middot; <a href="../xmrwallet-trustpilot.html">xmrwallet Trustpilot Reviews</a> &middot; <a href="../xmrwallet-twitter.html">Twitter/X Evidence</a>
+</div>
+
+<footer>
+PhishDestroy Evidence Archive &middot; <a href="../index.html">Main Archive</a> &middot; <a href="serp-evidence.html">SERP Evidence</a> &middot; <a href="pr-newswire-connection.json">Raw JSON</a>
+</footer>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('bg-canvas');
+  if(!c)return;
+  var ctx=c.getContext('2d'),w,h,mx=-999,my=-999;
+  function resize(){w=c.width=window.innerWidth;h=c.height=window.innerHeight}
+  resize();
+  window.addEventListener('resize',resize);
+  document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY});
+  document.addEventListener('mouseleave',function(){mx=-999;my=-999});
+  var pts=[];
+  for(var i=0;i<60;i++){pts.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,r:Math.random()*1.5+1})}
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    ctx.fillStyle='rgba(0,180,255,.3)';
+    for(var i=0;i<pts.length;i++){
+      var p=pts[i];
+      p.x+=p.vx;p.y+=p.vy;
+      if(p.x<0||p.x>w)p.vx*=-1;
+      if(p.y<0||p.y>h)p.vy*=-1;
+      if(mx>0){var mdx=p.x-mx,mdy=p.y-my,md=Math.sqrt(mdx*mdx+mdy*mdy);if(md<150&&md>1){p.x+=mdx/md*1.2;p.y+=mdy/md*1.2}}
+      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();
+      if(mx>0){var mdx2=p.x-mx,mdy2=p.y-my,md2=Math.sqrt(mdx2*mdx2+mdy2*mdy2);if(md2<120){ctx.strokeStyle='rgba(0,180,255,'+((.06)*(1-md2/120)).toFixed(3)+')';ctx.lineWidth=.4;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(mx,my);ctx.stroke()}}
+      for(var j=i+1;j<pts.length;j++){var q=pts[j];var dx=p.x-q.x,dy=p.y-q.y,d=Math.sqrt(dx*dx+dy*dy);if(d<200){ctx.strokeStyle='rgba(0,180,255,'+((.07)*(1-d/200)).toFixed(3)+')';ctx.lineWidth=.6;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.stroke()}}
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+</script>
+</body>
+</html>
