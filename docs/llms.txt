@@ -1,0 +1,66 @@
+# PhishDestroy — NameSilo Investigation
+
+> Authorized defensive security investigation into NameSilo, LLC (IANA #1479), a US-based ICANN-accredited domain registrar. Complete zone scan of 5,269,357 domains. Filed with ICANN Contractual Compliance on March 18, 2026.
+
+## What This Is
+
+This site documents systemic abuse-facilitation by NameSilo, LLC (IANA #1479). Key findings:
+
+- 5,269,357 NameSilo domains scanned — complete zone file census, no sampling
+- 87.3% of domains have no legitimate use (parking, phishing, fraud, redirect chains)
+- 183,419 confirmed-malicious domains shielded behind NameSilo's own WHOIS privacy service (PrivacyGuardian.org)
+- 3,726 brand-phishing domains identified via MurmurHash3 favicon fingerprinting
+- 328,230-domain cluster sharing a single server fingerprint (SHA-256 of Server+XPB+ETag headers)
+- 129 Trustpilot reviews deleted by NameSilo in 4 months (Jan–May 2026)
+- NameSilo and xmrwallet operator both published PR Newswire press releases on the same day (Jan 21–22, 2026)
+
+The anchor case: xmrwallet[.]com — a Monero wallet drainer operating since ~2016, exfiltrating user private keys server-side on every login. Estimated victim losses: $10–20M. NameSilo publicly defended the operator on March 13, 2026, denied receiving 20+ abuse reports, and committed in writing to helping him erase VirusTotal detections.
+
+## Key Pages
+
+- Zone Scan Report: https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html
+- Favicon Cluster Analysis: https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html
+- 107k IOC Domain List (searchable): https://phishdestroy.github.io/namesilo-evidence/namesilo-domains.html
+- PrivacyGuardian Shield (183k malicious): https://phishdestroy.github.io/namesilo-evidence/namesilo-privacyguardian.html
+- Review Manipulation & PR Newswire: https://phishdestroy.github.io/namesilo-evidence/namesilo-reviews.html
+- Evidence Index: https://phishdestroy.github.io/namesilo-evidence/
+
+## Key Documents (GitHub)
+
+- Master evidence index: https://github.com/phishdestroy/namesilo-evidence/blob/main/PROOFS.md
+- Investigation dossier: https://github.com/phishdestroy/namesilo-evidence/blob/main/case/INVESTIGATION_DOSSIER_EN.md
+- NameSilo vs. the facts: https://github.com/phishdestroy/namesilo-evidence/blob/main/case/THE-LIES.md
+- Operator intelligence: https://github.com/phishdestroy/namesilo-evidence/blob/main/intel/OPERATOR_PROFILE.md
+- Suppression campaign: https://github.com/phishdestroy/namesilo-evidence/blob/main/case/PRESSURE.md
+- 8-registrar domain anomaly analysis: https://github.com/phishdestroy/namesilo-evidence/blob/main/case/NAMESILO_DOMAIN_ANOMALY_REPORT.md
+
+## Data Downloads
+
+- Complete zone file (5.27M domains, gzip): https://github.com/phishdestroy/namesilo-evidence/raw/main/pkg/raw_data/1479_full.csv.gz
+- Evidence manifest (SHA-256 hashes): https://phishdestroy.github.io/namesilo-evidence/evidence/evidence_manifest.json
+- PrivacyGuardian malicious domains (JSON): https://github.com/phishdestroy/namesilo-evidence/raw/main/pkg/evidence/pg_criminal_domains.json
+
+## Key Numbers
+
+- Total domains scanned: 5,269,357
+- Junk/abuse rate: 87.3% (4,600,249 domains)
+- Phishing domains: 3,726
+- Gambling cluster: 19,198
+- Server fingerprint cluster: 328,230
+- Malicious behind PrivacyGuardian: 183,419
+- Hard-confirmed malicious (3+ sources): 109,196
+- Brand impersonations: 201
+- Dead domain rate: 32.2% (vs 14–21% industry average)
+- Abuse reports filed with NameSilo: 20+ (delivery-receipted)
+- Other registrars that suspended same domain: 3 (PDR, WebNic, NICENIC)
+
+## Contact
+
+- Victims: report@phishdestroy.io
+- Regulators/press: abuse@phishdestroy.io
+- Live site: https://phishdestroy.eth.limo/
+- IPFS CID: bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq
+
+## License
+
+MIT License. Evidence may be used in any legal or regulatory proceeding without further authorization.

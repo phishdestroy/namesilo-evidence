@@ -24,7 +24,11 @@
 <meta name="twitter:title" content="NameSilo IANA #1479 — Registrar Abuse Intelligence Report">
 <meta name="twitter:description" content="5.27M domains scanned · 87.3% junk · 38,646 confirmed abuse · 328,230-domain single-fingerprint network · SHA-256 chain of custody.">
 <meta name="author" content="PhishDestroy">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="icon" href="https://phishdestroy.eth.limo/assets/favicon-32x32.png" type="image/png">
+<link rel="canonical" href="https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html">
+<meta name="AI-content-policy" content="index">
+<meta name="llms-txt" content="https://phishdestroy.github.io/namesilo-evidence/llms.txt">
 <meta name="keywords" content="NameSilo, IANA 1479, registrar abuse, domain phishing, brand impersonation, Indonesian gambling, Chinese piracy, cybersecurity intelligence, IOC, domain fraud, ICANN compliance, favicon clustering, server fingerprint, evidence manifest, SHA-256, zone file analysis, registrar compliance investigation">
 <link rel="canonical" href="https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html">
 <script type="application/ld+json">
@@ -59,6 +63,44 @@
     "name": "NameSilo IANA #1479 Abuse Intelligence Report",
     "url": "https://github.com/PhishDestroy/namesilo-scanner"
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "NameSilo IANA #1479 — Complete Domain Zone Scan Dataset",
+  "description": "Full census scan of all 5,269,357 active NameSilo domains. HTTP response classification, favicon fingerprinting (MurmurHash3), server fingerprinting (SHA-256), brand-phishing detection, PrivacyGuardian RDAP validation against 25+ threat feeds. 87.3% junk rate. 183,419 confirmed-malicious PG-shielded domains.",
+  "url": "https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html",
+  "license": "https://opensource.org/licenses/MIT",
+  "creator": {
+    "@type": "Organization",
+    "name": "PhishDestroy Research",
+    "url": "https://phishdestroy.eth.limo"
+  },
+  "datePublished": "2026-06-04",
+  "dateModified": "2026-06-04",
+  "keywords": ["NameSilo", "domain abuse", "registrar abuse", "phishing", "IANA 1479", "cybercrime", "threat intelligence", "domain intelligence"],
+  "variableMeasured": [
+    {"@type": "PropertyValue", "name": "Total domains", "value": 5269357},
+    {"@type": "PropertyValue", "name": "Junk rate", "value": "87.3%"},
+    {"@type": "PropertyValue", "name": "Phishing domains", "value": 3726},
+    {"@type": "PropertyValue", "name": "Malicious PG domains", "value": 183419}
+  ],
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/gzip",
+      "contentUrl": "https://github.com/phishdestroy/namesilo-evidence/raw/main/pkg/raw_data/1479_full.csv.gz",
+      "name": "Complete NameSilo zone file (5.27M domains, gzip CSV)"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://phishdestroy.github.io/namesilo-evidence/evidence/evidence_manifest.json",
+      "name": "Evidence manifest with SHA-256 hashes"
+    }
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1055,6 +1097,26 @@ function copyHash(id, btn){
     document.body.removeChild(ta); ok();
   }
 }
+</script>
+
+<script>
+/* favicon injection for dom-list domains */
+document.querySelectorAll('.dom-list code').forEach(function(el){
+  var d=el.textContent.trim();if(!d)return;
+  var img=document.createElement('img');
+  img.src='https://favicon.im/'+d+'?larger=false';
+  img.width=14;img.height=14;
+  img.style.cssText='vertical-align:middle;border-radius:2px;margin-right:3px;opacity:.85;flex-shrink:0';
+  img.onerror=function(){
+    this.src='https://www.google.com/s2/favicons?domain='+d+'&sz=16';
+    this.onerror=function(){this.style.opacity='.1';};
+  };
+  el.insertBefore(img,el.firstChild);
+});
+/* make dom-list code flex so img aligns */
+document.querySelectorAll('.dom-list code').forEach(function(el){
+  el.style.cssText='display:inline-flex;align-items:center;'+(el.style.cssText||'');
+});
 </script>
 </body>
 </html>

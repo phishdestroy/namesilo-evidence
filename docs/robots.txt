@@ -108,3 +108,7 @@ User-agent: BLEXBot
 Disallow: /
 
 Sitemap: https://phishdestroy.io/namesilo-killed-our-twitter/sitemap.xml
+Sitemap: https://phishdestroy.github.io/namesilo-evidence/sitemap.xml
+
+# LLM optimization hint file
+# llms.txt: https://phishdestroy.github.io/namesilo-evidence/llms.txt
