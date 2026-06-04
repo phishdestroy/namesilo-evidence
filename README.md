@@ -6,136 +6,224 @@ SEO topics: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, i
 
 <div align="center">
 
-# NameSilo, LLC (IANA #1479) — Registrar Abuse Investigation
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=FF3333&center=true&vCenter=true&width=900&lines=NameSilo%2C+LLC+(IANA+%231479);Registrar+Abuse+Investigation;5%2C269%2C357+Domains+Scanned.+87.3%25+Is+Junk.;Filed+with+ICANN+%C2%B7+March+18%2C+2026." alt="Investigation" />
 
-### Public evidence repository · Filed with ICANN Contractual Compliance, March 18, 2026
+<br/>
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](LICENSE)
-[![Evidence: SHA-256 verified](https://img.shields.io/badge/evidence-SHA--256_verified-green.svg)](EVIDENCE_HASHES.txt)
-[![Mirror: GitHub Pages](https://img.shields.io/badge/mirror-GitHub_Pages-black.svg)](docs/)
-[![Canonical: phishdestroy.io](https://img.shields.io/badge/canonical-phishdestroy.io-red.svg)](https://phishdestroy.io)
-[![Domains scanned](https://img.shields.io/badge/domains_scanned-5%2C269%2C357-red.svg)](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html)
-[![Junk rate](https://img.shields.io/badge/junk_rate-87.3%25-critical.svg)](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg?style=for-the-badge)](LICENSE)
+[![Evidence Verified](https://img.shields.io/badge/Evidence-SHA--256_Verified-green?style=for-the-badge&logo=checkmarx)](EVIDENCE_HASHES.txt)
+[![ICANN Filed](https://img.shields.io/badge/ICANN-Compliance_Filed-orange?style=for-the-badge)](https://www.icann.org/compliance)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live-black?style=for-the-badge&logo=github)](https://phishdestroy.github.io/namesilo-evidence/)
+
+<br/>
+
+![Domains Scanned](https://img.shields.io/badge/Domains_Scanned-5%2C269%2C357-red?style=flat-square&labelColor=1a1a1a)
+![Junk Rate](https://img.shields.io/badge/Junk_Rate-87.3%25-critical?style=flat-square&labelColor=1a1a1a)
+![Phishing](https://img.shields.io/badge/Phishing_Domains-3%2C726-red?style=flat-square&labelColor=1a1a1a)
+![Malicious PG](https://img.shields.io/badge/Malicious_PG_Domains-183%2C419-critical?style=flat-square&labelColor=1a1a1a)
+![Cluster](https://img.shields.io/badge/Server_Fingerprint_Cluster-328%2C230-red?style=flat-square&labelColor=1a1a1a)
 
 </div>
 
 ---
 
-## Key Findings
+## TL;DR
 
-| Finding | Value | Source |
-|---------|-------|--------|
-| NameSilo domains — complete zone census | **5,269,357** | Zone file, June 2026 |
-| Domains classified as junk/abuse | **87.3%** | Full zone scan |
-| Brand-phishing domains | **3,726** | Favicon + content analysis |
-| Indonesian gambling networks | **24,349** heuristic · **19,198** favicon-confirmed | Cluster analysis |
-| Single server fingerprint cluster | **328,230** domains | SHA-256 server fingerprint |
-| Cloudflare-confirmed phishing on that cluster | **2,062** | CF threat feed |
-| Malicious domains behind PrivacyGuardian (NameSilo's own WHOIS privacy) | **183,419** | 25+ threat feeds, RDAP-validated |
-| Hard-confirmed malicious PG-protected domains | **109,196** | Multi-source verification |
-| Dead domains: NameSilo vs industry average | **32.2%** vs **14–21%** | 8-registrar comparison |
-| xmrwallet.com — estimated funds drained | **$10M–$20M** | On-chain analysis, victim reports |
-| xmrwallet.com — years of operation | **~10 years** (2016–2026) | Domain history, archived content |
-| Abuse reports submitted to NameSilo — ignored | **20+** delivery-receipted | Email records |
-| Other registrars that suspended on sight | **3** (PDR, WebNic, NICENIC) | Suspension notices |
-
----
-
-## What Happened
-
-On **March 13, 2026**, NameSilo, LLC (IANA #1479) — a US-based ICANN-accredited registrar — published an official corporate statement on Twitter/X defending `xmrwallet[.]com`, a confirmed Monero wallet drainer that had been operating for approximately 10 years.
-
-In that statement NameSilo: (1) claimed the domain "was compromised" — a narrative the operator himself never advanced; (2) denied receiving any prior abuse reports — contradicted by 20+ delivery-receipted submissions; (3) committed **in writing** to helping the operator remove the domain from VirusTotal detection lists; (4) called the operator "the victim."
-
-Three other registrars (PDR, WebNic, NICENIC) reviewed identical evidence and suspended the domain within days. NameSilo published a defense.
-
-On **March 16, 2026**, our research account on X/Twitter was locked via NameSilo's paid Gold Checkmark live-support channel — hours after we published the receipts. X's automated review confirmed no violation and restored the account; a human agent overrode the restoration. The account remains locked.
-
-On **March 18, 2026**, this case was filed with **ICANN Contractual Compliance**.
-
-> Evidence chain: [CONNECTION.md](CONNECTION.md) · Lies rebutted: [THE-LIES.md](THE-LIES.md) · Suppression log: [PRESSURE.md](PRESSURE.md)
-
-**[Master proof index →](PROOFS.md)** · **[Full article →](ARTICLE_FULL.md)** · **[The Connection →](CONNECTION.md)** · **[The Lies →](THE-LIES.md)** · **[Pressure Campaign →](PRESSURE.md)** · **[Technical breakdown →](SCAM_TECHNICAL.md)** · **[Operator dossier →](OPERATOR_PROFILE.md)** · **[Victims →](VICTIMS.md)** · **[Full Dossier →](INVESTIGATION_DOSSIER_EN.md)**</div>
-
----
-
-## 📂 Repository Index
-
-| Document | Description |
-|----------|-------------|
-| [PROOFS.md](PROOFS.md) | Master evidence index — all exhibits with SHA-256 hashes |
-| [ARTICLE_FULL.md](ARTICLE_FULL.md) | Full investigative article |
-| [INVESTIGATION_DOSSIER_EN.md](INVESTIGATION_DOSSIER_EN.md) | Complete investigation dossier — victims, timeline, technical proof |
-| [CONNECTION.md](CONNECTION.md) | How NameSilo is connected to the xmrwallet operator |
-| [THE-LIES.md](THE-LIES.md) | Point-by-point rebuttal of NameSilo's March 13 public statement |
-| [NAMESILO-RESPONSE-MAY2026.md](NAMESILO-RESPONSE-MAY2026.md) | NameSilo's May 11 legal threat tweet — documented and archived |
-| [NAMESILO_DOMAIN_ANOMALY_REPORT.md](NAMESILO_DOMAIN_ANOMALY_REPORT.md) | Statistical analysis: NameSilo is an outlier across 8 registrars |
-| [PRESSURE.md](PRESSURE.md) | Suppression campaign — Twitter lock, DMCA abuse, Trustpilot removals |
-| [SCAM_TECHNICAL.md](SCAM_TECHNICAL.md) | Technical breakdown of the xmrwallet drainer mechanism |
-| [OPERATOR_PROFILE.md](OPERATOR_PROFILE.md) | Operator dossier — 10-year history |
-| [VICTIMS.md](VICTIMS.md) | Victim accounts and confirmed losses |
-| [SOURCES.md](SOURCES.md) | All primary sources |
-
----
-
-## 📊 Zone Scan — All 5,269,357 NameSilo Domains
-
-We obtained and processed NameSilo's **complete zone file** — every active domain, without sampling.  
-**87.3% is junk.** 3,726 brand-phishing domains. 24,349 Indonesian gambling domains. 328,230 domains sharing one server fingerprint.
-
-| Report | Description |
-|--------|-------------|
-| **[Full Investigation Report →](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html)** | Visual report with charts, methodology, IOC breakdown |
-| **[Favicon Cluster Analysis →](https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html)** | 12 operator clusters identified via MurmurHash3 fingerprinting |
-| **[107,252 IOC Domains →](https://phishdestroy.github.io/namesilo-evidence/namesilo-domains.html)** | Full searchable list of criminal/abuse domains |
-| **[Evidence Manifest →](docs/evidence/evidence_manifest.json)** | SHA-256 integrity anchors for all data files |
-| **[Artifacts Index →](pkg/ARTIFACTS.md)** | Complete list of scan datasets and methodology |
-
-> Raw scan data (JSONL/CSV, up to 499MB) available in [`pkg/raw_data/`](pkg/raw_data/) as gzip archives.
-
-| Report | Description |
-|--------|-------------|
-| **[PrivacyGuardian Shield →](https://phishdestroy.github.io/namesilo-evidence/namesilo-privacyguardian.html)** | 183,419 malicious domains behind NameSilo's own WHOIS privacy service |
-
----
-
-## 🖼️ Evidence Diagrams
-
-Visual forensic diagrams available in [`docs/assets/`](docs/assets/):
-
-| Diagram | Description |
-|---------|-------------|
-| [Money Flow](docs/assets/diagram-money-flow.png) | How funds move through the xmrwallet operation |
-| [Operator Network](docs/assets/diagram-operator-network.png) | Infrastructure and actor connections |
-| [Timeline](docs/assets/diagram-timeline.png) | 10-year operation timeline |
-| [Theft Mechanism](docs/assets/diagram-theft-mechanism.png) | Technical theft flow — private view key exfiltration |
-| [Suppression Campaign](docs/assets/diagram-suppression.png) | Platform abuse and evidence erasure tactics |
-| [Domain Infrastructure](docs/assets/diagram-domain-infra.png) | Domain registration and hosting patterns |
-
-
-
----
-
-
-### Latest Developments
-
-- **May 11, 2026** — NameSilo published a second public statement threatening legal action against investigators. No factual rebuttal was provided. Full documentation: [NAMESILO-RESPONSE-MAY2026.md](NAMESILO-RESPONSE-MAY2026.md)
-- **June 2026** — Complete zone scan of all 5,269,357 NameSilo domains completed. 87.3% classified as junk or abuse. Full dataset and methodology: [Zone Scan Report](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html)
-- **June 2026** — PrivacyGuardian investigation completed: 183,419 malicious domains confirmed behind NameSilo's own WHOIS privacy service. [PrivacyGuardian Shield](https://phishdestroy.github.io/namesilo-evidence/namesilo-privacyguardian.html)
-- **Ongoing** — xmrwallet.com domain transferred from NameSilo to Namecheap. The site remains operational. Investigation continues.
----
-
-## What this repository is
-
-This is the immutable, court-usable case file for what NameSilo, LLC (IANA #1479) did when caught defending a Monero theft operation that has been live for roughly **ten years** and stolen an estimated **$10M-$20M** in user funds.
-
-NameSilo, LLC (IANA #1479) did not ignore our reports — that would be ordinary registrar negligence. NameSilo, LLC (IANA #1479) went **publicly on the record** to call the operator "the victim," to deny ever receiving any of our 20+ delivery-receipted abuse reports, and to commit — in writing, on Twitter — to **helping the operator scrub his security detections from VirusTotal**.
-
-When we proved every sentence of that statement was false, the takedown started.
-
-> **Our research account was locked. Our domain has been targeted with Bing delisting attempts. They are still lying. They are still trying to erase this story.**
+> We obtained the **complete zone file** of NameSilo, LLC (IANA #1479) and scanned all **5,269,357** of their active domains. No sampling. Every domain. **87.3% is garbage.** Meanwhile, NameSilo publicly defended a 10-year, $10-20M Monero drainer on Twitter, denied receiving 20+ abuse reports, and committed in writing to helping the scammer erase his VirusTotal detections. Three other registrars suspended the same domain immediately. NameSilo published a press release for him.
 >
-> So this repository exists. Mirrored. Hashed. Permanently archived. Not deletable.
+> **Their only response to this investigation: they quietly moved the scammer's domain to a different registrar. No rebuttal. No facts. No answers.**
+
+---
+
+## Investigation Scale
+
+<div align="center">
+
+| Metric | Value | Method |
+|:-------|------:|:-------|
+| Total NameSilo domains analyzed | **5,269,357** | Complete zone file census |
+| Junk / abuse domains | **4,600,249 (87.3%)** | HTTP + content classification |
+| Brand-phishing domains | **3,726** | Favicon fingerprint + content |
+| Indonesian gambling (confirmed) | **19,198** | MurmurHash3 favicon clustering |
+| Single server fingerprint cluster | **328,230 domains** | SHA-256(Server+XPB+ETag) |
+| CF-confirmed phishing on that cluster | **2,062** | Cloudflare threat feed |
+| Malicious behind PrivacyGuardian | **183,419** | RDAP + 25 threat intelligence feeds |
+| Hard-confirmed malicious (3+ sources) | **109,196** | Multi-source cross-validation |
+| Brand impersonations (USPS, Google...) | **201** | Content + title analysis |
+| Dead domains: NameSilo vs industry avg | **32.2% vs 14-21%** | 8-registrar, 130M domain comparison |
+| xmrwallet.com funds drained | **~$10M-$20M** | On-chain + victim reports |
+| Years of operation | **~10 years (2016-2026)** | Domain history + archived content |
+| Abuse reports submitted, ignored | **20+** delivery-receipted | Submission records |
+| Other registrars that suspended | **3** (PDR, WebNic, NICENIC) | Suspension notices |
+
+</div>
+
+---
+
+## Methodology
+
+Two-pass distributed scanner — AWS Lambda + GCP Cloud Run, up to 400 concurrent workers:
+
+```
+Phase 1 — Initial scan (AWS Lambda, up to 400 concurrent)
+  2,503,213 domains probed | aiohttp/asyncio | 5s timeout
+
+Phase 2 — Rescan of missed domains (GCP Cloud Run, 20 containers x 400 async)
+  894,300 additional domains probed
+
+Merged: 3,397,413 domains with DNS -> 1,129,114 active responses
+```
+
+Classification pipeline:
+
+```
+HTTP response
+  |-- Page type classifier  (active_content / parking / redirect / phishing / ...)
+  |-- Favicon fingerprint   MurmurHash3 -> operator clusters
+  |-- Server fingerprint    SHA-256(Server + X-Powered-By + ETag) -> 12-char hex
+  |-- Parking detection     Named service patterns (namesilo / sedo / godaddy / ...)
+  +-- Brand matching        Domain name + title + favicon hash -> phishing label
+```
+
+PrivacyGuardian investigation (separate pipeline):
+
+```
+NameSilo zone file (4,974,265 candidate PG domains)
+  -> RDAP validation vs rdap.namesilo.com
+      -> 164,027 CONFIRMED PrivacyGuardian-protected
+          -> Cross-referenced: 25+ threat feeds
+              -> 183,419 confirmed malicious | 109,196 hard-confirmed
+```
+
+---
+
+## Timeline
+
+```
+2016          xmrwallet.com goes live
+              session_key exfiltrated 40+ times per session to operator server
+
+2023-2026     PhishDestroy: 20+ delivery-receipted abuse reports -> namesilo.com
+              Result: zero action
+
+Feb 16, 2026  Operator emails PhishDestroy: "There is no phishing."
+              Never claims a hack. Never mentions a compromise.
+
+Mar 12, 2026  PhishDestroy tweet: "9 reports is no joke anymore."
+
+Mar 13, 2026  NameSilo official corporate tweet:
+              [X] "Domain was compromised a few months ago"   <- FABRICATED
+              [X] "No abuse reports received prior to this"   <- FALSE
+              [X] "Working to get site delisted from VT"      <- OBSTRUCTION
+              [X] "The registrant is also the victim"         <- FALSE
+
+              PDR, WebNic, NICENIC: suspended the same domain in days.
+              NameSilo: published a press release for the scammer.
+
+Mar 16, 2026  PhishDestroy publishes receipts publicly.
+              NameSilo uses X Gold Checkmark support to lock account.
+
+Mar 18, 2026  Filed with ICANN Contractual Compliance.
+
+Apr 15, 2026  X automated review: "No violation. Account restored."
+              Human agent overrides. Account still locked.
+
+May 11, 2026  NameSilo tweets legal threat. Zero factual rebuttal provided.
+
+Jun 2026      Full zone scan complete: 5,269,357 domains, 87.3% junk.
+              NameSilo response: transfers scammer domain to Namecheap.
+              Site remains live.
+```
+
+---
+
+## Interactive Reports
+
+<div align="center">
+
+| Report | Description | Link |
+|--------|-------------|------|
+| Full Investigation Report | Visual report: charts, IOC breakdown, chain of custody | [namesilo-scan.html](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html) |
+| Favicon Cluster Analysis | 12 operator clusters via MurmurHash3 fingerprinting | [namesilo-clusters.html](https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html) |
+| IOC Domain List | 107,252 criminal domains — searchable with flags and favicons | [namesilo-domains.html](https://phishdestroy.github.io/namesilo-evidence/namesilo-domains.html) |
+| PrivacyGuardian Shield | 183,419 malicious domains behind NameSilo's own WHOIS privacy | [namesilo-privacyguardian.html](https://phishdestroy.github.io/namesilo-evidence/namesilo-privacyguardian.html) |
+| Index | Main investigation page | [phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence/) |
+
+</div>
+
+> Raw scan data (JSONL/CSV, up to 499MB) available as gzip archives: [`pkg/raw_data/`](pkg/raw_data/)
+
+---
+
+## Repository Index
+
+| Document | Contents |
+|----------|----------|
+| [PROOFS.md](PROOFS.md) | Master evidence index, all exhibits SHA-256 verified |
+| [INVESTIGATION_DOSSIER_EN.md](INVESTIGATION_DOSSIER_EN.md) | Complete investigation dossier (613 lines) |
+| [ARTICLE_FULL.md](ARTICLE_FULL.md) | Full investigative article |
+| [CONNECTION.md](CONNECTION.md) | NameSilo <-> xmrwallet operator evidence chain |
+| [THE-LIES.md](THE-LIES.md) | Line-by-line rebuttal of NameSilo's March 13 statement |
+| [NAMESILO-RESPONSE-MAY2026.md](NAMESILO-RESPONSE-MAY2026.md) | May 11 legal threat tweet, documented and archived |
+| [NAMESILO_DOMAIN_ANOMALY_REPORT.md](NAMESILO_DOMAIN_ANOMALY_REPORT.md) | Statistical analysis: 8 registrars, 130M domains |
+| [PRESSURE.md](PRESSURE.md) | Suppression campaign log |
+| [SCAM_TECHNICAL.md](SCAM_TECHNICAL.md) | xmrwallet technical breakdown (8 PHP endpoints) |
+| [OPERATOR_PROFILE.md](OPERATOR_PROFILE.md) | Operator dossier: identity, domains, IPs, IOCs |
+| [VICTIMS.md](VICTIMS.md) | Documented victims, 2016-2026 timeline |
+| [SOURCES.md](SOURCES.md) | Permanent archive URLs for all external claims |
+
+---
+
+## Forensic Diagrams
+
+<div align="center">
+
+| | | |
+|:-:|:-:|:-:|
+| [![Money Flow](docs/assets/diagram-money-flow.png)](docs/assets/diagram-money-flow.png) | [![Timeline](docs/assets/diagram-timeline.png)](docs/assets/diagram-timeline.png) | [![Theft Mechanism](docs/assets/diagram-theft-mechanism.png)](docs/assets/diagram-theft-mechanism.png) |
+| Money Flow | 10-Year Timeline | Theft Mechanism |
+| [![Operator Network](docs/assets/diagram-operator-network.png)](docs/assets/diagram-operator-network.png) | [![Suppression](docs/assets/diagram-suppression.png)](docs/assets/diagram-suppression.png) | [![Domain Infrastructure](docs/assets/diagram-domain-infra.png)](docs/assets/diagram-domain-infra.png) |
+| Operator Network | Suppression Campaign | Domain Infrastructure |
+
+</div>
+
+---
+
+## Verify the Evidence
+
+```bash
+git clone https://github.com/phishdestroy/namesilo-evidence.git
+cd namesilo-evidence/evidence
+sha256sum -c ../EVIDENCE_HASHES.txt
+# All 10 files: OK
+```
+
+---
+
+## For Victims, Regulators & Press
+
+**Victims of xmrwallet.com:**
+File at [IC3.gov](https://www.ic3.gov), [FTC](https://reportfraud.ftc.gov), or [ICANN Compliance](https://www.icann.org/compliance). Attach this repo URL.
+Contact: **report@phishdestroy.io** — [open a Victim Report issue](.github/ISSUE_TEMPLATE/victim-report.yml)
+
+**Regulators & journalists:** Full case file forwarded to ICANN March 18, 2026.
+Raw data, email headers, server captures on request: **abuse@phishdestroy.io**
+
+The [LICENSE](LICENSE) grants explicit permission to use this evidence in any legal or regulatory proceeding.
+
+---
+
+## Mirrors
+
+| Platform | Link |
+|----------|------|
+| ENS + IPFS | [phishdestroy.eth.limo](https://phishdestroy.eth.limo/) |
+| GitHub Pages | [phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence/) |
+| Canonical | [phishdestroy.io](https://phishdestroy.io/namesilo-killed-our-twitter) |
+| Codeberg | [codeberg.org/phishdestroy/namesilo-evidence](https://codeberg.org/phishdestroy/namesilo-evidence) |
+| GhostArchive | [ghostarchive.org/archive/CXXZ0](https://ghostarchive.org/archive/CXXZ0) |
+| Wayback | [snapshot](https://web.archive.org/web/20260508165630/https://github.com/phishdestroy/namesilo-evidence) |
+| IPFS CID | `bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq` |
 
 ---
 
