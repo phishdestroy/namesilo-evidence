@@ -96,46 +96,57 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 ```
 namesilo-evidence/
 │
-├── 📋  PROOFS.md                          Master evidence index
-├── 📄  INVESTIGATION_DOSSIER_EN.md        Complete investigation dossier (613 lines)
-├── 📄  ARTICLE_FULL.md                    Full investigative article
-├── 🔗  CONNECTION.md                      NameSilo ↔ operator evidence chain
-├── ❌  THE-LIES.md                        NameSilo Mar 13 statement, rebutted line by line
-├── ⚖️  NAMESILO-RESPONSE-MAY2026.md       May 11 legal threat tweet, documented
-├── 📊  NAMESILO_DOMAIN_ANOMALY_REPORT.md  8-registrar, 130M domain statistical analysis
-├── 🔒  PRESSURE.md                        DMCA · DDoS · account suppression log
-├── 🛠  SCAM_TECHNICAL.md                  xmrwallet: 8 PHP endpoints, key exfiltration
-├── 👤  OPERATOR_PROFILE.md               Operator identity, domains, IPs, IOCs
-├── 🧾  VICTIMS.md                         Documented victims 2016–2026
-├── 🔐  EVIDENCE_HASHES.txt               SHA-256 of all evidence files
+├── README.md                              ← you are here
+├── PROOFS.md                              ← master evidence index (start here)
+├── EVIDENCE_HASHES.txt                    ← SHA-256 of all evidence files
+├── LICENSE                                ← CC-BY-4.0, explicit legal/regulatory grant
+├── CITATION.cff                           ← machine-readable citation
 │
-├── evidence/                              16 SHA-256-verified screenshots
+├── case/                                  ← investigation documents
+│   ├── INVESTIGATION_DOSSIER_EN.md        Full dossier (613 lines)
+│   ├── ARTICLE_FULL.md                    Full investigative article
+│   ├── CONNECTION.md                      NameSilo ↔ operator evidence chain
+│   ├── THE-LIES.md                        NameSilo Mar 13 statement, rebutted
+│   ├── NAMESILO-RESPONSE-MAY2026.md       May 11 legal threat tweet, documented
+│   ├── NAMESILO_DOMAIN_ANOMALY_REPORT.md  8-registrar, 130M domain analysis
+│   ├── PRESSURE.md                        DMCA · DDoS · account suppression log
+│   └── SOURCES.md                         Permanent archive URLs for all claims
+│
+├── intel/                                 ← operator & victim intelligence
+│   ├── OPERATOR_PROFILE.md               Identity, domains, IPs, IOCs
+│   ├── VICTIMS.md                         Documented victims 2016–2026
+│   ├── SCAM_TECHNICAL.md                  xmrwallet: 8 PHP endpoints, key exfiltration
+│   └── XMRWALLET_TECHNICAL.md            Server-side key drainer case file
+│
+├── evidence/                              ← 16 SHA-256-verified screenshots
 │   ├── 01-operator-email-feb16.png        Operator email: "no phishing" (Feb 16)
-│   ├── 03-namesilo-statement-mar13.png    NameSilo's four-lie tweet (Mar 13)
+│   ├── 03-namesilo-statement-mar13.png    NameSilo four-lie tweet (Mar 13)
 │   ├── 06-x-support-no-violation.png      X Support: "no violation, restored"
-│   └── ...                               → see EVIDENCE_INDEX.md
+│   └── ...                               → full list in case/EVIDENCE_INDEX.md
 │
-├── docs/                                  phishdestroy.github.io/namesilo-evidence/
+├── docs/                                  ← phishdestroy.github.io/namesilo-evidence/
 │   ├── index.html                         Investigation portal
 │   ├── namesilo-scan.html                 Zone scan report
 │   ├── namesilo-clusters.html             Favicon cluster analysis
 │   ├── namesilo-domains.html              107k IOC domains (searchable)
 │   ├── namesilo-privacyguardian.html      183k malicious PG-shielded domains
 │   ├── namesilo-reviews.html              Trustpilot deletion + PR Newswire
-│   ├── behavioral-patterns.html           Behavioral pattern analysis
 │   └── assets/                            11 forensic diagrams (PNG)
 │
-├── pkg/                                   Zone scan evidence package
-│   ├── report.html / clusters.html / domains.html   Source reports
+├── pkg/                                   ← zone scan evidence package
+│   ├── report.html / clusters.html        Source HTML reports
 │   ├── evidence/                          JSON evidence files + manifest
 │   └── raw_data/                          Gzip scan archives (JSONL/CSV)
 │
-├── xmrwallet-evidence/                    xmrwallet-specific evidence package
-│   ├── EVIDENCE_HASHES.txt
-│   ├── LOST_FUNDS.md
-│   └── proof/ · screenshots/ · technical/
+├── xmrwallet-evidence/                    ← xmrwallet-specific evidence package
+│   ├── proof/ · screenshots/ · technical/
+│   └── LOST_FUNDS.md
 │
-└── tools/                                 Archival tooling (Wayback, IPFS pin, Arweave)
+├── scripts/                               ← report build scripts
+│   ├── build_pg.py                        Builds namesilo-privacyguardian.html
+│   └── build_reviews.py                   Builds namesilo-reviews.html
+│
+└── tools/                                 ← archival tooling (Wayback, IPFS, Arweave)
 ```
 
 ---
@@ -180,7 +191,7 @@ TIMELINE:  2016 → 2026  |  10 years  |  $10–20M  |  20+ reports  |  0 action
 | "The registrant is also the victim." | Operator contacted us on Feb 16 defending the site as his own work. | **FALSE** |
 | "Working to remove website from VT reports." | Said publicly. A registrar helping an active fraud operator erase consumer-protection security alerts. | **DOCUMENTED** |
 
-> Details: [`THE-LIES.md`](THE-LIES.md) · [`CONNECTION.md`](CONNECTION.md) · [`PROOFS.md`](PROOFS.md)
+> Details: [`THE-LIES.md`](case/THE-LIES.md) · [`CONNECTION.md`](case/CONNECTION.md) · [`PROOFS.md`](PROOFS.md)
 
 ---
 
