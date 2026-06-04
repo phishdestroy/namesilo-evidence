@@ -79,7 +79,7 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 | Metric | Value |
 |:-------|------:|
 | Total domains scanned | **5,269,357** |
-| No legitimate use (junk rate) | **4,600,249 · 87.3%** |
+| Dead / no DNS / parked (junk rate) | **4,600,249 · 87.3%** |
 | Brand-phishing domains | **3,726** |
 | Gambling cluster (MurmurHash3) | **19,198** |
 | Single server fingerprint cluster | **328,230 domains** |

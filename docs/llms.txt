@@ -7,7 +7,7 @@
 This site documents systemic abuse-facilitation by NameSilo, LLC (IANA #1479). Key findings:
 
 - 5,269,357 NameSilo domains scanned — complete zone file census, no sampling
-- 87.3% of domains have no legitimate use (parking, phishing, fraud, redirect chains)
+- 87.3% of domains are dead (no DNS / timeout) or parked — 1,871,944 with no DNS, 2,255,310 dead/timeout, remainder parked or garbage content
 - 183,419 confirmed-malicious domains shielded behind NameSilo's own WHOIS privacy service (PrivacyGuardian.org)
 - 3,726 brand-phishing domains identified via MurmurHash3 favicon fingerprinting
 - 328,230-domain cluster sharing a single server fingerprint (SHA-256 of Server+XPB+ETag headers)
