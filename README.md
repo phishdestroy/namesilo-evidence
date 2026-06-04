@@ -9,7 +9,7 @@ Keywords: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, ica
 
 <br/>
 
-<img src="docs/assets/og-final-investigation.png" alt="NameSilo Registrar Abuse Investigation — PhishDestroy Research" width="900"/>
+<img src="docs/assets/og-final-satire.png" alt="NameSilo Registrar Abuse Investigation — PhishDestroy Research" width="900"/>
 
 <br/>
 
