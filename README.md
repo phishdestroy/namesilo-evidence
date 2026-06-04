@@ -6,20 +6,56 @@ SEO topics: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, i
 
 <div align="center">
 
-# NameSilo, LLC (IANA #1479) Is Protecting `xmrwallet[.]com`
+# NameSilo, LLC (IANA #1479) — Registrar Abuse Investigation
 
-### A US ICANN-accredited registrar publicly defended a 10-year, $20M Monero drainer — and is still actively trying to erase the evidence.
-
-*NameSilo, LLC really doesn't like this text. Not because it's false — because they wrote the original themselves. Their official tweet defending a $20M Monero drainer is Exhibit A below. Since they can't dispute the evidence, they dispute the existence of anyone who publishes it: mass complaints to X/Twitter (our account locked — X cleared us in writing, lock stayed), Bing and Google delisting requests against phishdestroy.io, and the operator's lifetime hobby — mass-reporting real victim reviews on Trustpilot (100+ removed reviews, partially verifiable via Web Archive and rating hash history — authorities can request Trustpilot's full deletion logs). Our Twitter threads tagging @NameSilo with abuse reports go back one and two years — they killed those accounts too. We have copies of everything. Their entire strategy right now is simple: don't answer for what they're part of and erase every trace that it happened. It's not working.*
-
-**[Master proof index &rarr;](PROOFS.md)** &nbsp;·&nbsp; **[Full article &rarr;](ARTICLE_FULL.md)** &nbsp;·&nbsp; **[The Connection &rarr;](CONNECTION.md)** &nbsp;·&nbsp; **[The Lies &rarr;](THE-LIES.md)** &nbsp;·&nbsp; **[Pressure Campaign &rarr;](PRESSURE.md)** &nbsp;·&nbsp; **[Technical breakdown &rarr;](SCAM_TECHNICAL.md)** &nbsp;·&nbsp; **[Operator dossier &rarr;](OPERATOR_PROFILE.md)** &nbsp;·&nbsp; **[Victims &amp; timeline &rarr;](VICTIMS.md)** &nbsp;·&nbsp; **[Evidence Index &rarr;](EVIDENCE_INDEX.md)** &nbsp;·&nbsp; **[Full Dossier &rarr;](INVESTIGATION_DOSSIER_EN.md)**
+### Public evidence repository · Filed with ICANN Contractual Compliance, March 18, 2026
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](LICENSE)
 [![Evidence: SHA-256 verified](https://img.shields.io/badge/evidence-SHA--256_verified-green.svg)](EVIDENCE_HASHES.txt)
 [![Mirror: GitHub Pages](https://img.shields.io/badge/mirror-GitHub_Pages-black.svg)](docs/)
 [![Canonical: phishdestroy.io](https://img.shields.io/badge/canonical-phishdestroy.io-red.svg)](https://phishdestroy.io)
+[![Domains scanned](https://img.shields.io/badge/domains_scanned-5%2C269%2C357-red.svg)](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html)
+[![Junk rate](https://img.shields.io/badge/junk_rate-87.3%25-critical.svg)](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html)
 
 </div>
+
+---
+
+## Key Findings
+
+| Finding | Value | Source |
+|---------|-------|--------|
+| NameSilo domains — complete zone census | **5,269,357** | Zone file, June 2026 |
+| Domains classified as junk/abuse | **87.3%** | Full zone scan |
+| Brand-phishing domains | **3,726** | Favicon + content analysis |
+| Indonesian gambling networks | **24,349** heuristic · **19,198** favicon-confirmed | Cluster analysis |
+| Single server fingerprint cluster | **328,230** domains | SHA-256 server fingerprint |
+| Cloudflare-confirmed phishing on that cluster | **2,062** | CF threat feed |
+| Malicious domains behind PrivacyGuardian (NameSilo's own WHOIS privacy) | **183,419** | 25+ threat feeds, RDAP-validated |
+| Hard-confirmed malicious PG-protected domains | **109,196** | Multi-source verification |
+| Dead domains: NameSilo vs industry average | **32.2%** vs **14–21%** | 8-registrar comparison |
+| xmrwallet.com — estimated funds drained | **$10M–$20M** | On-chain analysis, victim reports |
+| xmrwallet.com — years of operation | **~10 years** (2016–2026) | Domain history, archived content |
+| Abuse reports submitted to NameSilo — ignored | **20+** delivery-receipted | Email records |
+| Other registrars that suspended on sight | **3** (PDR, WebNic, NICENIC) | Suspension notices |
+
+---
+
+## What Happened
+
+On **March 13, 2026**, NameSilo, LLC (IANA #1479) — a US-based ICANN-accredited registrar — published an official corporate statement on Twitter/X defending `xmrwallet[.]com`, a confirmed Monero wallet drainer that had been operating for approximately 10 years.
+
+In that statement NameSilo: (1) claimed the domain "was compromised" — a narrative the operator himself never advanced; (2) denied receiving any prior abuse reports — contradicted by 20+ delivery-receipted submissions; (3) committed **in writing** to helping the operator remove the domain from VirusTotal detection lists; (4) called the operator "the victim."
+
+Three other registrars (PDR, WebNic, NICENIC) reviewed identical evidence and suspended the domain within days. NameSilo published a defense.
+
+On **March 16, 2026**, our research account on X/Twitter was locked via NameSilo's paid Gold Checkmark live-support channel — hours after we published the receipts. X's automated review confirmed no violation and restored the account; a human agent overrode the restoration. The account remains locked.
+
+On **March 18, 2026**, this case was filed with **ICANN Contractual Compliance**.
+
+> Evidence chain: [CONNECTION.md](CONNECTION.md) · Lies rebutted: [THE-LIES.md](THE-LIES.md) · Suppression log: [PRESSURE.md](PRESSURE.md)
+
+**[Master proof index →](PROOFS.md)** · **[Full article →](ARTICLE_FULL.md)** · **[The Connection →](CONNECTION.md)** · **[The Lies →](THE-LIES.md)** · **[Pressure Campaign →](PRESSURE.md)** · **[Technical breakdown →](SCAM_TECHNICAL.md)** · **[Operator dossier →](OPERATOR_PROFILE.md)** · **[Victims →](VICTIMS.md)** · **[Full Dossier →](INVESTIGATION_DOSSIER_EN.md)**</div>
 
 ---
 
@@ -81,61 +117,12 @@ Visual forensic diagrams available in [`docs/assets/`](docs/assets/):
 ---
 
 
-### 🚨 Quick Update
+### Latest Developments
 
-Since **NameSilo** <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Mouse%20Face.webp" alt="Mouse Face" width="25" height="25" /> has a team of Russian scammers (proven), they got scared—just like any Russian scammers would. They stopped protecting their domain and transferred it to **Namecheap**. 
-
-**[The first part of the investigation is here]([#](https://phishdestroy.eth.limo/))**  https://phishdestroy.eth.limo/
-
-This investigation will **not** be concluded until there are clear answers: what are Russian scammers doing inside a registrar that buys domains from itself to launder money?
-NameSilo has been actively involved in scams and covering up negative publicity for years—specifically regarding its “awesome” domain registrar and its fraudulent activities. 
-
-Should we turn a blind eye to **12 Russian scammers** with extensive experience in shady schemes? Did no one see anything? They claim they didn’t get anything out of it, and that they don’t even buy domains from themselves—yet their design is just *so* awesome! 
-
-But experience in scams definitely doesn’t mean intelligence. You’ll see exactly that in our investigation, as we outsmarted the old-timers at their own game.
-
-**Spoiler alert:** he is an interesting guy. People don't like his articles and the worldview he expresses in Russian—and judging by his older posts, they never did. (He is simply very narrow-minded, which is clearly evident from his other projects and their designs).
-
-🚨 **Mikhail Chudinov — DevOps** *(full infrastructure access)*
-* **Location:** Argentina (crypto-haven relocation)
-* **Background:** Head of IT at **SuperKopilka** (a Russian financial pyramid, collapsed in 2017) for ~10 years. 
-* **Other Roles:** COO at AtomX.online (crypto project), Poker Club Manager at Red Rock. 
-* **Self-described:** “Crypto enthusiast.”
-
-> ⚠️ **Takeaway:** This person holds the DevOps keys to all NameSilo infrastructure. His resume is literally: financial pyramid + poker + crypto.
-And yes, this isn't even the beginning—this is just the premiere. The main feature is coming later, so grab your popcorn. 
-
-As for the Russian scammers—you'd better learn to swim, pack your prison bags, and whatever you do, **don't drop the soap**. <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Objects/Soap.webp" alt="Soap" width="25" height="25" /> <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Food%20and%20Drink/Bottle%20With%20Popping%20Cork.webp" alt="Bottle With Popping Cork" width="25" height="25" />
-<img width="834" height="456" alt="image" src="https://github.com/user-attachments/assets/1bc7eeb5-66ce-4120-a104-5ddbd99ef7cf" />
-
-The reaction of these foolish Russians to the truth when it becomes impossible to delete... *boo-hoo?* 
-It's way too early for tears. For now, go ahead and try suing **IPFS**—we'll just pretend there aren't 5 different providers and automated deployments backing it up.
-
-
-> **A note on what you're reading and why we were ready.**
->
-> We knew the operator's playbook before NameSilo, LLC (IANA #1479) ever opened their mouth. We'd been watching since 2016. We'd seen him delete real victim reviews off Trustpilot. We'd seen the fake DMCAs on GitHub. We'd seen the puppet Twitter accounts mass-reporting researchers. We'd seen the 50+ paid SEO articles burying the complaints. We'd seen him scrub BitcoinTalk threads, nuke YouTube videos, wipe Reddit posts. Eight years of the same pattern: never answer the evidence, just make the person who published it disappear.
->
-> So when NameSilo, LLC (IANA #1479) posted their official defense of him — four sentences, four lies, on a public channel, from a verified corporate account — we didn't panic. We archived it. Instantly. GhostArchive, Wayback, local capture, SHA-256 hash. Before they could blink. Because we already knew this registrar was going to do exactly what the scammer always does: try to erase the receipts. They did. On schedule. With their paid Gold Checkmark support channel on X.
->
-> They think they're clever. They're not. They're predictable. Every move they've made, we anticipated. Every surface they've taken down, we'd already mirrored. Every complaint they've filed, we've logged. They operate like the evidence will eventually go away. It won't.
->
-> One more thing: **the $10M-$20M number is a floor, not a ceiling.** Eight years, thousands of wallets, operator-side key exfiltration on every single login — the real number is significantly higher. We use the conservative estimate because we only publish what we can prove. But we know. And the on-chain analysis, when it's complete, is going to make this README look like the opening statement.
->
-> And to NameSilo, LLC (IANA #1479): you publicly committed — in writing, from your official account — to helping a confirmed scammer get his VirusTotal detections removed. **You said that. Out loud. On the internet. While the drainer was still live.** You really thought nobody would keep the receipt?
->
-> **Let's get one thing straight.** This is not a cry for help. We don't need sympathy, petitions, or outrage. We are not victims here — the people who lost their Monero on `xmrwallet[.]com` are. We are researchers. We document. We publish. We archive. That's what we do.
->
-> What you are looking at is a **flat evidence file**. Screenshots. Emails. Timestamps. Hashes. Every claim sourced, every exhibit fingerprinted, every lie cross-referenced against the liar's own words.
->
-> NameSilo, LLC (IANA #1479) and the operator have spent **eight years** pressing the "report" button on every platform that hosts the truth about them. They deleted GitHub issues. They mass-reported victim reviews. They filed fake DMCAs. They got our Twitter locked. They're trying to delist us from Bing right now. **They have never — not once, in eight years — produced a single technical rebuttal.** Not one line of code. Not one network capture. Not one counter-argument. Just the report button, over and over, on every surface they can reach.
->
-> That is not the behavior of people who have been falsely accused. That is the behavior of people who know exactly what they did and have no answer except to make the evidence disappear.
->
-> **It's not disappearing.** This repo is mirrored, hashed, archived, pinned to IPFS, and spread across jurisdictions they'd need a dozen separate legal actions to touch. Every takedown attempt gets logged as another entry in [`PRESSURE.md`](PRESSURE.md). Every deleted review gets noted in [`VICTIMS.md`](VICTIMS.md). Every fake DMCA gets documented in [`SECURITY.md`](SECURITY.md).
->
-> They're not erasing anything. They're building our case for us.
-
+- **May 11, 2026** — NameSilo published a second public statement threatening legal action against investigators. No factual rebuttal was provided. Full documentation: [NAMESILO-RESPONSE-MAY2026.md](NAMESILO-RESPONSE-MAY2026.md)
+- **June 2026** — Complete zone scan of all 5,269,357 NameSilo domains completed. 87.3% classified as junk or abuse. Full dataset and methodology: [Zone Scan Report](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html)
+- **June 2026** — PrivacyGuardian investigation completed: 183,419 malicious domains confirmed behind NameSilo's own WHOIS privacy service. [PrivacyGuardian Shield](https://phishdestroy.github.io/namesilo-evidence/namesilo-privacyguardian.html)
+- **Ongoing** — xmrwallet.com domain transferred from NameSilo to Namecheap. The site remains operational. Investigation continues.
 ---
 
 ## What this repository is
@@ -333,29 +320,41 @@ The moment we replied with the operator's own emails, the silencing started. **T
 
 ```
 .
-├── README.md                  <- you are here (landing page with key evidence)
-├── PROOFS.md                  <- MASTER INDEX: every piece of evidence, every mirror
-├── ARTICLE_FULL.md            <- full long-form article (mirror of Medium / phishdestroy.io)
-├── CONNECTION.md              <- evidence chain: NameSilo, LLC (IANA #1479) <-> xmrwallet operator
-├── THE-LIES.md                <- line-by-line debunking of NameSilo's March 13 statement
-├── PRESSURE.md                <- silencing attempts, dated, still-ongoing
-├── SCAM_TECHNICAL.md          <- full technical investigation (viewkey x40/session, 8 endpoints, IOCs)
-├── XMRWALLET_TECHNICAL.md     <- server-side key drainer summary (case-file format)
-├── OPERATOR_PROFILE.md        <- complete operator dossier (identity, domains, IPs, victims, IOCs)
-├── VICTIMS.md                 <- documented victims, full 2016-2026 timeline, scoreboard
-├── EVIDENCE_INDEX.md          <- every screenshot, indexed, with section + date + sha256
-├── MEDIUM_MIRROR.md           <- all Medium articles + pre-formed Wayback save URLs
-├── TWITTER_ARCHIVE.md         <- @Phish_Destroy archive methodology & tooling
-├── SOURCES.md                 <- permanent archive URLs for every external claim
-├── EVIDENCE_HASHES.txt        <- SHA-256 of every screenshot (verify with sha256sum -c)
-├── LICENSE                    <- CC-BY-4.0 + explicit grant for legal/regulatory use
-├── SECURITY.md                <- how victims and researchers can report
-├── CITATION.cff               <- machine-readable citation for academic / legal use
-├── DEPLOY.md                  <- push + IPFS/Arweave pinning + mass archive submission
-├── .github/ISSUE_TEMPLATE/    <- templates for victim reports and additional evidence
-├── evidence/                  <- 10 screenshots, descriptive filenames, SHA-256 verified
-├── tools/                     <- reproducible Twitter archive tooling (Wayback / archive.ph / DDG)
-└── docs/                      <- GitHub Pages mirror — fully SEO-optimized static site
+├── README.md                              ← you are here
+├── PROOFS.md                              ← master evidence index, every exhibit SHA-256 verified
+├── INVESTIGATION_DOSSIER_EN.md            ← complete investigation dossier (613 lines)
+├── ARTICLE_FULL.md                        ← full investigative article
+├── CONNECTION.md                          ← NameSilo ↔ xmrwallet operator evidence chain
+├── THE-LIES.md                            ← line-by-line rebuttal of NameSilo's March 13 statement
+├── NAMESILO-RESPONSE-MAY2026.md           ← NameSilo's May 11 legal threat, documented
+├── NAMESILO_DOMAIN_ANOMALY_REPORT.md      ← statistical analysis: 8 registrars, 130M domains
+├── PRESSURE.md                            ← suppression campaign log
+├── SCAM_TECHNICAL.md                      ← xmrwallet technical breakdown (8 PHP endpoints)
+├── XMRWALLET_TECHNICAL.md                 ← server-side key drainer case file
+├── OPERATOR_PROFILE.md                    ← operator dossier: identity, domains, IPs, IOCs
+├── VICTIMS.md                             ← documented victims, 2016–2026 timeline
+├── EVIDENCE_INDEX.md                      ← every screenshot indexed with SHA-256
+├── SOURCES.md                             ← permanent archive URLs for all external claims
+├── EVIDENCE_HASHES.txt                    ← SHA-256 of every screenshot
+├── CITATION.cff                           ← machine-readable citation for legal/academic use
+├── LICENSE                                ← CC-BY-4.0, explicit grant for legal/regulatory use
+├── evidence/                              ← 10 SHA-256 verified screenshots
+├── tools/                                 ← archive tooling (Wayback, archive.ph)
+├── xmrwallet-evidence/                    ← xmrwallet-specific evidence package
+├── pkg/                                   ← zone scan evidence package (5.27M domains)
+│   ├── report.html                        ← main investigation report
+│   ├── clusters.html                      ← favicon cluster analysis
+│   ├── domains.html                       ← 107,252 IOC domains
+│   ├── evidence/                          ← JSON evidence files + manifest
+│   └── raw_data/                          ← gzip scan datasets (JSONL/CSV)
+└── docs/                                  ← GitHub Pages
+    ├── namesilo-scan.html                 ← zone scan report
+    ├── namesilo-clusters.html             ← favicon clusters
+    ├── namesilo-domains.html              ← 107,252 IOC domains (searchable)
+    ├── namesilo-privacyguardian.html      ← 183,419 PG-shielded malicious domains
+    ├── behavioral-patterns.html           ← behavioral analysis
+    ├── assets/                            ← 11 forensic diagrams (PNG)
+    └── evidence/                          ← SHA-256 manifests
 ```
 
 > **Where do I start?** Open [`PROOFS.md`](PROOFS.md) — every piece of evidence and every mirror in one place. That is the file to share if you only have one URL.
