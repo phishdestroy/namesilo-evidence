@@ -30,10 +30,10 @@ We obtained and processed NameSilo's **complete zone file** — every active dom
 
 | Report | Description |
 |--------|-------------|
-| **[Full Investigation Report →](pkg/report.html)** | Visual report with charts, methodology, IOC breakdown |
-| **[Favicon Cluster Analysis →](pkg/clusters.html)** | 12 operator clusters identified via MurmurHash3 fingerprinting |
-| **[107,252 IOC Domains →](pkg/domains.html)** | Full searchable list of criminal/abuse domains |
-| **[Evidence Manifest →](pkg/evidence/evidence_manifest.json)** | SHA-256 integrity anchors for all data files |
+| **[Full Investigation Report →](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html)** | Visual report with charts, methodology, IOC breakdown |
+| **[Favicon Cluster Analysis →](https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html)** | 12 operator clusters identified via MurmurHash3 fingerprinting |
+| **[107,252 IOC Domains →](https://phishdestroy.github.io/namesilo-evidence/namesilo-domains.html)** | Full searchable list of criminal/abuse domains |
+| **[Evidence Manifest →](docs/evidence/evidence_manifest.json)** | SHA-256 integrity anchors for all data files |
 | **[Artifacts Index →](pkg/ARTIFACTS.md)** | Complete list of scan datasets and methodology |
 
 > Raw scan data (JSONL/CSV, up to 499MB) available in [`pkg/raw_data/`](pkg/raw_data/) as gzip archives.
