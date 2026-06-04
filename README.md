@@ -159,6 +159,7 @@ Jun 2026      Full zone scan complete: 5,269,357 domains, 87.3% junk.
 | Favicon Cluster Analysis | 12 operator clusters via MurmurHash3 fingerprinting | [namesilo-clusters.html](https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html) |
 | IOC Domain List | 107,252 criminal domains — searchable, with flags and favicons | [namesilo-domains.html](https://phishdestroy.github.io/namesilo-evidence/namesilo-domains.html) |
 | PrivacyGuardian Shield | 183,419 malicious domains behind NameSilo's own WHOIS privacy service | [namesilo-privacyguardian.html](https://phishdestroy.github.io/namesilo-evidence/namesilo-privacyguardian.html) |
+| Review Manipulation & PR Newswire | 129 Trustpilot reviews deleted, bot network, same-day PR Newswire with scammer | [namesilo-reviews.html](https://phishdestroy.github.io/namesilo-evidence/namesilo-reviews.html) |
 | Investigation Index | Main GitHub Pages portal with links to all reports | [phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence/) |
 
 </div>
