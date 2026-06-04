@@ -72,7 +72,10 @@ js = (
 'for(var i=start;i<=end;i++)mkBtn(String(i+1),i*PAGE,i===pg);'
 'if(pg<pages-1)mkBtn("Next >",(pg+1)*PAGE,false);}'
 'function go(n){cur=n;render();window.scrollTo(0,document.getElementById("domains").offsetTop-60);}'
-'doFilter();</script>'
+'doFilter();'
+'var _ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");_ro.unobserve(e.target);}});},{threshold:0.07,rootMargin:"0px 0px -32px 0px"});'
+'document.querySelectorAll(".reveal").forEach(function(el){_ro.observe(el);});'
+'</script>'
 )
 
 page = (
