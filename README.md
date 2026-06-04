@@ -7,7 +7,11 @@ Keywords: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, ica
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=24&pause=800&color=FF3333&center=true&vCenter=true&width=960&lines=NameSilo%2C+LLC+(IANA+%231479)+%E2%80%94+Registrar+Abuse+Investigation;5%2C269%2C357+Domains+Scanned.+87.3%25+Is+Junk.;183%2C419+Malicious+Domains+Behind+Their+Own+Privacy+Shield.;Filed+with+ICANN+%C2%B7+March+18%2C+2026." alt="PhishDestroy — NameSilo Investigation" />
 
-<br/><br/>
+<br/>
+
+<img src="docs/assets/og-final-investigation.png" alt="NameSilo Registrar Abuse Investigation — PhishDestroy Research" width="900"/>
+
+<br/>
 
 [![🔴 LIVE SITE](https://img.shields.io/badge/%F0%9F%94%B4%20LIVE-phishdestroy.eth.limo-FF3333?style=for-the-badge)](https://phishdestroy.eth.limo/)
 [![Evidence Portal](https://img.shields.io/badge/Evidence_Portal-GitHub_Pages-161b22?style=for-the-badge&logo=github)](https://phishdestroy.github.io/namesilo-evidence/)
