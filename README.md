@@ -31,6 +31,150 @@ Keywords: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, ica
 
 ---
 
+## Why NameSilo Earned This Investigation
+
+> *They didn't end up here because we were looking for them.*
+> *They ended up here because they came looking for us.*
+
+This investigation began not with a zone file, but with a threat.
+
+When PhishDestroy started publishing evidence about **xmrwallet[.]com** — two parties decided the correct response was intimidation. The operator arrived with lawyers and a private detective. NameSilo arrived with platform suppression and a defamation claim on Twitter.
+
+Every attempt was documented. Every attempt failed. Every attempt is now part of the public record.
+
+---
+
+### Two Tracks. Same Goal. Zero Results.
+
+<table>
+<tr>
+<th width="50%">🔴 xmrwallet operator</th>
+<th width="50%">🔴 NameSilo, LLC (IANA #1479)</th>
+</tr>
+<tr>
+<td>
+
+**① Direct contact · Feb 16, 2026**
+
+Contacted PhishDestroy researchers personally. Did not claim the site was hacked. Defended the operation as his own work. Demanded removal of all abuse reports.
+
+*We published his email instead.*
+
+</td>
+<td>
+
+**① Public defense · Mar 13, 2026**
+
+Official corporate account called the operator *"the victim"*, denied receiving 20+ abuse reports, and committed in writing to helping him remove his VirusTotal detections.
+
+*We rebutted every sentence using his own emails.*
+
+</td>
+</tr>
+<tr>
+<td>
+
+**② Lawyer threats**
+
+Threatened a lawsuit. Demanded full retraction under legal pressure.
+
+*Threat documented and published.*
+
+</td>
+<td>
+
+**② @Phish_Destroy locked via X Gold**
+
+Used X Gold Checkmark live-support access to lock the research account after our rebuttal reached 11,300+ views.
+
+*X cleared the account in writing on Apr 15: "no violation found." Lock remains. Abuse documented.*
+
+</td>
+</tr>
+<tr>
+<td>
+
+**③ Private detective threat**
+
+Claimed to have hired an investigator to identify and expose individual researchers by name.
+
+*Documented. Researchers unidentified. Investigation continued.*
+
+</td>
+<td>
+
+**③ "Defamation" claim · May 11, 2026**
+
+Posted publicly on Twitter that our reporting constituted defamation. Threatened legal consequences if we did not stop.
+
+*The reporting is factual. Every claim is sourced. Threat logged in [`NAMESILO-RESPONSE-MAY2026.md`](case/NAMESILO-RESPONSE-MAY2026.md).*
+
+</td>
+</tr>
+<tr>
+<td>
+
+**④ "Serious consequences"**
+
+Escalating personal warnings directed at individual community members.
+
+*Archived. Ignored. Published.*
+
+</td>
+<td>
+
+**④ 108,000 pages deindexed from Bing**
+
+IOC reports, evidence pages, and domain analysis scrubbed from Microsoft Bing search results.
+
+*Content mirrored to IPFS, Arweave, Codeberg, GitHub simultaneously.*
+
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+
+**⑤ DMCA takedown · Google**
+
+Formal copyright claim submitted targeting research pages in Google Search. Content is factual documentation of fraud. No copyrightable material belonging to any complainant.
+
+*Logged in Lumen Database. Strengthened the legal record.*
+
+</td>
+</tr>
+</table>
+
+---
+
+### What Every Attempt Accomplished
+
+| Action | By | Result |
+|:-------|:---|:-------|
+| Demanded report removal | Operator | Email published as evidence |
+| Lawyer threats | Operator | Threat documented and published |
+| Private detective threat | Operator | Documented · researchers unidentified |
+| "Serious consequences" | Operator | Archived · investigation continued |
+| Called operator "the victim" | NameSilo | Rebutted line-by-line · archived permanently |
+| Locked @Phish_Destroy via X Gold | NameSilo | X cleared account in writing · abuse documented |
+| Called reporting "defamation" | NameSilo | Logged · factual record unchanged |
+| 108,000 Bing pages removed | NameSilo | Mirrored to 5+ platforms · IPFS permanent |
+| DMCA filed with Google | NameSilo | Logged in Lumen · strengthened legal record |
+
+---
+
+> They wanted legal consequences for us.
+>
+> **We want legal consequences for them.**
+>
+> The difference is that we have the evidence.
+
+The investigation is MIT-licensed. It lives on the blockchain. It has been filed with ICANN and submitted to IC3. There is no version of this story that ends with the evidence gone.
+
+Every deletion attempt is itself evidence. Every threat goes into the dossier. Every escalation increases the footprint of this case.
+
+---
+
 ## What Happened
 
 **NameSilo, LLC (IANA #1479)** — US-based, ICANN-accredited, CSE-listed registrar (ticker: URL) — publicly defended **xmrwallet[.]com**, a Monero wallet drainer operating continuously since ~2016, with estimated victim losses of **$10–20M**.
