@@ -23,7 +23,8 @@ a ten-year fraud under active protection, and a documented pattern of suppressin
 the researchers who exposed it.<br/><br/>
 Every takedown. Every lawyer. Every deleted tweet.<br/>
 All of it is in the record. All of it makes this louder.<br/><br/>
-<b>PhishDestroy is a Hydra. You already pulled the first head.</b>
+<b>PhishDestroy is a Hydra. You already pulled the first head.<br/><br/>
+  <b>Pedigreeless Russian dogs can write reviews about themselves and buy articles about themselves in the third person.</b>
 </p>
 
 ---
