@@ -36,7 +36,7 @@ All of it is in the record. All of it makes this louder.<br/><br/>
     <b>It is quite baffling that the 'fastest-growing registrar in the world' appears entirely unaware of Section 3.18 of the ICANN Registrar Accreditation Agreement (RAA) and its explicit requirements.
     There is no need to lie. Previously, you claimed to have conducted an investigation and inexplicably offered to help clear VirusTotal detections for the operator. Now you are either distorting the facts, or you have finally realized that managing malware detections is entirely outside your jurisdiction.
     Either way, you are missing the point. I assure you, I fully understand the legal rights of users and the strict obligations of registrars. A service provider like NameSilo is obligated to take actionable steps against abuse—not to shield perpetrators, ignore reports, or mislead the public.
-    This is not 2018, and this is no longer just an appeal to ICANN. Based on the factual evidence, I am now calling upon US law enforcement and regulatory authorities to investigate the individuals involved here, as the facts indicate direct complicity in organizing scams and other illicit activities within the United States."</b>
+    This is not 2018, and this is no longer just an appeal to ICANN. Based on the factual evidence, I am now calling upon US law enforcement and regulatory authorities to investigate the individuals involved here, as the facts indicate direct complicity in organizing scams and other illicit activities within the United States.</b>
   </p>
 </details>
 </div>
