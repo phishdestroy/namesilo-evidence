@@ -27,6 +27,13 @@ All of it is in the record. All of it makes this louder.<br/><br/>
   <b>Pedigreeless Russian dogs can write reviews about themselves and buy articles about themselves in the third person.</b>
 </p>
 
+<div align="center">
+<details>
+  <summary>Spoiler</summary>
+  <img src="Woof-woof.png" alt="Woof-woof" />
+</details>
+</div>
+
 ---
 
 [![🔴 LIVE SITE](https://img.shields.io/badge/%F0%9F%94%B4%20LIVE-phishdestroy.eth.limo-FF3333?style=for-the-badge)](https://phishdestroy.eth.limo/)
@@ -305,82 +312,5 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 
 Verify integrity:
 ```bash
-git clone https://github.com/phishdestroy/namesilo-evidence.git
+git clone [https://github.com/phishdestroy/namesilo-evidence.git](https://github.com/phishdestroy/namesilo-evidence.git)
 cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
-```
-
-### 📦 Raw Scan Data — [`pkg/raw_data/`](pkg/raw_data/)
-
-Gzip-compressed archives (all files under 60 MB):
-
-| File | Contents | Size |
-|:-----|:---------|-----:|
-| `1479_full.csv.gz` | Complete 5.27M domain zone file | 54 MB |
-| `domains_to_scan.jsonl.gz` | Scan input with metadata | 40 MB |
-| `final_garbage.jsonl.gz` | Classified garbage/junk domains | 46 MB |
-| `report_data_cache_v2.json.gz` | Full scan results cache | 30 MB |
-| `all_missing_results.jsonl.gz` | Phase-2 rescan results | 26 MB |
-
----
-
-## Forensic Diagrams
-
-<div align="center">
-
-| | | |
-|:-:|:-:|:-:|
-| [![](docs/assets/diagram-money-flow.png)](docs/assets/diagram-money-flow.png) | [![](docs/assets/diagram-timeline.png)](docs/assets/diagram-timeline.png) | [![](docs/assets/diagram-theft-mechanism.png)](docs/assets/diagram-theft-mechanism.png) |
-| Money Flow | 10-Year Timeline | Theft Mechanism |
-| [![](docs/assets/diagram-operator-network.png)](docs/assets/diagram-operator-network.png) | [![](docs/assets/diagram-suppression.png)](docs/assets/diagram-suppression.png) | [![](docs/assets/diagram-domain-infra.png)](docs/assets/diagram-domain-infra.png) |
-| Operator Network | Suppression Campaign | Domain Infrastructure |
-
-</div>
-
----
-
-## NameSilo vs. The Facts
-
-| NameSilo's Statement · Mar 13, 2026 | Reality | |
-|:---|:---|:---:|
-| "Domain was compromised a few months ago." | Exfiltration code *is* the site — 8 PHP endpoints, `session_key` server-side capture, `raw_tx_and_hash.raw=0`. Operator's own Feb 16 email: no hack claim. | **FALSE** |
-| "No abuse reports received prior to this." | 20+ delivery-receipted reports 2023–2026. Our public tweet the day before: "9 reports is no joke anymore." | **FALSE** |
-| "The registrant is also the victim." | Operator contacted PhishDestroy Feb 16, defending the site as his own work. | **FALSE** |
-| "Working with registrant to remove from VT." | Published on their own corporate account. Registrar helping fraud operator erase consumer-protection alerts. | **DOCUMENTED** |
-
----
-
-## Mirrors
-
-| | Platform | Link |
-|:-:|:---------|:-----|
-| 🔴 | **Live investigation (IPFS + ENS)** | [phishdestroy.eth.limo](https://phishdestroy.eth.limo/) |
-| ⬛ | **GitHub Pages** | [phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence/) |
-| 🟣 | **Arweave (permanent blockchain)** | [arweave.net/LUuditolJS…](https://arweave.net/LUuditolJS-Y15IezfpzRI36sxhd1CIvFNOf_eAG2AU) |
-| ⬜ | Codeberg | [codeberg.org/phishdestroy](https://codeberg.org/phishdestroy/namesilo-evidence) |
-| ⬜ | Medium | [phishdestroy.medium.com](https://phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam-then-took-down-our-twitter-4904d15d531e) |
-| ⬜ | GhostArchive | [ghostarchive.org/archive/CXXZ0](https://ghostarchive.org/archive/CXXZ0) |
-| ⬜ | Wayback | [snapshot](https://web.archive.org/web/20260508165630/https://github.com/phishdestroy/namesilo-evidence) |
-| 📦 | IPFS CID | `bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq` |
-
----
-
-## For Victims & Regulators
-
-**Victims of xmrwallet[.]com** — attach this repository URL to:
-[IC3.gov (FBI)](https://www.ic3.gov) · [FTC](https://reportfraud.ftc.gov) · [ICANN Compliance](https://www.icann.org/compliance) · police reports · civil claims
-
-The [MIT License](LICENSE) grants explicit permission to use this evidence in any legal or regulatory proceeding without further authorization.
-
-**[report@phishdestroy.io](mailto:report@phishdestroy.io)** (victims) · **[abuse@phishdestroy.io](mailto:abuse@phishdestroy.io)** (regulators / press)
-
----
-
-<div align="center">
-
-**PhishDestroy Research**
-
-[phishdestroy.eth.limo](https://phishdestroy.eth.limo/) &nbsp;·&nbsp; [phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence/) &nbsp;·&nbsp; [abuse@phishdestroy.io](mailto:abuse@phishdestroy.io)
-
-*TLP:CLEAR &nbsp;·&nbsp; MIT License &nbsp;·&nbsp; Evidence chain maintained from first report, 2023, to present.*
-
-</div>
