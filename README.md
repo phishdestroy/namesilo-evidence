@@ -23,15 +23,24 @@ a ten-year fraud under active protection, and a documented pattern of suppressin
 the researchers who exposed it.<br/><br/>
 Every takedown. Every lawyer. Every deleted tweet.<br/>
 All of it is in the record. All of it makes this louder.<br/><br/>
-<b>PhishDestroy is a Hydra. You already pulled the first head.<br/><br/>
-  <b>Pedigreeless Russian dogs can write reviews about themselves and buy articles about themselves in the third person.</b>
+<b>PhishDestroy is a Hydra. You already pulled the first head.</b><br/><br/>
+<b>Pedigreeless Russian dogs can write reviews about themselves and buy articles about themselves in the third person.</b>
 </p>
 
 <div align="center">
 <details>
   <summary>Spoiler</summary>
-  <img src="Woof-woof.png" alt="Woof-woof" />
+  <p>
+    <img src="Woof-woof.png" alt="Woof-woof" />
+    <br/><br/>
+    <b>It is quite baffling that the 'fastest-growing registrar in the world' appears entirely unaware of Section 3.18 of the ICANN Registrar Accreditation Agreement (RAA) and its explicit requirements.
+    There is no need to lie. Previously, you claimed to have conducted an investigation and inexplicably offered to help clear VirusTotal detections for the operator. Now you are either distorting the facts, or you have finally realized that managing malware detections is entirely outside your jurisdiction.
+    Either way, you are missing the point. I assure you, I fully understand the legal rights of users and the strict obligations of registrars. A service provider like NameSilo is obligated to take actionable steps against abuse—not to shield perpetrators, ignore reports, or mislead the public.
+    This is not 2018, and this is no longer just an appeal to ICANN. Based on the factual evidence, I am now calling upon US law enforcement and regulatory authorities to investigate the individuals involved here, as the facts indicate direct complicity in organizing scams and other illicit activities within the United States."</b>
+  </p>
 </details>
+</div>
+
 </div>
 
 ---
