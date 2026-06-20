@@ -522,6 +522,39 @@ var _ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isInte
 document.querySelectorAll(".reveal").forEach(function(el){_ro.observe(el);});
 </script>
 
+<!-- CHART SECTION -->
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F4CA; Registration Activity</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Daily and monthly new domain registrations. Click any bar to download that day&#8217;s list.</p>
+  <div style="display:flex;gap:8px;margin-bottom:20px">
+    <button onclick="showView('daily')" id="btn-daily" style="font-size:11px;padding:5px 14px;border-radius:4px;border:1px solid rgba(110,168,215,.4);background:rgba(110,168,215,.1);color:var(--cy);cursor:pointer;font-weight:600">Daily</button>
+    <button onclick="showView('monthly')" id="btn-monthly" style="font-size:11px;padding:5px 14px;border-radius:4px;border:1px solid var(--bdr);background:transparent;color:var(--tx3);cursor:pointer">Monthly</button>
+  </div>
+  <div id="chart-wrap" style="position:relative;height:180px;overflow:hidden">
+    <canvas id="reg-chart" style="width:100%;height:180px"></canvas>
+  </div>
+  <div id="chart-tip" style="font-size:11px;color:var(--tx3);font-family:monospace;margin-top:8px;min-height:16px"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+var _ci=null,_cd=null,_v='daily';
+var _RAW='https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/data/index.json';
+fetch(_RAW+'?t='+Date.now()).then(function(r){return r.json();}).then(function(d){_cd=d;_rc('daily');}).catch(function(){document.getElementById('chart-wrap').style.display='none';});
+function showView(v){_v=v;['daily','monthly'].forEach(function(x){var b=document.getElementById('btn-'+x),a=x===v;b.style.background=a?'rgba(110,168,215,.1)':'transparent';b.style.color=a?'var(--cy)':'var(--tx3)';b.style.borderColor=a?'rgba(110,168,215,.4)':'var(--bdr)';});if(_cd)_rc(v);}
+function _rc(view){var days=_cd.days||[],labels,counts,paths;
+if(view==='monthly'){var mb={};days.forEach(function(d){var m=d.date.slice(0,7);mb[m]=(mb[m]||0)+d.count;});var months=Object.keys(mb).sort();labels=months;counts=months.map(function(m){return mb[m];});paths=null;}
+else{labels=days.map(function(d){return d.date;});counts=days.map(function(d){return d.count;});paths=days;}
+var mx=Math.max.apply(null,counts)||1;
+var cols=counts.map(function(c){var t=c/mx;return'rgba('+(Math.round(110+t*108))+','+(Math.round(168-t*114))+','+(Math.round(215-t*164))+',0.75)';});
+if(_ci)_ci.destroy();
+var ctx=document.getElementById('reg-chart').getContext('2d');
+_ci=new Chart(ctx,{type:'bar',data:{labels:labels,datasets:[{data:counts,backgroundColor:cols,borderRadius:2,borderSkipped:false}]},
+options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{title:function(i){return i[0].label;},label:function(i){return i.raw.toLocaleString()+' domains';}},backgroundColor:'rgba(7,11,18,.95)',titleColor:'#f0f6fc',bodyColor:'#8b949e',borderColor:'rgba(255,255,255,.08)',borderWidth:1}},
+scales:{x:{ticks:{display:labels.length<60,color:'#484f58',font:{size:9}},grid:{color:'rgba(255,255,255,.04)'},border:{color:'rgba(255,255,255,.08)'}},y:{ticks:{color:'#484f58',font:{size:9}},grid:{color:'rgba(255,255,255,.04)'},border:{color:'rgba(255,255,255,.08)'}}},
+onClick:function(e,els){if(!els.length||!paths)return;var d=paths[els[0].index];if(d)window.open('https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/'+d.path,'_blank');},
+onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.length&&paths?'pointer':'default';if(els.length&&paths&&paths[els[0].index]){var d=paths[els[0].index];document.getElementById('chart-tip').textContent=d.date+' — '+d.count.toLocaleString()+' new domains  ↓ click to download';}else{document.getElementById('chart-tip').textContent='';}}
+}});}
+</script>
 <!-- DAILY FEED -->
 <div style="margin:0;line-height:0"><img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="display:block;max-height:4px;object-fit:cover;object-position:center"></div>
 <div class="wrap" style="padding-top:40px">
