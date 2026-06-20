@@ -1,6 +1,11 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:030810,100:c0a060&height=110&fontColor=ffffff&animation=fadeIn&text=Pkg&fontSize=28&desc=NameSilo%20Investigation&descAlignY=62&descSize=13" width="100%"/>
+
 # NameSilo Domain Scanner — Technical Overview
 
 Scans all ~3.4M active NameSilo domains, collects HTTP/TLS fingerprints to identify phishing, gambling, and piracy infrastructure.
+
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## Pipeline
 
@@ -16,6 +21,9 @@ S3: scans/YYYY/MM/DD/HH/*.jsonl
 report_stats.json  +  evidence_data.json
 ```
 
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
 ## Evidence Collected Per Domain
 
 | Field | Forensic Value |
@@ -27,6 +35,9 @@ report_stats.json  +  evidence_data.json
 | `keywords_hit` | Direct abuse markers: paypal, casino, prize, wallet |
 | `tls_cn` | Wildcard `*.namesilo-parking.com` = shared scam infrastructure |
 | `server_fp` | SHA-256(Server + X-Powered-By + ETag) — identifies shared servers |
+
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## Running the Scanner
 
@@ -71,6 +82,9 @@ python scanner/analyze.py
 # → evidence_data.json (full domain lists per abuse category)
 ```
 
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
 ## Estimated Cost (~3.4M domains)
 
 | Service | Cost |
@@ -80,3 +94,5 @@ python scanner/analyze.py
 | S3 (~10 GB JSONL) | ~$1 |
 | **Total** | **~$27** |
 | **Runtime** | **~1.5–2 hours** |
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:c0a060,100:030810&height=60&section=footer" width="100%"/>
