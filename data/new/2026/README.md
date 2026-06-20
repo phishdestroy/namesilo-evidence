@@ -1,8 +1,13 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:030810,100:da3633&height=120&fontColor=ffffff&animation=fadeIn&text=2026%20Registrations%20%C2%B7%20NameSilo&fontSize=32&desc=911%2C308%20domains%20%C2%B7%20170%20days%20tracked&descAlignY=62&descSize=14" width="100%"/>
+
 # NameSilo New Registrations — 2026
 
 Domains registered through NameSilo (registrar ID 1479), sourced from NetAPI WHOIS dataset.
 
-## Monthly Summary
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+Monthly Summary
 
 | Month | Domains | Days | Δ vs Prior |
 |-------|--------:|-----:|------------|
@@ -14,7 +19,10 @@ Domains registered through NameSilo (registrar ID 1479), sourced from NetAPI WHO
 | [June](06/) | 135,301 | 19 | -34.8% |
 | **Total** | **911,308** | **170** | |
 
-## Top 15 TLDs
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+Top 15 TLDs
 
 | TLD | Count | Share |
 |-----|------:|------:|
@@ -34,7 +42,10 @@ Domains registered through NameSilo (registrar ID 1479), sourced from NetAPI WHO
 | .life | 12,086 | 1.33% |
 | .buzz | 11,962 | 1.31% |
 
-## Key Stats
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+Key Stats
 
 | Metric | Value |
 |--------|-------|
@@ -44,9 +55,14 @@ Domains registered through NameSilo (registrar ID 1479), sourced from NetAPI WHO
 | Peak day | 2026-06-09 (12,367 domains) |
 | Average/day | 5,360 |
 
-## Browse
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+Browse
 
 [January](01/) · [February](02/) · [March](03/) · [April](04/) · [May](05/) · [June](06/)
 
 ---
 *Data: [NetAPI](https://netapi.com/) · Registrar: NameSilo · [Investigation page](https://phishdestroy.com/)*
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:da3633,100:030810&height=60&section=footer" width="100%"/>
