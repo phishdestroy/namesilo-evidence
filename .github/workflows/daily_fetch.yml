@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name  "PhishDestroy Bot"
           git config user.email "bot@phishdestroy.io"
-          git add data/
+          git add data/ stats/
           git diff --cached --quiet && echo "Nothing new today." && exit 0
           TODAY=$(date -u +%Y-%m-%d)
           COUNT=$(wc -l < data/new/${TODAY:0:4}/${TODAY:5:2}/$TODAY.txt 2>/dev/null || echo 0)
