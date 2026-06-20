@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:030810,100:c0a060&height=110&fontColor=ffffff&animation=fadeIn&text=Xmrwallet%20Evidence&fontSize=28&desc=NameSilo%20Investigation&descAlignY=62&descSize=13" width="100%"/>
+
 # xmrwallet — Domain Network
 
 | Domain | Status | Registered | Expires | Registrar | IP / ASN |
@@ -8,12 +10,18 @@
 | [xmrwallet.cc](xmrwallet.cc/) | SUSPENDED | 2026-02-04 | 2034-02-04 | PDR | ~~185.129.100.248~~ / AS57724 |
 | [xmrwallet.biz](xmrwallet.biz/) | SUSPENDED | 2026-02-09 | 2031-02-09 | WebNic | ~~190.115.31.40~~ / AS59692 |
 
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
 ## IP Recycling
 
 ```
 xmrwallet.biz  (suspended)  →  190.115.31.40   →  xmrwallet.net  (active)
 xmrwallet.cc   (suspended)  →  185.129.100.248  →  xmrwallet.me   (active)
 ```
+
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## Timeline
 
@@ -35,9 +43,15 @@ xmrwallet.cc   (suspended)  →  185.129.100.248  →  xmrwallet.me   (active)
 2026-03-16  Medium + dev.to articles published with email evidence
 ```
 
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
 ## NameSilo Cover-Up
 
 NameSilo is the only registrar that refused to act. They called the operator "the victim" and claimed the site was "compromised." The operator's own emails (Feb 16-17) contradict this — he defended the code as his own before NameSilo invented the hack story. File ICANN complaint: https://www.icann.org/compliance/complaint
+
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## Abuse Contacts
 
@@ -54,3 +68,5 @@ NameSilo is the only registrar that refused to act. They called the operator "th
 - https://www.virustotal.com/gui/domain/xmrwallet.com
 - https://www.virustotal.com/gui/domain/xmrwallet.net
 - https://www.virustotal.com/gui/domain/xmrwallet.me
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:c0a060,100:030810&height=60&section=footer" width="100%"/>
