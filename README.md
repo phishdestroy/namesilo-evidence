@@ -63,6 +63,9 @@ All of it is in the record. All of it makes this louder.<br/><br/>
 
 ---
 
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
 ## Why NameSilo Earned This Investigation
 
 > *They didn't end up here because we were looking for them.*
@@ -207,6 +210,9 @@ Every deletion attempt is itself evidence. Every threat goes into the dossier. E
 
 ---
 
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
 ## What Happened
 
 **NameSilo, LLC (IANA #1479)** — US-based, ICANN-accredited, CSE-listed registrar (ticker: URL) — publicly defended **xmrwallet[.]com**, a Monero wallet drainer operating continuously since ~2016, with estimated victim losses of **$10–20M**.
@@ -226,6 +232,9 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 </div>
 
 ---
+
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## What We Verified
 
@@ -252,6 +261,9 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 
 ---
 
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
 ## Investigation Scale
 
 <div align="center">
@@ -275,6 +287,45 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 </div>
 
 ---
+
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## ⚖️ Legal Notice & Responsible Disclosure
+
+All data in this repository was collected exclusively from **publicly accessible sources**:
+
+| Source | Method |
+|---|---|
+| Zone file | ICANN CZDS — accredited access, permissible use |
+| WHOIS | Public WHOIS protocol (RFC 3912) |
+| HTTP responses | Passive crawl of publicly reachable URLs |
+| DNS records | Passive DNS / authoritative queries |
+| Screenshots | Rendered pages accessible to any browser |
+
+**No non-public systems were accessed. No credentials were tested. No authentication was bypassed. No victim data was processed.**
+
+This publication is conducted under:
+- ICANN Registrar Accreditation Agreement §3.18 (abuse response obligations)
+- [CISA Coordinated Vulnerability Disclosure guidelines](https://www.cisa.gov/coordinated-vulnerability-disclosure-process)
+- [FIRST.org TLP:CLEAR definition](https://www.first.org/tlp/) — unlimited public sharing permitted
+
+### Regarding Reputational Impact
+
+This research documents objectively verifiable facts: domain registration patterns, HTTP response content, and registrar abuse-response latency. These facts were publicly visible before this repository existed.
+
+NameSilo, LLC is an ICANN-accredited registrar operating under contractual obligations to the global internet community. Publication of factual evidence of contractual non-compliance is not defamation — it is the function ICANN's transparency requirements were built to serve.
+
+If NameSilo disputes any finding: submit documented evidence via [phishdestroy.io](https://phishdestroy.io). Findings supported by evidence will be corrected in a timestamped update.
+
+| | |
+|---|---|
+| 📜 License | **MIT** |
+| 🏷 TLP | **CLEAR** — unlimited distribution |
+| 🌐 Contact | [phishdestroy.io](https://phishdestroy.io) |
+
 
 ## Links by Content
 
