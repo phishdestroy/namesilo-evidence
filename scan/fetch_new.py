@@ -79,3 +79,25 @@ print(f"  {day_file}: {len(domains)}")
 print(f"  {month_file}: {len(existing_m | set(domains))}")
 print(f"  {all_file}: {len(existing_a | set(domains))}")
 print(f"  index.json: {len(index['days'])} days tracked, {index['total_new_all_time']} total")
+
+# ── stats/ badges (shields.io endpoint format) ───────────────────────────────
+stats_dir = pathlib.Path("stats")
+stats_dir.mkdir(exist_ok=True)
+
+(stats_dir / "today.json").write_text(json.dumps({
+    "schemaVersion": 1, "label": "new today", "message": f"{len(domains):,}",
+    "color": "da3633", "labelColor": "0c1018", "style": "flat-square"
+}), encoding="utf-8")
+
+total_count = len(existing_a | set(domains))
+(stats_dir / "total.json").write_text(json.dumps({
+    "schemaVersion": 1, "label": "collected", "message": f"{total_count:,}",
+    "color": "6ea8d7", "labelColor": "0c1018", "style": "flat-square"
+}), encoding="utf-8")
+
+(stats_dir / "last_fetch.json").write_text(json.dumps({
+    "schemaVersion": 1, "label": "last fetch", "message": TODAY,
+    "color": "3fb950", "labelColor": "0c1018", "style": "flat-square"
+}), encoding="utf-8")
+
+print(f"  stats/: today={len(domains):,}, total={total_count:,}, date={TODAY}")
