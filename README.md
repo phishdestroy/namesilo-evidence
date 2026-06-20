@@ -1,3 +1,7 @@
+<div align="center">
+<img src="https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/docs/assets/banner.gif" width="100%"/>
+</div>
+
 <!--
 NameSilo, LLC (IANA #1479) — Registrar Abuse Investigation
 Keywords: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, icann-compliance, phishdestroy
@@ -375,3 +379,6 @@ Verify integrity:
 ```bash
 git clone [https://github.com/phishdestroy/namesilo-evidence.git](https://github.com/phishdestroy/namesilo-evidence.git)
 cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
+
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
