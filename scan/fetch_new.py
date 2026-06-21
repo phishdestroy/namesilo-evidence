@@ -270,6 +270,8 @@ for day_date in dates:
                 'expiring_at': r.get('e',''),
                 'ip':          r.get('i',''),
                 'ip_country':  r.get('c',''),
+                'email':       r.get('m','').split(',')[0].strip().lower() if r.get('m') else '',
+                'phone':       r.get('p','').split(',')[0].strip() if r.get('p') else '',
             }.items() if v2}
             for r in sorted(records, key=lambda x: x['d'])
         ]
@@ -328,6 +330,56 @@ index = {
     'last_updated':           dates[-1],
 }
 Path('data/index.json').write_text(json.dumps(index, indent=2) + '\n', encoding='utf-8')
+
+# ── IOC export: data/ioc/ ──────────────────────────────────────────────────────
+ioc_dir = Path('data/ioc')
+ioc_dir.mkdir(parents=True, exist_ok=True)
+
+# Serial registrants: emails with >=5 domains
+serial_regs = []
+for em, cnt in email_counts.most_common(50):
+    if cnt < 5:
+        break
+    domains_for_email = [
+        r['d'] for records in by_date.values()
+        for r in records
+        if r.get('m','').split(',')[0].strip().lower() == em
+    ]
+    serial_regs.append({'email': em, 'count': cnt, 'domains': sorted(set(domains_for_email))[:100]})
+
+(ioc_dir / 'serial_registrants.json').write_text(
+    json.dumps({'generated': TODAY, 'count': len(serial_regs), 'registrants': serial_regs}, indent=2),
+    encoding='utf-8')
+
+# Shared IPs: IPs hosting >=3 domains
+shared_ip_export = []
+for ip_addr, cnt in ip_counts.most_common(50):
+    if cnt < 3:
+        break
+    domains_for_ip = sorted(set(
+        r['d'] for records in by_date.values()
+        for r in records if r.get('i') == ip_addr
+    ))
+    country = next((
+        r.get('c','') for records in by_date.values()
+        for r in records if r.get('i') == ip_addr and r.get('c')
+    ), '')
+    shared_ip_export.append({'ip': ip_addr, 'count': cnt, 'country': country, 'domains': domains_for_ip[:100]})
+
+(ioc_dir / 'shared_ips.json').write_text(
+    json.dumps({'generated': TODAY, 'count': len(shared_ip_export), 'ips': shared_ip_export}, indent=2),
+    encoding='utf-8')
+
+# Brand domains: domains per keyword
+brand_domains_export = {}
+for kw in brand_heatmap:
+    brand_domains_export[kw] = sorted(d for d in all_domains if kw in d.split('.')[0])[:200]
+
+(ioc_dir / 'brand_domains.json').write_text(
+    json.dumps({'generated': TODAY, 'keywords': brand_domains_export}, indent=2),
+    encoding='utf-8')
+
+print(f"IOC: {len(serial_regs)} serial registrants | {len(shared_ip_export)} shared IPs written")
 
 # ── Stats badges ──────────────────────────────────────────────────────────────
 stats_dir = Path('stats')
