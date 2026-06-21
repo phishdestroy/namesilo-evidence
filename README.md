@@ -63,22 +63,10 @@ All of it is in the record. All of it makes this louder.<br/><br/>
 ![](https://img.shields.io/badge/Server_Cluster-328%2C230_domains-da3633?style=flat-square&labelColor=0d1117)
 ![](https://img.shields.io/badge/Trustpilot_Reviews_Deleted-129-da3633?style=flat-square&labelColor=0d1117)
 [![New Today](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/today.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence/tree/main/data/new) [![Collected](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/total.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence/blob/main/data/all.txt) [![Last Fetch](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/last_fetch.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence/actions)
-[![Revenue](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/revenue.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
-[![Avg Period](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/lifetime.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
-[![Top Hosting](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/hosting.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
-[![No IP at Reg](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/no_ip.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
-[![Deployed](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/deployed.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
-[![Long Reg](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/longreg.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
-[![Top TLDs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/tld_top.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
-[![Top $ TLD](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/top_tld_rev.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
-[![Fresh Catch](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/freshness.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
-[![Serial Regs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/serial_regs.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
-[![Top Targets](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/brands.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
 
 </div>
 
 ---
-
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
@@ -226,7 +214,6 @@ Every deletion attempt is itself evidence. Every threat goes into the dossier. E
 
 ---
 
-
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## What Happened
@@ -248,7 +235,6 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 </div>
 
 ---
-
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
@@ -277,7 +263,6 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 
 ---
 
-
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## Investigation Scale
@@ -303,7 +288,6 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 </div>
 
 ---
-
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
@@ -341,7 +325,6 @@ If NameSilo disputes any finding: submit documented evidence via [phishdestroy.i
 | 📜 License | **MIT** |
 | 🏷 TLP | **CLEAR** — unlimited distribution |
 | 🌐 Contact | [phishdestroy.io](https://phishdestroy.io) |
-
 
 ## Links by Content
 
@@ -390,6 +373,5 @@ Verify integrity:
 ```bash
 git clone [https://github.com/phishdestroy/namesilo-evidence.git](https://github.com/phishdestroy/namesilo-evidence.git)
 cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
-
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
