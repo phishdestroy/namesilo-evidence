@@ -280,7 +280,56 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--bdr);display:
 
   <meta name="twitter:site" content="@Phish_Destroy">
   <meta name="twitter:image" content="https://phishdestroy.github.io/namesilo-evidence/assets/og-final-investigation.png">
-</head>
+<style>
+/* ── Visual enhancements ─────────────────────────────── */
+@keyframes pd-pulse {
+  0%,100% { box-shadow: 0 0 0 0 transparent; }
+  50% { box-shadow: 0 0 18px 2px rgba(var(--cy-r,255),var(--cy-g,80),var(--cy-b,80),.22); }
+}
+@keyframes pd-fade-in {
+  from { opacity:0; transform:translateY(8px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes pd-live-blink {
+  0%,100% { opacity:1; }
+  50%      { opacity:.3; }
+}
+.pd-card {
+  transition: box-shadow .25s, border-color .25s, transform .18s;
+}
+.pd-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--cy) !important;
+  box-shadow: 0 0 22px rgba(var(--cy-r,255),var(--cy-g,80),var(--cy-b,80),.18);
+}
+.pd-card.pd-pulse {
+  animation: pd-pulse 2.8s ease-in-out infinite;
+}
+.pd-live-dot {
+  display:inline-block;width:7px;height:7px;border-radius:50%;
+  background:var(--cy);margin-right:6px;vertical-align:middle;
+  animation:pd-live-blink 1.8s ease-in-out infinite;
+}
+.pd-section {
+  animation: pd-fade-in .5s ease both;
+}
+.pd-ioc-row {
+  transition: background .15s;
+  border-radius: 4px;
+  padding: 8px 10px;
+}
+.pd-ioc-row:hover {
+  background: rgba(255,255,255,.04);
+}
+.pd-tag {
+  display:inline-block;font-size:9px;font-family:monospace;
+  padding:2px 6px;border-radius:3px;
+  background:rgba(var(--cy-r,255),var(--cy-g,80),var(--cy-b,80),.12);
+  color:var(--cy);border:1px solid rgba(var(--cy-r,255),var(--cy-g,80),var(--cy-b,80),.3);
+  margin:2px;white-space:nowrap;
+}
+.pd-highlight { color:var(--cy) !important; font-weight:800; }
+</style></head>
 <body>
 <header><nav>
   <a href="https://phishdestroy.eth.limo" target="_blank" rel="noopener">phishdestroy.eth.limo</a>
@@ -1152,6 +1201,173 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
         brandEl.appendChild(wrap);
       }
     }
+  });
+})();
+</script>
+
+<!-- IOC + CORRELATION + VISUAL UPGRADE SECTION -->
+
+<div class="wrap pd-section" style="padding-top:32px;padding-bottom:0">
+  <div class="sec">
+    <h2><span class="pd-live-dot"></span>&#x1F6A8; Serial Registrant IOCs</h2>
+    <div class="ln"></div>
+  </div>
+  <p class="sec-sub" style="margin-bottom:20px">
+    Registrant emails appearing across multiple phishing domains — direct operator fingerprints.
+    High repeat count = organised, sustained campaign. Import into SIEM/EDR for attribution.
+  </p>
+  <div id="ioc-summary" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px"></div>
+  <div id="ioc-registrants-list"></div>
+</div>
+
+<div class="wrap pd-section" style="padding-top:32px;padding-bottom:32px">
+  <div class="sec"><h2>&#x2705; Blocklist Correlation</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">
+    Cross-reference with the main Destroylist blocklist. Confirmed phishing domains validated
+    by independent verification pipeline. Unranked % = new infrastructure with no prior web presence.
+  </p>
+  <div id="correlation-stats" style="display:flex;gap:12px;flex-wrap:wrap"></div>
+</div>
+
+<script>
+(function(){
+  // ── CSS variable extraction for glow ──────────────────────────────────────
+  function setCyRgb(){
+    var cy=(getComputedStyle(document.documentElement).getPropertyValue('--cy')||'').trim().replace('#','');
+    if(!cy||cy.length<6)return;
+    var n=parseInt(cy,16);
+    document.documentElement.style.setProperty('--cy-r',String((n>>16)&255));
+    document.documentElement.style.setProperty('--cy-g',String((n>>8)&255));
+    document.documentElement.style.setProperty('--cy-b',String(n&255));
+  }
+  setCyRgb();
+
+  // ── CountUp animation ─────────────────────────────────────────────────────
+  function countUp(el,target,opts){
+    opts=opts||{};
+    var pre=opts.pre||'',suf=opts.suf||'',dur=opts.dur||1100,dec=opts.dec||0;
+    var start=0,step=target/(dur/16);
+    var fmt=function(v){
+      if(dec)return pre+(v.toFixed(dec))+suf;
+      return pre+Math.round(v).toLocaleString()+suf;
+    };
+    var tick=function(){
+      start=Math.min(start+step,target);
+      el.textContent=fmt(start);
+      if(start<target)requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  // ── Observe + animate all stat value elements ─────────────────────────────
+  function animateCards(root){
+    var els=(root||document).querySelectorAll('[style*="font-size:1.5rem"]');
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(!e.isIntersecting)return;
+        obs.unobserve(e.target);
+        var el=e.target;
+        var txt=(el.textContent||'').trim();
+        // parse number from text like "$1,234" "45%" "365d" "1,234"
+        var m=txt.match(/^([$]?)([\d,\.]+)([%d]?)$/);
+        if(!m)return;
+        var pre=m[1],raw=parseFloat(m[2].replace(/,/g,'')),suf=m[3];
+        if(isNaN(raw)||raw<=0)return;
+        countUp(el,raw,{pre:pre,suf:suf,dur:900+Math.random()*400});
+        // add glow to parent card
+        var card=el.parentElement;
+        if(card)card.classList.add('pd-card');
+        if(raw>=1000&&card)card.classList.add('pd-pulse');
+      });
+    },{threshold:0.3});
+    els.forEach(function(el){obs.observe(el);});
+  }
+
+  function el(tag,attrs,text){
+    var e=document.createElement(tag);
+    Object.keys(attrs||{}).forEach(function(k){e.setAttribute(k,attrs[k]);});
+    if(text!==undefined)e.textContent=text;
+    return e;
+  }
+  function card(v,l,pulse){
+    var c=el('div',{style:'border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px',class:'pd-card'+(pulse?' pd-pulse':'')});
+    var vd=el('div',{style:'font-size:1.5rem;font-weight:800;color:var(--cy);line-height:1'},v);
+    var ld=el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px'},l);
+    c.appendChild(vd); c.appendChild(ld);
+    return c;
+  }
+
+  function waitForData(cb){
+    if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
+    setTimeout(function(){waitForData(cb);},250);
+  }
+
+  waitForData(function(data){
+    // ── IOC summary cards ──────────────────────────────────────────────────
+    var iocSum=document.getElementById('ioc-summary');
+    if(iocSum){
+      var serial=data.serial_email_count||0;
+      var emails=Object.keys(data.top_registrant_emails||{}).length;
+      var phones=Object.keys(data.top_registrant_phones||{}).length;
+      iocSum.appendChild(card(serial.toLocaleString(),'serial registrants (≥10 domains)',serial>0));
+      iocSum.appendChild(card(emails.toLocaleString(),'unique email contacts',false));
+      iocSum.appendChild(card(phones.toLocaleString(),'unique phone contacts',false));
+    }
+
+    // ── IOC registrants table ─────────────────────────────────────────────
+    var iocList=document.getElementById('ioc-registrants-list');
+    if(iocList){
+      var emails=data.top_registrant_emails||{};
+      var eKeys=Object.keys(emails).sort(function(a,b){return emails[b]-emails[a];}).slice(0,12);
+      if(!eKeys.length){
+        var p=el('p',{style:'color:var(--tx3);font-size:13px'},'IOC data will appear after first workflow run.');
+        iocList.appendChild(p);
+      } else {
+        var maxE=emails[eKeys[0]]||1;
+        eKeys.forEach(function(em,idx){
+          var n=emails[em];
+          var pct=(n/maxE*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:14px;padding:8px 10px;border-bottom:1px solid rgba(255,255,255,0.04)',class:'pd-ioc-row'});
+
+          // rank
+          var rank=el('div',{style:'width:22px;font-size:11px;color:var(--tx3);text-align:right;flex-shrink:0'},String(idx+1));
+
+          // email (partially redacted after @)
+          var parts=em.split('@');
+          var display=parts.length===2
+            ? parts[0].slice(0,Math.min(parts[0].length,12))+(parts[0].length>12?'…':'')+'@'+parts[1]
+            : em.slice(0,24)+(em.length>24?'…':'');
+          var emEl=el('div',{style:'flex:1;font-size:11px;font-family:monospace;color:'+(n>=50?'var(--cy)':n>=10?'var(--tx1)':'var(--tx2)')+';min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap',title:em},display);
+
+          // bar
+          var barWrap=el('div',{style:'width:80px;height:3px;background:var(--bdr);border-radius:2px;overflow:hidden;flex-shrink:0'});
+          var barFill=el('div',{style:'height:3px;border-radius:2px;background:var(--cy);opacity:.7;width:'+pct+'%'});
+          barWrap.appendChild(barFill);
+
+          // count badge
+          var badge=el('div',{style:'flex-shrink:0;font-size:11px;font-weight:700;color:'+(n>=50?'var(--cy)':n>=20?'var(--tx1)':'var(--tx3)')+';min-width:40px;text-align:right'},n+'×');
+
+          row.appendChild(rank); row.appendChild(emEl); row.appendChild(barWrap); row.appendChild(badge);
+          iocList.appendChild(row);
+        });
+      }
+    }
+
+    // ── Correlation stats ──────────────────────────────────────────────────
+    var corrEl=document.getElementById('correlation-stats');
+    if(corrEl){
+      var cc=data.correlation_count||0;
+      var cp=data.correlation_pct||0;
+      var ur=data.unranked_pct||0;
+      var rc=data.ranked_count||0;
+      corrEl.appendChild(card(cc.toLocaleString(),'confirmed in blocklist',cc>100));
+      corrEl.appendChild(card(cp+'%','correlation rate',false));
+      corrEl.appendChild(card(ur+'%','zero Majestic rank',false));
+      corrEl.appendChild(card(rc.toLocaleString(),'known/ranked domains',false));
+    }
+
+    // ── Trigger countUp on all existing stat cards ─────────────────────────
+    animateCards(document);
   });
 })();
 </script>
