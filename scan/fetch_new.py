@@ -1,103 +1,229 @@
 #!/usr/bin/env python3
-import os, sys, datetime, pathlib, json, urllib.request, urllib.parse
+"""Fetch new domain registrations from NetAPI and update repository data."""
+
+import os, gzip, csv, io, json, urllib.request, urllib.parse
+from pathlib import Path
+from datetime import date, datetime
+from collections import defaultdict, Counter
 
 REGISTRAR_ID = os.environ["REGISTRAR_ID"]
 TOKEN        = os.environ["NETAPI_TOKEN"]
-TODAY        = datetime.date.today().isoformat()
-YEAR         = TODAY[:4]
-MONTH_DIR    = TODAY[5:7]
-MONTH        = TODAY[:7]
+TODAY        = date.today().isoformat()
 
-BASE       = pathlib.Path("data/new")
-day_file   = BASE / YEAR / MONTH_DIR / f"{TODAY}.txt"
-month_file = BASE / YEAR / f"{MONTH}.txt"
-all_file   = pathlib.Path("data/all.txt")
-index_file = pathlib.Path("data/index.json")
+# Approximate registration prices by TLD (USD/year)
+TLD_PRICES = {
+    'com':8.99,'net':9.99,'org':9.99,'info':3.99,'biz':9.99,
+    'xyz':1.49,'top':0.99,'club':3.99,'online':4.99,'site':4.99,
+    'store':5.99,'shop':5.99,'app':14.00,'io':32.00,'co':24.99,
+    'us':7.99,'cc':19.99,'me':11.99,'vip':4.99,'pro':7.99,
+    'live':9.99,'link':3.99,'click':3.99,'tech':9.99,'digital':14.99,
+    'finance':24.99,'exchange':24.99,'cash':14.99,'capital':24.99,
+    'money':14.99,'trade':14.99,'market':14.99,'academy':14.99,
+    'agency':11.99,'solutions':14.99,'support':14.99,'services':14.99,
+    'group':11.99,'network':11.99,'tools':9.99,'pw':1.49,
+    'icu':0.99,'cyou':0.99,'hair':1.99,'bond':9.99,'homes':9.99,
+    'autos':9.99,'voto':9.99,'wiki':14.99,'space':4.99,'website':4.99,
+}
+DEFAULT_PRICE = 4.99
 
+def get_price(domain):
+    tld = domain.rsplit('.', 1)[-1].lower()
+    return TLD_PRICES.get(tld, DEFAULT_PRICE)
+
+# ── Fetch from NetAPI ─────────────────────────────────────────────────────────
+print(f"Fetching registrar_id={REGISTRAR_ID} ...")
 params = urllib.parse.urlencode({
-    "method":       "download-whois",
-    "registrar_id": REGISTRAR_ID,
-    "filter_type":  "new",
-    "token":        TOKEN,
+    'method':       'download-whois',
+    'registrar_id': REGISTRAR_ID,
+    'filter_type':  'new',
+    'token':        TOKEN,
+    'dataset_type': 'dataset',
 })
 req = urllib.request.Request(
-    f"https://netapi.com/api/?{params}",
-    headers={"User-Agent": "PhishDestroy-Research/1.0"}
+    'https://netapi.com/api2/?' + params,
+    headers={'User-Agent': 'PhishDestroy/2.0'}
 )
-with urllib.request.urlopen(req, timeout=120) as r:
-    raw = r.read().decode("utf-8", errors="replace")
+with urllib.request.urlopen(req, timeout=300) as resp:
+    raw = gzip.decompress(resp.read()).decode('utf-8', errors='replace')
 
-domains = []
-for line in raw.splitlines():
-    line = line.strip().lower()
-    if not line or line.startswith(("#", ";", "%")):
+# CSV columns: registrar, url, registered_at, expiring_at,
+#              majestic_rank, emails, phones, ip, ip_country
+reader = csv.reader(io.StringIO(raw))
+next(reader)  # skip header
+
+by_date     = defaultdict(list)
+all_domains = set()
+
+for row in reader:
+    if len(row) < 3:
         continue
-    if ":" in line:
-        key, _, val = line.partition(":")
-        if key.strip() in ("domain", "domain name", "name"):
-            line = val.strip()
-        else:
-            continue
-    if "." in line and " " not in line:
-        domains.append(line)
+    domain      = row[1].strip().lower()
+    reg_date    = row[2].strip()
+    expiring_at = row[3].strip() if len(row) > 3 else ''
+    ip          = row[7].strip() if len(row) > 7 else ''
+    ip_country  = row[8].strip() if len(row) > 8 else ''
 
-if not domains:
-    print(f"[{TODAY}] No new domains.")
-    sys.exit(0)
+    if not domain or '.' not in domain:
+        continue
+    if len(reg_date) == 10 and reg_date[:4].isdigit():
+        by_date[reg_date].append({
+            'd': domain,
+            'e': expiring_at,
+            'i': ip,
+            'c': ip_country,
+        })
+        all_domains.add(domain)
 
-domains = sorted(set(domains))
-print(f"[{TODAY}] {len(domains)} new domains (registrar {REGISTRAR_ID})")
+dates = sorted(by_date.keys())
+if not dates:
+    print("No data returned"); exit(0)
 
-# ── day file ──────────────────────────────────────────────────────────────────
-day_file.parent.mkdir(parents=True, exist_ok=True)
-day_file.write_text("\n".join(domains) + "\n", encoding="utf-8")
+print(f"  {len(all_domains):,} unique domains across {len(dates)} days ({dates[0]} → {dates[-1]})")
 
-# ── monthly rollup ────────────────────────────────────────────────────────────
-month_file.parent.mkdir(parents=True, exist_ok=True)
-existing_m = set(month_file.read_text(encoding="utf-8").splitlines()) if month_file.exists() else set()
-month_file.write_text("\n".join(sorted(existing_m | set(domains))) + "\n", encoding="utf-8")
+# ── Revenue & lifetime ────────────────────────────────────────────────────────
+def day_revenue(records):
+    return round(sum(get_price(r['d']) for r in records), 2)
 
-# ── all-time ──────────────────────────────────────────────────────────────────
-all_file.parent.mkdir(parents=True, exist_ok=True)
-existing_a = set(all_file.read_text(encoding="utf-8").splitlines()) if all_file.exists() else set()
-all_file.write_text("\n".join(sorted(existing_a | set(domains))) + "\n", encoding="utf-8")
+def avg_lifetime_days(by_date_map):
+    durations = []
+    for records in by_date_map.values():
+        for r in records:
+            reg, exp = r.get('e',''), ''
+            # expiring_at is in row, but stored as 'e' key via backfill
+            # For newly fetched data, reg_date is the key, expiring_at is r['e']
+            try:
+                if r['e'] and len(r['e']) == 10:
+                    d1 = datetime.strptime(records[0] if isinstance(records[0], str) else r['d'], '%Y-%m-%d') if False else None
+                    # compute from by_date key
+            except Exception:
+                pass
+    # Simpler: compute from raw records stored per date
+    return 365  # fallback
 
-# ── index.json (for Pages feed) ───────────────────────────────────────────────
-index = json.loads(index_file.read_text(encoding="utf-8")) if index_file.exists() else {"days": []}
-index["days"] = [d for d in index["days"] if d["date"] != TODAY]  # dedup
-index["days"].append({
-    "date":  TODAY,
-    "count": len(domains),
-    "path":  f"data/new/{YEAR}/{MONTH_DIR}/{TODAY}.txt",
-})
-index["days"].sort(key=lambda d: d["date"])
-index["total_new_all_time"] = sum(d["count"] for d in index["days"])
-index["last_updated"] = TODAY
-index_file.write_text(json.dumps(index, indent=2) + "\n", encoding="utf-8")
+# Compute avg lifetime from expiring_at - registered_at
+durations = []
+for reg_date, records in by_date.items():
+    for r in records:
+        exp = r.get('e', '')
+        if exp and len(exp) == 10:
+            try:
+                d1 = datetime.strptime(reg_date, '%Y-%m-%d')
+                d2 = datetime.strptime(exp, '%Y-%m-%d')
+                durations.append((d2 - d1).days)
+            except Exception:
+                pass
+avg_lifetime = (sum(durations) // len(durations)) if durations else 365
 
-print(f"  {day_file}: {len(domains)}")
-print(f"  {month_file}: {len(existing_m | set(domains))}")
-print(f"  {all_file}: {len(existing_a | set(domains))}")
-print(f"  index.json: {len(index['days'])} days tracked, {index['total_new_all_time']} total")
+total_revenue = sum(day_revenue(by_date[d]) for d in dates)
 
-# ── stats/ badges (shields.io endpoint format) ───────────────────────────────
-stats_dir = pathlib.Path("stats")
+# ── IP/country stats ──────────────────────────────────────────────────────────
+country_counts = Counter(
+    r['c'] for records in by_date.values() for r in records if r.get('c')
+)
+ip_counts = Counter(
+    r['i'] for records in by_date.values() for r in records if r.get('i')
+)
+
+# ── Write daily TXT + JSON ────────────────────────────────────────────────────
+data_root = Path('data/new')
+for day_date in dates:
+    yr, mo = day_date[:4], day_date[5:7]
+    day_dir = data_root / yr / mo
+    day_dir.mkdir(parents=True, exist_ok=True)
+
+    records = by_date[day_date]
+    domains = sorted(set(r['d'] for r in records))
+
+    # plain TXT
+    (day_dir / f'{day_date}.txt').write_text('\n'.join(domains) + '\n', encoding='utf-8')
+
+    # enriched JSON
+    day_json = {
+        'date':             day_date,
+        'count':            len(domains),
+        'revenue_estimate': day_revenue(records),
+        'domains': [
+            {k2: v2 for k2, v2 in {
+                'domain':      r['d'],
+                'expiring_at': r.get('e',''),
+                'ip':          r.get('i',''),
+                'ip_country':  r.get('c',''),
+            }.items() if v2}
+            for r in sorted(records, key=lambda x: x['d'])
+        ]
+    }
+    (day_dir / f'{day_date}.json').write_text(
+        json.dumps(day_json, separators=(',',':')), encoding='utf-8'
+    )
+
+# ── Monthly rollup TXT ────────────────────────────────────────────────────────
+by_month = defaultdict(set)
+for day_date, records in by_date.items():
+    by_month[day_date[:7]].update(r['d'] for r in records)
+
+for month_key, doms in by_month.items():
+    yr = month_key[:4]
+    mp = data_root / yr
+    mp.mkdir(parents=True, exist_ok=True)
+    (mp / f'{month_key}.txt').write_text('\n'.join(sorted(doms)) + '\n', encoding='utf-8')
+
+# ── all.txt ───────────────────────────────────────────────────────────────────
+Path('data/all.txt').write_text('\n'.join(sorted(all_domains)) + '\n', encoding='utf-8')
+
+# ── data/index.json ───────────────────────────────────────────────────────────
+index_days = [
+    {
+        'date':    d,
+        'count':   len(set(r['d'] for r in by_date[d])),
+        'revenue': day_revenue(by_date[d]),
+        'path':    f'data/new/{d[:4]}/{d[5:7]}/{d}.txt',
+    }
+    for d in dates
+]
+index = {
+    'days':                   index_days,
+    'total_new_all_time':     len(all_domains),
+    'total_revenue_estimate': round(total_revenue, 2),
+    'avg_registration_days':  avg_lifetime,
+    'ip_countries':           dict(country_counts.most_common(10)),
+    'top_shared_ips':         dict(ip_counts.most_common(20)),
+    'last_updated':           dates[-1],
+}
+Path('data/index.json').write_text(json.dumps(index, indent=2) + '\n', encoding='utf-8')
+
+# ── Stats badges ──────────────────────────────────────────────────────────────
+stats_dir = Path('stats')
 stats_dir.mkdir(exist_ok=True)
 
-(stats_dir / "today.json").write_text(json.dumps({
-    "schemaVersion": 1, "label": "new today", "message": f"{len(domains):,}",
-    "color": "da3633", "labelColor": "0c1018", "style": "flat-square"
-}), encoding="utf-8")
+today_recs    = by_date.get(TODAY, [])
+today_count   = len(set(r['d'] for r in today_recs))
+today_revenue = day_revenue(today_recs)
 
-total_count = len(existing_a | set(domains))
-(stats_dir / "total.json").write_text(json.dumps({
-    "schemaVersion": 1, "label": "collected", "message": f"{total_count:,}",
-    "color": "6ea8d7", "labelColor": "0c1018", "style": "flat-square"
-}), encoding="utf-8")
+def badge(label, message, color, label_color='0c1018'):
+    return json.dumps({
+        'schemaVersion': 1, 'label': label, 'message': str(message),
+        'color': color, 'labelColor': label_color, 'style': 'flat-square'
+    })
 
-(stats_dir / "last_fetch.json").write_text(json.dumps({
-    "schemaVersion": 1, "label": "last fetch", "message": TODAY,
-    "color": "3fb950", "labelColor": "0c1018", "style": "flat-square"
-}), encoding="utf-8")
+(stats_dir / 'today.json').write_text(
+    badge('new today', f'{today_count:,}', 'da3633'), encoding='utf-8')
+(stats_dir / 'total.json').write_text(
+    badge('total domains', f'{len(all_domains):,}', 'da3633'), encoding='utf-8')
+(stats_dir / 'last_fetch.json').write_text(
+    badge('last fetch', dates[-1], '0075ca'), encoding='utf-8')
+(stats_dir / 'revenue.json').write_text(
+    badge('est. revenue', f'${total_revenue:,.0f}', 'e3b341'), encoding='utf-8')
+(stats_dir / 'lifetime.json').write_text(
+    badge('avg reg. period', f'{avg_lifetime}d', '6e40c9'), encoding='utf-8')
 
-print(f"  stats/: today={len(domains):,}, total={total_count:,}, date={TODAY}")
+if country_counts:
+    top3 = ' · '.join(f'{c}:{n:,}' for c, n in country_counts.most_common(3) if c)
+    (stats_dir / 'hosting.json').write_text(
+        badge('top hosting', top3 or 'n/a', '0075ca'), encoding='utf-8')
+
+if ip_counts:
+    top_ip_msg = f'{ip_counts.most_common(1)[0][1]:,} domains'
+    (stats_dir / 'top_ip.json').write_text(
+        badge('top IP domains', top_ip_msg, '8b5cf6'), encoding='utf-8')
+
+print(f"Done: {len(all_domains):,} domains | ${total_revenue:,.2f} est. revenue | {avg_lifetime}d avg | today: {today_count:,}")
