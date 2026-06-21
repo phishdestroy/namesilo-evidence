@@ -426,7 +426,108 @@ for kw in brand_heatmap:
     json.dumps({'generated': TODAY, 'keywords': brand_domains_export}, indent=2),
     encoding='utf-8')
 
-print(f"IOC: {len(serial_regs)} serial registrants | {len(shared_ip_export)} shared IPs written")
+# ── Plain-text IOC exports (for grep/curl/SIEM) ────────────────────────────────
+# serial_emails.txt:  email\tcount
+(ioc_dir / 'serial_emails.txt').write_text(
+    '\n'.join(f'{x["email"]}\t{x["count"]}' for x in serial_regs) + '\n' if serial_regs else '',
+    encoding='utf-8')
+
+# shared_ips.txt:  ip\tcount\tcountry
+(ioc_dir / 'shared_ips.txt').write_text(
+    '\n'.join(f'{x["ip"]}\t{x["count"]}\t{x["country"]}' for x in shared_ip_export) + '\n' if shared_ip_export else '',
+    encoding='utf-8')
+
+# brand_domains.txt:  keyword\tdomain (one per line)
+_brand_lines = []
+for _kw, _doms in brand_domains_export.items():
+    for _d in _doms:
+        _brand_lines.append(f'{_kw}\t{_d}')
+(ioc_dir / 'brand_domains.txt').write_text(
+    '\n'.join(_brand_lines) + '\n' if _brand_lines else '',
+    encoding='utf-8')
+
+# ── STIX 2.1 bundle (industry-standard threat intel) ──────────────────────────
+def _stix_id(prefix):
+    import uuid
+    return f'{prefix}--{uuid.uuid4()}'
+
+_stix_objs = []
+
+# Identity (producer)
+_identity_id = 'identity--phishdestroy-' + REGISTRAR_ID
+_stix_objs.append({
+    'type': 'identity',
+    'spec_version': '2.1',
+    'id': _identity_id,
+    'created':  f'{TODAY}T00:00:00.000Z',
+    'modified': f'{TODAY}T00:00:00.000Z',
+    'name': 'PhishDestroy — NameSilo Investigation',
+    'identity_class': 'organization',
+    'sectors': ['non-profit'],
+    'contact_information': 'https://phishdestroy.io',
+})
+
+# Indicators: each malicious domain
+_max_stix = 5000
+for _d in sorted(all_domains)[:_max_stix]:
+    _stix_objs.append({
+        'type': 'indicator',
+        'spec_version': '2.1',
+        'id': _stix_id('indicator'),
+        'created':  f'{TODAY}T00:00:00.000Z',
+        'modified': f'{TODAY}T00:00:00.000Z',
+        'created_by_ref': _identity_id,
+        'name': f'Phishing domain: {_d}',
+        'indicator_types': ['malicious-activity'],
+        'pattern': f"[domain-name:value = '{_d}']",
+        'pattern_type': 'stix',
+        'valid_from': f'{TODAY}T00:00:00.000Z',
+        'labels': ['phishing', 'registrar-abuse'],
+    })
+
+# Observable: each shared IP
+for _ip_item in shared_ip_export[:200]:
+    _stix_objs.append({
+        'type': 'indicator',
+        'spec_version': '2.1',
+        'id': _stix_id('indicator'),
+        'created':  f'{TODAY}T00:00:00.000Z',
+        'modified': f'{TODAY}T00:00:00.000Z',
+        'created_by_ref': _identity_id,
+        'name': f'Bulletproof hosting IP: {_ip_item["ip"]} ({_ip_item["count"]} domains)',
+        'indicator_types': ['malicious-activity'],
+        'pattern': f"[ipv4-addr:value = '{_ip_item['ip']}']",
+        'pattern_type': 'stix',
+        'valid_from': f'{TODAY}T00:00:00.000Z',
+        'labels': ['shared-hosting', 'bulletproof'],
+    })
+
+# Observable: each serial registrant email
+for _reg in serial_regs[:200]:
+    _stix_objs.append({
+        'type': 'indicator',
+        'spec_version': '2.1',
+        'id': _stix_id('indicator'),
+        'created':  f'{TODAY}T00:00:00.000Z',
+        'modified': f'{TODAY}T00:00:00.000Z',
+        'created_by_ref': _identity_id,
+        'name': f'Serial registrant: {_reg["email"]} ({_reg["count"]} domains)',
+        'indicator_types': ['malicious-activity'],
+        'pattern': f"[email-addr:value = '{_reg['email']}']",
+        'pattern_type': 'stix',
+        'valid_from': f'{TODAY}T00:00:00.000Z',
+        'labels': ['serial-registrant', 'attribution'],
+    })
+
+_stix_bundle = {
+    'type': 'bundle',
+    'id': _stix_id('bundle'),
+    'objects': _stix_objs,
+}
+(ioc_dir / 'stix-bundle.json').write_text(
+    json.dumps(_stix_bundle, indent=2), encoding='utf-8')
+
+print(f"IOC: {len(serial_regs)} serial registrants | {len(shared_ip_export)} shared IPs | STIX: {len(_stix_objs)} objects")
 
 # ── Stats badges ──────────────────────────────────────────────────────────────
 stats_dir = Path('stats')
