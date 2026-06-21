@@ -569,6 +569,142 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
 <div style="margin:0;line-height:0"><img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="display:block;max-height:4px;object-fit:cover;object-position:center"></div>
 <script>(function(){var R='namesilo-evidence',U='https://raw.githubusercontent.com/phishdestroy/'+R+'/main/data/index.json';fetch(U+'?t='+Date.now()).then(function(x){return x.json();}).then(function(data){var days=(data.days||[]).slice().reverse();document.getElementById('daily-stats').innerHTML=[s((data.total_new_all_time||0).toLocaleString(),'Total new','cy'),s(days.length,'Days tracked','gn'),s(data.last_updated||'&#8212;','Last fetch','or')].join('');if(!days.length){document.getElementById('daily-feed').innerHTML='<div style="padding:20px;color:var(--tx3);font-size:12px">Feed activates after first workflow run. Add NETAPI_TOKEN to GitHub Secrets.</div>';return;}var h='<div style="display:flex;gap:12px;padding:8px 16px;background:var(--s2);border-bottom:1px solid var(--bdr);font-size:10px;letter-spacing:.08em;color:var(--tx3);text-transform:uppercase"><span style="width:52px"></span><span style="min-width:110px">Date</span><span>Domains</span><span style="margin-left:auto">Download</span></div>',rows=days.map(function(d,i){var n=i===0,u='https://raw.githubusercontent.com/phishdestroy/'+R+'/main/'+d.path;return'<div style="display:flex;align-items:center;gap:12px;padding:9px 16px;border-bottom:1px solid var(--bdr);'+(n?'background:rgba(63,185,80,.04)':'')+'">'+(n?'<span style="font-size:9px;font-weight:700;color:var(--gn);border:1px solid rgba(63,185,80,.3);padding:2px 6px;border-radius:3px;animation:blink 2s step-end infinite;min-width:52px;text-align:center">NEW</span>':'<span style="min-width:52px"></span>')+'<span style="color:var(--tx2);font-size:12px;min-width:110px">'+d.date+'</span><span style="color:var(--tx3);font-size:12px">'+(d.count||0).toLocaleString()+' domains</span><a href="'+u+'" style="margin-left:auto;font-size:11px;color:var(--cy);border:1px solid rgba(110,168,215,.2);padding:3px 10px;border-radius:4px" download>&#8659; .txt</a></div>';}).join('');document.getElementById('daily-feed').innerHTML=h+rows;}).catch(function(){document.getElementById('daily-feed').innerHTML='<div style="padding:20px;color:var(--tx3);font-size:12px">Feed activates when NETAPI_TOKEN secret is added.</div>';});function s(v,l,c){return'<div style="border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px"><div style="font-size:1.5rem;font-weight:800;color:var(--'+c+');line-height:1">'+v+'</div><div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px">'+l+'</div></div>';}})()</script>
 
+
+<!-- REG PERIOD + TLD + DEPLOYMENT SECTION -->
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x23F1;&#xFE0F; Registration Period Distribution</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">How long operators register domains for. Longer registration = greater investment = more serious/organised campaign.</p>
+  <div id="period-stats" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px"></div>
+  <div style="position:relative;height:140px;margin-bottom:8px">
+    <canvas id="period-chart"></canvas>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F310; Top TLD Zones</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Domain zone distribution with average registration period per TLD. Cheap short-reg TLDs signal bulk throwaway infrastructure.</p>
+  <div id="tld-table"></div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:32px">
+  <div class="sec"><h2>&#x1F4E1; Deployment Status at Registration</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Whether domains had an IP at time of fetch. No IP = registered but not yet deployed (parked, pre-staged, or bulk spam).</p>
+  <div id="deploy-stats" style="display:flex;gap:12px;flex-wrap:wrap"></div>
+</div>
+
+<script>
+(function(){
+  function waitForData(cb){
+    if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
+    setTimeout(function(){waitForData(cb);},250);
+  }
+  function el(tag,attrs,text){
+    var e=document.createElement(tag);
+    Object.keys(attrs||{}).forEach(function(k){e.setAttribute(k,attrs[k]);});
+    if(text!==undefined)e.textContent=text;
+    return e;
+  }
+  function card(v,l){
+    var c=el('div',{style:'border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px'});
+    c.appendChild(el('div',{style:'font-size:1.5rem;font-weight:800;color:var(--cy);line-height:1'},v));
+    c.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px'},l));
+    return c;
+  }
+  function hexToRgb(hex){
+    hex=(hex||'888888').replace('#','');
+    if(hex.length===3)hex=hex.split('').map(function(c){return c+c;}).join('');
+    var n=parseInt(hex,16)||0;
+    return [(n>>16)&255,(n>>8)&255,n&255].join(',');
+  }
+
+  waitForData(function(data){
+    var acc=(getComputedStyle(document.documentElement).getPropertyValue('--cy')||'').trim()||'#888';
+
+    // --- Registration period chart ---
+    var rp=data.reg_periods||{};
+    var total=Object.values(rp).reduce(function(a,b){return a+b;},0)||1;
+    var pgt1=data.pct_gt_1yr||0, pgt2=data.pct_gt_2yr||0;
+    var psEl=document.getElementById('period-stats');
+    if(psEl){
+      psEl.appendChild(card(pgt1+'%','>1 year registered'));
+      psEl.appendChild(card(pgt2+'%','>2 years registered'));
+      psEl.appendChild(card(data.avg_registration_days+'d','avg registration period'));
+    }
+    var pCtx=document.getElementById('period-chart');
+    if(pCtx&&total>1){
+      var labels=['< 1 year','= 1 year','2 years','3+ years'];
+      var vals=[rp.lt_1yr||0,rp.eq_1yr||0,rp.yr_2||0,rp.yr_3plus||0];
+      var pcts=vals.map(function(v){return Math.round(v/total*100);});
+      new Chart(pCtx,{
+        type:'bar',
+        data:{
+          labels:labels,
+          datasets:[{
+            label:'Domains',
+            data:pcts,
+            backgroundColor:['rgba('+hexToRgb(acc)+',0.25)','rgba('+hexToRgb(acc)+',0.4)','rgba('+hexToRgb(acc)+',0.6)','rgba('+hexToRgb(acc)+',0.85)'],
+            borderColor:'rgba('+hexToRgb(acc)+',0.7)',
+            borderWidth:1,borderRadius:4
+          }]
+        },
+        options:{
+          responsive:true,maintainAspectRatio:false,
+          plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return' '+c.parsed.y+'% of domains';} } } },
+          scales:{
+            x:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.4)',font:{size:11}}},
+            y:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.4)',font:{size:10},callback:function(v){return v+'%';}}}
+          }
+        }
+      });
+    }
+
+    // --- TLD table ---
+    var tlds=data.tld_stats||{};
+    var tEl=document.getElementById('tld-table');
+    if(tEl){
+      var tKeys=Object.keys(tlds).sort(function(a,b){return tlds[b].count-tlds[a].count;});
+      if(!tKeys.length){
+        tEl.appendChild(el('p',{style:'color:var(--tx3);font-size:13px'},'TLD data will appear after next daily fetch.'));
+      } else {
+        var maxC=tlds[tKeys[0]].count||1;
+        var wrap=el('div',{style:'max-width:640px'});
+        var hdr=el('div',{style:'display:flex;gap:12px;padding:0 0 8px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:4px'});
+        ['TLD','','Count','Avg Period'].forEach(function(h,i){
+          var widths=['50px','1fr','80px','90px'];
+          var d=el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);'+(i===1?'flex:1':'width:'+widths[i])},h);
+          hdr.appendChild(d);
+        });
+        wrap.appendChild(hdr);
+        tKeys.slice(0,20).forEach(function(tld){
+          var info=tlds[tld];
+          var pct=(info.count/maxC*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:12px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          var tldEl=el('div',{style:'width:50px;font-size:12px;font-weight:700;color:var(--cy);font-family:monospace'},'.'+tld);
+          var barWrap=el('div',{style:'flex:1;height:3px;background:var(--bdr);border-radius:2px;overflow:hidden'});
+          var barFill=el('div',{style:'height:3px;border-radius:2px;background:var(--cy);opacity:.65;width:'+pct+'%'});
+          var cnt=el('div',{style:'width:80px;font-size:11px;color:var(--tx2);text-align:right'},info.count.toLocaleString());
+          var days=el('div',{style:'width:90px;font-size:11px;color:var(--tx3);text-align:right'},info.avg_days+'d avg');
+          barWrap.appendChild(barFill);
+          row.appendChild(tldEl); row.appendChild(barWrap);
+          row.appendChild(cnt); row.appendChild(days);
+          wrap.appendChild(row);
+        });
+        tEl.appendChild(wrap);
+      }
+    }
+
+    // --- Deployment stats ---
+    var dpEl=document.getElementById('deploy-stats');
+    if(dpEl){
+      var dep=data.deployed_count||0, noip=data.no_ip_count||0;
+      var rate=data.deployment_rate||0;
+      dpEl.appendChild(card(dep.toLocaleString(),'deployed (has IP)'));
+      dpEl.appendChild(card(noip.toLocaleString(),'no IP at registration'));
+      dpEl.appendChild(card(rate+'%','deployment rate'));
+    }
+  });
+})();
+</script>
 <!-- REVENUE AND ANALYTICS SECTION -->
 <div class="wrap" style="padding-top:32px;padding-bottom:0">
   <div class="sec"><h2>&#x1F4B0; Estimated Registrar Revenue</h2><div class="ln"></div></div>
