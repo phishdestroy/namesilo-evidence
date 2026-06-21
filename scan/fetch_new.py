@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fetch new domain registrations from NetAPI and update repository data."""
 
-import os, gzip, csv, io, json, urllib.request, urllib.parse
+import os, re, gzip, csv, io, json, urllib.request, urllib.parse
 from pathlib import Path
 from datetime import date, datetime
 from collections import defaultdict, Counter
@@ -558,7 +558,7 @@ if _readme_path.exists():
     # Headline number cards (HTML inline for centering on GitHub)
     _parts.append('<table><tr>')
     _parts.append(f'<td align="center"><b>📦 Domains tracked</b><br/><sub><code>{_fmt_num(len(all_domains))}</code></sub></td>')
-    _parts.append(f'<td align="center"><b>💰 Est. revenue</b><br/><sub><code>\${total_revenue:,.0f}</code></sub></td>')
+    _parts.append(f'<td align="center"><b>💰 Est. revenue</b><br/><sub><code>${total_revenue:,.0f}</code></sub></td>')
     _parts.append(f'<td align="center"><b>📡 Deployed</b><br/><sub><code>{deploy_rate}%</code></sub></td>')
     _parts.append(f'<td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>{correlation_pct}%</code> ({_fmt_num(correlation_count)})</sub></td>')
     _parts.append(f'<td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>{fresh_pct}%</code></sub></td>')
@@ -574,7 +574,7 @@ if _readme_path.exists():
         _parts.append('|:--|--:|--:|--:|')
         for _tld, _info in list(tld_stats.items())[:10]:
             _rev = revenue_by_tld.get(_tld, {}).get('revenue', 0)
-            _parts.append(f"| `.{_tld}` | {_info['count']:,} | {_info['avg_days']:,}d | \${_rev:,.0f} |")
+            _parts.append(f"| `.{_tld}` | {_info['count']:,} | {_info['avg_days']:,}d | ${_rev:,.0f} |")
         _parts.append('')
 
     # Top countries with bars
@@ -634,7 +634,7 @@ if _readme_path.exists():
     _parts.append('| [`data/ioc/serial_emails.txt`](data/ioc/serial_emails.txt) | TXT | grep-friendly: `email⇥count` |')
     _parts.append('| [`data/ioc/shared_ips.txt`](data/ioc/shared_ips.txt) | TXT | grep-friendly: `ip⇥count⇥country` |')
     _parts.append('')
-    _parts.append(f'> 📊 Live web dashboard: <https://phishdestroy.github.io/{REGISTRAR_ID and "" or ""}> · Updated daily 06:00 UTC')
+    _parts.append('> 📊 Live web dashboard: see Pages link at top · Updated daily 06:00 UTC')
     _parts.append('')
     _parts.append('<!-- LIVE_STATS:END -->')
 
