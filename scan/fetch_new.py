@@ -168,6 +168,45 @@ for tld, cnt in tld_counts_map.most_common(20):
     avg_d = int(sum(tld_periods.get(tld, [])) / len(tld_periods[tld])) if tld_periods.get(tld) else 365
     tld_stats[tld] = {'count': cnt, 'avg_days': avg_d}
 
+# ── Revenue by TLD zone ────────────────────────────────────────────────────────
+revenue_by_tld = {}
+for tld, cnt in tld_counts_map.most_common(20):
+    price    = TLD_PRICES.get(tld, DEFAULT_PRICE)
+    tld_rev  = round(cnt * price, 2)
+    revenue_by_tld[tld] = {
+        'count':   cnt,
+        'price':   price,
+        'revenue': tld_rev,
+        'pct':     round(tld_rev / total_revenue * 100, 1) if total_revenue else 0,
+    }
+
+# ── Domain freshness: days from registration date to TODAY ────────────────────
+# Tells us how quickly we catch newly registered phishing domains
+catch_buckets = {'same_day': 0, 'within_week': 0, 'within_month': 0, 'older': 0}
+catch_ages_list = []
+today_dt = datetime.strptime(TODAY, '%Y-%m-%d')
+for reg_date, records in by_date.items():
+    try:
+        d1  = datetime.strptime(reg_date, '%Y-%m-%d')
+        age = (today_dt - d1).days
+        catch_ages_list.append(age)
+        n   = len(records)
+        if age == 0:    catch_buckets['same_day']     += n
+        elif age <= 7:  catch_buckets['within_week']  += n
+        elif age <= 30: catch_buckets['within_month'] += n
+        else:           catch_buckets['older']         += n
+    except Exception:
+        pass
+avg_catch_age = (sum(catch_ages_list) // len(catch_ages_list)) if catch_ages_list else 0
+catch_total   = sum(catch_buckets.values()) or 1
+fresh_pct     = round((catch_buckets['same_day'] + catch_buckets['within_week']) / catch_total * 100, 1)
+
+# ── Burst days: top 10 days by registration volume (campaign detection) ───────
+daily_counts  = {d: len(set(r['d'] for r in by_date[d])) for d in dates}
+avg_daily     = sum(daily_counts.values()) / len(daily_counts) if daily_counts else 1
+burst_days    = sorted(daily_counts.items(), key=lambda x: -x[1])[:10]
+burst_days    = [{'date': d, 'count': c, 'x_avg': round(c / avg_daily, 1)} for d, c in burst_days]
+
 # ── Write daily TXT + JSON ────────────────────────────────────────────────────
 data_root = Path('data/new')
 for day_date in dates:
@@ -238,6 +277,11 @@ index = {
     'pct_gt_1yr':             pct_gt1,
     'pct_gt_2yr':             pct_gt2,
     'tld_stats':              tld_stats,
+    'revenue_by_tld':         revenue_by_tld,
+    'catch_age_buckets':      catch_buckets,
+    'avg_catch_age_days':     avg_catch_age,
+    'fresh_pct':              fresh_pct,
+    'burst_days':             burst_days,
     'last_updated':           dates[-1],
 }
 Path('data/index.json').write_text(json.dumps(index, indent=2) + '\n', encoding='utf-8')
@@ -293,4 +337,12 @@ if tld_stats:
     (stats_dir / 'tld_top.json').write_text(
         badge('top TLDs', top3_tlds, '6e40c9'), encoding='utf-8')
 
-print(f"Done: {len(all_domains):,} domains | ${total_revenue:,.2f} est. revenue | {avg_lifetime}d avg | today: {today_count:,} | deployed: {deploy_rate:.0f}% | >1yr: {pct_gt1}% | >2yr: {pct_gt2}%")
+if revenue_by_tld:
+    top_tld_item = list(revenue_by_tld.items())[0]
+    (stats_dir / 'top_tld_rev.json').write_text(
+        badge('top $ TLD', f'.{top_tld_item[0]}: ${top_tld_item[1]["revenue"]:,.0f}', 'e3b341'), encoding='utf-8')
+
+(stats_dir / 'freshness.json').write_text(
+    badge('fresh catch', f'{fresh_pct}% ≤7d old', '2ea44f'), encoding='utf-8')
+
+print(f"Done: {len(all_domains):,} domains | ${total_revenue:,.2f} est. revenue | {avg_lifetime}d avg | today: {today_count:,} | deployed: {deploy_rate:.0f}% | >1yr: {pct_gt1}% | >2yr: {pct_gt2}% | fresh: {fresh_pct}%")
