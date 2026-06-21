@@ -66,6 +66,10 @@ All of it is in the record. All of it makes this louder.<br/><br/>
 [![Revenue](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/revenue.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
 [![Avg Period](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/lifetime.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
 [![Top Hosting](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/hosting.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
+[![No IP at Reg](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/no_ip.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
+[![Deployed](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/deployed.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
+[![Long Reg](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/longreg.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
+[![Top TLDs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/tld_top.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
 
 </div>
 
