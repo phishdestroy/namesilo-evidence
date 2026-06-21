@@ -529,6 +529,135 @@ _stix_bundle = {
 
 print(f"IOC: {len(serial_regs)} serial registrants | {len(shared_ip_export)} shared IPs | STIX: {len(_stix_objs)} objects")
 
+# ── Auto-generate LIVE_STATS section in README.md ────────────────────────────
+def _fmt_num(n):
+    return f'{n:,}' if isinstance(n,(int,float)) else str(n)
+
+def _bar(n, max_n, width=18):
+    if not max_n: return ''
+    filled = int(n / max_n * width)
+    return '█' * filled + '░' * (width - filled)
+
+def _redact_email(e):
+    if '@' not in e: return e[:3] + '***'
+    local, dom = e.split('@', 1)
+    if len(local) <= 3: return local[0] + '***@' + dom
+    return local[:3] + '***@' + dom
+
+_readme_path = Path('README.md')
+if _readme_path.exists():
+    _md = _readme_path.read_text(encoding='utf-8')
+
+    # ── Compose live block ──
+    _parts = []
+    _parts.append('<!-- LIVE_STATS:START -->')
+    _parts.append('')
+    _parts.append(f'> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `{TODAY}`')
+    _parts.append('')
+
+    # Headline number cards (HTML inline for centering on GitHub)
+    _parts.append('<table><tr>')
+    _parts.append(f'<td align="center"><b>📦 Domains tracked</b><br/><sub><code>{_fmt_num(len(all_domains))}</code></sub></td>')
+    _parts.append(f'<td align="center"><b>💰 Est. revenue</b><br/><sub><code>\${total_revenue:,.0f}</code></sub></td>')
+    _parts.append(f'<td align="center"><b>📡 Deployed</b><br/><sub><code>{deploy_rate}%</code></sub></td>')
+    _parts.append(f'<td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>{correlation_pct}%</code> ({_fmt_num(correlation_count)})</sub></td>')
+    _parts.append(f'<td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>{fresh_pct}%</code></sub></td>')
+    _parts.append(f'<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>{_fmt_num(serial_email_count)}</code></sub></td>')
+    _parts.append('</tr></table>')
+    _parts.append('')
+
+    # Top TLDs table
+    if tld_stats:
+        _parts.append('### 🏷️ Top TLD Zones')
+        _parts.append('')
+        _parts.append('| TLD | Count | Avg Reg Period | Est. Revenue |')
+        _parts.append('|:--|--:|--:|--:|')
+        for _tld, _info in list(tld_stats.items())[:10]:
+            _rev = revenue_by_tld.get(_tld, {}).get('revenue', 0)
+            _parts.append(f"| `.{_tld}` | {_info['count']:,} | {_info['avg_days']:,}d | \${_rev:,.0f} |")
+        _parts.append('')
+
+    # Top countries with bars
+    if country_counts:
+        _parts.append('### 🌍 Top Hosting Countries')
+        _parts.append('')
+        _parts.append('```')
+        _max_c = country_counts.most_common(1)[0][1] if country_counts else 1
+        for _c, _n in country_counts.most_common(8):
+            _pct = _n / sum(country_counts.values()) * 100 if country_counts else 0
+            _parts.append(f'{(_c or "??"):3} {_bar(_n, _max_c)} {_n:>10,} ({_pct:.1f}%)')
+        _parts.append('```')
+        _parts.append('')
+
+    # Burst days
+    if burst_days:
+        _parts.append('### 📈 Registration Burst Days')
+        _parts.append('')
+        _parts.append('| Date | Domains | × Average |')
+        _parts.append('|:--|--:|--:|')
+        for _b in burst_days[:5]:
+            _flame = ' 🚨' if _b['x_avg'] >= 5 else (' 🔥' if _b['x_avg'] >= 2 else '')
+            _parts.append(f"| `{_b['date']}` | {_b['count']:,} | **{_b['x_avg']}×**{_flame} |")
+        _parts.append('')
+
+    # Brand heatmap
+    if brand_heatmap:
+        _parts.append('### 🎯 Top Targeted Brands & Keywords')
+        _parts.append('')
+        _tags = []
+        for _kw, _n in list(brand_heatmap.items())[:15]:
+            _tags.append(f'`{_kw} ({_n:,})`')
+        _parts.append(' &middot; '.join(_tags))
+        _parts.append('')
+
+    # Top serial registrants
+    if serial_regs:
+        _parts.append(f'### 🕵️ Top Serial Registrants — {_fmt_num(len(serial_regs))} emails with ≥5 domains')
+        _parts.append('')
+        _parts.append('| # | Registrant Email (redacted) | Domains |')
+        _parts.append('|--:|:--|--:|')
+        for _i, _reg in enumerate(serial_regs[:10], 1):
+            _parts.append(f"| {_i} | `{_redact_email(_reg['email'])}` | **{_reg['count']:,}** |")
+        _parts.append('')
+
+    # IOC downloads
+    _parts.append('### 📥 Download Threat Intelligence')
+    _parts.append('')
+    _parts.append('| File | Format | Description |')
+    _parts.append('|:--|:--:|:--|')
+    _parts.append('| [`data/all.txt`](data/all.txt) | TXT | All tracked domains |')
+    _parts.append('| [`data/index.json`](data/index.json) | JSON | Full analytics snapshot |')
+    _parts.append('| [`data/ioc/serial_registrants.json`](data/ioc/serial_registrants.json) | JSON | Repeat registrants + their domains |')
+    _parts.append('| [`data/ioc/shared_ips.json`](data/ioc/shared_ips.json) | JSON | Bulletproof hosting clusters |')
+    _parts.append('| [`data/ioc/brand_domains.json`](data/ioc/brand_domains.json) | JSON | Domains by targeted brand |')
+    _parts.append('| [`data/ioc/stix-bundle.json`](data/ioc/stix-bundle.json) | STIX 2.1 | MISP/OpenCTI ready bundle |')
+    _parts.append('| [`data/ioc/serial_emails.txt`](data/ioc/serial_emails.txt) | TXT | grep-friendly: `email⇥count` |')
+    _parts.append('| [`data/ioc/shared_ips.txt`](data/ioc/shared_ips.txt) | TXT | grep-friendly: `ip⇥count⇥country` |')
+    _parts.append('')
+    _parts.append(f'> 📊 Live web dashboard: <https://phishdestroy.github.io/{REGISTRAR_ID and "" or ""}> · Updated daily 06:00 UTC')
+    _parts.append('')
+    _parts.append('<!-- LIVE_STATS:END -->')
+
+    _new_block = '\n'.join(_parts)
+
+    # Replace existing block or inject after first H1 / first separator
+    if '<!-- LIVE_STATS:START -->' in _md and '<!-- LIVE_STATS:END -->' in _md:
+        _md = re.sub(
+            r'<!-- LIVE_STATS:START -->.*?<!-- LIVE_STATS:END -->',
+            _new_block, _md, count=1, flags=re.DOTALL
+        )
+    else:
+        # Inject before first H1 (line starting with '# ')
+        _m = re.search(r'^# ', _md, flags=re.MULTILINE)
+        if _m:
+            _idx = _m.start()
+            _md = _md[:_idx] + _new_block + '\n\n' + _md[_idx:]
+        else:
+            _md = _new_block + '\n\n' + _md
+
+    _readme_path.write_text(_md, encoding='utf-8')
+    print(f'README.md LIVE_STATS block regenerated')
+
 # ── Stats badges ──────────────────────────────────────────────────────────────
 stats_dir = Path('stats')
 stats_dir.mkdir(exist_ok=True)
