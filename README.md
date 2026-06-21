@@ -1,3 +1,57 @@
+
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/docs/assets/banner.gif" width="100%"/>
+</div>
+
+<!--
+NameSilo, LLC (IANA #1479) — Registrar Abuse Investigation
+Keywords: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, icann-compliance, phishdestroy
+-->
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=24&pause=800&color=FF3333&center=true&vCenter=true&width=960&lines=NameSilo%2C+LLC+(IANA+%231479)+%E2%80%94+Registrar+Abuse+Investigation;5%2C269%2C357+Domains+Scanned.+87.3%25+Is+Junk.;183%2C419+Malicious+Domains+Behind+Their+Own+Privacy+Shield.;You+Made+This+Investigation+Necessary.;Now+You+Cannot+Make+It+Disappear.;PhishDestroy+Is+a+Hydra.+You+Already+Pulled+the+First+Head.;Filed+with+ICANN+%C2%B7+March+18%2C+2026." alt="PhishDestroy — NameSilo Investigation" />
+
+<br/>
+
+<img src="docs/assets/og-final-satire.png" alt="NameSilo Registrar Abuse Investigation — PhishDestroy Research" width="900"/>
+
+<br/>
+
+---
+
+<h3 align="center">You made this investigation necessary.<br/>Now you cannot make it disappear.</h3>
+
+<p align="center">
+<b>NameSilo (NASDAQ: URL)</b> — a publicly traded registrar with a 32.2% dead domain rate,<br/>
+a ten-year fraud under active protection, and a documented pattern of suppressing<br/>
+the researchers who exposed it.<br/><br/>
+Every takedown. Every lawyer. Every deleted tweet.<br/>
+All of it is in the record. All of it makes this louder.<br/><br/>
+<b>PhishDestroy is a Hydra. You already pulled the first head.</b><br/><br/>
+<b>Pedigreeless Russian dogs can write reviews about themselves and buy articles about themselves in the third person.</b>
+</p>
+
+<div align="center">
+<details>
+  <summary>Spoiler</summary>
+  <p>
+    <img src="Woof-woof.png" alt="Woof-woof" />
+    <br/><br/>
+    <b>It is quite baffling that the 'fastest-growing registrar in the world' appears entirely unaware of Section 3.18 of the ICANN Registrar Accreditation Agreement (RAA) and its explicit requirements.
+    There is no need to lie. Previously, you claimed to have conducted an investigation and inexplicably offered to help clear VirusTotal detections for the operator. Now you are either distorting the facts, or you have finally realized that managing malware detections is entirely outside your jurisdiction.
+    Either way, you are missing the point. I assure you, I fully understand the legal rights of users and the strict obligations of registrars. A service provider like NameSilo is obligated to take actionable steps against abuse—not to shield perpetrators, ignore reports, or mislead the public.
+    This is not 2018, and this is no longer just an appeal to ICANN. Based on the factual evidence, I am now calling upon US law enforcement and regulatory authorities to investigate the individuals involved here, as the facts indicate direct complicity in organizing scams and other illicit activities within the United States.</b>
+  </p>
+</details>
+</div>
+
+</div>
+
+---
+
+
 <!-- LIVE_STATS:START -->
 
 > 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-06-21`
@@ -84,55 +138,6 @@ BG  ░░░░░░░░░░░░░░░░░░     23,187 (1.1%)
 > 📊 Live web dashboard: see Pages link at top · Updated daily 06:00 UTC
 
 <!-- LIVE_STATS:END -->
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/docs/assets/banner.gif" width="100%"/>
-</div>
-
-<!--
-NameSilo, LLC (IANA #1479) — Registrar Abuse Investigation
-Keywords: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, icann-compliance, phishdestroy
--->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=24&pause=800&color=FF3333&center=true&vCenter=true&width=960&lines=NameSilo%2C+LLC+(IANA+%231479)+%E2%80%94+Registrar+Abuse+Investigation;5%2C269%2C357+Domains+Scanned.+87.3%25+Is+Junk.;183%2C419+Malicious+Domains+Behind+Their+Own+Privacy+Shield.;You+Made+This+Investigation+Necessary.;Now+You+Cannot+Make+It+Disappear.;PhishDestroy+Is+a+Hydra.+You+Already+Pulled+the+First+Head.;Filed+with+ICANN+%C2%B7+March+18%2C+2026." alt="PhishDestroy — NameSilo Investigation" />
-
-<br/>
-
-<img src="docs/assets/og-final-satire.png" alt="NameSilo Registrar Abuse Investigation — PhishDestroy Research" width="900"/>
-
-<br/>
-
----
-
-<h3 align="center">You made this investigation necessary.<br/>Now you cannot make it disappear.</h3>
-
-<p align="center">
-<b>NameSilo (NASDAQ: URL)</b> — a publicly traded registrar with a 32.2% dead domain rate,<br/>
-a ten-year fraud under active protection, and a documented pattern of suppressing<br/>
-the researchers who exposed it.<br/><br/>
-Every takedown. Every lawyer. Every deleted tweet.<br/>
-All of it is in the record. All of it makes this louder.<br/><br/>
-<b>PhishDestroy is a Hydra. You already pulled the first head.</b><br/><br/>
-<b>Pedigreeless Russian dogs can write reviews about themselves and buy articles about themselves in the third person.</b>
-</p>
-
-<div align="center">
-<details>
-  <summary>Spoiler</summary>
-  <p>
-    <img src="Woof-woof.png" alt="Woof-woof" />
-    <br/><br/>
-    <b>It is quite baffling that the 'fastest-growing registrar in the world' appears entirely unaware of Section 3.18 of the ICANN Registrar Accreditation Agreement (RAA) and its explicit requirements.
-    There is no need to lie. Previously, you claimed to have conducted an investigation and inexplicably offered to help clear VirusTotal detections for the operator. Now you are either distorting the facts, or you have finally realized that managing malware detections is entirely outside your jurisdiction.
-    Either way, you are missing the point. I assure you, I fully understand the legal rights of users and the strict obligations of registrars. A service provider like NameSilo is obligated to take actionable steps against abuse—not to shield perpetrators, ignore reports, or mislead the public.
-    This is not 2018, and this is no longer just an appeal to ICANN. Based on the factual evidence, I am now calling upon US law enforcement and regulatory authorities to investigate the individuals involved here, as the facts indicate direct complicity in organizing scams and other illicit activities within the United States.</b>
-  </p>
-</details>
-</div>
-
-</div>
 
 ---
 
