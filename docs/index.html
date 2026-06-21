@@ -834,5 +834,199 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
   });
 })();
 </script>
+
+<!-- ADVANCED ANALYTICS SECTION -->
+
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F5A7; Top Shared IPs</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">IP addresses hosting the most phishing domains. High-count IPs indicate bulletproof hosting infrastructure shared across campaigns.</p>
+  <div id="shared-ips-list"></div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F4B9; Revenue by TLD Zone</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Estimated registration revenue split by TLD. Shows which zones generate most income for the registrar from phishing operators.</p>
+  <div id="tld-revenue-table"></div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x26A1; Domain Freshness</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">How old were domains at time of first fetch. Same-day and within-week catches indicate early warning capability.</p>
+  <div id="freshness-stats" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px"></div>
+  <div style="position:relative;height:100px">
+    <canvas id="freshness-chart"></canvas>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:32px">
+  <div class="sec"><h2>&#x1F4C8; Registration Burst Days</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Days with abnormally high registration volume — likely campaign start dates. Multiple-of-average spikes indicate coordinated bulk registration events.</p>
+  <div id="burst-days-list"></div>
+</div>
+
+<script>
+(function(){
+  function waitForData(cb){
+    if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
+    setTimeout(function(){waitForData(cb);},250);
+  }
+  function el(tag,attrs,text){
+    var e=document.createElement(tag);
+    Object.keys(attrs||{}).forEach(function(k){e.setAttribute(k,attrs[k]);});
+    if(text!==undefined)e.textContent=text;
+    return e;
+  }
+  function card(v,l){
+    var c=el('div',{style:'border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px'});
+    c.appendChild(el('div',{style:'font-size:1.5rem;font-weight:800;color:var(--cy);line-height:1'},v));
+    c.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px'},l));
+    return c;
+  }
+  function hexToRgb(hex){
+    hex=(hex||'888888').replace('#','');
+    if(hex.length===3)hex=hex.split('').map(function(c){return c+c;}).join('');
+    var n=parseInt(hex,16)||0;
+    return [(n>>16)&255,(n>>8)&255,n&255].join(',');
+  }
+  function noDataMsg(el,msg){
+    el.appendChild(document.createElement('p')).textContent=msg||'Data will appear after next daily fetch.';
+    el.firstChild.setAttribute('style','color:var(--tx3);font-size:13px');
+  }
+
+  waitForData(function(data){
+    var acc=(getComputedStyle(document.documentElement).getPropertyValue('--cy')||'').trim()||'#888888';
+
+    // ── Shared IPs ────────────────────────────────────────────────────────────
+    var ipsEl=document.getElementById('shared-ips-list');
+    if(ipsEl){
+      var ips=data.top_shared_ips||{};
+      var ipKeys=Object.keys(ips).filter(function(k){return k&&ips[k]>1;});
+      if(!ipKeys.length){noDataMsg(ipsEl,'No shared IP data yet.');}
+      else{
+        var maxN=ips[ipKeys[0]]||1;
+        var wrap=el('div',{style:'max-width:640px'});
+        var hdr=el('div',{style:'display:flex;gap:12px;padding:0 0 8px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:4px'});
+        ['IP','','Domains'].forEach(function(h,i){
+          hdr.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);'+(i===1?'flex:1':'width:'+(i===0?'130px':'80px'))},h));
+        });
+        wrap.appendChild(hdr);
+        ipKeys.slice(0,20).forEach(function(ip){
+          var n=ips[ip];
+          var pct=(n/maxN*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:12px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          var ipEl=el('div',{style:'width:130px;font-size:11px;font-weight:600;color:var(--tx1);font-family:monospace;word-break:break-all'},ip);
+          var barWrap=el('div',{style:'flex:1;height:3px;background:var(--bdr);border-radius:2px;overflow:hidden'});
+          var barFill=el('div',{style:'height:3px;border-radius:2px;background:var(--cy);opacity:.55;width:'+pct+'%'});
+          var cnt=el('div',{style:'width:80px;font-size:11px;color:var(--tx2);text-align:right'},n.toLocaleString()+' domains');
+          barWrap.appendChild(barFill);
+          row.appendChild(ipEl); row.appendChild(barWrap); row.appendChild(cnt);
+          wrap.appendChild(row);
+        });
+        ipsEl.appendChild(wrap);
+      }
+    }
+
+    // ── Revenue by TLD ────────────────────────────────────────────────────────
+    var tldRevEl=document.getElementById('tld-revenue-table');
+    if(tldRevEl){
+      var tldRev=data.revenue_by_tld||{};
+      var tldKeys=Object.keys(tldRev).sort(function(a,b){return tldRev[b].revenue-tldRev[a].revenue;});
+      if(!tldKeys.length){noDataMsg(tldRevEl,'TLD revenue data will appear after next fetch.');}
+      else{
+        var maxR=tldRev[tldKeys[0]].revenue||1;
+        var wrap=el('div',{style:'max-width:680px'});
+        var hdr=el('div',{style:'display:flex;gap:10px;padding:0 0 8px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:4px'});
+        [['TLD','50px'],['','1fr'],['Count','70px'],['$/reg','55px'],['Revenue','85px'],['% total','65px']].forEach(function(h){
+          hdr.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);'+(h[1]==='1fr'?'flex:1':'width:'+h[1])},h[0]));
+        });
+        wrap.appendChild(hdr);
+        tldKeys.slice(0,20).forEach(function(tld){
+          var info=tldRev[tld];
+          var pct=(info.revenue/maxR*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:10px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          row.appendChild(el('div',{style:'width:50px;font-size:12px;font-weight:700;color:var(--cy);font-family:monospace'},'.'+tld));
+          var barWrap=el('div',{style:'flex:1;height:3px;background:var(--bdr);border-radius:2px;overflow:hidden'});
+          var barFill=el('div',{style:'height:3px;border-radius:2px;background:var(--cy);opacity:.6;width:'+pct+'%'});
+          barWrap.appendChild(barFill);
+          row.appendChild(barWrap);
+          row.appendChild(el('div',{style:'width:70px;font-size:11px;color:var(--tx2);text-align:right'},info.count.toLocaleString()));
+          row.appendChild(el('div',{style:'width:55px;font-size:11px;color:var(--tx3);text-align:right'},'$'+info.price));
+          row.appendChild(el('div',{style:'width:85px;font-size:11px;color:var(--tx1);font-weight:600;text-align:right'},'$'+Math.round(info.revenue).toLocaleString()));
+          row.appendChild(el('div',{style:'width:65px;font-size:11px;color:var(--tx3);text-align:right'},info.pct+'%'));
+          wrap.appendChild(row);
+        });
+        tldRevEl.appendChild(wrap);
+      }
+    }
+
+    // ── Domain Freshness ──────────────────────────────────────────────────────
+    var freshEl=document.getElementById('freshness-stats');
+    var freshCtx=document.getElementById('freshness-chart');
+    if(freshEl){
+      var cb=data.catch_age_buckets||{};
+      var fp=data.fresh_pct||0;
+      var ca=data.avg_catch_age_days||0;
+      freshEl.appendChild(card(fp+'%','caught ≤7d old'));
+      freshEl.appendChild(card(ca+'d','avg catch age'));
+      freshEl.appendChild(card((cb.same_day||0).toLocaleString(),'same-day catches'));
+    }
+    if(freshCtx){
+      var labels=['Same day','≤7 days','≤30 days','Older'];
+      var cb2=data.catch_age_buckets||{};
+      var vals=[cb2.same_day||0,cb2.within_week||0,cb2.within_month||0,cb2.older||0];
+      var tot=vals.reduce(function(a,b){return a+b;},0)||1;
+      var pcts=vals.map(function(v){return Math.round(v/tot*100);});
+      new Chart(freshCtx,{
+        type:'bar',
+        data:{labels:labels,datasets:[{
+          label:'% of domains',
+          data:pcts,
+          backgroundColor:['rgba('+hexToRgb(acc)+',0.85)','rgba('+hexToRgb(acc)+',0.6)','rgba('+hexToRgb(acc)+',0.35)','rgba('+hexToRgb(acc)+',0.15)'],
+          borderColor:'rgba('+hexToRgb(acc)+',0.5)',
+          borderWidth:1,borderRadius:4
+        }]},
+        options:{
+          responsive:true,maintainAspectRatio:false,
+          plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return' '+c.parsed.y+'%';} } } },
+          scales:{
+            x:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.4)',font:{size:11}}},
+            y:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.4)',font:{size:10},callback:function(v){return v+'%';}}}
+          }
+        }
+      });
+    }
+
+    // ── Burst Days ────────────────────────────────────────────────────────────
+    var burstEl=document.getElementById('burst-days-list');
+    if(burstEl){
+      var bd=data.burst_days||[];
+      if(!bd.length){noDataMsg(burstEl,'Burst day data will appear after next fetch.');}
+      else{
+        var maxC=bd[0]?bd[0].count:1;
+        var wrap=el('div',{style:'max-width:520px'});
+        var hdr=el('div',{style:'display:flex;gap:12px;padding:0 0 8px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:4px'});
+        [['Date','100px'],['','1fr'],['Domains','80px'],['×avg','55px']].forEach(function(h){
+          hdr.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);'+(h[1]==='1fr'?'flex:1':'width:'+h[1])},h[0]));
+        });
+        wrap.appendChild(hdr);
+        bd.forEach(function(item,idx){
+          var pct=(item.count/maxC*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:12px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          row.appendChild(el('div',{style:'width:100px;font-size:11px;font-weight:600;color:'+(idx===0?'var(--cy)':'var(--tx1)')+';font-family:monospace'},item.date));
+          var barWrap=el('div',{style:'flex:1;height:3px;background:var(--bdr);border-radius:2px;overflow:hidden'});
+          var barFill=el('div',{style:'height:3px;border-radius:2px;background:var(--cy);opacity:'+(idx===0?'.9':'.5')+';width:'+pct+'%'});
+          barWrap.appendChild(barFill);
+          row.appendChild(barWrap);
+          row.appendChild(el('div',{style:'width:80px;font-size:11px;color:var(--tx1);text-align:right;font-weight:'+(item.x_avg>2?'700':'400')},item.count.toLocaleString()));
+          var xEl=el('div',{style:'width:55px;font-size:11px;text-align:right;color:'+(item.x_avg>=3?'var(--cy)':item.x_avg>=2?'var(--tx1)':'var(--tx3)')},item.x_avg+'×');
+          row.appendChild(xEl);
+          wrap.appendChild(row);
+        });
+        burstEl.appendChild(wrap);
+      }
+    }
+  });
+})();
+</script>
 </body>
 </html>
