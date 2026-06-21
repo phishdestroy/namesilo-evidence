@@ -124,6 +124,50 @@ ip_counts = Counter(
     r['i'] for records in by_date.values() for r in records if r.get('i')
 )
 
+# ── Deployment stats (has IP vs no IP) ────────────────────────────────────────
+all_recs_flat = [r for records in by_date.values() for r in records]
+deployed_count = sum(1 for r in all_recs_flat if r.get('i'))
+no_ip_count    = len(all_recs_flat) - deployed_count
+deploy_rate    = round(deployed_count / len(all_recs_flat) * 100, 1) if all_recs_flat else 0
+
+# ── Registration period buckets ────────────────────────────────────────────────
+period_buckets = {'lt_1yr': 0, 'eq_1yr': 0, 'yr_2': 0, 'yr_3plus': 0}
+tld_periods    = {}  # tld -> list of days
+tld_counts_map = Counter()
+
+for reg_date, records in by_date.items():
+    for r in records:
+        tld = r['d'].rsplit('.', 1)[-1].lower() if '.' in r['d'] else ''
+        tld_counts_map[tld] += 1
+        exp = r.get('e', '')
+        if exp and len(exp) == 10:
+            try:
+                d1 = datetime.strptime(reg_date, '%Y-%m-%d')
+                d2 = datetime.strptime(exp, '%Y-%m-%d')
+                days = (d2 - d1).days
+                if tld:
+                    tld_periods.setdefault(tld, []).append(days)
+                if days < 350:
+                    period_buckets['lt_1yr'] += 1
+                elif days < 500:
+                    period_buckets['eq_1yr'] += 1
+                elif days < 800:
+                    period_buckets['yr_2'] += 1
+                else:
+                    period_buckets['yr_3plus'] += 1
+            except Exception:
+                pass
+
+total_with_period = sum(period_buckets.values())
+pct_gt1 = round((period_buckets['yr_2'] + period_buckets['yr_3plus']) / total_with_period * 100, 1) if total_with_period else 0
+pct_gt2 = round(period_buckets['yr_3plus'] / total_with_period * 100, 1) if total_with_period else 0
+
+# TLD stats: count + avg reg period
+tld_stats = {}
+for tld, cnt in tld_counts_map.most_common(20):
+    avg_d = int(sum(tld_periods.get(tld, [])) / len(tld_periods[tld])) if tld_periods.get(tld) else 365
+    tld_stats[tld] = {'count': cnt, 'avg_days': avg_d}
+
 # ── Write daily TXT + JSON ────────────────────────────────────────────────────
 data_root = Path('data/new')
 for day_date in dates:
@@ -187,6 +231,13 @@ index = {
     'avg_registration_days':  avg_lifetime,
     'ip_countries':           dict(country_counts.most_common(10)),
     'top_shared_ips':         dict(ip_counts.most_common(20)),
+    'deployed_count':         deployed_count,
+    'no_ip_count':            no_ip_count,
+    'deployment_rate':        deploy_rate,
+    'reg_periods':            period_buckets,
+    'pct_gt_1yr':             pct_gt1,
+    'pct_gt_2yr':             pct_gt2,
+    'tld_stats':              tld_stats,
     'last_updated':           dates[-1],
 }
 Path('data/index.json').write_text(json.dumps(index, indent=2) + '\n', encoding='utf-8')
@@ -226,4 +277,20 @@ if ip_counts:
     (stats_dir / 'top_ip.json').write_text(
         badge('top IP domains', top_ip_msg, '8b5cf6'), encoding='utf-8')
 
-print(f"Done: {len(all_domains):,} domains | ${total_revenue:,.2f} est. revenue | {avg_lifetime}d avg | today: {today_count:,}")
+(stats_dir / 'no_ip.json').write_text(
+    badge('no DNS at reg', f'{no_ip_count:,} ({100-deploy_rate:.0f}%)', 'e3b341'), encoding='utf-8')
+
+(stats_dir / 'deployed.json').write_text(
+    badge('deployed', f'{deployed_count:,} ({deploy_rate:.0f}%)', '2ea44f'), encoding='utf-8')
+
+if total_with_period:
+    longreg_msg = f'>1yr: {pct_gt1}% · >2yr: {pct_gt2}%'
+    (stats_dir / 'longreg.json').write_text(
+        badge('long reg.', longreg_msg, '8b5cf6'), encoding='utf-8')
+
+if tld_stats:
+    top3_tlds = ' · '.join(f'.{t}:{v["count"]:,}' for t,v in list(tld_stats.items())[:3])
+    (stats_dir / 'tld_top.json').write_text(
+        badge('top TLDs', top3_tlds, '6e40c9'), encoding='utf-8')
+
+print(f"Done: {len(all_domains):,} domains | ${total_revenue:,.2f} est. revenue | {avg_lifetime}d avg | today: {today_count:,} | deployed: {deploy_rate:.0f}% | >1yr: {pct_gt1}% | >2yr: {pct_gt2}%")
