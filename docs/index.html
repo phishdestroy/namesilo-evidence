@@ -1028,5 +1028,132 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
   });
 })();
 </script>
+
+<!-- REGISTRANT + BRAND SECTION -->
+
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F575; Registrant Fingerprinting</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Email addresses and phone numbers used to register phishing domains. Repeated contacts across hundreds of domains identify serial abuse operators — direct IOCs for attribution.</p>
+  <div id="registrant-summary" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px"></div>
+  <div style="display:flex;gap:32px;flex-wrap:wrap">
+    <div style="flex:1;min-width:280px">
+      <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-bottom:10px">Top Registrant Emails</div>
+      <div id="email-list"></div>
+    </div>
+    <div style="flex:0 0 220px">
+      <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-bottom:10px">Top Registrant Phones</div>
+      <div id="phone-list"></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:32px">
+  <div class="sec"><h2>&#x1F3AF; Brand &amp; Keyword Heatmap</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Brand names and phishing keywords found in domain labels. Shows which ecosystems are most targeted: crypto wallets, exchanges, DeFi protocols, and support scams.</p>
+  <div id="brand-heatmap"></div>
+</div>
+
+<script>
+(function(){
+  function waitForData(cb){
+    if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
+    setTimeout(function(){waitForData(cb);},250);
+  }
+  function el(tag,attrs,text){
+    var e=document.createElement(tag);
+    Object.keys(attrs||{}).forEach(function(k){e.setAttribute(k,attrs[k]);});
+    if(text!==undefined)e.textContent=text;
+    return e;
+  }
+  function card(v,l){
+    var c=el('div',{style:'border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px'});
+    c.appendChild(el('div',{style:'font-size:1.5rem;font-weight:800;color:var(--cy);line-height:1'},v));
+    c.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px'},l));
+    return c;
+  }
+  function noData(container,msg){
+    var p=el('p',{style:'color:var(--tx3);font-size:13px'},msg||'Data will appear after next daily fetch.');
+    container.appendChild(p);
+  }
+
+  waitForData(function(data){
+    var acc=(getComputedStyle(document.documentElement).getPropertyValue('--cy')||'').trim()||'#888888';
+
+    // ── Registrant summary cards ──────────────────────────────────────────────
+    var sumEl=document.getElementById('registrant-summary');
+    if(sumEl){
+      var serial=data.serial_email_count||0;
+      var emailCount=Object.keys(data.top_registrant_emails||{}).length;
+      var phoneCount=Object.keys(data.top_registrant_phones||{}).length;
+      sumEl.appendChild(card(serial.toLocaleString(),'serial registrants (≥10 domains)'));
+      sumEl.appendChild(card(emailCount.toLocaleString(),'unique email registrants'));
+      sumEl.appendChild(card(phoneCount.toLocaleString(),'unique phone registrants'));
+    }
+
+    // ── Email list ────────────────────────────────────────────────────────────
+    var emailEl=document.getElementById('email-list');
+    if(emailEl){
+      var emails=data.top_registrant_emails||{};
+      var eKeys=Object.keys(emails).sort(function(a,b){return emails[b]-emails[a];});
+      if(!eKeys.length){noData(emailEl,'No email data yet.');}
+      else{
+        var maxE=emails[eKeys[0]]||1;
+        eKeys.slice(0,15).forEach(function(em){
+          var n=emails[em];
+          var pct=(n/maxE*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:10px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          var emSpan=el('div',{style:'flex:1;font-size:10px;color:'+(n>=50?'var(--cy)':n>=10?'var(--tx1)':'var(--tx3)')+';font-family:monospace;word-break:break-all;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap'},em);
+          var cnt=el('div',{style:'font-size:11px;font-weight:'+(n>=10?'700':'400')+';color:var(--tx2);flex-shrink:0;margin-left:8px'},n+'×');
+          row.appendChild(emSpan);
+          row.appendChild(cnt);
+          emailEl.appendChild(row);
+        });
+      }
+    }
+
+    // ── Phone list ────────────────────────────────────────────────────────────
+    var phoneEl=document.getElementById('phone-list');
+    if(phoneEl){
+      var phones=data.top_registrant_phones||{};
+      var pKeys=Object.keys(phones).sort(function(a,b){return phones[b]-phones[a];});
+      if(!pKeys.length){noData(phoneEl,'No phone data yet.');}
+      else{
+        pKeys.slice(0,10).forEach(function(ph){
+          var n=phones[ph];
+          var row=el('div',{style:'display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          row.appendChild(el('div',{style:'flex:1;font-size:11px;color:var(--tx1);font-family:monospace'},ph));
+          row.appendChild(el('div',{style:'font-size:11px;font-weight:700;color:var(--tx2);flex-shrink:0'},n+'×'));
+          phoneEl.appendChild(row);
+        });
+      }
+    }
+
+    // ── Brand heatmap ─────────────────────────────────────────────────────────
+    var brandEl=document.getElementById('brand-heatmap');
+    if(brandEl){
+      var bm=data.brand_heatmap||{};
+      var bKeys=Object.keys(bm).sort(function(a,b){return bm[b]-bm[a];});
+      if(!bKeys.length){noData(brandEl,'Brand data will appear after next fetch.');}
+      else{
+        var maxB=bm[bKeys[0]]||1;
+        var wrap=el('div',{style:'display:flex;flex-wrap:wrap;gap:8px;max-width:800px'});
+        bKeys.forEach(function(kw){
+          var n=bm[kw];
+          var scale=0.7+0.6*(n/maxB);
+          var alpha=0.25+0.65*(n/maxB);
+          var chip=el('div',{style:'display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border:1px solid rgba('+
+            getComputedStyle(document.documentElement).getPropertyValue('--cy').replace('#','')+','+alpha+');border-radius:4px;cursor:default;transition:opacity .2s'});
+          var label=el('span',{style:'font-family:monospace;font-size:'+(10+4*(n/maxB)).toFixed(1)+'px;font-weight:'+(n>=100?700:n>=20?600:400)+';color:var(--cy);opacity:'+alpha.toFixed(2)},kw);
+          var count=el('span',{style:'font-size:9px;color:var(--tx3)'},n.toLocaleString());
+          chip.appendChild(label);
+          chip.appendChild(count);
+          wrap.appendChild(chip);
+        });
+        brandEl.appendChild(wrap);
+      }
+    }
+  });
+})();
+</script>
 </body>
 </html>
