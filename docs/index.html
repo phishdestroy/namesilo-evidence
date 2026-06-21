@@ -568,5 +568,135 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
 </div>
 <div style="margin:0;line-height:0"><img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="display:block;max-height:4px;object-fit:cover;object-position:center"></div>
 <script>(function(){var R='namesilo-evidence',U='https://raw.githubusercontent.com/phishdestroy/'+R+'/main/data/index.json';fetch(U+'?t='+Date.now()).then(function(x){return x.json();}).then(function(data){var days=(data.days||[]).slice().reverse();document.getElementById('daily-stats').innerHTML=[s((data.total_new_all_time||0).toLocaleString(),'Total new','cy'),s(days.length,'Days tracked','gn'),s(data.last_updated||'&#8212;','Last fetch','or')].join('');if(!days.length){document.getElementById('daily-feed').innerHTML='<div style="padding:20px;color:var(--tx3);font-size:12px">Feed activates after first workflow run. Add NETAPI_TOKEN to GitHub Secrets.</div>';return;}var h='<div style="display:flex;gap:12px;padding:8px 16px;background:var(--s2);border-bottom:1px solid var(--bdr);font-size:10px;letter-spacing:.08em;color:var(--tx3);text-transform:uppercase"><span style="width:52px"></span><span style="min-width:110px">Date</span><span>Domains</span><span style="margin-left:auto">Download</span></div>',rows=days.map(function(d,i){var n=i===0,u='https://raw.githubusercontent.com/phishdestroy/'+R+'/main/'+d.path;return'<div style="display:flex;align-items:center;gap:12px;padding:9px 16px;border-bottom:1px solid var(--bdr);'+(n?'background:rgba(63,185,80,.04)':'')+'">'+(n?'<span style="font-size:9px;font-weight:700;color:var(--gn);border:1px solid rgba(63,185,80,.3);padding:2px 6px;border-radius:3px;animation:blink 2s step-end infinite;min-width:52px;text-align:center">NEW</span>':'<span style="min-width:52px"></span>')+'<span style="color:var(--tx2);font-size:12px;min-width:110px">'+d.date+'</span><span style="color:var(--tx3);font-size:12px">'+(d.count||0).toLocaleString()+' domains</span><a href="'+u+'" style="margin-left:auto;font-size:11px;color:var(--cy);border:1px solid rgba(110,168,215,.2);padding:3px 10px;border-radius:4px" download>&#8659; .txt</a></div>';}).join('');document.getElementById('daily-feed').innerHTML=h+rows;}).catch(function(){document.getElementById('daily-feed').innerHTML='<div style="padding:20px;color:var(--tx3);font-size:12px">Feed activates when NETAPI_TOKEN secret is added.</div>';});function s(v,l,c){return'<div style="border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px"><div style="font-size:1.5rem;font-weight:800;color:var(--'+c+');line-height:1">'+v+'</div><div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px">'+l+'</div></div>';}})()</script>
+
+<!-- REVENUE AND ANALYTICS SECTION -->
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F4B0; Estimated Registrar Revenue</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Estimated registration fees based on public TLD pricing. Does not include renewals or promo rates.</p>
+  <div id="rev-stats" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px"></div>
+  <div style="position:relative;height:160px;margin-bottom:8px">
+    <canvas id="rev-chart"></canvas>
+  </div>
+  <p style="font-size:11px;color:var(--tx3);margin-top:8px">&#x26A0;&#xFE0F; Estimates use average public TLD prices. Actual revenue will differ.</p>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:32px">
+  <div class="sec"><h2>&#x1F30D; Hosting Geography</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">IP country at time of domain registration. No IP means domain was not yet deployed when fetched.</p>
+  <div id="country-list"></div>
+</div>
+
+<script>
+(function(){
+  function waitForData(cb){
+    if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
+    setTimeout(function(){waitForData(cb);},250);
+  }
+
+  function el(tag,attrs,text){
+    var e=document.createElement(tag);
+    Object.keys(attrs||{}).forEach(function(k){e.setAttribute(k,attrs[k]);});
+    if(text!==undefined)e.textContent=text;
+    return e;
+  }
+
+  function hexToRgb(hex){
+    hex=(hex||'888888').replace('#','');
+    if(hex.length===3)hex=hex.split('').map(function(c){return c+c;}).join('');
+    var n=parseInt(hex,16)||0;
+    return [(n>>16)&255,(n>>8)&255,n&255].join(',');
+  }
+
+  waitForData(function(data){
+    var css=getComputedStyle(document.documentElement);
+    var acc=(css.getPropertyValue('--cy')||'').trim()||'#888888';
+
+    // --- Stat cards ---
+    var revEl=document.getElementById('rev-stats');
+    if(revEl){
+      var totalRev=Math.round(data.total_revenue_estimate||0);
+      var avgLife=data.avg_registration_days||365;
+      var totalDom=data.total_new_all_time||0;
+      [
+        ['$'+totalRev.toLocaleString(),'Est. Total Revenue'],
+        [avgLife+'d','Avg. Reg. Period'],
+        [totalDom.toLocaleString(),'Total Domains']
+      ].forEach(function(pair){
+        var card=el('div',{style:'border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px'});
+        var vd=el('div',{style:'font-size:1.5rem;font-weight:800;color:var(--cy);line-height:1'},pair[0]);
+        var ld=el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px'},pair[1]);
+        card.appendChild(vd);
+        card.appendChild(ld);
+        revEl.appendChild(card);
+      });
+    }
+
+    // --- Revenue chart ---
+    var months={};
+    (data.days||[]).forEach(function(d){
+      var m=d.date.slice(0,7);
+      months[m]=(months[m]||0)+(d.revenue||0);
+    });
+    var mKeys=Object.keys(months).sort();
+    var ctx=document.getElementById('rev-chart');
+    if(ctx&&mKeys.length){
+      new Chart(ctx,{
+        type:'bar',
+        data:{
+          labels:mKeys,
+          datasets:[{
+            label:'Est. Revenue USD',
+            data:mKeys.map(function(m){return Math.round(months[m]);}),
+            backgroundColor:'rgba('+hexToRgb(acc)+',0.3)',
+            borderColor:'rgba('+hexToRgb(acc)+',0.7)',
+            borderWidth:1,borderRadius:3
+          }]
+        },
+        options:{
+          responsive:true,maintainAspectRatio:false,
+          plugins:{
+            legend:{display:false},
+            tooltip:{callbacks:{label:function(c){return' $'+c.parsed.y.toLocaleString();}}}
+          },
+          scales:{
+            x:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.35)',font:{size:10}}},
+            y:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.35)',font:{size:10},
+              callback:function(v){return'$'+v.toLocaleString();}}}
+          }
+        }
+      });
+    }
+
+    // --- Country list ---
+    var countries=data.ip_countries||{};
+    var ctEl=document.getElementById('country-list');
+    if(!ctEl)return;
+    var keys=Object.keys(countries).filter(function(k){return k&&countries[k];});
+    if(!keys.length){
+      ctEl.appendChild(el('p',{style:'color:var(--tx3);font-size:13px'},'No IP data yet — will populate after next daily fetch.'));
+      return;
+    }
+    var tot=keys.reduce(function(a,k){return a+countries[k];},0);
+    var sorted=keys.sort(function(a,b){return countries[b]-countries[a];});
+    var wrap=el('div',{style:'max-width:560px'});
+    sorted.forEach(function(k){
+      var n=countries[k];
+      var pct=(n/tot*100).toFixed(1);
+      var row=el('div',{style:'display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04)'});
+      var code=el('div',{style:'width:34px;font-size:12px;font-weight:700;color:var(--tx1);font-family:monospace'},k||'—');
+      var barWrap=el('div',{style:'flex:1;height:4px;background:var(--bdr);border-radius:2px;overflow:hidden'});
+      var barFill=el('div',{style:'height:4px;border-radius:2px;width:'+pct+'%;background:var(--cy);opacity:.7'});
+      var num=el('div',{style:'font-size:11px;color:var(--tx2);min-width:110px;text-align:right'});
+      num.textContent=n.toLocaleString()+' ('+pct+'%)';
+      barWrap.appendChild(barFill);
+      row.appendChild(code);
+      row.appendChild(barWrap);
+      row.appendChild(num);
+      wrap.appendChild(row);
+    });
+    ctEl.appendChild(wrap);
+  });
+})();
+</script>
 </body>
 </html>
