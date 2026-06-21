@@ -60,6 +60,8 @@ for row in reader:
     domain      = row[1].strip().lower()
     reg_date    = row[2].strip()
     expiring_at = row[3].strip() if len(row) > 3 else ''
+    emails_raw  = row[5].strip() if len(row) > 5 else ''
+    phones_raw  = row[6].strip() if len(row) > 6 else ''
     ip          = row[7].strip() if len(row) > 7 else ''
     ip_country  = row[8].strip() if len(row) > 8 else ''
 
@@ -69,6 +71,8 @@ for row in reader:
         by_date[reg_date].append({
             'd': domain,
             'e': expiring_at,
+            'm': emails_raw,
+            'p': phones_raw,
             'i': ip,
             'c': ip_country,
         })
@@ -207,6 +211,41 @@ avg_daily     = sum(daily_counts.values()) / len(daily_counts) if daily_counts e
 burst_days    = sorted(daily_counts.items(), key=lambda x: -x[1])[:10]
 burst_days    = [{'date': d, 'count': c, 'x_avg': round(c / avg_daily, 1)} for d, c in burst_days]
 
+# ── Registrant fingerprinting (email + phone) ─────────────────────────────────
+email_counts = Counter()
+phone_counts = Counter()
+for records in by_date.values():
+    for r in records:
+        for em in r.get('m', '').split(','):
+            em = em.strip().lower()
+            if em and '@' in em:
+                email_counts[em] += 1
+        for ph in r.get('p', '').split(','):
+            ph = ph.strip()
+            if ph and len(ph) >= 7:
+                phone_counts[ph] += 1
+
+top_registrant_emails = dict(email_counts.most_common(20))
+top_registrant_phones = dict(phone_counts.most_common(10))
+serial_email_count    = sum(1 for c in email_counts.values() if c >= 10)
+
+# ── Brand/keyword heatmap ──────────────────────────────────────────────────────
+BRAND_KEYWORDS = [
+    'metamask','coinbase','binance','wallet','defi','airdrop','claim','bitcoin',
+    'ethereum','crypto','token','nft','web3','ledger','trezor','uniswap','opensea',
+    'kraken','kucoin','bybit','okx','huobi','trust','phantom','solana','polygon',
+    'arbitrum','optimism','swap','bridge','staking','yield','vault','farm','mint',
+    'connect','secure','support','login','verify','account','update','official',
+]
+keyword_counts = Counter()
+for domain in all_domains:
+    label = domain.split('.')[0]
+    for kw in BRAND_KEYWORDS:
+        if kw in label:
+            keyword_counts[kw] += 1
+
+brand_heatmap = dict(keyword_counts.most_common(20))
+
 # ── Write daily TXT + JSON ────────────────────────────────────────────────────
 data_root = Path('data/new')
 for day_date in dates:
@@ -282,6 +321,10 @@ index = {
     'avg_catch_age_days':     avg_catch_age,
     'fresh_pct':              fresh_pct,
     'burst_days':             burst_days,
+    'top_registrant_emails':  top_registrant_emails,
+    'top_registrant_phones':  top_registrant_phones,
+    'serial_email_count':     serial_email_count,
+    'brand_heatmap':          brand_heatmap,
     'last_updated':           dates[-1],
 }
 Path('data/index.json').write_text(json.dumps(index, indent=2) + '\n', encoding='utf-8')
@@ -344,5 +387,14 @@ if revenue_by_tld:
 
 (stats_dir / 'freshness.json').write_text(
     badge('fresh catch', f'{fresh_pct}% ≤7d old', '2ea44f'), encoding='utf-8')
+
+if serial_email_count:
+    (stats_dir / 'serial_regs.json').write_text(
+        badge('serial registrants', f'{serial_email_count:,} emails ≥10 domains', 'da3633'), encoding='utf-8')
+
+if brand_heatmap:
+    top3_brands = ' · '.join(list(brand_heatmap.keys())[:3])
+    (stats_dir / 'brands.json').write_text(
+        badge('top targets', top3_brands, '6e40c9'), encoding='utf-8')
 
 print(f"Done: {len(all_domains):,} domains | ${total_revenue:,.2f} est. revenue | {avg_lifetime}d avg | today: {today_count:,} | deployed: {deploy_rate:.0f}% | >1yr: {pct_gt1}% | >2yr: {pct_gt2}% | fresh: {fresh_pct}%")
