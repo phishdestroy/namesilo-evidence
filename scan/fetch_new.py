@@ -57,11 +57,12 @@ all_domains = set()
 for row in reader:
     if len(row) < 3:
         continue
-    domain      = row[1].strip().lower()
-    reg_date    = row[2].strip()
-    expiring_at = row[3].strip() if len(row) > 3 else ''
-    emails_raw  = row[5].strip() if len(row) > 5 else ''
-    phones_raw  = row[6].strip() if len(row) > 6 else ''
+    domain         = row[1].strip().lower()
+    reg_date       = row[2].strip()
+    expiring_at    = row[3].strip() if len(row) > 3 else ''
+    majestic_rank  = row[4].strip() if len(row) > 4 else ''
+    emails_raw     = row[5].strip() if len(row) > 5 else ''
+    phones_raw     = row[6].strip() if len(row) > 6 else ''
     ip          = row[7].strip() if len(row) > 7 else ''
     ip_country  = row[8].strip() if len(row) > 8 else ''
 
@@ -71,6 +72,7 @@ for row in reader:
         by_date[reg_date].append({
             'd': domain,
             'e': expiring_at,
+            'r': majestic_rank,
             'm': emails_raw,
             'p': phones_raw,
             'i': ip,
@@ -246,6 +248,47 @@ for domain in all_domains:
 
 brand_heatmap = dict(keyword_counts.most_common(20))
 
+# ── Majestic rank: % of unknown/new domains ────────────────────────────────────
+ranked_count   = sum(1 for records in by_date.values() for r in records if r.get('r','').strip() not in ('','0'))
+unranked_count = len(all_domains) - ranked_count
+unranked_pct   = round(unranked_count / len(all_domains) * 100, 1) if all_domains else 0
+
+# ── Correlation with main destroylist ─────────────────────────────────────────
+correlation_count = 0
+correlation_pct   = 0.0
+try:
+    _ml_req = urllib.request.Request(
+        'https://raw.githubusercontent.com/phishdestroy/destroylist/main/list.txt',
+        headers={'User-Agent': 'PhishDestroy/2.0'})
+    with urllib.request.urlopen(_ml_req, timeout=30) as _ml_resp:
+        _main_domains = set(_ml_resp.read().decode('utf-8', errors='replace').strip().splitlines())
+    _overlap = all_domains & _main_domains
+    correlation_count = len(_overlap)
+    correlation_pct   = round(correlation_count / len(all_domains) * 100, 1) if all_domains else 0
+    print(f"Correlation: {correlation_count:,} of {len(all_domains):,} domains in main blocklist ({correlation_pct}%)")
+except Exception as _ce:
+    print(f"Correlation fetch failed: {_ce}")
+
+# ── Monthly snapshot ───────────────────────────────────────────────────────────
+_snap_dir = Path('data/snapshots')
+_snap_dir.mkdir(exist_ok=True)
+_monthly_snap = {
+    'month':              TODAY[:7],
+    'generated':          TODAY,
+    'total_domains':      len(all_domains),
+    'total_revenue':      round(total_revenue, 2),
+    'avg_reg_days':       avg_lifetime,
+    'deployment_rate':    deploy_rate,
+    'fresh_pct':          fresh_pct,
+    'unranked_pct':       unranked_pct,
+    'correlation_pct':    correlation_pct,
+    'serial_registrants': serial_email_count,
+    'top_tld':            list(tld_stats.keys())[0] if tld_stats else '',
+    'top_country':        list(country_counts.keys())[0] if country_counts else '',
+    'top_brand':          list(brand_heatmap.keys())[0] if brand_heatmap else '',
+}
+(_snap_dir / f'{TODAY[:7]}.json').write_text(json.dumps(_monthly_snap, indent=2), encoding='utf-8')
+
 # ── Write daily TXT + JSON ────────────────────────────────────────────────────
 data_root = Path('data/new')
 for day_date in dates:
@@ -327,6 +370,10 @@ index = {
     'top_registrant_phones':  top_registrant_phones,
     'serial_email_count':     serial_email_count,
     'brand_heatmap':          brand_heatmap,
+    'unranked_pct':           unranked_pct,
+    'ranked_count':           ranked_count,
+    'correlation_count':      correlation_count,
+    'correlation_pct':        correlation_pct,
     'last_updated':           dates[-1],
 }
 Path('data/index.json').write_text(json.dumps(index, indent=2) + '\n', encoding='utf-8')
@@ -448,5 +495,12 @@ if brand_heatmap:
     top3_brands = ' · '.join(list(brand_heatmap.keys())[:3])
     (stats_dir / 'brands.json').write_text(
         badge('top targets', top3_brands, '6e40c9'), encoding='utf-8')
+
+(stats_dir / 'unranked.json').write_text(
+    badge('unranked domains', f'{unranked_pct}% zero Majestic', '6e40c9'), encoding='utf-8')
+
+if correlation_count:
+    (stats_dir / 'correlation.json').write_text(
+        badge('in blocklist', f'{correlation_pct}% confirmed phishing', '2ea44f'), encoding='utf-8')
 
 print(f"Done: {len(all_domains):,} domains | ${total_revenue:,.2f} est. revenue | {avg_lifetime}d avg | today: {today_count:,} | deployed: {deploy_rate:.0f}% | >1yr: {pct_gt1}% | >2yr: {pct_gt2}% | fresh: {fresh_pct}%")
