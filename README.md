@@ -1,5 +1,88 @@
 <!-- LIVE_STATS:START -->
-> 🔴 **LIVE INVESTIGATION FEED** — populating after first workflow run.
+
+> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-06-21`
+
+<table><tr>
+<td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,253,059</code></sub></td>
+<td align="center"><b>💰 Est. revenue</b><br/><sub><code>$36,822,157</code></sub></td>
+<td align="center"><b>📡 Deployed</b><br/><sub><code>61.6%</code></sub></td>
+<td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>0.1%</code> (3,738)</sub></td>
+<td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>0.5%</code></sub></td>
+<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,337</code></sub></td>
+</tr></table>
+
+### 🏷️ Top TLD Zones
+
+| TLD | Count | Avg Reg Period | Est. Revenue |
+|:--|--:|--:|--:|
+| `.com` | 2,241,277 | 1,931d | $20,149,080 |
+| `.sbs` | 377,438 | 625d | $1,883,416 |
+| `.xyz` | 368,541 | 738d | $549,126 |
+| `.net` | 248,694 | 1,590d | $2,484,453 |
+| `.cfd` | 227,415 | 659d | $1,134,801 |
+| `.info` | 226,765 | 682d | $904,792 |
+| `.org` | 225,127 | 1,543d | $2,249,019 |
+| `.click` | 100,033 | 516d | $399,132 |
+| `.link` | 69,499 | 622d | $277,301 |
+| `.vip` | 68,225 | 605d | $340,443 |
+
+### 🌍 Top Hosting Countries
+
+```
+US  ██████████████████    965,418 (45.3%)
+DE  ██████████░░░░░░░░    578,954 (27.1%)
+SG  █░░░░░░░░░░░░░░░░░     79,564 (3.7%)
+HK  █░░░░░░░░░░░░░░░░░     74,421 (3.5%)
+NL  █░░░░░░░░░░░░░░░░░     70,729 (3.3%)
+CA  █░░░░░░░░░░░░░░░░░     60,227 (2.8%)
+GB  ░░░░░░░░░░░░░░░░░░     44,556 (2.1%)
+BG  ░░░░░░░░░░░░░░░░░░     23,187 (1.1%)
+```
+
+### 📈 Registration Burst Days
+
+| Date | Domains | × Average |
+|:--|--:|--:|
+| `2025-07-19` | 17,180 | **37.0×** 🚨 |
+| `2025-12-01` | 14,198 | **30.6×** 🚨 |
+| `2026-06-09` | 12,367 | **26.6×** 🚨 |
+| `2025-12-08` | 12,171 | **26.2×** 🚨 |
+| `2025-12-11` | 12,121 | **26.1×** 🚨 |
+
+### 🎯 Top Targeted Brands & Keywords
+
+`login (10,873)` &middot; `support (6,530)` &middot; `crypto (6,251)` &middot; `secure (6,150)` &middot; `trust (5,904)` &middot; `connect (5,711)` &middot; `account (4,098)` &middot; `official (4,046)` &middot; `farm (3,424)` &middot; `claim (3,365)` &middot; `update (3,107)` &middot; `bridge (3,011)` &middot; `wallet (2,314)` &middot; `vault (2,287)` &middot; `token (2,081)`
+
+### 🕵️ Top Serial Registrants — 50 emails with ≥5 domains
+
+| # | Registrant Email (redacted) | Domains |
+|--:|:--|--:|
+| 1 | `chi***@mail.com` | **10,331** |
+| 2 | `ser***@atom.com` | **4,193** |
+| 3 | `diz***@992fun.com` | **4,191** |
+| 4 | `inf***@brandbucket.com` | **1,859** |
+| 5 | `sal***@brandbucket.com` | **1,859** |
+| 6 | `shu***@outlook.com` | **1,638** |
+| 7 | `sha***@126.com` | **1,576** |
+| 8 | `jac***@greensock.com` | **1,125** |
+| 9 | `pri***@gmail.com` | **951** |
+| 10 | `pun***@gmail.com` | **898** |
+
+### 📥 Download Threat Intelligence
+
+| File | Format | Description |
+|:--|:--:|:--|
+| [`data/all.txt`](data/all.txt) | TXT | All tracked domains |
+| [`data/index.json`](data/index.json) | JSON | Full analytics snapshot |
+| [`data/ioc/serial_registrants.json`](data/ioc/serial_registrants.json) | JSON | Repeat registrants + their domains |
+| [`data/ioc/shared_ips.json`](data/ioc/shared_ips.json) | JSON | Bulletproof hosting clusters |
+| [`data/ioc/brand_domains.json`](data/ioc/brand_domains.json) | JSON | Domains by targeted brand |
+| [`data/ioc/stix-bundle.json`](data/ioc/stix-bundle.json) | STIX 2.1 | MISP/OpenCTI ready bundle |
+| [`data/ioc/serial_emails.txt`](data/ioc/serial_emails.txt) | TXT | grep-friendly: `email⇥count` |
+| [`data/ioc/shared_ips.txt`](data/ioc/shared_ips.txt) | TXT | grep-friendly: `ip⇥count⇥country` |
+
+> 📊 Live web dashboard: see Pages link at top · Updated daily 06:00 UTC
+
 <!-- LIVE_STATS:END -->
 
 <div align="center">
