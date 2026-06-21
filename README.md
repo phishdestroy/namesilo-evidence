@@ -63,6 +63,9 @@ All of it is in the record. All of it makes this louder.<br/><br/>
 ![](https://img.shields.io/badge/Server_Cluster-328%2C230_domains-da3633?style=flat-square&labelColor=0d1117)
 ![](https://img.shields.io/badge/Trustpilot_Reviews_Deleted-129-da3633?style=flat-square&labelColor=0d1117)
 [![New Today](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/today.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence/tree/main/data/new) [![Collected](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/total.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence/blob/main/data/all.txt) [![Last Fetch](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/last_fetch.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence/actions)
+[![Revenue](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/revenue.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
+[![Avg Period](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/lifetime.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
+[![Top Hosting](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/hosting.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
 
 </div>
 
