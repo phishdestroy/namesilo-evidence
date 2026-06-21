@@ -1,4 +1,3 @@
-
 <div align="center">
 <img src="https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/docs/assets/banner.gif" width="100%"/>
 </div>
@@ -7,14 +6,6 @@
 NameSilo, LLC (IANA #1479) — Registrar Abuse Investigation
 Keywords: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, icann-compliance, phishdestroy
 -->
-
-<div align="center">
-
-<br/>
-
-<br/>
-
----
 
 <h3 align="center">You made this investigation necessary.<br/>Now you cannot make it disappear.</h3>
 
