@@ -1,5 +1,4 @@
 
-
 <div align="center">
 <img src="https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/docs/assets/banner.gif" width="100%"/>
 </div>
@@ -26,10 +25,10 @@ Keywords: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, ica
 <p align="center">
 <b>NameSilo (NASDAQ: URL)</b> — a publicly traded registrar with a 32.2% dead domain rate,<br/>
 a ten-year fraud under active protection, and a documented pattern of suppressing<br/>
-the researchers who exposed it.<br/><br/>
+the researchers who exposed it.<br/>
 Every takedown. Every lawyer. Every deleted tweet.<br/>
-All of it is in the record. All of it makes this louder.<br/><br/>
-<b>PhishDestroy is a Hydra. You already pulled the first head.</b><br/><br/>
+All of it is in the record. All of it makes this louder.<br/>
+<b>PhishDestroy is a Hydra. You already pulled the first head.</b><br/>
 <b>Pedigreeless Russian dogs can write reviews about themselves and buy articles about themselves in the third person.</b>
 </p>
 
@@ -38,8 +37,8 @@ All of it is in the record. All of it makes this louder.<br/><br/>
   <summary>Spoiler</summary>
   <p>
     <img src="Woof-woof.png" alt="Woof-woof" />
-    <br/><br/>
-    <b>It is quite baffling that the 'fastest-growing registrar in the world' appears entirely unaware of Section 3.18 of the ICANN Registrar Accreditation Agreement (RAA) and its explicit requirements.
+    <br/>
+<b>It is quite baffling that the 'fastest-growing registrar in the world' appears entirely unaware of Section 3.18 of the ICANN Registrar Accreditation Agreement (RAA) and its explicit requirements.
     There is no need to lie. Previously, you claimed to have conducted an investigation and inexplicably offered to help clear VirusTotal detections for the operator. Now you are either distorting the facts, or you have finally realized that managing malware detections is entirely outside your jurisdiction.
     Either way, you are missing the point. I assure you, I fully understand the legal rights of users and the strict obligations of registrars. A service provider like NameSilo is obligated to take actionable steps against abuse—not to shield perpetrators, ignore reports, or mislead the public.
     This is not 2018, and this is no longer just an appeal to ICANN. Based on the factual evidence, I am now calling upon US law enforcement and regulatory authorities to investigate the individuals involved here, as the facts indicate direct complicity in organizing scams and other illicit activities within the United States.</b>
@@ -50,7 +49,6 @@ All of it is in the record. All of it makes this louder.<br/><br/>
 </div>
 
 ---
-
 
 <!-- LIVE_STATS:START -->
 
@@ -154,11 +152,6 @@ BG  ░░░░░░░░░░░░░░░░░░     23,187 (1.1%)
 ![](https://img.shields.io/badge/Malicious_PG-183%2C419-da3633?style=flat-square&labelColor=0d1117)
 ![](https://img.shields.io/badge/Server_Cluster-328%2C230_domains-da3633?style=flat-square&labelColor=0d1117)
 ![](https://img.shields.io/badge/Trustpilot_Reviews_Deleted-129-da3633?style=flat-square&labelColor=0d1117)
-[![New Today](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/today.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence/tree/main/data/new) [![Total](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/total.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence/blob/main/data/all.txt) [![Last Fetch](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/last_fetch.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence/actions) [![Confirmed](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/correlation.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence) [![Fresh Catch](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/freshness.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence)
-
-[![Est. Revenue](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/revenue.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence) [![Top $ TLD](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/top_tld_rev.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence) [![Avg Period](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/lifetime.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence) [![Long Reg](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/longreg.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence) [![Top TLDs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/tld_top.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence)
-
-[![Deployed](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/deployed.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence) [![No IP at Reg](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/no_ip.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence) [![Top Hosting](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/hosting.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence) [![Serial Regs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/serial_regs.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence) [![Top Targets](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/brands.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence) [![Unranked](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/unranked.json&style=flat-square&labelColor=0c1018)](https://github.com/phishdestroy/namesilo-evidence)
 
 </div>
 
