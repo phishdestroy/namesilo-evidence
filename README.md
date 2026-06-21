@@ -1,3 +1,7 @@
+<!-- LIVE_STATS:START -->
+> 🔴 **LIVE INVESTIGATION FEED** — populating after first workflow run.
+<!-- LIVE_STATS:END -->
+
 <div align="center">
 <img src="https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/docs/assets/banner.gif" width="100%"/>
 </div>
