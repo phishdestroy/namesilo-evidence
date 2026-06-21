@@ -70,6 +70,10 @@ All of it is in the record. All of it makes this louder.<br/><br/>
 [![Deployed](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/deployed.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
 [![Long Reg](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/longreg.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
 [![Top TLDs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/tld_top.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
+[![Top $ TLD](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/top_tld_rev.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
+[![Fresh Catch](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/freshness.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
+[![Serial Regs](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/serial_regs.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
+[![Top Targets](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/stats/brands.json&style=flat-square)](https://github.com/phishdestroy/namesilo-evidence)
 
 </div>
 
