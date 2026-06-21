@@ -21,11 +21,54 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Verify NETAPI_TOKEN secret
+        env:
+          NETAPI_TOKEN: ${{ secrets.NETAPI_TOKEN }}
+        run: |
+          if [ -z "$NETAPI_TOKEN" ]; then
+            echo "::error::NETAPI_TOKEN secret is not configured for this repo"
+            exit 1
+          fi
+          echo "✓ NETAPI_TOKEN present (${#NETAPI_TOKEN} chars)"
+
       - name: Fetch new domains
         env:
           REGISTRAR_ID: "1479"
           NETAPI_TOKEN: ${{ secrets.NETAPI_TOKEN }}
         run: python scan/fetch_new.py
+
+      - name: Health check generated files
+        run: |
+          REQUIRED=(
+            data/index.json
+            stats/today.json
+            stats/total.json
+            stats/last_fetch.json
+            stats/revenue.json
+            stats/lifetime.json
+          )
+          MISSING=0
+          for f in "${REQUIRED[@]}"; do
+            if [ ! -f "$f" ]; then
+              echo "::warning::missing $f"
+              MISSING=$((MISSING+1))
+            else
+              if ! python -c "import json,sys; json.load(open('$f'))" 2>/dev/null; then
+                echo "::error::invalid JSON in $f"
+                exit 1
+              fi
+            fi
+          done
+          echo "Generated stats/*.json files:"
+          ls -la stats/ 2>/dev/null || true
+          echo "Generated data/ioc/ files:"
+          ls -la data/ioc/ 2>/dev/null || true
+          echo "Monthly snapshot:"
+          ls -la data/snapshots/ 2>/dev/null || true
+          if [ "$MISSING" -gt 3 ]; then
+            echo "::error::too many missing files ($MISSING) — fetch likely failed"
+            exit 1
+          fi
 
       - name: Commit and push
         run: |
