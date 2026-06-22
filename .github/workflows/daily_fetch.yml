@@ -93,6 +93,8 @@ jobs:
           git commit -m "daily fetch: $(date -u +%Y-%m-%d) — +${NEW_COUNT} new | latest: ${LATEST} | total: ${AFTER} [skip ci]"
           for i in 1 2 3; do
             git pull --rebase -X theirs origin main && git push && exit 0
+            sleep $((i * 5))
+          done
 
       - name: Mirror to Codeberg
         env:
@@ -101,7 +103,8 @@ jobs:
           if [ -z "$CODEBERG_TOKEN" ]; then echo "No CODEBERG_TOKEN, skip mirror"; exit 0; fi
           REPO_NAME="${GITHUB_REPOSITORY##*/}"
           BRANCH="${GITHUB_REF_NAME}"
-          git remote add codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git 2>/dev/null ||             git remote set-url codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git
+          git remote add codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git 2>/dev/null || \
+            git remote set-url codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git
           if git ls-remote codeberg HEAD 2>/dev/null | grep -q HEAD; then
             echo "Codeberg has history, shallow push"
             git push codeberg HEAD:${BRANCH} --force || echo "Mirror push failed, continuing"
@@ -110,7 +113,4 @@ jobs:
             git fetch --unshallow 2>/dev/null || true
             git push codeberg HEAD:${BRANCH} --force || echo "Mirror push failed, continuing"
           fi
-
-            sleep $((i * 5))
-          done
           exit 1
