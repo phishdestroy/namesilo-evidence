@@ -37,6 +37,13 @@ jobs:
           NETAPI_TOKEN: ${{ secrets.NETAPI_TOKEN }}
         run: python scan/fetch_new.py
 
+
+      - name: Build IOC feeds
+        env:
+          REGISTRAR_ID: ${{ secrets.REGISTRAR_ID }}
+          NETAPI_TOKEN: ${{ secrets.NETAPI_TOKEN }}
+        run: python scan/build_ioc_simple.py
+
       - name: Health check generated files
         run: |
           REQUIRED=(
