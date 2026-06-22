@@ -146,6 +146,40 @@ BG  ░░░░░░░░░░░░░░░░░░     23,162 (1.1%)
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
+
+## 🕸️ Network of Complicit Registrars
+
+This investigation is part of a series documenting ICANN-accredited registrars that systematically obstruct anti-phishing enforcement or directly profit from fraud infrastructure.
+
+| # | Registrar | IANA | Zone | Confirmed Malicious | Russian Connection | Investigation |
+|--|--|--|--|--|--|--|
+| 1 | **NICENIC INTERNATIONAL GROUP** | #3765 | 349,376 | **18,927 (50% of alive)** | 🇷🇺 #2 hosting country (8.5%) | [nicenic-evidence](https://github.com/phishdestroy/nicenic-evidence) · [Live Report](https://phishdestroy.github.io/nicenic-evidence/) |
+| 2 | **Trustname.com / Fewmoretaps ÖÜ** | #4318 | 9,343 | **1,114 HIGH (86% alive)** | 🇷🇺 Russian-operated, Estonian shell | [trustname-evidence](https://github.com/phishdestroy/trustname-evidence) · [Live Report](https://phishdestroy.github.io/trustname-evidence/) |
+| 3 | **NameSilo, LLC** *(this)* | #1479 | 5,251,494 | **183,419** | 🇷🇺 Russian team members, suppression campaign | [namesilo-evidence](https://github.com/phishdestroy/namesilo-evidence) · [Live Report](https://phishdestroy.github.io/namesilo-evidence/) |
+
+---
+
+## 🇷🇺 Russian Connection & Complicity Record
+
+### Russian Presence
+
+NameSilo (NASDAQ: URL) is a US-registered company, but the operational response to researcher reports reveals **Russian-connected team involvement**. When PhishDestroy filed documented abuse reports on xmrwallet[.]com — a Monero wallet drainer with $10–20M in confirmed victim losses operating continuously since ~2016 — NameSilo’s internal response was to **offer to help clear VirusTotal detections** for the fraud operator rather than suspend the domain.
+
+NameSilo’s **PrivacyGuardian** privacy-shield service covers hundreds of thousands of domains. Analysis of PrivacyGuardian-shielded domains reveals systematic use by Russian-speaking fraud networks, crypto-drainer operators, and carding infrastructure — with NameSilo providing identity cover unavailable under ICANN’s WHOIS accuracy requirements.
+
+### Documented Obstruction
+
+- **Offered to clear VirusTotal detections** for xmrwallet[.]com operator instead of suspending the domain — direct operational assistance to an active fraud campaign.
+- **Blacklisted researchers** who filed abuse reports, cutting off future reporting channels.
+- **Suppressed media coverage** — coordinated deletion of tweets, articles, and references documenting NameSilo’s complicity.
+- **108,000 pages deindexed from Bing** in a documented suppression campaign targeting coverage of this investigation.
+- Abuse reports with full evidence packages — wallet addresses, victim transaction hashes, phishing kit source, live domain screenshots — **met with inaction or active interference.**
+- As a NASDAQ-listed company, NameSilo’s knowing failure to act on documented fraud infrastructure creates **potential securities and regulatory exposure.**
+- Direct requests with evidence: **ignored, delayed, or actively countered.**
+
+> *"NameSilo didn’t just ignore the report. They offered to help the fraudster. That is no longer a compliance failure — it is complicity."*
+
+
 ## Why NameSilo Earned This Investigation
 
 > *They didn't end up here because we were looking for them.*
