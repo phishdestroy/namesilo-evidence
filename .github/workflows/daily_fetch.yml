@@ -93,6 +93,15 @@ jobs:
           git commit -m "daily fetch: $(date -u +%Y-%m-%d) — +${NEW_COUNT} new | latest: ${LATEST} | total: ${AFTER} [skip ci]"
           for i in 1 2 3; do
             git pull --rebase -X theirs origin main && git push && exit 0
+
+      - name: Mirror to Codeberg
+        env:
+          CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
+        run: |
+          if [ -z "$CODEBERG_TOKEN" ]; then echo "No CODEBERG_TOKEN, skip mirror"; exit 0; fi
+          git remote add codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${GITHUB_REPOSITORY##*/}.git 2>/dev/null || true
+          git push codeberg HEAD:${{ github.ref_name }} --force || echo "Mirror push failed, continuing"
+
             sleep $((i * 5))
           done
           exit 1
