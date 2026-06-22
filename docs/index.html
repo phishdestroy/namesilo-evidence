@@ -1558,7 +1558,60 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
         <span style="font-size:11px;font-family:monospace;font-weight:700;padding:5px 12px;border:1px solid rgba(192,160,96,.3);border-radius:4px;color:var(--or);background:rgba(192,160,96,.06)">Threat Intel Teams</span>
       </div>
 
-      <!-- receipt quote -->
+      
+      <!-- one domain trick -->
+      <div style="background:var(--s2);border:1px solid var(--bdr);border-radius:7px;padding:16px 18px;margin-bottom:20px">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);font-family:monospace;margin-bottom:10px">One Domain Suspended Is Not Enforcement</div>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2);margin-bottom:10px">
+          There is a measurable difference between registrars that treat abuse as a
+          <strong style="color:var(--tx)">compliance checkbox</strong> and those that treat it as a
+          <strong style="color:var(--tx)">business policy</strong>.
+          Responsible registrars — the ones that do not want fraud operators as clients —
+          respond to a confirmed abuse report by <strong style="color:var(--gn)">suspending the entire account</strong>:
+          every domain registered by that operator, in one action.
+          They have seen the account. They know what it is.
+        </p>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2);margin-bottom:10px">
+          The registrars documented in this investigation respond differently.
+          A complaint arrives. One domain — the reported one — may eventually be suspended.
+          The other 200, 500, or 1,000 domains on the same account
+          <strong style="color:#da3633">continue operating.</strong>
+          The operator registers new ones the same day.
+          The registrar has seen the pattern. They have chosen to look away.
+        </p>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2);margin-bottom:10px">
+          KYC and reseller vetting requirements exist on paper.
+          In practice they are either absent or trivially bypassed —
+          a formality that provides legal cover without creating any actual barrier
+          to a fraud operator opening an account and registering domains at scale.
+          Our non-public investigation into registrar intake processes, conducted prior to this report,
+          found no meaningful friction at the account-creation stage for the registrars examined here.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px">
+          <div style="background:rgba(63,185,80,.06);border:1px solid rgba(63,185,80,.2);border-radius:5px;padding:10px 14px">
+            <div style="font-size:9px;font-weight:700;letter-spacing:.08em;color:var(--gn);font-family:monospace;margin-bottom:6px;text-transform:uppercase">Responsible registrar</div>
+            <ul style="font-size:11px;color:var(--tx2);line-height:1.9;padding-left:14px;margin:0">
+              <li>Abuse report received</li>
+              <li>Account reviewed — pattern identified</li>
+              <li><strong style="color:var(--gn)">Entire account suspended</strong></li>
+              <li>All domains on account killed</li>
+              <li>Operator loses infrastructure</li>
+            </ul>
+          </div>
+          <div style="background:rgba(218,54,51,.06);border:1px solid rgba(218,54,51,.2);border-radius:5px;padding:10px 14px">
+            <div style="font-size:9px;font-weight:700;letter-spacing:.08em;color:#da3633;font-family:monospace;margin-bottom:6px;text-transform:uppercase">Complicit registrar</div>
+            <ul style="font-size:11px;color:var(--tx2);line-height:1.9;padding-left:14px;margin:0">
+              <li>Abuse report received (maybe)</li>
+              <li>Account reviewed — pattern ignored</li>
+              <li><strong style="color:#da3633">One domain suspended</strong></li>
+              <li>499 domains continue operating</li>
+              <li>Operator registers replacements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+<!-- receipt quote -->
       <div style="background:rgba(110,168,215,.06);border:1px solid rgba(110,168,215,.2);border-radius:6px;padding:14px 18px">
         <p style="font-size:14px;font-weight:700;color:var(--cy);font-family:monospace;margin-bottom:4px">Every domain in this dataset is a receipt.</p>
         <p style="font-size:11px;color:var(--tx3)">The receipt exists whether the registrar acknowledges the transaction or not.</p>
