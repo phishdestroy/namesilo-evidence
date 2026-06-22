@@ -82,7 +82,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           BEFORE=$(wc -l < data/all.txt 2>/dev/null || echo 0)
-          git add data/ stats/ README.md
+          git add data/ stats/ ioc/ README.md
           if git diff --staged --quiet; then
             echo "No changes"
             exit 0
