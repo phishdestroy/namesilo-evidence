@@ -356,6 +356,8 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--bdr);display:
       <div><div style="font-size:2.2rem;font-weight:800;color:var(--rd);line-height:1">183,419</div><div style="font-size:11px;opacity:.5;text-transform:uppercase;letter-spacing:.06em;margin-top:2px">Malicious (PG-shielded)</div></div>
       <div><div style="font-size:2.2rem;font-weight:800;color:var(--or);line-height:1">$10–20M</div><div style="font-size:11px;opacity:.5;text-transform:uppercase;letter-spacing:.06em;margin-top:2px">Estimated victim losses</div></div>
       <div><div style="font-size:2.2rem;font-weight:800;color:var(--or);line-height:1">20+</div><div style="font-size:11px;opacity:.5;text-transform:uppercase;letter-spacing:.06em;margin-top:2px">Abuse reports — ignored</div></div>
+
+  <div id="hero-live" style="display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.06)"></div>
     </div>
   </div>
 </div>
@@ -1674,5 +1676,29 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
 </div>
 <!-- /PHISHDESTROY MANIFESTO -->
 
+<script>
+(function(){
+  function waitCD(cb){if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}setTimeout(function(){waitCD(cb);},300);}
+  waitCD(function(d){
+    var el=document.getElementById("hero-live");if(!el)return;
+    function stat(val,label,color,live){
+      var w=document.createElement("div");w.setAttribute("style","display:flex;flex-direction:column;gap:2px");
+      var top=document.createElement("div");top.setAttribute("style","display:flex;align-items:baseline;gap:6px");
+      var n=document.createElement("span");n.setAttribute("style","font-size:1.6rem;font-weight:800;color:var(--"+color+");line-height:1");n.textContent=val;top.appendChild(n);
+      if(live){var dot=document.createElement("span");dot.setAttribute("style","font-size:9px;font-weight:700;color:var(--gn);border:1px solid rgba(63,185,80,.3);padding:1px 5px;border-radius:3px;font-family:monospace;animation:blink 2s step-end infinite");dot.textContent="LIVE";top.appendChild(dot);}
+      var l=document.createElement("div");l.setAttribute("style","font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3)");l.textContent=label;
+      w.appendChild(top);w.appendChild(l);return w;
+    }
+    el.appendChild(stat((d.total_new_all_time||0).toLocaleString(),"Total registered","cy",true));
+    el.appendChild(stat("$"+Math.round(d.total_revenue_estimate||0).toLocaleString(),"Est. revenue","gn",true));
+    el.appendChild(stat((d.deployment_rate||0)+"%","Deployment rate","or",false));
+    el.appendChild(stat((d.serial_email_count||0).toLocaleString(),"Serial registrants","rd",false));
+    var ud=document.createElement("div");ud.setAttribute("style","display:flex;flex-direction:column;gap:2px;justify-content:center;margin-left:8px;padding-left:12px;border-left:1px solid rgba(255,255,255,.06)");
+    var ul=document.createElement("div");ul.setAttribute("style","font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3)");ul.textContent="Last updated";
+    var uv=document.createElement("div");uv.setAttribute("style","font-size:12px;font-family:monospace;color:var(--tx2)");uv.textContent=d.last_updated||"--";
+    ud.appendChild(ul);ud.appendChild(uv);el.appendChild(ud);
+  });
+})();
+</script>
 </body>
 </html>
