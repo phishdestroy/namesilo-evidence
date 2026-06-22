@@ -591,7 +591,7 @@ document.querySelectorAll(".reveal").forEach(function(el){_ro.observe(el);});
 <script>
 var _ci=null,_cd=null,_v='daily';
 var _RAW='https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/data/index.json';
-fetch(_RAW+'?t='+Date.now()).then(function(r){return r.json();}).then(function(d){_cd=d;_rc('daily');}).catch(function(){document.getElementById('chart-wrap').style.display='none';});
+fetch(_RAW+'?t='+Date.now()).then(function(r){return r.json();}).then(function(d){_cd=d;window._chartData=d;_rc('daily');}).catch(function(){document.getElementById('chart-wrap').style.display='none';});
 function showView(v){_v=v;['daily','monthly'].forEach(function(x){var b=document.getElementById('btn-'+x),a=x===v;b.style.background=a?'rgba(110,168,215,.1)':'transparent';b.style.color=a?'var(--cy)':'var(--tx3)';b.style.borderColor=a?'rgba(110,168,215,.4)':'var(--bdr)';});if(_cd)_rc(v);}
 function _rc(view){var days=_cd.days||[],labels,counts,paths;
 if(view==='monthly'){var mb={};days.forEach(function(d){var m=d.date.slice(0,7);mb[m]=(mb[m]||0)+d.count;});var months=Object.keys(mb).sort();labels=months;counts=months.map(function(m){return mb[m];});paths=null;}
