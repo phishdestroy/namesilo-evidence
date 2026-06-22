@@ -74,13 +74,16 @@ jobs:
         run: |
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
+          BEFORE=$(wc -l < data/all.txt 2>/dev/null || echo 0)
           git add data/ stats/ README.md
           if git diff --staged --quiet; then
             echo "No changes"
             exit 0
           fi
-          COUNT=$(TODAY=$(date -u +%Y-%m-%d); wc -l < data/new/${TODAY:0:4}/${TODAY:5:2}/${TODAY}.txt 2>/dev/null || echo 0)
-          git commit -m "daily fetch: $(date -u +%Y-%m-%d) — ${COUNT} new domains [skip ci]"
+          AFTER=$(wc -l < data/all.txt 2>/dev/null || echo 0)
+          NEW_COUNT=$((AFTER - BEFORE))
+          LATEST=$(ls data/new/$(date -u +%Y)/$(date -u +%m)/*.txt 2>/dev/null | tail -1 | xargs -I{} basename {} .txt || echo "unknown")
+          git commit -m "daily fetch: $(date -u +%Y-%m-%d) — +${NEW_COUNT} new | latest: ${LATEST} | total: ${AFTER} [skip ci]"
           for i in 1 2 3; do
             git pull --rebase -X theirs origin main && git push && exit 0
             sleep $((i * 5))
