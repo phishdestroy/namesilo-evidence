@@ -161,12 +161,31 @@ This investigation is part of a series documenting ICANN-accredited registrars t
 
 ## 🇷🇺 Russian Connection & Complicity Record
 
-### Russian Presence
+### Russian Presence — The Team Behind the "American" Registrar
 
-NameSilo (NASDAQ: URL) is a US-registered company, but the operational response to researcher reports reveals **Russian-connected team involvement**. When PhishDestroy filed documented abuse reports on xmrwallet[.]com — a Monero wallet drainer with $10–20M in confirmed victim losses operating continuously since ~2016 — NameSilo’s internal response was to **offer to help clear VirusTotal detections** for the fraud operator rather than suspend the domain.
+NameSilo LLC is registered in Phoenix, Arizona. NameSilo Technologies Corp is listed on the Canadian Securities Exchange (CSE: BZI via Brisio Innovations). But the **actual engineering team is a Russian/CIS outsourcing operation** spread across Russia, Belarus, Ukraine, Serbia, Argentina, and Latvia. At least **13+ Russian-speaking employees** have been identified in the current and recent team:
 
-NameSilo’s **PrivacyGuardian** privacy-shield service covers hundreds of thousands of domains. Analysis of PrivacyGuardian-shielded domains reveals systematic use by Russian-speaking fraud networks, crypto-drainer operators, and carding infrastructure — with NameSilo providing identity cover unavailable under ICANN’s WHOIS accuracy requirements.
+| Person | Role | Location | Previous Employment |
+|--|--|--|--|
+| 🚨 **Mikhail Chudinov** | DevOps — *full infrastructure access* | Argentina (crypto relocation) | **Head of IT at SuperKopilka** (Russian financial pyramid, collapsed 2017, ~10 years tenure); COO at AtomX.online (crypto); Poker Club Manager |
+| 🇷🇺 **Ivan Borzenkov** | PHP Backend Developer | Bryansk, Russia (+7 920 602-0…) | TrafficStars (adult/affiliate ad network, grey adtech, Latvia); Skyeng; AdMe.ru |
+| 🇷🇺 **Vladimir Voskov** | Project Development Manager | Moscow, Russia | Zyfra Company (Russian industrial automation, state contracts); АНО Ассоциация участников технологических кружков |
+| 🇷🇸 **Tatiana Labutina** | Senior Project Manager | Belgrade, Serbia (post-2022 Russian relocation hub) | ForexClub Libertex (Russian forex broker, regulatory scandals); Social Quantum (Russian gamedev, St. Petersburg); Avatarico |
+| 🇧🇾 **Aleksey Podashevskiy** | Frontend Developer | **Belarus** (sanctioned jurisdiction) | Working for a US registrar from a sanctioned country raises OFAC compliance questions |
+| 🇷🇺 **Konstantin Gorokhov** | Backend Developer | Miami, FL (relocated from Russia) | CS Specialist at NameSilo 2019–2021, promoted to backend |
+| 🇺🇦 **Volodymyr Pohodaiev** | Software Engineer | New York (relocated) | Adsimilate Marketing (affiliate marketing, grey area); FinditQuick.com |
 
+> The DevOps engineer who holds **keys to all NameSilo infrastructure** built IT systems for a Russian financial pyramid for 10 years. The PHP developer came from an adult ad network. Project managers sit in Moscow and Belgrade. The frontend developer works from **sanctioned Belarus**. This is not an American technology company. This is a CIS outsourcing operation with a US mailing address.
+
+**This explains everything:**
+- Why abuse reports are ignored — the team doing the ignoring shares the operator's language and culture
+- Why the suppression playbook matches Russian cybercrime patterns
+- Why a DMCA takedown request targeting coverage of xmrwallet was filed from Russia
+- Why 20+ complaints from international victims and security researchers produced zero action
+
+When you staff your "American registrar" with people whose previous jobs include financial pyramids, adult ad networks, and Russian state-connected companies — you get exactly the kind of registrar that protects a $100M+ phishing operation and calls it "customer service."
+
+NameSilo's **PrivacyGuardian** privacy-shield service covers hundreds of thousands of domains. Analysis of PrivacyGuardian-shielded domains reveals systematic use by Russian-speaking fraud networks, crypto-drainer operators, and carding infrastructure.
 ### Documented Obstruction
 
 - **Offered to clear VirusTotal detections** for xmrwallet[.]com operator instead of suspending the domain — direct operational assistance to an active fraud campaign.
