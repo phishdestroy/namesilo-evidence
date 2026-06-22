@@ -79,7 +79,7 @@ jobs:
             echo "No changes"
             exit 0
           fi
-          COUNT=$(wc -l < data/new/2026/06/2026-06-20.txt 2>/dev/null || echo 0)
+          COUNT=$(TODAY=$(date -u +%Y-%m-%d); wc -l < data/new/${TODAY:0:4}/${TODAY:5:2}/${TODAY}.txt 2>/dev/null || echo 0)
           git commit -m "daily fetch: $(date -u +%Y-%m-%d) — ${COUNT} new domains [skip ci]"
           for i in 1 2 3; do
             git pull --rebase -X theirs origin main && git push && exit 0
