@@ -80,7 +80,7 @@ jobs:
             exit 0
           fi
           COUNT=$(wc -l < data/new/2026/06/2026-06-20.txt 2>/dev/null || echo 0)
-          git commit -m "daily fetch: 2026-06-20 — ${COUNT} new domains [skip ci]"
+          git commit -m "daily fetch: $(date -u +%Y-%m-%d) — ${COUNT} new domains [skip ci]"
           for i in 1 2 3; do
             git pull --rebase -X theirs origin main && git push && exit 0
             sleep $((i * 5))
