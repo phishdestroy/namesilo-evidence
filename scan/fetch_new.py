@@ -68,17 +68,17 @@ for row in reader:
 
     if not domain or '.' not in domain:
         continue
-    if len(reg_date) == 10 and reg_date[:4].isdigit():
-        by_date[reg_date].append({
-            'd': domain,
-            'e': expiring_at,
-            'r': majestic_rank,
-            'm': emails_raw,
-            'p': phones_raw,
-            'i': ip,
-            'c': ip_country,
-        })
-        all_domains.add(domain)
+    effective_date = reg_date if (len(reg_date) == 10 and reg_date[:4].isdigit()) else TODAY
+    by_date[effective_date].append({
+        'd': domain,
+        'e': expiring_at,
+        'r': majestic_rank,
+        'm': emails_raw,
+        'p': phones_raw,
+        'i': ip,
+        'c': ip_country,
+    })
+    all_domains.add(domain)
 
 dates = sorted(by_date.keys())
 if not dates:
