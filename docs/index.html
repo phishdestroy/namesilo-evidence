@@ -578,9 +578,14 @@ document.querySelectorAll(".reveal").forEach(function(el){_ro.observe(el);});
 <div class="wrap" style="padding-top:32px;padding-bottom:0">
   <div class="sec"><h2>&#x1F4CA; Registration Activity</h2><div class="ln"></div></div>
   <p class="sec-sub" style="margin-bottom:20px">Daily and monthly new domain registrations. Click any bar to download that day&#8217;s list.</p>
-  <div style="display:flex;gap:8px;margin-bottom:20px">
+  <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;align-items:center">
     <button onclick="showView('daily')" id="btn-daily" style="font-size:11px;padding:5px 14px;border-radius:4px;border:1px solid rgba(110,168,215,.4);background:rgba(110,168,215,.1);color:var(--cy);cursor:pointer;font-weight:600">Daily</button>
     <button onclick="showView('monthly')" id="btn-monthly" style="font-size:11px;padding:5px 14px;border-radius:4px;border:1px solid var(--bdr);background:transparent;color:var(--tx3);cursor:pointer">Monthly</button>
+    <span style="display:inline-block;width:1px;height:18px;background:var(--bdr);margin:0 4px"></span>
+    <button onclick="showRange('1Y')" id="btn-1y" style="font-size:11px;padding:5px 12px;border-radius:4px;border:1px solid var(--bdr);background:transparent;color:var(--tx3);cursor:pointer">1Y</button>
+    <button onclick="showRange('3Y')" id="btn-3y" style="font-size:11px;padding:5px 12px;border-radius:4px;border:1px solid rgba(110,168,215,.4);background:rgba(110,168,215,.1);color:var(--cy);cursor:pointer;font-weight:600">3Y</button>
+    <button onclick="showRange('5Y')" id="btn-5y" style="font-size:11px;padding:5px 12px;border-radius:4px;border:1px solid var(--bdr);background:transparent;color:var(--tx3);cursor:pointer">5Y</button>
+    <button onclick="showRange('all')" id="btn-all" style="font-size:11px;padding:5px 12px;border-radius:4px;border:1px solid var(--bdr);background:transparent;color:var(--tx3);cursor:pointer">All</button>
   </div>
   <div id="chart-wrap" style="position:relative;height:180px;overflow:hidden">
     <canvas id="reg-chart" style="width:100%;height:180px"></canvas>
@@ -589,11 +594,12 @@ document.querySelectorAll(".reveal").forEach(function(el){_ro.observe(el);});
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script>
-var _ci=null,_cd=null,_v='daily';
+var _ci=null,_cd=null,_v='daily',_range='3Y';
 var _RAW='https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/data/index.json';
 fetch(_RAW+'?t='+Date.now()).then(function(r){return r.json();}).then(function(d){_cd=d;window._chartData=d;_rc('daily');}).catch(function(){document.getElementById('chart-wrap').style.display='none';});
 function showView(v){_v=v;['daily','monthly'].forEach(function(x){var b=document.getElementById('btn-'+x),a=x===v;b.style.background=a?'rgba(110,168,215,.1)':'transparent';b.style.color=a?'var(--cy)':'var(--tx3)';b.style.borderColor=a?'rgba(110,168,215,.4)':'var(--bdr)';});if(_cd)_rc(v);}
-function _rc(view){var days=_cd.days||[],labels,counts,paths;
+function showRange(r){_range=r;['1y','3y','5y','all'].forEach(function(x){var b=document.getElementById('btn-'+x);if(!b)return;var a=x===r.toLowerCase();b.style.background=a?'rgba(110,168,215,.1)':'transparent';b.style.color=a?'var(--cy)':'var(--tx3)';b.style.borderColor=a?'rgba(110,168,215,.4)':'var(--bdr)';b.style.fontWeight=a?'600':'400';});if(_cd)_rc(_v);}
+function _rc(view){var allDays=_cd.days||[];var days=allDays;if(_range!=='all'){var y=parseInt(_range);var co=new Date();co.setFullYear(co.getFullYear()-y);var cs=co.toISOString().slice(0,10);days=allDays.filter(function(d){return d.date>=cs;});}var labels,counts,paths;
 if(view==='monthly'){var mb={};days.forEach(function(d){var m=d.date.slice(0,7);mb[m]=(mb[m]||0)+d.count;});var months=Object.keys(mb).sort();labels=months;counts=months.map(function(m){return mb[m];});paths=null;}
 else{labels=days.map(function(d){return d.date;});counts=days.map(function(d){return d.count;});paths=days;}
 var mx=Math.max.apply(null,counts)||1;
