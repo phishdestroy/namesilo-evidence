@@ -81,14 +81,13 @@ jobs:
         run: |
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          BEFORE=$(git show HEAD:data/all.txt 2>/dev/null | wc -l || echo 0)
-          git add data/ stats/ ioc/ README.md
+                    git add data/ stats/ ioc/ README.md
           if git diff --staged --quiet; then
             echo "No changes"
             exit 0
           fi
           AFTER=$(wc -l < data/all.txt 2>/dev/null || echo 0)
-          NEW_COUNT=$((AFTER - BEFORE))
+          NEW_COUNT=$(comm -13 <(git show HEAD:data/all.txt 2>/dev/null || true) data/all.txt 2>/dev/null | wc -l || echo 0)
           LATEST=$(ls data/new/$(date -u +%Y)/$(date -u +%m)/*.txt 2>/dev/null | tail -1 | xargs -I{} basename {} .txt || echo "unknown")
           git commit -m "daily fetch: $(date -u +%Y-%m-%d) — +${NEW_COUNT} new | latest: ${LATEST} | total: ${AFTER} [skip ci]"
           for i in 1 2 3; do
