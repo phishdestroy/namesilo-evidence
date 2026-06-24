@@ -81,7 +81,7 @@ jobs:
         run: |
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          BEFORE=$(wc -l < data/all.txt 2>/dev/null || echo 0)
+          BEFORE=$(git show HEAD:data/all.txt 2>/dev/null | wc -l || echo 0)
           git add data/ stats/ ioc/ README.md
           if git diff --staged --quiet; then
             echo "No changes"
