@@ -39,14 +39,14 @@ All of it is in the record. All of it makes this louder.<br/>
 
 <!-- LIVE_STATS:START -->
 
-> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-06-25`
+> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-06-26`
 
 <table><tr>
 <td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,250,950</code></sub></td>
 <td align="center"><b>💰 Est. revenue</b><br/><sub><code>$36,919,185</code></sub></td>
 <td align="center"><b>📡 Deployed</b><br/><sub><code>61.5%</code></sub></td>
 <td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>0.1%</code> (3,802)</sub></td>
-<td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>0.7%</code></sub></td>
+<td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>0.5%</code></sub></td>
 <td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,342</code></sub></td>
 </tr></table>
 

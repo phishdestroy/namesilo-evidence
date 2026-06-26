@@ -68150,13 +68150,13 @@
     }
   },
   "catch_age_buckets": {
-    "same_day": 6,
-    "within_week": 35927,
-    "within_month": 166934,
-    "older": 5048083
+    "same_day": 0,
+    "within_week": 28389,
+    "within_month": 167974,
+    "older": 5054587
   },
-  "avg_catch_age_days": 5664,
-  "fresh_pct": 0.7,
+  "avg_catch_age_days": 5665,
+  "fresh_pct": 0.5,
   "burst_days": [
     {
       "date": "2025-07-19",
