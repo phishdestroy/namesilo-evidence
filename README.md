@@ -45,7 +45,7 @@ All of it is in the record. All of it makes this louder.<br/>
 <td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,251,413</code></sub></td>
 <td align="center"><b>💰 Est. revenue</b><br/><sub><code>$36,950,516</code></sub></td>
 <td align="center"><b>📡 Deployed</b><br/><sub><code>61.4%</code></sub></td>
-<td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>0.1%</code> (3,805)</sub></td>
+<td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>0.1%</code> (3,810)</sub></td>
 <td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>0.7%</code></sub></td>
 <td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,344</code></sub></td>
 </tr></table>
