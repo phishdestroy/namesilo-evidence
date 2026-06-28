@@ -299,8 +299,12 @@ for day_date in dates:
     records = by_date[day_date]
     domains = sorted(set(r['d'] for r in records))
 
-    # plain TXT
-    (day_dir / f'{day_date}.txt').write_text('\n'.join(domains) + '\n', encoding='utf-8')
+    # plain TXT — merge with existing to handle API lag (data trickles in over 48h)
+    existing_txt = day_dir / f'{day_date}.txt'
+    if existing_txt.exists():
+        existing = set(existing_txt.read_text(encoding='utf-8').splitlines())
+        domains = sorted(set(domains) | existing)
+    existing_txt.write_text('\n'.join(domains) + '\n', encoding='utf-8')
 
     # enriched JSON
     day_json = {
