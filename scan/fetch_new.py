@@ -634,7 +634,7 @@ if _readme_path.exists():
     _parts.append('| [`data/ioc/serial_emails.txt`](data/ioc/serial_emails.txt) | TXT | grep-friendly: `email⇥count` |')
     _parts.append('| [`data/ioc/shared_ips.txt`](data/ioc/shared_ips.txt) | TXT | grep-friendly: `ip⇥count⇥country` |')
     _parts.append('')
-    _parts.append('> 📊 Live web dashboard: see Pages link at top · Updated daily 06:00 UTC')
+    _parts.append('> 📊 Live web dashboard: see Pages link at top · Updated daily 02:00 UTC')
     _parts.append('')
     _parts.append('<!-- LIVE_STATS:END -->')
 
