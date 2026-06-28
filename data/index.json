@@ -68162,12 +68162,12 @@
     }
   },
   "catch_age_buckets": {
-    "same_day": 2,
-    "within_week": 38187,
-    "within_month": 166752,
-    "older": 5043630
+    "same_day": 0,
+    "within_week": 34618,
+    "within_month": 162727,
+    "older": 5051226
   },
-  "avg_catch_age_days": 5665,
+  "avg_catch_age_days": 5666,
   "fresh_pct": 0.7,
   "burst_days": [
     {
