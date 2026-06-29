@@ -39,14 +39,14 @@ All of it is in the record. All of it makes this louder.<br/>
 
 <!-- LIVE_STATS:START -->
 
-> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-06-28`
+> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-06-29`
 
 <table><tr>
 <td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,244,215</code></sub></td>
 <td align="center"><b>💰 Est. revenue</b><br/><sub><code>$36,932,856</code></sub></td>
 <td align="center"><b>📡 Deployed</b><br/><sub><code>61.5%</code></sub></td>
-<td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>0.1%</code> (3,823)</sub></td>
-<td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>0.7%</code></sub></td>
+<td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>0.1%</code> (3,831)</sub></td>
+<td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>0.6%</code></sub></td>
 <td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,340</code></sub></td>
 </tr></table>
 
@@ -120,7 +120,7 @@ BG  ░░░░░░░░░░░░░░░░░░     23,144 (1.1%)
 | [`data/ioc/serial_emails.txt`](data/ioc/serial_emails.txt) | TXT | grep-friendly: `email⇥count` |
 | [`data/ioc/shared_ips.txt`](data/ioc/shared_ips.txt) | TXT | grep-friendly: `ip⇥count⇥country` |
 
-> 📊 Live web dashboard: see Pages link at top · Updated daily 06:00 UTC
+> 📊 Live web dashboard: see Pages link at top · Updated daily 02:00 UTC
 
 <!-- LIVE_STATS:END -->
 
