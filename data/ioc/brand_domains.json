@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-30",
+  "generated": "2026-07-01",
   "keywords": {
     "login": [
       "0123winlogin.com",
@@ -501,7 +501,6 @@
       "aiworldwidecryptomonitors.com",
       "akashxcryptogoldbot.com",
       "alerts-crypto.com",
-      "alertsforcrypto.com",
       "alfa-crypto.com",
       "allaboutcryptoexchanges.com",
       "allcryptocasinos.online",
@@ -605,7 +604,8 @@
       "babybirdcrypto.org",
       "backend-crypto.com",
       "banatcrypto.com",
-      "bankcryptocentral.com"
+      "bankcryptocentral.com",
+      "bankerscrypto.com"
     ],
     "secure": [
       "01dellsecured.click",
@@ -1384,7 +1384,6 @@
       "account-kontrolle.online",
       "account-koppeling.xyz",
       "account-ld-help-support.xyz",
-      "account-ledger.com",
       "account-lnfomaps.life",
       "account-located.link",
       "account-locked-au-gjo.cyou",
@@ -1413,7 +1412,8 @@
       "account-mybell.net",
       "account-myfiix.com",
       "account-netffix.com",
-      "account-netflix.help"
+      "account-netflix.help",
+      "account-ntflx.help"
     ],
     "official": [
       "1-win-official.com",
@@ -1739,7 +1739,6 @@
       "apribetfarms.com",
       "aquafarmer.com",
       "aquagricofarmsng.com",
-      "arabainfarms.com",
       "arabiansfarm.com",
       "arakufarm.com",
       "aratfarm.com",
@@ -1817,7 +1816,8 @@
       "barneysfarmstore.com",
       "batongtradingandfarms.com",
       "battleofarmageddon.com",
-      "battleofarmagedon.com"
+      "battleofarmagedon.com",
+      "baxtteksfarm.com"
     ],
     "claim": [
       "0x0claims.com",
@@ -1967,7 +1967,6 @@
       "avalon-claim.com",
       "axieinfinity-claim.xyz",
       "axondaoclaim.xyz",
-      "babydoge-claim.com",
       "babydoge-claim.xyz",
       "babydoge-claims.xyz",
       "babygrok-claims.xyz",
@@ -2019,7 +2018,8 @@
       "blockfi-claims-pending.xyz",
       "blockfi-claims.org",
       "blockfi-claims.xyz",
-      "blockfi-kroll-claims.xyz"
+      "blockfi-kroll-claims.xyz",
+      "blockfikroll-bfiportal-claiming.xyz"
     ],
     "update": [
       "06updatelive.xyz",
@@ -2924,6 +2924,7 @@
       "ancillarytoken.com",
       "ancillarytokens.com",
       "anytoken.one",
+      "api-token.services",
       "api-tokenpoc.com",
       "api-tokens.com",
       "api2bptoken.com",
@@ -3004,7 +3005,6 @@
       "bibletokens.com",
       "bifurtoken.xyz",
       "bilibilitoken.xyz",
-      "billytoken.lol",
       "binance-token.com",
       "bingotoken.info",
       "biotokens.org",
@@ -3146,7 +3146,6 @@
       "anzverifyid.xyz",
       "ap-south-1-verify.link",
       "apeverify.xyz",
-      "apii-idmeverify.info",
       "appkeyverify.click",
       "appkeyverify.com",
       "appkeyverify.sbs",
@@ -3231,7 +3230,8 @@
       "bmologinverify.com",
       "bo2faverify-auth.help",
       "bo2faverify.info",
-      "boa-2faverify.help"
+      "boa-2faverify.help",
+      "boa-loginverify.help"
     ],
     "coinbase": [
       "0019-coinbase.com",
@@ -3368,7 +3368,6 @@
       "1876943-coinbase.com",
       "188201-coinbase.com",
       "18820coinbase.com",
-      "18925-coinbase.com",
       "189492-coinbase.com",
       "1896733-coinbase.com",
       "189747a-coinbase.com",
@@ -3433,7 +3432,8 @@
       "197695a-coinbase.com",
       "1978063-coinbase.com",
       "1984742-coinbase.com",
-      "1985702-coinbase.com"
+      "1985702-coinbase.com",
+      "1985762-coinbase.com"
     ],
     "nft": [
       "0nftmarketplaceinfo.com",
@@ -3899,6 +3899,7 @@
       "auntybitcoin.com",
       "autobitcoinsignals.com",
       "automatebitcoin.com",
+      "automatedbitcoinmachine.com",
       "avabitcoin.com",
       "bankersagainstbitcoin.org",
       "bbitcoin.com",
@@ -4010,7 +4011,6 @@
       "bitcoin-tumbler.com",
       "bitcoin-unlimited.com",
       "bitcoin-up.app",
-      "bitcoin-vista.com",
       "bitcoin-x.org",
       "bitcoin-xact.com",
       "bitcoin-xcel.com",
@@ -4026,7 +4026,6 @@
       "bitcoin100.net",
       "bitcoin1004.com",
       "bitcoin1111.xyz",
-      "bitcoin123.site",
       "bitcoin138.net",
       "bitcoin13xlexipro.lat",
       "bitcoin147.site",
@@ -4039,7 +4038,8 @@
       "bitcoin2023.net",
       "bitcoin2025.pro",
       "bitcoin2025.work",
-      "bitcoin2026.info"
+      "bitcoin2026.info",
+      "bitcoin2026.live"
     ]
   }
 }
