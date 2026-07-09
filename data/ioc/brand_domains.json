@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-08",
+  "generated": "2026-07-09",
   "keywords": {
     "login": [
       "0123winlogin.com",
@@ -582,11 +582,13 @@
       "aura-crypto.com",
       "aureoncrypto.com",
       "aurixcrypto.exchange",
+      "aurora-cryptoglobal.com",
       "auroracrypto.asia",
       "auroracrypto.lol",
       "auroracrypto.online",
       "auroracrypto.pro",
       "auroracrypto.xyz",
+      "auroracryptoglobal.com",
       "aussiecryptos.com",
       "australiacryptocenter.online",
       "australiancryptos.com",
@@ -603,9 +605,7 @@
       "b2bdemo-cryptobroker.com",
       "babybirdcrypto.org",
       "backend-crypto.com",
-      "banatcrypto.com",
-      "bankcryptocentral.com",
-      "bankerscrypto.com"
+      "banatcrypto.com"
     ],
     "secure": [
       "01dellsecured.click",
@@ -963,7 +963,6 @@
       "alliedcitytrustbank.com",
       "alliedfintrust.com",
       "alliedglobaltrust.com",
-      "alliedtrustbnk.com",
       "allinqfstrust.com",
       "alllanceltrust.com",
       "allmerchanttrusts.online",
@@ -1009,7 +1008,8 @@
       "amendtrust-2.cfd",
       "amendtrust-20.cfd",
       "amendtrust-21.cfd",
-      "amendtrust-22.cfd"
+      "amendtrust-22.cfd",
+      "amendtrust-23.cfd"
     ],
     "connect": [
       "1257connecticut.com",
@@ -3153,6 +3153,7 @@
       "apple-verify.sbs",
       "appleid-verify.link",
       "appleverify.sbs",
+      "apppayverify.help",
       "appverify.homes",
       "armstrongverifydev.fun",
       "arnlverify.com",
@@ -3175,7 +3176,6 @@
       "auth-accountverify.xyz",
       "auth-kinectaverify.icu",
       "auth-oneclient-rbcverify.info",
-      "auth-personal-kythera-verify.info",
       "auth-support-verify.com",
       "auth-verify-microsft.online",
       "auth-verify.help",
@@ -3183,7 +3183,6 @@
       "auth0verifyfacebook.help",
       "authenticateacessverify.help",
       "authentification01-verify1-online.com",
-      "autheverify.com",
       "authlogonverify.help",
       "authonlineverify.help",
       "authsharesverifytoday.com",
@@ -3231,7 +3230,8 @@
       "bo2faverify-auth.help",
       "bo2faverify.info",
       "boa-2faverify.help",
-      "boa-loginverify.help"
+      "boa-loginverify.help",
+      "boa-logonverify.help"
     ],
     "coinbase": [
       "0019-coinbase.com",
@@ -3328,6 +3328,7 @@
       "1785763-coinbase.com",
       "1785924-coinbase.com",
       "1785964-coinbase.com",
+      "178633a-coinbase.com",
       "178652coinbase.com",
       "1787683-coinbase.com",
       "179583c-coinbase.com",
@@ -3374,6 +3375,7 @@
       "190212coinbase.com",
       "1908573-coinbase.com",
       "191852-coinbase.com",
+      "191852a-coinbase.com",
       "191857a-coinbase.com",
       "1921128-coinbase.com",
       "1923001-coinbase.com",
@@ -3431,9 +3433,7 @@
       "197695a-coinbase.com",
       "1978063-coinbase.com",
       "1984742-coinbase.com",
-      "1985702-coinbase.com",
-      "1985762-coinbase.com",
-      "1987320-coinbase.com"
+      "1985702-coinbase.com"
     ],
     "nft": [
       "0nftmarketplaceinfo.com",
