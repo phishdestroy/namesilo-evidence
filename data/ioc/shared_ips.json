@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-09",
+  "generated": "2026-07-10",
   "count": 50,
   "ips": [
     {
       "ip": "91.195.240.123",
-      "count": 375268,
+      "count": 373998,
       "country": "DE",
       "domains": [
         "0-horizon.com",
@@ -111,7 +111,7 @@
     },
     {
       "ip": "188.114.97.3",
-      "count": 243820,
+      "count": 243458,
       "country": "",
       "domains": [
         "00-net-empresas.site",
@@ -218,7 +218,7 @@
     },
     {
       "ip": "188.114.96.3",
-      "count": 243715,
+      "count": 243388,
       "country": "",
       "domains": [
         "0--0----------------------------------------------------------1.com",
@@ -325,7 +325,7 @@
     },
     {
       "ip": "64.190.63.222",
-      "count": 55712,
+      "count": 55718,
       "country": "DE",
       "domains": [
         "0-a.com",
@@ -432,7 +432,7 @@
     },
     {
       "ip": "172.234.199.15",
-      "count": 48063,
+      "count": 48055,
       "country": "US",
       "domains": [
         "000.onl",
@@ -539,7 +539,7 @@
     },
     {
       "ip": "172.237.145.27",
-      "count": 47855,
+      "count": 47851,
       "country": "US",
       "domains": [
         "0000133com05xl06.sbs",
@@ -646,7 +646,7 @@
     },
     {
       "ip": "172.233.221.214",
-      "count": 47313,
+      "count": 47307,
       "country": "US",
       "domains": [
         "0-a5e1.sbs",
@@ -753,7 +753,7 @@
     },
     {
       "ip": "91.195.240.12",
-      "count": 39458,
+      "count": 39396,
       "country": "DE",
       "domains": [
         "00-os.com",
@@ -860,7 +860,7 @@
     },
     {
       "ip": "23.227.38.65",
-      "count": 31518,
+      "count": 31515,
       "country": "CA",
       "domains": [
         "0-a.live",
@@ -967,7 +967,7 @@
     },
     {
       "ip": "172.237.129.242",
-      "count": 8073,
+      "count": 8110,
       "country": "US",
       "domains": [
         "0016300.xyz",
@@ -1074,7 +1074,7 @@
     },
     {
       "ip": "172.237.129.108",
-      "count": 8039,
+      "count": 8078,
       "country": "US",
       "domains": [
         "001914.xyz",
@@ -1181,7 +1181,7 @@
     },
     {
       "ip": "172.237.129.236",
-      "count": 7866,
+      "count": 7908,
       "country": "US",
       "domains": [
         "001363.qpon",
@@ -1288,7 +1288,7 @@
     },
     {
       "ip": "172.232.24.235",
-      "count": 7459,
+      "count": 7738,
       "country": "US",
       "domains": [
         "007num.com",
@@ -1326,6 +1326,7 @@
         "1654py.com",
         "1764gm.com",
         "1802zk.com",
+        "180recoverycolorado.com",
         "1960sw.com",
         "1974hx.com",
         "1kkwr0e.cyou",
@@ -1363,6 +1364,7 @@
         "252maxslots488.com",
         "2564xb.com",
         "2580gi.com",
+        "25j34645drf.beauty",
         "266maxslots460.com",
         "273maxslots446.com",
         "2759og.com",
@@ -1388,14 +1390,12 @@
         "336d3cb62ea072e13af17e451fb8da05.sbs",
         "3407hg.com",
         "3451fu.com",
-        "3468id.com",
-        "3547ot.com",
-        "3562rl.com"
+        "3468id.com"
       ]
     },
     {
       "ip": "172.234.25.42",
-      "count": 7359,
+      "count": 7630,
       "country": "US",
       "domains": [
         "02-concepts.net",
@@ -1403,6 +1403,7 @@
         "022bet.cfd",
         "0391wl.com",
         "03av233088comlocbe.sbs",
+        "0516888.com",
         "0527bs.com",
         "0719qy.com",
         "0854ue.com",
@@ -1496,13 +1497,12 @@
         "2839kb.com",
         "2850hp.com",
         "28573758.xyz",
-        "2907hy.com",
-        "2936si.com"
+        "2907hy.com"
       ]
     },
     {
       "ip": "172.232.24.161",
-      "count": 7292,
+      "count": 7554,
       "country": "US",
       "domains": [
         "01-chaos.one",
@@ -1716,7 +1716,7 @@
     },
     {
       "ip": "104.20.26.89",
-      "count": 7078,
+      "count": 7061,
       "country": "",
       "domains": [
         "1.lol",
@@ -1823,7 +1823,7 @@
     },
     {
       "ip": "172.66.170.130",
-      "count": 7049,
+      "count": 7030,
       "country": "",
       "domains": [
         "00io.com",
@@ -1930,7 +1930,7 @@
     },
     {
       "ip": "172.66.144.96",
-      "count": 6075,
+      "count": 6077,
       "country": "",
       "domains": [
         "aavy.com",
@@ -2037,7 +2037,7 @@
     },
     {
       "ip": "104.20.41.38",
-      "count": 5817,
+      "count": 5820,
       "country": "",
       "domains": [
         "abacora.com",
@@ -2144,7 +2144,7 @@
     },
     {
       "ip": "45.32.131.180",
-      "count": 4701,
+      "count": 4692,
       "country": "US",
       "domains": [
         "00aaabb.com",
@@ -2358,7 +2358,7 @@
     },
     {
       "ip": "209.141.38.71",
-      "count": 4143,
+      "count": 4136,
       "country": "US",
       "domains": [
         "0d8.com",
@@ -2405,6 +2405,7 @@
         "2ndai.com",
         "2ndcircle.net",
         "2pg.net",
+        "3-dds.info",
         "34766633.com",
         "34769966.com",
         "348ladynadiadr.com",
@@ -2429,7 +2430,6 @@
         "484-994-2394.com",
         "4hunnidways.com",
         "4moola.com",
-        "505harvest.info",
         "51av.asia",
         "52english.org",
         "56.win",
@@ -2465,7 +2465,7 @@
     },
     {
       "ip": "208.122.194.33",
-      "count": 4058,
+      "count": 4057,
       "country": "US",
       "domains": [
         "12sextreme.com",
@@ -2572,7 +2572,7 @@
     },
     {
       "ip": "198.251.81.30",
-      "count": 4029,
+      "count": 4026,
       "country": "US",
       "domains": [
         "00001test.com",
@@ -2619,7 +2619,6 @@
         "282.win",
         "2airfare.com",
         "2wheelparts.net",
-        "3-dds.info",
         "3288.com",
         "330data.com",
         "345365.com",
@@ -2674,12 +2673,13 @@
         "990901.xyz",
         "9dvrfilm.com",
         "9livescore.com",
-        "a1do.com"
+        "a1do.com",
+        "a1habit.com"
       ]
     },
     {
       "ip": "185.107.80.107",
-      "count": 4024,
+      "count": 4017,
       "country": "NL",
       "domains": [
         "0agos.ink",
@@ -2786,7 +2786,7 @@
     },
     {
       "ip": "45.58.190.82",
-      "count": 3906,
+      "count": 3909,
       "country": "US",
       "domains": [
         "00002test.com",
@@ -2851,6 +2851,7 @@
         "4u.energy",
         "4wdham.com",
         "5000leap.com",
+        "505harvest.info",
         "516.win",
         "520320.xyz",
         "546666.xyz",
@@ -2887,13 +2888,12 @@
         "9mmbetkh.com",
         "9rag.com",
         "a1trump.com",
-        "aamiga.com",
-        "aarrish.com"
+        "aamiga.com"
       ]
     },
     {
       "ip": "185.107.80.234",
-      "count": 3883,
+      "count": 3887,
       "country": "NL",
       "domains": [
         "0aahc.com",
@@ -3000,7 +3000,7 @@
     },
     {
       "ip": "204.188.203.154",
-      "count": 3842,
+      "count": 3834,
       "country": "US",
       "domains": [
         "101fk.com",
@@ -3008,7 +3008,6 @@
         "1025aimmi.com",
         "1040cm.com",
         "1069.ink",
-        "1111wcassllc.com",
         "1188365365.net",
         "11998449.com",
         "11dollars.com",
@@ -3061,6 +3060,7 @@
         "4n6.cc",
         "4sstudio.com",
         "4wood.net",
+        "5-star.info",
         "5-star.xyz",
         "500.win",
         "516apparel.net",
@@ -3107,7 +3107,7 @@
     },
     {
       "ip": "168.235.88.209",
-      "count": 3799,
+      "count": 3786,
       "country": "US",
       "domains": [
         "0001111000.com",
@@ -3214,7 +3214,7 @@
     },
     {
       "ip": "107.161.23.204",
-      "count": 3745,
+      "count": 3743,
       "country": "US",
       "domains": [
         "000681.xyz",
@@ -3321,7 +3321,7 @@
     },
     {
       "ip": "198.251.84.92",
-      "count": 3728,
+      "count": 3722,
       "country": "LU",
       "domains": [
         "0000020.xyz",
@@ -3358,7 +3358,6 @@
         "252544.xyz",
         "265vn.com",
         "290.win",
-        "2commandments.info",
         "2sincere.com",
         "2te3l8fb.xyz",
         "3-jd.click",
@@ -3377,7 +3376,6 @@
         "4bettingtips.com",
         "4n6.pub",
         "4queenspoker.com",
-        "5-star.info",
         "51fengye.com",
         "52dd.net",
         "536666.xyz",
@@ -3423,12 +3421,14 @@
         "accesstohimalaya.com",
         "accident-lawyer.net",
         "accubosch.com",
-        "acituaneg.com"
+        "acituaneg.com",
+        "acoupleofgurus.tech",
+        "acoustico.com"
       ]
     },
     {
       "ip": "104.238.249.57",
-      "count": 3724,
+      "count": 3715,
       "country": "US",
       "domains": [
         "007006.xyz",
@@ -3535,7 +3535,7 @@
     },
     {
       "ip": "185.162.229.2",
-      "count": 3707,
+      "count": 3702,
       "country": "AM",
       "domains": [
         "0067esatplay.xyz",
@@ -3558,13 +3558,8 @@
         "120xwqq.xyz",
         "120xzsr.xyz",
         "120xztf.xyz",
-        "15bitcasino365.com",
-        "16bitcasino365.com",
         "17adil17bonanza.xyz",
         "17adil17en1.xyz",
-        "17bitcasino365.com",
-        "18bitcasino365.com",
-        "19bitcasino365.com",
         "2017minelpop.xyz",
         "20mn00pop.xyz",
         "303bet.com",
@@ -3637,12 +3632,17 @@
         "abuasinatcio1.xyz",
         "acarmert09milyon.xyz",
         "ada020202tam.xyz",
-        "adam11pop.xyz"
+        "adam11pop.xyz",
+        "adana0101tam1.xyz",
+        "adassssmilli.xyz",
+        "adem19en.xyz",
+        "adem36mey.xyz",
+        "adkstgge.cfd"
       ]
     },
     {
       "ip": "172.233.219.78",
-      "count": 3596,
+      "count": 3595,
       "country": "US",
       "domains": [
         "00ts9l.cfd",
@@ -3749,7 +3749,7 @@
     },
     {
       "ip": "64.32.22.102",
-      "count": 3568,
+      "count": 3551,
       "country": "US",
       "domains": [
         "1-heal.com",
@@ -4177,7 +4177,7 @@
     },
     {
       "ip": "45.77.75.133",
-      "count": 3462,
+      "count": 3467,
       "country": "US",
       "domains": [
         "000030000.xyz",
@@ -4284,7 +4284,7 @@
     },
     {
       "ip": "45.77.92.157",
-      "count": 3352,
+      "count": 3358,
       "country": "US",
       "domains": [
         "0-hero.com",
@@ -4498,7 +4498,7 @@
     },
     {
       "ip": "45.192.214.201",
-      "count": 3147,
+      "count": 3138,
       "country": "HK",
       "domains": [
         "00193.qpon",
@@ -4570,7 +4570,6 @@
         "04896.vip",
         "04903.vip",
         "05133.red",
-        "05214.biz",
         "05247.org",
         "052621.vip",
         "05268.red",
@@ -4600,7 +4599,8 @@
         "06594.qpon",
         "06639.win",
         "06720.bid",
-        "06725.xyz"
+        "06725.xyz",
+        "06804.loan"
       ]
     },
     {
@@ -4712,7 +4712,7 @@
     },
     {
       "ip": "96.31.92.108",
-      "count": 2990,
+      "count": 2993,
       "country": "US",
       "domains": [
         "03ee.com",
@@ -4819,7 +4819,7 @@
     },
     {
       "ip": "146.103.45.1",
-      "count": 2980,
+      "count": 2972,
       "country": "SG",
       "domains": [
         "101slot.net",
@@ -4841,7 +4841,6 @@
         "268slot.org",
         "2bet88.net",
         "2bet88.org",
-        "2betasia.info",
         "2betasia.net",
         "2betasia.org",
         "2goplay.org",
@@ -4921,12 +4920,13 @@
         "88slot88.org",
         "88slotjp.net",
         "88slotjp.org",
-        "88vipslot.net"
+        "88vipslot.net",
+        "88vipslot.org"
       ]
     },
     {
       "ip": "103.149.183.5",
-      "count": 2916,
+      "count": 2918,
       "country": "HK",
       "domains": [
         "0x7j0m5f.vip",
@@ -5033,7 +5033,7 @@
     },
     {
       "ip": "103.149.183.133",
-      "count": 2886,
+      "count": 2887,
       "country": "HK",
       "domains": [
         "0m8s2xk4.vip",
