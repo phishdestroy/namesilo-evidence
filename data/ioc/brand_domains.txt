@@ -622,7 +622,6 @@ secure	1pdfsecureviewer.sbs
 secure	1securebmologin.info
 secure	1secured.tax
 secure	1securehost.com
-secure	1secureonlinebanking-royalbank.com
 secure	1secureverif-bmo.info
 secure	1secureverification-bmo.info
 secure	1st4securedloan.com
@@ -729,7 +728,6 @@ secure	adpsecuremessagedeliveryx.sbs
 secure	adpsecuremessagedeliveryxxx.sbs
 secure	adsecure.com
 secure	adsecure.net
-secure	advanced-secured-privacy-trusted.autos
 secure	advancedaccurateshieldsecure.autos
 secure	advancedcybersecureaccessed.autos
 secure	advancedfastcybersecure.autos
@@ -798,6 +796,8 @@ secure	amlsecure.expert
 secure	amlsecure.life
 secure	amlsecure.onl
 secure	amlwalletsecure.com
+secure	anexo-securefiles.com
+secure	anlsecure.com
 trust	1etrust.com
 trust	1ststrustbank.com
 trust	1sttrustbank247.online
@@ -875,7 +875,6 @@ trust	adstrustdesk.help
 trust	adstrustfunds03.com
 trust	adtrustbase.help
 trust	adtrustcenterhub.help
-trust	advanced-secured-privacy-trusted.autos
 trust	advancedsecuredprivacytrusted.autos
 trust	advancedtrustwallet.com
 trust	advicetrust.com
@@ -998,6 +997,7 @@ trust	amendtrust-20.cfd
 trust	amendtrust-21.cfd
 trust	amendtrust-22.cfd
 trust	amendtrust-23.cfd
+trust	amendtrust-24.cfd
 connect	1257connecticut.com
 connect	1msconnectserver.com
 connect	1msserverconnect.com
@@ -1070,6 +1070,8 @@ connect	adecco-connect.com
 connect	adeccocareerconnect.com
 connect	adeccojobconnect.com
 connect	adecconnectgroup.com
+connect	adeccostaffconnect.com
+connect	adeccotalentconnect.com
 connect	adhfconnect.xyz
 connect	adminconnects.icu
 connect	administrativeconnection.com
@@ -1113,7 +1115,11 @@ connect	agelessloveconnections.cfd
 connect	agentlawconnect.club
 connect	agentsconnect.com
 connect	agntechconnect.net
+connect	ahdaconnectionshockeyach.com
 connect	ai-connect-hub.com
+connect	aiconnectbacolod.com
+connect	aiconnectbaguio.com
+connect	aiconnectbarley.com
 connect	aiconnectcebu.com
 connect	aiconnectdavao.com
 connect	aiconnectedcar.com
@@ -1121,6 +1127,8 @@ connect	aiconnectedcars.com
 connect	aiconnecteddata.com
 connect	aiconnectedvehicle.com
 connect	aiconnectedvehicles.com
+connect	aiconnectgensan.com
+connect	aiconnectgluta.com
 connect	aiconnectgummies.com
 connect	aiconnectjapan.com
 connect	aiconnectmanila.com
@@ -1190,14 +1198,6 @@ connect	allppsparaconnectar.lat
 connect	allstemconnectionss.com
 connect	alltokensinterconnectingmigrateairdrop.lol
 connect	alpha-connect.xyz
-connect	alphaprojectsonweb3connect.info
-connect	alppconnecter.cfd
-connect	alppconnecter.info
-connect	alppconnecter.sbs
-connect	alppconnecter.xyz
-connect	alppsparaconnectarr.site
-connect	alwasilconnect.mom
-connect	ambetterlouisianahealthconnect.com
 account	01myaccount1-overcharge1bill.info
 account	09account.org
 account	0auth2-myaccount.com
@@ -1989,6 +1989,7 @@ claim	blockdagclaim.xyz
 claim	blockfi-centerofclaims.com
 claim	blockfi-claim-portal.xyz
 claim	blockfi-claim.xyz
+claim	blockfi-claims-center.com
 claim	blockfi-claims-kroll.xyz
 claim	blockfi-claims-pending.xyz
 claim	blockfi-claims.org
@@ -1997,7 +1998,6 @@ claim	blockfi-kroll-claims.xyz
 claim	blockfikroll-bfiportal-claiming.xyz
 claim	blockfikroll-bfiportal-claims.xyz
 claim	bluefinclaim.bond
-claim	bluefinclaim.cfd
 update	06updatelive.xyz
 update	08updatedlive.com
 update	0nlinerep0rts-reviewsupdate.click
@@ -2223,6 +2223,7 @@ bridge	accessbridgeafrica.org
 bridge	actioretailbridge.info
 bridge	actonbridgeparishcouncil.org
 bridge	adeccobridgezone.com
+bridge	adeccostaffbridge.com
 bridge	advavabasebridge.link
 bridge	aerialbridgeinspect.com
 bridge	aerobridgelog.com
@@ -2397,7 +2398,6 @@ bridge	bethaluneretailbridge.click
 bridge	bethaluneretailbridge.sbs
 bridge	bethanybridges.com
 bridge	beyondthebridge.net
-bridge	bfi-bridge.xyz
 vault	0chainvault.live
 vault	120vault.com
 vault	12vault.com
@@ -2435,6 +2435,7 @@ vault	agentvaultss.info
 vault	agyapavault.org
 vault	aibitragevault.com
 vault	aideepvault.com
+vault	aiguidevault.best
 vault	ailogicvault.com
 vault	aipixelvaults.com
 vault	aiprocessvault.com
@@ -2597,7 +2598,6 @@ vault	bitcoinsvault.com
 vault	bitvaultcsduk.com
 vault	bitvaultgold.pro
 vault	bitvaultmail.com
-vault	bitvaultmail.net
 wallet	0securewalletreview.com
 wallet	1-wallet-release.lol
 wallet	1fuel-wallet.com
@@ -3043,7 +3043,6 @@ verify	accesdverify.info
 verify	accessneedsverify.help
 verify	accessverify.help
 verify	accessverify.info
-verify	accessverifynow.info
 verify	accesverifyaccount.com
 verify	account-verify-support.com
 verify	account-verify.website
@@ -3198,6 +3197,7 @@ verify	bo2faverify.info
 verify	boa-2faverify.help
 verify	boa-loginverify.help
 verify	boa-logonverify.help
+verify	boa-logverify.help
 coinbase	0019-coinbase.com
 coinbase	005932coinbase.com
 coinbase	008896-coinbase.com
@@ -3221,7 +3221,6 @@ coinbase	101931-coinbase.com
 coinbase	1023829-coinbase.com
 coinbase	105982-coinbase.com
 coinbase	109221coinbase.com
-coinbase	109485coinbase.com
 coinbase	112134-coinbase.com
 coinbase	112418coinbase.com
 coinbase	11842-coinbase.com
@@ -3398,6 +3397,7 @@ coinbase	1978063-coinbase.com
 coinbase	1984742-coinbase.com
 coinbase	1985702-coinbase.com
 coinbase	1985762-coinbase.com
+coinbase	1987320-coinbase.com
 nft	0nftmarketplaceinfo.com
 nft	0xnft2xrfsdg6iyjret436ijynjrh34214rfsafcu8k6f.com
 nft	0xnfts.com
@@ -3455,7 +3455,6 @@ nft	binancelifenft.com
 nft	bitnft.com
 nft	bitnfts.org
 nft	bladenft.com
-nft	blastnftspace.app
 nft	blipnft.com
 nft	blur-nft.link
 nft	blxpnft.pics
@@ -3598,6 +3597,7 @@ nft	com-exchange-nft279472.cfd
 nft	com-exchange-nft279975.cfd
 nft	com-exchange-nft280297.cfd
 nft	com-exchange-nft282509.cfd
+nft	com-exchange-nft282655.cfd
 mint	10minteardown.com
 mint	25badmintonrindonesia.com
 mint	25badxmintonrindonesia.com
@@ -3828,6 +3828,7 @@ bitcoin	808bitcoins.com
 bitcoin	99bitcoins.app
 bitcoin	abcbitcoins.com
 bitcoin	abitcoincorp.com
+bitcoin	absolutebitcoin.com
 bitcoin	abudhabibitcoin.net
 bitcoin	accept-bitcoin-payments.com
 bitcoin	acceptbitcoincash.org
@@ -3997,4 +3998,3 @@ bitcoin	bitcoin2025.work
 bitcoin	bitcoin2026.info
 bitcoin	bitcoin2026.live
 bitcoin	bitcoin2048.com
-bitcoin	bitcoin237.com

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-10",
+  "generated": "2026-07-11",
   "keywords": {
     "login": [
       "0123winlogin.com",
@@ -632,7 +632,6 @@
       "1securebmologin.info",
       "1secured.tax",
       "1securehost.com",
-      "1secureonlinebanking-royalbank.com",
       "1secureverif-bmo.info",
       "1secureverification-bmo.info",
       "1st4securedloan.com",
@@ -739,7 +738,6 @@
       "adpsecuremessagedeliveryxxx.sbs",
       "adsecure.com",
       "adsecure.net",
-      "advanced-secured-privacy-trusted.autos",
       "advancedaccurateshieldsecure.autos",
       "advancedcybersecureaccessed.autos",
       "advancedfastcybersecure.autos",
@@ -807,7 +805,9 @@
       "amlsecure.expert",
       "amlsecure.life",
       "amlsecure.onl",
-      "amlwalletsecure.com"
+      "amlwalletsecure.com",
+      "anexo-securefiles.com",
+      "anlsecure.com"
     ],
     "trust": [
       "1etrust.com",
@@ -887,7 +887,6 @@
       "adstrustfunds03.com",
       "adtrustbase.help",
       "adtrustcenterhub.help",
-      "advanced-secured-privacy-trusted.autos",
       "advancedsecuredprivacytrusted.autos",
       "advancedtrustwallet.com",
       "advicetrust.com",
@@ -1009,7 +1008,8 @@
       "amendtrust-20.cfd",
       "amendtrust-21.cfd",
       "amendtrust-22.cfd",
-      "amendtrust-23.cfd"
+      "amendtrust-23.cfd",
+      "amendtrust-24.cfd"
     ],
     "connect": [
       "1257connecticut.com",
@@ -1084,6 +1084,8 @@
       "adeccocareerconnect.com",
       "adeccojobconnect.com",
       "adecconnectgroup.com",
+      "adeccostaffconnect.com",
+      "adeccotalentconnect.com",
       "adhfconnect.xyz",
       "adminconnects.icu",
       "administrativeconnection.com",
@@ -1127,7 +1129,11 @@
       "agentlawconnect.club",
       "agentsconnect.com",
       "agntechconnect.net",
+      "ahdaconnectionshockeyach.com",
       "ai-connect-hub.com",
+      "aiconnectbacolod.com",
+      "aiconnectbaguio.com",
+      "aiconnectbarley.com",
       "aiconnectcebu.com",
       "aiconnectdavao.com",
       "aiconnectedcar.com",
@@ -1135,6 +1141,8 @@
       "aiconnecteddata.com",
       "aiconnectedvehicle.com",
       "aiconnectedvehicles.com",
+      "aiconnectgensan.com",
+      "aiconnectgluta.com",
       "aiconnectgummies.com",
       "aiconnectjapan.com",
       "aiconnectmanila.com",
@@ -1203,15 +1211,7 @@
       "allppsparaconnectar.lat",
       "allstemconnectionss.com",
       "alltokensinterconnectingmigrateairdrop.lol",
-      "alpha-connect.xyz",
-      "alphaprojectsonweb3connect.info",
-      "alppconnecter.cfd",
-      "alppconnecter.info",
-      "alppconnecter.sbs",
-      "alppconnecter.xyz",
-      "alppsparaconnectarr.site",
-      "alwasilconnect.mom",
-      "ambetterlouisianahealthconnect.com"
+      "alpha-connect.xyz"
     ],
     "account": [
       "01myaccount1-overcharge1bill.info",
@@ -2011,6 +2011,7 @@
       "blockfi-centerofclaims.com",
       "blockfi-claim-portal.xyz",
       "blockfi-claim.xyz",
+      "blockfi-claims-center.com",
       "blockfi-claims-kroll.xyz",
       "blockfi-claims-pending.xyz",
       "blockfi-claims.org",
@@ -2018,8 +2019,7 @@
       "blockfi-kroll-claims.xyz",
       "blockfikroll-bfiportal-claiming.xyz",
       "blockfikroll-bfiportal-claims.xyz",
-      "bluefinclaim.bond",
-      "bluefinclaim.cfd"
+      "bluefinclaim.bond"
     ],
     "update": [
       "06updatelive.xyz",
@@ -2249,6 +2249,7 @@
       "actioretailbridge.info",
       "actonbridgeparishcouncil.org",
       "adeccobridgezone.com",
+      "adeccostaffbridge.com",
       "advavabasebridge.link",
       "aerialbridgeinspect.com",
       "aerobridgelog.com",
@@ -2422,8 +2423,7 @@
       "bethaluneretailbridge.click",
       "bethaluneretailbridge.sbs",
       "bethanybridges.com",
-      "beyondthebridge.net",
-      "bfi-bridge.xyz"
+      "beyondthebridge.net"
     ],
     "vault": [
       "0chainvault.live",
@@ -2463,6 +2463,7 @@
       "agyapavault.org",
       "aibitragevault.com",
       "aideepvault.com",
+      "aiguidevault.best",
       "ailogicvault.com",
       "aipixelvaults.com",
       "aiprocessvault.com",
@@ -2624,8 +2625,7 @@
       "bitcoinsvault.com",
       "bitvaultcsduk.com",
       "bitvaultgold.pro",
-      "bitvaultmail.com",
-      "bitvaultmail.net"
+      "bitvaultmail.com"
     ],
     "wallet": [
       "0securewalletreview.com",
@@ -3077,7 +3077,6 @@
       "accessneedsverify.help",
       "accessverify.help",
       "accessverify.info",
-      "accessverifynow.info",
       "accesverifyaccount.com",
       "account-verify-support.com",
       "account-verify.website",
@@ -3231,7 +3230,8 @@
       "bo2faverify.info",
       "boa-2faverify.help",
       "boa-loginverify.help",
-      "boa-logonverify.help"
+      "boa-logonverify.help",
+      "boa-logverify.help"
     ],
     "coinbase": [
       "0019-coinbase.com",
@@ -3257,7 +3257,6 @@
       "1023829-coinbase.com",
       "105982-coinbase.com",
       "109221coinbase.com",
-      "109485coinbase.com",
       "112134-coinbase.com",
       "112418coinbase.com",
       "11842-coinbase.com",
@@ -3433,7 +3432,8 @@
       "1978063-coinbase.com",
       "1984742-coinbase.com",
       "1985702-coinbase.com",
-      "1985762-coinbase.com"
+      "1985762-coinbase.com",
+      "1987320-coinbase.com"
     ],
     "nft": [
       "0nftmarketplaceinfo.com",
@@ -3493,7 +3493,6 @@
       "bitnft.com",
       "bitnfts.org",
       "bladenft.com",
-      "blastnftspace.app",
       "blipnft.com",
       "blur-nft.link",
       "blxpnft.pics",
@@ -3635,7 +3634,8 @@
       "com-exchange-nft279472.cfd",
       "com-exchange-nft279975.cfd",
       "com-exchange-nft280297.cfd",
-      "com-exchange-nft282509.cfd"
+      "com-exchange-nft282509.cfd",
+      "com-exchange-nft282655.cfd"
     ],
     "mint": [
       "10minteardown.com",
@@ -3870,6 +3870,7 @@
       "99bitcoins.app",
       "abcbitcoins.com",
       "abitcoincorp.com",
+      "absolutebitcoin.com",
       "abudhabibitcoin.net",
       "accept-bitcoin-payments.com",
       "acceptbitcoincash.org",
@@ -4038,8 +4039,7 @@
       "bitcoin2025.work",
       "bitcoin2026.info",
       "bitcoin2026.live",
-      "bitcoin2048.com",
-      "bitcoin237.com"
+      "bitcoin2048.com"
     ]
   }
 }
