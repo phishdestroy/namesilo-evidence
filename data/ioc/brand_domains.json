@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-12",
+  "generated": "2026-07-13",
   "keywords": {
     "login": [
       "0123winlogin.com",
@@ -1139,6 +1139,7 @@
       "aitokentrust.com",
       "aitrustbitpro.com",
       "aitrustfin.com",
+      "aitrustgates.com",
       "aitrustless.com",
       "aitrusty.biz",
       "aiworldtrust.com",
@@ -1210,8 +1211,7 @@
       "amendtrust-2.cfd",
       "amendtrust-20.cfd",
       "amendtrust-21.cfd",
-      "amendtrust-22.cfd",
-      "amendtrust-23.cfd"
+      "amendtrust-22.cfd"
     ],
     "account": [
       "01myaccount1-overcharge1bill.info",
@@ -1317,7 +1317,6 @@
       "account-coinbase.com",
       "account-coinbesa.com",
       "account-coinmarketcap.com",
-      "account-coinmarketcap.info",
       "account-config.info",
       "account-confirm.help",
       "account-confirmation.help",
@@ -1413,7 +1412,8 @@
       "account-ntflx.help",
       "account-number-on-check.bar",
       "account-number-on-check.cfd",
-      "account-number-on-check.rest"
+      "account-number-on-check.rest",
+      "account-number-on-check.sbs"
     ],
     "official": [
       "1-win-official.com",
@@ -1771,6 +1771,7 @@
       "atikafarm.com",
       "atlanta-state-farmers-market.com",
       "atlasbiofarm.com",
+      "atxbikefarm.com",
       "aubinfarms.com",
       "aura-farmer-official.xyz",
       "aurafarming.org",
@@ -1816,8 +1817,7 @@
       "barneysfarmseeds.com",
       "barneysfarmstore.com",
       "batongtradingandfarms.com",
-      "battleofarmageddon.com",
-      "battleofarmagedon.com"
+      "battleofarmageddon.com"
     ],
     "claim": [
       "0x0claims.com",
@@ -1889,7 +1889,6 @@
       "alwaysclaim.xyz",
       "amazing-claim-giveaway-instantwin.autos",
       "amazing-claim-specialoffer-giving.autos",
-      "amazing-deal-claim-instant.top",
       "amazingbigwininstantwinclaim.autos",
       "amazingclaimgiveawayinstant.autos",
       "amazingclaimgiveawayinstantwin.autos",
@@ -2019,7 +2018,8 @@
       "blockfikroll-bfiportal-claiming.xyz",
       "blockfikroll-bfiportal-claims.xyz",
       "bluefinclaim.bond",
-      "bluefinclaim.cfd"
+      "bluefinclaim.cfd",
+      "bluefinclaim.cyou"
     ],
     "update": [
       "06updatelive.xyz",
@@ -2944,7 +2944,6 @@
       "assesstoken.sbs",
       "assetreferencedtoken.com",
       "assetreferencedtokens.com",
-      "aura-token.xyz",
       "auroratoken.buzz",
       "auroratoken.click",
       "auroratoken.site",
@@ -3013,7 +3012,6 @@
       "bitget-token.info",
       "bitget-token.net",
       "bitget-token.site",
-      "bitpepetoken.top",
       "bitswapixtokenpresale2025.click",
       "bitswapixtokenpresale2025.xyz",
       "bitswapixtokensale2025.click",
@@ -3029,7 +3027,9 @@
       "blasttoken.net",
       "blawtoken.vip",
       "blawtoken.xyz",
-      "blepetoken.xyz"
+      "blepetoken.xyz",
+      "blisstoken.com",
+      "blisstoken.xyz"
     ],
     "verify": [
       "001verifyrbcacc0unt1.info",
@@ -3166,7 +3166,11 @@
       "auclaimverifycenters.com",
       "aulodgeverifys.info",
       "aupost-addressverify.xyz",
+      "aupost-verify.com",
+      "aupost-verify.net",
       "ausbappverify.com",
+      "auspost-verify.com",
+      "auspost-verify.net",
       "auth-accountverify.xyz",
       "auth-kinectaverify.icu",
       "auth-oneclient-rbcverify.info",
@@ -3227,11 +3231,7 @@
       "boa-2faverify.help",
       "boa-loginverify.help",
       "boa-logonverify.help",
-      "boa-logverify.help",
-      "boa-onlineverify.help",
-      "boa-secuverify.help",
-      "boa-userverify.help",
-      "boa-usrverify.help"
+      "boa-logverify.help"
     ],
     "coinbase": [
       "0019-coinbase.com",
@@ -3256,6 +3256,7 @@
       "1023829-coinbase.com",
       "105982-coinbase.com",
       "109221coinbase.com",
+      "109485coinbase.com",
       "112134-coinbase.com",
       "112418coinbase.com",
       "11842-coinbase.com",
@@ -3348,6 +3349,7 @@
       "1839459-coinbase.com",
       "1843029-coinbase.com",
       "1843736-coinbase.com",
+      "184471coinbase.com",
       "184593-coinbase.com",
       "1847579-coinbase.com",
       "1847963-coinbase.com",
@@ -3431,9 +3433,7 @@
       "1985702-coinbase.com",
       "1985762-coinbase.com",
       "1987320-coinbase.com",
-      "1989653-coinbase.com",
-      "19985f-coinbase.com",
-      "210104coinbase.com"
+      "1989653-coinbase.com"
     ],
     "nft": [
       "0nftmarketplaceinfo.com",
@@ -3842,6 +3842,7 @@
     "bitcoin": [
       "0xbitcoin.foundation",
       "1-877-bitcoin.com",
+      "1-bitcoin.contact",
       "100bitcoinhomepage.com",
       "101bitcoins.com",
       "10bitcoinhomepage.com",
@@ -4038,8 +4039,7 @@
       "bitcoin2023.net",
       "bitcoin2025.pro",
       "bitcoin2025.work",
-      "bitcoin2026.info",
-      "bitcoin2026.live"
+      "bitcoin2026.info"
     ]
   }
 }

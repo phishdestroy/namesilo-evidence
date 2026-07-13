@@ -1125,6 +1125,7 @@ trust	aitechtrust.org
 trust	aitokentrust.com
 trust	aitrustbitpro.com
 trust	aitrustfin.com
+trust	aitrustgates.com
 trust	aitrustless.com
 trust	aitrusty.biz
 trust	aiworldtrust.com
@@ -1197,7 +1198,6 @@ trust	amendtrust-2.cfd
 trust	amendtrust-20.cfd
 trust	amendtrust-21.cfd
 trust	amendtrust-22.cfd
-trust	amendtrust-23.cfd
 account	01myaccount1-overcharge1bill.info
 account	09account.org
 account	0auth2-myaccount.com
@@ -1301,7 +1301,6 @@ account	account-co.site
 account	account-coinbase.com
 account	account-coinbesa.com
 account	account-coinmarketcap.com
-account	account-coinmarketcap.info
 account	account-config.info
 account	account-confirm.help
 account	account-confirmation.help
@@ -1398,6 +1397,7 @@ account	account-ntflx.help
 account	account-number-on-check.bar
 account	account-number-on-check.cfd
 account	account-number-on-check.rest
+account	account-number-on-check.sbs
 official	1-win-official.com
 official	123movies-official-website.cfd
 official	125aetjwtjofficial.icu
@@ -1751,6 +1751,7 @@ farm	athwalfarms.com
 farm	atikafarm.com
 farm	atlanta-state-farmers-market.com
 farm	atlasbiofarm.com
+farm	atxbikefarm.com
 farm	aubinfarms.com
 farm	aura-farmer-official.xyz
 farm	aurafarming.org
@@ -1797,7 +1798,6 @@ farm	barneysfarmseeds.com
 farm	barneysfarmstore.com
 farm	batongtradingandfarms.com
 farm	battleofarmageddon.com
-farm	battleofarmagedon.com
 claim	0x0claims.com
 claim	123insuranceclaim.com
 claim	1432-claim.sbs
@@ -1867,7 +1867,6 @@ claim	altclaim.biz
 claim	alwaysclaim.xyz
 claim	amazing-claim-giveaway-instantwin.autos
 claim	amazing-claim-specialoffer-giving.autos
-claim	amazing-deal-claim-instant.top
 claim	amazingbigwininstantwinclaim.autos
 claim	amazingclaimgiveawayinstant.autos
 claim	amazingclaimgiveawayinstantwin.autos
@@ -1998,6 +1997,7 @@ claim	blockfikroll-bfiportal-claiming.xyz
 claim	blockfikroll-bfiportal-claims.xyz
 claim	bluefinclaim.bond
 claim	bluefinclaim.cfd
+claim	bluefinclaim.cyou
 update	06updatelive.xyz
 update	08updatedlive.com
 update	0nlinerep0rts-reviewsupdate.click
@@ -2912,7 +2912,6 @@ token	asiatoken2049.com
 token	assesstoken.sbs
 token	assetreferencedtoken.com
 token	assetreferencedtokens.com
-token	aura-token.xyz
 token	auroratoken.buzz
 token	auroratoken.click
 token	auroratoken.site
@@ -2981,7 +2980,6 @@ token	bitget-token.help
 token	bitget-token.info
 token	bitget-token.net
 token	bitget-token.site
-token	bitpepetoken.top
 token	bitswapixtokenpresale2025.click
 token	bitswapixtokenpresale2025.xyz
 token	bitswapixtokensale2025.click
@@ -2998,6 +2996,8 @@ token	blasttoken.net
 token	blawtoken.vip
 token	blawtoken.xyz
 token	blepetoken.xyz
+token	blisstoken.com
+token	blisstoken.xyz
 verify	001verifyrbcacc0unt1.info
 verify	01bm0-verifymyl0gin.info
 verify	01bmoverifymylogin.com
@@ -3132,7 +3132,11 @@ verify	atoverify.info
 verify	auclaimverifycenters.com
 verify	aulodgeverifys.info
 verify	aupost-addressverify.xyz
+verify	aupost-verify.com
+verify	aupost-verify.net
 verify	ausbappverify.com
+verify	auspost-verify.com
+verify	auspost-verify.net
 verify	auth-accountverify.xyz
 verify	auth-kinectaverify.icu
 verify	auth-oneclient-rbcverify.info
@@ -3194,10 +3198,6 @@ verify	boa-2faverify.help
 verify	boa-loginverify.help
 verify	boa-logonverify.help
 verify	boa-logverify.help
-verify	boa-onlineverify.help
-verify	boa-secuverify.help
-verify	boa-userverify.help
-verify	boa-usrverify.help
 coinbase	0019-coinbase.com
 coinbase	005932coinbase.com
 coinbase	008896-coinbase.com
@@ -3220,6 +3220,7 @@ coinbase	101931-coinbase.com
 coinbase	1023829-coinbase.com
 coinbase	105982-coinbase.com
 coinbase	109221coinbase.com
+coinbase	109485coinbase.com
 coinbase	112134-coinbase.com
 coinbase	112418coinbase.com
 coinbase	11842-coinbase.com
@@ -3312,6 +3313,7 @@ coinbase	1836738-coinbase.com
 coinbase	1839459-coinbase.com
 coinbase	1843029-coinbase.com
 coinbase	1843736-coinbase.com
+coinbase	184471coinbase.com
 coinbase	184593-coinbase.com
 coinbase	1847579-coinbase.com
 coinbase	1847963-coinbase.com
@@ -3396,8 +3398,6 @@ coinbase	1985702-coinbase.com
 coinbase	1985762-coinbase.com
 coinbase	1987320-coinbase.com
 coinbase	1989653-coinbase.com
-coinbase	19985f-coinbase.com
-coinbase	210104coinbase.com
 nft	0nftmarketplaceinfo.com
 nft	0xnft2xrfsdg6iyjret436ijynjrh34214rfsafcu8k6f.com
 nft	0xnfts.com
@@ -3800,6 +3800,7 @@ mint	byoutreachmint.com
 mint	bytemint.com
 bitcoin	0xbitcoin.foundation
 bitcoin	1-877-bitcoin.com
+bitcoin	1-bitcoin.contact
 bitcoin	100bitcoinhomepage.com
 bitcoin	101bitcoins.com
 bitcoin	10bitcoinhomepage.com
@@ -3997,4 +3998,3 @@ bitcoin	bitcoin2023.net
 bitcoin	bitcoin2025.pro
 bitcoin	bitcoin2025.work
 bitcoin	bitcoin2026.info
-bitcoin	bitcoin2026.live
