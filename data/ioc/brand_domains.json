@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14",
+  "generated": "2026-07-15",
   "keywords": {
     "login": [
       "0123winlogin.com",
@@ -214,7 +214,6 @@
       "247billsupport.com",
       "247helpsupportcc.com",
       "247softwaresupport.com",
-      "247supportbill.com",
       "247supportcs.com",
       "247supportnetwork.com",
       "247supporttech.com",
@@ -227,7 +226,6 @@
       "2fasupportdhl.com",
       "2xcustomersupport.com",
       "365billsupport.com",
-      "365ccbillsupport.com",
       "365helpsupport.com",
       "365remotesupport.com",
       "365support247.com",
@@ -403,7 +401,9 @@
       "alimony-and-spousal-support-lwb.cyou",
       "alimony-and-spousal-support-rxe.cyou",
       "alimony-and-spousal-support-uvl.cyou",
-      "alimony-and-spousal-support-uzq.sbs"
+      "alimony-and-spousal-support-uzq.sbs",
+      "alimony-and-spousal-support-xaj.cyou",
+      "alimonyandspousalsupport04.cyou"
     ],
     "crypto": [
       "0cryptomarkettrends.com",
@@ -1615,7 +1615,7 @@
       "1winbk-official22.xyz",
       "1wincasinoofficialslots.xyz",
       "1xbet-official-site.net",
-      "1xbet-official-site2g.top"
+      "1xbet-official.best"
     ],
     "farm": [
       "15229farmstand.site",
@@ -1626,7 +1626,6 @@
       "2rootsfarm.com",
       "31495julianafarms.info",
       "3acresfarms.com",
-      "3dfarmlab.com",
       "3s-farm.sbs",
       "436737-bankofarmerica.com",
       "4kfarma.com",
@@ -1817,7 +1816,8 @@
       "barneysfarmseeds.com",
       "barneysfarmstore.com",
       "batongtradingandfarms.com",
-      "battleofarmageddon.com"
+      "battleofarmageddon.com",
+      "battleofarmagedon.com"
     ],
     "claim": [
       "0x0claims.com",
@@ -3024,12 +3024,12 @@
       "blackrock-tokens.com",
       "blackrocktoken.info",
       "blast-token.net",
-      "blasttoken.net",
       "blawtoken.vip",
       "blawtoken.xyz",
       "blepetoken.xyz",
       "blisstoken.com",
-      "blisstoken.xyz"
+      "blisstoken.xyz",
+      "blndtoken.xyz"
     ],
     "verify": [
       "001verifyrbcacc0unt1.info",
@@ -3518,6 +3518,7 @@
       "castiesnft.com",
       "castlenft.exchange",
       "cbnft.xyz",
+      "celebrationft.com",
       "cheapnfttrade.com",
       "cipherpunks69nft.com",
       "citrusapenft.lol",
@@ -3634,8 +3635,7 @@
       "com-exchange-nft279472.cfd",
       "com-exchange-nft279975.cfd",
       "com-exchange-nft280297.cfd",
-      "com-exchange-nft282509.cfd",
-      "com-exchange-nft282655.cfd"
+      "com-exchange-nft282509.cfd"
     ],
     "mint": [
       "10minteardown.com",
@@ -4013,6 +4013,7 @@
       "bitcoin-tumbler.com",
       "bitcoin-unlimited.com",
       "bitcoin-up.app",
+      "bitcoin-visualizer.com",
       "bitcoin-x.org",
       "bitcoin-xcel.com",
       "bitcoin-xyz.com",
@@ -4038,8 +4039,7 @@
       "bitcoin1on1.com",
       "bitcoin2023.net",
       "bitcoin2025.pro",
-      "bitcoin2025.work",
-      "bitcoin2026.info"
+      "bitcoin2025.work"
     ]
   }
 }
