@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-18",
+  "generated": "2026-07-19",
   "count": 50,
   "ips": [
     {
       "ip": "91.195.240.123",
-      "count": 360903,
+      "count": 359672,
       "country": "DE",
       "domains": [
         "0-horizon.com",
@@ -111,7 +111,7 @@
     },
     {
       "ip": "188.114.97.3",
-      "count": 243925,
+      "count": 244449,
       "country": "",
       "domains": [
         "00-net-empresas.site",
@@ -218,7 +218,7 @@
     },
     {
       "ip": "188.114.96.3",
-      "count": 243799,
+      "count": 244264,
       "country": "",
       "domains": [
         "0--0----------------------------------------------------------1.com",
@@ -325,7 +325,7 @@
     },
     {
       "ip": "64.190.63.222",
-      "count": 57868,
+      "count": 57843,
       "country": "DE",
       "domains": [
         "0-a.com",
@@ -432,7 +432,7 @@
     },
     {
       "ip": "172.234.199.15",
-      "count": 48009,
+      "count": 47998,
       "country": "US",
       "domains": [
         "000.onl",
@@ -539,7 +539,7 @@
     },
     {
       "ip": "172.237.145.27",
-      "count": 47797,
+      "count": 47788,
       "country": "US",
       "domains": [
         "0000133com05xl06.sbs",
@@ -646,7 +646,7 @@
     },
     {
       "ip": "172.233.221.214",
-      "count": 47278,
+      "count": 47268,
       "country": "US",
       "domains": [
         "0000.wtf",
@@ -753,7 +753,7 @@
     },
     {
       "ip": "91.195.240.12",
-      "count": 38927,
+      "count": 38883,
       "country": "DE",
       "domains": [
         "00-os.com",
@@ -860,7 +860,7 @@
     },
     {
       "ip": "23.227.38.65",
-      "count": 31577,
+      "count": 31589,
       "country": "CA",
       "domains": [
         "0-a.live",
@@ -967,7 +967,7 @@
     },
     {
       "ip": "172.237.129.108",
-      "count": 13206,
+      "count": 13329,
       "country": "US",
       "domains": [
         "001914.xyz",
@@ -1074,7 +1074,7 @@
     },
     {
       "ip": "172.237.129.242",
-      "count": 13181,
+      "count": 13311,
       "country": "US",
       "domains": [
         "0016300.xyz",
@@ -1181,7 +1181,7 @@
     },
     {
       "ip": "172.237.129.236",
-      "count": 13004,
+      "count": 13112,
       "country": "US",
       "domains": [
         "0004777.xyz",
@@ -1288,7 +1288,7 @@
     },
     {
       "ip": "172.232.24.235",
-      "count": 10991,
+      "count": 11527,
       "country": "US",
       "domains": [
         "007num.com",
@@ -1345,6 +1345,32 @@
         "2093oy.com",
         "2105jl.com",
         "2109ma.com",
+        "21250802.xyz",
+        "212508021.xyz",
+        "212508033.xyz",
+        "21250804.xyz",
+        "212508043.xyz",
+        "21250806.xyz",
+        "212508062.xyz",
+        "212508072.xyz",
+        "212508083.xyz",
+        "212508091.xyz",
+        "212508102.xyz",
+        "21250813.xyz",
+        "212508153.xyz",
+        "212508171.xyz",
+        "212508173.xyz",
+        "21250818.xyz",
+        "212508181.xyz",
+        "212508183.xyz",
+        "21250822.xyz",
+        "212508221.xyz",
+        "212508233.xyz",
+        "212508253.xyz",
+        "21250826.xyz",
+        "212508273.xyz",
+        "21250829.xyz",
+        "212508312.xyz",
         "2147980.xyz",
         "2150gk.com",
         "2156xz.com",
@@ -1364,38 +1390,12 @@
         "23jh8.com",
         "2428qx.com",
         "2457tu.com",
-        "245maxslots502.com",
-        "2511.wiki",
-        "252maxslots488.com",
-        "2564xb.com",
-        "2580gi.com",
-        "25j34645drf.beauty",
-        "266maxslots460.com",
-        "272929648.xyz",
-        "273maxslots446.com",
-        "2759og.com",
-        "2764ax.com",
-        "278878.xyz",
-        "2836et.com",
-        "2849ho.com",
-        "2860ob.com",
-        "28y4hffjz2.com",
-        "2910fy.com",
-        "2934ms.com",
-        "2945hm.com",
-        "2950be.com",
-        "2b8oyzt.cyou",
-        "2cfosyndrome.com",
-        "2qxrdez.cyou",
-        "2ybe75s.cyou",
-        "2z98m2h.cyou",
-        "305ca0325104.xyz",
-        "3071bw.com"
+        "245maxslots502.com"
       ]
     },
     {
       "ip": "172.232.24.161",
-      "count": 10956,
+      "count": 11432,
       "country": "US",
       "domains": [
         "01-chaos.one",
@@ -1463,6 +1463,28 @@
         "20bet-it.net",
         "21-prive.com",
         "2110mb.com",
+        "212508013.xyz",
+        "212508032.xyz",
+        "212508041.xyz",
+        "212508052.xyz",
+        "212508061.xyz",
+        "21250809.xyz",
+        "212508103.xyz",
+        "212508113.xyz",
+        "212508133.xyz",
+        "212508151.xyz",
+        "212508152.xyz",
+        "21250820.xyz",
+        "21250821.xyz",
+        "212508211.xyz",
+        "212508213.xyz",
+        "212508231.xyz",
+        "212508252.xyz",
+        "212508292.xyz",
+        "212508293.xyz",
+        "212508301.xyz",
+        "212508311.xyz",
+        "212508313.xyz",
         "2138pf.com",
         "2149pg.com",
         "2158nj.com",
@@ -1473,36 +1495,14 @@
         "21casino.icu",
         "21casino.one",
         "21casinogiris.com",
+        "21cb64c628598408e635798124c50633.cfd",
         "2232221online.cfd",
-        "225840.xyz",
-        "2264277.xyz",
-        "234355.xyz",
-        "2349gv.com",
-        "23jh.vip",
-        "23jh2.com",
-        "23jh7.com",
-        "23jh9.com",
-        "2419cq.com",
-        "2421231.xyz",
-        "2437yb.com",
-        "245327.xyz",
-        "2460881.xyz",
-        "2481kr.com",
-        "2486gx.com",
-        "2486hf.com",
-        "2496oy.com",
-        "25176089.xyz",
-        "2581vb.com",
-        "261567928.xyz",
-        "2650er.com",
-        "2679mx.com",
-        "2694cz.com",
-        "2716wj.com"
+        "225840.xyz"
       ]
     },
     {
       "ip": "172.234.25.42",
-      "count": 10839,
+      "count": 11351,
       "country": "US",
       "domains": [
         "02-concepts.net",
@@ -1586,25 +1586,25 @@
         "20998763.xyz",
         "20bet-kasyno.com",
         "20betkasino-fi.com",
-        "2161gl.com",
-        "2193lo.com",
-        "224maxslots544.com",
-        "2268798.xyz",
-        "22betkasino-dk.com",
-        "22betkaszino-hu.com",
-        "2360dl.com",
-        "23798.pro",
-        "23jh1.com",
-        "23jh3.com",
-        "2403mt.com",
-        "2417qw.com",
-        "2479tc.com",
-        "247smartwebsites.com",
-        "2497hy.com",
-        "2539ae.com",
-        "2584my.xyz",
-        "2589ie.com",
-        "259maxslots474.com"
+        "212508023.xyz",
+        "212508042.xyz",
+        "212508051.xyz",
+        "212508063.xyz",
+        "212508073.xyz",
+        "212508081.xyz",
+        "212508101.xyz",
+        "212508123.xyz",
+        "212508131.xyz",
+        "212508132.xyz",
+        "212508141.xyz",
+        "212508143.xyz",
+        "21250816.xyz",
+        "212508172.xyz",
+        "21250819.xyz",
+        "212508193.xyz",
+        "21250823.xyz",
+        "21250825.xyz",
+        "212508262.xyz"
       ]
     },
     {
@@ -1716,7 +1716,7 @@
     },
     {
       "ip": "104.20.26.89",
-      "count": 6951,
+      "count": 6942,
       "country": "",
       "domains": [
         "1.lol",
@@ -1752,7 +1752,6 @@
         "4iriot.com",
         "4thelephant.com",
         "51195.com",
-        "5ggun.com",
         "686848.com",
         "810108.com",
         "81518.com",
@@ -1818,12 +1817,13 @@
         "acutecross.com",
         "acuvanta.com",
         "acuzeal.com",
-        "adagi.com"
+        "adagi.com",
+        "adala.com"
       ]
     },
     {
       "ip": "172.66.170.130",
-      "count": 6924,
+      "count": 6919,
       "country": "",
       "domains": [
         "00io.com",
@@ -1930,7 +1930,7 @@
     },
     {
       "ip": "172.66.144.96",
-      "count": 6034,
+      "count": 6033,
       "country": "",
       "domains": [
         "aavy.com",
@@ -2358,7 +2358,7 @@
     },
     {
       "ip": "208.122.194.33",
-      "count": 4052,
+      "count": 4062,
       "country": "US",
       "domains": [
         "12sextreme.com",
@@ -2465,7 +2465,7 @@
     },
     {
       "ip": "209.141.38.71",
-      "count": 4020,
+      "count": 4000,
       "country": "US",
       "domains": [
         "0d8.com",
@@ -2572,7 +2572,7 @@
     },
     {
       "ip": "198.251.81.30",
-      "count": 3928,
+      "count": 3894,
       "country": "US",
       "domains": [
         "00001test.com",
@@ -2786,7 +2786,7 @@
     },
     {
       "ip": "45.58.190.82",
-      "count": 3814,
+      "count": 3788,
       "country": "US",
       "domains": [
         "00002test.com",
@@ -2877,6 +2877,7 @@
         "888b.download",
         "88vndsoikeo.com",
         "8qx.net",
+        "904msp.net",
         "911alarm.com",
         "911sm.net",
         "919.win",
@@ -2887,13 +2888,12 @@
         "96.win",
         "9mmbetkh.com",
         "9rag.com",
-        "a1trump.com",
-        "aamiga.com"
+        "a1trump.com"
       ]
     },
     {
       "ip": "204.188.203.154",
-      "count": 3748,
+      "count": 3726,
       "country": "US",
       "domains": [
         "101fk.com",
@@ -2956,7 +2956,6 @@
         "5-star.info",
         "5-star.xyz",
         "500.win",
-        "516apparel.net",
         "517200.xyz",
         "5208858.com",
         "525349.xyz",
@@ -2995,12 +2994,13 @@
         "aayusutra.com",
         "abcanime.com",
         "abcpromo.cfd",
-        "abeluxe.com"
+        "abeluxe.com",
+        "abitmorewobbly.com"
       ]
     },
     {
       "ip": "185.107.80.234",
-      "count": 3725,
+      "count": 3689,
       "country": "NL",
       "domains": [
         "0aahc.com",
@@ -3013,12 +3013,10 @@
         "0exlu.wiki",
         "0fnny.click",
         "0lphy.rest",
-        "0nndv.ink",
         "0ozdq.click",
         "0phzb.city",
         "0pkea.com",
         "0rhql.zone",
-        "0rrkc.rest",
         "0rvjg.zone",
         "0rxgp.ink",
         "0srzd.zone",
@@ -3102,12 +3100,14 @@
         "4murx.com",
         "4ppsc.click",
         "4pqji.com",
-        "4qrpf.click"
+        "4qrpf.click",
+        "4rbwv.info",
+        "4spin.onl"
       ]
     },
     {
       "ip": "168.235.88.209",
-      "count": 3694,
+      "count": 3671,
       "country": "US",
       "domains": [
         "0001111000.com",
@@ -3214,7 +3214,7 @@
     },
     {
       "ip": "107.161.23.204",
-      "count": 3667,
+      "count": 3666,
       "country": "US",
       "domains": [
         "000681.xyz",
@@ -3291,6 +3291,7 @@
         "504118.com",
         "51av.help",
         "520.win",
+        "52dd.net",
         "5star.best",
         "5startraveldeals.com",
         "650dd99.com",
@@ -3315,13 +3316,12 @@
         "aaruliah.com",
         "abbeylundberg.com",
         "aboutmymatch.com",
-        "abrazosimborrables.com",
-        "academyforfutureleadership.com"
+        "abrazosimborrables.com"
       ]
     },
     {
       "ip": "104.238.249.57",
-      "count": 3645,
+      "count": 3614,
       "country": "US",
       "domains": [
         "007006.xyz",
@@ -3428,7 +3428,7 @@
     },
     {
       "ip": "198.251.84.92",
-      "count": 3600,
+      "count": 3593,
       "country": "LU",
       "domains": [
         "0000020.xyz",
@@ -3482,7 +3482,6 @@
         "4n6.pub",
         "4queenspoker.com",
         "51fengye.com",
-        "52dd.net",
         "536666.xyz",
         "586972.xyz",
         "5gultrafast4u.net",
@@ -3530,12 +3529,13 @@
         "acoupleofgurus.tech",
         "acoustico.com",
         "actionbiomed.com",
-        "activegov001-au-centreliinksec.xyz"
+        "activegov001-au-centreliinksec.xyz",
+        "activityhilo.com"
       ]
     },
     {
       "ip": "172.233.219.78",
-      "count": 3590,
+      "count": 3588,
       "country": "US",
       "domains": [
         "00ts9l.cfd",
@@ -3642,7 +3642,7 @@
     },
     {
       "ip": "172.237.146.25",
-      "count": 3543,
+      "count": 3542,
       "country": "US",
       "domains": [
         "0059wz.cfd",
@@ -3963,7 +3963,7 @@
     },
     {
       "ip": "64.32.22.102",
-      "count": 3377,
+      "count": 3334,
       "country": "US",
       "domains": [
         "1-heal.com",
@@ -4063,9 +4063,9 @@
         "academie-des-armes-anciennes.com",
         "academy-cafe.com",
         "accessai.com",
-        "accessiblemath.net",
         "acchinaprogram.org",
-        "accountingintelligence.com"
+        "accountingintelligence.com",
+        "acdctx.com"
       ]
     },
     {
@@ -4176,8 +4176,115 @@
       ]
     },
     {
+      "ip": "149.104.32.142",
+      "count": 3200,
+      "country": "US",
+      "domains": [
+        "007chigua.wiki",
+        "07chigua.wiki",
+        "11av.wiki",
+        "17baoliaow50.com",
+        "17cgwko.wiki",
+        "17chigh.sbs",
+        "17chiguak.wiki",
+        "17cx.wiki",
+        "18cmic1.com",
+        "18cmw.wiki",
+        "18dman.com",
+        "18heils.com",
+        "18jingship.pro",
+        "18sui.wiki",
+        "24xsbdy.wiki",
+        "3ddman9.wiki",
+        "3ddmm.wiki",
+        "3ddmtv.wiki",
+        "3ddmx.com",
+        "3ddongman0.wiki",
+        "3dmanhio.wiki",
+        "3dmhcr.wiki",
+        "3dmtv.wiki",
+        "3dongmanc.wiki",
+        "3tongren.wiki",
+        "3xcz3.wiki",
+        "4hu2026.wiki",
+        "4hus.wiki",
+        "4kporn.wiki",
+        "4kxyz.wiki",
+        "4kziyuan.wiki",
+        "51-cao.com",
+        "51-cao.net",
+        "511cgwl.wiki",
+        "51anw2.wiki",
+        "51anw22.wiki",
+        "51anwa.com",
+        "51anwang-2.wiki",
+        "51anwanga.wiki",
+        "51anwangb.wiki",
+        "51anwange.wiki",
+        "51anwangg.wiki",
+        "51anwangx.com",
+        "51baoliam.com",
+        "51baoliao4e.wiki",
+        "51baoliao7c.wiki",
+        "51baoliaoa.wiki",
+        "51baoliaoco.wiki",
+        "51baoliaoe77.wiki",
+        "51baoliaoew.wiki",
+        "51baoliaofk.wiki",
+        "51baoliaog.wiki",
+        "51baoliaoh.wiki",
+        "51baoliaohe.wiki",
+        "51baoliaoi.wiki",
+        "51baoliaoj.wiki",
+        "51baoliaomv.wiki",
+        "51baoliaomy.wiki",
+        "51baoliaon.wiki",
+        "51baoliaop.wiki",
+        "51baoliaoq.wiki",
+        "51baoliaor.wiki",
+        "51baoliaor7.wiki",
+        "51baoliaot.wiki",
+        "51baoliaou.wiki",
+        "51baoliaoy.wiki",
+        "51baolut2.wiki",
+        "51baolw0.wiki",
+        "51baolz2.wiki",
+        "51bl5w.wiki",
+        "51bl77kl.wiki",
+        "51blcgw.wiki",
+        "51bldjj.wiki",
+        "51blti.com",
+        "51blu.com",
+        "51blw818l.wiki",
+        "51blwv8.wiki",
+        "51ccgia.wiki",
+        "51cg2gw.wiki",
+        "51cg3w.wiki",
+        "51cg51cg2.wiki",
+        "51cg9cg.wiki",
+        "51cgauw.wiki",
+        "51cgba.wiki",
+        "51cgbf.com",
+        "51cgbl9m.wiki",
+        "51cgblw1.com",
+        "51cgcgu.wiki",
+        "51cgdl.com",
+        "51cgej.wiki",
+        "51cgg09.wiki",
+        "51cgg2.wiki",
+        "51cggb.wiki",
+        "51cggca.wiki",
+        "51cggw2.wiki",
+        "51cgjv.com",
+        "51cgkq.com",
+        "51cglu.com",
+        "51cgog.com",
+        "51cgpm.com"
+      ]
+    },
+    {
       "ip": "149.104.32.229",
-      "count": 3237,
+      "count": 3172,
       "country": "US",
       "domains": [
         "1-024shequ.wiki",
@@ -4284,7 +4391,7 @@
     },
     {
       "ip": "45.192.214.201",
-      "count": 3170,
+      "count": 3171,
       "country": "HK",
       "domains": [
         "00193.qpon",
@@ -4390,115 +4497,8 @@
       ]
     },
     {
-      "ip": "149.104.32.142",
-      "count": 3104,
-      "country": "US",
-      "domains": [
-        "007chigua.wiki",
-        "07chigua.wiki",
-        "11av.wiki",
-        "17baoliaow50.com",
-        "17cgwko.wiki",
-        "17chigh.sbs",
-        "17chiguak.wiki",
-        "17cx.wiki",
-        "18cmw.wiki",
-        "18dman.com",
-        "18heils.com",
-        "18jingship.pro",
-        "24xsbdy.wiki",
-        "3ddman9.wiki",
-        "3ddmm.wiki",
-        "3ddmtv.wiki",
-        "3ddmx.com",
-        "3ddongman0.wiki",
-        "3dmanhio.wiki",
-        "3dmtv.wiki",
-        "3dongmanc.wiki",
-        "3tongren.wiki",
-        "3xcz3.wiki",
-        "4hu2026.wiki",
-        "4hus.wiki",
-        "4kporn.wiki",
-        "51-cao.com",
-        "51-cao.net",
-        "511cgwl.wiki",
-        "51anw2.wiki",
-        "51anw22.wiki",
-        "51anwa.com",
-        "51anwang-2.wiki",
-        "51anwanga.wiki",
-        "51anwangb.wiki",
-        "51anwange.wiki",
-        "51anwangg.wiki",
-        "51anwangx.com",
-        "51baoliam.com",
-        "51baoliao4e.wiki",
-        "51baoliao7c.wiki",
-        "51baoliaoa.wiki",
-        "51baoliaoco.wiki",
-        "51baoliaoe77.wiki",
-        "51baoliaoew.wiki",
-        "51baoliaofk.wiki",
-        "51baoliaog.wiki",
-        "51baoliaoh.wiki",
-        "51baoliaohe.wiki",
-        "51baoliaoi.wiki",
-        "51baoliaoj.wiki",
-        "51baoliaomv.wiki",
-        "51baoliaomy.wiki",
-        "51baoliaon.wiki",
-        "51baoliaop.wiki",
-        "51baoliaoq.wiki",
-        "51baoliaor.wiki",
-        "51baoliaor7.wiki",
-        "51baoliaot.wiki",
-        "51baoliaou.wiki",
-        "51baoliaoy.wiki",
-        "51baolut2.wiki",
-        "51baolw0.wiki",
-        "51baolz2.wiki",
-        "51bl5w.wiki",
-        "51bl77kl.wiki",
-        "51blcgw.wiki",
-        "51bldjj.wiki",
-        "51blti.com",
-        "51blu.com",
-        "51blw818l.wiki",
-        "51blwv8.wiki",
-        "51ccgia.wiki",
-        "51cg2gw.wiki",
-        "51cg3w.wiki",
-        "51cg51cg2.wiki",
-        "51cg9cg.wiki",
-        "51cgauw.wiki",
-        "51cgba.wiki",
-        "51cgbf.com",
-        "51cgbl9m.wiki",
-        "51cgblw1.com",
-        "51cgcgu.wiki",
-        "51cgdl.com",
-        "51cgej.wiki",
-        "51cgg09.wiki",
-        "51cgg2.wiki",
-        "51cggb.wiki",
-        "51cggca.wiki",
-        "51cggw2.wiki",
-        "51cgjv.com",
-        "51cgkq.com",
-        "51cglu.com",
-        "51cgog.com",
-        "51cgpm.com",
-        "51cgqil.com",
-        "51cgrv.com",
-        "51cgrwv.wiki",
-        "51cgsc.wiki",
-        "51cgsk.com"
-      ]
-    },
-    {
       "ip": "45.77.75.133",
-      "count": 3060,
+      "count": 3067,
       "country": "US",
       "domains": [
         "000030000.xyz",
@@ -4519,6 +4519,7 @@
         "0d54.com",
         "0fade1.games",
         "0fade1.net",
+        "0moola.com",
         "101111111.xyz",
         "10ur06cio.xyz",
         "110111111.xyz",
@@ -4570,12 +4571,14 @@
         "2ozcnncio.xyz",
         "2witnesses.com",
         "313313313.xyz",
+        "314696.xyz",
         "317317.xyz",
         "31cekenejderzula.xyz",
         "3335333.xyz",
         "333666333.xyz",
         "333888333.xyz",
         "3465vedatson.xyz",
+        "35wsee.com",
         "360sportcams.com",
         "360xconsulting.com",
         "363363363.xyz",
@@ -4597,15 +4600,12 @@
         "436436.xyz",
         "4442444.xyz",
         "44469444.xyz",
-        "446611.xyz",
-        "44umutgmailson.xyz",
-        "454454454.xyz",
-        "456787654.xyz"
+        "446611.xyz"
       ]
     },
     {
       "ip": "96.31.92.108",
-      "count": 3045,
+      "count": 3055,
       "country": "US",
       "domains": [
         "03ee.com",
@@ -4696,7 +4696,6 @@
         "abdikate.com",
         "abermedical.com",
         "abidingsuccess.com",
-        "abigailclaireyee.com",
         "ablindmom.com",
         "abm-ministry.com",
         "abucksixty.com",
@@ -4707,12 +4706,13 @@
         "acg.cafe",
         "ackerage.com",
         "acnesystems.com",
-        "act4.bio"
+        "act4.bio",
+        "activeagingonline.com"
       ]
     },
     {
       "ip": "103.149.183.5",
-      "count": 2991,
+      "count": 2990,
       "country": "HK",
       "domains": [
         "0x7j0m5f.vip",
@@ -4798,6 +4798,7 @@
         "fdcbc0z2.vip",
         "fr0q5oev.vip",
         "g1m3v.vip",
+        "g1m5v9s.vip",
         "g1m9v5s4.vip",
         "g3n7s1v.vip",
         "g4o8a0zq.vip",
@@ -4813,13 +4814,12 @@
         "h1r6p9k.vip",
         "h2k7x9mq.vip",
         "h2w9r5m1n.vip",
-        "h3n8t1.vip",
-        "h3v1m7g.vip"
+        "h3n8t1.vip"
       ]
     },
     {
       "ip": "45.77.92.157",
-      "count": 2934,
+      "count": 2944,
       "country": "US",
       "domains": [
         "0-hero.com",
@@ -5033,7 +5033,7 @@
     },
     {
       "ip": "103.149.183.133",
-      "count": 2887,
+      "count": 2874,
       "country": "HK",
       "domains": [
         "0m8s2xk4.vip",
@@ -5140,7 +5140,7 @@
     },
     {
       "ip": "148.66.157.235",
-      "count": 2794,
+      "count": 2810,
       "country": "SG",
       "domains": [
         "123asiaslot.com",
@@ -5205,6 +5205,7 @@
         "alexis288.net",
         "alexis66.com",
         "alfabet138.com",
+        "alfabet999.net",
         "algojoslot.com",
         "alibaba78.net",
         "alpa888.net",
@@ -5233,6 +5234,7 @@
         "angkertogel.org",
         "angsa99.com",
         "animetogel.com",
+        "animetogel.net",
         "anjingbet.com",
         "anjingbet.net",
         "antares168.com",
@@ -5240,14 +5242,12 @@
         "ap338.net",
         "apek4d.org",
         "apektoto.org",
-        "apel138slot.com",
-        "apel77slot.com",
-        "api138x.com"
+        "apel138slot.com"
       ]
     },
     {
       "ip": "89.124.75.150",
-      "count": 2755,
+      "count": 2748,
       "country": "IE",
       "domains": [
         "pinco-casino-wsl9.top",
