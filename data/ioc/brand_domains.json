@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-19",
+  "generated": "2026-07-20",
   "keywords": {
     "login": [
       "0123winlogin.com",
@@ -213,6 +213,7 @@
       "247billingsupport.com",
       "247billsupport.com",
       "247helpsupportcc.com",
+      "247softwaresupport.com",
       "247supportbill.com",
       "247supportcs.com",
       "247supportnetwork.com",
@@ -254,7 +255,6 @@
       "accesssupportlogin.info",
       "accounsupport.best",
       "account-disn-eyplus-support.info",
-      "account-ld-help-support.xyz",
       "account-support-crypto.com",
       "account-support-netflix.com",
       "account-support-paypal.com",
@@ -514,6 +514,7 @@
       "alliedcryptos.com",
       "allincrypto.org",
       "allincrypto.xyz",
+      "alphacryptobot.com",
       "alphacryptohub.com",
       "alphacrypton.biz",
       "alphacryptonova.xyz",
@@ -559,7 +560,6 @@
       "arabcryptocoin.com",
       "arianacrypto.com",
       "armadacrypto.xyz",
-      "ashcryptotg.com",
       "asicryptonews.com",
       "assetbackedcryptocurrency.net",
       "assetprotection-crypto.com",
@@ -769,6 +769,7 @@
       "alertesecuredarty.online",
       "alertsecuredetectsafe.autos",
       "alertsecuresearchsafe.autos",
+      "alipay-secure.com",
       "alisveris-secure-odeme.com",
       "allinfosecurebcb.help",
       "allipaysecured.com",
@@ -806,8 +807,7 @@
       "amlwalletsecure.com",
       "anexo-securefiles.com",
       "anlsecure.com",
-      "anonsecure.host",
-      "anonsecurehost.com"
+      "anonsecure.host"
     ],
     "trust": [
       "1etrust.com",
@@ -1299,6 +1299,7 @@
       "account-apple-store.net",
       "account-approval.click",
       "account-athuorisation-home.net",
+      "account-authuser.com",
       "account-automation.com",
       "account-autorisation-home.net",
       "account-base.app",
@@ -1348,6 +1349,7 @@
       "account-helpcenter.com",
       "account-helpdesk.help",
       "account-icloud.info",
+      "account-identifier.com",
       "account-identifikation.online",
       "account-import.com",
       "account-info-mx.help",
@@ -1376,7 +1378,6 @@
       "account-ja-jp.vip",
       "account-kontrolle.online",
       "account-koppeling.xyz",
-      "account-ld-help-support.xyz",
       "account-lnfomaps.life",
       "account-located.link",
       "account-locked-au-gjo.cyou",
@@ -1412,8 +1413,7 @@
       "account-number-on-check.rest",
       "account-number-on-check.sbs",
       "account-number.cfd",
-      "account-number.sbs",
-      "account-outh-mail.help"
+      "account-number.sbs"
     ],
     "official": [
       "1-win-official.com",
@@ -1888,11 +1888,9 @@
       "altclaim.biz",
       "altclaim.com",
       "alwaysclaim.xyz",
-      "amazing-claim-giveaway-instantwin.autos",
       "amazing-claim-specialoffer-giving.autos",
       "amazingbigwininstantwinclaim.autos",
       "amazingclaimgiveawayinstant.autos",
-      "amazingclaimgiveawayinstantwin.autos",
       "amazingclaimspecialoffergiving.autos",
       "amazingsearchclaimweekly.autos",
       "amclaims.com",
@@ -2019,7 +2017,9 @@
       "blockfikroll-bfiportal-claiming.xyz",
       "blockfikroll-bfiportal-claims.xyz",
       "bluefinclaim.bond",
-      "bluefinclaim.cfd"
+      "bluefinclaim.cfd",
+      "bluefinclaim.cyou",
+      "bluefinclaim.sbs"
     ],
     "bridge": [
       "1041thebridge.com",
@@ -2407,6 +2407,7 @@
       "androidupdate.org",
       "androidupdate.xyz",
       "androidupdates.org",
+      "annauniversityupdates.com",
       "annualaandaupdate.com",
       "anodosupdate.info",
       "anyoneupdate.info",
@@ -2422,13 +2423,13 @@
       "appalupdates-4f.online",
       "appalupdates-5f.online",
       "appalupdates-6f.online",
-      "appalupdates-7f.online",
-      "appalupdates-8f.online"
+      "appalupdates-7f.online"
     ],
     "vault": [
       "0chainvault.live",
       "120vault.com",
       "12vault.com",
+      "151935-cbvault.com",
       "15833-cbvault.com",
       "167vault.com",
       "1filevault.com",
@@ -2533,6 +2534,8 @@
       "arkada-laughvault.website",
       "arkvault.icu",
       "arsenalautovault.com",
+      "artvaultz.com",
+      "assaultthevault.com",
       "assetprotectionvault.com",
       "assetsvault.org",
       "assetvault-coinbase.com",
@@ -2622,10 +2625,7 @@
       "birchvault.com",
       "bitc-vault.com",
       "bitcoinsvault.com",
-      "bitvaultcsduk.com",
-      "bitvaultgold.pro",
-      "bitvaultmail.com",
-      "bitvaultmail.net"
+      "bitvaultcsduk.com"
     ],
     "wallet": [
       "0securewalletreview.com",
@@ -2649,7 +2649,6 @@
       "afro-wallet.com",
       "afterwallet.com",
       "ag-online-wallet-dex.app",
-      "ag-online-wallet.dev",
       "agamawallet.net",
       "agamawallet.org",
       "agentswallets.com",
@@ -2686,7 +2685,6 @@
       "aml-wallets.com",
       "amlawallets.info",
       "amlcheck-atomicwallet.com",
-      "amlcheck-trustwallet.com",
       "amlcheckswallet.com",
       "amlcheckwallet.org",
       "amlchekwallet.com",
@@ -2827,7 +2825,9 @@
       "base-wallet.app",
       "base-wallet.help",
       "basewallet-ue.com",
-      "basewallet-withdraw.help"
+      "basewallet-withdraw.help",
+      "basewallet.help",
+      "basewallet.team"
     ],
     "token": [
       "0tokeninvestor.com",
@@ -2956,6 +2956,7 @@
       "avaxtoken.org",
       "avaxtokens.com",
       "awstokens.org",
+      "axiontoken.com",
       "axontoken.vip",
       "axotoken.com",
       "babeltoken.net",
@@ -3028,8 +3029,7 @@
       "blepetoken.xyz",
       "blisstoken.com",
       "blisstoken.xyz",
-      "blndtoken.xyz",
-      "block-token.com"
+      "blndtoken.xyz"
     ],
     "verify": [
       "001verifyrbcacc0unt1.info",
@@ -3148,7 +3148,6 @@
       "appkeyverify.click",
       "appkeyverify.com",
       "appkeyverify.sbs",
-      "apple-cloud-verify.com",
       "apple-verify.sbs",
       "appleid-verify.link",
       "appleverify.sbs",
@@ -3231,7 +3230,8 @@
       "boa-loginverify.help",
       "boa-logonverify.help",
       "boa-logverify.help",
-      "boa-onlineverify.help"
+      "boa-onlineverify.help",
+      "boa-secuverify.help"
     ],
     "coinbase": [
       "0019-coinbase.com",
@@ -3376,7 +3376,6 @@
       "1923001-coinbase.com",
       "1925273-coinbase.com",
       "19274-coinbase.com",
-      "192755a-coinbase.com",
       "192821coinbase.com",
       "19283-coinbase.com",
       "1928475-coinbase.com",
@@ -3433,7 +3432,8 @@
       "1987320-coinbase.com",
       "1989653-coinbase.com",
       "19985f-coinbase.com",
-      "19au8-coinbase.com"
+      "19au8-coinbase.com",
+      "210104coinbase.com"
     ],
     "nft": [
       "0nftmarketplaceinfo.com",
@@ -3692,7 +3692,6 @@
       "aetherminto.life",
       "africa-badminton.com",
       "africaiomint.com",
-      "ahengmint.sbs",
       "ahlivitamintips.info",
       "aidbeaminternational.com",
       "aimint.site",
@@ -3823,7 +3822,6 @@
       "blushymint.com",
       "boldfreedominternational.com",
       "boltmint.com",
-      "boxofmints.com",
       "brezzermint.com",
       "bristlemint.sbs",
       "brokermintwave.club",
@@ -3837,7 +3835,9 @@
       "byebrumintas.com",
       "byoutreachmint.com",
       "bytemint.com",
-      "calamint.xyz"
+      "calamint.xyz",
+      "callcentercrmintegration01.cyou",
+      "callcentercrmintegration02.cyou"
     ],
     "bitcoin": [
       "0xbitcoin.foundation",
