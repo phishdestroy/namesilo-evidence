@@ -612,7 +612,7 @@ document.querySelectorAll(".reveal").forEach(function(el){_ro.observe(el);});
 <script>
 var _ci=null,_cd=null,_v='daily',_range='3Y';
 var _RAW='https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/data/index.json';
-fetch(_RAW+'?t='+Date.now()).then(function(r){return r.json();}).then(function(d){_cd=d;window._chartData=d;_rc('daily');}).catch(function(){document.getElementById('chart-wrap').style.display='none';});
+fetch(_RAW).then(function(r){return r.json();}).then(function(d){_cd=d;window._chartData=d;_rc('daily');}).catch(function(){var cw=document.getElementById('chart-wrap');if(cw){cw.innerHTML='<div style="padding:32px;color:var(--tx3,#888);text-align:center">Data unavailable — <a href="#" onclick="location.reload();return false">retry</a></div>';cw.style.display='';}});
 function showView(v){_v=v;['daily','monthly'].forEach(function(x){var b=document.getElementById('btn-'+x),a=x===v;b.style.background=a?'rgba(110,168,215,.1)':'transparent';b.style.color=a?'var(--cy)':'var(--tx3)';b.style.borderColor=a?'rgba(110,168,215,.4)':'var(--bdr)';});if(_cd)_rc(v);}
 function showRange(r){_range=r;['1y','3y','5y','all'].forEach(function(x){var b=document.getElementById('btn-'+x);if(!b)return;var a=x===r.toLowerCase();b.style.background=a?'rgba(110,168,215,.1)':'transparent';b.style.color=a?'var(--cy)':'var(--tx3)';b.style.borderColor=a?'rgba(110,168,215,.4)':'var(--bdr)';b.style.fontWeight=a?'600':'400';});if(_cd)_rc(_v);}
 function _rc(view){var allDays=_cd.days||[];var days=allDays;if(_range!=='all'){var y=parseInt(_range);var co=new Date();co.setFullYear(co.getFullYear()-y);var cs=co.toISOString().slice(0,10);days=allDays.filter(function(d){return d.date>=cs;});}var labels,counts,paths;
@@ -679,7 +679,7 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
     bar.appendChild(prevBtn);bar.appendChild(info);bar.appendChild(nextBtn);feedEl.appendChild(bar);
   }
   window._dfPn=function(p){var total=Math.max(1,Math.ceil(allDays.length/PAGE));if(p<0||p>=total)return;renderPage(p);document.getElementById('daily-feed').scrollIntoView({behavior:'smooth',block:'nearest'});};
-  fetch(BASE+'data/index.json?t='+Date.now()).then(function(x){return x.json();}).then(function(data){
+  fetch(BASE+'data/index.json').then(function(x){return x.json();}).then(function(data){
     allDays=(data.days||[]).slice().reverse();
     var statsEl=document.getElementById('daily-stats');
     statsEl.appendChild(statCard((data.total_new_all_time||0).toLocaleString(),'Total new','cy'));
@@ -716,9 +716,11 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
 
 <script>
 (function(){
-  function waitForData(cb){
+  function waitForData(cb,_dl){
+    if(!_dl)_dl=Date.now()+15000;
     if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
-    setTimeout(function(){waitForData(cb);},250);
+    if(Date.now()>_dl)return;
+    setTimeout(function(){waitForData(cb,_dl);},250);
   }
   function el(tag,attrs,text){
     var e=document.createElement(tag);
@@ -846,9 +848,11 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
 
 <script>
 (function(){
-  function waitForData(cb){
+  function waitForData(cb,_dl){
+    if(!_dl)_dl=Date.now()+15000;
     if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
-    setTimeout(function(){waitForData(cb);},250);
+    if(Date.now()>_dl)return;
+    setTimeout(function(){waitForData(cb,_dl);},250);
   }
 
   function el(tag,attrs,text){
@@ -988,9 +992,11 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
 
 <script>
 (function(){
-  function waitForData(cb){
+  function waitForData(cb,_dl){
+    if(!_dl)_dl=Date.now()+15000;
     if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
-    setTimeout(function(){waitForData(cb);},250);
+    if(Date.now()>_dl)return;
+    setTimeout(function(){waitForData(cb,_dl);},250);
   }
   function el(tag,attrs,text){
     var e=document.createElement(tag);
@@ -1177,9 +1183,11 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
 
 <script>
 (function(){
-  function waitForData(cb){
+  function waitForData(cb,_dl){
+    if(!_dl)_dl=Date.now()+15000;
     if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
-    setTimeout(function(){waitForData(cb);},250);
+    if(Date.now()>_dl)return;
+    setTimeout(function(){waitForData(cb,_dl);},250);
   }
   function el(tag,attrs,text){
     var e=document.createElement(tag);
@@ -1370,9 +1378,11 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
     return c;
   }
 
-  function waitForData(cb){
+  function waitForData(cb,_dl){
+    if(!_dl)_dl=Date.now()+15000;
     if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
-    setTimeout(function(){waitForData(cb);},250);
+    if(Date.now()>_dl)return;
+    setTimeout(function(){waitForData(cb,_dl);},250);
   }
 
   waitForData(function(data){
