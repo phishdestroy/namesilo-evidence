@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fetch new domain registrations from NetAPI and update repository data."""
 
-import os, re, gzip, csv, io, json, urllib.request, urllib.parse
+import os, re, gzip, csv, io, json, urllib.request, urllib.parse, urllib.error
 from pathlib import Path
 from datetime import date, datetime
 from collections import defaultdict, Counter
@@ -43,8 +43,18 @@ req = urllib.request.Request(
     'https://netapi.com/api2/?' + params,
     headers={'User-Agent': 'PhishDestroy/2.0'}
 )
-with urllib.request.urlopen(req, timeout=300) as resp:
-    raw = gzip.decompress(resp.read()).decode('utf-8', errors='replace')
+try:
+    with urllib.request.urlopen(req, timeout=300) as resp:
+        raw = gzip.decompress(resp.read()).decode('utf-8', errors='replace')
+except urllib.error.HTTPError as e:
+    body = e.read().decode('utf-8', errors='replace')[:300]
+    print(f"::error::NETAPI HTTP {e.code} {e.reason}: {body}")
+    if e.code in (401, 403):
+        print("::error::NETAPI_TOKEN is expired or invalid")
+    raise SystemExit(1)
+except urllib.error.URLError as e:
+    print(f"::error::NETAPI connection failed: {e.reason}")
+    raise SystemExit(1)
 
 # CSV columns: registrar, url, registered_at, expiring_at,
 #              majestic_rank, emails, phones, ip, ip_country
