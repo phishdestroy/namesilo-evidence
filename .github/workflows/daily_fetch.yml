@@ -107,13 +107,4 @@ jobs:
           BRANCH="${GITHUB_REF_NAME}"
           git remote add codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git 2>/dev/null || \
             git remote set-url codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git
-          if git ls-remote codeberg HEAD 2>/dev/null | grep -q HEAD; then
-            if ! git push codeberg HEAD:${BRANCH} --force; then
-              echo "::warning::Codeberg push failed — check token or repo size limit"
-            fi
-          else
-            git fetch --unshallow 2>/dev/null || true
-            if ! git push codeberg HEAD:${BRANCH} --force; then
-              echo "::warning::Codeberg first push failed — check token or repo size limit"
-            fi
-          fi
+          echo "::notice::Codeberg mirror skipped — repo exceeds 1 GB Codeberg limit"
