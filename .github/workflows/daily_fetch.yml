@@ -97,7 +97,6 @@ jobs:
             git pull --rebase -X theirs origin main && git push && exit 0
             sleep $((i * 5))
           done
-
       - name: Mirror to Codeberg
         env:
           CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
@@ -105,12 +104,10 @@ jobs:
           if [ -z "$CODEBERG_TOKEN" ]; then echo "No CODEBERG_TOKEN, skip mirror"; exit 0; fi
           REPO_NAME="${GITHUB_REPOSITORY##*/}"
           BRANCH="${GITHUB_REF_NAME}"
-          git remote add codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git 2>/dev/null || \
-            git remote set-url codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git
+          git remote add codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git 2>/dev/null ||             git remote set-url codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git
           git fetch --depth=200 origin 2>/dev/null || true
-          PUSH_ERR=$(git push codeberg HEAD:${BRANCH} --force 2>          git fetch --depth=200 origin 2>/dev/null || true
-          if ! git push codeberg HEAD:${BRANCH} --force; then
-            echo "::warning::Codeberg mirror push failed — check CODEBERG_TOKEN"
-          fi1) || {
-            echo "::warning::Codeberg push failed: ${PUSH_ERR}"
-          }
+          if git push codeberg HEAD:${BRANCH} --force 2>/tmp/cb_err.txt; then
+            echo "Codeberg mirror: OK"
+          else
+            echo "::warning::Codeberg push failed: $(head -3 /tmp/cb_err.txt 2>/dev/null)"
+          fi
