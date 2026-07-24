@@ -108,6 +108,9 @@ jobs:
           git remote add codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git 2>/dev/null || \
             git remote set-url codeberg https://phishdestroy:${CODEBERG_TOKEN}@codeberg.org/phishdestroy/${REPO_NAME}.git
           git fetch --depth=200 origin 2>/dev/null || true
+          PUSH_ERR=$(git push codeberg HEAD:${BRANCH} --force 2>          git fetch --depth=200 origin 2>/dev/null || true
           if ! git push codeberg HEAD:${BRANCH} --force; then
             echo "::warning::Codeberg mirror push failed — check CODEBERG_TOKEN"
-          fi
+          fi1) || {
+            echo "::warning::Codeberg push failed: ${PUSH_ERR}"
+          }
