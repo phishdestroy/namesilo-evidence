@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feed IOC — NameSilo Evidence | PhishDestroy</title>
+<link rel="canonical" href="https://phishdestroy.github.io/namesilo-evidence/feed-ioc.html">
+<style>
+:root{--bg:#000;--s1:#070b12;--s2:#0c1018;--s3:#111720;--bdr:rgba(255,255,255,.08);--bdr2:rgba(255,255,255,.12);--tx:#f0f6fc;--tx2:#8b949e;--tx3:#484f58;--cy:#6ea8d7;--rd:#da3633;--gn:#3fb950;--or:#c0a060;--vi:#8b5cf6}
+*{box-sizing:border-box;margin:0;padding:0}html{font-size:14px}
+body{background:var(--bg);color:var(--tx);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.4}
+a{color:var(--cy);text-decoration:none}
+.nav{position:sticky;top:0;z-index:100;background:rgba(7,11,18,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--bdr);padding:0 20px;height:48px;display:flex;align-items:center;gap:6px}
+.nav-brand{font-weight:700;font-size:13px;color:var(--tx);margin-right:auto}
+.nav-brand em{color:var(--rd);font-style:normal}
+.btn{display:inline-flex;align-items:center;gap:4px;padding:5px 12px;border-radius:4px;font-size:11px;font-weight:600;border:1px solid;cursor:pointer;background:transparent;color:var(--tx2);border-color:var(--bdr)}
+.btn.active{border-color:var(--cy);color:var(--cy);background:rgba(110,168,215,.08)}
+.btn.red{background:var(--rd);border-color:var(--rd);color:#fff}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;padding:12px 20px;border-bottom:1px solid var(--bdr);background:var(--s1);align-items:center}
+input[type=search]{background:var(--s2);border:1px solid var(--bdr);border-radius:4px;padding:6px 10px;font-size:12px;color:var(--tx);width:280px;outline:none}
+input[type=search]:focus{border-color:var(--bdr2)}
+.count-bar{padding:8px 20px;font-size:10px;font-family:monospace;color:var(--tx3);border-bottom:1px solid var(--bdr);background:var(--s1)}
+.count-bar span{color:var(--tx2)}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{text-align:left;padding:7px 12px;color:var(--tx3);font-size:9px;text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--bdr);background:var(--s2);position:sticky;top:48px;z-index:10}
+td{padding:6px 12px;border-bottom:1px solid rgba(255,255,255,.03);color:var(--tx2);font-family:monospace;font-size:11px}
+tr:hover td{background:rgba(255,255,255,.02)}
+.dom{color:var(--tx);font-weight:700}
+.sev-H{color:var(--rd)}.sev-M{color:var(--or)}.sev-I{color:var(--tx3)}
+.tld-tag{display:inline-block;font-size:9px;padding:1px 5px;border-radius:2px;background:var(--s3);color:var(--tx3);font-family:monospace}
+.badge{display:inline-block;font-size:9px;padding:1px 5px;border-radius:2px;font-family:monospace;margin:1px 2px 1px 0;white-space:nowrap;border:1px solid}
+.pager{display:flex;align-items:center;gap:8px;padding:8px 20px;border-bottom:1px solid var(--bdr);background:var(--s1)}
+.pager button{padding:4px 10px;border-radius:3px;font-size:11px;font-family:monospace;border:1px solid var(--bdr);background:var(--s2);color:var(--tx2);cursor:pointer}
+.pager button:disabled{opacity:.3;cursor:default}
+.pg-info{font-size:10px;color:var(--tx3);font-family:monospace}
+footer{border-top:1px solid var(--bdr);padding:16px 20px;text-align:center;font-size:10px;font-family:monospace;color:var(--tx3)}
+</style>
+</head>
+<body>
+<div style="padding:6px 16px;font-size:12px;font-family:monospace;border-bottom:1px solid rgba(255,255,255,.06);color:#8b949e">
+  <a href="https://phishdestroy.io" style="color:#6ea8d7">phishdestroy.io</a> &nbsp;·&nbsp;
+  <a href="https://phishdestroy.io/registrars-enabling-global-scams" style="color:#6ea8d7">Registrar Investigations</a>
+</div>
+<nav class="nav">
+  <span class="nav-brand">PhishDestroy <em>/</em> NameSilo <em>/</em> Feed IOC</span>
+  <a href="index.html" class="btn">← Report</a>
+  <a href="../ioc/indicators.csv" class="btn red" download>⬇ indicators.csv</a>
+</nav>
+
+<div class="toolbar">
+  <input type="search" id="search" placeholder="Search domain, category, feed…">
+  <div id="cat-filters" style="display:flex;gap:4px;flex-wrap:wrap"></div>
+  <div style="display:flex;gap:4px">
+    <button class="btn active" data-sev="" onclick="setSev(this,'')">All</button>
+    <button class="btn" data-sev="HIGH" onclick="setSev(this,'HIGH')">HIGH</button>
+    <button class="btn" data-sev="MEDIUM" onclick="setSev(this,'MEDIUM')">MED</button>
+  </div>
+</div>
+
+<div class="count-bar" id="count-bar">Loading…</div>
+<div class="pager" id="pager" style="display:none">
+  <button id="pg-first" onclick="goPage(0)">«</button>
+  <button id="pg-prev"  onclick="goPage(curPage-1)">‹</button>
+  <span class="pg-info" id="pg-info"></span>
+  <button id="pg-next"  onclick="goPage(curPage+1)">›</button>
+  <button id="pg-last"  onclick="goPage(lastPage)">»</button>
+</div>
+
+<div style="overflow-x:auto">
+<table>
+<thead><tr>
+  <th>Domain</th><th>TLD</th><th>Category</th><th>Sev</th><th>Feed Sources</th><th>Date</th><th>Intel</th>
+</tr></thead>
+<tbody id="tbody"></tbody>
+</table>
+</div>
+<footer>PhishDestroy · NameSilo Evidence · TLP:CLEAR · <a href="https://github.com/phishdestroy/namesilo-evidence">GitHub</a></footer>
+
+<script>
+var FEED_LABELS={hagezi_tif:'Hagezi:TIF',hagezi_wildcard_tif:'Hagezi:TIF',hagezi_pro:'Hagezi:Pro',hagezi_ultimate:'Hagezi:Ult',blocklistproject_malware:'BP:Malware',blocklistproject_phishing:'BP:Phish',blocklistproject_scam:'BP:Scam',blocklistproject_fraud:'BP:Fraud',maltrail:'Maltrail',mitchellkrogza:'PhishDB:MK',phishing_database_active:'PhishDB',phishdb_active:'PhishDB',phishdb_links:'PhishDB:URL',metamask:'MetaMask',enkrypt:'Enkrypt',scamblocklist:'ScamBlock',phishing_filter_hosts:'MalFilter',urlhaus_filter_hosts:'URLhaus',phishtank:'PhishTank',openphish:'OpenPhish',phishing_army:'PhishArmy',cert_pl:'CERT.pl',dandelion_antimalware:'Dandelion',firebog_all:'Firebog',ublock_badware:'uBlock',abpindo:'ABPindo',easylist:'EasyList',adguard_dns:'AdGuard:DNS',adguard_phishing:'AdGuard:Phish',hagezi_pro_txt:'Hagezi:Pro'};
+var FEED_COLORS={hagezi_tif:'#da3633',hagezi_wildcard_tif:'#da3633',maltrail:'#da3633',blocklistproject_malware:'#c05040',blocklistproject_phishing:'#e08030',blocklistproject_scam:'#e08030',blocklistproject_fraud:'#e08030',mitchellkrogza:'#c0a060',phishdb_active:'#c0a060',phishing_database_active:'#c0a060',metamask:'#3b82f6',enkrypt:'#3b82f6',scamblocklist:'#3b82f6',phishing_filter_hosts:'#8b5cf6',urlhaus_filter_hosts:'#8b5cf6',phishtank:'#e08030',openphish:'#e08030',phishing_army:'#e08030',cert_pl:'#3fb950',dandelion_antimalware:'#6ea8d7',firebog_all:'#3fb950',ublock_badware:'#8b5cf6',adguard_dns:'#3b82f6',adguard_phishing:'#da3633',hagezi_pro_txt:'#da3633',hagezi_pro:'#da3633'};
+
+function feedBadges(feeds){
+  if(!feeds||!feeds.length)return '<span style="color:var(--tx3)">—</span>';
+  return feeds.map(function(f){
+    var lbl=FEED_LABELS[f]||f.replace(/_/g,' ');
+    var clr=FEED_COLORS[f]||'#6ea8d7';
+    return '<span class="badge" style="background:'+clr+'22;color:'+clr+';border-color:'+clr+'44">'+esc(lbl)+'</span>';
+  }).join('');
+}
+
+var all=[],filtered=[],activeSev='',activeCat='',searchQ='';
+var PAGE_SIZE=200,curPage=0,lastPage=0;
+window.curPage=0;window.lastPage=0;
+
+fetch('feed-ioc.json').then(function(r){return r.json();}).then(function(d){
+  all=d.domains||[];
+  buildCatFilters();
+  applyFilter();
+}).catch(function(){document.getElementById('count-bar').textContent='Failed to load feed-ioc.json';});
+
+function buildCatFilters(){
+  var cats={};
+  all.forEach(function(d){cats[d.category]=(cats[d.category]||0)+1;});
+  var el=document.getElementById('cat-filters');
+  var html='<button class="btn active" data-cat="" onclick="setCat(this,\'\')">All cats</button>';
+  Object.keys(cats).sort(function(a,b){return cats[b]-cats[a];}).slice(0,6).forEach(function(c){
+    html+='<button class="btn" data-cat="'+esc(c)+'" onclick="setCat(this,\''+esc(c)+'\')">'+esc(c.replace(/_/g,' '))+' <span style="color:var(--tx3)">('+cats[c].toLocaleString()+')</span></button>';
+  });
+  el.innerHTML=html;
+}
+
+window.setCat=function(btn,cat){activeCat=cat;document.querySelectorAll('[data-cat]').forEach(function(b){b.classList.toggle('active',b.dataset.cat===cat);});curPage=0;applyFilter();};
+window.setSev=function(btn,sev){activeSev=sev;document.querySelectorAll('[data-sev]').forEach(function(b){b.classList.toggle('active',b.dataset.sev===sev);});curPage=0;applyFilter();};
+document.getElementById('search').addEventListener('input',function(){searchQ=this.value.toLowerCase();curPage=0;applyFilter();});
+
+function applyFilter(){
+  filtered=all.filter(function(d){
+    if(activeCat&&d.category!==activeCat)return false;
+    if(activeSev&&(d.severity||'').toUpperCase()!==activeSev)return false;
+    if(searchQ){var h=((d.domain||'')+(d.category||'')+(d.feeds||[]).join(' ')+(d.tld||'')).toLowerCase();if(h.indexOf(searchQ)<0)return false;}
+    return true;
+  });
+  lastPage=Math.max(0,Math.ceil(filtered.length/PAGE_SIZE)-1);
+  window.lastPage=lastPage;
+  if(curPage>lastPage)curPage=lastPage;
+  window.curPage=curPage;
+  render();
+}
+
+window.goPage=function(p){p=Math.max(0,Math.min(p,lastPage));curPage=p;window.curPage=p;render();window.scrollTo(0,0);};
+
+function render(){
+  var tbody=document.getElementById('tbody');
+  var bar=document.getElementById('count-bar');
+  var pager=document.getElementById('pager');
+  var start=curPage*PAGE_SIZE,end=start+PAGE_SIZE;
+  bar.innerHTML='Showing <span>'+(start+1)+'-'+Math.min(end,filtered.length)+'</span> of <span>'+filtered.length.toLocaleString()+'</span> filtered &nbsp;·&nbsp; <span>'+all.length.toLocaleString()+'</span> total IOC';
+  if(filtered.length>PAGE_SIZE){
+    pager.style.display='';
+    document.getElementById('pg-info').textContent='Page '+(curPage+1)+' / '+(lastPage+1);
+    document.getElementById('pg-first').disabled=curPage===0;
+    document.getElementById('pg-prev').disabled=curPage===0;
+    document.getElementById('pg-next').disabled=curPage===lastPage;
+    document.getElementById('pg-last').disabled=curPage===lastPage;
+  } else pager.style.display='none';
+  var html='';
+  filtered.slice(start,end).forEach(function(d){
+    var sev=(d.severity||'').toUpperCase();
+    var sevCls=sev==='HIGH'?'sev-H':sev==='MEDIUM'?'sev-M':'sev-I';
+    html+='<tr>'
+      +'<td class="dom">'+esc(d.domain)+'</td>'
+      +'<td><span class="tld-tag">.'+esc(d.tld||'')+'</span></td>'
+      +'<td>'+esc((d.category||'').replace(/_/g,' '))+'</td>'
+      +'<td class="'+sevCls+'">'+sev+'</td>'
+      +'<td>'+feedBadges(d.feeds)+'</td>'
+      +'<td style="color:var(--tx3)">'+esc(d.date||'')+'</td>'
+      +'<td style="white-space:nowrap;font-size:10px">'
+        +'<a href="https://urlscan.io/search/#page.domain%3A'+encodeURIComponent(d.domain)+'" target="_blank" rel="noopener" style="color:var(--tx3);border:1px solid var(--bdr);border-radius:2px;padding:1px 3px;margin-right:2px">US</a>'
+        +'<a href="https://www.virustotal.com/gui/domain/'+encodeURIComponent(d.domain)+'" target="_blank" rel="noopener" style="color:var(--tx3);border:1px solid var(--bdr);border-radius:2px;padding:1px 3px;margin-right:2px">VT</a>'
+        +'<a href="https://otx.alienvault.com/indicator/domain/'+encodeURIComponent(d.domain)+'" target="_blank" rel="noopener" style="color:var(--tx3);border:1px solid var(--bdr);border-radius:2px;padding:1px 3px">OTX</a>'
+      +'</td>'
+      +'</tr>';
+  });
+  tbody.innerHTML=html;
+}
+
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+</script>
+</body>
+</html>
