@@ -504,3 +504,36 @@ git clone [https://github.com/phishdestroy/namesilo-evidence.git](https://github
 cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## IOC Data — `2026-08-03`
+
+| Metric | Count |
+|:--|--:|
+| **Total IOC domains** | **204,399** |
+| HIGH severity | 122,105 |
+| MEDIUM severity | 82,294 |
+| Zone total | 5,282,563 |
+| Hit rate | 3.87% |
+
+### By Category
+
+| Category | Domains |
+|:--|--:|
+| `MALWARE` | 61,986 |
+| `BRAND_IMPERSONATION` | 53,434 |
+| `PHISHING_CRYPTO` | 33,885 |
+| `PHISHING_FINANCE` | 27,922 |
+| `PHISHING_CONFIRMED` | 18,637 |
+
+### Download Threat Intelligence
+
+| File | Format | Description |
+|:--|:--:|:--|
+| [`ioc/indicators.csv`](ioc/indicators.csv) | CSV | Full IOC: domain, category, severity, date, sources |
+| [`ioc/domains_high.txt`](https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/ioc/domains_high.txt) | TXT | HIGH severity domains only (122,105) |
+| [`ioc/domains_all_malicious.txt`](https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/ioc/domains_all_malicious.txt) | TXT | All IOC domains (204,399) |
+| [feed-ioc.html](https://phishdestroy.github.io/namesilo-evidence/feed-ioc.html) | HTML | Searchable table with feed source badges |
+
+**Sources used:** Hagezi TIF (2.1M), BlocklistProject Malware/Phishing (2.5M+120K), Maltrail (914K), mitchellkrogza PhishDB (385K), MetaMask, ScamBlock, CERT.pl, Phishing.Database, uBlock, Dandelion, firebog.net, brand keyword scan (BRAND_KEYWORDS from classify_brands).
+
+> Live report: [https://phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence)
