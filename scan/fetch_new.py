@@ -558,6 +558,18 @@ def _redact_email(e):
     if len(local) <= 3: return local[0] + '***@' + dom
     return local[:3] + '***@' + dom
 
+def _ioc_counts():
+    """Sizes of the published ioc/ blocklists (header and blank lines skipped)."""
+    def _n(p):
+        f = Path(p)
+        if not f.exists():
+            return 0
+        return sum(1 for ln in f.read_text(encoding='utf-8', errors='replace').splitlines()
+                   if ln.strip() and not ln.lstrip().startswith('#'))
+    return _n('ioc/domains_all_malicious.txt'), _n('ioc/domains_high.txt')
+
+_ioc_all, _ioc_high = _ioc_counts()
+
 _readme_path = Path('README.md')
 if _readme_path.exists():
     _md = _readme_path.read_text(encoding='utf-8')
@@ -574,7 +586,10 @@ if _readme_path.exists():
     _parts.append(f'<td align="center"><b>📦 Domains tracked</b><br/><sub><code>{_fmt_num(len(all_domains))}</code></sub></td>')
     _parts.append(f'<td align="center"><b>💰 Est. revenue</b><br/><sub><code>${total_revenue:,.0f}</code></sub></td>')
     _parts.append(f'<td align="center"><b>📡 Deployed</b><br/><sub><code>{deploy_rate}%</code></sub></td>')
-    _parts.append(f'<td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>{correlation_pct}%</code> ({_fmt_num(correlation_count)})</sub></td>')
+    if _ioc_all:
+        _parts.append(f'<td align="center"><b>✅ IOC classified</b><br/><sub><code>{_fmt_num(_ioc_all)}</code> ({_fmt_num(_ioc_high)} HIGH)</sub></td>')
+    else:
+        _parts.append(f'<td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>{correlation_pct}%</code> ({_fmt_num(correlation_count)})</sub></td>')
     _parts.append(f'<td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>{fresh_pct}%</code></sub></td>')
     _parts.append(f'<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>{_fmt_num(serial_email_count)}</code></sub></td>')
     _parts.append('</tr></table>')

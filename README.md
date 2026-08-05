@@ -111,6 +111,7 @@ BG  ░░░░░░░░░░░░░░░░░░     21,973 (1.1%)
 
 | File | Format | Description |
 |:--|:--:|:--|
+| [feed-ioc.html](https://phishdestroy.github.io/namesilo-evidence/feed-ioc.html) | HTML | Searchable IOC browser — 204,460 indicators, severity + feed source badges, urlscan/VT/OTX lookups |
 | [`data/all.txt`](data/all.txt) | TXT | All tracked domains |
 | [`data/index.json`](data/index.json) | JSON | Full analytics snapshot |
 | [`data/ioc/serial_registrants.json`](data/ioc/serial_registrants.json) | JSON | Repeat registrants + their domains |

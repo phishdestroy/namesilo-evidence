@@ -89,12 +89,13 @@ function feedBadges(feeds){
   }).join('');
 }
 
-var all=[],filtered=[],activeSev='',activeCat='',searchQ='';
+var all=[],filtered=[],activeSev='',activeCat='',searchQ='',TOTAL_IOC=0;
 var PAGE_SIZE=200,curPage=0,lastPage=0;
 window.curPage=0;window.lastPage=0;
 
 fetch('feed-ioc.json').then(function(r){return r.json();}).then(function(d){
   all=d.domains||[];
+  TOTAL_IOC=d.total||all.length;
   buildCatFilters();
   applyFilter();
 }).catch(function(){document.getElementById('count-bar').textContent='Failed to load feed-ioc.json';});
@@ -135,7 +136,7 @@ function render(){
   var bar=document.getElementById('count-bar');
   var pager=document.getElementById('pager');
   var start=curPage*PAGE_SIZE,end=start+PAGE_SIZE;
-  bar.innerHTML='Showing <span>'+(start+1)+'-'+Math.min(end,filtered.length)+'</span> of <span>'+filtered.length.toLocaleString()+'</span> filtered &nbsp;·&nbsp; <span>'+all.length.toLocaleString()+'</span> total IOC';
+  bar.innerHTML='Showing <span>'+(start+1)+'-'+Math.min(end,filtered.length)+'</span> of <span>'+filtered.length.toLocaleString()+'</span> filtered &nbsp;·&nbsp; <span>'+all.length.toLocaleString()+'</span> listed'+(TOTAL_IOC>all.length?' of <span>'+TOTAL_IOC.toLocaleString()+'</span> total IOC (highest severity first — full set in ioc/)':' total IOC');
   if(filtered.length>PAGE_SIZE){
     pager.style.display='';
     document.getElementById('pg-info').textContent='Page '+(curPage+1)+' / '+(lastPage+1);
