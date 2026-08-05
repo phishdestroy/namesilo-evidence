@@ -919,6 +919,7 @@
       "africonnect-exchange.org",
       "africonnecttv.com",
       "afrikabusinessconnect.com",
+      "afrisportconnect.com",
       "afritrialsconnect.com",
       "afrocaribeconnect.com",
       "afterloveconnections.com",
@@ -1008,8 +1009,7 @@
       "alertslegacyconnect-7f.online",
       "alertslegacyconnect-8f.online",
       "alertslegacyconnect-9f.online",
-      "alianzaconnect.com",
-      "alianzaconnects.com"
+      "alianzaconnect.com"
     ],
     "trust": [
       "1etrust.com",
@@ -1408,12 +1408,12 @@
       "account-mymx.info",
       "account-netffix.com",
       "account-netflix.help",
+      "account-ntflx-renew.com",
       "account-ntflx.help",
       "account-number-on-check.bar",
       "account-number-on-check.cfd",
       "account-number-on-check.rest",
-      "account-number-on-check.sbs",
-      "account-number.cfd"
+      "account-number-on-check.sbs"
     ],
     "official": [
       "1-win-official.com",
@@ -1719,7 +1719,6 @@
       "americanfarmlandinvestments.net",
       "americanfarmlandinvestments.org",
       "americans-farm.com",
-      "amiablegreenfarms.com",
       "aminfarm.com",
       "amlofarms.com",
       "anadoludogafarm.pro",
@@ -1803,6 +1802,7 @@
       "ballerinafarm.one",
       "ballerinafarms.one",
       "ballerinafarms.site",
+      "ballerlnafarm.com",
       "baloianfarms.sbs",
       "baltozerfarms.com",
       "bamboofarmington.com",
@@ -2297,6 +2297,7 @@
       "2025-update455.info",
       "2025-update47.info",
       "2025-update752.info",
+      "2025-update829.com",
       "2025-update897.com",
       "2026-update223.info",
       "2026-update414.info",
@@ -2422,8 +2423,7 @@
       "appalupdates-7f.online",
       "appalupdates-8f.online",
       "appalupdates-9f.online",
-      "appsupdate.xyz",
-      "appupdate.app"
+      "appsupdate.xyz"
     ],
     "vault": [
       "0chainvault.live",
@@ -3263,7 +3263,6 @@
       "apeiron-nft.com",
       "apenft.lol",
       "aperoinnft.com",
-      "apexnftstore.com",
       "app-fugunft.com",
       "aqnft.com",
       "arcticnft.com",
@@ -3433,7 +3432,8 @@
       "com-exchange-nft279472.cfd",
       "com-exchange-nft279975.cfd",
       "com-exchange-nft280297.cfd",
-      "com-exchange-nft282509.cfd"
+      "com-exchange-nft282509.cfd",
+      "com-exchange-nft282655.cfd"
     ],
     "mint": [
       "10minteardown.com",
@@ -3836,8 +3836,8 @@
       "216135-coinbase.com",
       "218969-coinbase.com",
       "220582-coinbase.com",
-      "232232-coinbase.com",
-      "237459-coinbase.com"
+      "237459-coinbase.com",
+      "238765-coinbase.com"
     ],
     "bitcoin": [
       "0xbitcoin.foundation",
