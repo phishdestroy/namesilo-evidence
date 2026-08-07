@@ -352,7 +352,7 @@ for month_key, doms in by_month.items():
 Path('data/all.txt').write_text('\n'.join(sorted(all_domains)) + '\n', encoding='utf-8')
 
 # ── data/index.json ───────────────────────────────────────────────────────────
-# Build index_days from all TXT files on disk (ensures no day is lost from index)
+# Build index_days from all TXT files on disk
 _disk_days = {}
 _data_new = Path('data/new')
 if _data_new.exists():
@@ -361,26 +361,15 @@ if _data_new.exists():
         if len(_d) == 10 and _d.count('-') == 2:
             _lines = [_l.strip() for _l in _txt.read_text(encoding='utf-8').splitlines() if _l.strip()]
             _yr, _mo = _d[:4], _d[5:7]
-            _disk_days[_d] = {
-                'date': _d,
-                'count': len(set(_lines)),
+            _disk_days[_d] = {'date': _d, 'count': len(set(_lines)),
                 'revenue': round(sum(get_price(_l) for _l in set(_lines)), 2),
-                'path': f'data/new/{_yr}/{_mo}/{_d}.txt',
-            }
-# Override disk data with fresh API data for dates in current window
+                'path': f'data/new/{_yr}/{_mo}/{_d}.txt'}
 for d in dates:
     _disk_days[d] = {
-        'date':    d,
-        'count':   len(set(r['d'] for r in by_date[d])),
+        'date': d, 'count': len(set(r['d'] for r in by_date[d])),
         'revenue': day_revenue(by_date[d]),
-        'path':    f'data/new/{d[:4]}/{d[5:7]}/{d}.txt',
-    }
+        'path': f'data/new/{d[:4]}/{d[5:7]}/{d}.txt'}
 index_days = sorted(_disk_days.values(), key=lambda x: x['date'])
-        'revenue': day_revenue(by_date[d]),
-        'path':    f'data/new/{d[:4]}/{d[5:7]}/{d}.txt',
-    }
-    for d in dates
-]
 index = {
     'days':                   index_days,
     'total_new_all_time':     len(all_domains),
