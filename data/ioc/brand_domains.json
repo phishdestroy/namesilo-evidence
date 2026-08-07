@@ -270,13 +270,7 @@
       "accountsupportdesk.com",
       "accountsupportonline.help",
       "accounttechnicalsupport.info",
-      "accounttechnicalsupport.online",
-      "accounttechnicalsupport.site",
-      "accounttechnicalsupport.website",
       "accountverificationsupport.info",
-      "accountverificationsupport.online",
-      "accountverificationsupport.site",
-      "accountverificationsupport.website",
       "accountwithsupport.com",
       "acctsupport-linkdln.com",
       "acesssonlinesupport.help",
@@ -403,7 +397,13 @@
       "alimony-and-spousal-support-uzq.sbs",
       "alimony-and-spousal-support-xaj.cyou",
       "alimonyandspousalsupport04.cyou",
-      "alimonyandspousalsupportfinder.cyou"
+      "alimonyandspousalsupportfinder.cyou",
+      "alimonyandspousalsupportguide29.cyou",
+      "alimonyandspousalsupporthub.cyou",
+      "alimonyandspousalsupporthub08.cyou",
+      "alimonyandspousalsupportnet25.cyou",
+      "alimonyandspousalsupportnet39.cyou",
+      "alimonyandspousalsupportonline.cyou"
     ],
     "crypto": [
       "0cryptomarkettrends.com",
@@ -754,6 +754,7 @@
       "aisecurespace.com",
       "aisecuresystem.com",
       "aisecuresystems.com",
+      "aisystemsecure.com",
       "akirasecuresfiles.icu",
       "aktive-kag0ya-gmo-secur-active-secure-kag0ya.xyz",
       "alegatesecure.com",
@@ -806,8 +807,7 @@
       "apcbillingsecuredfile.click",
       "app-spysecures.click",
       "apple-secure.help",
-      "appleid-secure.com",
-      "appleidhelpsecure.help"
+      "appleid-secure.com"
     ],
     "connect": [
       "1257connecticut.com",
@@ -1142,7 +1142,6 @@
       "aitrusty.biz",
       "aiworldtrust.com",
       "aiworldtrust.org",
-      "akintrust-ag.site",
       "aldentrustplc.com",
       "aleppo-trust.rest",
       "alextrustbank.com",
@@ -1211,7 +1210,8 @@
       "amendtrust-24.cfd",
       "amendtrust-25.cfd",
       "amendtrust-26.cfd",
-      "amendtrust-27.cfd"
+      "amendtrust-27.cfd",
+      "amendtrust-28.cfd"
     ],
     "account": [
       "01myaccount1-overcharge1bill.info",
@@ -1710,6 +1710,7 @@
       "alliefamilyfarm.com",
       "alphabetfarms.com",
       "alsawsanfarms.com",
+      "altadenafarmersmarket.com",
       "amafarms.com",
       "amafarmtribe.com",
       "amagohfarm.com",
@@ -1718,6 +1719,7 @@
       "americanfarmlandinvestments.net",
       "americanfarmlandinvestments.org",
       "americans-farm.com",
+      "amiablegreenfarms.com",
       "aminfarm.com",
       "amlofarms.com",
       "anadoludogafarm.pro",
@@ -1815,9 +1817,7 @@
       "barakafarmskenya.com",
       "barkerfarmsllc.com",
       "barkingcowfarms.com",
-      "barneyfarmsliving.com",
-      "barneysfarmseeds.com",
-      "batongtradingandfarms.com"
+      "barneyfarmsliving.com"
     ],
     "bridge": [
       "1041thebridge.com",
@@ -1927,7 +1927,6 @@
       "arcbridgereceivables.com",
       "artbridgecr.com",
       "ashbridgechimneys.com",
-      "ashbridgeline.com",
       "assetbridge.cfd",
       "assetbridgeltd.com",
       "assetsbridgepartners.com",
@@ -2019,7 +2018,8 @@
       "bedbridgescrew.org",
       "belverderebridge.com",
       "bembridgeislandtours.com",
-      "bembridgesc.net"
+      "bembridgesc.net",
+      "bene-bridge.com"
     ],
     "claim": [
       "0x0claims.com",
@@ -2206,7 +2206,6 @@
       "blfi-kroll-claims.com",
       "blnance-claim.com",
       "block-fi-kroll-claimants.xyz",
-      "blockchainclaimdesk.com",
       "blockchair-claims.com",
       "blockdagclaim.xyz",
       "blockfi-centerofclaims.com",
@@ -2221,7 +2220,8 @@
       "blockfikroll-bfiportal-claiming.xyz",
       "blockfikroll-bfiportal-claims.xyz",
       "bluefinclaim.bond",
-      "bluefinclaim.cfd"
+      "bluefinclaim.cfd",
+      "bluefinclaim.cyou"
     ],
     "update": [
       "06updatelive.xyz",
@@ -2665,7 +2665,6 @@
       "airwalleten.xyz",
       "airwalletglobal.xyz",
       "aislewallet.com",
-      "aitronewallet.com",
       "aiwallet.global",
       "aiwallet.network",
       "aiwalletpay.com",
@@ -2760,6 +2759,7 @@
       "atomic-wallet.support",
       "atomic-wallets.com",
       "atomic-wallets.help",
+      "atomic-walletsupport.com",
       "atomiccoldwallet.help",
       "atomiccryptowallet.help",
       "atomiccryptowallet.org",
@@ -2846,7 +2846,6 @@
       "3333tokens.vip",
       "3dctoken.com",
       "41token.vip",
-      "4chanstoken.info",
       "4dogtoken.xyz",
       "4tunetoken.xyz",
       "52token.xyz",
@@ -2920,7 +2919,6 @@
       "alturatoken.app",
       "ameliatoken.vip",
       "ameliatoken.xyz",
-      "amigo-token.org",
       "ancillarytoken.com",
       "ancillarytokens.com",
       "anytoken.one",
@@ -3029,7 +3027,9 @@
       "blndtoken.xyz",
       "block-token.com",
       "bltoken.com",
-      "blueartoken.xyz"
+      "blueartoken.xyz",
+      "bnb-testoken.com",
+      "bnctoken.net"
     ],
     "verify": [
       "001verifyrbcacc0unt1.info",
@@ -3077,7 +3077,6 @@
       "accessverify.help",
       "accesverifyaccount.com",
       "account-verify-support.com",
-      "account-verify.website",
       "accountclaimverify.sbs",
       "accountinfoverify.online",
       "accountreviewsverify.xyz",
@@ -3092,7 +3091,6 @@
       "acessauthverify.help",
       "acessauthverifylogin.help",
       "acessauthverifylogon.help",
-      "acessmyloginverify.click",
       "acessonlinenowverify.help",
       "acessonlineverify.help",
       "acessonlineverifyautt.help",
@@ -3220,7 +3218,6 @@
       "bmobanking-verifysecure.com",
       "bmologinverify.com",
       "bo2faverify-auth.help",
-      "bo2faverify.info",
       "boa-2faverify.help",
       "boa-loginverify.help",
       "boa-logonverify.help",
@@ -3231,7 +3228,10 @@
       "boa-usrverify.help",
       "boa-verifyuser.help",
       "boa2fauserverify.help",
-      "boa2faverify.help"
+      "boa2faverify.help",
+      "boa2onlineverify.help",
+      "boa2verify-auth.help",
+      "boauser-verifyauth.help"
     ],
     "mint": [
       "10minteardown.com",
@@ -3260,7 +3260,6 @@
       "admintank.com",
       "adminteamx.info",
       "adminterrabet9hm.xyz",
-      "admintgroup.com",
       "admintktops.com",
       "admintogel.net",
       "admintogel77.com",
@@ -3433,7 +3432,8 @@
       "bvildwithmint.com",
       "byebrumintas.com",
       "byoutreachmint.com",
-      "bytemint.com"
+      "bytemint.com",
+      "calamint.xyz"
     ],
     "nft": [
       "0nftmarketplaceinfo.com",
@@ -3638,7 +3638,6 @@
       "com-exchange-nft282655.cfd"
     ],
     "coinbase": [
-      "0019-coinbase.com",
       "005932coinbase.com",
       "008896-coinbase.com",
       "009586-coinbase.com",
@@ -3837,7 +3836,8 @@
       "218969-coinbase.com",
       "220582-coinbase.com",
       "237459-coinbase.com",
-      "238765-coinbase.com"
+      "238765-coinbase.com",
+      "241543-coinbase.com"
     ],
     "bitcoin": [
       "0xbitcoin.foundation",
