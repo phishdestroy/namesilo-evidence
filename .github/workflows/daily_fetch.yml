@@ -18,9 +18,6 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
-        run: pip install requests
-
       - name: Verify NETAPI_TOKEN secret
         env:
           NETAPI_TOKEN: ${{ secrets.NETAPI_TOKEN }}
