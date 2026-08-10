@@ -401,6 +401,9 @@ index = {
     'latest_reg':             dates[-1],
 }
 Path('data/index.json').write_text(json.dumps(index, indent=2) + '\n', encoding='utf-8')
+chart_path = Path('docs/chart-data.json')
+if chart_path.parent.exists():
+    chart_path.write_text(json.dumps(index, indent=2) + '\n', encoding='utf-8')
 
 # ── IOC export: data/ioc/ ──────────────────────────────────────────────────────
 ioc_dir = Path('data/ioc')
