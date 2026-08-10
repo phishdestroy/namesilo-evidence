@@ -69,6 +69,7 @@ Each entry in `data/new/YYYY/MM/YYYY-MM-DD.json` contains:
 | `correlation_count` | int | Domains confirmed in main blocklist |
 | `correlation_pct` | float | Confirmation rate |
 | `last_updated` | str | ISO date of latest fetch |
+| `latest_reg` | str | ISO date of latest registration in fetched dataset |
 
 ## License
 

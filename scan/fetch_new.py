@@ -397,7 +397,8 @@ index = {
     'ranked_count':           ranked_count,
     'correlation_count':      correlation_count,
     'correlation_pct':        correlation_pct,
-    'last_updated':           dates[-1],
+    'last_updated':           TODAY,
+    'latest_reg':             dates[-1],
 }
 Path('data/index.json').write_text(json.dumps(index, indent=2) + '\n', encoding='utf-8')
 
