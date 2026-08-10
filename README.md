@@ -45,7 +45,7 @@ All of it is in the record. All of it makes this louder.<br/>
 <td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,281,440</code></sub></td>
 <td align="center"><b>💰 Est. revenue</b><br/><sub><code>$37,725,442</code></sub></td>
 <td align="center"><b>📡 Deployed</b><br/><sub><code>59.5%</code></sub></td>
-<td align="center"><b>✅ IOC classified</b><br/><sub><code>204,912</code> (122,150 HIGH)</sub></td>
+<td align="center"><b>✅ IOC classified</b><br/><sub><code>204,935</code> (122,152 HIGH)</sub></td>
 <td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>0.5%</code></sub></td>
 <td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,299</code></sub></td>
 </tr></table>
