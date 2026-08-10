@@ -7,7 +7,8 @@ Auto-regenerated daily by `scan/fetch_new.py` after the NetAPI fetch.
 |------|---------------|-------|
 | `today.json` | New domains registered today | `red` |
 | `total.json` | Total domains all time | `red` |
-| `last_fetch.json` | Date of last successful fetch | `blue` |
+| `last_fetch.json` | Date of last successful fetch run | `blue` |
+| `latest_reg.json` | Latest registration date in fetched dataset | `blue` |
 | `revenue.json` | Estimated registrar revenue from these domains | `gold` |
 | `lifetime.json` | Average registration period (days) | `purple` |
 | `hosting.json` | Top 3 hosting countries | `blue` |

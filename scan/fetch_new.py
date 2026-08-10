@@ -715,7 +715,9 @@ def badge(label, message, color, label_color='0c1018'):
 (stats_dir / 'total.json').write_text(
     badge('total domains', f'{len(all_domains):,}', 'da3633'), encoding='utf-8')
 (stats_dir / 'last_fetch.json').write_text(
-    badge('last fetch', dates[-1], '0075ca'), encoding='utf-8')
+    badge('last fetch', TODAY, '0075ca'), encoding='utf-8')
+(stats_dir / 'latest_reg.json').write_text(
+    badge('latest reg', dates[-1], '0075ca'), encoding='utf-8')
 (stats_dir / 'revenue.json').write_text(
     badge('est. revenue', f'${total_revenue:,.0f}', 'e3b341'), encoding='utf-8')
 (stats_dir / 'lifetime.json').write_text(
