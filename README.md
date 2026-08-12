@@ -39,43 +39,43 @@ All of it is in the record. All of it makes this louder.<br/>
 
 <!-- LIVE_STATS:START -->
 
-> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-08-11`
+> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-08-12`
 
 <table><tr>
-<td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,284,127</code></sub></td>
-<td align="center"><b>💰 Est. revenue</b><br/><sub><code>$37,763,776</code></sub></td>
+<td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,285,583</code></sub></td>
+<td align="center"><b>💰 Est. revenue</b><br/><sub><code>$37,790,993</code></sub></td>
 <td align="center"><b>📡 Deployed</b><br/><sub><code>59.5%</code></sub></td>
 <td align="center"><b>✅ IOC classified</b><br/><sub><code>204,935</code> (122,152 HIGH)</sub></td>
 <td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>0.5%</code></sub></td>
-<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,303</code></sub></td>
+<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,300</code></sub></td>
 </tr></table>
 
 ### 🏷️ Top TLD Zones
 
 | TLD | Count | Avg Reg Period | Est. Revenue |
 |:--|--:|--:|--:|
-| `.com` | 2,312,988 | 1,895d | $20,793,762 |
-| `.sbs` | 369,706 | 626d | $1,844,833 |
-| `.xyz` | 365,290 | 782d | $544,282 |
-| `.net` | 258,815 | 1,558d | $2,585,562 |
-| `.info` | 239,995 | 673d | $957,580 |
-| `.org` | 232,641 | 1,526d | $2,324,084 |
-| `.cfd` | 229,461 | 666d | $1,145,010 |
-| `.click` | 92,631 | 520d | $369,598 |
-| `.vip` | 67,871 | 623d | $338,676 |
-| `.link` | 66,850 | 674d | $266,732 |
+| `.com` | 2,316,448 | 1,892d | $20,824,868 |
+| `.sbs` | 369,552 | 626d | $1,844,064 |
+| `.xyz` | 365,067 | 783d | $543,950 |
+| `.net` | 258,971 | 1,558d | $2,587,120 |
+| `.info` | 239,937 | 673d | $957,349 |
+| `.org` | 232,637 | 1,526d | $2,324,044 |
+| `.cfd` | 229,457 | 666d | $1,144,990 |
+| `.click` | 92,602 | 520d | $369,482 |
+| `.vip` | 67,807 | 625d | $338,357 |
+| `.link` | 66,840 | 675d | $266,692 |
 
 ### 🌍 Top Hosting Countries
 
 ```
-US  ██████████████████  1,032,835 (50.1%)
-DE  ████████░░░░░░░░░░    482,638 (23.4%)
-SG  █░░░░░░░░░░░░░░░░░     83,257 (4.0%)
-HK  █░░░░░░░░░░░░░░░░░     68,742 (3.3%)
-CA  ░░░░░░░░░░░░░░░░░░     56,192 (2.7%)
-NL  ░░░░░░░░░░░░░░░░░░     52,313 (2.5%)
-GB  ░░░░░░░░░░░░░░░░░░     40,827 (2.0%)
-BG  ░░░░░░░░░░░░░░░░░░     21,491 (1.0%)
+US  ██████████████████  1,033,887 (50.2%)
+DE  ████████░░░░░░░░░░    481,393 (23.4%)
+SG  █░░░░░░░░░░░░░░░░░     83,518 (4.1%)
+HK  █░░░░░░░░░░░░░░░░░     68,711 (3.3%)
+CA  ░░░░░░░░░░░░░░░░░░     56,165 (2.7%)
+NL  ░░░░░░░░░░░░░░░░░░     51,997 (2.5%)
+GB  ░░░░░░░░░░░░░░░░░░     40,755 (2.0%)
+BG  ░░░░░░░░░░░░░░░░░░     21,502 (1.0%)
 ```
 
 ### 📈 Registration Burst Days
@@ -83,14 +83,14 @@ BG  ░░░░░░░░░░░░░░░░░░     21,491 (1.0%)
 | Date | Domains | × Average |
 |:--|--:|--:|
 | `2025-07-19` | 16,692 | **35.9×** 🚨 |
-| `2025-12-01` | 14,275 | **30.7×** 🚨 |
-| `2026-06-30` | 13,469 | **29.0×** 🚨 |
-| `2026-07-01` | 12,771 | **27.5×** 🚨 |
+| `2025-12-01` | 14,277 | **30.7×** 🚨 |
+| `2026-06-30` | 13,470 | **29.0×** 🚨 |
+| `2026-07-01` | 12,772 | **27.5×** 🚨 |
 | `2026-06-09` | 12,394 | **26.6×** 🚨 |
 
 ### 🎯 Top Targeted Brands & Keywords
 
-`login (11,567)` &middot; `support (6,421)` &middot; `crypto (6,070)` &middot; `secure (5,977)` &middot; `connect (5,814)` &middot; `trust (5,772)` &middot; `account (4,055)` &middot; `official (4,013)` &middot; `farm (3,484)` &middot; `bridge (3,231)` &middot; `claim (3,204)` &middot; `update (3,119)` &middot; `vault (2,407)` &middot; `wallet (2,127)` &middot; `token (1,980)`
+`login (11,606)` &middot; `support (6,415)` &middot; `crypto (6,063)` &middot; `secure (5,929)` &middot; `connect (5,803)` &middot; `trust (5,770)` &middot; `account (4,046)` &middot; `official (4,013)` &middot; `farm (3,482)` &middot; `bridge (3,229)` &middot; `claim (3,199)` &middot; `update (3,123)` &middot; `vault (2,409)` &middot; `wallet (2,126)` &middot; `token (1,985)`
 
 ### 🕵️ Top Serial Registrants — 50 emails with ≥5 domains
 
@@ -98,14 +98,14 @@ BG  ░░░░░░░░░░░░░░░░░░     21,491 (1.0%)
 |--:|:--|--:|
 | 1 | `chi***@mail.com` | **10,487** |
 | 2 | `diz***@992fun.com` | **8,922** |
-| 3 | `ser***@atom.com` | **5,239** |
-| 4 | `inf***@brandbucket.com` | **2,720** |
-| 5 | `sal***@brandbucket.com` | **2,720** |
+| 3 | `ser***@atom.com` | **5,296** |
+| 4 | `inf***@brandbucket.com` | **2,788** |
+| 5 | `sal***@brandbucket.com` | **2,788** |
 | 6 | `992***@gmail.com` | **1,693** |
 | 7 | `diz***@91jqx.com` | **1,686** |
 | 8 | `shu***@outlook.com` | **1,421** |
-| 9 | `jac***@greensock.com` | **895** |
-| 10 | `pri***@gmail.com` | **694** |
+| 9 | `jac***@greensock.com` | **894** |
+| 10 | `pri***@gmail.com` | **681** |
 
 ### 📥 Download Threat Intelligence
 
