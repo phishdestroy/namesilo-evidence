@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-13",
+  "generated": "2026-08-14",
   "keywords": {
     "login": [
       "0123winlogin.com",
@@ -684,6 +684,7 @@
       "account-apple-secureid.com",
       "account-apple-secureidlink.com",
       "account-apple-secureidlink.net",
+      "account-secure-check.xyz",
       "account-secure-flix.com",
       "account-secure-ledger.com",
       "account-securecheck.help",
@@ -713,7 +714,6 @@
       "acssecurehuntington.help",
       "acsssecurehutington.help",
       "activemail5-secure-ne-jp.info",
-      "activemail7-secure-ne-jp.info",
       "activemailkagoyasecureonlinesession.icu",
       "ad-opesecure.sbs",
       "ad-secure.com",
@@ -843,7 +843,6 @@
       "acbconnect.com",
       "access-connector.com",
       "accessorieconnectorieaccessorieaccessorie.cfd",
-      "accesspointconnectuk.online",
       "account-connect.cfd",
       "accountconnection.store",
       "accraconnect.net",
@@ -898,6 +897,7 @@
       "adsenseconnect.site",
       "adultsconnects.com",
       "adultswingconnection.com",
+      "aerospaceconnectors.com",
       "aethraretailconnectdirect.lat",
       "aethraretailconnects.sbs",
       "aethraretailconnects.xyz",
@@ -1816,8 +1816,8 @@
       "banddsfarmvenue.com",
       "bangkokfarmersmarket.org",
       "banolifarm.com",
-      "barakafarmskenya.com",
-      "barkerfarmsllc.com"
+      "bar-kfarms.com",
+      "barakafarmskenya.com"
     ],
     "bridge": [
       "1041thebridge.com",
@@ -2089,6 +2089,7 @@
       "allstate-claims.cfd",
       "altclaim.biz",
       "altclaim.com",
+      "altclaims.com",
       "alwaysclaim.xyz",
       "amazing-claim-giveaway-instantwin.autos",
       "amazing-claim-specialoffer-giving.autos",
@@ -2220,8 +2221,7 @@
       "blockfikroll-bfiportal-claiming.xyz",
       "blockfikroll-bfiportal-claims.xyz",
       "bluefinclaim.bond",
-      "bluefinclaim.cfd",
-      "bluefinclaim.cyou"
+      "bluefinclaim.cfd"
     ],
     "update": [
       "06updatelive.xyz",
@@ -2379,6 +2379,7 @@
       "alieninvasionupdates.com",
       "aliensamongusupdates.com",
       "alldailyupdates.com",
+      "allianceinsureupdate.com",
       "allnewsupdates.click",
       "allnovelupdates.com",
       "allstarsupdate.info",
@@ -2422,8 +2423,7 @@
       "appalupdates-8f.online",
       "appalupdates-9f.online",
       "appsupdate.xyz",
-      "appupdate.app",
-      "appupdate1.sbs"
+      "appupdate.app"
     ],
     "vault": [
       "0chainvault.live",
@@ -2976,10 +2976,8 @@
       "basedegentokens.net",
       "basetoken.sale",
       "batoken.com",
-      "beachtoken.com",
       "beaststokens.com",
       "beasttokens.com",
-      "bellatoken.xyz",
       "belugatoken.xyz",
       "benchmark-token.com",
       "bengtoken.xyz",
@@ -3029,7 +3027,9 @@
       "block-token.com",
       "bltoken.com",
       "blueartoken.xyz",
-      "bnb-testoken.com"
+      "bnb-testoken.com",
+      "bnctoken.net",
+      "bobotoken.info"
     ],
     "verify": [
       "001verifyrbcacc0unt1.info",
@@ -3122,6 +3122,7 @@
       "aliensmsverify.com",
       "alisonverify.com",
       "alltru-verify.com",
+      "almuktarverify.com",
       "alotofverify.sbs",
       "amazon-co-jp-security-verify.help",
       "amazoncaptchaverify.com",
@@ -3230,8 +3231,7 @@
       "boa2fauserverify.help",
       "boa2faverify.help",
       "boa2onlineverify.help",
-      "boa2verify-auth.help",
-      "boauser-verifyauth.help"
+      "boa2verify-auth.help"
     ],
     "mint": [
       "10minteardown.com",
@@ -3720,7 +3720,6 @@
       "1785263-coinbase.com",
       "1785726-coinbase.com",
       "1785763-coinbase.com",
-      "1785964-coinbase.com",
       "178633a-coinbase.com",
       "178652coinbase.com",
       "1787683-coinbase.com",
@@ -3837,7 +3836,8 @@
       "220582-coinbase.com",
       "237459-coinbase.com",
       "238765-coinbase.com",
-      "241543-coinbase.com"
+      "241543-coinbase.com",
+      "243459coinbase.com"
     ],
     "bitcoin": [
       "0xbitcoin.foundation",
