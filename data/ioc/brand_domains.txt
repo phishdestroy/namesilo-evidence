@@ -696,7 +696,6 @@ secure	aceshareassetsecureofficefl.sbs
 secure	acesssecureblazedigital.help
 secure	acesssmycryptsecureinbox.info
 secure	achsecurefile.com
-secure	acmails5-secure-ne-jp.info
 secure	acpofficesecurefiles.sbs
 secure	acpofficesecurefilesxx.sbs
 secure	acsecurehuntington.help
@@ -798,6 +797,7 @@ secure	apple-secure.help
 secure	appleid-secure.com
 secure	appleidhelpsecure.help
 secure	appleidsecure.info
+secure	applepaysecurepayment.com
 trust	1etrust.com
 trust	1ststrustbank.com
 trust	1sttrustbank247.online
@@ -967,9 +967,6 @@ trust	alphatrustplc.com
 trust	alpinetrustcapital.com
 trust	alpinetrustpartners.com
 trust	alptrustgpt.com
-trust	alqalamtrust.com
-trust	alqalamtrust.net
-trust	alqalamtrust.org
 trust	alshafiwelfaretrust.org
 trust	alvendatrust.com
 trust	amanatrusthomes.com
@@ -998,6 +995,9 @@ trust	amendtrust-25.cfd
 trust	amendtrust-26.cfd
 trust	amendtrust-27.cfd
 trust	amendtrust-28.cfd
+trust	amendtrust-29.cfd
+trust	amendtrust-3.cfd
+trust	amendtrust-30.cfd
 connect	1257connecticut.com
 connect	1msconnectserver.com
 connect	1msserverconnect.com
@@ -1189,7 +1189,6 @@ connect	alaconnectapp-8a.online
 connect	alaconnectapp-9a.online
 connect	alchemymatchesconnections.com
 connect	alconnecttv.com
-connect	alertsinterconnectuserdigital.online
 connect	alertslegacyconnect-1f.online
 connect	alertslegacyconnect-2f.online
 connect	alertslegacyconnect-3f.online
@@ -1198,6 +1197,7 @@ connect	alertslegacyconnect-5f.online
 connect	alertslegacyconnect-6f.online
 connect	alertslegacyconnect-7f.online
 connect	alertslegacyconnect-8f.online
+connect	alertslegacyconnect-9f.online
 official	070slotofficial.com
 official	1-win-official.com
 official	123movies-official-website.cfd
@@ -1394,10 +1394,10 @@ official	1winbk-official18.xyz
 official	1winbk-official19.xyz
 official	1winbk-official20.xyz
 official	1winbk-official22.xyz
+official	1wincasino-official.cyou
 official	1wincasinoofficialslots.xyz
 official	1xbet-official-site.net
 official	1xbet-official.best
-official	1xbet-official.lol
 account	01myaccount1-overcharge1bill.info
 account	09account.org
 account	0auth2-myaccount.com
@@ -1642,6 +1642,7 @@ farm	afodabofarm.com
 farm	africacontemporaryfarming.com
 farm	africanfarmersstories.org
 farm	africanfarms.biz
+farm	africayouthfarmersgroup.com
 farm	agamemnon-horsebreedingfarm.com
 farm	agapaofarm.org
 farm	agavefarm.com
@@ -1797,7 +1798,6 @@ farm	banddsfarmvenue.com
 farm	bangkokfarmersmarket.org
 farm	banolifarm.com
 farm	bar-kfarms.com
-farm	barakafarmskenya.com
 bridge	1041thebridge.com
 bridge	10ebrisbuyerbridge.click
 bridge	10ebrisbuyerbridge.lat
@@ -2118,8 +2118,6 @@ claim	au-claimsg.sbs
 claim	auaccesstaxationclaim.org
 claim	auclaim-centers.online
 claim	auclaimsecure.info
-claim	auclaimverifiedcenters.com
-claim	auclaimverifycenters.com
 claim	augovclaimportal.info
 claim	aulodgeclaim.com
 claim	aus-claimlodgement.info
@@ -2198,6 +2196,8 @@ claim	bluefinclaim.cfd
 claim	bluefinclaim.cyou
 claim	bluefinclaim.sbs
 claim	bluefinclaim.skin
+claim	blum-claim.lol
+claim	bnb-claim.sbs
 update	06updatelive.xyz
 update	08liv3zorn-update3.com
 update	08updatedlive.com
@@ -2316,7 +2316,6 @@ update	account-updatez.xyz
 update	accountdataupdate.online
 update	accountingupdates.com
 update	accountrecoveryupdate.com
-update	accountsecurityupdate.buzz
 update	accountstatusupdate.online
 update	accountupdate.app
 update	accountupdatecenter.com
@@ -2398,6 +2397,7 @@ update	appalupdates-9f.online
 update	appsupdate.xyz
 update	appupdate.app
 update	appupdate1.sbs
+update	appupdate2.sbs
 vault	0chainvault.live
 vault	120vault.com
 vault	12vault.com
@@ -2565,6 +2565,7 @@ vault	avolisvaultify.com
 vault	axiomvaccinevault.com
 vault	azure-key-vault.cfd
 vault	azurevault.net
+vault	azurevaultglobal.com
 vault	backupvaults.xyz
 vault	backupweb3vault.com
 vault	baktiuniversalvaults.com
@@ -2597,7 +2598,6 @@ vault	billvault.com
 vault	biocharvault.com
 vault	biomassvault.com
 vault	biovaultlabs.science
-vault	birchvault.com
 wallet	0securewalletreview.com
 wallet	1-wallet-release.lol
 wallet	1fuel-wallet.com
@@ -2673,8 +2673,6 @@ wallet	amlwallet3.com
 wallet	amlwalletapp.com
 wallet	amlwalletbot.com
 wallet	amlwalletcheck.com
-wallet	amlwalletcheck.info
-wallet	amlwalletcheck.org
 wallet	amlwalletrisk.com
 wallet	amlwallets.app
 wallet	amlwalletscaner.com
@@ -2798,6 +2796,8 @@ wallet	basewalletinfo.help
 wallet	basewallets.com
 wallet	basewallets.help
 wallet	bbnwallet.com
+wallet	bchainwallet.ltd
+wallet	beaconomywallet.com
 token	0tokeninvestor.com
 token	0tokenize.xyz
 token	0x0tokens.lol
@@ -2820,7 +2820,6 @@ token	4tunetoken.xyz
 token	52token.xyz
 token	666tokens.com
 token	6figtoken.com
-token	7boxtoken.network
 token	88token.org
 token	a3token.com
 token	abbatoken.org
@@ -2998,6 +2997,7 @@ token	bltoken.com
 token	blueartoken.xyz
 token	bnb-testoken.com
 token	bnctoken.net
+token	bobotoken.info
 verify	001verifyrbcacc0unt1.info
 verify	01bm0-verifymyl0gin.info
 verify	01bmoverifymylogin.com
@@ -3126,7 +3126,6 @@ verify	asterdexverify.pro
 verify	asterverify.pro
 verify	astoriverify.com
 verify	atoverify.info
-verify	auclaimverifycenters.com
 verify	aulodgeverifys.info
 verify	aupost-addressverify.xyz
 verify	aupost-verify.com
@@ -3198,6 +3197,7 @@ verify	boa2fauserverify.help
 verify	boa2faverify.help
 verify	boa2onlineverify.help
 verify	boa2verify-auth.help
+verify	boauser-verifyauth.help
 mint	10minteardown.com
 mint	25badmintonrindonesia.com
 mint	25badxmintonrindonesia.com
@@ -3484,7 +3484,7 @@ nft	citrusapenft.lol
 nft	ckyvnfttox.rest
 nft	claim-fugunft.com
 nft	claimjup-nft.com
-nft	claimjupsnfts.com
+nft	claimjupsnft.com
 nft	claimnft-yala.org
 nft	claimnftyala.org
 nft	claims-fugunft.com
