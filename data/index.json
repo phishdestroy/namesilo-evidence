@@ -284,8 +284,8 @@
     },
     {
       "date": "1994-08-24",
-      "count": 1,
-      "revenue": 8.99,
+      "count": 2,
+      "revenue": 17.98,
       "path": "data/new/1994/08/1994-08-24.txt"
     },
     {
@@ -986,14 +986,14 @@
     },
     {
       "date": "1995-08-22",
-      "count": 1,
-      "revenue": 8.99,
+      "count": 3,
+      "revenue": 27.97,
       "path": "data/new/1995/08/1995-08-22.txt"
     },
     {
       "date": "1995-08-24",
-      "count": 2,
-      "revenue": 17.98,
+      "count": 1,
+      "revenue": 8.99,
       "path": "data/new/1995/08/1995-08-24.txt"
     },
     {
@@ -2672,14 +2672,14 @@
     },
     {
       "date": "1996-08-21",
-      "count": 3,
-      "revenue": 27.97,
+      "count": 4,
+      "revenue": 36.96,
       "path": "data/new/1996/08/1996-08-21.txt"
     },
     {
       "date": "1996-08-22",
-      "count": 4,
-      "revenue": 36.96,
+      "count": 7,
+      "revenue": 63.93,
       "path": "data/new/1996/08/1996-08-22.txt"
     },
     {
@@ -2690,8 +2690,8 @@
     },
     {
       "date": "1996-08-24",
-      "count": 6,
-      "revenue": 53.94,
+      "count": 3,
+      "revenue": 26.97,
       "path": "data/new/1996/08/1996-08-24.txt"
     },
     {
@@ -4742,14 +4742,14 @@
     },
     {
       "date": "1997-08-21",
-      "count": 12,
-      "revenue": 112.88,
+      "count": 13,
+      "revenue": 121.87,
       "path": "data/new/1997/08/1997-08-21.txt"
     },
     {
       "date": "1997-08-22",
-      "count": 6,
-      "revenue": 55.94,
+      "count": 9,
+      "revenue": 83.91,
       "path": "data/new/1997/08/1997-08-22.txt"
     },
     {
@@ -6020,8 +6020,8 @@
     },
     {
       "date": "1998-03-25",
-      "count": 8,
-      "revenue": 72.92,
+      "count": 7,
+      "revenue": 63.93,
       "path": "data/new/1998/03/1998-03-25.txt"
     },
     {
@@ -6908,20 +6908,20 @@
     },
     {
       "date": "1998-08-22",
-      "count": 1,
-      "revenue": 8.99,
+      "count": 3,
+      "revenue": 27.97,
       "path": "data/new/1998/08/1998-08-22.txt"
     },
     {
       "date": "1998-08-23",
-      "count": 5,
-      "revenue": 44.95,
+      "count": 6,
+      "revenue": 53.94,
       "path": "data/new/1998/08/1998-08-23.txt"
     },
     {
       "date": "1998-08-24",
-      "count": 15,
-      "revenue": 137.85,
+      "count": 10,
+      "revenue": 90.9,
       "path": "data/new/1998/08/1998-08-24.txt"
     },
     {
@@ -9080,20 +9080,20 @@
     },
     {
       "date": "1999-08-21",
-      "count": 3,
-      "revenue": 26.97,
+      "count": 8,
+      "revenue": 71.92,
       "path": "data/new/1999/08/1999-08-21.txt"
     },
     {
       "date": "1999-08-22",
-      "count": 5,
-      "revenue": 44.95,
+      "count": 3,
+      "revenue": 26.97,
       "path": "data/new/1999/08/1999-08-22.txt"
     },
     {
       "date": "1999-08-23",
-      "count": 26,
-      "revenue": 242.74,
+      "count": 25,
+      "revenue": 233.75,
       "path": "data/new/1999/08/1999-08-23.txt"
     },
     {
@@ -9110,8 +9110,8 @@
     },
     {
       "date": "1999-08-26",
-      "count": 20,
-      "revenue": 183.8,
+      "count": 18,
+      "revenue": 165.82,
       "path": "data/new/1999/08/1999-08-26.txt"
     },
     {
@@ -11270,26 +11270,26 @@
     },
     {
       "date": "2000-08-20",
-      "count": 65,
-      "revenue": 586.35,
+      "count": 67,
+      "revenue": 604.33,
       "path": "data/new/2000/08/2000-08-20.txt"
     },
     {
       "date": "2000-08-21",
-      "count": 8,
-      "revenue": 76.92,
+      "count": 18,
+      "revenue": 166.82,
       "path": "data/new/2000/08/2000-08-21.txt"
     },
     {
       "date": "2000-08-22",
-      "count": 28,
-      "revenue": 258.72,
+      "count": 20,
+      "revenue": 186.8,
       "path": "data/new/2000/08/2000-08-22.txt"
     },
     {
       "date": "2000-08-23",
-      "count": 25,
-      "revenue": 228.75,
+      "count": 22,
+      "revenue": 200.78,
       "path": "data/new/2000/08/2000-08-23.txt"
     },
     {
@@ -13460,26 +13460,26 @@
     },
     {
       "date": "2001-08-20",
-      "count": 22,
-      "revenue": 203.78,
+      "count": 24,
+      "revenue": 221.76,
       "path": "data/new/2001/08/2001-08-20.txt"
     },
     {
       "date": "2001-08-21",
-      "count": 9,
-      "revenue": 81.91,
+      "count": 15,
+      "revenue": 136.85,
       "path": "data/new/2001/08/2001-08-21.txt"
     },
     {
       "date": "2001-08-22",
-      "count": 13,
-      "revenue": 113.87,
+      "count": 11,
+      "revenue": 95.89,
       "path": "data/new/2001/08/2001-08-22.txt"
     },
     {
       "date": "2001-08-23",
-      "count": 19,
-      "revenue": 174.81,
+      "count": 16,
+      "revenue": 146.84,
       "path": "data/new/2001/08/2001-08-23.txt"
     },
     {
@@ -14978,8 +14978,8 @@
     },
     {
       "date": "2002-04-30",
-      "count": 41,
-      "revenue": 373.59,
+      "count": 40,
+      "revenue": 364.6,
       "path": "data/new/2002/04/2002-04-30.txt"
     },
     {
@@ -15650,26 +15650,26 @@
     },
     {
       "date": "2002-08-20",
-      "count": 37,
-      "revenue": 337.63,
+      "count": 42,
+      "revenue": 383.58,
       "path": "data/new/2002/08/2002-08-20.txt"
     },
     {
       "date": "2002-08-21",
-      "count": 19,
-      "revenue": 173.81,
+      "count": 27,
+      "revenue": 247.73,
       "path": "data/new/2002/08/2002-08-21.txt"
     },
     {
       "date": "2002-08-22",
-      "count": 27,
-      "revenue": 247.73,
+      "count": 23,
+      "revenue": 210.77,
       "path": "data/new/2002/08/2002-08-22.txt"
     },
     {
       "date": "2002-08-23",
-      "count": 46,
-      "revenue": 423.54,
+      "count": 37,
+      "revenue": 341.63,
       "path": "data/new/2002/08/2002-08-23.txt"
     },
     {
@@ -15680,14 +15680,14 @@
     },
     {
       "date": "2002-08-25",
-      "count": 25,
-      "revenue": 229.75,
+      "count": 26,
+      "revenue": 238.74,
       "path": "data/new/2002/08/2002-08-25.txt"
     },
     {
       "date": "2002-08-26",
-      "count": 46,
-      "revenue": 424.54,
+      "count": 42,
+      "revenue": 388.58,
       "path": "data/new/2002/08/2002-08-26.txt"
     },
     {
@@ -17846,20 +17846,20 @@
     },
     {
       "date": "2003-08-21",
-      "count": 29,
-      "revenue": 271.71,
+      "count": 40,
+      "revenue": 371.6,
       "path": "data/new/2003/08/2003-08-21.txt"
     },
     {
       "date": "2003-08-22",
-      "count": 49,
-      "revenue": 447.51,
+      "count": 38,
+      "revenue": 347.62,
       "path": "data/new/2003/08/2003-08-22.txt"
     },
     {
       "date": "2003-08-23",
-      "count": 24,
-      "revenue": 231.76,
+      "count": 21,
+      "revenue": 204.79,
       "path": "data/new/2003/08/2003-08-23.txt"
     },
     {
@@ -17876,8 +17876,8 @@
     },
     {
       "date": "2003-08-26",
-      "count": 64,
-      "revenue": 590.36,
+      "count": 61,
+      "revenue": 563.39,
       "path": "data/new/2003/08/2003-08-26.txt"
     },
     {
@@ -19406,8 +19406,8 @@
     },
     {
       "date": "2004-05-07",
-      "count": 31,
-      "revenue": 284.69,
+      "count": 30,
+      "revenue": 275.7,
       "path": "data/new/2004/05/2004-05-07.txt"
     },
     {
@@ -19598,8 +19598,8 @@
     },
     {
       "date": "2004-06-08",
-      "count": 37,
-      "revenue": 339.63,
+      "count": 36,
+      "revenue": 329.64,
       "path": "data/new/2004/06/2004-06-08.txt"
     },
     {
@@ -20036,44 +20036,44 @@
     },
     {
       "date": "2004-08-20",
-      "count": 42,
-      "revenue": 380.58,
+      "count": 43,
+      "revenue": 389.57,
       "path": "data/new/2004/08/2004-08-20.txt"
     },
     {
       "date": "2004-08-21",
-      "count": 20,
-      "revenue": 175.8,
+      "count": 28,
+      "revenue": 248.72,
       "path": "data/new/2004/08/2004-08-21.txt"
     },
     {
       "date": "2004-08-22",
-      "count": 15,
-      "revenue": 135.85,
+      "count": 16,
+      "revenue": 144.84,
       "path": "data/new/2004/08/2004-08-22.txt"
     },
     {
       "date": "2004-08-23",
-      "count": 42,
-      "revenue": 380.58,
+      "count": 38,
+      "revenue": 343.62,
       "path": "data/new/2004/08/2004-08-23.txt"
     },
     {
       "date": "2004-08-24",
-      "count": 46,
-      "revenue": 420.54,
+      "count": 45,
+      "revenue": 411.55,
       "path": "data/new/2004/08/2004-08-24.txt"
     },
     {
       "date": "2004-08-25",
-      "count": 43,
-      "revenue": 391.57,
+      "count": 42,
+      "revenue": 382.58,
       "path": "data/new/2004/08/2004-08-25.txt"
     },
     {
       "date": "2004-08-26",
-      "count": 52,
-      "revenue": 477.48,
+      "count": 48,
+      "revenue": 442.52,
       "path": "data/new/2004/08/2004-08-26.txt"
     },
     {
@@ -21758,8 +21758,8 @@
     },
     {
       "date": "2005-06-03",
-      "count": 560,
-      "revenue": 5040.4,
+      "count": 559,
+      "revenue": 5031.41,
       "path": "data/new/2005/06/2005-06-03.txt"
     },
     {
@@ -21788,8 +21788,8 @@
     },
     {
       "date": "2005-06-08",
-      "count": 56,
-      "revenue": 507.44,
+      "count": 55,
+      "revenue": 497.45,
       "path": "data/new/2005/06/2005-06-08.txt"
     },
     {
@@ -21944,8 +21944,8 @@
     },
     {
       "date": "2005-07-04",
-      "count": 24,
-      "revenue": 217.76,
+      "count": 25,
+      "revenue": 226.75,
       "path": "data/new/2005/07/2005-07-04.txt"
     },
     {
@@ -22226,26 +22226,26 @@
     },
     {
       "date": "2005-08-20",
-      "count": 42,
-      "revenue": 379.58,
+      "count": 45,
+      "revenue": 406.55,
       "path": "data/new/2005/08/2005-08-20.txt"
     },
     {
       "date": "2005-08-21",
-      "count": 24,
-      "revenue": 221.76,
+      "count": 35,
+      "revenue": 321.65,
       "path": "data/new/2005/08/2005-08-21.txt"
     },
     {
       "date": "2005-08-22",
-      "count": 40,
-      "revenue": 364.6,
+      "count": 33,
+      "revenue": 300.67,
       "path": "data/new/2005/08/2005-08-22.txt"
     },
     {
       "date": "2005-08-23",
-      "count": 59,
-      "revenue": 538.41,
+      "count": 49,
+      "revenue": 446.51,
       "path": "data/new/2005/08/2005-08-23.txt"
     },
     {
@@ -22262,14 +22262,14 @@
     },
     {
       "date": "2005-08-26",
-      "count": 55,
-      "revenue": 504.45,
+      "count": 52,
+      "revenue": 476.48,
       "path": "data/new/2005/08/2005-08-26.txt"
     },
     {
       "date": "2005-08-27",
-      "count": 43,
-      "revenue": 387.57,
+      "count": 42,
+      "revenue": 378.58,
       "path": "data/new/2005/08/2005-08-27.txt"
     },
     {
@@ -22592,8 +22592,8 @@
     },
     {
       "date": "2005-10-20",
-      "count": 46,
-      "revenue": 417.54,
+      "count": 47,
+      "revenue": 426.53,
       "path": "data/new/2005/10/2005-10-20.txt"
     },
     {
@@ -24416,26 +24416,26 @@
     },
     {
       "date": "2006-08-20",
-      "count": 42,
-      "revenue": 382.58,
+      "count": 43,
+      "revenue": 391.57,
       "path": "data/new/2006/08/2006-08-20.txt"
     },
     {
       "date": "2006-08-21",
-      "count": 31,
-      "revenue": 282.69,
+      "count": 40,
+      "revenue": 364.6,
       "path": "data/new/2006/08/2006-08-21.txt"
     },
     {
       "date": "2006-08-22",
-      "count": 29,
-      "revenue": 265.71,
+      "count": 22,
+      "revenue": 201.78,
       "path": "data/new/2006/08/2006-08-22.txt"
     },
     {
       "date": "2006-08-23",
-      "count": 54,
-      "revenue": 486.46,
+      "count": 47,
+      "revenue": 423.53,
       "path": "data/new/2006/08/2006-08-23.txt"
     },
     {
@@ -24446,14 +24446,14 @@
     },
     {
       "date": "2006-08-25",
-      "count": 45,
-      "revenue": 402.55,
+      "count": 44,
+      "revenue": 393.56,
       "path": "data/new/2006/08/2006-08-25.txt"
     },
     {
       "date": "2006-08-26",
-      "count": 51,
-      "revenue": 461.49,
+      "count": 45,
+      "revenue": 407.55,
       "path": "data/new/2006/08/2006-08-26.txt"
     },
     {
@@ -26348,8 +26348,8 @@
     },
     {
       "date": "2007-07-08",
-      "count": 18,
-      "revenue": 162.82,
+      "count": 17,
+      "revenue": 153.83,
       "path": "data/new/2007/07/2007-07-08.txt"
     },
     {
@@ -26606,26 +26606,26 @@
     },
     {
       "date": "2007-08-20",
-      "count": 37,
-      "revenue": 338.63,
+      "count": 42,
+      "revenue": 383.58,
       "path": "data/new/2007/08/2007-08-20.txt"
     },
     {
       "date": "2007-08-21",
-      "count": 34,
-      "revenue": 302.66,
+      "count": 55,
+      "revenue": 493.45,
       "path": "data/new/2007/08/2007-08-21.txt"
     },
     {
       "date": "2007-08-22",
-      "count": 39,
-      "revenue": 354.61,
+      "count": 30,
+      "revenue": 272.7,
       "path": "data/new/2007/08/2007-08-22.txt"
     },
     {
       "date": "2007-08-23",
-      "count": 65,
-      "revenue": 589.35,
+      "count": 57,
+      "revenue": 515.43,
       "path": "data/new/2007/08/2007-08-23.txt"
     },
     {
@@ -26636,14 +26636,14 @@
     },
     {
       "date": "2007-08-25",
-      "count": 36,
-      "revenue": 319.64,
+      "count": 35,
+      "revenue": 310.65,
       "path": "data/new/2007/08/2007-08-25.txt"
     },
     {
       "date": "2007-08-26",
-      "count": 29,
-      "revenue": 264.71,
+      "count": 26,
+      "revenue": 236.74,
       "path": "data/new/2007/08/2007-08-26.txt"
     },
     {
@@ -28802,26 +28802,26 @@
     },
     {
       "date": "2008-08-20",
-      "count": 40,
-      "revenue": 357.6,
+      "count": 43,
+      "revenue": 384.57,
       "path": "data/new/2008/08/2008-08-20.txt"
     },
     {
       "date": "2008-08-21",
-      "count": 26,
-      "revenue": 242.74,
+      "count": 47,
+      "revenue": 432.53,
       "path": "data/new/2008/08/2008-08-21.txt"
     },
     {
       "date": "2008-08-22",
-      "count": 34,
-      "revenue": 308.66,
+      "count": 39,
+      "revenue": 353.61,
       "path": "data/new/2008/08/2008-08-22.txt"
     },
     {
       "date": "2008-08-23",
-      "count": 42,
-      "revenue": 376.58,
+      "count": 36,
+      "revenue": 322.64,
       "path": "data/new/2008/08/2008-08-23.txt"
     },
     {
@@ -28832,14 +28832,14 @@
     },
     {
       "date": "2008-08-25",
-      "count": 47,
-      "revenue": 421.53,
+      "count": 46,
+      "revenue": 412.54,
       "path": "data/new/2008/08/2008-08-25.txt"
     },
     {
       "date": "2008-08-26",
-      "count": 60,
-      "revenue": 548.4,
+      "count": 56,
+      "revenue": 510.44,
       "path": "data/new/2008/08/2008-08-26.txt"
     },
     {
@@ -30914,8 +30914,8 @@
     },
     {
       "date": "2009-08-07",
-      "count": 62,
-      "revenue": 562.38,
+      "count": 63,
+      "revenue": 571.37,
       "path": "data/new/2009/08/2009-08-07.txt"
     },
     {
@@ -30992,44 +30992,44 @@
     },
     {
       "date": "2009-08-20",
-      "count": 61,
-      "revenue": 549.39,
+      "count": 64,
+      "revenue": 576.36,
       "path": "data/new/2009/08/2009-08-20.txt"
     },
     {
       "date": "2009-08-21",
-      "count": 31,
-      "revenue": 276.69,
+      "count": 59,
+      "revenue": 532.41,
       "path": "data/new/2009/08/2009-08-21.txt"
     },
     {
       "date": "2009-08-22",
-      "count": 38,
-      "revenue": 348.62,
+      "count": 22,
+      "revenue": 205.78,
       "path": "data/new/2009/08/2009-08-22.txt"
     },
     {
       "date": "2009-08-23",
-      "count": 35,
-      "revenue": 312.65,
+      "count": 27,
+      "revenue": 240.73,
       "path": "data/new/2009/08/2009-08-23.txt"
     },
     {
       "date": "2009-08-24",
-      "count": 64,
-      "revenue": 561.36,
+      "count": 65,
+      "revenue": 570.35,
       "path": "data/new/2009/08/2009-08-24.txt"
     },
     {
       "date": "2009-08-25",
-      "count": 61,
-      "revenue": 557.39,
+      "count": 62,
+      "revenue": 566.38,
       "path": "data/new/2009/08/2009-08-25.txt"
     },
     {
       "date": "2009-08-26",
-      "count": 77,
-      "revenue": 701.23,
+      "count": 78,
+      "revenue": 710.22,
       "path": "data/new/2009/08/2009-08-26.txt"
     },
     {
@@ -31868,8 +31868,8 @@
     },
     {
       "date": "2010-01-13",
-      "count": 101,
-      "revenue": 922.99,
+      "count": 102,
+      "revenue": 931.98,
       "path": "data/new/2010/01/2010-01-13.txt"
     },
     {
@@ -33182,26 +33182,26 @@
     },
     {
       "date": "2010-08-20",
-      "count": 39,
-      "revenue": 354.61,
+      "count": 42,
+      "revenue": 382.58,
       "path": "data/new/2010/08/2010-08-20.txt"
     },
     {
       "date": "2010-08-21",
-      "count": 15,
-      "revenue": 140.85,
+      "count": 28,
+      "revenue": 257.72,
       "path": "data/new/2010/08/2010-08-21.txt"
     },
     {
       "date": "2010-08-22",
-      "count": 40,
-      "revenue": 359.6,
+      "count": 26,
+      "revenue": 233.74,
       "path": "data/new/2010/08/2010-08-22.txt"
     },
     {
       "date": "2010-08-23",
-      "count": 69,
-      "revenue": 634.31,
+      "count": 48,
+      "revenue": 435.52,
       "path": "data/new/2010/08/2010-08-23.txt"
     },
     {
@@ -33212,14 +33212,14 @@
     },
     {
       "date": "2010-08-25",
-      "count": 65,
-      "revenue": 584.35,
+      "count": 64,
+      "revenue": 575.36,
       "path": "data/new/2010/08/2010-08-25.txt"
     },
     {
       "date": "2010-08-26",
-      "count": 107,
-      "revenue": 977.93,
+      "count": 103,
+      "revenue": 941.97,
       "path": "data/new/2010/08/2010-08-26.txt"
     },
     {
@@ -34316,8 +34316,8 @@
     },
     {
       "date": "2011-02-25",
-      "count": 72,
-      "revenue": 656.28,
+      "count": 71,
+      "revenue": 647.29,
       "path": "data/new/2011/02/2011-02-25.txt"
     },
     {
@@ -35378,20 +35378,20 @@
     },
     {
       "date": "2011-08-21",
-      "count": 13,
-      "revenue": 119.87,
+      "count": 31,
+      "revenue": 283.69,
       "path": "data/new/2011/08/2011-08-21.txt"
     },
     {
       "date": "2011-08-22",
-      "count": 71,
-      "revenue": 627.29,
+      "count": 55,
+      "revenue": 482.45,
       "path": "data/new/2011/08/2011-08-22.txt"
     },
     {
       "date": "2011-08-23",
-      "count": 64,
-      "revenue": 588.36,
+      "count": 55,
+      "revenue": 504.45,
       "path": "data/new/2011/08/2011-08-23.txt"
     },
     {
@@ -35402,14 +35402,14 @@
     },
     {
       "date": "2011-08-25",
-      "count": 85,
-      "revenue": 773.15,
+      "count": 81,
+      "revenue": 737.19,
       "path": "data/new/2011/08/2011-08-25.txt"
     },
     {
       "date": "2011-08-26",
-      "count": 64,
-      "revenue": 583.36,
+      "count": 61,
+      "revenue": 554.39,
       "path": "data/new/2011/08/2011-08-26.txt"
     },
     {
@@ -37568,26 +37568,26 @@
     },
     {
       "date": "2012-08-20",
-      "count": 76,
-      "revenue": 704.24,
+      "count": 79,
+      "revenue": 731.21,
       "path": "data/new/2012/08/2012-08-20.txt"
     },
     {
       "date": "2012-08-21",
-      "count": 59,
-      "revenue": 550.41,
+      "count": 98,
+      "revenue": 904.02,
       "path": "data/new/2012/08/2012-08-21.txt"
     },
     {
       "date": "2012-08-22",
-      "count": 68,
-      "revenue": 613.32,
+      "count": 55,
+      "revenue": 503.45,
       "path": "data/new/2012/08/2012-08-22.txt"
     },
     {
       "date": "2012-08-23",
-      "count": 87,
-      "revenue": 781.13,
+      "count": 84,
+      "revenue": 754.16,
       "path": "data/new/2012/08/2012-08-23.txt"
     },
     {
@@ -37598,14 +37598,14 @@
     },
     {
       "date": "2012-08-25",
-      "count": 33,
-      "revenue": 293.67,
+      "count": 34,
+      "revenue": 302.66,
       "path": "data/new/2012/08/2012-08-25.txt"
     },
     {
       "date": "2012-08-26",
-      "count": 50,
-      "revenue": 446.5,
+      "count": 47,
+      "revenue": 419.53,
       "path": "data/new/2012/08/2012-08-26.txt"
     },
     {
@@ -37880,8 +37880,8 @@
     },
     {
       "date": "2012-10-11",
-      "count": 84,
-      "revenue": 750.16,
+      "count": 83,
+      "revenue": 741.17,
       "path": "data/new/2012/10/2012-10-11.txt"
     },
     {
@@ -37910,8 +37910,8 @@
     },
     {
       "date": "2012-10-16",
-      "count": 83,
-      "revenue": 757.17,
+      "count": 82,
+      "revenue": 748.18,
       "path": "data/new/2012/10/2012-10-16.txt"
     },
     {
@@ -38042,8 +38042,8 @@
     },
     {
       "date": "2012-11-07",
-      "count": 58,
-      "revenue": 526.42,
+      "count": 57,
+      "revenue": 517.43,
       "path": "data/new/2012/11/2012-11-07.txt"
     },
     {
@@ -39272,8 +39272,8 @@
     },
     {
       "date": "2013-05-31",
-      "count": 87,
-      "revenue": 798.13,
+      "count": 86,
+      "revenue": 789.14,
       "path": "data/new/2013/05/2013-05-31.txt"
     },
     {
@@ -39290,8 +39290,8 @@
     },
     {
       "date": "2013-06-03",
-      "count": 69,
-      "revenue": 632.31,
+      "count": 68,
+      "revenue": 622.32,
       "path": "data/new/2013/06/2013-06-03.txt"
     },
     {
@@ -39758,26 +39758,26 @@
     },
     {
       "date": "2013-08-20",
-      "count": 70,
-      "revenue": 642.3,
+      "count": 74,
+      "revenue": 678.26,
       "path": "data/new/2013/08/2013-08-20.txt"
     },
     {
       "date": "2013-08-21",
-      "count": 54,
-      "revenue": 491.46,
+      "count": 81,
+      "revenue": 735.19,
       "path": "data/new/2013/08/2013-08-21.txt"
     },
     {
       "date": "2013-08-22",
-      "count": 82,
-      "revenue": 745.18,
+      "count": 67,
+      "revenue": 609.33,
       "path": "data/new/2013/08/2013-08-22.txt"
     },
     {
       "date": "2013-08-23",
-      "count": 132,
-      "revenue": 1215.68,
+      "count": 113,
+      "revenue": 1036.87,
       "path": "data/new/2013/08/2013-08-23.txt"
     },
     {
@@ -39788,20 +39788,20 @@
     },
     {
       "date": "2013-08-25",
-      "count": 48,
-      "revenue": 432.52,
+      "count": 46,
+      "revenue": 414.54,
       "path": "data/new/2013/08/2013-08-25.txt"
     },
     {
       "date": "2013-08-26",
-      "count": 92,
-      "revenue": 825.08,
+      "count": 84,
+      "revenue": 754.16,
       "path": "data/new/2013/08/2013-08-26.txt"
     },
     {
       "date": "2013-08-27",
-      "count": 80,
-      "revenue": 722.2,
+      "count": 81,
+      "revenue": 731.19,
       "path": "data/new/2013/08/2013-08-27.txt"
     },
     {
@@ -41948,26 +41948,26 @@
     },
     {
       "date": "2014-08-20",
-      "count": 93,
-      "revenue": 805.07,
+      "count": 99,
+      "revenue": 859.01,
       "path": "data/new/2014/08/2014-08-20.txt"
     },
     {
       "date": "2014-08-21",
-      "count": 59,
-      "revenue": 525.91,
+      "count": 94,
+      "revenue": 844.56,
       "path": "data/new/2014/08/2014-08-21.txt"
     },
     {
       "date": "2014-08-22",
-      "count": 61,
-      "revenue": 573.39,
+      "count": 47,
+      "revenue": 447.53,
       "path": "data/new/2014/08/2014-08-22.txt"
     },
     {
       "date": "2014-08-23",
-      "count": 72,
-      "revenue": 664.28,
+      "count": 48,
+      "revenue": 434.52,
       "path": "data/new/2014/08/2014-08-23.txt"
     },
     {
@@ -41978,20 +41978,20 @@
     },
     {
       "date": "2014-08-25",
-      "count": 93,
-      "revenue": 831.07,
+      "count": 92,
+      "revenue": 822.08,
       "path": "data/new/2014/08/2014-08-25.txt"
     },
     {
       "date": "2014-08-26",
-      "count": 105,
-      "revenue": 950.95,
+      "count": 96,
+      "revenue": 870.04,
       "path": "data/new/2014/08/2014-08-26.txt"
     },
     {
       "date": "2014-08-27",
-      "count": 108,
-      "revenue": 971.92,
+      "count": 110,
+      "revenue": 989.9,
       "path": "data/new/2014/08/2014-08-27.txt"
     },
     {
@@ -44126,8 +44126,8 @@
     },
     {
       "date": "2015-08-18",
-      "count": 106,
-      "revenue": 960.44,
+      "count": 107,
+      "revenue": 970.43,
       "path": "data/new/2015/08/2015-08-18.txt"
     },
     {
@@ -44138,26 +44138,26 @@
     },
     {
       "date": "2015-08-20",
-      "count": 140,
-      "revenue": 1083.1,
+      "count": 146,
+      "revenue": 1137.04,
       "path": "data/new/2015/08/2015-08-20.txt"
     },
     {
       "date": "2015-08-21",
-      "count": 55,
-      "revenue": 480.95,
+      "count": 98,
+      "revenue": 871.52,
       "path": "data/new/2015/08/2015-08-21.txt"
     },
     {
       "date": "2015-08-22",
-      "count": 69,
-      "revenue": 608.31,
+      "count": 42,
+      "revenue": 354.58,
       "path": "data/new/2015/08/2015-08-22.txt"
     },
     {
       "date": "2015-08-23",
-      "count": 113,
-      "revenue": 1022.37,
+      "count": 90,
+      "revenue": 810.6,
       "path": "data/new/2015/08/2015-08-23.txt"
     },
     {
@@ -44168,14 +44168,14 @@
     },
     {
       "date": "2015-08-25",
-      "count": 148,
-      "revenue": 1314.02,
+      "count": 149,
+      "revenue": 1323.01,
       "path": "data/new/2015/08/2015-08-25.txt"
     },
     {
       "date": "2015-08-26",
-      "count": 207,
-      "revenue": 1486.43,
+      "count": 174,
+      "revenue": 1282.76,
       "path": "data/new/2015/08/2015-08-26.txt"
     },
     {
@@ -44798,8 +44798,8 @@
     },
     {
       "date": "2015-12-08",
-      "count": 135,
-      "revenue": 1201.65,
+      "count": 134,
+      "revenue": 1192.66,
       "path": "data/new/2015/12/2015-12-08.txt"
     },
     {
@@ -45794,8 +45794,8 @@
     },
     {
       "date": "2016-05-22",
-      "count": 107,
-      "revenue": 957.93,
+      "count": 106,
+      "revenue": 949.94,
       "path": "data/new/2016/05/2016-05-22.txt"
     },
     {
@@ -45896,8 +45896,8 @@
     },
     {
       "date": "2016-06-08",
-      "count": 339,
-      "revenue": 3089.61,
+      "count": 338,
+      "revenue": 3079.62,
       "path": "data/new/2016/06/2016-06-08.txt"
     },
     {
@@ -46334,50 +46334,50 @@
     },
     {
       "date": "2016-08-20",
-      "count": 94,
-      "revenue": 839.06,
+      "count": 98,
+      "revenue": 875.02,
       "path": "data/new/2016/08/2016-08-20.txt"
     },
     {
       "date": "2016-08-21",
-      "count": 55,
-      "revenue": 489.45,
+      "count": 94,
+      "revenue": 845.06,
       "path": "data/new/2016/08/2016-08-21.txt"
     },
     {
       "date": "2016-08-22",
-      "count": 99,
-      "revenue": 895.01,
+      "count": 63,
+      "revenue": 571.37,
       "path": "data/new/2016/08/2016-08-22.txt"
     },
     {
       "date": "2016-08-23",
-      "count": 160,
-      "revenue": 1401.9,
+      "count": 130,
+      "revenue": 1132.2,
       "path": "data/new/2016/08/2016-08-23.txt"
     },
     {
       "date": "2016-08-24",
-      "count": 143,
-      "revenue": 1273.57,
+      "count": 142,
+      "revenue": 1264.58,
       "path": "data/new/2016/08/2016-08-24.txt"
     },
     {
       "date": "2016-08-25",
-      "count": 158,
-      "revenue": 1391.42,
+      "count": 156,
+      "revenue": 1373.44,
       "path": "data/new/2016/08/2016-08-25.txt"
     },
     {
       "date": "2016-08-26",
-      "count": 160,
-      "revenue": 1411.4,
+      "count": 143,
+      "revenue": 1261.57,
       "path": "data/new/2016/08/2016-08-26.txt"
     },
     {
       "date": "2016-08-27",
-      "count": 114,
-      "revenue": 1025.86,
+      "count": 111,
+      "revenue": 1003.89,
       "path": "data/new/2016/08/2016-08-27.txt"
     },
     {
@@ -46676,8 +46676,8 @@
     },
     {
       "date": "2016-10-16",
-      "count": 83,
-      "revenue": 700.17,
+      "count": 82,
+      "revenue": 691.18,
       "path": "data/new/2016/10/2016-10-16.txt"
     },
     {
@@ -47222,8 +47222,8 @@
     },
     {
       "date": "2017-01-15",
-      "count": 136,
-      "revenue": 1213.64,
+      "count": 134,
+      "revenue": 1194.66,
       "path": "data/new/2017/01/2017-01-15.txt"
     },
     {
@@ -47468,8 +47468,8 @@
     },
     {
       "date": "2017-02-25",
-      "count": 134,
-      "revenue": 1212.66,
+      "count": 135,
+      "revenue": 1232.65,
       "path": "data/new/2017/02/2017-02-25.txt"
     },
     {
@@ -47882,8 +47882,8 @@
     },
     {
       "date": "2017-05-05",
-      "count": 156,
-      "revenue": 1367.94,
+      "count": 157,
+      "revenue": 1372.93,
       "path": "data/new/2017/05/2017-05-05.txt"
     },
     {
@@ -47984,8 +47984,8 @@
     },
     {
       "date": "2017-05-22",
-      "count": 195,
-      "revenue": 1682.05,
+      "count": 194,
+      "revenue": 1677.06,
       "path": "data/new/2017/05/2017-05-22.txt"
     },
     {
@@ -48026,8 +48026,8 @@
     },
     {
       "date": "2017-05-29",
-      "count": 131,
-      "revenue": 1145.69,
+      "count": 130,
+      "revenue": 1136.7,
       "path": "data/new/2017/05/2017-05-29.txt"
     },
     {
@@ -48512,8 +48512,8 @@
     },
     {
       "date": "2017-08-18",
-      "count": 150,
-      "revenue": 1293.5,
+      "count": 151,
+      "revenue": 1303.49,
       "path": "data/new/2017/08/2017-08-18.txt"
     },
     {
@@ -48524,44 +48524,44 @@
     },
     {
       "date": "2017-08-20",
-      "count": 93,
-      "revenue": 839.07,
+      "count": 98,
+      "revenue": 885.02,
       "path": "data/new/2017/08/2017-08-20.txt"
     },
     {
       "date": "2017-08-21",
-      "count": 152,
-      "revenue": 1132.48,
+      "count": 194,
+      "revenue": 1525.06,
       "path": "data/new/2017/08/2017-08-21.txt"
     },
     {
       "date": "2017-08-22",
-      "count": 203,
-      "revenue": 1636.47,
+      "count": 140,
+      "revenue": 1066.1,
       "path": "data/new/2017/08/2017-08-22.txt"
     },
     {
       "date": "2017-08-23",
-      "count": 166,
-      "revenue": 1423.34,
+      "count": 153,
+      "revenue": 1311.97,
       "path": "data/new/2017/08/2017-08-23.txt"
     },
     {
       "date": "2017-08-24",
-      "count": 189,
-      "revenue": 1661.11,
+      "count": 190,
+      "revenue": 1670.1,
       "path": "data/new/2017/08/2017-08-24.txt"
     },
     {
       "date": "2017-08-25",
-      "count": 218,
-      "revenue": 1901.82,
+      "count": 213,
+      "revenue": 1856.87,
       "path": "data/new/2017/08/2017-08-25.txt"
     },
     {
       "date": "2017-08-26",
-      "count": 172,
-      "revenue": 1553.28,
+      "count": 152,
+      "revenue": 1369.48,
       "path": "data/new/2017/08/2017-08-26.txt"
     },
     {
@@ -48584,8 +48584,8 @@
     },
     {
       "date": "2017-08-30",
-      "count": 195,
-      "revenue": 1702.05,
+      "count": 194,
+      "revenue": 1693.06,
       "path": "data/new/2017/08/2017-08-30.txt"
     },
     {
@@ -49220,8 +49220,8 @@
     },
     {
       "date": "2017-12-14",
-      "count": 206,
-      "revenue": 1894.94,
+      "count": 205,
+      "revenue": 1885.95,
       "path": "data/new/2017/12/2017-12-14.txt"
     },
     {
@@ -49322,8 +49322,8 @@
     },
     {
       "date": "2017-12-31",
-      "count": 154,
-      "revenue": 1374.46,
+      "count": 153,
+      "revenue": 1365.47,
       "path": "data/new/2017/12/2017-12-31.txt"
     },
     {
@@ -50192,8 +50192,8 @@
     },
     {
       "date": "2018-05-25",
-      "count": 172,
-      "revenue": 1540.3,
+      "count": 171,
+      "revenue": 1531.31,
       "path": "data/new/2018/05/2018-05-25.txt"
     },
     {
@@ -50264,14 +50264,14 @@
     },
     {
       "date": "2018-06-06",
-      "count": 228,
-      "revenue": 2062.23,
+      "count": 227,
+      "revenue": 2052.24,
       "path": "data/new/2018/06/2018-06-06.txt"
     },
     {
       "date": "2018-06-07",
-      "count": 232,
-      "revenue": 2112.68,
+      "count": 231,
+      "revenue": 2102.69,
       "path": "data/new/2018/06/2018-06-07.txt"
     },
     {
@@ -50444,8 +50444,8 @@
     },
     {
       "date": "2018-07-06",
-      "count": 85,
-      "revenue": 775.15,
+      "count": 84,
+      "revenue": 766.16,
       "path": "data/new/2018/07/2018-07-06.txt"
     },
     {
@@ -50684,8 +50684,8 @@
     },
     {
       "date": "2018-08-15",
-      "count": 309,
-      "revenue": 2734.91,
+      "count": 310,
+      "revenue": 2740.9,
       "path": "data/new/2018/08/2018-08-15.txt"
     },
     {
@@ -50714,26 +50714,26 @@
     },
     {
       "date": "2018-08-20",
-      "count": 185,
-      "revenue": 1584.15,
+      "count": 209,
+      "revenue": 1801.91,
       "path": "data/new/2018/08/2018-08-20.txt"
     },
     {
       "date": "2018-08-21",
-      "count": 151,
-      "revenue": 1318.99,
+      "count": 223,
+      "revenue": 1966.77,
       "path": "data/new/2018/08/2018-08-21.txt"
     },
     {
       "date": "2018-08-22",
-      "count": 198,
-      "revenue": 1746.02,
+      "count": 123,
+      "revenue": 1069.77,
       "path": "data/new/2018/08/2018-08-22.txt"
     },
     {
       "date": "2018-08-23",
-      "count": 234,
-      "revenue": 2110.66,
+      "count": 185,
+      "revenue": 1672.15,
       "path": "data/new/2018/08/2018-08-23.txt"
     },
     {
@@ -50744,14 +50744,14 @@
     },
     {
       "date": "2018-08-25",
-      "count": 165,
-      "revenue": 1484.85,
+      "count": 161,
+      "revenue": 1447.89,
       "path": "data/new/2018/08/2018-08-25.txt"
     },
     {
       "date": "2018-08-26",
-      "count": 189,
-      "revenue": 1641.12,
+      "count": 180,
+      "revenue": 1587.71,
       "path": "data/new/2018/08/2018-08-26.txt"
     },
     {
@@ -50846,8 +50846,8 @@
     },
     {
       "date": "2018-09-11",
-      "count": 335,
-      "revenue": 3001.15,
+      "count": 334,
+      "revenue": 2992.16,
       "path": "data/new/2018/09/2018-09-11.txt"
     },
     {
@@ -51032,8 +51032,8 @@
     },
     {
       "date": "2018-10-12",
-      "count": 170,
-      "revenue": 1516.3,
+      "count": 169,
+      "revenue": 1507.31,
       "path": "data/new/2018/10/2018-10-12.txt"
     },
     {
@@ -52364,8 +52364,8 @@
     },
     {
       "date": "2019-05-22",
-      "count": 279,
-      "revenue": 2513.72,
+      "count": 278,
+      "revenue": 2503.73,
       "path": "data/new/2019/05/2019-05-22.txt"
     },
     {
@@ -52436,8 +52436,8 @@
     },
     {
       "date": "2019-06-03",
-      "count": 222,
-      "revenue": 1946.28,
+      "count": 221,
+      "revenue": 1937.29,
       "path": "data/new/2019/06/2019-06-03.txt"
     },
     {
@@ -52892,8 +52892,8 @@
     },
     {
       "date": "2019-08-18",
-      "count": 122,
-      "revenue": 1060.78,
+      "count": 123,
+      "revenue": 1065.77,
       "path": "data/new/2019/08/2019-08-18.txt"
     },
     {
@@ -52904,26 +52904,26 @@
     },
     {
       "date": "2019-08-20",
-      "count": 211,
-      "revenue": 1847.9,
+      "count": 227,
+      "revenue": 1987.74,
       "path": "data/new/2019/08/2019-08-20.txt"
     },
     {
       "date": "2019-08-21",
-      "count": 168,
-      "revenue": 1489.32,
+      "count": 262,
+      "revenue": 2339.38,
       "path": "data/new/2019/08/2019-08-21.txt"
     },
     {
       "date": "2019-08-22",
-      "count": 210,
-      "revenue": 1772.4,
+      "count": 152,
+      "revenue": 1282.98,
       "path": "data/new/2019/08/2019-08-22.txt"
     },
     {
       "date": "2019-08-23",
-      "count": 219,
-      "revenue": 1949.81,
+      "count": 181,
+      "revenue": 1604.19,
       "path": "data/new/2019/08/2019-08-23.txt"
     },
     {
@@ -52934,20 +52934,20 @@
     },
     {
       "date": "2019-08-25",
-      "count": 196,
-      "revenue": 1725.04,
+      "count": 192,
+      "revenue": 1704.08,
       "path": "data/new/2019/08/2019-08-25.txt"
     },
     {
       "date": "2019-08-26",
-      "count": 259,
-      "revenue": 2242.41,
+      "count": 253,
+      "revenue": 2201.47,
       "path": "data/new/2019/08/2019-08-26.txt"
     },
     {
       "date": "2019-08-27",
-      "count": 407,
-      "revenue": 3189.44,
+      "count": 409,
+      "revenue": 3207.42,
       "path": "data/new/2019/08/2019-08-27.txt"
     },
     {
@@ -53042,8 +53042,8 @@
     },
     {
       "date": "2019-09-12",
-      "count": 290,
-      "revenue": 2512.61,
+      "count": 289,
+      "revenue": 2503.62,
       "path": "data/new/2019/09/2019-09-12.txt"
     },
     {
@@ -53228,8 +53228,8 @@
     },
     {
       "date": "2019-10-13",
-      "count": 151,
-      "revenue": 1332.5,
+      "count": 150,
+      "revenue": 1323.51,
       "path": "data/new/2019/10/2019-10-13.txt"
     },
     {
@@ -53246,8 +53246,8 @@
     },
     {
       "date": "2019-10-16",
-      "count": 285,
-      "revenue": 2516.65,
+      "count": 283,
+      "revenue": 2498.67,
       "path": "data/new/2019/10/2019-10-16.txt"
     },
     {
@@ -53474,8 +53474,8 @@
     },
     {
       "date": "2019-11-23",
-      "count": 358,
-      "revenue": 3050.42,
+      "count": 357,
+      "revenue": 3041.43,
       "path": "data/new/2019/11/2019-11-23.txt"
     },
     {
@@ -53858,8 +53858,8 @@
     },
     {
       "date": "2020-01-26",
-      "count": 150,
-      "revenue": 1327.0,
+      "count": 151,
+      "revenue": 1346.99,
       "path": "data/new/2020/01/2020-01-26.txt"
     },
     {
@@ -54008,8 +54008,8 @@
     },
     {
       "date": "2020-02-20",
-      "count": 286,
-      "revenue": 2404.65,
+      "count": 287,
+      "revenue": 2424.64,
       "path": "data/new/2020/02/2020-02-20.txt"
     },
     {
@@ -54512,8 +54512,8 @@
     },
     {
       "date": "2020-05-14",
-      "count": 272,
-      "revenue": 2328.29,
+      "count": 271,
+      "revenue": 2319.3,
       "path": "data/new/2020/05/2020-05-14.txt"
     },
     {
@@ -54578,8 +54578,8 @@
     },
     {
       "date": "2020-05-25",
-      "count": 362,
-      "revenue": 2830.38,
+      "count": 360,
+      "revenue": 2812.4,
       "path": "data/new/2020/05/2020-05-25.txt"
     },
     {
@@ -54590,8 +54590,8 @@
     },
     {
       "date": "2020-05-27",
-      "count": 567,
-      "revenue": 4971.84,
+      "count": 565,
+      "revenue": 4953.86,
       "path": "data/new/2020/05/2020-05-27.txt"
     },
     {
@@ -54602,14 +54602,14 @@
     },
     {
       "date": "2020-05-29",
-      "count": 439,
-      "revenue": 3838.66,
+      "count": 436,
+      "revenue": 3811.69,
       "path": "data/new/2020/05/2020-05-29.txt"
     },
     {
       "date": "2020-05-30",
-      "count": 390,
-      "revenue": 3442.12,
+      "count": 388,
+      "revenue": 3424.14,
       "path": "data/new/2020/05/2020-05-30.txt"
     },
     {
@@ -54662,8 +54662,8 @@
     },
     {
       "date": "2020-06-08",
-      "count": 236,
-      "revenue": 2061.64,
+      "count": 235,
+      "revenue": 2056.65,
       "path": "data/new/2020/06/2020-06-08.txt"
     },
     {
@@ -55010,8 +55010,8 @@
     },
     {
       "date": "2020-08-05",
-      "count": 369,
-      "revenue": 3089.31,
+      "count": 370,
+      "revenue": 3109.3,
       "path": "data/new/2020/08/2020-08-05.txt"
     },
     {
@@ -55022,8 +55022,8 @@
     },
     {
       "date": "2020-08-07",
-      "count": 258,
-      "revenue": 2190.42,
+      "count": 259,
+      "revenue": 2195.41,
       "path": "data/new/2020/08/2020-08-07.txt"
     },
     {
@@ -55082,14 +55082,14 @@
     },
     {
       "date": "2020-08-17",
-      "count": 292,
-      "revenue": 2543.08,
+      "count": 293,
+      "revenue": 2548.07,
       "path": "data/new/2020/08/2020-08-17.txt"
     },
     {
       "date": "2020-08-18",
-      "count": 394,
-      "revenue": 3484.57,
+      "count": 395,
+      "revenue": 3494.56,
       "path": "data/new/2020/08/2020-08-18.txt"
     },
     {
@@ -55100,50 +55100,50 @@
     },
     {
       "date": "2020-08-20",
-      "count": 214,
-      "revenue": 1795.87,
+      "count": 229,
+      "revenue": 1933.72,
       "path": "data/new/2020/08/2020-08-20.txt"
     },
     {
       "date": "2020-08-21",
-      "count": 164,
-      "revenue": 1440.86,
+      "count": 249,
+      "revenue": 2211.01,
       "path": "data/new/2020/08/2020-08-21.txt"
     },
     {
       "date": "2020-08-22",
-      "count": 194,
-      "revenue": 1320.56,
+      "count": 138,
+      "revenue": 826.12,
       "path": "data/new/2020/08/2020-08-22.txt"
     },
     {
       "date": "2020-08-23",
-      "count": 187,
-      "revenue": 1642.13,
+      "count": 159,
+      "revenue": 1392.41,
       "path": "data/new/2020/08/2020-08-23.txt"
     },
     {
       "date": "2020-08-24",
-      "count": 309,
-      "revenue": 2541.41,
+      "count": 308,
+      "revenue": 2532.42,
       "path": "data/new/2020/08/2020-08-24.txt"
     },
     {
       "date": "2020-08-25",
       "count": 271,
-      "revenue": 2362.29,
+      "revenue": 2363.29,
       "path": "data/new/2020/08/2020-08-25.txt"
     },
     {
       "date": "2020-08-26",
-      "count": 840,
-      "revenue": 7457.61,
+      "count": 816,
+      "revenue": 7217.35,
       "path": "data/new/2020/08/2020-08-26.txt"
     },
     {
       "date": "2020-08-27",
-      "count": 1176,
-      "revenue": 10445.75,
+      "count": 1177,
+      "revenue": 10454.74,
       "path": "data/new/2020/08/2020-08-27.txt"
     },
     {
@@ -56270,8 +56270,8 @@
     },
     {
       "date": "2021-03-03",
-      "count": 662,
-      "revenue": 5869.41,
+      "count": 661,
+      "revenue": 5859.42,
       "path": "data/new/2021/03/2021-03-03.txt"
     },
     {
@@ -56366,8 +56366,8 @@
     },
     {
       "date": "2021-03-19",
-      "count": 355,
-      "revenue": 3106.45,
+      "count": 354,
+      "revenue": 3097.46,
       "path": "data/new/2021/03/2021-03-19.txt"
     },
     {
@@ -56426,8 +56426,8 @@
     },
     {
       "date": "2021-03-29",
-      "count": 895,
-      "revenue": 7961.55,
+      "count": 896,
+      "revenue": 7981.54,
       "path": "data/new/2021/03/2021-03-29.txt"
     },
     {
@@ -56822,14 +56822,14 @@
     },
     {
       "date": "2021-06-03",
-      "count": 799,
-      "revenue": 7100.51,
+      "count": 796,
+      "revenue": 7073.54,
       "path": "data/new/2021/06/2021-06-03.txt"
     },
     {
       "date": "2021-06-04",
-      "count": 296,
-      "revenue": 2616.54,
+      "count": 295,
+      "revenue": 2607.55,
       "path": "data/new/2021/06/2021-06-04.txt"
     },
     {
@@ -56846,8 +56846,8 @@
     },
     {
       "date": "2021-06-07",
-      "count": 256,
-      "revenue": 2189.96,
+      "count": 255,
+      "revenue": 2179.97,
       "path": "data/new/2021/06/2021-06-07.txt"
     },
     {
@@ -57002,8 +57002,8 @@
     },
     {
       "date": "2021-07-03",
-      "count": 124,
-      "revenue": 1052.27,
+      "count": 125,
+      "revenue": 1061.26,
       "path": "data/new/2021/07/2021-07-03.txt"
     },
     {
@@ -57290,44 +57290,44 @@
     },
     {
       "date": "2021-08-20",
-      "count": 391,
-      "revenue": 3115.09,
+      "count": 405,
+      "revenue": 3242.95,
       "path": "data/new/2021/08/2021-08-20.txt"
     },
     {
       "date": "2021-08-21",
-      "count": 148,
-      "revenue": 1274.02,
+      "count": 228,
+      "revenue": 2025.22,
       "path": "data/new/2021/08/2021-08-21.txt"
     },
     {
       "date": "2021-08-22",
-      "count": 163,
-      "revenue": 1401.88,
+      "count": 108,
+      "revenue": 924.93,
       "path": "data/new/2021/08/2021-08-22.txt"
     },
     {
       "date": "2021-08-23",
-      "count": 438,
-      "revenue": 3663.63,
+      "count": 385,
+      "revenue": 3233.16,
       "path": "data/new/2021/08/2021-08-23.txt"
     },
     {
       "date": "2021-08-24",
-      "count": 311,
-      "revenue": 2635.91,
+      "count": 310,
+      "revenue": 2626.92,
       "path": "data/new/2021/08/2021-08-24.txt"
     },
     {
       "date": "2021-08-25",
-      "count": 1363,
-      "revenue": 12107.87,
+      "count": 1357,
+      "revenue": 12061.43,
       "path": "data/new/2021/08/2021-08-25.txt"
     },
     {
       "date": "2021-08-26",
-      "count": 469,
-      "revenue": 4030.32,
+      "count": 446,
+      "revenue": 3826.05,
       "path": "data/new/2021/08/2021-08-26.txt"
     },
     {
@@ -57902,8 +57902,8 @@
     },
     {
       "date": "2021-11-30",
-      "count": 380,
-      "revenue": 3216.22,
+      "count": 379,
+      "revenue": 3207.23,
       "path": "data/new/2021/11/2021-11-30.txt"
     },
     {
@@ -58406,8 +58406,8 @@
     },
     {
       "date": "2022-02-22",
-      "count": 371,
-      "revenue": 3152.3,
+      "count": 370,
+      "revenue": 3143.31,
       "path": "data/new/2022/02/2022-02-22.txt"
     },
     {
@@ -58436,8 +58436,8 @@
     },
     {
       "date": "2022-02-27",
-      "count": 241,
-      "revenue": 2077.59,
+      "count": 240,
+      "revenue": 2068.6,
       "path": "data/new/2022/02/2022-02-27.txt"
     },
     {
@@ -58454,8 +58454,8 @@
     },
     {
       "date": "2022-03-02",
-      "count": 369,
-      "revenue": 3230.81,
+      "count": 368,
+      "revenue": 3221.82,
       "path": "data/new/2022/03/2022-03-02.txt"
     },
     {
@@ -58466,8 +58466,8 @@
     },
     {
       "date": "2022-03-04",
-      "count": 355,
-      "revenue": 3144.97,
+      "count": 354,
+      "revenue": 3134.98,
       "path": "data/new/2022/03/2022-03-04.txt"
     },
     {
@@ -58484,8 +58484,8 @@
     },
     {
       "date": "2022-03-07",
-      "count": 578,
-      "revenue": 4159.72,
+      "count": 577,
+      "revenue": 4149.73,
       "path": "data/new/2022/03/2022-03-07.txt"
     },
     {
@@ -58928,8 +58928,8 @@
     },
     {
       "date": "2022-05-20",
-      "count": 395,
-      "revenue": 3358.06,
+      "count": 394,
+      "revenue": 3348.07,
       "path": "data/new/2022/05/2022-05-20.txt"
     },
     {
@@ -58952,14 +58952,14 @@
     },
     {
       "date": "2022-05-24",
-      "count": 332,
-      "revenue": 2874.19,
+      "count": 328,
+      "revenue": 2838.23,
       "path": "data/new/2022/05/2022-05-24.txt"
     },
     {
       "date": "2022-05-25",
-      "count": 273,
-      "revenue": 2392.32,
+      "count": 272,
+      "revenue": 2388.33,
       "path": "data/new/2022/05/2022-05-25.txt"
     },
     {
@@ -59018,8 +59018,8 @@
     },
     {
       "date": "2022-06-04",
-      "count": 244,
-      "revenue": 2024.11,
+      "count": 241,
+      "revenue": 1997.14,
       "path": "data/new/2022/06/2022-06-04.txt"
     },
     {
@@ -59042,8 +59042,8 @@
     },
     {
       "date": "2022-06-08",
-      "count": 389,
-      "revenue": 3211.66,
+      "count": 388,
+      "revenue": 3210.17,
       "path": "data/new/2022/06/2022-06-08.txt"
     },
     {
@@ -59120,8 +59120,8 @@
     },
     {
       "date": "2022-06-21",
-      "count": 341,
-      "revenue": 2981.11,
+      "count": 342,
+      "revenue": 2982.6,
       "path": "data/new/2022/06/2022-06-21.txt"
     },
     {
@@ -59276,8 +59276,8 @@
     },
     {
       "date": "2022-07-17",
-      "count": 212,
-      "revenue": 1825.93,
+      "count": 211,
+      "revenue": 1816.94,
       "path": "data/new/2022/07/2022-07-17.txt"
     },
     {
@@ -59474,50 +59474,50 @@
     },
     {
       "date": "2022-08-19",
-      "count": 309,
-      "revenue": 2648.92,
+      "count": 310,
+      "revenue": 2653.91,
       "path": "data/new/2022/08/2022-08-19.txt"
     },
     {
       "date": "2022-08-20",
-      "count": 238,
-      "revenue": 1947.13,
+      "count": 248,
+      "revenue": 2032.03,
       "path": "data/new/2022/08/2022-08-20.txt"
     },
     {
       "date": "2022-08-21",
-      "count": 131,
-      "revenue": 1035.2,
+      "count": 201,
+      "revenue": 1663.0,
       "path": "data/new/2022/08/2022-08-21.txt"
     },
     {
       "date": "2022-08-22",
-      "count": 329,
-      "revenue": 2808.23,
+      "count": 246,
+      "revenue": 2088.56,
       "path": "data/new/2022/08/2022-08-22.txt"
     },
     {
       "date": "2022-08-23",
-      "count": 492,
-      "revenue": 4255.62,
+      "count": 312,
+      "revenue": 2628.4,
       "path": "data/new/2022/08/2022-08-23.txt"
     },
     {
       "date": "2022-08-24",
-      "count": 527,
-      "revenue": 4569.23,
+      "count": 526,
+      "revenue": 4560.24,
       "path": "data/new/2022/08/2022-08-24.txt"
     },
     {
       "date": "2022-08-25",
-      "count": 494,
-      "revenue": 5583.08,
+      "count": 485,
+      "revenue": 5500.16,
       "path": "data/new/2022/08/2022-08-25.txt"
     },
     {
       "date": "2022-08-26",
-      "count": 712,
-      "revenue": 6158.88,
+      "count": 668,
+      "revenue": 5782.32,
       "path": "data/new/2022/08/2022-08-26.txt"
     },
     {
@@ -59528,8 +59528,8 @@
     },
     {
       "date": "2022-08-28",
-      "count": 517,
-      "revenue": 2977.37,
+      "count": 516,
+      "revenue": 2968.38,
       "path": "data/new/2022/08/2022-08-28.txt"
     },
     {
@@ -59972,8 +59972,8 @@
     },
     {
       "date": "2022-11-10",
-      "count": 557,
-      "revenue": 4884.5,
+      "count": 556,
+      "revenue": 4874.51,
       "path": "data/new/2022/11/2022-11-10.txt"
     },
     {
@@ -60212,8 +60212,8 @@
     },
     {
       "date": "2022-12-20",
-      "count": 537,
-      "revenue": 4680.18,
+      "count": 536,
+      "revenue": 4670.19,
       "path": "data/new/2022/12/2022-12-20.txt"
     },
     {
@@ -60272,8 +60272,8 @@
     },
     {
       "date": "2022-12-30",
-      "count": 419,
-      "revenue": 3645.33,
+      "count": 418,
+      "revenue": 3643.84,
       "path": "data/new/2022/12/2022-12-30.txt"
     },
     {
@@ -60674,8 +60674,8 @@
     },
     {
       "date": "2023-03-07",
-      "count": 740,
-      "revenue": 6101.14,
+      "count": 739,
+      "revenue": 6096.15,
       "path": "data/new/2023/03/2023-03-07.txt"
     },
     {
@@ -60836,8 +60836,8 @@
     },
     {
       "date": "2023-04-03",
-      "count": 672,
-      "revenue": 5748.8,
+      "count": 671,
+      "revenue": 5738.81,
       "path": "data/new/2023/04/2023-04-03.txt"
     },
     {
@@ -60968,8 +60968,8 @@
     },
     {
       "date": "2023-04-25",
-      "count": 885,
-      "revenue": 7848.67,
+      "count": 883,
+      "revenue": 7829.69,
       "path": "data/new/2023/04/2023-04-25.txt"
     },
     {
@@ -60986,8 +60986,8 @@
     },
     {
       "date": "2023-04-28",
-      "count": 869,
-      "revenue": 7632.85,
+      "count": 868,
+      "revenue": 7622.86,
       "path": "data/new/2023/04/2023-04-28.txt"
     },
     {
@@ -61028,14 +61028,14 @@
     },
     {
       "date": "2023-05-05",
-      "count": 748,
-      "revenue": 6557.04,
+      "count": 747,
+      "revenue": 6547.05,
       "path": "data/new/2023/05/2023-05-05.txt"
     },
     {
       "date": "2023-05-06",
-      "count": 331,
-      "revenue": 2674.2,
+      "count": 330,
+      "revenue": 2670.21,
       "path": "data/new/2023/05/2023-05-06.txt"
     },
     {
@@ -61082,8 +61082,8 @@
     },
     {
       "date": "2023-05-14",
-      "count": 434,
-      "revenue": 3889.67,
+      "count": 433,
+      "revenue": 3879.68,
       "path": "data/new/2023/05/2023-05-14.txt"
     },
     {
@@ -61100,8 +61100,8 @@
     },
     {
       "date": "2023-05-17",
-      "count": 1010,
-      "revenue": 8930.41,
+      "count": 1007,
+      "revenue": 8900.44,
       "path": "data/new/2023/05/2023-05-17.txt"
     },
     {
@@ -61112,8 +61112,8 @@
     },
     {
       "date": "2023-05-19",
-      "count": 1235,
-      "revenue": 9573.65,
+      "count": 1234,
+      "revenue": 9563.66,
       "path": "data/new/2023/05/2023-05-19.txt"
     },
     {
@@ -61124,8 +61124,8 @@
     },
     {
       "date": "2023-05-21",
-      "count": 391,
-      "revenue": 3422.09,
+      "count": 390,
+      "revenue": 3413.1,
       "path": "data/new/2023/05/2023-05-21.txt"
     },
     {
@@ -61148,8 +61148,8 @@
     },
     {
       "date": "2023-05-25",
-      "count": 621,
-      "revenue": 4679.36,
+      "count": 620,
+      "revenue": 4654.37,
       "path": "data/new/2023/05/2023-05-25.txt"
     },
     {
@@ -61184,14 +61184,14 @@
     },
     {
       "date": "2023-05-31",
-      "count": 676,
-      "revenue": 6174.24,
+      "count": 675,
+      "revenue": 6165.25,
       "path": "data/new/2023/05/2023-05-31.txt"
     },
     {
       "date": "2023-06-01",
-      "count": 514,
-      "revenue": 4530.87,
+      "count": 512,
+      "revenue": 4511.89,
       "path": "data/new/2023/06/2023-06-01.txt"
     },
     {
@@ -61202,14 +61202,14 @@
     },
     {
       "date": "2023-06-03",
-      "count": 463,
-      "revenue": 3859.89,
+      "count": 462,
+      "revenue": 3850.9,
       "path": "data/new/2023/06/2023-06-03.txt"
     },
     {
       "date": "2023-06-04",
-      "count": 353,
-      "revenue": 2912.97,
+      "count": 352,
+      "revenue": 2903.98,
       "path": "data/new/2023/06/2023-06-04.txt"
     },
     {
@@ -61220,8 +61220,8 @@
     },
     {
       "date": "2023-06-06",
-      "count": 507,
-      "revenue": 3866.94,
+      "count": 506,
+      "revenue": 3856.95,
       "path": "data/new/2023/06/2023-06-06.txt"
     },
     {
@@ -61232,8 +61232,8 @@
     },
     {
       "date": "2023-06-08",
-      "count": 743,
-      "revenue": 6365.07,
+      "count": 739,
+      "revenue": 6350.61,
       "path": "data/new/2023/06/2023-06-08.txt"
     },
     {
@@ -61262,8 +61262,8 @@
     },
     {
       "date": "2023-06-13",
-      "count": 776,
-      "revenue": 5073.24,
+      "count": 775,
+      "revenue": 5071.75,
       "path": "data/new/2023/06/2023-06-13.txt"
     },
     {
@@ -61640,26 +61640,26 @@
     },
     {
       "date": "2023-08-15",
-      "count": 573,
-      "revenue": 4937.81,
+      "count": 575,
+      "revenue": 4946.79,
       "path": "data/new/2023/08/2023-08-15.txt"
     },
     {
       "date": "2023-08-16",
-      "count": 650,
-      "revenue": 5594.0,
+      "count": 651,
+      "revenue": 5598.99,
       "path": "data/new/2023/08/2023-08-16.txt"
     },
     {
       "date": "2023-08-17",
-      "count": 493,
-      "revenue": 4231.59,
+      "count": 495,
+      "revenue": 4241.57,
       "path": "data/new/2023/08/2023-08-17.txt"
     },
     {
       "date": "2023-08-18",
-      "count": 464,
-      "revenue": 4167.87,
+      "count": 465,
+      "revenue": 4172.86,
       "path": "data/new/2023/08/2023-08-18.txt"
     },
     {
@@ -61670,44 +61670,44 @@
     },
     {
       "date": "2023-08-20",
-      "count": 427,
-      "revenue": 3684.73,
+      "count": 452,
+      "revenue": 3920.48,
       "path": "data/new/2023/08/2023-08-20.txt"
     },
     {
       "date": "2023-08-21",
-      "count": 294,
-      "revenue": 2523.56,
+      "count": 429,
+      "revenue": 3769.71,
       "path": "data/new/2023/08/2023-08-21.txt"
     },
     {
       "date": "2023-08-22",
-      "count": 523,
-      "revenue": 4329.28,
+      "count": 297,
+      "revenue": 2416.04,
       "path": "data/new/2023/08/2023-08-22.txt"
     },
     {
       "date": "2023-08-23",
-      "count": 1135,
-      "revenue": 9658.67,
+      "count": 948,
+      "revenue": 7982.54,
       "path": "data/new/2023/08/2023-08-23.txt"
     },
     {
       "date": "2023-08-24",
-      "count": 1147,
-      "revenue": 9914.57,
+      "count": 1145,
+      "revenue": 9896.59,
       "path": "data/new/2023/08/2023-08-24.txt"
     },
     {
       "date": "2023-08-25",
-      "count": 724,
-      "revenue": 5611.76,
+      "count": 720,
+      "revenue": 5581.8,
       "path": "data/new/2023/08/2023-08-25.txt"
     },
     {
       "date": "2023-08-26",
-      "count": 642,
-      "revenue": 5486.09,
+      "count": 597,
+      "revenue": 5119.04,
       "path": "data/new/2023/08/2023-08-26.txt"
     },
     {
@@ -61832,8 +61832,8 @@
     },
     {
       "date": "2023-09-16",
-      "count": 803,
-      "revenue": 7103.48,
+      "count": 802,
+      "revenue": 7094.49,
       "path": "data/new/2023/09/2023-09-16.txt"
     },
     {
@@ -62018,8 +62018,8 @@
     },
     {
       "date": "2023-10-17",
-      "count": 902,
-      "revenue": 7448.0,
+      "count": 901,
+      "revenue": 7439.01,
       "path": "data/new/2023/10/2023-10-17.txt"
     },
     {
@@ -62138,8 +62138,8 @@
     },
     {
       "date": "2023-11-06",
-      "count": 883,
-      "revenue": 5268.17,
+      "count": 882,
+      "revenue": 5259.18,
       "path": "data/new/2023/11/2023-11-06.txt"
     },
     {
@@ -62372,14 +62372,14 @@
     },
     {
       "date": "2023-12-15",
-      "count": 729,
-      "revenue": 6294.22,
+      "count": 728,
+      "revenue": 6285.23,
       "path": "data/new/2023/12/2023-12-15.txt"
     },
     {
       "date": "2023-12-16",
-      "count": 522,
-      "revenue": 4514.28,
+      "count": 521,
+      "revenue": 4504.29,
       "path": "data/new/2023/12/2023-12-16.txt"
     },
     {
@@ -62390,20 +62390,20 @@
     },
     {
       "date": "2023-12-18",
-      "count": 814,
-      "revenue": 5881.39,
+      "count": 813,
+      "revenue": 5871.4,
       "path": "data/new/2023/12/2023-12-18.txt"
     },
     {
       "date": "2023-12-19",
-      "count": 970,
-      "revenue": 7489.36,
+      "count": 969,
+      "revenue": 7480.37,
       "path": "data/new/2023/12/2023-12-19.txt"
     },
     {
       "date": "2023-12-20",
-      "count": 1033,
-      "revenue": 8582.69,
+      "count": 1032,
+      "revenue": 8572.7,
       "path": "data/new/2023/12/2023-12-20.txt"
     },
     {
@@ -62426,8 +62426,8 @@
     },
     {
       "date": "2023-12-24",
-      "count": 615,
-      "revenue": 4381.41,
+      "count": 614,
+      "revenue": 4372.42,
       "path": "data/new/2023/12/2023-12-24.txt"
     },
     {
@@ -62456,8 +62456,8 @@
     },
     {
       "date": "2023-12-29",
-      "count": 798,
-      "revenue": 5968.05,
+      "count": 797,
+      "revenue": 5960.06,
       "path": "data/new/2023/12/2023-12-29.txt"
     },
     {
@@ -62510,8 +62510,8 @@
     },
     {
       "date": "2024-01-07",
-      "count": 665,
-      "revenue": 5680.36,
+      "count": 664,
+      "revenue": 5670.37,
       "path": "data/new/2024/01/2024-01-07.txt"
     },
     {
@@ -62546,8 +62546,8 @@
     },
     {
       "date": "2024-01-13",
-      "count": 456,
-      "revenue": 3758.47,
+      "count": 455,
+      "revenue": 3749.48,
       "path": "data/new/2024/01/2024-01-13.txt"
     },
     {
@@ -62570,14 +62570,14 @@
     },
     {
       "date": "2024-01-17",
-      "count": 839,
-      "revenue": 7231.62,
+      "count": 840,
+      "revenue": 7236.61,
       "path": "data/new/2024/01/2024-01-17.txt"
     },
     {
       "date": "2024-01-18",
-      "count": 923,
-      "revenue": 8305.28,
+      "count": 922,
+      "revenue": 8296.29,
       "path": "data/new/2024/01/2024-01-18.txt"
     },
     {
@@ -62588,14 +62588,14 @@
     },
     {
       "date": "2024-01-20",
-      "count": 714,
-      "revenue": 5273.91,
+      "count": 715,
+      "revenue": 5278.9,
       "path": "data/new/2024/01/2024-01-20.txt"
     },
     {
       "date": "2024-01-21",
-      "count": 695,
-      "revenue": 5211.07,
+      "count": 694,
+      "revenue": 5202.08,
       "path": "data/new/2024/01/2024-01-21.txt"
     },
     {
@@ -62696,8 +62696,8 @@
     },
     {
       "date": "2024-02-07",
-      "count": 967,
-      "revenue": 8028.84,
+      "count": 966,
+      "revenue": 8018.85,
       "path": "data/new/2024/02/2024-02-07.txt"
     },
     {
@@ -62744,8 +62744,8 @@
     },
     {
       "date": "2024-02-15",
-      "count": 953,
-      "revenue": 8469.48,
+      "count": 952,
+      "revenue": 8459.49,
       "path": "data/new/2024/02/2024-02-15.txt"
     },
     {
@@ -62768,8 +62768,8 @@
     },
     {
       "date": "2024-02-19",
-      "count": 1110,
-      "revenue": 9552.42,
+      "count": 1109,
+      "revenue": 9542.43,
       "path": "data/new/2024/02/2024-02-19.txt"
     },
     {
@@ -62780,8 +62780,8 @@
     },
     {
       "date": "2024-02-21",
-      "count": 1099,
-      "revenue": 8429.03,
+      "count": 1097,
+      "revenue": 8410.05,
       "path": "data/new/2024/02/2024-02-21.txt"
     },
     {
@@ -62942,14 +62942,14 @@
     },
     {
       "date": "2024-03-19",
-      "count": 1337,
-      "revenue": 11881.18,
+      "count": 1338,
+      "revenue": 11901.17,
       "path": "data/new/2024/03/2024-03-19.txt"
     },
     {
       "date": "2024-03-20",
-      "count": 1195,
-      "revenue": 10134.58,
+      "count": 1194,
+      "revenue": 10124.59,
       "path": "data/new/2024/03/2024-03-20.txt"
     },
     {
@@ -62960,14 +62960,14 @@
     },
     {
       "date": "2024-03-22",
-      "count": 768,
-      "revenue": 6898.37,
+      "count": 767,
+      "revenue": 6888.38,
       "path": "data/new/2024/03/2024-03-22.txt"
     },
     {
       "date": "2024-03-23",
-      "count": 548,
-      "revenue": 4745.52,
+      "count": 549,
+      "revenue": 4750.51,
       "path": "data/new/2024/03/2024-03-23.txt"
     },
     {
@@ -63002,8 +63002,8 @@
     },
     {
       "date": "2024-03-29",
-      "count": 1291,
-      "revenue": 10764.65,
+      "count": 1290,
+      "revenue": 10754.66,
       "path": "data/new/2024/03/2024-03-29.txt"
     },
     {
@@ -63026,8 +63026,8 @@
     },
     {
       "date": "2024-04-02",
-      "count": 1051,
-      "revenue": 9048.02,
+      "count": 1050,
+      "revenue": 9039.03,
       "path": "data/new/2024/04/2024-04-02.txt"
     },
     {
@@ -63038,8 +63038,8 @@
     },
     {
       "date": "2024-04-04",
-      "count": 1054,
-      "revenue": 9502.98,
+      "count": 1053,
+      "revenue": 9493.99,
       "path": "data/new/2024/04/2024-04-04.txt"
     },
     {
@@ -63056,14 +63056,14 @@
     },
     {
       "date": "2024-04-07",
-      "count": 1162,
-      "revenue": 10332.92,
+      "count": 1161,
+      "revenue": 10322.93,
       "path": "data/new/2024/04/2024-04-07.txt"
     },
     {
       "date": "2024-04-08",
-      "count": 2262,
-      "revenue": 15503.42,
+      "count": 2261,
+      "revenue": 15493.43,
       "path": "data/new/2024/04/2024-04-08.txt"
     },
     {
@@ -63074,8 +63074,8 @@
     },
     {
       "date": "2024-04-10",
-      "count": 1129,
-      "revenue": 10148.73,
+      "count": 1128,
+      "revenue": 10138.74,
       "path": "data/new/2024/04/2024-04-10.txt"
     },
     {
@@ -63086,8 +63086,8 @@
     },
     {
       "date": "2024-04-12",
-      "count": 1107,
-      "revenue": 9861.48,
+      "count": 1106,
+      "revenue": 9851.49,
       "path": "data/new/2024/04/2024-04-12.txt"
     },
     {
@@ -63098,14 +63098,14 @@
     },
     {
       "date": "2024-04-14",
-      "count": 1691,
-      "revenue": 13010.6,
+      "count": 1690,
+      "revenue": 13001.61,
       "path": "data/new/2024/04/2024-04-14.txt"
     },
     {
       "date": "2024-04-15",
-      "count": 1595,
-      "revenue": 14214.08,
+      "count": 1594,
+      "revenue": 14204.09,
       "path": "data/new/2024/04/2024-04-15.txt"
     },
     {
@@ -63122,8 +63122,8 @@
     },
     {
       "date": "2024-04-18",
-      "count": 1404,
-      "revenue": 10798.49,
+      "count": 1405,
+      "revenue": 10803.48,
       "path": "data/new/2024/04/2024-04-18.txt"
     },
     {
@@ -63182,14 +63182,14 @@
     },
     {
       "date": "2024-04-28",
-      "count": 587,
-      "revenue": 5143.14,
+      "count": 586,
+      "revenue": 5133.15,
       "path": "data/new/2024/04/2024-04-28.txt"
     },
     {
       "date": "2024-04-29",
-      "count": 1018,
-      "revenue": 8809.4,
+      "count": 1017,
+      "revenue": 8804.41,
       "path": "data/new/2024/04/2024-04-29.txt"
     },
     {
@@ -63200,8 +63200,8 @@
     },
     {
       "date": "2024-05-01",
-      "count": 1333,
-      "revenue": 11235.67,
+      "count": 1330,
+      "revenue": 11206.7,
       "path": "data/new/2024/05/2024-05-01.txt"
     },
     {
@@ -63218,14 +63218,14 @@
     },
     {
       "date": "2024-05-04",
-      "count": 1391,
-      "revenue": 12596.64,
+      "count": 1388,
+      "revenue": 12568.67,
       "path": "data/new/2024/05/2024-05-04.txt"
     },
     {
       "date": "2024-05-05",
-      "count": 644,
-      "revenue": 5773.12,
+      "count": 643,
+      "revenue": 5768.13,
       "path": "data/new/2024/05/2024-05-05.txt"
     },
     {
@@ -63242,44 +63242,44 @@
     },
     {
       "date": "2024-05-08",
-      "count": 1017,
-      "revenue": 8849.35,
+      "count": 1016,
+      "revenue": 8840.36,
       "path": "data/new/2024/05/2024-05-08.txt"
     },
     {
       "date": "2024-05-09",
-      "count": 1318,
-      "revenue": 9478.36,
+      "count": 1317,
+      "revenue": 9469.37,
       "path": "data/new/2024/05/2024-05-09.txt"
     },
     {
       "date": "2024-05-10",
-      "count": 1214,
-      "revenue": 9788.9,
+      "count": 1212,
+      "revenue": 9768.92,
       "path": "data/new/2024/05/2024-05-10.txt"
     },
     {
       "date": "2024-05-11",
-      "count": 907,
-      "revenue": 8123.43,
+      "count": 904,
+      "revenue": 8093.46,
       "path": "data/new/2024/05/2024-05-11.txt"
     },
     {
       "date": "2024-05-12",
-      "count": 945,
-      "revenue": 8542.07,
+      "count": 943,
+      "revenue": 8523.09,
       "path": "data/new/2024/05/2024-05-12.txt"
     },
     {
       "date": "2024-05-13",
-      "count": 1068,
-      "revenue": 9277.88,
+      "count": 1067,
+      "revenue": 9268.89,
       "path": "data/new/2024/05/2024-05-13.txt"
     },
     {
       "date": "2024-05-14",
-      "count": 1112,
-      "revenue": 9981.94,
+      "count": 1111,
+      "revenue": 9971.95,
       "path": "data/new/2024/05/2024-05-14.txt"
     },
     {
@@ -63290,20 +63290,20 @@
     },
     {
       "date": "2024-05-16",
-      "count": 1295,
-      "revenue": 10883.58,
+      "count": 1292,
+      "revenue": 10855.61,
       "path": "data/new/2024/05/2024-05-16.txt"
     },
     {
       "date": "2024-05-17",
-      "count": 1099,
-      "revenue": 9948.02,
+      "count": 1097,
+      "revenue": 9928.04,
       "path": "data/new/2024/05/2024-05-17.txt"
     },
     {
       "date": "2024-05-18",
-      "count": 824,
-      "revenue": 7006.76,
+      "count": 823,
+      "revenue": 6996.77,
       "path": "data/new/2024/05/2024-05-18.txt"
     },
     {
@@ -63314,20 +63314,20 @@
     },
     {
       "date": "2024-05-20",
-      "count": 1462,
-      "revenue": 13078.39,
+      "count": 1458,
+      "revenue": 13039.43,
       "path": "data/new/2024/05/2024-05-20.txt"
     },
     {
       "date": "2024-05-21",
-      "count": 1202,
-      "revenue": 10585.0,
+      "count": 1200,
+      "revenue": 10566.02,
       "path": "data/new/2024/05/2024-05-21.txt"
     },
     {
       "date": "2024-05-22",
-      "count": 1132,
-      "revenue": 10274.72,
+      "count": 1131,
+      "revenue": 10264.73,
       "path": "data/new/2024/05/2024-05-22.txt"
     },
     {
@@ -63338,14 +63338,14 @@
     },
     {
       "date": "2024-05-24",
-      "count": 1122,
-      "revenue": 9984.29,
+      "count": 1120,
+      "revenue": 9970.31,
       "path": "data/new/2024/05/2024-05-24.txt"
     },
     {
       "date": "2024-05-25",
-      "count": 1189,
-      "revenue": 9785.67,
+      "count": 1187,
+      "revenue": 9765.69,
       "path": "data/new/2024/05/2024-05-25.txt"
     },
     {
@@ -63356,8 +63356,8 @@
     },
     {
       "date": "2024-05-27",
-      "count": 1107,
-      "revenue": 9571.48,
+      "count": 1105,
+      "revenue": 9553.5,
       "path": "data/new/2024/05/2024-05-27.txt"
     },
     {
@@ -63368,8 +63368,8 @@
     },
     {
       "date": "2024-05-29",
-      "count": 2016,
-      "revenue": 17887.38,
+      "count": 2014,
+      "revenue": 17867.4,
       "path": "data/new/2024/05/2024-05-29.txt"
     },
     {
@@ -63380,44 +63380,44 @@
     },
     {
       "date": "2024-05-31",
-      "count": 978,
-      "revenue": 8743.77,
+      "count": 977,
+      "revenue": 8734.78,
       "path": "data/new/2024/05/2024-05-31.txt"
     },
     {
       "date": "2024-06-01",
-      "count": 654,
-      "revenue": 5767.98,
+      "count": 653,
+      "revenue": 5757.99,
       "path": "data/new/2024/06/2024-06-01.txt"
     },
     {
       "date": "2024-06-02",
-      "count": 1320,
-      "revenue": 12092.34,
+      "count": 1318,
+      "revenue": 12072.36,
       "path": "data/new/2024/06/2024-06-02.txt"
     },
     {
       "date": "2024-06-03",
-      "count": 1261,
-      "revenue": 11300.4,
+      "count": 1256,
+      "revenue": 11253.45,
       "path": "data/new/2024/06/2024-06-03.txt"
     },
     {
       "date": "2024-06-04",
-      "count": 1095,
-      "revenue": 9593.14,
+      "count": 1089,
+      "revenue": 9539.2,
       "path": "data/new/2024/06/2024-06-04.txt"
     },
     {
       "date": "2024-06-05",
-      "count": 1415,
-      "revenue": 12005.87,
+      "count": 1414,
+      "revenue": 11996.88,
       "path": "data/new/2024/06/2024-06-05.txt"
     },
     {
       "date": "2024-06-06",
-      "count": 1620,
-      "revenue": 12355.89,
+      "count": 1619,
+      "revenue": 12345.9,
       "path": "data/new/2024/06/2024-06-06.txt"
     },
     {
@@ -63530,8 +63530,8 @@
     },
     {
       "date": "2024-06-25",
-      "count": 921,
-      "revenue": 7803.31,
+      "count": 922,
+      "revenue": 7812.3,
       "path": "data/new/2024/06/2024-06-25.txt"
     },
     {
@@ -63560,14 +63560,14 @@
     },
     {
       "date": "2024-06-30",
-      "count": 516,
-      "revenue": 4545.84,
+      "count": 517,
+      "revenue": 4565.83,
       "path": "data/new/2024/06/2024-06-30.txt"
     },
     {
       "date": "2024-07-01",
-      "count": 676,
-      "revenue": 5479.24,
+      "count": 677,
+      "revenue": 5488.23,
       "path": "data/new/2024/07/2024-07-01.txt"
     },
     {
@@ -63794,8 +63794,8 @@
     },
     {
       "date": "2024-08-08",
-      "count": 1189,
-      "revenue": 9245.66,
+      "count": 1190,
+      "revenue": 9250.65,
       "path": "data/new/2024/08/2024-08-08.txt"
     },
     {
@@ -63842,8 +63842,8 @@
     },
     {
       "date": "2024-08-16",
-      "count": 981,
-      "revenue": 8188.26,
+      "count": 983,
+      "revenue": 8196.24,
       "path": "data/new/2024/08/2024-08-16.txt"
     },
     {
@@ -63860,62 +63860,62 @@
     },
     {
       "date": "2024-08-19",
-      "count": 758,
-      "revenue": 6314.97,
+      "count": 761,
+      "revenue": 6328.94,
       "path": "data/new/2024/08/2024-08-19.txt"
     },
     {
       "date": "2024-08-20",
-      "count": 1305,
-      "revenue": 10266.47,
+      "count": 1351,
+      "revenue": 10687.01,
       "path": "data/new/2024/08/2024-08-20.txt"
     },
     {
       "date": "2024-08-21",
-      "count": 711,
-      "revenue": 5819.9,
+      "count": 1632,
+      "revenue": 14161.19,
       "path": "data/new/2024/08/2024-08-21.txt"
     },
     {
       "date": "2024-08-22",
-      "count": 3965,
-      "revenue": 24890.57,
+      "count": 780,
+      "revenue": 5783.74,
       "path": "data/new/2024/08/2024-08-22.txt"
     },
     {
       "date": "2024-08-23",
-      "count": 4698,
-      "revenue": 32190.2,
+      "count": 4017,
+      "revenue": 27204.01,
       "path": "data/new/2024/08/2024-08-23.txt"
     },
     {
       "date": "2024-08-24",
-      "count": 2779,
-      "revenue": 17912.41,
+      "count": 2775,
+      "revenue": 17883.45,
       "path": "data/new/2024/08/2024-08-24.txt"
     },
     {
       "date": "2024-08-25",
-      "count": 2945,
-      "revenue": 19542.09,
+      "count": 2853,
+      "revenue": 18809.51,
       "path": "data/new/2024/08/2024-08-25.txt"
     },
     {
       "date": "2024-08-26",
-      "count": 6412,
-      "revenue": 39663.48,
+      "count": 5271,
+      "revenue": 32732.36,
       "path": "data/new/2024/08/2024-08-26.txt"
     },
     {
       "date": "2024-08-27",
-      "count": 6826,
-      "revenue": 39897.81,
+      "count": 6819,
+      "revenue": 39842.88,
       "path": "data/new/2024/08/2024-08-27.txt"
     },
     {
       "date": "2024-08-28",
-      "count": 4817,
-      "revenue": 33491.9,
+      "count": 4816,
+      "revenue": 33487.91,
       "path": "data/new/2024/08/2024-08-28.txt"
     },
     {
@@ -63926,8 +63926,8 @@
     },
     {
       "date": "2024-08-30",
-      "count": 6412,
-      "revenue": 44784.93,
+      "count": 6410,
+      "revenue": 44771.95,
       "path": "data/new/2024/08/2024-08-30.txt"
     },
     {
@@ -63944,8 +63944,8 @@
     },
     {
       "date": "2024-09-02",
-      "count": 4803,
-      "revenue": 32281.58,
+      "count": 4801,
+      "revenue": 32268.6,
       "path": "data/new/2024/09/2024-09-02.txt"
     },
     {
@@ -63974,8 +63974,8 @@
     },
     {
       "date": "2024-09-07",
-      "count": 2694,
-      "revenue": 19015.6,
+      "count": 2693,
+      "revenue": 19006.61,
       "path": "data/new/2024/09/2024-09-07.txt"
     },
     {
@@ -63998,14 +63998,14 @@
     },
     {
       "date": "2024-09-11",
-      "count": 4998,
-      "revenue": 34924.22,
+      "count": 4996,
+      "revenue": 34909.24,
       "path": "data/new/2024/09/2024-09-11.txt"
     },
     {
       "date": "2024-09-12",
-      "count": 5134,
-      "revenue": 45959.77,
+      "count": 5133,
+      "revenue": 45949.78,
       "path": "data/new/2024/09/2024-09-12.txt"
     },
     {
@@ -64058,8 +64058,8 @@
     },
     {
       "date": "2024-09-21",
-      "count": 2869,
-      "revenue": 20427.88,
+      "count": 2870,
+      "revenue": 20447.87,
       "path": "data/new/2024/09/2024-09-21.txt"
     },
     {
@@ -64082,14 +64082,14 @@
     },
     {
       "date": "2024-09-25",
-      "count": 5010,
-      "revenue": 30044.98,
+      "count": 5009,
+      "revenue": 30034.99,
       "path": "data/new/2024/09/2024-09-25.txt"
     },
     {
       "date": "2024-09-26",
-      "count": 4622,
-      "revenue": 29367.38,
+      "count": 4621,
+      "revenue": 29358.39,
       "path": "data/new/2024/09/2024-09-26.txt"
     },
     {
@@ -64100,20 +64100,20 @@
     },
     {
       "date": "2024-09-28",
-      "count": 3431,
-      "revenue": 21301.72,
+      "count": 3429,
+      "revenue": 21288.74,
       "path": "data/new/2024/09/2024-09-28.txt"
     },
     {
       "date": "2024-09-29",
-      "count": 2089,
-      "revenue": 11156.13,
+      "count": 2088,
+      "revenue": 11147.14,
       "path": "data/new/2024/09/2024-09-29.txt"
     },
     {
       "date": "2024-09-30",
-      "count": 4245,
-      "revenue": 30197.59,
+      "count": 4243,
+      "revenue": 30178.61,
       "path": "data/new/2024/09/2024-09-30.txt"
     },
     {
@@ -64148,8 +64148,8 @@
     },
     {
       "date": "2024-10-06",
-      "count": 352,
-      "revenue": 2614.49,
+      "count": 353,
+      "revenue": 2634.48,
       "path": "data/new/2024/10/2024-10-06.txt"
     },
     {
@@ -64172,32 +64172,32 @@
     },
     {
       "date": "2024-10-10",
-      "count": 4382,
-      "revenue": 26704.2,
+      "count": 4381,
+      "revenue": 26699.21,
       "path": "data/new/2024/10/2024-10-10.txt"
     },
     {
       "date": "2024-10-11",
-      "count": 4063,
-      "revenue": 27955.52,
+      "count": 4062,
+      "revenue": 27950.53,
       "path": "data/new/2024/10/2024-10-11.txt"
     },
     {
       "date": "2024-10-12",
-      "count": 4049,
-      "revenue": 24688.58,
+      "count": 4047,
+      "revenue": 24678.6,
       "path": "data/new/2024/10/2024-10-12.txt"
     },
     {
       "date": "2024-10-13",
-      "count": 3235,
-      "revenue": 19401.22,
+      "count": 3234,
+      "revenue": 19396.23,
       "path": "data/new/2024/10/2024-10-13.txt"
     },
     {
       "date": "2024-10-14",
-      "count": 3659,
-      "revenue": 23989.98,
+      "count": 3658,
+      "revenue": 23979.99,
       "path": "data/new/2024/10/2024-10-14.txt"
     },
     {
@@ -64208,26 +64208,26 @@
     },
     {
       "date": "2024-10-16",
-      "count": 6505,
-      "revenue": 40198.02,
+      "count": 6504,
+      "revenue": 40193.03,
       "path": "data/new/2024/10/2024-10-16.txt"
     },
     {
       "date": "2024-10-17",
-      "count": 5374,
-      "revenue": 37042.81,
+      "count": 5373,
+      "revenue": 37037.82,
       "path": "data/new/2024/10/2024-10-17.txt"
     },
     {
       "date": "2024-10-18",
       "count": 6403,
-      "revenue": 37583.51,
+      "revenue": 37594.51,
       "path": "data/new/2024/10/2024-10-18.txt"
     },
     {
       "date": "2024-10-19",
-      "count": 3219,
-      "revenue": 21079.35,
+      "count": 3220,
+      "revenue": 21099.34,
       "path": "data/new/2024/10/2024-10-19.txt"
     },
     {
@@ -64244,20 +64244,20 @@
     },
     {
       "date": "2024-10-22",
-      "count": 5144,
-      "revenue": 34284.14,
+      "count": 5143,
+      "revenue": 34279.15,
       "path": "data/new/2024/10/2024-10-22.txt"
     },
     {
       "date": "2024-10-23",
-      "count": 6406,
-      "revenue": 37776.61,
+      "count": 6402,
+      "revenue": 37748.65,
       "path": "data/new/2024/10/2024-10-23.txt"
     },
     {
       "date": "2024-10-24",
-      "count": 4408,
-      "revenue": 31999.47,
+      "count": 4405,
+      "revenue": 31977.5,
       "path": "data/new/2024/10/2024-10-24.txt"
     },
     {
@@ -64268,8 +64268,8 @@
     },
     {
       "date": "2024-10-26",
-      "count": 3325,
-      "revenue": 20094.38,
+      "count": 3324,
+      "revenue": 20084.39,
       "path": "data/new/2024/10/2024-10-26.txt"
     },
     {
@@ -64292,8 +64292,8 @@
     },
     {
       "date": "2024-10-30",
-      "count": 1709,
-      "revenue": 12016.97,
+      "count": 1708,
+      "revenue": 12011.98,
       "path": "data/new/2024/10/2024-10-30.txt"
     },
     {
@@ -64316,38 +64316,38 @@
     },
     {
       "date": "2024-11-03",
-      "count": 3079,
-      "revenue": 20800.25,
+      "count": 3078,
+      "revenue": 20795.26,
       "path": "data/new/2024/11/2024-11-03.txt"
     },
     {
       "date": "2024-11-04",
-      "count": 5519,
-      "revenue": 35823.9,
+      "count": 5517,
+      "revenue": 35813.92,
       "path": "data/new/2024/11/2024-11-04.txt"
     },
     {
       "date": "2024-11-05",
-      "count": 5788,
-      "revenue": 38694.64,
+      "count": 5787,
+      "revenue": 38689.65,
       "path": "data/new/2024/11/2024-11-05.txt"
     },
     {
       "date": "2024-11-06",
-      "count": 4165,
-      "revenue": 29100.02,
+      "count": 4164,
+      "revenue": 29095.03,
       "path": "data/new/2024/11/2024-11-06.txt"
     },
     {
       "date": "2024-11-07",
-      "count": 4093,
-      "revenue": 28666.65,
+      "count": 4092,
+      "revenue": 28661.66,
       "path": "data/new/2024/11/2024-11-07.txt"
     },
     {
       "date": "2024-11-08",
-      "count": 4443,
-      "revenue": 29475.63,
+      "count": 4440,
+      "revenue": 29456.66,
       "path": "data/new/2024/11/2024-11-08.txt"
     },
     {
@@ -64364,8 +64364,8 @@
     },
     {
       "date": "2024-11-11",
-      "count": 3772,
-      "revenue": 24770.35,
+      "count": 3771,
+      "revenue": 24769.36,
       "path": "data/new/2024/11/2024-11-11.txt"
     },
     {
@@ -64388,8 +64388,8 @@
     },
     {
       "date": "2024-11-15",
-      "count": 5246,
-      "revenue": 33534.28,
+      "count": 5245,
+      "revenue": 33525.29,
       "path": "data/new/2024/11/2024-11-15.txt"
     },
     {
@@ -64406,14 +64406,14 @@
     },
     {
       "date": "2024-11-18",
-      "count": 4868,
-      "revenue": 33041.42,
+      "count": 4866,
+      "revenue": 33027.44,
       "path": "data/new/2024/11/2024-11-18.txt"
     },
     {
       "date": "2024-11-19",
-      "count": 4410,
-      "revenue": 28929.15,
+      "count": 4409,
+      "revenue": 28924.16,
       "path": "data/new/2024/11/2024-11-19.txt"
     },
     {
@@ -64484,26 +64484,26 @@
     },
     {
       "date": "2024-12-01",
-      "count": 3876,
-      "revenue": 27068.3,
+      "count": 3875,
+      "revenue": 27063.31,
       "path": "data/new/2024/12/2024-12-01.txt"
     },
     {
       "date": "2024-12-02",
-      "count": 9063,
-      "revenue": 68954.49,
+      "count": 9060,
+      "revenue": 68935.02,
       "path": "data/new/2024/12/2024-12-02.txt"
     },
     {
       "date": "2024-12-03",
       "count": 6205,
-      "revenue": 41369.64,
+      "revenue": 41388.14,
       "path": "data/new/2024/12/2024-12-03.txt"
     },
     {
       "date": "2024-12-04",
-      "count": 4880,
-      "revenue": 30621.99,
+      "count": 4879,
+      "revenue": 30612.0,
       "path": "data/new/2024/12/2024-12-04.txt"
     },
     {
@@ -64514,14 +64514,14 @@
     },
     {
       "date": "2024-12-06",
-      "count": 4480,
-      "revenue": 27543.77,
+      "count": 4479,
+      "revenue": 27538.78,
       "path": "data/new/2024/12/2024-12-06.txt"
     },
     {
       "date": "2024-12-07",
-      "count": 3572,
-      "revenue": 22094.34,
+      "count": 3571,
+      "revenue": 22085.35,
       "path": "data/new/2024/12/2024-12-07.txt"
     },
     {
@@ -64581,7 +64581,7 @@
     {
       "date": "2024-12-17",
       "count": 5604,
-      "revenue": 34941.7,
+      "revenue": 34951.7,
       "path": "data/new/2024/12/2024-12-17.txt"
     },
     {
@@ -64604,8 +64604,8 @@
     },
     {
       "date": "2024-12-21",
-      "count": 3161,
-      "revenue": 23591.44,
+      "count": 3160,
+      "revenue": 23587.45,
       "path": "data/new/2024/12/2024-12-21.txt"
     },
     {
@@ -64640,8 +64640,8 @@
     },
     {
       "date": "2024-12-27",
-      "count": 4626,
-      "revenue": 29912.83,
+      "count": 4625,
+      "revenue": 29907.84,
       "path": "data/new/2024/12/2024-12-27.txt"
     },
     {
@@ -64658,8 +64658,8 @@
     },
     {
       "date": "2024-12-30",
-      "count": 4511,
-      "revenue": 26636.94,
+      "count": 4510,
+      "revenue": 26627.95,
       "path": "data/new/2024/12/2024-12-30.txt"
     },
     {
@@ -64670,8 +64670,8 @@
     },
     {
       "date": "2025-01-01",
-      "count": 2849,
-      "revenue": 18452.57,
+      "count": 2850,
+      "revenue": 18457.56,
       "path": "data/new/2025/01/2025-01-01.txt"
     },
     {
@@ -64682,14 +64682,14 @@
     },
     {
       "date": "2025-01-03",
-      "count": 4689,
-      "revenue": 27905.38,
+      "count": 4688,
+      "revenue": 27900.39,
       "path": "data/new/2025/01/2025-01-03.txt"
     },
     {
       "date": "2025-01-04",
-      "count": 2998,
-      "revenue": 18389.12,
+      "count": 2997,
+      "revenue": 18384.13,
       "path": "data/new/2025/01/2025-01-04.txt"
     },
     {
@@ -64700,14 +64700,14 @@
     },
     {
       "date": "2025-01-06",
-      "count": 6893,
-      "revenue": 46790.12,
+      "count": 6892,
+      "revenue": 46786.13,
       "path": "data/new/2025/01/2025-01-06.txt"
     },
     {
       "date": "2025-01-07",
-      "count": 4427,
-      "revenue": 28505.31,
+      "count": 4426,
+      "revenue": 28496.32,
       "path": "data/new/2025/01/2025-01-07.txt"
     },
     {
@@ -64718,14 +64718,14 @@
     },
     {
       "date": "2025-01-09",
-      "count": 3356,
-      "revenue": 23188.04,
+      "count": 3355,
+      "revenue": 23179.05,
       "path": "data/new/2025/01/2025-01-09.txt"
     },
     {
       "date": "2025-01-10",
-      "count": 4456,
-      "revenue": 28143.08,
+      "count": 4455,
+      "revenue": 28134.09,
       "path": "data/new/2025/01/2025-01-10.txt"
     },
     {
@@ -64736,14 +64736,14 @@
     },
     {
       "date": "2025-01-12",
-      "count": 3384,
-      "revenue": 20669.73,
+      "count": 3381,
+      "revenue": 20645.76,
       "path": "data/new/2025/01/2025-01-12.txt"
     },
     {
       "date": "2025-01-13",
-      "count": 4842,
-      "revenue": 34418.16,
+      "count": 4841,
+      "revenue": 34413.17,
       "path": "data/new/2025/01/2025-01-13.txt"
     },
     {
@@ -64790,8 +64790,8 @@
     },
     {
       "date": "2025-01-21",
-      "count": 4536,
-      "revenue": 30637.7,
+      "count": 4535,
+      "revenue": 30632.71,
       "path": "data/new/2025/01/2025-01-21.txt"
     },
     {
@@ -64856,8 +64856,8 @@
     },
     {
       "date": "2025-02-01",
-      "count": 2251,
-      "revenue": 13173.07,
+      "count": 2250,
+      "revenue": 13164.08,
       "path": "data/new/2025/02/2025-02-01.txt"
     },
     {
@@ -64869,7 +64869,7 @@
     {
       "date": "2025-02-03",
       "count": 3929,
-      "revenue": 26540.31,
+      "revenue": 26551.31,
       "path": "data/new/2025/02/2025-02-03.txt"
     },
     {
@@ -64880,8 +64880,8 @@
     },
     {
       "date": "2025-02-05",
-      "count": 4354,
-      "revenue": 28796.61,
+      "count": 4353,
+      "revenue": 28791.62,
       "path": "data/new/2025/02/2025-02-05.txt"
     },
     {
@@ -64892,14 +64892,14 @@
     },
     {
       "date": "2025-02-07",
-      "count": 4027,
-      "revenue": 26342.85,
+      "count": 4026,
+      "revenue": 26332.86,
       "path": "data/new/2025/02/2025-02-07.txt"
     },
     {
       "date": "2025-02-08",
-      "count": 4496,
-      "revenue": 34007.58,
+      "count": 4495,
+      "revenue": 33998.59,
       "path": "data/new/2025/02/2025-02-08.txt"
     },
     {
@@ -64910,14 +64910,14 @@
     },
     {
       "date": "2025-02-10",
-      "count": 4096,
-      "revenue": 27420.62,
+      "count": 4094,
+      "revenue": 27407.64,
       "path": "data/new/2025/02/2025-02-10.txt"
     },
     {
       "date": "2025-02-11",
-      "count": 4108,
-      "revenue": 29234.99,
+      "count": 4107,
+      "revenue": 29230.0,
       "path": "data/new/2025/02/2025-02-11.txt"
     },
     {
@@ -64928,20 +64928,20 @@
     },
     {
       "date": "2025-02-13",
-      "count": 4481,
-      "revenue": 29363.81,
+      "count": 4479,
+      "revenue": 29349.83,
       "path": "data/new/2025/02/2025-02-13.txt"
     },
     {
       "date": "2025-02-14",
-      "count": 3765,
-      "revenue": 23736.91,
+      "count": 3764,
+      "revenue": 23727.92,
       "path": "data/new/2025/02/2025-02-14.txt"
     },
     {
       "date": "2025-02-15",
-      "count": 3071,
-      "revenue": 17933.91,
+      "count": 3070,
+      "revenue": 17928.92,
       "path": "data/new/2025/02/2025-02-15.txt"
     },
     {
@@ -64952,26 +64952,26 @@
     },
     {
       "date": "2025-02-17",
-      "count": 5398,
-      "revenue": 34136.6,
+      "count": 5395,
+      "revenue": 34113.63,
       "path": "data/new/2025/02/2025-02-17.txt"
     },
     {
       "date": "2025-02-18",
-      "count": 5244,
-      "revenue": 36941.14,
+      "count": 5243,
+      "revenue": 36939.15,
       "path": "data/new/2025/02/2025-02-18.txt"
     },
     {
       "date": "2025-02-19",
-      "count": 4361,
-      "revenue": 27406.58,
+      "count": 4362,
+      "revenue": 27426.57,
       "path": "data/new/2025/02/2025-02-19.txt"
     },
     {
       "date": "2025-02-20",
-      "count": 4724,
-      "revenue": 34268.82,
+      "count": 4722,
+      "revenue": 34250.84,
       "path": "data/new/2025/02/2025-02-20.txt"
     },
     {
@@ -64988,8 +64988,8 @@
     },
     {
       "date": "2025-02-23",
-      "count": 3844,
-      "revenue": 23733.6,
+      "count": 3842,
+      "revenue": 23725.62,
       "path": "data/new/2025/02/2025-02-23.txt"
     },
     {
@@ -65000,8 +65000,8 @@
     },
     {
       "date": "2025-02-25",
-      "count": 4093,
-      "revenue": 27095.59,
+      "count": 4092,
+      "revenue": 27086.6,
       "path": "data/new/2025/02/2025-02-25.txt"
     },
     {
@@ -65012,8 +65012,8 @@
     },
     {
       "date": "2025-02-27",
-      "count": 4177,
-      "revenue": 25627.35,
+      "count": 4176,
+      "revenue": 25617.36,
       "path": "data/new/2025/02/2025-02-27.txt"
     },
     {
@@ -65025,19 +65025,19 @@
     {
       "date": "2025-03-01",
       "count": 3591,
-      "revenue": 22839.77,
+      "revenue": 22849.77,
       "path": "data/new/2025/03/2025-03-01.txt"
     },
     {
       "date": "2025-03-02",
-      "count": 3409,
-      "revenue": 20576.01,
+      "count": 3410,
+      "revenue": 20596.0,
       "path": "data/new/2025/03/2025-03-02.txt"
     },
     {
       "date": "2025-03-03",
-      "count": 5985,
-      "revenue": 38619.2,
+      "count": 5986,
+      "revenue": 38620.69,
       "path": "data/new/2025/03/2025-03-03.txt"
     },
     {
@@ -65054,14 +65054,14 @@
     },
     {
       "date": "2025-03-06",
-      "count": 10093,
-      "revenue": 64193.15,
+      "count": 10091,
+      "revenue": 64178.17,
       "path": "data/new/2025/03/2025-03-06.txt"
     },
     {
       "date": "2025-03-07",
-      "count": 9051,
-      "revenue": 50465.57,
+      "count": 9049,
+      "revenue": 50449.59,
       "path": "data/new/2025/03/2025-03-07.txt"
     },
     {
@@ -65084,8 +65084,8 @@
     },
     {
       "date": "2025-03-11",
-      "count": 8492,
-      "revenue": 49724.63,
+      "count": 8491,
+      "revenue": 49719.64,
       "path": "data/new/2025/03/2025-03-11.txt"
     },
     {
@@ -65096,20 +65096,20 @@
     },
     {
       "date": "2025-03-13",
-      "count": 8589,
-      "revenue": 50077.73,
+      "count": 8586,
+      "revenue": 50058.76,
       "path": "data/new/2025/03/2025-03-13.txt"
     },
     {
       "date": "2025-03-14",
-      "count": 7905,
-      "revenue": 45432.49,
+      "count": 7904,
+      "revenue": 45427.5,
       "path": "data/new/2025/03/2025-03-14.txt"
     },
     {
       "date": "2025-03-15",
-      "count": 5847,
-      "revenue": 33819.61,
+      "count": 5846,
+      "revenue": 33811.62,
       "path": "data/new/2025/03/2025-03-15.txt"
     },
     {
@@ -65120,8 +65120,8 @@
     },
     {
       "date": "2025-03-17",
-      "count": 7489,
-      "revenue": 44280.22,
+      "count": 7488,
+      "revenue": 44272.23,
       "path": "data/new/2025/03/2025-03-17.txt"
     },
     {
@@ -65132,26 +65132,26 @@
     },
     {
       "date": "2025-03-19",
-      "count": 7789,
-      "revenue": 44787.16,
+      "count": 7788,
+      "revenue": 44778.17,
       "path": "data/new/2025/03/2025-03-19.txt"
     },
     {
       "date": "2025-03-20",
-      "count": 7210,
-      "revenue": 41145.52,
+      "count": 7209,
+      "revenue": 41144.03,
       "path": "data/new/2025/03/2025-03-20.txt"
     },
     {
       "date": "2025-03-21",
-      "count": 8151,
-      "revenue": 51133.09,
+      "count": 8149,
+      "revenue": 51114.11,
       "path": "data/new/2025/03/2025-03-21.txt"
     },
     {
       "date": "2025-03-22",
-      "count": 6473,
-      "revenue": 37336.6,
+      "count": 6472,
+      "revenue": 37326.61,
       "path": "data/new/2025/03/2025-03-22.txt"
     },
     {
@@ -65180,8 +65180,8 @@
     },
     {
       "date": "2025-03-27",
-      "count": 7881,
-      "revenue": 47547.75,
+      "count": 7880,
+      "revenue": 47538.76,
       "path": "data/new/2025/03/2025-03-27.txt"
     },
     {
@@ -65192,20 +65192,20 @@
     },
     {
       "date": "2025-03-29",
-      "count": 6429,
-      "revenue": 36401.26,
+      "count": 6428,
+      "revenue": 36392.27,
       "path": "data/new/2025/03/2025-03-29.txt"
     },
     {
       "date": "2025-03-30",
-      "count": 5367,
-      "revenue": 29406.9,
+      "count": 5364,
+      "revenue": 29376.93,
       "path": "data/new/2025/03/2025-03-30.txt"
     },
     {
       "date": "2025-03-31",
-      "count": 9099,
-      "revenue": 58574.11,
+      "count": 9098,
+      "revenue": 58565.12,
       "path": "data/new/2025/03/2025-03-31.txt"
     },
     {
@@ -65234,8 +65234,8 @@
     },
     {
       "date": "2025-04-05",
-      "count": 6482,
-      "revenue": 38831.97,
+      "count": 6480,
+      "revenue": 38812.99,
       "path": "data/new/2025/04/2025-04-05.txt"
     },
     {
@@ -65246,8 +65246,8 @@
     },
     {
       "date": "2025-04-07",
-      "count": 9033,
-      "revenue": 53469.18,
+      "count": 9032,
+      "revenue": 53459.19,
       "path": "data/new/2025/04/2025-04-07.txt"
     },
     {
@@ -65258,8 +65258,8 @@
     },
     {
       "date": "2025-04-09",
-      "count": 7617,
-      "revenue": 45082.35,
+      "count": 7616,
+      "revenue": 45072.36,
       "path": "data/new/2025/04/2025-04-09.txt"
     },
     {
@@ -65276,14 +65276,14 @@
     },
     {
       "date": "2025-04-12",
-      "count": 7255,
-      "revenue": 43722.51,
+      "count": 7254,
+      "revenue": 43717.52,
       "path": "data/new/2025/04/2025-04-12.txt"
     },
     {
       "date": "2025-04-13",
-      "count": 7543,
-      "revenue": 50184.14,
+      "count": 7541,
+      "revenue": 50165.16,
       "path": "data/new/2025/04/2025-04-13.txt"
     },
     {
@@ -65294,14 +65294,14 @@
     },
     {
       "date": "2025-04-15",
-      "count": 6842,
-      "revenue": 38647.23,
+      "count": 6841,
+      "revenue": 38638.24,
       "path": "data/new/2025/04/2025-04-15.txt"
     },
     {
       "date": "2025-04-16",
-      "count": 7680,
-      "revenue": 44513.41,
+      "count": 7679,
+      "revenue": 44503.42,
       "path": "data/new/2025/04/2025-04-16.txt"
     },
     {
@@ -65318,20 +65318,20 @@
     },
     {
       "date": "2025-04-19",
-      "count": 6701,
-      "revenue": 42342.21,
+      "count": 6699,
+      "revenue": 42323.23,
       "path": "data/new/2025/04/2025-04-19.txt"
     },
     {
       "date": "2025-04-20",
-      "count": 7383,
-      "revenue": 40593.15,
+      "count": 7384,
+      "revenue": 40613.14,
       "path": "data/new/2025/04/2025-04-20.txt"
     },
     {
       "date": "2025-04-21",
-      "count": 7066,
-      "revenue": 41686.94,
+      "count": 7064,
+      "revenue": 41667.96,
       "path": "data/new/2025/04/2025-04-21.txt"
     },
     {
@@ -65348,32 +65348,32 @@
     },
     {
       "date": "2025-04-24",
-      "count": 8263,
-      "revenue": 50466.95,
+      "count": 8261,
+      "revenue": 50447.97,
       "path": "data/new/2025/04/2025-04-24.txt"
     },
     {
       "date": "2025-04-25",
-      "count": 9398,
-      "revenue": 52139.61,
+      "count": 9395,
+      "revenue": 52111.64,
       "path": "data/new/2025/04/2025-04-25.txt"
     },
     {
       "date": "2025-04-26",
       "count": 9147,
-      "revenue": 55831.56,
+      "revenue": 55841.56,
       "path": "data/new/2025/04/2025-04-26.txt"
     },
     {
       "date": "2025-04-27",
-      "count": 8412,
-      "revenue": 46240.43,
+      "count": 8411,
+      "revenue": 46230.44,
       "path": "data/new/2025/04/2025-04-27.txt"
     },
     {
       "date": "2025-04-28",
-      "count": 10466,
-      "revenue": 58384.4,
+      "count": 10465,
+      "revenue": 58375.41,
       "path": "data/new/2025/04/2025-04-28.txt"
     },
     {
@@ -65384,8 +65384,8 @@
     },
     {
       "date": "2025-04-30",
-      "count": 9699,
-      "revenue": 53432.29,
+      "count": 9697,
+      "revenue": 53414.31,
       "path": "data/new/2025/04/2025-04-30.txt"
     },
     {
@@ -65396,56 +65396,56 @@
     },
     {
       "date": "2025-05-02",
-      "count": 8830,
-      "revenue": 51494.26,
+      "count": 8827,
+      "revenue": 51465.29,
       "path": "data/new/2025/05/2025-05-02.txt"
     },
     {
       "date": "2025-05-03",
-      "count": 8600,
-      "revenue": 48689.85,
+      "count": 8598,
+      "revenue": 48670.87,
       "path": "data/new/2025/05/2025-05-03.txt"
     },
     {
       "date": "2025-05-04",
-      "count": 8648,
-      "revenue": 48941.57,
+      "count": 8647,
+      "revenue": 48931.58,
       "path": "data/new/2025/05/2025-05-04.txt"
     },
     {
       "date": "2025-05-05",
-      "count": 10397,
-      "revenue": 61048.5,
+      "count": 10396,
+      "revenue": 61043.51,
       "path": "data/new/2025/05/2025-05-05.txt"
     },
     {
       "date": "2025-05-06",
-      "count": 11162,
-      "revenue": 63501.23,
+      "count": 11159,
+      "revenue": 63487.26,
       "path": "data/new/2025/05/2025-05-06.txt"
     },
     {
       "date": "2025-05-07",
-      "count": 11344,
-      "revenue": 65189.18,
+      "count": 11341,
+      "revenue": 65160.21,
       "path": "data/new/2025/05/2025-05-07.txt"
     },
     {
       "date": "2025-05-08",
-      "count": 11277,
-      "revenue": 63044.32,
+      "count": 11276,
+      "revenue": 63035.33,
       "path": "data/new/2025/05/2025-05-08.txt"
     },
     {
       "date": "2025-05-09",
-      "count": 10632,
-      "revenue": 67622.77,
+      "count": 10625,
+      "revenue": 67561.84,
       "path": "data/new/2025/05/2025-05-09.txt"
     },
     {
       "date": "2025-05-10",
-      "count": 5535,
-      "revenue": 32542.7,
+      "count": 5534,
+      "revenue": 32533.71,
       "path": "data/new/2025/05/2025-05-10.txt"
     },
     {
@@ -65456,32 +65456,32 @@
     },
     {
       "date": "2025-05-12",
-      "count": 5860,
-      "revenue": 36462.44,
+      "count": 5859,
+      "revenue": 36463.45,
       "path": "data/new/2025/05/2025-05-12.txt"
     },
     {
       "date": "2025-05-13",
-      "count": 5605,
-      "revenue": 38196.53,
+      "count": 5604,
+      "revenue": 38201.54,
       "path": "data/new/2025/05/2025-05-13.txt"
     },
     {
       "date": "2025-05-14",
-      "count": 5702,
-      "revenue": 40267.05,
+      "count": 5700,
+      "revenue": 40247.07,
       "path": "data/new/2025/05/2025-05-14.txt"
     },
     {
       "date": "2025-05-15",
-      "count": 4966,
-      "revenue": 32995.89,
+      "count": 4961,
+      "revenue": 32948.94,
       "path": "data/new/2025/05/2025-05-15.txt"
     },
     {
       "date": "2025-05-16",
-      "count": 5622,
-      "revenue": 38207.49,
+      "count": 5621,
+      "revenue": 38206.5,
       "path": "data/new/2025/05/2025-05-16.txt"
     },
     {
@@ -65492,74 +65492,74 @@
     },
     {
       "date": "2025-05-18",
-      "count": 3383,
-      "revenue": 21612.29,
+      "count": 3382,
+      "revenue": 21607.3,
       "path": "data/new/2025/05/2025-05-18.txt"
     },
     {
       "date": "2025-05-19",
-      "count": 5526,
-      "revenue": 35229.33,
+      "count": 5525,
+      "revenue": 35220.34,
       "path": "data/new/2025/05/2025-05-19.txt"
     },
     {
       "date": "2025-05-20",
-      "count": 6307,
-      "revenue": 37229.04,
+      "count": 6306,
+      "revenue": 37221.05,
       "path": "data/new/2025/05/2025-05-20.txt"
     },
     {
       "date": "2025-05-21",
-      "count": 7008,
-      "revenue": 50706.0,
+      "count": 7002,
+      "revenue": 50640.06,
       "path": "data/new/2025/05/2025-05-21.txt"
     },
     {
       "date": "2025-05-22",
-      "count": 6194,
-      "revenue": 39993.6,
+      "count": 6185,
+      "revenue": 39939.69,
       "path": "data/new/2025/05/2025-05-22.txt"
     },
     {
       "date": "2025-05-23",
-      "count": 4021,
-      "revenue": 24055.9,
+      "count": 4017,
+      "revenue": 24024.94,
       "path": "data/new/2025/05/2025-05-23.txt"
     },
     {
       "date": "2025-05-24",
-      "count": 3435,
-      "revenue": 23154.88,
+      "count": 3417,
+      "revenue": 23061.06,
       "path": "data/new/2025/05/2025-05-24.txt"
     },
     {
       "date": "2025-05-25",
-      "count": 2388,
-      "revenue": 16649.72,
+      "count": 2384,
+      "revenue": 16626.76,
       "path": "data/new/2025/05/2025-05-25.txt"
     },
     {
       "date": "2025-05-26",
-      "count": 4744,
-      "revenue": 31096.66,
+      "count": 4740,
+      "revenue": 31072.7,
       "path": "data/new/2025/05/2025-05-26.txt"
     },
     {
       "date": "2025-05-27",
-      "count": 4783,
-      "revenue": 31371.95,
+      "count": 4780,
+      "revenue": 31347.98,
       "path": "data/new/2025/05/2025-05-27.txt"
     },
     {
       "date": "2025-05-28",
-      "count": 5346,
-      "revenue": 31452.13,
+      "count": 5344,
+      "revenue": 31434.15,
       "path": "data/new/2025/05/2025-05-28.txt"
     },
     {
       "date": "2025-05-29",
-      "count": 4611,
-      "revenue": 29514.3,
+      "count": 4610,
+      "revenue": 29505.31,
       "path": "data/new/2025/05/2025-05-29.txt"
     },
     {
@@ -65570,56 +65570,56 @@
     },
     {
       "date": "2025-05-31",
-      "count": 2996,
-      "revenue": 20982.46,
+      "count": 2993,
+      "revenue": 20955.49,
       "path": "data/new/2025/05/2025-05-31.txt"
     },
     {
       "date": "2025-06-01",
-      "count": 3384,
-      "revenue": 23759.3,
+      "count": 3383,
+      "revenue": 23749.31,
       "path": "data/new/2025/06/2025-06-01.txt"
     },
     {
       "date": "2025-06-02",
-      "count": 5937,
-      "revenue": 45064.43,
+      "count": 5934,
+      "revenue": 45035.46,
       "path": "data/new/2025/06/2025-06-02.txt"
     },
     {
       "date": "2025-06-03",
-      "count": 5347,
-      "revenue": 34066.3,
+      "count": 5340,
+      "revenue": 34002.37,
       "path": "data/new/2025/06/2025-06-03.txt"
     },
     {
       "date": "2025-06-04",
-      "count": 5224,
-      "revenue": 32630.82,
+      "count": 5213,
+      "revenue": 32535.93,
       "path": "data/new/2025/06/2025-06-04.txt"
     },
     {
       "date": "2025-06-05",
-      "count": 5500,
-      "revenue": 32597.08,
+      "count": 5498,
+      "revenue": 32577.1,
       "path": "data/new/2025/06/2025-06-05.txt"
     },
     {
       "date": "2025-06-06",
-      "count": 5773,
-      "revenue": 36732.82,
+      "count": 5770,
+      "revenue": 36707.85,
       "path": "data/new/2025/06/2025-06-06.txt"
     },
     {
       "date": "2025-06-07",
-      "count": 3995,
-      "revenue": 24130.63,
+      "count": 3986,
+      "revenue": 24074.72,
       "path": "data/new/2025/06/2025-06-07.txt"
     },
     {
       "date": "2025-06-08",
-      "count": 3449,
-      "revenue": 20885.06,
+      "count": 3373,
+      "revenue": 20554.32,
       "path": "data/new/2025/06/2025-06-08.txt"
     },
     {
@@ -65636,8 +65636,8 @@
     },
     {
       "date": "2025-06-11",
-      "count": 4870,
-      "revenue": 32508.84,
+      "count": 4869,
+      "revenue": 32504.85,
       "path": "data/new/2025/06/2025-06-11.txt"
     },
     {
@@ -65648,8 +65648,8 @@
     },
     {
       "date": "2025-06-13",
-      "count": 4794,
-      "revenue": 31387.13,
+      "count": 4792,
+      "revenue": 31380.65,
       "path": "data/new/2025/06/2025-06-13.txt"
     },
     {
@@ -65684,8 +65684,8 @@
     },
     {
       "date": "2025-06-19",
-      "count": 4982,
-      "revenue": 29626.28,
+      "count": 4984,
+      "revenue": 29666.26,
       "path": "data/new/2025/06/2025-06-19.txt"
     },
     {
@@ -65708,8 +65708,8 @@
     },
     {
       "date": "2025-06-23",
-      "count": 4491,
-      "revenue": 29152.64,
+      "count": 4490,
+      "revenue": 29142.65,
       "path": "data/new/2025/06/2025-06-23.txt"
     },
     {
@@ -65744,14 +65744,14 @@
     },
     {
       "date": "2025-06-29",
-      "count": 3094,
-      "revenue": 18025.6,
+      "count": 3096,
+      "revenue": 18065.58,
       "path": "data/new/2025/06/2025-06-29.txt"
     },
     {
       "date": "2025-06-30",
-      "count": 7202,
-      "revenue": 48882.03,
+      "count": 7203,
+      "revenue": 48891.02,
       "path": "data/new/2025/06/2025-06-30.txt"
     },
     {
@@ -65781,19 +65781,19 @@
     {
       "date": "2025-07-05",
       "count": 3193,
-      "revenue": 23025.15,
+      "revenue": 23020.15,
       "path": "data/new/2025/07/2025-07-05.txt"
     },
     {
       "date": "2025-07-06",
-      "count": 3146,
-      "revenue": 23773.08,
+      "count": 3148,
+      "revenue": 23783.06,
       "path": "data/new/2025/07/2025-07-06.txt"
     },
     {
       "date": "2025-07-07",
-      "count": 4687,
-      "revenue": 29458.18,
+      "count": 4690,
+      "revenue": 29478.15,
       "path": "data/new/2025/07/2025-07-07.txt"
     },
     {
@@ -65804,14 +65804,14 @@
     },
     {
       "date": "2025-07-09",
-      "count": 4433,
-      "revenue": 27650.74,
+      "count": 4436,
+      "revenue": 27680.71,
       "path": "data/new/2025/07/2025-07-09.txt"
     },
     {
       "date": "2025-07-10",
-      "count": 5739,
-      "revenue": 34110.7,
+      "count": 5741,
+      "revenue": 34125.68,
       "path": "data/new/2025/07/2025-07-10.txt"
     },
     {
@@ -65822,8 +65822,8 @@
     },
     {
       "date": "2025-07-12",
-      "count": 4881,
-      "revenue": 34484.64,
+      "count": 4879,
+      "revenue": 34481.66,
       "path": "data/new/2025/07/2025-07-12.txt"
     },
     {
@@ -65876,8 +65876,8 @@
     },
     {
       "date": "2025-07-21",
-      "count": 9536,
-      "revenue": 36606.7,
+      "count": 9537,
+      "revenue": 36626.69,
       "path": "data/new/2025/07/2025-07-21.txt"
     },
     {
@@ -65966,8 +65966,8 @@
     },
     {
       "date": "2025-08-05",
-      "count": 5189,
-      "revenue": 31880.72,
+      "count": 5190,
+      "revenue": 31900.71,
       "path": "data/new/2025/08/2025-08-05.txt"
     },
     {
@@ -66026,74 +66026,74 @@
     },
     {
       "date": "2025-08-15",
-      "count": 6394,
-      "revenue": 47965.11,
+      "count": 6407,
+      "revenue": 48032.98,
       "path": "data/new/2025/08/2025-08-15.txt"
     },
     {
       "date": "2025-08-16",
-      "count": 2884,
-      "revenue": 19717.72,
+      "count": 2898,
+      "revenue": 19784.58,
       "path": "data/new/2025/08/2025-08-16.txt"
     },
     {
       "date": "2025-08-17",
-      "count": 2925,
-      "revenue": 19824.92,
+      "count": 2958,
+      "revenue": 19971.59,
       "path": "data/new/2025/08/2025-08-17.txt"
     },
     {
       "date": "2025-08-18",
-      "count": 4407,
-      "revenue": 26907.72,
+      "count": 4443,
+      "revenue": 27066.36,
       "path": "data/new/2025/08/2025-08-18.txt"
     },
     {
       "date": "2025-08-19",
-      "count": 4919,
-      "revenue": 31681.44,
+      "count": 4953,
+      "revenue": 31837.1,
       "path": "data/new/2025/08/2025-08-19.txt"
     },
     {
       "date": "2025-08-20",
-      "count": 4123,
-      "revenue": 24024.29,
+      "count": 4325,
+      "revenue": 25636.27,
       "path": "data/new/2025/08/2025-08-20.txt"
     },
     {
       "date": "2025-08-21",
-      "count": 3969,
-      "revenue": 20922.37,
+      "count": 5396,
+      "revenue": 31681.6,
       "path": "data/new/2025/08/2025-08-21.txt"
     },
     {
       "date": "2025-08-22",
-      "count": 5430,
-      "revenue": 32609.31,
+      "count": 4076,
+      "revenue": 20551.87,
       "path": "data/new/2025/08/2025-08-22.txt"
     },
     {
       "date": "2025-08-23",
-      "count": 2807,
-      "revenue": 19107.0,
+      "count": 2138,
+      "revenue": 13679.68,
       "path": "data/new/2025/08/2025-08-23.txt"
     },
     {
       "date": "2025-08-24",
       "count": 3564,
-      "revenue": 22891.9,
+      "revenue": 22896.9,
       "path": "data/new/2025/08/2025-08-24.txt"
     },
     {
       "date": "2025-08-25",
-      "count": 3570,
-      "revenue": 22558.33,
+      "count": 3567,
+      "revenue": 22539.36,
       "path": "data/new/2025/08/2025-08-25.txt"
     },
     {
       "date": "2025-08-26",
-      "count": 4931,
-      "revenue": 33232.3,
+      "count": 4938,
+      "revenue": 33310.23,
       "path": "data/new/2025/08/2025-08-26.txt"
     },
     {
@@ -66104,8 +66104,8 @@
     },
     {
       "date": "2025-08-28",
-      "count": 6259,
-      "revenue": 42723.42,
+      "count": 6260,
+      "revenue": 42743.41,
       "path": "data/new/2025/08/2025-08-28.txt"
     },
     {
@@ -66188,8 +66188,8 @@
     },
     {
       "date": "2025-09-11",
-      "count": 6779,
-      "revenue": 50428.31,
+      "count": 6780,
+      "revenue": 50448.3,
       "path": "data/new/2025/09/2025-09-11.txt"
     },
     {
@@ -66212,20 +66212,20 @@
     },
     {
       "date": "2025-09-15",
-      "count": 5822,
-      "revenue": 34277.86,
+      "count": 5823,
+      "revenue": 34282.85,
       "path": "data/new/2025/09/2025-09-15.txt"
     },
     {
       "date": "2025-09-16",
-      "count": 7243,
-      "revenue": 47524.19,
+      "count": 7244,
+      "revenue": 47544.18,
       "path": "data/new/2025/09/2025-09-16.txt"
     },
     {
       "date": "2025-09-17",
-      "count": 5634,
-      "revenue": 33421.23,
+      "count": 5635,
+      "revenue": 33441.22,
       "path": "data/new/2025/09/2025-09-17.txt"
     },
     {
@@ -66236,8 +66236,8 @@
     },
     {
       "date": "2025-09-19",
-      "count": 5477,
-      "revenue": 35553.3,
+      "count": 5478,
+      "revenue": 35558.29,
       "path": "data/new/2025/09/2025-09-19.txt"
     },
     {
@@ -66284,8 +66284,8 @@
     },
     {
       "date": "2025-09-27",
-      "count": 2993,
-      "revenue": 17677.59,
+      "count": 2994,
+      "revenue": 17682.58,
       "path": "data/new/2025/09/2025-09-27.txt"
     },
     {
@@ -66350,8 +66350,8 @@
     },
     {
       "date": "2025-10-08",
-      "count": 5838,
-      "revenue": 40994.16,
+      "count": 5839,
+      "revenue": 41014.15,
       "path": "data/new/2025/10/2025-10-08.txt"
     },
     {
@@ -66374,8 +66374,8 @@
     },
     {
       "date": "2025-10-12",
-      "count": 2175,
-      "revenue": 14547.82,
+      "count": 2177,
+      "revenue": 14587.8,
       "path": "data/new/2025/10/2025-10-12.txt"
     },
     {
@@ -66398,14 +66398,14 @@
     },
     {
       "date": "2025-10-16",
-      "count": 6259,
-      "revenue": 43177.58,
+      "count": 6262,
+      "revenue": 43226.55,
       "path": "data/new/2025/10/2025-10-16.txt"
     },
     {
       "date": "2025-10-17",
-      "count": 4581,
-      "revenue": 27170.27,
+      "count": 4583,
+      "revenue": 27188.25,
       "path": "data/new/2025/10/2025-10-17.txt"
     },
     {
@@ -66440,8 +66440,8 @@
     },
     {
       "date": "2025-10-23",
-      "count": 4792,
-      "revenue": 31074.76,
+      "count": 4793,
+      "revenue": 31083.75,
       "path": "data/new/2025/10/2025-10-23.txt"
     },
     {
@@ -66476,14 +66476,14 @@
     },
     {
       "date": "2025-10-29",
-      "count": 4791,
-      "revenue": 31401.69,
+      "count": 4793,
+      "revenue": 31419.67,
       "path": "data/new/2025/10/2025-10-29.txt"
     },
     {
       "date": "2025-10-30",
-      "count": 5386,
-      "revenue": 34071.24,
+      "count": 5387,
+      "revenue": 34080.23,
       "path": "data/new/2025/10/2025-10-30.txt"
     },
     {
@@ -66494,26 +66494,26 @@
     },
     {
       "date": "2025-11-01",
-      "count": 2773,
-      "revenue": 18068.81,
+      "count": 2775,
+      "revenue": 18093.79,
       "path": "data/new/2025/11/2025-11-01.txt"
     },
     {
       "date": "2025-11-02",
-      "count": 2865,
-      "revenue": 18558.98,
+      "count": 2867,
+      "revenue": 18577.96,
       "path": "data/new/2025/11/2025-11-02.txt"
     },
     {
       "date": "2025-11-03",
-      "count": 4934,
-      "revenue": 35136.71,
+      "count": 4935,
+      "revenue": 35145.7,
       "path": "data/new/2025/11/2025-11-03.txt"
     },
     {
       "date": "2025-11-04",
-      "count": 7055,
-      "revenue": 60734.03,
+      "count": 7057,
+      "revenue": 60764.01,
       "path": "data/new/2025/11/2025-11-04.txt"
     },
     {
@@ -66524,146 +66524,146 @@
     },
     {
       "date": "2025-11-06",
-      "count": 5115,
-      "revenue": 39582.04,
+      "count": 5119,
+      "revenue": 39640.0,
       "path": "data/new/2025/11/2025-11-06.txt"
     },
     {
       "date": "2025-11-07",
-      "count": 5086,
-      "revenue": 31794.21,
+      "count": 5088,
+      "revenue": 31819.19,
       "path": "data/new/2025/11/2025-11-07.txt"
     },
     {
       "date": "2025-11-08",
-      "count": 2908,
-      "revenue": 19123.44,
+      "count": 2910,
+      "revenue": 19153.42,
       "path": "data/new/2025/11/2025-11-08.txt"
     },
     {
       "date": "2025-11-09",
-      "count": 3058,
-      "revenue": 20364.96,
+      "count": 3059,
+      "revenue": 20373.95,
       "path": "data/new/2025/11/2025-11-09.txt"
     },
     {
       "date": "2025-11-10",
-      "count": 5507,
-      "revenue": 31272.46,
+      "count": 5513,
+      "revenue": 31326.4,
       "path": "data/new/2025/11/2025-11-10.txt"
     },
     {
       "date": "2025-11-11",
-      "count": 4837,
-      "revenue": 30109.67,
+      "count": 4843,
+      "revenue": 30160.61,
       "path": "data/new/2025/11/2025-11-11.txt"
     },
     {
       "date": "2025-11-12",
-      "count": 4500,
-      "revenue": 31715.09,
+      "count": 4504,
+      "revenue": 31743.55,
       "path": "data/new/2025/11/2025-11-12.txt"
     },
     {
       "date": "2025-11-13",
-      "count": 5544,
-      "revenue": 36837.67,
+      "count": 5552,
+      "revenue": 36932.59,
       "path": "data/new/2025/11/2025-11-13.txt"
     },
     {
       "date": "2025-11-14",
-      "count": 5320,
-      "revenue": 34348.84,
+      "count": 5331,
+      "revenue": 34447.73,
       "path": "data/new/2025/11/2025-11-14.txt"
     },
     {
       "date": "2025-11-15",
-      "count": 2846,
-      "revenue": 19056.08,
+      "count": 2854,
+      "revenue": 19129.0,
       "path": "data/new/2025/11/2025-11-15.txt"
     },
     {
       "date": "2025-11-16",
-      "count": 2750,
-      "revenue": 16455.06,
+      "count": 2754,
+      "revenue": 16482.02,
       "path": "data/new/2025/11/2025-11-16.txt"
     },
     {
       "date": "2025-11-17",
-      "count": 6324,
-      "revenue": 41468.82,
+      "count": 6327,
+      "revenue": 41495.79,
       "path": "data/new/2025/11/2025-11-17.txt"
     },
     {
       "date": "2025-11-18",
-      "count": 5150,
-      "revenue": 33749.08,
+      "count": 5155,
+      "revenue": 33790.03,
       "path": "data/new/2025/11/2025-11-18.txt"
     },
     {
       "date": "2025-11-19",
-      "count": 7258,
-      "revenue": 51314.51,
+      "count": 7265,
+      "revenue": 51388.44,
       "path": "data/new/2025/11/2025-11-19.txt"
     },
     {
       "date": "2025-11-20",
-      "count": 5194,
-      "revenue": 34944.13,
+      "count": 5198,
+      "revenue": 34980.09,
       "path": "data/new/2025/11/2025-11-20.txt"
     },
     {
       "date": "2025-11-21",
-      "count": 5529,
-      "revenue": 35535.28,
+      "count": 5532,
+      "revenue": 35564.25,
       "path": "data/new/2025/11/2025-11-21.txt"
     },
     {
       "date": "2025-11-22",
-      "count": 3848,
-      "revenue": 29972.15,
+      "count": 3849,
+      "revenue": 29977.14,
       "path": "data/new/2025/11/2025-11-22.txt"
     },
     {
       "date": "2025-11-23",
-      "count": 3008,
-      "revenue": 20901.13,
+      "count": 3009,
+      "revenue": 20910.12,
       "path": "data/new/2025/11/2025-11-23.txt"
     },
     {
       "date": "2025-11-24",
-      "count": 7282,
-      "revenue": 51326.78,
+      "count": 7283,
+      "revenue": 51335.77,
       "path": "data/new/2025/11/2025-11-24.txt"
     },
     {
       "date": "2025-11-25",
-      "count": 6854,
-      "revenue": 46357.55,
+      "count": 6856,
+      "revenue": 46371.53,
       "path": "data/new/2025/11/2025-11-25.txt"
     },
     {
       "date": "2025-11-26",
-      "count": 6033,
-      "revenue": 42077.12,
+      "count": 6036,
+      "revenue": 42096.09,
       "path": "data/new/2025/11/2025-11-26.txt"
     },
     {
       "date": "2025-11-27",
-      "count": 6765,
-      "revenue": 39925.07,
+      "count": 6771,
+      "revenue": 39990.01,
       "path": "data/new/2025/11/2025-11-27.txt"
     },
     {
       "date": "2025-11-28",
-      "count": 5111,
-      "revenue": 34453.47,
+      "count": 5116,
+      "revenue": 34498.42,
       "path": "data/new/2025/11/2025-11-28.txt"
     },
     {
       "date": "2025-11-29",
-      "count": 4980,
-      "revenue": 35587.77,
+      "count": 4981,
+      "revenue": 35597.76,
       "path": "data/new/2025/11/2025-11-29.txt"
     },
     {
@@ -66674,56 +66674,56 @@
     },
     {
       "date": "2025-12-01",
-      "count": 14299,
-      "revenue": 103563.6,
+      "count": 14300,
+      "revenue": 103573.59,
       "path": "data/new/2025/12/2025-12-01.txt"
     },
     {
       "date": "2025-12-02",
-      "count": 11342,
-      "revenue": 86349.12,
+      "count": 11345,
+      "revenue": 86398.09,
       "path": "data/new/2025/12/2025-12-02.txt"
     },
     {
       "date": "2025-12-03",
-      "count": 6448,
-      "revenue": 39703.19,
+      "count": 6452,
+      "revenue": 39751.15,
       "path": "data/new/2025/12/2025-12-03.txt"
     },
     {
       "date": "2025-12-04",
-      "count": 6016,
-      "revenue": 37665.89,
+      "count": 6018,
+      "revenue": 37676.87,
       "path": "data/new/2025/12/2025-12-04.txt"
     },
     {
       "date": "2025-12-05",
-      "count": 5213,
-      "revenue": 33819.12,
+      "count": 5237,
+      "revenue": 34030.88,
       "path": "data/new/2025/12/2025-12-05.txt"
     },
     {
       "date": "2025-12-06",
-      "count": 2534,
-      "revenue": 16680.19,
+      "count": 2536,
+      "revenue": 16699.17,
       "path": "data/new/2025/12/2025-12-06.txt"
     },
     {
       "date": "2025-12-07",
-      "count": 4440,
-      "revenue": 26976.85,
+      "count": 4441,
+      "revenue": 26986.84,
       "path": "data/new/2025/12/2025-12-07.txt"
     },
     {
       "date": "2025-12-08",
-      "count": 12228,
-      "revenue": 52473.8,
+      "count": 12230,
+      "revenue": 52491.78,
       "path": "data/new/2025/12/2025-12-08.txt"
     },
     {
       "date": "2025-12-09",
-      "count": 10210,
-      "revenue": 36838.97,
+      "count": 10214,
+      "revenue": 36874.93,
       "path": "data/new/2025/12/2025-12-09.txt"
     },
     {
@@ -66740,8 +66740,8 @@
     },
     {
       "date": "2025-12-12",
-      "count": 12040,
-      "revenue": 63650.26,
+      "count": 12042,
+      "revenue": 63670.24,
       "path": "data/new/2025/12/2025-12-12.txt"
     },
     {
@@ -66758,20 +66758,20 @@
     },
     {
       "date": "2025-12-15",
-      "count": 5843,
-      "revenue": 28137.19,
+      "count": 5846,
+      "revenue": 28164.16,
       "path": "data/new/2025/12/2025-12-15.txt"
     },
     {
       "date": "2025-12-16",
-      "count": 6151,
-      "revenue": 37255.51,
+      "count": 6152,
+      "revenue": 37264.5,
       "path": "data/new/2025/12/2025-12-16.txt"
     },
     {
       "date": "2025-12-17",
-      "count": 7663,
-      "revenue": 42093.03,
+      "count": 7665,
+      "revenue": 42107.01,
       "path": "data/new/2025/12/2025-12-17.txt"
     },
     {
@@ -66782,8 +66782,8 @@
     },
     {
       "date": "2025-12-19",
-      "count": 5605,
-      "revenue": 34271.58,
+      "count": 5609,
+      "revenue": 34307.54,
       "path": "data/new/2025/12/2025-12-19.txt"
     },
     {
@@ -66794,8 +66794,8 @@
     },
     {
       "date": "2025-12-21",
-      "count": 5109,
-      "revenue": 22662.54,
+      "count": 5110,
+      "revenue": 22671.53,
       "path": "data/new/2025/12/2025-12-21.txt"
     },
     {
@@ -66812,14 +66812,14 @@
     },
     {
       "date": "2025-12-24",
-      "count": 5650,
-      "revenue": 28135.53,
+      "count": 5651,
+      "revenue": 28144.52,
       "path": "data/new/2025/12/2025-12-24.txt"
     },
     {
       "date": "2025-12-25",
-      "count": 3666,
-      "revenue": 22690.88,
+      "count": 3670,
+      "revenue": 22726.34,
       "path": "data/new/2025/12/2025-12-25.txt"
     },
     {
@@ -66830,8 +66830,8 @@
     },
     {
       "date": "2025-12-27",
-      "count": 4350,
-      "revenue": 28904.55,
+      "count": 4353,
+      "revenue": 28931.52,
       "path": "data/new/2025/12/2025-12-27.txt"
     },
     {
@@ -66842,20 +66842,20 @@
     },
     {
       "date": "2025-12-29",
-      "count": 4389,
-      "revenue": 26179.65,
+      "count": 4391,
+      "revenue": 26198.63,
       "path": "data/new/2025/12/2025-12-29.txt"
     },
     {
       "date": "2025-12-30",
-      "count": 6328,
-      "revenue": 33617.19,
+      "count": 6330,
+      "revenue": 33631.17,
       "path": "data/new/2025/12/2025-12-30.txt"
     },
     {
       "date": "2025-12-31",
-      "count": 4758,
-      "revenue": 34694.99,
+      "count": 4760,
+      "revenue": 34712.97,
       "path": "data/new/2025/12/2025-12-31.txt"
     },
     {
@@ -66866,8 +66866,8 @@
     },
     {
       "date": "2026-01-02",
-      "count": 4088,
-      "revenue": 26219.2,
+      "count": 4091,
+      "revenue": 26239.67,
       "path": "data/new/2026/01/2026-01-02.txt"
     },
     {
@@ -66890,20 +66890,20 @@
     },
     {
       "date": "2026-01-06",
-      "count": 6251,
-      "revenue": 39372.03,
+      "count": 6253,
+      "revenue": 39390.01,
       "path": "data/new/2026/01/2026-01-06.txt"
     },
     {
       "date": "2026-01-07",
-      "count": 5514,
-      "revenue": 33642.96,
+      "count": 5515,
+      "revenue": 33652.95,
       "path": "data/new/2026/01/2026-01-07.txt"
     },
     {
       "date": "2026-01-08",
-      "count": 8170,
-      "revenue": 51562.35,
+      "count": 8171,
+      "revenue": 51571.34,
       "path": "data/new/2026/01/2026-01-08.txt"
     },
     {
@@ -66914,26 +66914,26 @@
     },
     {
       "date": "2026-01-10",
-      "count": 2692,
-      "revenue": 20150.69,
+      "count": 2700,
+      "revenue": 20245.61,
       "path": "data/new/2026/01/2026-01-10.txt"
     },
     {
       "date": "2026-01-11",
-      "count": 2842,
-      "revenue": 22422.78,
+      "count": 2843,
+      "revenue": 22428.77,
       "path": "data/new/2026/01/2026-01-11.txt"
     },
     {
       "date": "2026-01-12",
-      "count": 5289,
-      "revenue": 36351.83,
+      "count": 5291,
+      "revenue": 36370.81,
       "path": "data/new/2026/01/2026-01-12.txt"
     },
     {
       "date": "2026-01-13",
-      "count": 8288,
-      "revenue": 63852.94,
+      "count": 8292,
+      "revenue": 63885.9,
       "path": "data/new/2026/01/2026-01-13.txt"
     },
     {
@@ -66944,8 +66944,8 @@
     },
     {
       "date": "2026-01-15",
-      "count": 5392,
-      "revenue": 33862.7,
+      "count": 5394,
+      "revenue": 33880.68,
       "path": "data/new/2026/01/2026-01-15.txt"
     },
     {
@@ -66962,14 +66962,14 @@
     },
     {
       "date": "2026-01-18",
-      "count": 2306,
-      "revenue": 17695.99,
+      "count": 2308,
+      "revenue": 17713.97,
       "path": "data/new/2026/01/2026-01-18.txt"
     },
     {
       "date": "2026-01-19",
-      "count": 5123,
-      "revenue": 36003.76,
+      "count": 5124,
+      "revenue": 36012.75,
       "path": "data/new/2026/01/2026-01-19.txt"
     },
     {
@@ -66980,20 +66980,20 @@
     },
     {
       "date": "2026-01-21",
-      "count": 5073,
-      "revenue": 34375.35,
+      "count": 5076,
+      "revenue": 34424.32,
       "path": "data/new/2026/01/2026-01-21.txt"
     },
     {
       "date": "2026-01-22",
-      "count": 5160,
-      "revenue": 33979.52,
+      "count": 5161,
+      "revenue": 33989.51,
       "path": "data/new/2026/01/2026-01-22.txt"
     },
     {
       "date": "2026-01-23",
-      "count": 6808,
-      "revenue": 41365.59,
+      "count": 6810,
+      "revenue": 41374.57,
       "path": "data/new/2026/01/2026-01-23.txt"
     },
     {
@@ -67010,32 +67010,32 @@
     },
     {
       "date": "2026-01-26",
-      "count": 6675,
-      "revenue": 50400.55,
+      "count": 6676,
+      "revenue": 50409.54,
       "path": "data/new/2026/01/2026-01-26.txt"
     },
     {
       "date": "2026-01-27",
-      "count": 4975,
-      "revenue": 35688.86,
+      "count": 4976,
+      "revenue": 35693.85,
       "path": "data/new/2026/01/2026-01-27.txt"
     },
     {
       "date": "2026-01-28",
-      "count": 5997,
-      "revenue": 37590.62,
+      "count": 5998,
+      "revenue": 37600.61,
       "path": "data/new/2026/01/2026-01-28.txt"
     },
     {
       "date": "2026-01-29",
-      "count": 4596,
-      "revenue": 32406.59,
+      "count": 4600,
+      "revenue": 32426.55,
       "path": "data/new/2026/01/2026-01-29.txt"
     },
     {
       "date": "2026-01-30",
-      "count": 4804,
-      "revenue": 32624.53,
+      "count": 4805,
+      "revenue": 32629.52,
       "path": "data/new/2026/01/2026-01-30.txt"
     },
     {
@@ -67046,8 +67046,8 @@
     },
     {
       "date": "2026-02-01",
-      "count": 4434,
-      "revenue": 35406.29,
+      "count": 4435,
+      "revenue": 35415.28,
       "path": "data/new/2026/02/2026-02-01.txt"
     },
     {
@@ -67058,8 +67058,8 @@
     },
     {
       "date": "2026-02-03",
-      "count": 5217,
-      "revenue": 34763.92,
+      "count": 5219,
+      "revenue": 34792.9,
       "path": "data/new/2026/02/2026-02-03.txt"
     },
     {
@@ -67070,20 +67070,20 @@
     },
     {
       "date": "2026-02-05",
-      "count": 6295,
-      "revenue": 41822.09,
+      "count": 6298,
+      "revenue": 41849.06,
       "path": "data/new/2026/02/2026-02-05.txt"
     },
     {
       "date": "2026-02-06",
-      "count": 5109,
-      "revenue": 35519.53,
+      "count": 5112,
+      "revenue": 35547.5,
       "path": "data/new/2026/02/2026-02-06.txt"
     },
     {
       "date": "2026-02-07",
-      "count": 3216,
-      "revenue": 23320.92,
+      "count": 3217,
+      "revenue": 23329.91,
       "path": "data/new/2026/02/2026-02-07.txt"
     },
     {
@@ -67100,8 +67100,8 @@
     },
     {
       "date": "2026-02-10",
-      "count": 5596,
-      "revenue": 37145.06,
+      "count": 5598,
+      "revenue": 37163.04,
       "path": "data/new/2026/02/2026-02-10.txt"
     },
     {
@@ -67112,8 +67112,8 @@
     },
     {
       "date": "2026-02-12",
-      "count": 4906,
-      "revenue": 33757.12,
+      "count": 4908,
+      "revenue": 33797.1,
       "path": "data/new/2026/02/2026-02-12.txt"
     },
     {
@@ -67142,20 +67142,20 @@
     },
     {
       "date": "2026-02-17",
-      "count": 3841,
-      "revenue": 24136.19,
+      "count": 3842,
+      "revenue": 24145.18,
       "path": "data/new/2026/02/2026-02-17.txt"
     },
     {
       "date": "2026-02-18",
-      "count": 6257,
-      "revenue": 44672.07,
+      "count": 6258,
+      "revenue": 44677.06,
       "path": "data/new/2026/02/2026-02-18.txt"
     },
     {
       "date": "2026-02-19",
-      "count": 5580,
-      "revenue": 31435.76,
+      "count": 5581,
+      "revenue": 31444.75,
       "path": "data/new/2026/02/2026-02-19.txt"
     },
     {
@@ -67178,32 +67178,32 @@
     },
     {
       "date": "2026-02-23",
-      "count": 6018,
-      "revenue": 35773.89,
+      "count": 6019,
+      "revenue": 35782.88,
       "path": "data/new/2026/02/2026-02-23.txt"
     },
     {
       "date": "2026-02-24",
-      "count": 4524,
-      "revenue": 29517.39,
+      "count": 4525,
+      "revenue": 29526.38,
       "path": "data/new/2026/02/2026-02-24.txt"
     },
     {
       "date": "2026-02-25",
-      "count": 4530,
-      "revenue": 29184.78,
+      "count": 4531,
+      "revenue": 29193.77,
       "path": "data/new/2026/02/2026-02-25.txt"
     },
     {
       "date": "2026-02-26",
-      "count": 6033,
-      "revenue": 38931.25,
+      "count": 6034,
+      "revenue": 38941.24,
       "path": "data/new/2026/02/2026-02-26.txt"
     },
     {
       "date": "2026-02-27",
-      "count": 4712,
-      "revenue": 31156.99,
+      "count": 4713,
+      "revenue": 31165.98,
       "path": "data/new/2026/02/2026-02-27.txt"
     },
     {
@@ -67220,32 +67220,32 @@
     },
     {
       "date": "2026-03-02",
-      "count": 5356,
-      "revenue": 35357.3,
+      "count": 5358,
+      "revenue": 35375.28,
       "path": "data/new/2026/03/2026-03-02.txt"
     },
     {
       "date": "2026-03-03",
-      "count": 6711,
-      "revenue": 39742.5,
+      "count": 6714,
+      "revenue": 39770.47,
       "path": "data/new/2026/03/2026-03-03.txt"
     },
     {
       "date": "2026-03-04",
-      "count": 5065,
-      "revenue": 31738.96,
+      "count": 5066,
+      "revenue": 31758.95,
       "path": "data/new/2026/03/2026-03-04.txt"
     },
     {
       "date": "2026-03-05",
-      "count": 6900,
-      "revenue": 49073.62,
+      "count": 6901,
+      "revenue": 49083.61,
       "path": "data/new/2026/03/2026-03-05.txt"
     },
     {
       "date": "2026-03-06",
-      "count": 5322,
-      "revenue": 32851.41,
+      "count": 5323,
+      "revenue": 32860.4,
       "path": "data/new/2026/03/2026-03-06.txt"
     },
     {
@@ -67262,14 +67262,14 @@
     },
     {
       "date": "2026-03-09",
-      "count": 7169,
-      "revenue": 52367.87,
+      "count": 7171,
+      "revenue": 52385.85,
       "path": "data/new/2026/03/2026-03-09.txt"
     },
     {
       "date": "2026-03-10",
-      "count": 8222,
-      "revenue": 53002.91,
+      "count": 8223,
+      "revenue": 53007.9,
       "path": "data/new/2026/03/2026-03-10.txt"
     },
     {
@@ -67286,14 +67286,14 @@
     },
     {
       "date": "2026-03-13",
-      "count": 5993,
-      "revenue": 38945.64,
+      "count": 5996,
+      "revenue": 38972.11,
       "path": "data/new/2026/03/2026-03-13.txt"
     },
     {
       "date": "2026-03-14",
-      "count": 2357,
-      "revenue": 10539.0,
+      "count": 2358,
+      "revenue": 10547.99,
       "path": "data/new/2026/03/2026-03-14.txt"
     },
     {
@@ -67304,26 +67304,26 @@
     },
     {
       "date": "2026-03-16",
-      "count": 4540,
-      "revenue": 30372.21,
+      "count": 4541,
+      "revenue": 30381.2,
       "path": "data/new/2026/03/2026-03-16.txt"
     },
     {
       "date": "2026-03-17",
-      "count": 6889,
-      "revenue": 45792.66,
+      "count": 6890,
+      "revenue": 45812.65,
       "path": "data/new/2026/03/2026-03-17.txt"
     },
     {
       "date": "2026-03-18",
-      "count": 4903,
-      "revenue": 30423.09,
+      "count": 4904,
+      "revenue": 30428.08,
       "path": "data/new/2026/03/2026-03-18.txt"
     },
     {
       "date": "2026-03-19",
-      "count": 4099,
-      "revenue": 27575.11,
+      "count": 4100,
+      "revenue": 27595.1,
       "path": "data/new/2026/03/2026-03-19.txt"
     },
     {
@@ -67346,14 +67346,14 @@
     },
     {
       "date": "2026-03-23",
-      "count": 4948,
-      "revenue": 29582.59,
+      "count": 4950,
+      "revenue": 29601.57,
       "path": "data/new/2026/03/2026-03-23.txt"
     },
     {
       "date": "2026-03-24",
-      "count": 7010,
-      "revenue": 41367.57,
+      "count": 7011,
+      "revenue": 41371.56,
       "path": "data/new/2026/03/2026-03-24.txt"
     },
     {
@@ -67376,32 +67376,32 @@
     },
     {
       "date": "2026-03-28",
-      "count": 2580,
-      "revenue": 19790.8,
+      "count": 2581,
+      "revenue": 19810.79,
       "path": "data/new/2026/03/2026-03-28.txt"
     },
     {
       "date": "2026-03-29",
-      "count": 4029,
-      "revenue": 32358.38,
+      "count": 4030,
+      "revenue": 32367.37,
       "path": "data/new/2026/03/2026-03-29.txt"
     },
     {
       "date": "2026-03-30",
-      "count": 4513,
-      "revenue": 31599.02,
+      "count": 4514,
+      "revenue": 31608.01,
       "path": "data/new/2026/03/2026-03-30.txt"
     },
     {
       "date": "2026-03-31",
-      "count": 4586,
-      "revenue": 31761.76,
+      "count": 4588,
+      "revenue": 31790.74,
       "path": "data/new/2026/03/2026-03-31.txt"
     },
     {
       "date": "2026-04-01",
-      "count": 4602,
-      "revenue": 30286.1,
+      "count": 4603,
+      "revenue": 30295.09,
       "path": "data/new/2026/04/2026-04-01.txt"
     },
     {
@@ -67424,8 +67424,8 @@
     },
     {
       "date": "2026-04-05",
-      "count": 4298,
-      "revenue": 27766.65,
+      "count": 4300,
+      "revenue": 27784.63,
       "path": "data/new/2026/04/2026-04-05.txt"
     },
     {
@@ -67436,8 +67436,8 @@
     },
     {
       "date": "2026-04-07",
-      "count": 4706,
-      "revenue": 30466.07,
+      "count": 4707,
+      "revenue": 30470.06,
       "path": "data/new/2026/04/2026-04-07.txt"
     },
     {
@@ -67448,14 +67448,14 @@
     },
     {
       "date": "2026-04-09",
-      "count": 4112,
-      "revenue": 27447.88,
+      "count": 4114,
+      "revenue": 27476.86,
       "path": "data/new/2026/04/2026-04-09.txt"
     },
     {
       "date": "2026-04-10",
-      "count": 4560,
-      "revenue": 29206.55,
+      "count": 4562,
+      "revenue": 29226.53,
       "path": "data/new/2026/04/2026-04-10.txt"
     },
     {
@@ -67466,20 +67466,20 @@
     },
     {
       "date": "2026-04-12",
-      "count": 2996,
-      "revenue": 23681.63,
+      "count": 2997,
+      "revenue": 23683.12,
       "path": "data/new/2026/04/2026-04-12.txt"
     },
     {
       "date": "2026-04-13",
-      "count": 4769,
-      "revenue": 33040.84,
+      "count": 4772,
+      "revenue": 33065.81,
       "path": "data/new/2026/04/2026-04-13.txt"
     },
     {
       "date": "2026-04-14",
-      "count": 5497,
-      "revenue": 38546.16,
+      "count": 5498,
+      "revenue": 38550.15,
       "path": "data/new/2026/04/2026-04-14.txt"
     },
     {
@@ -67490,8 +67490,8 @@
     },
     {
       "date": "2026-04-16",
-      "count": 9161,
-      "revenue": 70602.75,
+      "count": 9163,
+      "revenue": 70620.73,
       "path": "data/new/2026/04/2026-04-16.txt"
     },
     {
@@ -67520,26 +67520,26 @@
     },
     {
       "date": "2026-04-21",
-      "count": 5492,
-      "revenue": 36088.16,
+      "count": 5493,
+      "revenue": 36108.15,
       "path": "data/new/2026/04/2026-04-21.txt"
     },
     {
       "date": "2026-04-22",
-      "count": 5458,
-      "revenue": 40612.03,
+      "count": 5460,
+      "revenue": 40642.01,
       "path": "data/new/2026/04/2026-04-22.txt"
     },
     {
       "date": "2026-04-23",
-      "count": 5181,
-      "revenue": 36482.84,
+      "count": 5183,
+      "revenue": 36500.82,
       "path": "data/new/2026/04/2026-04-23.txt"
     },
     {
       "date": "2026-04-24",
-      "count": 5590,
-      "revenue": 40367.73,
+      "count": 5591,
+      "revenue": 40377.72,
       "path": "data/new/2026/04/2026-04-24.txt"
     },
     {
@@ -67562,26 +67562,26 @@
     },
     {
       "date": "2026-04-28",
-      "count": 6194,
-      "revenue": 40156.31,
+      "count": 6195,
+      "revenue": 40176.3,
       "path": "data/new/2026/04/2026-04-28.txt"
     },
     {
       "date": "2026-04-29",
-      "count": 6047,
-      "revenue": 47359.12,
+      "count": 6049,
+      "revenue": 47373.1,
       "path": "data/new/2026/04/2026-04-29.txt"
     },
     {
       "date": "2026-04-30",
-      "count": 5643,
-      "revenue": 37622.21,
+      "count": 5644,
+      "revenue": 37642.2,
       "path": "data/new/2026/04/2026-04-30.txt"
     },
     {
       "date": "2026-05-01",
-      "count": 6460,
-      "revenue": 45523.0,
+      "count": 6462,
+      "revenue": 45535.98,
       "path": "data/new/2026/05/2026-05-01.txt"
     },
     {
@@ -67598,32 +67598,32 @@
     },
     {
       "date": "2026-05-04",
-      "count": 3685,
-      "revenue": 27233.73,
+      "count": 3686,
+      "revenue": 27242.72,
       "path": "data/new/2026/05/2026-05-04.txt"
     },
     {
       "date": "2026-05-05",
-      "count": 4513,
-      "revenue": 30282.48,
+      "count": 4515,
+      "revenue": 30296.46,
       "path": "data/new/2026/05/2026-05-05.txt"
     },
     {
       "date": "2026-05-06",
-      "count": 6660,
-      "revenue": 51225.54,
+      "count": 6661,
+      "revenue": 51235.53,
       "path": "data/new/2026/05/2026-05-06.txt"
     },
     {
       "date": "2026-05-07",
-      "count": 8848,
-      "revenue": 62776.72,
+      "count": 8853,
+      "revenue": 62822.67,
       "path": "data/new/2026/05/2026-05-07.txt"
     },
     {
       "date": "2026-05-08",
-      "count": 8317,
-      "revenue": 57027.46,
+      "count": 8320,
+      "revenue": 57065.43,
       "path": "data/new/2026/05/2026-05-08.txt"
     },
     {
@@ -67634,14 +67634,14 @@
     },
     {
       "date": "2026-05-10",
-      "count": 4487,
-      "revenue": 34406.38,
+      "count": 4489,
+      "revenue": 34424.36,
       "path": "data/new/2026/05/2026-05-10.txt"
     },
     {
       "date": "2026-05-11",
-      "count": 6580,
-      "revenue": 47874.38,
+      "count": 6585,
+      "revenue": 47921.33,
       "path": "data/new/2026/05/2026-05-11.txt"
     },
     {
@@ -67652,14 +67652,14 @@
     },
     {
       "date": "2026-05-13",
-      "count": 6742,
-      "revenue": 50563.7,
+      "count": 6743,
+      "revenue": 50583.69,
       "path": "data/new/2026/05/2026-05-13.txt"
     },
     {
       "date": "2026-05-14",
-      "count": 5984,
-      "revenue": 45975.87,
+      "count": 5985,
+      "revenue": 45979.86,
       "path": "data/new/2026/05/2026-05-14.txt"
     },
     {
@@ -67670,8 +67670,8 @@
     },
     {
       "date": "2026-05-16",
-      "count": 3903,
-      "revenue": 31395.55,
+      "count": 3902,
+      "revenue": 31386.56,
       "path": "data/new/2026/05/2026-05-16.txt"
     },
     {
@@ -67688,20 +67688,20 @@
     },
     {
       "date": "2026-05-19",
-      "count": 8982,
-      "revenue": 74292.3,
+      "count": 8985,
+      "revenue": 74331.27,
       "path": "data/new/2026/05/2026-05-19.txt"
     },
     {
       "date": "2026-05-20",
-      "count": 11899,
-      "revenue": 104426.69,
+      "count": 11900,
+      "revenue": 104428.18,
       "path": "data/new/2026/05/2026-05-20.txt"
     },
     {
       "date": "2026-05-21",
-      "count": 11167,
-      "revenue": 89666.48,
+      "count": 11168,
+      "revenue": 89675.47,
       "path": "data/new/2026/05/2026-05-21.txt"
     },
     {
@@ -67718,14 +67718,14 @@
     },
     {
       "date": "2026-05-24",
-      "count": 3565,
-      "revenue": 27835.52,
+      "count": 3566,
+      "revenue": 27844.51,
       "path": "data/new/2026/05/2026-05-24.txt"
     },
     {
       "date": "2026-05-25",
-      "count": 9156,
-      "revenue": 68332.39,
+      "count": 9157,
+      "revenue": 68342.38,
       "path": "data/new/2026/05/2026-05-25.txt"
     },
     {
@@ -67742,14 +67742,14 @@
     },
     {
       "date": "2026-05-28",
-      "count": 7640,
-      "revenue": 60564.18,
+      "count": 7644,
+      "revenue": 60633.14,
       "path": "data/new/2026/05/2026-05-28.txt"
     },
     {
       "date": "2026-05-29",
-      "count": 6709,
-      "revenue": 49020.69,
+      "count": 6710,
+      "revenue": 49022.18,
       "path": "data/new/2026/05/2026-05-29.txt"
     },
     {
@@ -67760,14 +67760,14 @@
     },
     {
       "date": "2026-05-31",
-      "count": 2662,
-      "revenue": 17484.94,
+      "count": 2663,
+      "revenue": 17486.43,
       "path": "data/new/2026/05/2026-05-31.txt"
     },
     {
       "date": "2026-06-01",
-      "count": 6686,
-      "revenue": 52032.24,
+      "count": 6687,
+      "revenue": 52037.23,
       "path": "data/new/2026/06/2026-06-01.txt"
     },
     {
@@ -67778,38 +67778,38 @@
     },
     {
       "date": "2026-06-03",
-      "count": 11699,
-      "revenue": 92001.67,
+      "count": 11701,
+      "revenue": 92019.65,
       "path": "data/new/2026/06/2026-06-03.txt"
     },
     {
       "date": "2026-06-04",
-      "count": 7302,
-      "revenue": 55255.16,
+      "count": 7305,
+      "revenue": 55293.13,
       "path": "data/new/2026/06/2026-06-04.txt"
     },
     {
       "date": "2026-06-05",
-      "count": 7784,
-      "revenue": 60118.89,
+      "count": 7786,
+      "revenue": 60147.87,
       "path": "data/new/2026/06/2026-06-05.txt"
     },
     {
       "date": "2026-06-06",
-      "count": 6556,
-      "revenue": 52846.53,
+      "count": 6557,
+      "revenue": 52866.52,
       "path": "data/new/2026/06/2026-06-06.txt"
     },
     {
       "date": "2026-06-07",
-      "count": 8135,
-      "revenue": 63831.47,
+      "count": 8136,
+      "revenue": 63840.46,
       "path": "data/new/2026/06/2026-06-07.txt"
     },
     {
       "date": "2026-06-08",
-      "count": 10538,
-      "revenue": 85541.73,
+      "count": 10540,
+      "revenue": 85566.71,
       "path": "data/new/2026/06/2026-06-08.txt"
     },
     {
@@ -67820,14 +67820,14 @@
     },
     {
       "date": "2026-06-10",
-      "count": 8772,
-      "revenue": 60070.1,
+      "count": 8773,
+      "revenue": 60080.09,
       "path": "data/new/2026/06/2026-06-10.txt"
     },
     {
       "date": "2026-06-11",
-      "count": 8747,
-      "revenue": 68454.8,
+      "count": 8750,
+      "revenue": 68492.77,
       "path": "data/new/2026/06/2026-06-11.txt"
     },
     {
@@ -67844,14 +67844,14 @@
     },
     {
       "date": "2026-06-14",
-      "count": 4899,
-      "revenue": 34593.13,
+      "count": 4903,
+      "revenue": 34673.09,
       "path": "data/new/2026/06/2026-06-14.txt"
     },
     {
       "date": "2026-06-15",
-      "count": 6356,
-      "revenue": 44706.63,
+      "count": 6357,
+      "revenue": 44715.62,
       "path": "data/new/2026/06/2026-06-15.txt"
     },
     {
@@ -67862,20 +67862,20 @@
     },
     {
       "date": "2026-06-17",
-      "count": 6939,
-      "revenue": 53506.69,
+      "count": 6940,
+      "revenue": 53526.68,
       "path": "data/new/2026/06/2026-06-17.txt"
     },
     {
       "date": "2026-06-18",
-      "count": 7574,
-      "revenue": 58821.85,
+      "count": 7575,
+      "revenue": 58830.84,
       "path": "data/new/2026/06/2026-06-18.txt"
     },
     {
       "date": "2026-06-19",
-      "count": 6101,
-      "revenue": 44653.07,
+      "count": 6104,
+      "revenue": 44683.54,
       "path": "data/new/2026/06/2026-06-19.txt"
     },
     {
@@ -67886,8 +67886,8 @@
     },
     {
       "date": "2026-06-21",
-      "count": 7737,
-      "revenue": 60488.17,
+      "count": 7738,
+      "revenue": 60508.16,
       "path": "data/new/2026/06/2026-06-21.txt"
     },
     {
@@ -67898,8 +67898,8 @@
     },
     {
       "date": "2026-06-23",
-      "count": 10255,
-      "revenue": 81973.59,
+      "count": 10259,
+      "revenue": 82010.55,
       "path": "data/new/2026/06/2026-06-23.txt"
     },
     {
@@ -67916,20 +67916,20 @@
     },
     {
       "date": "2026-06-26",
-      "count": 4349,
-      "revenue": 31742.6,
+      "count": 4351,
+      "revenue": 31782.58,
       "path": "data/new/2026/06/2026-06-26.txt"
     },
     {
       "date": "2026-06-27",
-      "count": 2905,
-      "revenue": 18485.52,
+      "count": 2907,
+      "revenue": 18494.5,
       "path": "data/new/2026/06/2026-06-27.txt"
     },
     {
       "date": "2026-06-28",
-      "count": 1845,
-      "revenue": 12444.6,
+      "count": 1844,
+      "revenue": 12435.61,
       "path": "data/new/2026/06/2026-06-28.txt"
     },
     {
@@ -67940,20 +67940,20 @@
     },
     {
       "date": "2026-06-30",
-      "count": 13486,
-      "revenue": 112983.71,
+      "count": 13487,
+      "revenue": 112992.7,
       "path": "data/new/2026/06/2026-06-30.txt"
     },
     {
       "date": "2026-07-01",
-      "count": 12776,
-      "revenue": 105918.81,
+      "count": 12778,
+      "revenue": 105938.79,
       "path": "data/new/2026/07/2026-07-01.txt"
     },
     {
       "date": "2026-07-02",
-      "count": 5629,
-      "revenue": 38816.41,
+      "count": 5630,
+      "revenue": 38825.4,
       "path": "data/new/2026/07/2026-07-02.txt"
     },
     {
@@ -67970,38 +67970,38 @@
     },
     {
       "date": "2026-07-05",
-      "count": 2354,
-      "revenue": 15540.54,
+      "count": 2357,
+      "revenue": 15563.51,
       "path": "data/new/2026/07/2026-07-05.txt"
     },
     {
       "date": "2026-07-06",
-      "count": 6049,
-      "revenue": 44814.67,
+      "count": 6050,
+      "revenue": 44823.66,
       "path": "data/new/2026/07/2026-07-06.txt"
     },
     {
       "date": "2026-07-07",
-      "count": 5534,
-      "revenue": 39446.88,
+      "count": 5535,
+      "revenue": 39455.87,
       "path": "data/new/2026/07/2026-07-07.txt"
     },
     {
       "date": "2026-07-08",
-      "count": 6965,
-      "revenue": 51001.57,
+      "count": 6967,
+      "revenue": 51041.55,
       "path": "data/new/2026/07/2026-07-08.txt"
     },
     {
       "date": "2026-07-09",
-      "count": 8297,
-      "revenue": 55399.68,
+      "count": 8298,
+      "revenue": 55409.67,
       "path": "data/new/2026/07/2026-07-09.txt"
     },
     {
       "date": "2026-07-10",
-      "count": 5599,
-      "revenue": 37902.73,
+      "count": 5600,
+      "revenue": 37911.72,
       "path": "data/new/2026/07/2026-07-10.txt"
     },
     {
@@ -68018,20 +68018,20 @@
     },
     {
       "date": "2026-07-13",
-      "count": 7493,
-      "revenue": 55059.23,
+      "count": 7495,
+      "revenue": 55077.21,
       "path": "data/new/2026/07/2026-07-13.txt"
     },
     {
       "date": "2026-07-14",
-      "count": 5617,
-      "revenue": 37506.01,
+      "count": 5618,
+      "revenue": 37515.0,
       "path": "data/new/2026/07/2026-07-14.txt"
     },
     {
       "date": "2026-07-15",
-      "count": 6033,
-      "revenue": 47317.4,
+      "count": 6036,
+      "revenue": 47366.37,
       "path": "data/new/2026/07/2026-07-15.txt"
     },
     {
@@ -68042,14 +68042,14 @@
     },
     {
       "date": "2026-07-17",
-      "count": 5359,
-      "revenue": 39267.03,
+      "count": 5360,
+      "revenue": 39276.02,
       "path": "data/new/2026/07/2026-07-17.txt"
     },
     {
       "date": "2026-07-18",
-      "count": 2350,
-      "revenue": 17888.16,
+      "count": 2351,
+      "revenue": 17908.15,
       "path": "data/new/2026/07/2026-07-18.txt"
     },
     {
@@ -68072,8 +68072,8 @@
     },
     {
       "date": "2026-07-22",
-      "count": 6533,
-      "revenue": 45964.39,
+      "count": 6534,
+      "revenue": 45973.38,
       "path": "data/new/2026/07/2026-07-22.txt"
     },
     {
@@ -68084,14 +68084,14 @@
     },
     {
       "date": "2026-07-24",
-      "count": 6519,
-      "revenue": 49344.95,
+      "count": 6520,
+      "revenue": 49349.94,
       "path": "data/new/2026/07/2026-07-24.txt"
     },
     {
       "date": "2026-07-25",
-      "count": 3016,
-      "revenue": 24505.48,
+      "count": 3017,
+      "revenue": 24514.47,
       "path": "data/new/2026/07/2026-07-25.txt"
     },
     {
@@ -68102,20 +68102,20 @@
     },
     {
       "date": "2026-07-27",
-      "count": 6401,
-      "revenue": 48408.59,
+      "count": 6402,
+      "revenue": 48413.58,
       "path": "data/new/2026/07/2026-07-27.txt"
     },
     {
       "date": "2026-07-28",
-      "count": 5669,
-      "revenue": 45984.5,
+      "count": 5670,
+      "revenue": 45993.49,
       "path": "data/new/2026/07/2026-07-28.txt"
     },
     {
       "date": "2026-07-29",
-      "count": 4697,
-      "revenue": 39327.36,
+      "count": 4698,
+      "revenue": 39336.35,
       "path": "data/new/2026/07/2026-07-29.txt"
     },
     {
@@ -68126,8 +68126,8 @@
     },
     {
       "date": "2026-07-31",
-      "count": 5946,
-      "revenue": 42623.2,
+      "count": 5949,
+      "revenue": 42661.17,
       "path": "data/new/2026/07/2026-07-31.txt"
     },
     {
@@ -68138,14 +68138,14 @@
     },
     {
       "date": "2026-08-02",
-      "count": 2287,
-      "revenue": 16209.73,
+      "count": 2321,
+      "revenue": 16515.39,
       "path": "data/new/2026/08/2026-08-02.txt"
     },
     {
       "date": "2026-08-03",
       "count": 6947,
-      "revenue": 53415.15,
+      "revenue": 53417.65,
       "path": "data/new/2026/08/2026-08-03.txt"
     },
     {
@@ -68156,44 +68156,44 @@
     },
     {
       "date": "2026-08-05",
-      "count": 6250,
-      "revenue": 51273.09,
+      "count": 6251,
+      "revenue": 51278.08,
       "path": "data/new/2026/08/2026-08-05.txt"
     },
     {
       "date": "2026-08-06",
-      "count": 6751,
-      "revenue": 55821.1,
+      "count": 6755,
+      "revenue": 55853.06,
       "path": "data/new/2026/08/2026-08-06.txt"
     },
     {
       "date": "2026-08-07",
-      "count": 5474,
-      "revenue": 46333.87,
+      "count": 5477,
+      "revenue": 46360.84,
       "path": "data/new/2026/08/2026-08-07.txt"
     },
     {
       "date": "2026-08-08",
-      "count": 6220,
-      "revenue": 56780.5,
+      "count": 6224,
+      "revenue": 56816.46,
       "path": "data/new/2026/08/2026-08-08.txt"
     },
     {
       "date": "2026-08-09",
-      "count": 3146,
-      "revenue": 24986.73,
+      "count": 3147,
+      "revenue": 24995.72,
       "path": "data/new/2026/08/2026-08-09.txt"
     },
     {
       "date": "2026-08-10",
-      "count": 6332,
-      "revenue": 54293.92,
+      "count": 6334,
+      "revenue": 54307.9,
       "path": "data/new/2026/08/2026-08-10.txt"
     },
     {
       "date": "2026-08-11",
-      "count": 6645,
-      "revenue": 54743.71,
+      "count": 6646,
+      "revenue": 54752.7,
       "path": "data/new/2026/08/2026-08-11.txt"
     },
     {
@@ -68222,14 +68222,14 @@
     },
     {
       "date": "2026-08-16",
-      "count": 3427,
-      "revenue": 27450.46,
+      "count": 3428,
+      "revenue": 27459.45,
       "path": "data/new/2026/08/2026-08-16.txt"
     },
     {
       "date": "2026-08-17",
-      "count": 5891,
-      "revenue": 47180.71,
+      "count": 5892,
+      "revenue": 47189.7,
       "path": "data/new/2026/08/2026-08-17.txt"
     },
     {
@@ -68240,283 +68240,295 @@
     },
     {
       "date": "2026-08-19",
-      "count": 4921,
-      "revenue": 36641.02,
+      "count": 5345,
+      "revenue": 40333.78,
       "path": "data/new/2026/08/2026-08-19.txt"
     },
     {
       "date": "2026-08-20",
-      "count": 2703,
-      "revenue": 17345.54,
+      "count": 7974,
+      "revenue": 63931.87,
       "path": "data/new/2026/08/2026-08-20.txt"
     },
     {
       "date": "2026-08-21",
-      "count": 117,
-      "revenue": 1131.33,
+      "count": 3670,
+      "revenue": 25215.41,
       "path": "data/new/2026/08/2026-08-21.txt"
+    },
+    {
+      "date": "2026-08-22",
+      "count": 114,
+      "revenue": 890.86,
+      "path": "data/new/2026/08/2026-08-22.txt"
+    },
+    {
+      "date": "2026-08-23",
+      "count": 3,
+      "revenue": 26.97,
+      "path": "data/new/2026/08/2026-08-23.txt"
     }
   ],
-  "total_new_all_time": 5288193,
-  "total_revenue_estimate": 37923336.61,
-  "avg_registration_days": 1282,
+  "total_new_all_time": 5292371,
+  "total_revenue_estimate": 37965997.25,
+  "avg_registration_days": 1281,
   "ip_countries": {
-    "US": 1040199,
-    "DE": 441259,
-    "SG": 96684,
-    "HK": 69883,
-    "CA": 56344,
-    "NL": 46289,
-    "GB": 39746,
-    "BG": 19650,
-    "FR": 19589,
-    "UA": 14877
+    "US": 1042272,
+    "DE": 439510,
+    "SG": 97326,
+    "HK": 69595,
+    "CA": 56439,
+    "NL": 46591,
+    "GB": 39724,
+    "FR": 19714,
+    "BG": 19644,
+    "RU": 14907
   },
   "top_shared_ips": {
-    "91.195.240.123": 282732,
-    "188.114.97.3": 260070,
-    "188.114.96.3": 260037,
-    "64.190.63.222": 57406,
-    "172.234.199.15": 47909,
-    "172.237.145.27": 47700,
-    "172.233.221.214": 47171,
-    "91.195.240.12": 34604,
-    "23.227.38.65": 32759,
-    "172.237.129.242": 22844,
-    "172.237.129.108": 22783,
-    "172.237.129.236": 22776,
-    "172.232.24.235": 19859,
-    "172.234.25.42": 19815,
-    "172.232.24.161": 19664,
+    "91.195.240.123": 280958,
+    "188.114.96.3": 261183,
+    "188.114.97.3": 261144,
+    "64.190.63.222": 57390,
+    "172.234.199.15": 47894,
+    "172.237.145.27": 47689,
+    "172.233.221.214": 47148,
+    "91.195.240.12": 34460,
+    "23.227.38.65": 32834,
+    "172.237.129.242": 22891,
+    "172.237.129.108": 22843,
+    "172.237.129.236": 22825,
+    "172.232.24.235": 20191,
+    "172.234.25.42": 20170,
+    "172.232.24.161": 20029,
     "35.241.104.166": 7175,
-    "149.104.32.142": 5903,
-    "172.66.144.96": 5871,
-    "172.66.170.130": 5804,
-    "104.20.26.89": 5778
+    "149.104.32.142": 5904,
+    "172.66.144.96": 5884,
+    "172.66.170.130": 5738,
+    "104.20.26.89": 5736
   },
-  "deployed_count": 3142371,
-  "no_ip_count": 2145822,
-  "deployment_rate": 59.4,
+  "deployed_count": 3148297,
+  "no_ip_count": 2144074,
+  "deployment_rate": 59.5,
   "reg_periods": {
     "lt_1yr": 0,
-    "eq_1yr": 1941838,
-    "yr_2": 1821279,
-    "yr_3plus": 1525076
+    "eq_1yr": 1945261,
+    "yr_2": 1821251,
+    "yr_3plus": 1525859
   },
-  "pct_gt_1yr": 63.3,
+  "pct_gt_1yr": 63.2,
   "pct_gt_2yr": 28.8,
   "tld_stats": {
     "com": {
-      "count": 2327866,
-      "avg_days": 1884
+      "count": 2331067,
+      "avg_days": 1882
     },
     "sbs": {
-      "count": 366820,
+      "count": 366541,
       "avg_days": 630
     },
     "xyz": {
-      "count": 363214,
+      "count": 363023,
       "avg_days": 785
     },
     "net": {
-      "count": 260884,
-      "avg_days": 1552
+      "count": 261145,
+      "avg_days": 1551
     },
     "info": {
-      "count": 241251,
+      "count": 241291,
       "avg_days": 674
     },
     "org": {
-      "count": 234354,
-      "avg_days": 1521
+      "count": 234668,
+      "avg_days": 1519
     },
     "cfd": {
-      "count": 229976,
+      "count": 230088,
       "avg_days": 667
     },
     "click": {
-      "count": 91726,
-      "avg_days": 521
+      "count": 91938,
+      "avg_days": 522
     },
     "vip": {
-      "count": 68311,
-      "avg_days": 633
+      "count": 67707,
+      "avg_days": 632
     },
     "link": {
-      "count": 64459,
-      "avg_days": 685
+      "count": 64381,
+      "avg_days": 692
     },
     "wiki": {
-      "count": 63631,
+      "count": 63889,
       "avg_days": 370
     },
     "cyou": {
-      "count": 60638,
+      "count": 60698,
       "avg_days": 445
     },
     "help": {
-      "count": 59530,
+      "count": 59645,
       "avg_days": 494
     },
     "icu": {
-      "count": 57153,
+      "count": 56973,
       "avg_days": 600
     },
     "lat": {
-      "count": 44093,
+      "count": 44156,
       "avg_days": 500
     },
     "rest": {
-      "count": 42357,
+      "count": 42353,
       "avg_days": 565
     },
     "pro": {
-      "count": 38385,
-      "avg_days": 651
-    },
-    "lol": {
-      "count": 36683,
-      "avg_days": 625
+      "count": 38413,
+      "avg_days": 652
     },
     "life": {
-      "count": 36667,
-      "avg_days": 588
+      "count": 36597,
+      "avg_days": 587
+    },
+    "lol": {
+      "count": 36594,
+      "avg_days": 625
     },
     "buzz": {
-      "count": 34427,
+      "count": 34610,
       "avg_days": 394
     }
   },
   "revenue_by_tld": {
     "com": {
-      "count": 2327866,
+      "count": 2331067,
       "price": 8.99,
-      "revenue": 20927515.34,
+      "revenue": 20956292.33,
       "pct": 55.2
     },
     "sbs": {
-      "count": 366820,
+      "count": 366541,
       "price": 4.99,
-      "revenue": 1830431.8,
+      "revenue": 1829039.59,
       "pct": 4.8
     },
     "xyz": {
-      "count": 363214,
+      "count": 363023,
       "price": 1.49,
-      "revenue": 541188.86,
+      "revenue": 540904.27,
       "pct": 1.4
     },
     "net": {
-      "count": 260884,
+      "count": 261145,
       "price": 9.99,
-      "revenue": 2606231.16,
+      "revenue": 2608838.55,
       "pct": 6.9
     },
     "info": {
-      "count": 241251,
+      "count": 241291,
       "price": 3.99,
-      "revenue": 962591.49,
+      "revenue": 962751.09,
       "pct": 2.5
     },
     "org": {
-      "count": 234354,
+      "count": 234668,
       "price": 9.99,
-      "revenue": 2341196.46,
+      "revenue": 2344333.32,
       "pct": 6.2
     },
     "cfd": {
-      "count": 229976,
+      "count": 230088,
       "price": 4.99,
-      "revenue": 1147580.24,
+      "revenue": 1148139.12,
       "pct": 3.0
     },
     "click": {
-      "count": 91726,
+      "count": 91938,
       "price": 3.99,
-      "revenue": 365986.74,
+      "revenue": 366832.62,
       "pct": 1.0
     },
     "vip": {
-      "count": 68311,
+      "count": 67707,
       "price": 4.99,
-      "revenue": 340871.89,
+      "revenue": 337857.93,
       "pct": 0.9
     },
     "link": {
-      "count": 64459,
+      "count": 64381,
       "price": 3.99,
-      "revenue": 257191.41,
+      "revenue": 256880.19,
       "pct": 0.7
     },
     "wiki": {
-      "count": 63631,
+      "count": 63889,
       "price": 14.99,
-      "revenue": 953828.69,
+      "revenue": 957696.11,
       "pct": 2.5
     },
     "cyou": {
-      "count": 60638,
+      "count": 60698,
       "price": 0.99,
-      "revenue": 60031.62,
+      "revenue": 60091.02,
       "pct": 0.2
     },
     "help": {
-      "count": 59530,
+      "count": 59645,
       "price": 4.99,
-      "revenue": 297054.7,
+      "revenue": 297628.55,
       "pct": 0.8
     },
     "icu": {
-      "count": 57153,
+      "count": 56973,
       "price": 0.99,
-      "revenue": 56581.47,
+      "revenue": 56403.27,
       "pct": 0.1
     },
     "lat": {
-      "count": 44093,
+      "count": 44156,
       "price": 4.99,
-      "revenue": 220024.07,
+      "revenue": 220338.44,
       "pct": 0.6
     },
     "rest": {
-      "count": 42357,
+      "count": 42353,
       "price": 4.99,
-      "revenue": 211361.43,
+      "revenue": 211341.47,
       "pct": 0.6
     },
     "pro": {
-      "count": 38385,
+      "count": 38413,
       "price": 7.99,
-      "revenue": 306696.15,
+      "revenue": 306919.87,
       "pct": 0.8
     },
-    "lol": {
-      "count": 36683,
+    "life": {
+      "count": 36597,
       "price": 4.99,
-      "revenue": 183048.17,
+      "revenue": 182619.03,
       "pct": 0.5
     },
-    "life": {
-      "count": 36667,
+    "lol": {
+      "count": 36594,
       "price": 4.99,
-      "revenue": 182968.33,
+      "revenue": 182604.06,
       "pct": 0.5
     },
     "buzz": {
-      "count": 34427,
+      "count": 34610,
       "price": 4.99,
-      "revenue": 171790.73,
+      "revenue": 172703.9,
       "pct": 0.5
     }
   },
   "catch_age_buckets": {
     "same_day": 0,
-    "within_week": 24515,
-    "within_month": 121629,
-    "older": 5142049
+    "within_week": 30454,
+    "within_month": 118595,
+    "older": 5143322
   },
-  "avg_catch_age_days": 5694,
-  "fresh_pct": 0.5,
+  "avg_catch_age_days": 5692,
+  "fresh_pct": 0.6,
   "burst_days": [
     {
       "date": "2025-07-19",
@@ -68525,27 +68537,27 @@
     },
     {
       "date": "2025-12-01",
-      "count": 14299,
+      "count": 14300,
       "x_avg": 30.7
     },
     {
       "date": "2026-06-30",
-      "count": 13486,
+      "count": 13487,
       "x_avg": 29.0
     },
     {
       "date": "2026-07-01",
-      "count": 12776,
+      "count": 12778,
       "x_avg": 27.5
     },
     {
       "date": "2026-06-09",
       "count": 12396,
-      "x_avg": 26.7
+      "x_avg": 26.6
     },
     {
       "date": "2025-12-08",
-      "count": 12228,
+      "count": 12230,
       "x_avg": 26.3
     },
     {
@@ -68555,81 +68567,81 @@
     },
     {
       "date": "2025-12-12",
-      "count": 12040,
+      "count": 12042,
       "x_avg": 25.9
     },
     {
       "date": "2026-05-20",
-      "count": 11899,
+      "count": 11900,
       "x_avg": 25.6
     },
     {
       "date": "2026-06-03",
-      "count": 11699,
-      "x_avg": 25.2
+      "count": 11701,
+      "x_avg": 25.1
     }
   ],
   "top_registrant_emails": {
     "chihan@mail.com": 10494,
     "dizhi@992fun.com": 8923,
-    "service@atom.com": 5272,
-    "info@brandbucket.com": 3657,
-    "sales@brandbucket.com": 3657,
+    "service@atom.com": 5264,
+    "info@brandbucket.com": 3747,
+    "sales@brandbucket.com": 3747,
     "992kanpian@gmail.com": 1702,
     "dizhi@91jqx.com": 1698,
-    "shunfeng.cloud07@outlook.com": 1415,
+    "shunfeng.cloud07@outlook.com": 1427,
     "jack@greensock.com": 888,
-    "apps@bagelcode.com": 636,
+    "apps@bagelcode.com": 637,
     "bd@91porny.com": 541,
-    "support@hawkhost.com": 521,
-    "fawtuowo@gmail.com": 492,
-    "dz668@pm.me": 421,
-    "donate@opencart.com": 395,
-    "support@eclipsebroadband.co.uk": 394,
+    "support@hawkhost.com": 523,
+    "fawtuowo@gmail.com": 493,
+    "dz668@pm.me": 479,
+    "donate@opencart.com": 396,
+    "support@eclipsebroadband.co.uk": 396,
     "nvyoutv991@gmail.com": 350,
     "5x5xdizhi@gmail.com": 337,
     "dizhi9191@gmail.com": 323,
-    "contact@oneclickname.com": 284
+    "contact@oneclickname.com": 285
   },
   "top_registrant_phones": {
-    "9-12-15-12-15-22": 3918,
-    "9-18-15-12-9": 2084,
-    "+62-123-8888-8989": 1974,
-    "+55-11-98765-4321": 1816,
-    "1-40-40-40-40-0": 1741,
-    "6-15-11-19-11-5": 1720,
+    "9-12-15-12-15-22": 3984,
+    "9-18-15-12-9": 2102,
+    "+62-123-8888-8989": 1988,
+    "+55-11-98765-4321": 1815,
+    "1-40-40-40-40-0": 1738,
+    "6-15-11-19-11-5": 1721,
     "+55-11-8888-8888": 1571,
-    "6-12-12-16-14": 1549,
-    "0-12-12-12-12-0": 1487,
-    "0-96-48-48-0": 1215
+    "6-12-12-16-14": 1553,
+    "0-12-12-12-12-0": 1490,
+    "0-96-48-48-0": 1211
   },
-  "serial_email_count": 1299,
+  "serial_email_count": 1302,
   "brand_heatmap": {
     "login": 11569,
-    "support": 6378,
-    "crypto": 5986,
-    "secure": 5868,
-    "connect": 5759,
-    "trust": 5751,
-    "official": 4346,
-    "account": 4032,
-    "farm": 3484,
-    "bridge": 3238,
-    "claim": 3176,
-    "update": 3127,
-    "vault": 2422,
-    "wallet": 2115,
-    "token": 1981,
-    "verify": 1764,
-    "mint": 1551,
-    "nft": 1511,
-    "coinbase": 1462,
-    "bitcoin": 1433
+    "support": 6376,
+    "crypto": 5992,
+    "secure": 5863,
+    "connect": 5767,
+    "trust": 5758,
+    "official": 4354,
+    "account": 4034,
+    "farm": 3485,
+    "bridge": 3249,
+    "claim": 3169,
+    "update": 3136,
+    "vault": 2432,
+    "wallet": 2111,
+    "token": 1978,
+    "verify": 1766,
+    "mint": 1546,
+    "nft": 1509,
+    "coinbase": 1461,
+    "bitcoin": 1431
   },
   "unranked_pct": 99.9,
-  "ranked_count": 6323,
-  "correlation_count": 4096,
+  "ranked_count": 6248,
+  "correlation_count": 4100,
   "correlation_pct": 0.1,
-  "last_updated": "2026-08-23",
-  "latest_reg": "2026-08-21"
+  "last_updated": "2026-08-24",
+  "latest_reg": "2026-08-23"
 }
