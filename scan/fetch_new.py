@@ -369,14 +369,16 @@ if _data_new.exists():
                 'revenue': round(sum(get_price(_l) for _l in set(_lines)), 2),
                 'path': f'data/new/{_yr}/{_mo}/{_d}.txt'}
 for d in dates:
+    _day_txt = data_root / d[:4] / d[5:7] / f'{d}.txt'
+    _day_count = len(set(_day_txt.read_text(encoding='utf-8').splitlines())) if _day_txt.exists() else len(set(r['d'] for r in by_date[d]))
     _disk_days[d] = {
-        'date': d, 'count': len(set(r['d'] for r in by_date[d])),
+        'date': d, 'count': _day_count,
         'revenue': day_revenue(by_date[d]),
         'path': f'data/new/{d[:4]}/{d[5:7]}/{d}.txt'}
 index_days = sorted(_disk_days.values(), key=lambda x: x['date'])
 index = {
     'days':                   index_days,
-    'total_new_all_time':     len(all_domains),
+    'total_new_all_time':     sum(d['count'] for d in index_days),
     'total_revenue_estimate': round(total_revenue, 2),
     'avg_registration_days':  avg_lifetime,
     'ip_countries':           dict(country_counts.most_common(10)),
