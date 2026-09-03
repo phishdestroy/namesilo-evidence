@@ -35,7 +35,7 @@ print(f"Fetching registrar_id={REGISTRAR_ID} ...")
 params = urllib.parse.urlencode({
     'method':       'download-whois',
     'registrar_id': REGISTRAR_ID,
-    'filter_type':  'all',
+    'filter_type':  'new',
     'token':        TOKEN,
     'dataset_type': 'dataset',
 })
@@ -349,7 +349,9 @@ for month_key, doms in by_month.items():
     (mp / f'{month_key}.txt').write_text('\n'.join(sorted(doms)) + '\n', encoding='utf-8')
 
 # ── all.txt ───────────────────────────────────────────────────────────────────
-Path('data/all.txt').write_text('\n'.join(sorted(all_domains)) + '\n', encoding='utf-8')
+_all_path = Path('data/all.txt')
+_existing_all = set(_all_path.read_text(encoding='utf-8').splitlines()) if _all_path.exists() else set()
+_all_path.write_text('\n'.join(sorted(_existing_all | all_domains)) + '\n', encoding='utf-8')
 
 # ── data/index.json ───────────────────────────────────────────────────────────
 # Build index_days from all TXT files on disk
