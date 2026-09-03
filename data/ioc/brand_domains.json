@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02",
+  "generated": "2026-09-03",
   "keywords": {
     "login": [
       "0123winlogin.com",
@@ -1654,7 +1654,6 @@
       "actiondrivenfarming.news",
       "actiondrivenfarming.org",
       "addedvaluefarm.com",
-      "adidomefarminstitute.com",
       "admafarm.com",
       "adventuresintreasurelandfarm.lat",
       "advicefarm.com",
@@ -1817,7 +1816,8 @@
       "barkerfarmsllc.com",
       "barkingcowfarms.com",
       "barneyfarmsliving.com",
-      "barneysfarmseeds.com"
+      "barneysfarmseeds.com",
+      "batongtradingandfarms.com"
     ],
     "bridge": [
       "1041thebridge.com",
@@ -1880,7 +1880,6 @@
       "aibridgewire.com",
       "aibytebridge.com",
       "aipbridge.info",
-      "airbridgecargologistics.com",
       "airductcleaningambridgepa.com",
       "airductcleaningcambridgema.com",
       "airductcleaningstockbridgega.com",
@@ -2019,7 +2018,8 @@
       "becryphosretailbridge.xyz",
       "bedbridgescrew.org",
       "belverderebridge.com",
-      "bembridgeislandtours.com"
+      "bembridgeislandtours.com",
+      "bembridgesc.net"
     ],
     "update": [
       "06updatelive.xyz",
@@ -2235,7 +2235,6 @@
       "1inchclaims.xyz",
       "2000pinetworkclaim.com",
       "2024helpaccessclaims.info",
-      "2025claimactivity.org",
       "2claimultimaterewardhaven.click",
       "3243-claim.sbs",
       "41kclaimpay.buzz",
@@ -2348,7 +2347,6 @@
       "aussieclaim.info",
       "autaxationclaimcenterserv.org",
       "autaxationclaimcentersv.org",
-      "autaxationonlineclaimcenter.org",
       "auth0claim.online",
       "authorizedrefundclaim.life",
       "auto-accident-claims.com",
@@ -2423,7 +2421,9 @@
       "bnb-claim.sbs",
       "bnbaiclaim.online",
       "boldlyproclaim.email",
-      "boldlyproclaiming.email"
+      "boldlyproclaiming.email",
+      "bonktesdz-claimz.lol",
+      "boopclaimer.xyz"
     ],
     "vault": [
       "0chainvault.live",
@@ -2520,6 +2520,7 @@
       "apexcreditvault.com",
       "apexglobalvault.com",
       "apexnovavaults.com",
+      "apextrustvault.com",
       "apexvault.lol",
       "apexvault.watch",
       "apexvaultmedia.com",
@@ -2624,8 +2625,7 @@
       "bestholidaysurprisevault.info",
       "bestoffervault.xyz",
       "bestwebsecretsvault.com",
-      "bfi-vault.xyz",
-      "bifrost-vault.biz"
+      "bfi-vault.xyz"
     ],
     "wallet": [
       "0securewalletreview.com",
@@ -2678,7 +2678,6 @@
       "altynwallet.info",
       "ambire-wallet.com",
       "ambireweb3wallet.info",
-      "amiwalletcheck.info",
       "aml-wallet.app",
       "aml-wallet.report",
       "aml-walletcheck.com",
@@ -2827,7 +2826,8 @@
       "basewallets.com",
       "basewallets.help",
       "bbnwallet.com",
-      "bchainwallet.ltd"
+      "bchainwallet.ltd",
+      "beaconomywallet.com"
     ],
     "token": [
       "0tokeninvestor.com",
@@ -2860,6 +2860,7 @@
       "accountingbytokens.com",
       "acetokenhub.com",
       "activation-du-token.com",
+      "activity-token.cc",
       "adstokenize01.com",
       "aerotoken.xyz",
       "aesthtoken.com",
@@ -2924,6 +2925,7 @@
       "api-token.services",
       "api-tokenpoc.com",
       "api-tokens.com",
+      "api3bptoken.com",
       "apktoken168.com",
       "app-imtoken.xyz",
       "appletoken.network",
@@ -3027,9 +3029,7 @@
       "bobotoken.info",
       "bodatoken.xyz",
       "bodytoken.com",
-      "bogetoken.xyz",
-      "boinktoken.xyz",
-      "bokitoken.xyz"
+      "bogetoken.xyz"
     ],
     "verify": [
       "001verifyrbcacc0unt1.info",
@@ -3059,6 +3059,7 @@
       "3d-verify.cfd",
       "3dsecureverify.info",
       "3dsverify.sbs",
+      "4569872etsverify.cfd",
       "53-verify-id0-secure.online",
       "53verify-secure0.online",
       "5pointcu-verify.org",
@@ -3146,7 +3147,6 @@
       "appkeyverify.com",
       "appkeyverify.sbs",
       "apple-verify.sbs",
-      "appleid-verify.link",
       "appleverify.sbs",
       "applicationverify.com",
       "apppayverify.help",
@@ -4001,6 +4001,7 @@
       "bitcoin-pundit.com",
       "bitcoin-pundit.net",
       "bitcoin-puppets.com",
+      "bitcoin-qr-generator.com",
       "bitcoin-reichtum.info",
       "bitcoin-reports.com",
       "bitcoin-roulette.com",
@@ -4038,8 +4039,7 @@
       "bitcoin14xbumex.cfd",
       "bitcoin168.net",
       "bitcoin1on1.com",
-      "bitcoin2023.net",
-      "bitcoin2025.pro"
+      "bitcoin2023.net"
     ]
   }
 }
