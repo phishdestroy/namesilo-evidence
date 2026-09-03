@@ -346,7 +346,9 @@ for month_key, doms in by_month.items():
     yr = month_key[:4]
     mp = data_root / yr
     mp.mkdir(parents=True, exist_ok=True)
-    (mp / f'{month_key}.txt').write_text('\n'.join(sorted(doms)) + '\n', encoding='utf-8')
+    _mf = mp / f'{month_key}.txt'
+    _existing_m = set(_mf.read_text(encoding='utf-8').splitlines()) if _mf.exists() else set()
+    _mf.write_text('\n'.join(sorted(_existing_m | doms)) + '\n', encoding='utf-8')
 
 # ── all.txt ───────────────────────────────────────────────────────────────────
 _all_path = Path('data/all.txt')
