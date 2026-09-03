@@ -1,14 +1,14 @@
 {
   "month": "2026-09",
   "generated": "2026-09-03",
-  "total_domains": 5208299,
-  "total_revenue": 37414397.71,
+  "total_domains": 5199349,
+  "total_revenue": 37354190.68,
   "avg_reg_days": 1281,
   "deployment_rate": 59.8,
   "fresh_pct": 0.1,
   "unranked_pct": 99.9,
   "correlation_pct": 0.1,
-  "serial_registrants": 1275,
+  "serial_registrants": 1271,
   "top_tld": "com",
   "top_country": "DE",
   "top_brand": "login"
