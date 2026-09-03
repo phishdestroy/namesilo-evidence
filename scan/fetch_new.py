@@ -35,7 +35,7 @@ print(f"Fetching registrar_id={REGISTRAR_ID} ...")
 params = urllib.parse.urlencode({
     'method':       'download-whois',
     'registrar_id': REGISTRAR_ID,
-    'filter_type':  'new',
+    'filter_type':  'all',
     'token':        TOKEN,
     'dataset_type': 'dataset',
 })
@@ -44,7 +44,7 @@ req = urllib.request.Request(
     headers={'User-Agent': 'PhishDestroy/2.0'}
 )
 try:
-    with urllib.request.urlopen(req, timeout=300) as resp:
+    with urllib.request.urlopen(req, timeout=600) as resp:
         raw = gzip.decompress(resp.read()).decode('utf-8', errors='replace')
 except urllib.error.HTTPError as e:
     body = e.read().decode('utf-8', errors='replace')[:300]
