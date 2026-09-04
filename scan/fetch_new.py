@@ -351,9 +351,7 @@ for month_key, doms in by_month.items():
     _mf.write_text('\n'.join(sorted(_existing_m | doms)) + '\n', encoding='utf-8')
 
 # ── all.txt ───────────────────────────────────────────────────────────────────
-_all_path = Path('data/all.txt')
-_existing_all = set(_all_path.read_text(encoding='utf-8').splitlines()) if _all_path.exists() else set()
-_all_path.write_text('\n'.join(sorted(_existing_all | all_domains)) + '\n', encoding='utf-8')
+Path('data/all.txt').write_text('\n'.join(sorted(all_domains)) + '\n', encoding='utf-8')
 
 # ── data/index.json ───────────────────────────────────────────────────────────
 # Build index_days from all TXT files on disk
