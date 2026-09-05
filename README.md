@@ -39,7 +39,7 @@ All of it is in the record. All of it makes this louder.<br/>
 
 <!-- LIVE_STATS:START -->
 
-> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-09-04`
+> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-09-05`
 
 <table><tr>
 <td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,190,363</code></sub></td>
