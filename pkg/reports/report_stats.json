@@ -1,0 +1,2425 @@
+{
+  "total_namesilo": 5269357,
+  "total_scanned": 3397413,
+  "dead": 2255310,
+  "cloudflare": 363185,
+  "page_types": {
+    "active_content": 504738,
+    "redirect_external": 55458,
+    "empty": 272125,
+    "low_content": 163099,
+    "active_with_forms": 63871,
+    "default_server": 6097,
+    "server_error": 26497,
+    "parking": 21756,
+    "coming_soon": 7712,
+    "not_found": 6549,
+    "for_sale": 8,
+    "redirect_loop": 1204
+  },
+  "parking": {
+    "namesilo": 7438,
+    "godaddy": 2013,
+    "uniregistry": 1392,
+    "sedo": 1273,
+    "dan": 66,
+    "parkingcrew": 61,
+    "above": 12,
+    "afternic": 4
+  },
+  "servers": [
+    [
+      "811e0897f489",
+      328230
+    ],
+    [
+      "c7d46cc45975",
+      126956
+    ],
+    [
+      "d8c33640a2fc",
+      96493
+    ],
+    [
+      "4492f7f3e69c",
+      56242
+    ],
+    [
+      "d035bde8b6a8",
+      51490
+    ],
+    [
+      "0e4ae99dea17",
+      47765
+    ],
+    [
+      "24be2aa9d598",
+      36018
+    ],
+    [
+      "310865488d64",
+      32786
+    ],
+    [
+      "1c774de0c0f0",
+      12731
+    ],
+    [
+      "a91751295583",
+      6732
+    ],
+    [
+      "6c3f896f1852",
+      6362
+    ],
+    [
+      "e871c4ba7b29",
+      5876
+    ],
+    [
+      "73b632656668",
+      4491
+    ],
+    [
+      "795cb9734138",
+      3794
+    ],
+    [
+      "a490dd933f0a",
+      3108
+    ]
+  ],
+  "tlds": [
+    [
+      ".com",
+      75330
+    ],
+    [
+      ".org",
+      71804
+    ],
+    [
+      ".sbs",
+      67950
+    ],
+    [
+      ".net",
+      49140
+    ],
+    [
+      ".xyz",
+      34037
+    ],
+    [
+      ".info",
+      33945
+    ],
+    [
+      ".link",
+      24211
+    ],
+    [
+      ".rest",
+      11299
+    ],
+    [
+      ".wiki",
+      10866
+    ],
+    [
+      ".lat",
+      10191
+    ],
+    [
+      ".top",
+      7942
+    ],
+    [
+      ".pro",
+      7822
+    ],
+    [
+      ".help",
+      6912
+    ],
+    [
+      ".life",
+      5955
+    ],
+    [
+      ".hair",
+      4197
+    ],
+    [
+      ".lol",
+      4115
+    ],
+    [
+      ".mom",
+      3329
+    ],
+    [
+      ".work",
+      3308
+    ],
+    [
+      ".vip",
+      3296
+    ],
+    [
+      ".icu",
+      3265
+    ]
+  ],
+  "top_title_words": {
+    "redirecting...": 117162,
+    "just": 71119,
+    "moment...": 70863,
+    "game": 24161,
+    "online": 20739,
+    "dengan": 9865,
+    "home": 7505,
+    "please": 7486,
+    "bonus": 6660,
+    "91jq\u5c31\u8981\u6fc0\u60c5": 6188,
+    "\u9632\u5c4f\u853d\u5730\u5740\u767c\u5e03\u9801": 6188,
+    "\u8acb\u52a0\u5165\u6536\u85cf\u593e": 6188,
+    "992kp\u5feb\u6a02\u770b\u7247": 6160,
+    "slot": 6053,
+    "paling": 5895,
+    "with": 5758,
+    "situs": 5651,
+    "cloudflare": 5386,
+    "jackpot": 5190,
+    "cuan": 5067,
+    "casino": 4994,
+    "\u8bf7\u9a8c\u8bc1...": 4981,
+    "verify...": 4981,
+    "besar": 4722,
+    "digital": 4687,
+    "gacor": 4450,
+    "games": 4302,
+    "main": 4125,
+    "gaming": 4107,
+    "platform": 3960
+  },
+  "top_clusters": [
+    {
+      "hash": "428694214",
+      "count": 5151,
+      "sample": [
+        {
+          "domain": "18jms.sbs",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "ccjapian.sbs",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "hsh9.hair",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "hxyy.hair",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "seaige.hair",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "nswav30g.xyz",
+          "type": "redirect_external",
+          "title": "Attention Required! | Cloudflare",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "redirect_external": 2607,
+        "empty": 2115,
+        "low_content": 429
+      }
+    },
+    {
+      "hash": "-606577425",
+      "count": 3915,
+      "sample": [
+        {
+          "domain": "91jq157jq.work",
+          "type": "active_content",
+          "title": "91JQ\u5c31\u8981\u6fc0\u60c5 - \u9632\u5c4f\u853d\u5730\u5740\u767c\u5e03\u9801 \u8acb\u52a0\u5165\u6536\u85cf\u593e",
+          "parking": ""
+        },
+        {
+          "domain": "91jq178jq.work",
+          "type": "active_content",
+          "title": "91JQ\u5c31\u8981\u6fc0\u60c5 - \u9632\u5c4f\u853d\u5730\u5740\u767c\u5e03\u9801 \u8acb\u52a0\u5165\u6536\u85cf\u593e",
+          "parking": ""
+        },
+        {
+          "domain": "91jq186jq.work",
+          "type": "active_content",
+          "title": "91JQ\u5c31\u8981\u6fc0\u60c5 - \u9632\u5c4f\u853d\u5730\u5740\u767c\u5e03\u9801 \u8acb\u52a0\u5165\u6536\u85cf\u593e",
+          "parking": ""
+        },
+        {
+          "domain": "91jq187jq.work",
+          "type": "active_content",
+          "title": "91JQ\u5c31\u8981\u6fc0\u60c5 - \u9632\u5c4f\u853d\u5730\u5740\u767c\u5e03\u9801 \u8acb\u52a0\u5165\u6536\u85cf\u593e",
+          "parking": ""
+        },
+        {
+          "domain": "91jq189jq.work",
+          "type": "active_content",
+          "title": "91JQ\u5c31\u8981\u6fc0\u60c5 - \u9632\u5c4f\u853d\u5730\u5740\u767c\u5e03\u9801 \u8acb\u52a0\u5165\u6536\u85cf\u593e",
+          "parking": ""
+        },
+        {
+          "domain": "91jq191jq.work",
+          "type": "active_content",
+          "title": "91JQ\u5c31\u8981\u6fc0\u60c5 - \u9632\u5c4f\u853d\u5730\u5740\u767c\u5e03\u9801 \u8acb\u52a0\u5165\u6536\u85cf\u593e",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 3822,
+        "empty": 52,
+        "low_content": 39
+      }
+    },
+    {
+      "hash": "-186475843",
+      "count": 3858,
+      "sample": [
+        {
+          "domain": "337bj24.xyz",
+          "type": "active_content",
+          "title": "992kp\u5feb\u6a02\u770b\u7247",
+          "parking": ""
+        },
+        {
+          "domain": "qpp91qpp.xyz",
+          "type": "active_content",
+          "title": "992kp\u5feb\u6a02\u770b\u7247",
+          "parking": ""
+        },
+        {
+          "domain": "qqd8qqd.xyz",
+          "type": "active_content",
+          "title": "992kp\u5feb\u6a02\u770b\u7247",
+          "parking": ""
+        },
+        {
+          "domain": "qqp3qqp.xyz",
+          "type": "active_content",
+          "title": "992kp\u5feb\u6a02\u770b\u7247",
+          "parking": ""
+        },
+        {
+          "domain": "qqz8qqz.xyz",
+          "type": "active_content",
+          "title": "992kp\u5feb\u6a02\u770b\u7247",
+          "parking": ""
+        },
+        {
+          "domain": "39icao.xyz",
+          "type": "active_content",
+          "title": "992kp\u5feb\u6a02\u770b\u7247",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 3738,
+        "empty": 81,
+        "low_content": 32
+      }
+    },
+    {
+      "hash": "1108795842",
+      "count": 3726,
+      "sample": [
+        {
+          "domain": "turangiqjplzn.com",
+          "type": "empty",
+          "title": "Login",
+          "parking": ""
+        },
+        {
+          "domain": "upperhuttqmxplz.com",
+          "type": "empty",
+          "title": "Login",
+          "parking": ""
+        },
+        {
+          "domain": "vertientesmnlpqw.com",
+          "type": "empty",
+          "title": "Login",
+          "parking": ""
+        },
+        {
+          "domain": "wanakazqjplm.com",
+          "type": "empty",
+          "title": "Login",
+          "parking": ""
+        },
+        {
+          "domain": "wellingtonplxqzn.com",
+          "type": "empty",
+          "title": "Login",
+          "parking": ""
+        },
+        {
+          "domain": "whakataneqlmpzn.com",
+          "type": "empty",
+          "title": "Login",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "empty": 3726
+      }
+    },
+    {
+      "hash": "-1901236982",
+      "count": 2798,
+      "sample": [
+        {
+          "domain": "332t332.xyz",
+          "type": "active_content",
+          "title": "nc18\u5ae9\u8349\u5165\u53e3\u9875",
+          "parking": ""
+        },
+        {
+          "domain": "332y332.xyz",
+          "type": "active_content",
+          "title": "nc18\u5ae9\u8349\u5165\u53e3\u9875",
+          "parking": ""
+        },
+        {
+          "domain": "335a335.xyz",
+          "type": "active_content",
+          "title": "nc18\u5ae9\u8349\u5165\u53e3\u9875",
+          "parking": ""
+        },
+        {
+          "domain": "335y335.xyz",
+          "type": "active_content",
+          "title": "nc18\u5ae9\u8349\u5165\u53e3\u9875",
+          "parking": ""
+        },
+        {
+          "domain": "336f336.xyz",
+          "type": "active_content",
+          "title": "nc18\u5ae9\u8349\u5165\u53e3\u9875",
+          "parking": ""
+        },
+        {
+          "domain": "336k336.xyz",
+          "type": "active_content",
+          "title": "nc18\u5ae9\u8349\u5165\u53e3\u9875",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 2646,
+        "low_content": 102,
+        "empty": 48
+      }
+    },
+    {
+      "hash": "-1854647327",
+      "count": 2341,
+      "sample": [
+        {
+          "domain": "nego178.com",
+          "type": "active_content",
+          "title": "NEGO178 Trending Simpel Cuan Tukang Buat Panggung Kayu NEGO 178",
+          "parking": ""
+        },
+        {
+          "domain": "bola108.org",
+          "type": "active_content",
+          "title": "BOLA108 Misteri Hutan Cahaya Bulan BOLA 108",
+          "parking": ""
+        },
+        {
+          "domain": "anda89.com",
+          "type": "active_content",
+          "title": "Anda89 | Tempat Bermain untuk Menghindari Kebosanan Anda89",
+          "parking": ""
+        },
+        {
+          "domain": "apidewa99.com",
+          "type": "active_content",
+          "title": "APIDEWA99 Pilihan Cepat Buat Cari Seru APIDEWA99",
+          "parking": ""
+        },
+        {
+          "domain": "bisa77.net",
+          "type": "active_content",
+          "title": "BISA77 Crystal Permainan Cepat Togel Bonus Spesial BISA77",
+          "parking": ""
+        },
+        {
+          "domain": "bisnis69.net",
+          "type": "active_content",
+          "title": "BISNIS69 Titan Rush Scatter Mega Jackpot BISNIS 69",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 2225,
+        "active_with_forms": 59,
+        "redirect_external": 53
+      }
+    },
+    {
+      "hash": "84092912",
+      "count": 2296,
+      "sample": [
+        {
+          "domain": "apace99.com",
+          "type": "active_content",
+          "title": "APACE99 \u00bb APACE 99 Game Eksklusif Bikin Ngiler APACE99",
+          "parking": ""
+        },
+        {
+          "domain": "kompak138.org",
+          "type": "active_content",
+          "title": "KOMPAK138 \u00bb KOMPAK 138 Gerbang Bola Online Makin Bersinar",
+          "parking": ""
+        },
+        {
+          "domain": "mafiabola99.org",
+          "type": "active_content",
+          "title": "MAFIABOLA99 \u00bb MAFIABOLA 99 Pelataran Piala Dunia Bergengsi",
+          "parking": ""
+        },
+        {
+          "domain": "mentos69.org",
+          "type": "active_content",
+          "title": "MENTOS69 \u00bb MENTOS 69 Rute Bola Modern Makin Menggoda",
+          "parking": ""
+        },
+        {
+          "domain": "monata138.org",
+          "type": "active_content",
+          "title": "MONATA138 \u00bb MONATA 138 Kode Emas Penuntun Nasib Cerah",
+          "parking": ""
+        },
+        {
+          "domain": "monata4d.org",
+          "type": "active_content",
+          "title": "MONATA4D \u00bb MONATA 4D Rasi Bintang Penunjuk Arah Cerah",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 2243,
+        "redirect_external": 53
+      }
+    },
+    {
+      "hash": "-143797184",
+      "count": 2278,
+      "sample": [
+        {
+          "domain": "kimmikka.com",
+          "type": "active_content",
+          "title": "Kimmikka Dunia Fantasi Modern Misi Stylish Dan Reward Keren",
+          "parking": ""
+        },
+        {
+          "domain": "puputoto.net",
+          "type": "active_content",
+          "title": "Puputoto Platform Game Taruhan Online Seru Jackpot Besar",
+          "parking": ""
+        },
+        {
+          "domain": "kudawinx.com",
+          "type": "active_content",
+          "title": "Kudawin Ovo Game Seru Dengan Hadiah Besar Tiap Putaran",
+          "parking": ""
+        },
+        {
+          "domain": "lalatwin.com",
+          "type": "active_content",
+          "title": "Lalatwin Game Online Seru Kemenangan Yang Bikin Happy",
+          "parking": ""
+        },
+        {
+          "domain": "borototo.net",
+          "type": "active_content",
+          "title": "Borototo Main Online Santai Yang Sering Bikin Dompet Senyum",
+          "parking": ""
+        },
+        {
+          "domain": "bokepartis.org",
+          "type": "active_content",
+          "title": "Bokep Artis Slot Panas Viral Dengan Jackpot Yang Menarik",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 2244,
+        "redirect_external": 34
+      }
+    },
+    {
+      "hash": "1311399074",
+      "count": 1767,
+      "sample": [
+        {
+          "domain": "pio4d.net",
+          "type": "active_content",
+          "title": "Pio4d : Pio4d Solusi Strategi Angka Paling Jitu",
+          "parking": ""
+        },
+        {
+          "domain": "pio88.net",
+          "type": "active_content",
+          "title": "Pio88 : Pio88 Dominasi Meja Strategi Profit Tinggi",
+          "parking": ""
+        },
+        {
+          "domain": "piototo.net",
+          "type": "active_content",
+          "title": "Piototo : PIOTOTO Markas Strategi Angka Transparan",
+          "parking": ""
+        },
+        {
+          "domain": "politogel.net",
+          "type": "active_content",
+          "title": "Politogel : Politogel Strategi Angka Paling Aman & Nyata",
+          "parking": ""
+        },
+        {
+          "domain": "yang4d.net",
+          "type": "active_content",
+          "title": "Yang4d : Platform Layanan Digital Utama Indonesia",
+          "parking": ""
+        },
+        {
+          "domain": "pasmur.org",
+          "type": "active_content",
+          "title": "Pasmur: Tempat Bermain dengan Pilihan Game Terjangkau",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 1712,
+        "redirect_external": 53,
+        "active_with_forms": 2
+      }
+    },
+    {
+      "hash": "1280084436",
+      "count": 1742,
+      "sample": [
+        {
+          "domain": "ibukota33.org",
+          "type": "active_content",
+          "title": "IBUKOTA33 $ Cara Menghindari Jebakan Nilai Odds Rendah Sportsbook",
+          "parking": ""
+        },
+        {
+          "domain": "ix88.org",
+          "type": "active_content",
+          "title": "IX88 & Rahasia Hitungan Putaran Mesin Slot Mystic Chief Pro",
+          "parking": ""
+        },
+        {
+          "domain": "savaya555.org",
+          "type": "active_with_forms",
+          "title": "SAVAYA555 : Rute Cuan Cepat Dari Slot Deposit Murah Hari IniClear Sear",
+          "parking": ""
+        },
+        {
+          "domain": "bosslot168.net",
+          "type": "active_content",
+          "title": "BOSSLOT168 | Supreme Prestige Agen SBOBET Dengan Odds Modern Berkelas",
+          "parking": ""
+        },
+        {
+          "domain": "dewi168login.com",
+          "type": "active_content",
+          "title": "DEWI168 ? Luxury Orbit Agen Bola Resmi Dengan Pasaran Liga Terlengkap",
+          "parking": ""
+        },
+        {
+          "domain": "dewi808slot.com",
+          "type": "active_content",
+          "title": "DEWI808 | Prestige Diamond Link Judi Bola Dengan Peluang Menang Stabil",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 1143,
+        "active_with_forms": 559,
+        "redirect_external": 40
+      }
+    },
+    {
+      "hash": "661119750",
+      "count": 1697,
+      "sample": [
+        {
+          "domain": "zidan123.com",
+          "type": "active_content",
+          "title": "Zidan123 | Zidan 123 Kalahkan Player Lain & Ambil Power Mereka",
+          "parking": ""
+        },
+        {
+          "domain": "jiwa4d.net",
+          "type": "active_content",
+          "title": "JIWA4D | JIWA 4D Aplikasi Game Global Banyak Member Aktif 2026",
+          "parking": ""
+        },
+        {
+          "domain": "made4d.net",
+          "type": "active_content",
+          "title": "Made4D | Made 4D Aplikasi Game Terkemuka Dapat Menghibur",
+          "parking": ""
+        },
+        {
+          "domain": "gio4d.org",
+          "type": "active_content",
+          "title": "Gio4D | Game Yang Penuh Dengan Maxwin Dan Paling Top Di Asia",
+          "parking": ""
+        },
+        {
+          "domain": "luxury178.org",
+          "type": "active_content",
+          "title": "LUXURY178 | LUXURY 178 Tempat Berbagai Macam Game Online",
+          "parking": ""
+        },
+        {
+          "domain": "man988.org",
+          "type": "active_content",
+          "title": "MAN988 - MAN 988 Jelajahi Gaming Hadiah Cair Cuan Terbanyak",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 1656,
+        "redirect_external": 41
+      }
+    },
+    {
+      "hash": "2072365914",
+      "count": 1518,
+      "sample": [
+        {
+          "domain": "csav4.help",
+          "type": "redirect_external",
+          "title": "360\u5bfc\u822a--\u4e3b\u9875",
+          "parking": ""
+        },
+        {
+          "domain": "dahaiav5.help",
+          "type": "redirect_external",
+          "title": "360\u5bfc\u822a--\u4e3b\u9875",
+          "parking": ""
+        },
+        {
+          "domain": "ggmt7.skin",
+          "type": "redirect_external",
+          "title": "360\u5bfc\u822a--\u4e3b\u9875",
+          "parking": ""
+        },
+        {
+          "domain": "hchs2.skin",
+          "type": "redirect_external",
+          "title": "360\u5bfc\u822a--\u4e3b\u9875",
+          "parking": ""
+        },
+        {
+          "domain": "mmpk5.skin",
+          "type": "redirect_external",
+          "title": "360\u5bfc\u822a--\u4e3b\u9875",
+          "parking": ""
+        },
+        {
+          "domain": "skyw2.skin",
+          "type": "redirect_external",
+          "title": "360\u5bfc\u822a--\u4e3b\u9875",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "redirect_external": 1416,
+        "active_with_forms": 102
+      }
+    },
+    {
+      "hash": "385780157",
+      "count": 1487,
+      "sample": [
+        {
+          "domain": "kompas33.net",
+          "type": "active_content",
+          "title": "KOMPAS33 : KOMPAS 33 Main Game Ini, Scatter Meledak Terus!",
+          "parking": ""
+        },
+        {
+          "domain": "lunar78.net",
+          "type": "active_content",
+          "title": "Lunar78 : Lunar 78 Spin Legal vs Ilegal, Apa Bedanya?",
+          "parking": ""
+        },
+        {
+          "domain": "lunar89.net",
+          "type": "active_content",
+          "title": "LUNAR89 : LUNAR 89 Game Online yang Gak Kenal Batas Umur",
+          "parking": ""
+        },
+        {
+          "domain": "mentogel.net",
+          "type": "active_content",
+          "title": "MenTogel : Conquest Digital Baru Raih Dominasi Global",
+          "parking": ""
+        },
+        {
+          "domain": "demen888.com",
+          "type": "active_content",
+          "title": "Demen888 : Demen 888 Perkembangan Voice Chat Game Online",
+          "parking": ""
+        },
+        {
+          "domain": "kampung123.net",
+          "type": "active_content",
+          "title": "KAMPUNG123 : KAMPUNG 123 Naga Bersinar Muncul Untung",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 1438,
+        "redirect_external": 49
+      }
+    },
+    {
+      "hash": "59565267",
+      "count": 1436,
+      "sample": [
+        {
+          "domain": "bola212.org",
+          "type": "active_content",
+          "title": "BOLA212 Game Favorit Lagi Naik Daun",
+          "parking": ""
+        },
+        {
+          "domain": "bola3388.org",
+          "type": "active_content",
+          "title": "BOLA3388 | BOLA 3388 Gen Z Smart Slots For Brain Training BOLA3388",
+          "parking": ""
+        },
+        {
+          "domain": "akbar888.com",
+          "type": "active_content",
+          "title": "AKBAR888 Main Praktis Raih Jackpot Impian AKBAR 888",
+          "parking": ""
+        },
+        {
+          "domain": "aliran88.com",
+          "type": "active_content",
+          "title": "Aliran88 Game Populer Temani Hari Ceria Aliran 88",
+          "parking": ""
+        },
+        {
+          "domain": "aliran999.com",
+          "type": "active_content",
+          "title": "Aliran999 Pilihan Seru Bonus Datang Berturut Aliran999",
+          "parking": ""
+        },
+        {
+          "domain": "jiwa22.net",
+          "type": "active_content",
+          "title": "JIWA22 Achieve Wins with Every Step in Online Games JIWA 22",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 1404,
+        "redirect_external": 28,
+        "active_with_forms": 3
+      }
+    },
+    {
+      "hash": "-679793015",
+      "count": 1423,
+      "sample": [
+        {
+          "domain": "hongkongqq.org",
+          "type": "active_content",
+          "title": "HONGKONGQQ \u2b50 Streaming Game Grafik Ultra Bebas Buffer Instan",
+          "parking": ""
+        },
+        {
+          "domain": "asahan69.net",
+          "type": "active_content",
+          "title": "ASAHAN69 > Kurang? ASAHAN69 Pertajam Skill Lu Biar Gampang JP",
+          "parking": ""
+        },
+        {
+          "domain": "bangka69.net",
+          "type": "active_content",
+          "title": "BANGKA69 | 69 Pusat Game Paling Meta Trend Agen Hiburan 2026",
+          "parking": ""
+        },
+        {
+          "domain": "bantu188.net",
+          "type": "active_content",
+          "title": "BANTU188 | Solusi Darurat Penyelamat Saldo Dompet BANTU188",
+          "parking": ""
+        },
+        {
+          "domain": "barangslot.net",
+          "type": "active_content",
+          "title": "BarangSlot \ud83c\udf38 Link Tutorial Barang Slot kontes Edit Hadiah Pulsa",
+          "parking": ""
+        },
+        {
+          "domain": "barokah69.net",
+          "type": "active_content",
+          "title": "Barokah69 \ud83c\udf38 Link Teka-Teki Misteri Barokah 69 Dunia Fantasi",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 1395,
+        "redirect_external": 22,
+        "parking": 5
+      }
+    },
+    {
+      "hash": "-1907179084",
+      "count": 1396,
+      "sample": [
+        {
+          "domain": "popiah77.info",
+          "type": "active_content",
+          "title": "Popiah77 # Gacor Online Site That Is Easily Accessible from Any Device",
+          "parking": ""
+        },
+        {
+          "domain": "betdice.org",
+          "type": "active_content",
+          "title": "BETDICE | Try This Games You Can Get Daily Bonuses!",
+          "parking": ""
+        },
+        {
+          "domain": "bethana.org",
+          "type": "active_content",
+          "title": "BETHANA | Best Gaming Site Of Century That Invites Players Back",
+          "parking": ""
+        },
+        {
+          "domain": "candawin.org",
+          "type": "active_content",
+          "title": "CANDAWIN | Black Scatter Gaming That Helps Players Read Momentum",
+          "parking": ""
+        },
+        {
+          "domain": "ceo33.org",
+          "type": "active_content",
+          "title": "CEO33 | Black Scatter Game Focus On The Playing Process",
+          "parking": ""
+        },
+        {
+          "domain": "liverpoolbet.net",
+          "type": "active_content",
+          "title": "LIVERPOOLBET | Best Offline RPG Games LIVERPOOL BET Featuring Long And",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 1359,
+        "redirect_external": 35,
+        "active_with_forms": 2
+      }
+    },
+    {
+      "hash": "-1849004702",
+      "count": 1339,
+      "sample": [
+        {
+          "domain": "1k9s7b0y.vip",
+          "type": "empty",
+          "title": "Random Redirect Page",
+          "parking": ""
+        },
+        {
+          "domain": "2k9m7s8x.vip",
+          "type": "empty",
+          "title": "Random Redirect Page",
+          "parking": ""
+        },
+        {
+          "domain": "7k5n8x6b.vip",
+          "type": "empty",
+          "title": "Random Redirect Page",
+          "parking": ""
+        },
+        {
+          "domain": "8s7y9x6n.vip",
+          "type": "empty",
+          "title": "Random Redirect Page",
+          "parking": ""
+        },
+        {
+          "domain": "9w8b7s2a.vip",
+          "type": "empty",
+          "title": "Random Redirect Page",
+          "parking": ""
+        },
+        {
+          "domain": "c5m2w3x9.vip",
+          "type": "empty",
+          "title": "Random Redirect Page",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "empty": 1339
+      }
+    },
+    {
+      "hash": "715096239",
+      "count": 1335,
+      "sample": [
+        {
+          "domain": "murad3.com",
+          "type": "active_content",
+          "title": "Murad3 | Murad 3 Meberi Sejarah Mengsankan Bermain Game 2026",
+          "parking": ""
+        },
+        {
+          "domain": "vvn111.com",
+          "type": "active_content",
+          "title": "Vvn111 | Vvn 111 Aplikasi Games Online Terbaik Di Indonesia 2025",
+          "parking": ""
+        },
+        {
+          "domain": "detik238.net",
+          "type": "active_content",
+          "title": "DETIK238 | DETIK 238 Game Memberikan Bonus Deposit Terbesar",
+          "parking": ""
+        },
+        {
+          "domain": "mimi30.net",
+          "type": "active_content",
+          "title": "Mimi30 | Mimi 30 Platform Game Online Tergacor Di Indonesia 2025",
+          "parking": ""
+        },
+        {
+          "domain": "claude123.org",
+          "type": "active_content",
+          "title": "CLAUDE123 | CLAUDE 123 Game Memberikan Keuntungan Stabil",
+          "parking": ""
+        },
+        {
+          "domain": "jakarta89.org",
+          "type": "active_content",
+          "title": "JAKARTA89 | JAKARTA 89 Join Situs Paling Gacor Terpercaya Boy",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 1303,
+        "redirect_external": 32
+      }
+    },
+    {
+      "hash": "1198047028",
+      "count": 1334,
+      "sample": [
+        {
+          "domain": "love-vacation.top",
+          "type": "active_with_forms",
+          "title": "Home - LoveVacation",
+          "parking": ""
+        },
+        {
+          "domain": "share-a-cause.org",
+          "type": "active_content",
+          "title": "ShareACause \u2013 Connecting People Who Care",
+          "parking": ""
+        },
+        {
+          "domain": "shcl.org",
+          "type": "active_content",
+          "title": "Spring Hill Civic League |",
+          "parking": ""
+        },
+        {
+          "domain": "5538666.xyz",
+          "type": "active_content",
+          "title": "\u4eba\u95f4\u6b63\u9053",
+          "parking": ""
+        },
+        {
+          "domain": "thecasestudy.org",
+          "type": "active_content",
+          "title": "TheCaseStudy.org",
+          "parking": ""
+        },
+        {
+          "domain": "frogpodai.com",
+          "type": "active_content",
+          "title": "Home - Frog Pod AI",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_with_forms": 678,
+        "active_content": 527,
+        "redirect_external": 61
+      }
+    },
+    {
+      "hash": "1420087666",
+      "count": 1243,
+      "sample": [
+        {
+          "domain": "332666.xyz",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "333152.xyz",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "333269.xyz",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "333ck.xyz",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "335032.xyz",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "335039.xyz",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "empty": 1243
+      }
+    },
+    {
+      "hash": "763918826",
+      "count": 1164,
+      "sample": [
+        {
+          "domain": "china21a.com",
+          "type": "active_content",
+          "title": "CHINA21 \u00bb Hub Resmi Akses Server Pusat Pelayanan Terbaik Di Asia",
+          "parking": ""
+        },
+        {
+          "domain": "china888a.com",
+          "type": "active_content",
+          "title": "CHINA888 \u00bb Destinasi Utama Penggemar Tantangan Digital Anti Rungkad",
+          "parking": ""
+        },
+        {
+          "domain": "china88a.com",
+          "type": "active_content",
+          "title": "CHINA88 \u00bb Link Cadangan Resmi Bebas Gangguan Koneksi Sepanjang Hari",
+          "parking": ""
+        },
+        {
+          "domain": "crown-128.com",
+          "type": "active_content",
+          "title": "CROWN128 : Fokus Jepeh | Target Menang Paling Ampuh Hari Ini",
+          "parking": ""
+        },
+        {
+          "domain": "crown-4d.com",
+          "type": "active_content",
+          "title": "CROWN4D : Arena Menang | Nikmati Keuntungan Igaming Super 2026",
+          "parking": ""
+        },
+        {
+          "domain": "crown777a.com",
+          "type": "active_content",
+          "title": "CROWN777 : Jalan Pintas | Wujudkan Impian Menang Besar Tepat",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_content": 1019,
+        "active_with_forms": 131,
+        "redirect_external": 9
+      }
+    },
+    {
+      "hash": "2073998484",
+      "count": 1108,
+      "sample": [
+        {
+          "domain": "xy9185.top",
+          "type": "redirect_external",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "xy8105.top",
+          "type": "redirect_external",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "xy6024.top",
+          "type": "redirect_external",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "xy5486.top",
+          "type": "redirect_external",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "xy0843.top",
+          "type": "redirect_external",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "xy9531.top",
+          "type": "redirect_external",
+          "title": "",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "redirect_external": 1108
+      }
+    },
+    {
+      "hash": "-1514530187",
+      "count": 1074,
+      "sample": [
+        {
+          "domain": "mk734.xyz",
+          "type": "redirect_external",
+          "title": "Just a moment...",
+          "parking": ""
+        },
+        {
+          "domain": "mk735.xyz",
+          "type": "redirect_external",
+          "title": "Just a moment...",
+          "parking": ""
+        },
+        {
+          "domain": "gdian573.xyz",
+          "type": "redirect_external",
+          "title": "Just a moment...",
+          "parking": ""
+        },
+        {
+          "domain": "mk682.xyz",
+          "type": "redirect_external",
+          "title": "Just a moment...",
+          "parking": ""
+        },
+        {
+          "domain": "mk683.xyz",
+          "type": "redirect_external",
+          "title": "Just a moment...",
+          "parking": ""
+        },
+        {
+          "domain": "51md72.xyz",
+          "type": "redirect_external",
+          "title": "Just a moment...",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "redirect_external": 1064,
+        "active_content": 10
+      }
+    },
+    {
+      "hash": "-668758613",
+      "count": 1053,
+      "sample": [
+        {
+          "domain": "cw0ws.info",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "dgp6z.info",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "dnc4k.info",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "tsqpi.net",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "wjuqb.net",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        },
+        {
+          "domain": "crhm.info",
+          "type": "empty",
+          "title": "",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "empty": 1053
+      }
+    },
+    {
+      "hash": "371688084",
+      "count": 1018,
+      "sample": [
+        {
+          "domain": "batara8.net",
+          "type": "active_content",
+          "title": "BATARA8 : Platform Modern Penghasil Reward Spektakuler Member Aktif",
+          "parking": ""
+        },
+        {
+          "domain": "boga8.net",
+          "type": "active_content",
+          "title": "BOGA8 ^ Bikin Rutinitas Lebih Berwarna dengan Game Digital",
+          "parking": ""
+        },
+        {
+          "domain": "haha168slot.net",
+          "type": "active_with_forms",
+          "title": "HAHA168 -_- Petualangan Seru Dalam Game Dengan Hadiah MenggiurkanClear",
+          "parking": ""
+        },
+        {
+          "domain": "sniper138link.net",
+          "type": "active_with_forms",
+          "title": "SNIPER138 \u2937 Nikmati Setiap Momen Bermain dengan Atmosfer Seru dan Pelu",
+          "parking": ""
+        },
+        {
+          "domain": "surgaslot99.net",
+          "type": "active_content",
+          "title": "SURGASLOT99 | Strategi Menang Mudah di Game Online Terpopuler Tahun In",
+          "parking": ""
+        },
+        {
+          "domain": "surya128.net",
+          "type": "active_content",
+          "title": "SURYA128 >.< Evolusi Desain Permainan Modern Menuju Kemenangan Spektak",
+          "parking": ""
+        }
+      ],
+      "types": {
+        "active_with_forms": 527,
+        "active_content": 415,
+        "parking": 30
+      }
+    }
+  ],
+  "featured_domains": {
+    "active_content": [
+      {
+        "domain": "china21a.com",
+        "page_type": "active_content",
+        "title": "CHINA21 \u00bb Hub Resmi Akses Server Pusat Pelayanan Terbaik Di Asia",
+        "word_count": 2155,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://china21a.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": 763918826
+      },
+      {
+        "domain": "china66a.com",
+        "page_type": "active_content",
+        "title": "China66 : Mantap Bro! China66 Bagi Trik Aztec Gems 100% Valid",
+        "word_count": 728,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://china66a.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": 286138018
+      },
+      {
+        "domain": "china777a.com",
+        "page_type": "active_content",
+        "title": "China777 | Mau Profit Super Cepat? China777 Hoky X1000 Beruntun",
+        "word_count": 711,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://china777a.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": 286138018
+      },
+      {
+        "domain": "china888a.com",
+        "page_type": "active_content",
+        "title": "CHINA888 \u00bb Destinasi Utama Penggemar Tantangan Digital Anti Rungkad",
+        "word_count": 2152,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://china888a.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": 763918826
+      },
+      {
+        "domain": "china88a.com",
+        "page_type": "active_content",
+        "title": "CHINA88 \u00bb Link Cadangan Resmi Bebas Gangguan Koneksi Sepanjang Hari",
+        "word_count": 2146,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://china88a.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": 763918826
+      },
+      {
+        "domain": "cincin-4d.com",
+        "page_type": "active_content",
+        "title": "CINCIN4D \u00bb Website Pelopor Taruhan Virtual Tercepat Di Dunia",
+        "word_count": 2152,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://cincin-4d.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "cincin-99.com",
+        "page_type": "active_content",
+        "title": "CINCIN99 \u00bb Pusat Informasi Pola Gacor Dan Jam Main Paling Jitu",
+        "word_count": 2161,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://cincin-99.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "cipung222.com",
+        "page_type": "active_content",
+        "title": "Cipung222: Gacor Kali! Cipung222 Gebrakan Jp Beruntun Paling Epic",
+        "word_count": 2176,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://cipung222.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "cipung555.com",
+        "page_type": "active_content",
+        "title": "Cipung555 - New Link! Betting Prediksi Parlay Lengkap Akurat 100%",
+        "word_count": 2173,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://cipung555.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "cipung87.com",
+        "page_type": "active_content",
+        "title": "CIPUNG87 - Gak Lawan! CIPUNG87 Dominasi Kemenangan Telak Disini",
+        "word_count": 2173,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://cipung87.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "cipung89.com",
+        "page_type": "active_content",
+        "title": "Cipung89 - Mimpi Sultan! Cipung89 Jadi Tangga Kemenangan Jutawan",
+        "word_count": 710,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://cipung89.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "cipung999.com",
+        "page_type": "active_content",
+        "title": "Cipung999 - Dewa Slot! Cipung999 beri Kekuatan Penghancur Scatter",
+        "word_count": 2173,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://cipung999.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "clearstudioapp.com",
+        "page_type": "active_content",
+        "title": "Chiken",
+        "word_count": 684,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://clearstudioapp.com",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "coin-333.com",
+        "page_type": "active_content",
+        "title": "COIN333 : Detik Jepeh | Sensasi Main Seru Raih Cuan Tinggi",
+        "word_count": 6085,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://coin-333.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "coin-98.com",
+        "page_type": "active_content",
+        "title": "COIN98 : Sumber Profit | Inovasi Menang Cepat Setiap Waktu",
+        "word_count": 6068,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://coin-98.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "crown-128.com",
+        "page_type": "active_content",
+        "title": "CROWN128 : Fokus Jepeh | Target Menang Paling Ampuh Hari Ini",
+        "word_count": 6091,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://crown-128.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": 763918826
+      },
+      {
+        "domain": "crown-4d.com",
+        "page_type": "active_content",
+        "title": "CROWN4D : Arena Menang | Nikmati Keuntungan Igaming Super 2026",
+        "word_count": 6068,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://crown-4d.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": 763918826
+      },
+      {
+        "domain": "crown-toto.com",
+        "page_type": "active_content",
+        "title": "CROWNTOTO - Akses Pintar | Penghubung Login Tercepat Ke Game",
+        "word_count": 6082,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://crown-toto.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "crown168a.com",
+        "page_type": "active_content",
+        "title": "CROWN168 - Hoki Brutal! CROWN168 Menang Beruntun Gak Ada Lawan",
+        "word_count": 715,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://crown168a.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "crown777a.com",
+        "page_type": "active_content",
+        "title": "CROWN777 : Jalan Pintas | Wujudkan Impian Menang Besar Tepat",
+        "word_count": 6074,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://crown777a.com",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": 763918826
+      }
+    ],
+    "redirect_external": [
+      {
+        "domain": "choosethefloweragency.com",
+        "page_type": "redirect_external",
+        "title": "The Flower Agency | Growth Marketing Agency for Brands in Regulated and Emerging Categories",
+        "word_count": 31036,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "https://theflower.agency/",
+        "server_fp": "b70de7442f28",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "wickedpaedia.com",
+        "page_type": "redirect_external",
+        "title": "wickedpaedia.com - wickedpaedia Resources and Information.",
+        "word_count": 134,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "http://wickedpaedia.com",
+        "server_fp": "d035bde8b6a8",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "wickedpediamaine.com",
+        "page_type": "redirect_external",
+        "title": "wickedpediamaine.com - wickedpediamaine Resources and Information.",
+        "word_count": 131,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "http://wickedpediamaine.com",
+        "server_fp": "d035bde8b6a8",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "wickedpediame.com",
+        "page_type": "redirect_external",
+        "title": "wickedpediame.com - wickedpediame Resources and Information.",
+        "word_count": 131,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "http://wickedpediame.com",
+        "server_fp": "d035bde8b6a8",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "wifehaose.com",
+        "page_type": "redirect_external",
+        "title": "",
+        "word_count": 278,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "http://wifehaose.com",
+        "server_fp": "24be2aa9d598",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "wtdei.com",
+        "page_type": "redirect_external",
+        "title": "wtdei.com - wtdei Resources and Information.",
+        "word_count": 128,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "http://wtdei.com",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "3dchangelife.com",
+        "page_type": "redirect_external",
+        "title": "Best 3D Printed Shoes Store \u2013 3D Change Life Official Store",
+        "word_count": 11598,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "https://3dprinted-shoes.com/",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "peanutballtraining.com",
+        "page_type": "redirect_external",
+        "title": "The Birth Nurse \u2022 Mandy Irby \u2022 Trauma-Informed Birth Nurse Program",
+        "word_count": 6397,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "https://mandyirby.com",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": -1826488420
+      },
+      {
+        "domain": "wyylde.top",
+        "page_type": "redirect_external",
+        "title": "99\u70ed\u6700\u65b0\u5730\u5740\u83b7\u53d6\u8774\u8776\u4f0a\u4eba\u5728\u7ebf\uff5cBBWJapanese\u8d85\u5927\u4e73\uff5c5\u533a\u6210\u4eba\uff5c\u6b27\u7f8e1\u7ea7\u6bdb\uff5c\u7cbe\u54c1\u6b27\u7f8e\u4e2d\u6676\u54c1\u5728\u7ebf\u8d44\u6e9099\u5927\u795e\uff5c\u56fd\u4ea7\u76d7\u64445060",
+        "word_count": 95,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "http://www.wyylde.top/",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": -47597126
+      },
+      {
+        "domain": "rjtotobethong.xyz",
+        "page_type": "redirect_external",
+        "title": "RAJATOTOBET : Agen Togel Judi Online Dan Slot Online Deposit Pulsa",
+        "word_count": 1619,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "https://rjtotobethong.top/",
+        "server_fp": "f1fd27745c90",
+        "favicon_mmh3": 63421062
+      },
+      {
+        "domain": "wtfporn.sbs",
+        "page_type": "redirect_external",
+        "title": "wtfporn.sbs | 502: Bad gateway",
+        "word_count": 85,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "http://wtfporn.sbs",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "radome49.sbs",
+        "page_type": "redirect_external",
+        "title": "\u4e00\u7ad9\u5f0f\u8d44\u6e90\u641c\u7d22\u805a\u5408\u5bfc\u822a",
+        "word_count": 95,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "https://zzurl88.cc/",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": -841694401
+      },
+      {
+        "domain": "turkifsaclub81.sbs",
+        "page_type": "redirect_external",
+        "title": "T\u00fcrk \u0130f\u015fa \u0130zle \u2013 T\u00fcrk \u0130f\u015fa Club - Porno \u0130zle",
+        "word_count": 916,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "https://turkifsaclub133.sbs/",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "turkifsaclub82.sbs",
+        "page_type": "redirect_external",
+        "title": "T\u00fcrk \u0130f\u015fa \u0130zle \u2013 T\u00fcrk \u0130f\u015fa Club - Porno \u0130zle",
+        "word_count": 896,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "https://turkifsaclub133.sbs/",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "turkifsaclub83.sbs",
+        "page_type": "redirect_external",
+        "title": "T\u00fcrk \u0130f\u015fa \u0130zle \u2013 T\u00fcrk \u0130f\u015fa Club - Porno \u0130zle",
+        "word_count": 891,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "https://turkifsaclub133.sbs/",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "turkifsaclub84.sbs",
+        "page_type": "redirect_external",
+        "title": "T\u00fcrk \u0130f\u015fa \u0130zle \u2013 T\u00fcrk \u0130f\u015fa Club - Porno \u0130zle",
+        "word_count": 922,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "https://turkifsaclub133.sbs/",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "wxfrcr.sbs",
+        "page_type": "redirect_external",
+        "title": "",
+        "word_count": 171,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "https://wxfrcr.sbs/",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "w6qv.sbs",
+        "page_type": "redirect_external",
+        "title": "Google",
+        "word_count": 18430,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "https://www.google.com/",
+        "server_fp": "d2fbc4ab5702",
+        "favicon_mmh3": 1509844936
+      },
+      {
+        "domain": "hanime2.sbs",
+        "page_type": "redirect_external",
+        "title": "",
+        "word_count": 178,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "https://www.hanime2.one/",
+        "server_fp": "c7d46cc45975",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "cmhqqlxu.info",
+        "page_type": "redirect_external",
+        "title": "Attention Required! | Cloudflare",
+        "word_count": 154,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "https://guws.vicinara7.info/mall/index.php?partner_id=pt150",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      }
+    ],
+    "active_with_forms": [
+      {
+        "domain": "cookwaris.com",
+        "page_type": "active_with_forms",
+        "title": "Best Cookware Set Reviews 2026 | Cookwaris",
+        "word_count": 4522,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://cookwaris.com/",
+        "server_fp": "4492f7f3e69c",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "crimereportbd24.com",
+        "page_type": "active_with_forms",
+        "title": "Crime Report BD/24",
+        "word_count": 1273,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://crimereportbd24.com",
+        "server_fp": "2b5646e2d841",
+        "favicon_mmh3": 1269758388
+      },
+      {
+        "domain": "crooknit.com",
+        "page_type": "active_with_forms",
+        "title": "Crooknit - Premium Crochet Kits for Beginners & Crafters \u2013 CROOKNIT",
+        "word_count": 18192,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://crooknit.com/",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "hadiahutama.life",
+        "page_type": "active_with_forms",
+        "title": "PLANET77 \u00bb Tampilan Cepat yang Nyaman untuk Semua Perangkat",
+        "word_count": 1134,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://hadiahutama.life",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "revancelynorta.life",
+        "page_type": "active_with_forms",
+        "title": "RevanceLynorta \u2013 Est. 2024 | Legal Services for Seniors, Retirement Law & Personal Support",
+        "word_count": 1088,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://revancelynorta.life/",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": 1064966621
+      },
+      {
+        "domain": "alatqan-almuthaliu.com",
+        "page_type": "active_with_forms",
+        "title": "\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0649\u0629 - \u0634\u0631\u0643\u0629 \u0627\u0644\u0627\u062a\u0642\u0627\u0646 \u0627\u0644\u0645\u062b\u0627\u0644\u064a\u0627\u0644\u0642\u0627\u0626\u0645\u0647\u0628\u062d\u062b\u0627\u0628\u062d\u062b",
+        "word_count": 3121,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://alatqan-almuthaliu.com/",
+        "server_fp": "f0a875fbff0c",
+        "favicon_mmh3": 260141013
+      },
+      {
+        "domain": "pokerasik.com",
+        "page_type": "active_with_forms",
+        "title": "POKERASIK | POKER ASIA Langkah Kecil Menuju Kemenangan Besar di Kubah Slot Futuristik",
+        "word_count": 8261,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://pokerasik.com",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": -1315880147
+      },
+      {
+        "domain": "qq888jp.com",
+        "page_type": "active_with_forms",
+        "title": "QQ888 | Fasilitas Bermain Slot Online Terpercaya dengan Jackpot StabilClear SearchSearchFilter Optio",
+        "word_count": 3955,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://qq888jp.com",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": 1703961065
+      },
+      {
+        "domain": "qunipaozu.com",
+        "page_type": "active_with_forms",
+        "title": "Fashion bags \u2013 Fashion bags",
+        "word_count": 9326,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://qunipaozu.com",
+        "server_fp": "9cfbb10d38e7",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "raffi777hunter.com",
+        "page_type": "active_with_forms",
+        "title": "RAFFI777: Link Situs Slot777 Resmi Terpercaya Gampang Megawin Hari Ini",
+        "word_count": 9349,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://raffi777hunter.com",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "raffi77bet.com",
+        "page_type": "active_with_forms",
+        "title": "RAFFI777 : Jaringan Penyedia Game Terbaik Paling Populer dengan Peluang Menang Nonstop",
+        "word_count": 8885,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://raffi77bet.com",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "noho.top",
+        "page_type": "active_with_forms",
+        "title": "\u5e7b\u60f3ACG",
+        "word_count": 1523,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://noho.top/",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "plbdq.top",
+        "page_type": "active_with_forms",
+        "title": "Home",
+        "word_count": 576,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://plbdq.top",
+        "server_fp": "8cf936307395",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "eastars.top",
+        "page_type": "active_with_forms",
+        "title": "eastars.top - Christmas store",
+        "word_count": 2768,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://eastars.top/",
+        "server_fp": "731e5083a65e",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "yanqijya.top",
+        "page_type": "active_with_forms",
+        "title": "\ufffd\ufffd\u04ed\ufffd\ufffd\ufffd\ufffd CentOS",
+        "word_count": 334,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://yanqijya.top/",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "love-vacation.top",
+        "page_type": "active_with_forms",
+        "title": "Home - LoveVacation",
+        "word_count": 5196,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://love-vacation.top",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": 1198047028
+      },
+      {
+        "domain": "20y.top",
+        "page_type": "active_with_forms",
+        "title": "\u4e00\u7ea7\u9ec4\u8272\u7247\u7247\u00b7\u9ad8h\u6d6a - \u9999\u8549\u4e45\u4e45\u7f51\u548c\u4e45\u4e45\u672c\u9053\u4e45\u4e45\u7efc\u5408\u4f0a\u4eba | 99\u4e45\u4e45er\u70ed\u5728\u8fd9\u91cc\u90fd\u662f\u7cbe\u54c1",
+        "word_count": 1102,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://www.20y.top/",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": -1146885876
+      },
+      {
+        "domain": "fq5.top",
+        "page_type": "active_with_forms",
+        "title": "\u770b\u5168\u8272\u9ec4\u5927\u8272\u9ec4\u5927\u7247\u89c6 - \u554a\u597d\u723d\u597d\u5927\u548c\u7231\u4e3d\u4e1d\u68a6\u6e38\u8fa3\u955c | \u4e45\u4e45\u871c\u6843\u53ca\u9999\u8273h\u90fd\u5e02\u6587",
+        "word_count": 1094,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://www.fq5.top/",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": 777323311
+      },
+      {
+        "domain": "ye4.top",
+        "page_type": "active_with_forms",
+        "title": "**\u7ea7\u6bdb\u7247\u00b7\u7cbe\u54c1\u4e45\u4e45 - \u554a\u8001\u5e08\u55ef\u8f7b\u4e00\u70b9\u5c0f\u8bf4\u548ch\u6587\u5927\u6df1\u8212\u670d\u8981\u8fd8\u8981 | \u8c03\u6559\u5f3a\u884c\u7834\u82deh\u5973\u5973\u53ca\u598d\u598d\u5973\u738b",
+        "word_count": 1140,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://www.ye4.top/",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": 2009407479
+      },
+      {
+        "domain": "c5d.top",
+        "page_type": "active_with_forms",
+        "title": "\u4e45\u4e45\u7cbe\u54c1\u4e45\u00b7\u5ac1\u5230\u4e61\u4e0b - \u670d\u88c5\u5d29\u574f\u548c\u597d\u5927\u597d\u786c\u597d\u60f3\u8981 | \u556a\u556ah\u9ad8\u6587\u5c0f\u8bf4\u53ca91\u5728\u7ebf\u89c6\u5c4f",
+        "word_count": 1124,
+        "parking_service": "",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://www.c5d.top/",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": -1048928904
+      }
+    ],
+    "parking": [
+      {
+        "domain": "fhrl2024.top",
+        "page_type": "parking",
+        "title": "",
+        "word_count": 515,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://fhrl2024.top",
+        "server_fp": "8a184d5788b1",
+        "favicon_mmh3": 1507520509
+      },
+      {
+        "domain": "betgede.top",
+        "page_type": "parking",
+        "title": "Welcome to betgede.top",
+        "word_count": 231,
+        "parking_service": "namesilo",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://www.betgede.top/",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "shanmcafeedesigns.org",
+        "page_type": "parking",
+        "title": "Welcome to shanmcafeedesigns.org",
+        "word_count": 231,
+        "parking_service": "namesilo",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://www.shanmcafeedesigns.org/",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "shareacar.org",
+        "page_type": "parking",
+        "title": "ShareACar.org is for sale",
+        "word_count": 21046,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": true,
+        "final_url": "https://www.59pr.com/name/ShareACar.org",
+        "server_fp": "c7d46cc45975",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "sheetzemployee.org",
+        "page_type": "parking",
+        "title": "Welcome to sheetzemployee.org",
+        "word_count": 231,
+        "parking_service": "namesilo",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://www.sheetzemployee.org/",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "jxmunv.sbs",
+        "page_type": "parking",
+        "title": "",
+        "word_count": 515,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://jxmunv.sbs",
+        "server_fp": "8a184d5788b1",
+        "favicon_mmh3": -101101576
+      },
+      {
+        "domain": "nopanel.sbs",
+        "page_type": "parking",
+        "title": "",
+        "word_count": 515,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://nopanel.sbs",
+        "server_fp": "8a184d5788b1",
+        "favicon_mmh3": -445649484
+      },
+      {
+        "domain": "shaofutj.sbs",
+        "page_type": "parking",
+        "title": "",
+        "word_count": 515,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://shaofutj.sbs",
+        "server_fp": "8a184d5788b1",
+        "favicon_mmh3": 880180177
+      },
+      {
+        "domain": "sjcre.info",
+        "page_type": "parking",
+        "title": "San Joaquin County Home Info",
+        "word_count": 3226,
+        "parking_service": "godaddy",
+        "is_cloudflare": true,
+        "redirected_away": false,
+        "final_url": "https://sjcre.info",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "skillbuildsystems.info",
+        "page_type": "parking",
+        "title": "Welcome to skillbuildsystems.info",
+        "word_count": 231,
+        "parking_service": "namesilo",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://www.skillbuildsystems.info/",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "skillbuildtrainingsystems.info",
+        "page_type": "parking",
+        "title": "Welcome to skillbuildtrainingsystems.info",
+        "word_count": 231,
+        "parking_service": "namesilo",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://www.skillbuildtrainingsystems.info/",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "slavyanin.info",
+        "page_type": "parking",
+        "title": "slavyanin.info",
+        "word_count": 1358,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://slavyanin.info",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": 0
+      },
+      {
+        "domain": "megasuperintelligence.com",
+        "page_type": "parking",
+        "title": "Just a moment...",
+        "word_count": 290,
+        "parking_service": "sedo",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "https://sedo.com/search/details/?partnerid=324561&language=us&domain=megasuperin",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "businessbuzzreport.com",
+        "page_type": "parking",
+        "title": "",
+        "word_count": 515,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://businessbuzzreport.com",
+        "server_fp": "8a184d5788b1",
+        "favicon_mmh3": 1004192420
+      },
+      {
+        "domain": "boemortgages.org",
+        "page_type": "parking",
+        "title": "boemortgages.org",
+        "word_count": 230,
+        "parking_service": "namesilo",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://www.boemortgages.org/",
+        "server_fp": "d8c33640a2fc",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "roboticentry.com",
+        "page_type": "parking",
+        "title": "Just a moment...",
+        "word_count": 279,
+        "parking_service": "sedo",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "https://sedo.com/search/details/?partnerid=324561&language=us&domain=roboticentr",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "roboticspeace.com",
+        "page_type": "parking",
+        "title": "Just a moment...",
+        "word_count": 286,
+        "parking_service": "sedo",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "https://sedo.com/search/details/?partnerid=324561&language=us&domain=roboticspea",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "shoppingrobotic.com",
+        "page_type": "parking",
+        "title": "Just a moment...",
+        "word_count": 288,
+        "parking_service": "sedo",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "https://sedo.com/search/details/?partnerid=324561&language=us&domain=shoppingrob",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "singlerobotics.com",
+        "page_type": "parking",
+        "title": "Just a moment...",
+        "word_count": 296,
+        "parking_service": "sedo",
+        "is_cloudflare": true,
+        "redirected_away": true,
+        "final_url": "https://sedo.com/search/details/?partnerid=324561&language=us&domain=singlerobot",
+        "server_fp": "811e0897f489",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "moviezwap.hair",
+        "page_type": "parking",
+        "title": "",
+        "word_count": 515,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://moviezwap.hair",
+        "server_fp": "8a184d5788b1",
+        "favicon_mmh3": 1960379535
+      }
+    ],
+    "for_sale": [
+      {
+        "domain": "localhousesale.com",
+        "page_type": "for_sale",
+        "title": "localhousesale.com - contact with domain owner | Epik.com",
+        "word_count": 277,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://localhousesale.com/",
+        "server_fp": "7b2471cac870",
+        "favicon_mmh3": -1503728121
+      },
+      {
+        "domain": "logocoffeecup.com",
+        "page_type": "for_sale",
+        "title": "logocoffeecup.com - contact with domain owner | Epik.com",
+        "word_count": 276,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://logocoffeecup.com/",
+        "server_fp": "7b2471cac870",
+        "favicon_mmh3": -1503728121
+      },
+      {
+        "domain": "list-a-car.com",
+        "page_type": "for_sale",
+        "title": "list-a-car.com - contact with domain owner | Epik.com",
+        "word_count": 279,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://list-a-car.com/",
+        "server_fp": "7b2471cac870",
+        "favicon_mmh3": -1503728121
+      },
+      {
+        "domain": "majorwin.com",
+        "page_type": "for_sale",
+        "title": "Intervention | Domain name majorwin.com is for sale. Browse our list of other great available domain",
+        "word_count": 163,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://majorwin.com",
+        "server_fp": "24be2aa9d598",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "lovabet.com",
+        "page_type": "for_sale",
+        "title": "Intervention | Domain name lovabet.com is for sale. Browse our list of other great available domain ",
+        "word_count": 164,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://lovabet.com",
+        "server_fp": "24be2aa9d598",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "lottocade.com",
+        "page_type": "for_sale",
+        "title": "Intervention | Domain name lottocade.com is for sale. Browse our list of other great available domai",
+        "word_count": 163,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "http://lottocade.com",
+        "server_fp": "24be2aa9d598",
+        "favicon_mmh3": ""
+      },
+      {
+        "domain": "betaal.xyz",
+        "page_type": "for_sale",
+        "title": "Betaal.xyz",
+        "word_count": 23,
+        "parking_service": "",
+        "is_cloudflare": false,
+        "redirected_away": false,
+        "final_url": "https://betaal.xyz/",
+        "server_fp": "310865488d64",
+        "favicon_mmh3": ""
+      }
+    ]
+  },
+  "not_scanned": 0,
+  "no_dns": 1871944,
+  "active": 1129114
+}

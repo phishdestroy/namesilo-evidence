@@ -1,0 +1,91 @@
+name: "Victim report — xmrwallet[.]com"
+description: "If you have lost funds to xmrwallet[.]com, you can document your case here. Sensitive details will be triaged privately."
+title: "[Victim] "
+labels: ["victim", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before you submit
+
+        - **Do not post wallet addresses, transaction IDs, or personal contact information in a public Issue.** Use the email path below for sensitive details.
+        - **Direct contact for victims:** [report@phishdestroy.io](mailto:report@phishdestroy.io)
+        - This Issue template captures only what is safe to publish.
+        - Issues with the `victim` label are triaged privately and will not be made publicly visible without your explicit consent.
+
+  - type: input
+    id: approx-date
+    attributes:
+      label: Approximate date of loss
+      description: Month and year is fine. Do not post exact transaction timestamps in a public Issue.
+      placeholder: "March 2024"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: amount-bracket
+    attributes:
+      label: Approximate amount lost
+      description: Bracket only. We do not need exact figures in the public Issue.
+      options:
+        - "Under $1,000"
+        - "$1,000 - $10,000"
+        - "$10,000 - $100,000"
+        - "$100,000 - $1,000,000"
+        - "Over $1,000,000"
+        - "Prefer not to say (will share via email)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contact-method
+    attributes:
+      label: How did you originally find xmrwallet.com?
+      multiple: false
+      options:
+        - "Search engine (Google, Bing, etc.)"
+        - "Social media (Twitter/X, Reddit, etc.)"
+        - "Recommendation from another person or site"
+        - "Advertisement"
+        - "Don't remember"
+        - "Other (will explain via email)"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: actions-taken
+    attributes:
+      label: Actions you have already taken (check all that apply)
+      options:
+        - label: "Filed a police report in my country"
+        - label: "Filed an IC3 (FBI) cybercrime complaint"
+        - label: "Filed an FTC complaint"
+        - label: "Contacted exchange / wallet provider"
+        - label: "Contacted security vendor (Chainalysis, etc.)"
+        - label: "Filed a chargeback or insurance claim"
+        - label: "None of the above yet"
+
+  - type: textarea
+    id: public-detail
+    attributes:
+      label: What is safe to share publicly?
+      description: A brief description of how you encountered xmrwallet.com and what happened. **Do not include wallet addresses, transaction hashes, or personal identifiers.**
+      placeholder: "I downloaded what I thought was the official Monero web wallet. After importing my seed, my entire balance was swept within minutes."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: consent
+    attributes:
+      label: Consent to publish this Issue (after PhishDestroy review)
+      options:
+        - "Yes — once you've redacted any accidental personal info, this Issue can be made public to help other victims find this case."
+        - "No — keep this Issue confidential. I will follow up by email."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Thank you. PhishDestroy Research will follow up by GitHub mention or email within a few days. For urgent cases, contact [report@phishdestroy.io](mailto:report@phishdestroy.io) directly.

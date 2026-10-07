@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+  <defs>
+    <style>
+      @keyframes fadein { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+      @keyframes pulse  { 0%,100% { opacity:1; } 50% { opacity:0.15; } }
+      @keyframes blink  { 0%,100% { opacity:1; } 50% { opacity:0; } }
+      @keyframes scanln { 0% { transform:translateY(-30px); opacity:0; } 5% { opacity:0.35; } 95% { opacity:0.35; } 100% { transform:translateY(680px); opacity:0; } }
+      @keyframes arc1   { from { stroke-dashoffset:1131; } to { stroke-dashoffset:0; } }
+      @keyframes arc2   { from { stroke-dashoffset:880; } to { stroke-dashoffset:0; } }
+      @keyframes arc3   { from { stroke-dashoffset:628; } to { stroke-dashoffset:0; } }
+      @keyframes glow   { 0%,100% { opacity:1; } 50% { opacity:0.6; } }
+      @keyframes slide  { from { opacity:0; transform:translateX(10px); } to { opacity:1; transform:translateX(0); } }
+      @keyframes linein { from { transform:scaleX(0); } to { transform:scaleX(1); } }
+      .lbl { animation:fadein 0.6s ease 0.1s both; }
+      .ttl { animation:fadein 0.7s ease 0.3s both; }
+      .sub { animation:fadein 0.6s ease 0.6s both; }
+      .ln  { animation:linein 0.8s ease 0.5s both; transform-origin:left; }
+      .d1  { animation:pulse 2.8s ease-in-out 0.0s infinite; }
+      .d2  { animation:pulse 2.8s ease-in-out 0.9s infinite; }
+      .d3  { animation:pulse 2.8s ease-in-out 1.8s infinite; }
+      .cur { animation:blink 1.0s step-end infinite; }
+      .scan{ animation:scanln 5s linear 0.8s infinite; }
+      .a1  { animation:arc1 2.2s ease-out 0.2s both; }
+      .a2  { animation:arc2 2.6s ease-out 0.5s both; }
+      .a3  { animation:arc3 3.0s ease-out 0.8s both; }
+      .bar { animation:glow 3s ease-in-out infinite; }
+      .s1  { animation:slide 0.5s ease 0.8s both; }
+      .s2  { animation:slide 0.5s ease 1.0s both; }
+      .s3  { animation:slide 0.5s ease 1.2s both; }
+      .sh  { animation:fadein 0.5s ease 0.7s both; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020609"/>
+      <stop offset="100%" stop-color="#040c15"/>
+    </linearGradient>
+    <linearGradient id="rp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#030810" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#030810" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="cp"><rect width="1280" height="640"/></clipPath>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <g clip-path="url(#cp)" stroke="#0c1e30" stroke-width="1" opacity="0.6">
+    <line x1="128" y1="0" x2="128" y2="640"/><line x1="256" y1="0" x2="256" y2="640"/>
+    <line x1="384" y1="0" x2="384" y2="640"/><line x1="512" y1="0" x2="512" y2="640"/>
+    <line x1="640" y1="0" x2="640" y2="640"/><line x1="768" y1="0" x2="768" y2="640"/>
+    <line x1="896" y1="0" x2="896" y2="640"/><line x1="1024" y1="0" x2="1024" y2="640"/>
+    <line x1="1152" y1="0" x2="1152" y2="640"/>
+    <line x1="0" y1="128" x2="1280" y2="128"/><line x1="0" y1="256" x2="1280" y2="256"/>
+    <line x1="0" y1="384" x2="1280" y2="384"/><line x1="0" y1="512" x2="1280" y2="512"/>
+  </g>
+  <rect x="640" y="0" width="640" height="640" fill="url(#rp)" clip-path="url(#cp)"/>
+  <g clip-path="url(#cp)">
+    <circle class="a1" cx="1230" cy="60" r="180" fill="none" stroke="#c0a060" stroke-opacity="0.18" stroke-width="1.5" stroke-dasharray="1131" stroke-dashoffset="1131"/>
+    <circle class="a2" cx="1230" cy="60" r="140" fill="none" stroke="#c0a060" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="880" stroke-dashoffset="880"/>
+    <circle class="a3" cx="1230" cy="60" r="100" fill="none" stroke="#c0a060" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="628" stroke-dashoffset="628"/>
+  </g>
+  <rect class="scan" x="0" y="-30" width="1280" height="30" fill="url(#sg)" clip-path="url(#cp)"/>
+  <rect class="bar" x="0" y="0" width="6" height="640" fill="#c0a060"/>
+  <circle class="d1" cx="36" cy="160" r="4" fill="#c0a060"/>
+  <circle class="d2" cx="36" cy="320" r="4" fill="#c0a060"/>
+  <circle class="d3" cx="36" cy="480" r="4" fill="#c0a060"/>
+  <text class="lbl" x="80" y="230" font-family="'Courier New',monospace" font-size="18" fill="#c0a060" letter-spacing="8" font-weight="bold">PHISHDESTROY / NAMESILO LLC</text>
+  <text class="ttl" x="72" y="370" font-family="'Courier New',monospace" font-size="104" font-weight="bold" fill="#ddeeff" letter-spacing="2">NAMESILO</text>
+  <rect class="ln" x="80" y="388" width="820" height="3" fill="#c0a060"/>
+  <text class="sub" x="80" y="438" font-family="'Courier New',monospace" font-size="20" fill="#3a6080" letter-spacing="4">REGISTRAR ABUSE INVESTIGATION · IANA #1479<tspan class="cur" fill="#c0a060">_</tspan></text>
+  <text class="sh" x="80" y="510" font-family="'Courier New',monospace" font-size="13" fill="#c0a060" letter-spacing="5" opacity="0.7">INVESTIGATION STATS</text>
+  <g font-family="'Courier New',monospace">
+    <text class="s1" x="80"  y="556" font-size="28" font-weight="bold" fill="#ddeeff">5,269,357</text>
+    <text class="s1" x="80"  y="580" font-size="12" fill="#2a4a60" letter-spacing="2">DOMAINS SCANNED</text>
+    <text class="s2" x="400" y="556" font-size="28" font-weight="bold" fill="#ddeeff">183,419</text>
+    <text class="s2" x="400" y="580" font-size="12" fill="#2a4a60" letter-spacing="2">CONFIRMED MALICIOUS</text>
+    <text class="s3" x="720" y="556" font-size="28" font-weight="bold" fill="#c0a060">87.3%</text>
+    <text class="s3" x="720" y="580" font-size="12" fill="#2a4a60" letter-spacing="2">DEAD OR PARKED</text>
+  </g>
+  <text x="1200" y="620" font-family="'Courier New',monospace" font-size="13" fill="#1a3040" letter-spacing="3" text-anchor="end">PHISHDESTROY · TLP:CLEAR</text>
+</svg>

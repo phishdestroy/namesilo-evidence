@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<title>NameSilo, LLC (IANA #1479) — Registrar Abuse Investigation | PhishDestroy</title>
+<meta name="description" content="Complete zone scan of all 5,269,357 NameSilo domains (March 2026 census). 87.3% dead, no DNS or parked. 183,419 malicious domains behind their own WHOIS privacy. NameSilo publicly defended a $20M Monero drainer and committed to erasing his VirusTotal record. Filed with ICANN March 18, 2026.">
+<meta name="keywords" content="NameSilo abuse, xmrwallet scam, Monero drainer, registrar abuse, ICANN compliance, domain investigation, phishing, PhishDestroy, IANA 1479, namesilo safe, namesilo review 2025 2026, namesilo abuse, namesilo phishing domains, namesilo ignore abuse reports, namesilo fraud, namesilo xmrwallet, namesilo virustotal, namesilo blacklist researchers, namesilo IANA 1479, namesilo NASDAQ URL, namesilo suppress coverage, is namesilo safe, namesilo privacy guardian fraud, namesilo complicity">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PhishDestroy">
+<meta property="og:url" content="https://phishdestroy.github.io/namesilo-evidence/">
+<meta property="og:title" content="NameSilo (IANA #1479) — Registrar Abuse Investigation">
+<meta property="og:description" content="5,269,357 domains scanned (March 2026 census). 87.3% dead, no DNS or parked. 183,419 malicious behind NameSilo's own privacy shield. NameSilo defended a $20M Monero drainer — in writing, on their official account.">
+<meta property="og:image" content="https://phishdestroy.github.io/namesilo-evidence/assets/og-final-investigation.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NameSilo (IANA #1479) — Registrar Abuse Investigation">
+<meta name="twitter:description" content="5.27M domains scanned (March 2026 census). 87.3% dead/no DNS/parked. 204,935 malicious (IOC feed). NameSilo defended a $20M Monero drainer on their official account.">
+<link rel="canonical" href="https://phishdestroy.github.io/namesilo-evidence/">
+<link rel="icon" href="https://phishdestroy.eth.limo/assets/favicon-32x32.png" type="image/png">
+<meta name="llms-txt" content="https://phishdestroy.github.io/namesilo-evidence/llms.txt">
+<style>
+:root{
+  --bg:#000;--s1:#070b12;--s2:#0c1018;--s3:#111720;
+  --bdr:rgba(255,255,255,.08);--bdr2:rgba(255,255,255,.04);
+  --tx:#f0f6fc;--tx2:#8b949e;--tx3:#484f58;
+  --cy:#6ea8d7;--rd:#da3633;--gn:#3fb950;--or:#c0a060;--vi:#8b5cf6;
+  --sb:260px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:14px}
+body{background:var(--bg);color:var(--tx);font-family:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+
+/* ── LAYOUT ── */
+.layout{display:grid;grid-template-columns:var(--sb) minmax(0,1fr);min-height:100vh}
+
+/* ── SIDEBAR ── */
+.sb{position:sticky;top:0;height:100vh;background:var(--bg);padding:20px 14px;overflow-y:auto;border-right:1px solid var(--bdr);scrollbar-width:thin;scrollbar-color:var(--s3) transparent;display:flex;flex-direction:column}
+.brand{padding:0 6px 18px;border-bottom:1px solid var(--bdr);margin-bottom:18px}
+.brand strong{display:block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--cy)}
+.brand span{display:block;margin-top:4px;color:var(--tx2);font-size:11px;text-transform:uppercase;letter-spacing:.04em}
+.brand em{display:block;margin-top:2px;color:var(--tx3);font-size:10px;font-family:"JetBrains Mono",monospace;font-style:normal}
+.nav-g{display:grid;gap:2px}
+.nav-label{font-size:10px;font-weight:700;text-transform:uppercase;color:var(--tx3);padding:10px 6px 3px;letter-spacing:.06em}
+.nav-g a{display:flex;align-items:center;color:var(--tx2);padding:6px 10px;border-radius:3px;font-size:12px;font-family:"JetBrains Mono",monospace;transition:.12s;border-left:2px solid transparent}
+.nav-g a:hover{color:var(--tx);background:var(--s2);border-left-color:var(--bdr)}
+.nav-g a.on{color:var(--cy);background:var(--s1);border-left-color:var(--cy)}
+.sb-footer{margin-top:auto;padding-top:16px;border-top:1px solid var(--bdr)}
+.sb-footer a{display:block;color:var(--tx3);font-size:10px;font-family:"JetBrains Mono",monospace;padding:5px 6px;border-radius:3px;transition:.12s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sb-footer a:hover{color:var(--cy)}
+
+/* ── MAIN ── */
+.main{background:var(--s1);min-width:0}
+
+/* ── HERO ── */
+.hero{position:relative;padding:52px 40px 44px;border-bottom:1px solid var(--bdr);overflow:hidden;background:var(--bg)}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(110,168,215,.13) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 100% 60% at 50% 110%,transparent 55%,#000 100%);pointer-events:none}
+.hero-inner{position:relative;z-index:1}
+.hero-badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.hb{font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:600;padding:3px 10px;border:1px solid;text-transform:uppercase;letter-spacing:.06em}
+.hb.live{color:var(--rd);border-color:rgba(218,54,51,.3);background:rgba(218,54,51,.05)}
+.hb.live::before{content:'● ';animation:blink 2s step-end infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hb.tlp{color:var(--tx2);border-color:var(--bdr)}
+.hb.iana{color:var(--cy);border-color:rgba(110,168,215,.25);background:rgba(110,168,215,.04)}
+.hero h1{font-size:34px;font-weight:300;letter-spacing:-.04em;line-height:1.18;color:var(--tx);margin-bottom:6px}
+.hero h1 strong{font-weight:800}
+.hero-sub{font-size:12px;color:var(--tx3);font-family:"JetBrains Mono",monospace;letter-spacing:.03em;margin-bottom:34px}
+
+/* ── HERO STATS ── */
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border:1px solid var(--bdr);margin-bottom:28px}
+.hs{background:var(--s1);padding:20px 18px;position:relative;overflow:hidden}
+.hs::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px}
+.hs.cy::after{background:var(--cy)}.hs.rd::after{background:var(--rd)}.hs.or::after{background:var(--or)}.hs.vi::after{background:var(--vi)}
+.hs-val{font-size:32px;font-weight:300;font-family:"JetBrains Mono",monospace;line-height:1;margin-bottom:5px}
+.hs.cy .hs-val{color:var(--cy)}.hs.rd .hs-val{color:var(--rd)}.hs.or .hs-val{color:var(--or)}.hs.vi .hs-val{color:var(--vi)}
+.hs-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3)}
+
+/* ── TERMINAL ── */
+.term{background:#000;border:1px solid var(--bdr);font-family:"JetBrains Mono",monospace;font-size:11.5px;line-height:1.7;overflow:hidden}
+.term-bar{background:var(--s2);border-bottom:1px solid var(--bdr);padding:8px 14px;display:flex;align-items:center;gap:7px}
+.td{width:11px;height:11px;border-radius:50%}
+.term-title{font-size:11px;color:var(--tx3);margin-left:6px;flex:1;text-align:center}
+.term-body{padding:18px 22px;overflow-x:auto}
+.term-body pre{white-space:pre;color:var(--tx2);font-size:11.5px}
+.tc{color:var(--tx3)}.tg{color:var(--gn)}.tr{color:var(--rd)}.to{color:var(--or)}.tcy{color:var(--cy)}.tv{color:var(--vi)}.tw{color:var(--tx)}.tdim{color:#2a3140}
+
+/* ── CONTENT ── */
+.content{padding:0 40px 100px}
+
+/* ── SECTION TITLE ── */
+.st{display:flex;align-items:center;gap:12px;margin:44px 0 20px}
+.st h2{font-size:12px;font-weight:600;color:var(--tx);font-family:"JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.07em;white-space:nowrap}
+.st .ln{flex:1;height:1px;background:var(--bdr)}
+
+/* ── KPI ROW ── */
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bdr);border:1px solid var(--bdr);margin-bottom:32px}
+.kpi{background:var(--bg);padding:20px 18px}
+.kpi .lbl{font-size:10px;font-weight:700;text-transform:uppercase;color:var(--tx3);letter-spacing:.06em;margin-bottom:10px}
+.kpi .val{font-size:28px;font-weight:300;font-family:"JetBrains Mono",monospace;line-height:1;margin-bottom:5px}
+.kpi .note{font-size:11px;color:var(--tx2);font-family:"JetBrains Mono",monospace}
+.kpi.c-cy .val{color:var(--cy)}.kpi.c-rd .val{color:var(--rd)}.kpi.c-or .val{color:var(--or)}.kpi.c-gn .val{color:var(--gn)}
+
+/* ── PANEL ── */
+.panel{background:var(--s2);border:1px solid var(--bdr);padding:22px}
+.panel h3{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--tx3);border-bottom:1px solid var(--bdr);padding-bottom:8px;margin-bottom:16px}
+.panel p{font-size:13px;color:var(--tx2);line-height:1.8;margin-bottom:10px}
+.panel p:last-child{margin-bottom:0}
+.panel strong{color:var(--tx);font-weight:600}
+.panel em{font-style:normal;color:var(--or);font-weight:600}
+.hi-rd{color:var(--rd);font-weight:600}
+
+/* ── GRIDS ── */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.g2x1{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+
+/* ── MINI CARDS ── */
+.mc{background:var(--bg);border:1px solid var(--bdr);border-left:2px solid var(--tx3);padding:14px 16px}
+.mc.rd{border-left-color:var(--rd)}.mc.or{border-left-color:var(--or)}.mc.cy{border-left-color:var(--cy)}.mc.gn{border-left-color:var(--gn)}.mc.vi{border-left-color:var(--vi)}
+.mc-lbl{font-size:10px;font-weight:700;text-transform:uppercase;color:var(--tx2);font-family:"JetBrains Mono",monospace;letter-spacing:.04em;margin-bottom:6px;display:block}
+.mc-val{font-size:24px;font-weight:300;font-family:"JetBrains Mono",monospace;line-height:1;display:block}
+.mc.rd .mc-val{color:var(--rd)}.mc.or .mc-val{color:var(--or)}.mc.cy .mc-val{color:var(--cy)}.mc.gn .mc-val{color:var(--gn)}.mc.vi .mc-val{color:var(--vi)}
+.mc-sub{font-size:10px;color:var(--tx3);margin-top:4px;display:block;font-family:"JetBrains Mono",monospace}
+
+/* ── TABLES ── */
+table{width:100%;border-collapse:collapse}
+th{text-align:left;padding:9px 10px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);border-bottom:1px solid var(--bdr);font-family:"JetBrains Mono",monospace}
+td{padding:9px 10px;border-bottom:1px solid var(--bdr2);font-size:12px;vertical-align:middle}
+tbody tr:hover{background:rgba(255,255,255,.015)}
+.nr{text-align:right;font-family:"JetBrains Mono",monospace;color:var(--tx2)}
+.mono{font-family:"JetBrains Mono",monospace;color:var(--cy);font-size:11px}
+.rd-txt{color:var(--rd)}.or-txt{color:var(--or)}.cy-txt{color:var(--cy)}.gn-txt{color:var(--gn)}.vi-txt{color:var(--vi)}
+
+/* ── BARS ── */
+.bar{height:3px;background:var(--s3);margin-top:5px;border-radius:1px;overflow:hidden;width:100%}
+.bar span{display:block;height:100%;border-radius:1px;background:var(--tx3)}
+.bar.rd span{background:var(--rd)}.bar.or span{background:var(--or)}.bar.cy span{background:var(--cy)}.bar.gn span{background:var(--gn)}
+
+/* ── INLINE BADGES ── */
+.b{display:inline-flex;align-items:center;padding:2px 7px;font-size:10px;font-weight:500;font-family:"JetBrains Mono",monospace;letter-spacing:.04em;text-transform:uppercase;border:1px solid transparent;white-space:nowrap}
+.b.rd{background:rgba(218,54,51,.08);color:var(--rd);border-color:rgba(218,54,51,.18)}
+.b.or{background:rgba(192,160,96,.08);color:var(--or);border-color:rgba(192,160,96,.18)}
+.b.cy{background:rgba(110,168,215,.08);color:var(--cy);border-color:rgba(110,168,215,.18)}
+.b.vi{background:rgba(139,92,246,.08);color:var(--vi);border-color:rgba(139,92,246,.18)}
+.b.nt{background:var(--s3);color:var(--tx2);border-color:var(--bdr)}
+
+/* ── CODE ── */
+code{font-family:"JetBrains Mono",monospace;font-size:11px;padding:1px 5px;background:var(--bg);border:1px solid var(--bdr);color:var(--cy)}
+.dom-list{display:flex;flex-wrap:wrap;gap:4px}
+
+/* ── HASH / COPY ── */
+.hash-row{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start;padding:14px 0;border-bottom:1px solid var(--bdr2)}
+.hash-row:last-child{border-bottom:none}
+.hash-name{font-size:12px;font-weight:600;color:var(--tx);margin-bottom:3px}
+.hash-desc{font-size:11px;color:var(--tx2);margin-bottom:3px;line-height:1.6}
+.hash-size{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx3)}
+.hash-rhs{text-align:right;display:flex;flex-direction:column;gap:6px;min-width:0}
+.hash-val{font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--cy);padding:5px 8px;background:rgba(110,168,215,.04);border:1px solid rgba(110,168,215,.1);word-break:break-all;line-height:1.6;max-width:340px;align-self:flex-end}
+.copy-btn{font-family:"JetBrains Mono",monospace;font-size:10px;padding:4px 12px;border:1px solid var(--bdr);background:var(--bg);color:var(--tx3);cursor:pointer;transition:.15s;letter-spacing:.05em;text-transform:uppercase;align-self:flex-end}
+.copy-btn:hover{color:var(--cy);border-color:rgba(110,168,215,.25);background:rgba(110,168,215,.04)}
+.copy-btn.copied{color:var(--gn);border-color:rgba(63,185,80,.3);background:rgba(63,185,80,.05)}
+
+/* ── ALERTS ── */
+.alert{padding:14px 18px;border:1px solid;margin:12px 0;font-size:12px;line-height:1.8}
+.alert.rd{background:rgba(218,54,51,.04);border-color:rgba(218,54,51,.15);border-left:3px solid var(--rd);color:var(--tx2)}
+.alert.rd strong{color:var(--rd)}
+.alert.or{background:rgba(192,160,96,.04);border-color:rgba(192,160,96,.15);border-left:3px solid var(--or);color:var(--tx2)}
+.alert.or strong{color:var(--or)}
+.alert.gn{background:rgba(63,185,80,.04);border-color:rgba(63,185,80,.12);border-left:3px solid var(--gn);color:var(--tx2)}
+.alert.gn strong{color:var(--gn)}
+
+/* ── METHODOLOGY LIST ── */
+.ml{list-style:none;padding:0;margin:0}
+.ml li{padding:6px 0 6px 16px;position:relative;font-size:12px;color:var(--tx2);line-height:1.75;border-bottom:1px solid var(--bdr2)}
+.ml li:last-child{border-bottom:none}
+.ml li::before{content:'';position:absolute;left:0;top:13px;width:5px;height:5px;border-radius:50%;background:var(--tx3)}
+.ml li strong{color:var(--tx)}
+.ml.cy li::before{background:var(--cy)}.ml.rd li::before{background:var(--rd)}
+
+/* ── KW GRID ── */
+.kw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.kw-item{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:var(--bg);border:1px solid var(--bdr);gap:8px}
+.kw-word{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--tx)}
+.kw-cnt{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--tx2);flex-shrink:0}
+.kw-item.rl{border-left:2px solid var(--rd)}.kw-item.ol{border-left:2px solid var(--or)}.kw-item.vl{border-left:2px solid var(--vi)}
+
+/* ── INT NOTICE ── */
+.int-notice{background:rgba(63,185,80,.04);border:1px solid rgba(63,185,80,.15);border-left:2px solid var(--gn);padding:14px 18px;margin-bottom:20px;font-size:12px;color:var(--tx2);line-height:1.8}
+.int-notice strong{color:var(--gn)}
+
+/* ── AUTH GRID ── */
+.auth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.auth{background:var(--bg);border:1px solid var(--bdr);padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+.auth-icon{font-size:20px;flex-shrink:0;margin-top:1px}
+.auth h4{font-size:12px;font-weight:600;color:var(--tx);margin-bottom:4px}
+.auth p{font-size:11px;color:var(--tx2);line-height:1.75}
+.auth a{color:var(--cy);font-family:"JetBrains Mono",monospace;font-size:10px;display:inline-block;margin-top:4px}
+
+/* ── DONUT + LEGEND ── */
+.pop-wrap{display:flex;align-items:center;gap:22px;flex-wrap:wrap;padding:4px 0}
+.donut{position:relative;width:130px;height:130px;flex-shrink:0}
+.donut-ring{width:130px;height:130px;border-radius:50%;background:conic-gradient(#2a3140 0% 35.5%,#1a2030 35.5% 78.3%,#6b7280 78.3% 84.4%,#6ea8d7 84.4% 97.4%,#da3633 97.4% 100%)}
+.donut-hole{position:absolute;inset:27%;border-radius:50%;background:var(--s2);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:600;text-align:center;line-height:1.5;color:var(--tx3)}
+.leg{flex:1;min-width:150px;display:grid;gap:7px}
+.leg-row{display:flex;align-items:center;gap:9px}
+.leg-dot{width:9px;height:9px;border-radius:2px;flex-shrink:0}
+.leg-lbl{font-size:12px;color:var(--tx2);flex:1}
+.leg-val{font-size:12px;font-weight:600;font-family:"JetBrains Mono",monospace;color:var(--tx)}
+
+/* ── FOOTER ── */
+footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.f-l strong{display:block;font-size:12px;font-weight:600;color:var(--cy);margin-bottom:4px}
+.f-l p{font-size:11px;color:var(--tx3);line-height:1.7}
+.f-r a{display:block;font-family:"JetBrains Mono",monospace;font-size:10px;color:var(--tx3);margin-top:3px;transition:.12s}
+.f-r a:hover{color:var(--cy)}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ── MOBILE TOGGLE ── */
+.mob-nav{display:none;position:fixed;top:12px;left:12px;z-index:200;background:var(--s2);border:1px solid var(--bdr);padding:8px 10px;cursor:pointer;font-size:16px;line-height:1;color:var(--tx2)}
+.mob-nav:hover{color:var(--cy)}
+.sb-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:149}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1100px){
+  .layout{grid-template-columns:1fr}
+  .sb{display:none;position:fixed;top:0;left:0;height:100vh;z-index:150;width:260px;transform:translateX(-100%);transition:transform .22s ease}
+  .sb.open{display:flex;transform:translateX(0)}
+  .sb-overlay.open{display:block}
+  .mob-nav{display:flex}
+  .g2x1,.g2,.g3,.g4,.kpi-row,.auth-grid,.kw-grid,.hero-stats{grid-template-columns:1fr}
+  .hero,.content{padding-left:20px;padding-right:20px}
+  .hero{padding-top:52px}
+}
+@media(max-width:600px){
+  .hero h1{font-size:24px}
+  .hash-row{grid-template-columns:1fr}
+  .hash-val,.hash-rhs{max-width:100%;align-self:flex-start}
+  .content{padding-bottom:60px}
+}
+</style>
+<style>
+.hub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:24px 0}
+.hub-card{background:var(--s2);border:1px solid var(--bdr);border-radius:8px;padding:20px 22px;display:flex;flex-direction:column;transition:.15s;text-decoration:none;color:inherit}
+.hub-card:hover{background:var(--s3);border-color:rgba(255,255,255,.15);transform:translateY(-1px)}
+.hub-card.primary{border-color:rgba(110,168,215,.3);background:rgba(110,168,215,.04)}
+.hub-card.danger{border-color:rgba(218,54,51,.3);background:rgba(218,54,51,.04)}
+.hc-icon{font-size:22px;margin-bottom:10px}
+.hc-title{font-size:14px;font-weight:700;margin-bottom:4px;color:var(--tx)}
+.hc-desc{font-size:12px;opacity:.6;line-height:1.5;flex:1;margin-bottom:12px}
+.hc-stat{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--cy);border-top:1px solid var(--bdr);padding-top:8px;margin-top:auto}
+.hc-stat.red{color:var(--rd)}
+.ev-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin:20px 0}
+.ev-card{background:var(--s2);border:1px solid var(--bdr);border-radius:6px;overflow:hidden}
+.ev-card img{width:100%;display:block;opacity:.9;transition:.15s}
+.ev-card img:hover{opacity:1}
+.ev-cap{padding:10px 12px;font-size:11px;opacity:.6;line-height:1.4}
+.tl-row{display:flex;gap:16px;padding:10px 0;border-bottom:1px solid var(--bdr2);font-size:13px;align-items:baseline}
+.tl-date{font-family:"JetBrains Mono",monospace;color:var(--tx3);white-space:nowrap;min-width:90px;font-size:11px}
+.tl-text{line-height:1.5}
+.tl-text strong{color:var(--tx)}
+.lie-grid{display:grid;gap:12px;margin:20px 0}
+.lie-card{background:rgba(218,54,51,.04);border:1px solid rgba(218,54,51,.2);border-radius:6px;padding:16px 18px}
+.lie-claim{font-size:12px;font-family:"JetBrains Mono",monospace;color:var(--tx2);margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid rgba(218,54,51,.15)}
+.lie-fact{font-size:13px;line-height:1.55;opacity:.85}
+.lie-verdict{display:inline-block;margin-top:8px;font-family:"JetBrains Mono",monospace;font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;background:rgba(218,54,51,.15);color:#f88}
+.lie-verdict.ok{background:rgba(63,185,80,.15);color:#3fb950}
+.mirror-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin:16px 0}
+.mirror-card{background:var(--s2);border:1px solid var(--bdr);border-radius:6px;padding:12px 14px}
+.mirror-card a{color:var(--cy);font-size:13px;font-family:"JetBrains Mono",monospace;word-break:break-all;text-decoration:none}
+.mirror-card a:hover{text-decoration:underline}
+.mirror-label{font-size:10px;opacity:.45;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+</style>
+
+  <meta name="twitter:site" content="@Phish_Destroy">
+  <meta name="twitter:image" content="https://phishdestroy.github.io/namesilo-evidence/assets/og-final-investigation.png">
+<style>
+/* ── Visual enhancements ─────────────────────────────── */
+@keyframes pd-pulse {
+  0%,100% { box-shadow: 0 0 0 0 transparent; }
+  50% { box-shadow: 0 0 18px 2px rgba(var(--cy-r,255),var(--cy-g,80),var(--cy-b,80),.22); }
+}
+@keyframes pd-fade-in {
+  from { opacity:0; transform:translateY(8px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes pd-live-blink {
+  0%,100% { opacity:1; }
+  50%      { opacity:.3; }
+}
+.pd-card {
+  transition: box-shadow .25s, border-color .25s, transform .18s;
+}
+.pd-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--cy) !important;
+  box-shadow: 0 0 22px rgba(var(--cy-r,255),var(--cy-g,80),var(--cy-b,80),.18);
+}
+.pd-card.pd-pulse {
+  animation: pd-pulse 2.8s ease-in-out infinite;
+}
+.pd-live-dot {
+  display:inline-block;width:7px;height:7px;border-radius:50%;
+  background:var(--cy);margin-right:6px;vertical-align:middle;
+  animation:pd-live-blink 1.8s ease-in-out infinite;
+}
+.pd-section {
+  animation: pd-fade-in .5s ease both;
+}
+.pd-ioc-row {
+  transition: background .15s;
+  border-radius: 4px;
+  padding: 8px 10px;
+}
+.pd-ioc-row:hover {
+  background: rgba(255,255,255,.04);
+}
+.pd-tag {
+  display:inline-block;font-size:9px;font-family:monospace;
+  padding:2px 6px;border-radius:3px;
+  background:rgba(var(--cy-r,255),var(--cy-g,80),var(--cy-b,80),.12);
+  color:var(--cy);border:1px solid rgba(var(--cy-r,255),var(--cy-g,80),var(--cy-b,80),.3);
+  margin:2px;white-space:nowrap;
+}
+.pd-highlight { color:var(--cy) !important; font-weight:800; }
+</style><script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Is NameSilo safe for domain registration?","acceptedAnswer":{"@type":"Answer","text":"NameSilo (NASDAQ: URL, IANA #1479) is an ICANN-accredited registrar with about 5.4 million domains under management. PhishDestroy's investigation documents 204,935 confirmed malicious domains in NameSilo's zone. More significantly, NameSilo staff offered to help clear VirusTotal detections for xmrwallet[.]com \u2014 an active Monero phishing drainer with $10\u201320M in confirmed victim losses \u2014 rather than suspending the domain. NameSilo subsequently blacklisted the researchers who filed the report."}},
+    {"@type":"Question","name":"Does NameSilo respond to abuse and phishing reports?","acceptedAnswer":{"@type":"Answer","text":"PhishDestroy filed over 20 documented abuse reports to NameSilo with full evidence packages, timestamped and on record. NameSilo's public position was that they had received no reports. Internal communications revealed staff instead offered operational assistance to the fraud operator. Researchers were blacklisted from future reporting. This pattern \u2014 claim ignorance, assist the operator, silence the reporter \u2014 is documented with receipts."}},
+    {"@type":"Question","name":"What is the NameSilo xmrwallet.com incident?","acceptedAnswer":{"@type":"Answer","text":"xmrwallet[.]com is a Monero wallet phishing operation with an estimated $10\u201320M in confirmed victim losses, operating continuously since approximately 2016 under NameSilo registration. When PhishDestroy filed a documented abuse report, NameSilo's response was to offer to help the domain operator clear its detections on VirusTotal rather than suspend the domain. The domain continued operating. This is documented in the PhishDestroy investigation at phishdestroy.github.io/namesilo-evidence/."}},
+    {"@type":"Question","name":"Did NameSilo suppress media coverage of abuse investigations?","acceptedAnswer":{"@type":"Answer","text":"Yes. PhishDestroy's investigation documented a coordinated suppression campaign: deletion of tweets and articles covering NameSilo's complicity, and 108,000 pages deindexed from Bing in a targeted removal campaign against coverage of this investigation. NameSilo is a NASDAQ-listed company (ticker: URL); coordinated suppression of documented fraud coverage creates potential securities and regulatory exposure."}},
+    {"@type":"Question","name":"Has NameSilo been reported to financial regulators or law enforcement?","acceptedAnswer":{"@type":"Answer","text":"This investigation is structured as an evidence package for FBI IC3 (wire fraud \u00a71343, CFAA), FinCEN (MSB violations, proceeds of fraud), Europol EC3, and CISA. As a NASDAQ-listed company, NameSilo's knowing failure to act on documented fraud infrastructure \u2014 combined with active researcher suppression \u2014 goes beyond ICANN compliance into potential securities and financial crime territory. ICANN is not the regulator that matters here."}},
+    {"@type":"Question","name":"What is NameSilo PrivacyGuardian and how is it used for fraud?","acceptedAnswer":{"@type":"Answer","text":"NameSilo's PrivacyGuardian privacy-shield service covers hundreds of thousands of domains, masking registrant identity from WHOIS. Analysis of PrivacyGuardian-shielded domains reveals systematic use by Russian-speaking fraud networks, crypto-drainer operators, and carding infrastructure \u2014 providing identity cover that circumvents ICANN's WHOIS accuracy requirements and hinders law enforcement attribution."}}
+  ]
+}
+</script>
+</head>
+<body>
+<header><nav>
+  <a href="https://phishdestroy.io" target="_blank" rel="noopener">phishdestroy.io</a> &nbsp;&middot;&nbsp; <a href="https://phishdestroy.eth.limo" target="_blank" rel="noopener">phishdestroy.eth.limo</a>
+  &nbsp;&middot;&nbsp; <strong>NameSilo Investigation</strong>
+  &nbsp;&middot;&nbsp; <a href="https://github.com/phishdestroy/namesilo-evidence" target="_blank" rel="noopener">GitHub</a>
+</nav></header>
+
+<main style="max-width:1100px;margin:0 auto;padding:20px 24px">
+
+<!-- HERO -->
+<div class="hero" style="padding:48px 0 36px">
+  <div class="hero-inner">
+    <div class="hero-badges">
+      <span class="hb live">ACTIVE INVESTIGATION</span>
+      <span class="hb tlp">TLP:CLEAR</span>
+      <span class="hb iana">IANA #1479</span>
+      <span class="hb tlp">ICANN Filed · Mar 18, 2026</span>
+    </div>
+    <h1>NameSilo, LLC<br><strong>Registrar Abuse Investigation</strong></h1>
+    <p class="hero-sub">5,269,357 domains scanned &nbsp;·&nbsp; Complete zone file census (March 2026) &nbsp;·&nbsp; PhishDestroy Research</p>
+    <div style="display:flex;flex-wrap:wrap;gap:20px;margin-top:28px">
+      <div><div style="font-size:2.2rem;font-weight:800;color:var(--rd);line-height:1">5,269,357</div><div style="font-size:11px;opacity:.5;text-transform:uppercase;letter-spacing:.06em;margin-top:2px">Domains scanned (Mar 2026)</div></div>
+      <div><div style="font-size:2.2rem;font-weight:800;color:var(--rd);line-height:1">87.3%</div><div style="font-size:11px;opacity:.5;text-transform:uppercase;letter-spacing:.06em;margin-top:2px">Dead, no DNS or parked</div></div>
+      <div><div style="font-size:2.2rem;font-weight:800;color:var(--rd);line-height:1">204,935</div><div style="font-size:11px;opacity:.5;text-transform:uppercase;letter-spacing:.06em;margin-top:2px">Malicious (IOC feed)</div></div>
+      <div><div style="font-size:2.2rem;font-weight:800;color:var(--or);line-height:1">$10–20M</div><div style="font-size:11px;opacity:.5;text-transform:uppercase;letter-spacing:.06em;margin-top:2px">Estimated victim losses</div></div>
+      <div><div style="font-size:2.2rem;font-weight:800;color:var(--or);line-height:1">20+</div><div style="font-size:11px;opacity:.5;text-transform:uppercase;letter-spacing:.06em;margin-top:2px">Abuse reports — ignored</div></div>
+
+  <div id="hero-live" style="display:flex;flex-wrap:wrap;gap:14px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.06)"></div>
+    </div>
+  </div>
+</div>
+
+<!-- REPORT NAVIGATION -->
+<div class="st reveal" style="margin-top:36px">
+  <h2>Investigation Reports</h2>
+  <div class="ln"></div>
+  <p style="font-size:13px;opacity:.6;margin:0 0 4px">All reports are based on the complete NameSilo zone file — no sampling. Raw data available as gzip archives in <a href="https://github.com/phishdestroy/namesilo-evidence/tree/main/pkg/raw_data" style="color:var(--cy)">pkg/raw_data/</a>.</p>
+</div>
+
+<div class="hub-grid reveal">
+  <a href="namesilo-scan.html" class="hub-card primary">
+    <div class="hc-icon">📋</div>
+    <div class="hc-title">Zone Scan Report</div>
+    <div class="hc-desc">Full investigation: methodology, HTTP scan pipeline, IOC breakdown, server fingerprint cluster analysis, chain of custody. SHA-256 verified.</div>
+    <div class="hc-stat">5,269,357 domains &nbsp;·&nbsp; 2-phase scanner</div>
+  </a>
+  <a href="namesilo-clusters.html" class="hub-card">
+    <div class="hc-icon">🔬</div>
+    <div class="hc-title">Favicon Cluster Analysis</div>
+    <div class="hc-desc">12 operator clusters identified via MurmurHash3 favicon fingerprinting. Identical favicon = identical operator. 328,230-domain single-server network.</div>
+    <div class="hc-stat">12 clusters &nbsp;·&nbsp; MurmurHash3</div>
+  </a>
+  <a href="namesilo-domains.html" class="hub-card">
+    <div class="hc-icon">🗂</div>
+    <div class="hc-title">IOC Domain List</div>
+    <div class="hc-desc">107,252 confirmed criminal domains — fully searchable with country flags, favicons, and abuse categories. Filter by type, country, or keyword.</div>
+    <div class="hc-stat red">107,252 IOCs &nbsp;·&nbsp; searchable</div>
+  </a>
+  <a href="namesilo-privacyguardian.html" class="hub-card danger">
+    <div class="hc-icon">🛡</div>
+    <div class="hc-title">PrivacyGuardian Shield</div>
+    <div class="hc-desc">183,419 malicious domains registered with NameSilo and shielded by PrivacyGuardian.org — NameSilo's own WHOIS privacy service. The registrar owns both.</div>
+    <div class="hc-stat red">183,419 malicious &nbsp;·&nbsp; 25+ feeds</div>
+  </a>
+  <a href="namesilo-reviews.html" class="hub-card danger">
+    <div class="hc-icon">⭐</div>
+    <div class="hc-title">Review Manipulation</div>
+    <div class="hc-desc">129 Trustpilot reviews deleted in 4 months. Bot review network. Victim reports suppressed. NameSilo and xmrwallet both published on PR Newswire same day.</div>
+    <div class="hc-stat red">129 deleted &nbsp;·&nbsp; Jan–May 2026</div>
+  </a>
+  <a href="https://github.com/phishdestroy/namesilo-evidence" target="_blank" rel="noopener" class="hub-card">
+    <div class="hc-icon">📁</div>
+    <div class="hc-title">GitHub Evidence Repository</div>
+    <div class="hc-desc">SHA-256 verified screenshots, full investigation dossier, operator intelligence, case documents, raw scan data. MIT licensed for legal/regulatory use.</div>
+    <div class="hc-stat">github.com/phishdestroy/namesilo-evidence</div>
+  </a>
+</div>
+
+<!-- WHAT HAPPENED -->
+<div class="st reveal" style="margin-top:36px">
+  <h2>What Happened</h2>
+  <div class="ln"></div>
+</div>
+
+<div class="panel reveal" style="margin-top:16px">
+  <p style="font-size:14px;line-height:1.75;margin:0 0 14px"><strong>xmrwallet[.]com</strong> is a Monero wallet drainer that has been running since approximately 2016. On every login, the site silently transmits the user's private view key to the operator's server via a base64-encoded <code>session_key</code> parameter. Eight PHP endpoints handle the exfiltration. <code>raw_tx_and_hash.raw&nbsp;=&nbsp;0</code> ensures all client-side transactions are discarded. The site has never been compromised — the theft code <em>is</em> the product. Estimated victim losses: <strong>$10–20M</strong>.</p>
+  <p style="font-size:14px;line-height:1.75;margin:0 0 14px">PhishDestroy submitted <strong>20+ delivery-receipted abuse reports</strong> to NameSilo between 2023 and 2026. No action was taken. On <strong>March 13, 2026</strong>, NameSilo's official corporate account published a statement calling the operator "the victim," denying all reports ever arrived, and committing in writing to helping him <strong>remove his VirusTotal detections</strong>. Three other registrars — PDR, WebNic, NICENIC — reviewed the same evidence and suspended the domain within days.</p>
+  <p style="font-size:14px;line-height:1.75;margin:0">When PhishDestroy published the operator's own emails proving every sentence false, NameSilo used X Gold Checkmark live-support access to lock the @Phish_Destroy research account. X's automated review cleared the account in writing on April 15, 2026. The lock remains in place. <strong>NameSilo's only documented response to this investigation: the scammer's domain was quietly transferred to Namecheap.</strong></p>
+</div>
+
+<!-- KEY EXHIBIT -->
+<div class="panel reveal" style="margin-top:16px">
+  <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-weight:700;margin:0 0 14px">Exhibit A — NameSilo's official statement · March 13, 2026 · 11,300 views</h3>
+  <img src="evidence/03-namesilo-statement-mar13.png" alt="NameSilo official corporate tweet March 13 2026 — defending xmrwallet operator, denying abuse reports, committing to VirusTotal delisting" style="width:100%;border-radius:4px;display:block">
+  <p style="font-size:11px;opacity:.5;margin:8px 0 0;font-family:'JetBrains Mono',monospace">Archived: <a href="https://ghostarchive.org/archive/CXXZ0" target="_blank" rel="noopener" style="color:var(--cy)">ghostarchive.org/archive/CXXZ0</a> &nbsp;·&nbsp; SHA-256: ad29e1d3d4803ff37c88ef860bef6de9e62f6ce533657f2e5c5460eb2e0b8ebf</p>
+</div>
+
+<!-- THE LIES -->
+<div class="st reveal" style="margin-top:36px">
+  <h2>NameSilo's Four Claims vs. the Record</h2>
+  <div class="ln"></div>
+</div>
+
+<div class="lie-grid reveal">
+  <div class="lie-card">
+    <div class="lie-claim">"Domain was compromised a few months ago."</div>
+    <div class="lie-fact">Exfiltration code is the product — 8 PHP endpoints, <code>session_key</code> server-side capture, <code>raw_tx_and_hash.raw=0</code>. Operator's own email (Feb 16): no hack claimed, site defended as his work.</div>
+    <span class="lie-verdict">FALSE</span>
+  </div>
+  <div class="lie-card">
+    <div class="lie-claim">"Prior to that, we had received no abuse reports."</div>
+    <div class="lie-fact">20+ delivery-receipted reports submitted through NameSilo's own portal, 2023–2026. Public tweet the day before: "9 reports is no joke anymore."</div>
+    <span class="lie-verdict">FALSE</span>
+  </div>
+  <div class="lie-card">
+    <div class="lie-claim">"After an extensive review… not involving the registrant."</div>
+    <div class="lie-fact">Operator contacted PhishDestroy Feb 16, defending the site as his own. NameSilo adopted a "compromise" narrative the operator himself never used.</div>
+    <span class="lie-verdict">FALSE</span>
+  </div>
+  <div class="lie-card" style="border-color:rgba(255,160,0,.3);background:rgba(255,160,0,.04)">
+    <div class="lie-claim" style="border-color:rgba(255,160,0,.2)">"Working with registrant to remove website from VT reports."</div>
+    <div class="lie-fact">Written, published, on their verified corporate account. A registrar actively assisting a confirmed fraud operator in erasing consumer-protection security alerts.</div>
+    <span class="lie-verdict" style="background:rgba(255,160,0,.15);color:#fba">DOCUMENTED — DAMNING</span>
+  </div>
+</div>
+
+<!-- EVIDENCE GRID -->
+<div class="st reveal" style="margin-top:36px">
+  <h2>Key Evidence</h2>
+  <div class="ln"></div>
+  <p style="font-size:12px;opacity:.5;margin:4px 0 0">All screenshots SHA-256 verified. Full index: <a href="https://github.com/phishdestroy/namesilo-evidence/blob/main/case/EVIDENCE_INDEX.md" style="color:var(--cy)">EVIDENCE_INDEX.md</a></p>
+</div>
+
+<div class="ev-grid reveal">
+  <div class="ev-card">
+    <img src="evidence/01-operator-email-feb16.png" alt="Operator email Feb 16 2026 — no phishing claim, no hack" loading="lazy">
+    <div class="ev-cap"><strong>Feb 16, 2026</strong> — Operator email: "There is no phishing." No hack claim. Sent 25 days before NameSilo's "compromise" narrative.</div>
+  </div>
+  <div class="ev-card">
+    <img src="evidence/01-phishdestroy-reply-feb16.png" alt="PhishDestroy technical reply Feb 16" loading="lazy">
+    <div class="ev-cap"><strong>Feb 16, 2026</strong> — PhishDestroy reply: 8 PHP endpoints documented, escalation notice issued.</div>
+  </div>
+  <div class="ev-card">
+    <img src="evidence/06-x-support-no-violation.png" alt="X Support email Apr 15 2026 — no violation, restored" loading="lazy">
+    <div class="ev-cap"><strong>Apr 15, 2026</strong> — X Support: "No violation. Restored to full functionality." Account still locked.</div>
+  </div>
+  <div class="ev-card">
+    <img src="evidence/04-tweet-honest-question.png" alt="Tweet: who is this operator to you?" loading="lazy">
+    <div class="ev-cap"><strong>Mar 16, 2026</strong> — "Who is this operator to you?" 7,900 views. Never answered. Account locked shortly after.</div>
+  </div>
+  <div class="ev-card">
+    <img src="evidence/12-ghostarchive-namesilo-tweet-top.png" alt="GhostArchive — original confrontation tweet" loading="lazy">
+    <div class="ev-cap"><strong>GhostArchive</strong> — archived before suppression. NameSilo's full reply thread, permanent record.</div>
+  </div>
+  <div class="ev-card">
+    <img src="evidence/04-tweet-press-secretary.png" alt="Tweet: NameSilo acting as press secretary for Monero theft operation" loading="lazy">
+    <div class="ev-cap"><strong>Mar 16, 2026</strong> — "NameSilo is acting as press secretary for a Monero theft operation." Tweets now invisible.</div>
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<div class="st reveal" style="margin-top:36px">
+  <h2>Timeline</h2>
+  <div class="ln"></div>
+</div>
+
+<div class="panel reveal" style="margin-top:16px">
+<div class="tl-row"><span class="tl-date">2016</span><div class="tl-text">xmrwallet.com goes live. <code>session_key</code> silently exfiltrates private view key on every login.</div></div><div class="tl-row"><span class="tl-date">2023–2026</span><div class="tl-text">PhishDestroy: 20+ delivery-receipted abuse reports → <code>abuse@namesilo.com</code>. <strong>Zero action.</strong></div></div><div class="tl-row"><span class="tl-date">Feb 16, 2026</span><div class="tl-text">Operator emails PhishDestroy: "There is no phishing." No hack claim. Site defended as own work.</div></div><div class="tl-row"><span class="tl-date">Mar 12, 2026</span><div class="tl-text">PhishDestroy public tweet: "9 reports is no joke anymore."</div></div><div class="tl-row"><span class="tl-date">Mar 13, 2026</span><div class="tl-text"><strong>NameSilo official tweet</strong> (11,300 views): four false claims, offer to scrub VirusTotal. PDR, WebNic, NICENIC: suspended same domain within days.</div></div><div class="tl-row"><span class="tl-date">Mar 16, 2026</span><div class="tl-text">PhishDestroy publishes operator emails. @Phish_Destroy account locked via X Gold Checkmark support.</div></div><div class="tl-row"><span class="tl-date">Mar 18, 2026</span><div class="tl-text">Full case submitted to <strong>ICANN Contractual Compliance</strong>.</div></div><div class="tl-row"><span class="tl-date">Apr 15, 2026</span><div class="tl-text">X automation: "no violation, restored to full functionality." <strong>Lock not lifted.</strong></div></div><div class="tl-row"><span class="tl-date">May 11, 2026</span><div class="tl-text">NameSilo legal threat tweet. Zero factual rebuttal. <a href="https://github.com/phishdestroy/namesilo-evidence/blob/main/case/NAMESILO-RESPONSE-MAY2026.md" style="color:var(--cy)">Documented →</a></div></div><div class="tl-row"><span class="tl-date">May 2026</span><div class="tl-text">DMCA filed against this investigation. Keyword/geo suppression detected. xmrwallet domain transferred to Namecheap.</div></div><div class="tl-row"><span class="tl-date">Jun 2026</span><div class="tl-text">Zone scan complete: 5,653,085 domains, 36.5% dead/parked. Site remains live. Investigation continues.</div></div>
+</div>
+
+<!-- FOR VICTIMS / REGULATORS -->
+<div class="g2 reveal" style="margin-top:36px;gap:16px">
+  <div class="panel">
+    <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-weight:700;margin:0 0 12px">For Victims of xmrwallet[.]com</h3>
+    <p style="font-size:13px;opacity:.8;line-height:1.6;margin:0 0 12px">This evidence package is ready to attach to any legal or regulatory filing. MIT licensed — no further authorization needed.</p>
+    <ul style="font-size:13px;opacity:.8;line-height:2;padding-left:16px;margin:0 0 12px">
+      <li><a href="https://www.ic3.gov" target="_blank" rel="noopener" style="color:var(--cy)">IC3.gov (FBI)</a></li>
+      <li><a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener" style="color:var(--cy)">FTC — reportfraud.ftc.gov</a></li>
+      <li><a href="https://www.icann.org/compliance" target="_blank" rel="noopener" style="color:var(--cy)">ICANN Contractual Compliance</a></li>
+    </ul>
+    <a href="mailto:report@phishdestroy.io" style="display:inline-block;background:rgba(218,54,51,.15);border:1px solid rgba(218,54,51,.3);color:#f88;padding:8px 16px;border-radius:4px;font-size:13px;text-decoration:none;font-family:'JetBrains Mono',monospace">report@phishdestroy.io</a>
+  </div>
+  <div class="panel">
+    <h3 style="font-size:13px;text-transform:uppercase;letter-spacing:.06em;opacity:.5;font-weight:700;margin:0 0 12px">For Regulators &amp; Press</h3>
+    <p style="font-size:13px;opacity:.8;line-height:1.6;margin:0 0 12px">Full case submitted to ICANN March 18, 2026. Raw materials available on request: email headers, PHP endpoint captures, abuse report receipts.</p>
+    <p style="font-size:13px;opacity:.8;line-height:1.6;margin:0 0 12px">Evidence manifest with SHA-256 hashes: <a href="evidence/evidence_manifest.json" style="color:var(--cy)">evidence_manifest.json</a></p>
+    <a href="mailto:abuse@phishdestroy.io" style="display:inline-block;background:rgba(110,168,215,.1);border:1px solid rgba(110,168,215,.25);color:var(--cy);padding:8px 16px;border-radius:4px;font-size:13px;text-decoration:none;font-family:'JetBrains Mono',monospace">abuse@phishdestroy.io</a>
+  </div>
+</div>
+
+<!-- MIRRORS -->
+<div class="st reveal" style="margin-top:36px">
+  <h2>Mirrors</h2>
+  <div class="ln"></div>
+  <p style="font-size:12px;opacity:.5;margin:4px 0 0">This investigation is distributed across multiple platforms and protocols. No single point of failure.</p>
+</div>
+
+<div class="mirror-grid reveal">
+  <div class="mirror-card" style="border-color:rgba(218,54,51,.3)">
+    <div class="mirror-label">&#9679; Live site</div>
+    <a href="https://phishdestroy.eth.limo" target="_blank" rel="noopener">phishdestroy.eth.limo</a>
+    <div style="font-size:10px;opacity:.4;margin-top:3px">IPFS via ENS · censorship-resistant</div>
+  </div>
+  <div class="mirror-card">
+    <div class="mirror-label">GitHub Pages</div>
+    <a href="https://phishdestroy.github.io/namesilo-evidence/" target="_blank" rel="noopener">phishdestroy.github.io/namesilo-evidence</a>
+  </div>
+  <div class="mirror-card">
+    <div class="mirror-label">Arweave (blockchain)</div>
+    <a href="https://arweave.net/LUuditolJS-Y15IezfpzRI36sxhd1CIvFNOf_eAG2AU" target="_blank" rel="noopener">arweave.net/LUuditolJS&hellip;</a>
+    <div style="font-size:10px;opacity:.4;margin-top:3px">Permanent · on-chain</div>
+  </div>
+  <div class="mirror-card">
+    <div class="mirror-label">GitHub Repository</div>
+    <a href="https://github.com/phishdestroy/namesilo-evidence" target="_blank" rel="noopener">github.com/phishdestroy/namesilo-evidence</a>
+  </div>
+  <div class="mirror-card">
+    <div class="mirror-label">Codeberg</div>
+    <a href="https://codeberg.org/phishdestroy/namesilo-evidence" target="_blank" rel="noopener">codeberg.org/phishdestroy</a>
+  </div>
+  <div class="mirror-card">
+    <div class="mirror-label">GhostArchive</div>
+    <a href="https://ghostarchive.org/archive/CXXZ0" target="_blank" rel="noopener">ghostarchive.org/archive/CXXZ0</a>
+    <div style="font-size:10px;opacity:.4;margin-top:3px">NameSilo's Mar 13 tweet · permanent</div>
+  </div>
+  <div class="mirror-card">
+    <div class="mirror-label">Medium</div>
+    <a href="https://phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam-then-took-down-our-twitter-4904d15d531e" target="_blank" rel="noopener">phishdestroy.medium.com</a>
+  </div>
+  <div class="mirror-card">
+    <div class="mirror-label">IPFS CID</div>
+    <a href="https://dweb.link/ipfs/bafybeibihjlg4wdmiur2k57c6be4fkttju5kekqsyuq7kl4a3uoeg65xlq/" target="_blank" rel="noopener" style="font-size:10px">bafybei&hellip;65xlq</a>
+  </div>
+</div>
+
+<div style="text-align:center;padding:32px 0 16px;font-size:12px;opacity:.4;font-family:'JetBrains Mono',monospace">
+  PhishDestroy Research &nbsp;·&nbsp; <a href="https://phishdestroy.eth.limo" target="_blank" rel="noopener" style="color:var(--cy)">phishdestroy.eth.limo</a> &nbsp;·&nbsp; TLP:CLEAR &nbsp;·&nbsp; MIT License
+</div>
+
+</main>
+
+<script>
+var _ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");_ro.unobserve(e.target);}});},{threshold:0.05,rootMargin:"0px 0px -20px 0px"});
+document.querySelectorAll(".reveal").forEach(function(el){_ro.observe(el);});
+</script>
+
+<!-- CHART SECTION -->
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F4CA; Registration Activity</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Daily and monthly new domain registrations. Click any bar to download that day&#8217;s list.</p>
+  <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;align-items:center">
+    <button onclick="showView('daily')" id="btn-daily" style="font-size:11px;padding:5px 14px;border-radius:4px;border:1px solid rgba(110,168,215,.4);background:rgba(110,168,215,.1);color:var(--cy);cursor:pointer;font-weight:600">Daily</button>
+    <button onclick="showView('monthly')" id="btn-monthly" style="font-size:11px;padding:5px 14px;border-radius:4px;border:1px solid var(--bdr);background:transparent;color:var(--tx3);cursor:pointer">Monthly</button>
+    <span style="display:inline-block;width:1px;height:18px;background:var(--bdr);margin:0 4px"></span>
+    <button onclick="showRange('1Y')" id="btn-1y" style="font-size:11px;padding:5px 12px;border-radius:4px;border:1px solid var(--bdr);background:transparent;color:var(--tx3);cursor:pointer">1Y</button>
+    <button onclick="showRange('3Y')" id="btn-3y" style="font-size:11px;padding:5px 12px;border-radius:4px;border:1px solid rgba(110,168,215,.4);background:rgba(110,168,215,.1);color:var(--cy);cursor:pointer;font-weight:600">3Y</button>
+    <button onclick="showRange('5Y')" id="btn-5y" style="font-size:11px;padding:5px 12px;border-radius:4px;border:1px solid var(--bdr);background:transparent;color:var(--tx3);cursor:pointer">5Y</button>
+    <button onclick="showRange('all')" id="btn-all" style="font-size:11px;padding:5px 12px;border-radius:4px;border:1px solid var(--bdr);background:transparent;color:var(--tx3);cursor:pointer">All</button>
+  </div>
+  <div id="chart-wrap" style="position:relative;height:180px;overflow:hidden">
+    <canvas id="reg-chart" style="width:100%;height:180px"></canvas>
+  </div>
+  <div id="chart-tip" style="font-size:11px;color:var(--tx3);font-family:monospace;margin-top:8px;min-height:16px"></div>
+</div>
+<script src="chart.min.js"></script>
+<script>
+var _ci=null,_cd=null,_v='daily',_range='3Y';
+var _RAW='https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/data/index.json';
+fetch('chart-data.json').then(function(r){return r.json();}).then(function(d){_cd=d;window._chartData=d;_rc('daily');}).catch(function(e){var cw=document.getElementById('chart-wrap');if(cw){cw.innerHTML='<div style="padding:32px;color:var(--tx3,#888);text-align:center;font-family:monospace">Chart error: '+(e&&(e.message||String(e))||'unknown')+' — <a href="#" onclick="location.reload();return false">retry</a></div>';cw.style.display='';}});
+function showView(v){_v=v;['daily','monthly'].forEach(function(x){var b=document.getElementById('btn-'+x),a=x===v;b.style.background=a?'rgba(110,168,215,.1)':'transparent';b.style.color=a?'var(--cy)':'var(--tx3)';b.style.borderColor=a?'rgba(110,168,215,.4)':'var(--bdr)';});if(_cd)_rc(v);}
+function showRange(r){_range=r;['1y','3y','5y','all'].forEach(function(x){var b=document.getElementById('btn-'+x);if(!b)return;var a=x===r.toLowerCase();b.style.background=a?'rgba(110,168,215,.1)':'transparent';b.style.color=a?'var(--cy)':'var(--tx3)';b.style.borderColor=a?'rgba(110,168,215,.4)':'var(--bdr)';b.style.fontWeight=a?'600':'400';});if(_cd)_rc(_v);}
+function _rc(view){var allDays=_cd.days||[];var days=allDays;if(_range!=='all'){var y=parseInt(_range);var co=new Date();co.setFullYear(co.getFullYear()-y);var cs=co.toISOString().slice(0,10);days=allDays.filter(function(d){return d.date>=cs;});}var labels,counts,paths;
+if(view==='monthly'){var mb={};days.forEach(function(d){var m=d.date.slice(0,7);mb[m]=(mb[m]||0)+d.count;});var months=Object.keys(mb).sort();labels=months;counts=months.map(function(m){return mb[m];});paths=null;}
+else{labels=days.map(function(d){return d.date;});counts=days.map(function(d){return d.count;});paths=days;}
+var mx=Math.max.apply(null,counts)||1;
+var cols=counts.map(function(c){var t=c/mx;return'rgba('+(Math.round(110+t*108))+','+(Math.round(168-t*114))+','+(Math.round(215-t*164))+',0.75)';});
+if(_ci)_ci.destroy();
+var ctx=document.getElementById('reg-chart').getContext('2d');
+_ci=new Chart(ctx,{type:'bar',data:{labels:labels,datasets:[{data:counts,backgroundColor:cols,borderRadius:2,borderSkipped:false}]},
+options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{title:function(i){return i[0].label;},label:function(i){return i.raw.toLocaleString()+' domains';}},backgroundColor:'rgba(7,11,18,.95)',titleColor:'#f0f6fc',bodyColor:'#8b949e',borderColor:'rgba(255,255,255,.08)',borderWidth:1}},
+scales:{x:{ticks:{display:labels.length<60,color:'#484f58',font:{size:9}},grid:{color:'rgba(255,255,255,.04)'},border:{color:'rgba(255,255,255,.08)'}},y:{ticks:{color:'#484f58',font:{size:9}},grid:{color:'rgba(255,255,255,.04)'},border:{color:'rgba(255,255,255,.08)'}}},
+onClick:function(e,els){if(!els.length||!paths)return;var d=paths[els[0].index];if(d)window.open('https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/'+d.path,'_blank');},
+onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.length&&paths?'pointer':'default';if(els.length&&paths&&paths[els[0].index]){var d=paths[els[0].index];document.getElementById('chart-tip').textContent=d.date+' — '+d.count.toLocaleString()+' new domains  ↓ click to download';}else{document.getElementById('chart-tip').textContent='';}}
+}});}
+</script>
+<!-- DAILY FEED -->
+<div style="margin:0;line-height:0"><img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="display:block;max-height:4px;object-fit:cover;object-position:center"></div>
+<div class="wrap" style="padding-top:40px">
+<div class="sec"><h2>&#x1F4E1; Daily New Registrations</h2><div class="ln"></div></div>
+<p class="sec-sub" style="margin-bottom:24px">New domains registered daily &#8212; auto-fetched from registrar zone data daily (02:00 UTC). Download any day as a plain-text blocklist.</p>
+<div id="daily-stats" style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px"></div>
+<div id="daily-feed" style="border:1px solid var(--bdr);border-radius:8px;overflow:hidden;font-family:monospace"><div style="padding:20px;color:var(--tx3);font-size:12px">Loading&#8230;</div></div>
+</div>
+<div style="margin:0;line-height:0"><img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="display:block;max-height:4px;object-fit:cover;object-position:center"></div>
+<script>
+(function(){
+  var R='namesilo-evidence';
+  var BASE='https://raw.githubusercontent.com/phishdestroy/'+R+'/main/';
+  var PAGE=30,curPage=0,allDays=[];
+  function mk(tag,css){var e=document.createElement(tag);if(css)e.setAttribute('style',css);return e;}
+  function statCard(v,l,color){
+    var w=mk('div','border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px');
+    var vd=mk('div','font-size:1.5rem;font-weight:800;color:var(--'+color+');line-height:1');vd.textContent=v;
+    var ld=mk('div','font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px');ld.textContent=l;
+    w.appendChild(vd);w.appendChild(ld);return w;
+  }
+  function renderPage(p){
+    curPage=p;
+    var feedEl=document.getElementById('daily-feed');
+    var total=Math.max(1,Math.ceil(allDays.length/PAGE));
+    var slice=allDays.slice(p*PAGE,(p+1)*PAGE);
+    while(feedEl.firstChild)feedEl.removeChild(feedEl.firstChild);
+    var hdr=mk('div','display:flex;gap:12px;padding:8px 16px;background:var(--s2);border-bottom:1px solid var(--bdr);font-size:10px;letter-spacing:.08em;color:var(--tx3);text-transform:uppercase');
+    ['','Date','Domains','Download'].forEach(function(t,i){var sp=document.createElement('span');if(i===0)sp.setAttribute('style','width:52px');else if(i===1)sp.setAttribute('style','min-width:110px');else if(i===3)sp.setAttribute('style','margin-left:auto');sp.textContent=t;hdr.appendChild(sp);});
+    feedEl.appendChild(hdr);
+    slice.forEach(function(d,i){
+      var gi=p*PAGE+i,isNew=gi===0;
+      var row=mk('div','display:flex;align-items:center;gap:12px;padding:9px 16px;border-bottom:1px solid var(--bdr);'+(isNew?'background:rgba(63,185,80,.04)':''));
+      if(isNew){var badge=mk('span','font-size:9px;font-weight:700;color:var(--gn);border:1px solid rgba(63,185,80,.3);padding:2px 6px;border-radius:3px;animation:blink 2s step-end infinite;min-width:52px;text-align:center');badge.textContent='NEW';row.appendChild(badge);}
+      else{row.appendChild(mk('span','min-width:52px'));}
+      var dateEl=mk('span','color:var(--tx2);font-size:12px;min-width:110px');dateEl.textContent=d.date;row.appendChild(dateEl);
+      var cntEl=mk('span','color:var(--tx3);font-size:12px');cntEl.textContent=(d.count||0).toLocaleString()+' domains';row.appendChild(cntEl);
+      var a=mk('a','margin-left:auto;font-size:11px;color:var(--cy);border:1px solid rgba(110,168,215,.2);padding:3px 10px;border-radius:4px');a.href=BASE+d.path;a.download='';a.textContent='⇓ .txt';row.appendChild(a);
+      feedEl.appendChild(row);
+    });
+    var bar=mk('div','display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:var(--s2);border-top:1px solid var(--bdr)');
+    var bs='font-size:12px;font-weight:600;padding:6px 16px;border-radius:4px;cursor:pointer;border:1px solid;';
+    var prevBtn=mk('button',bs+(p===0?'border-color:var(--bdr);color:var(--tx3);background:transparent;opacity:.35;cursor:default':'border-color:rgba(110,168,215,.4);color:var(--cy);background:rgba(110,168,215,.08)'));
+    prevBtn.textContent='← Prev';if(p===0)prevBtn.disabled=true;prevBtn.addEventListener('click',function(){window._dfPn(p-1);});
+    var info=mk('span','font-size:11px;color:var(--tx3);font-family:monospace');info.textContent='Page '+(p+1)+' / '+total;
+    var nextBtn=mk('button',bs+(p>=total-1?'border-color:var(--bdr);color:var(--tx3);background:transparent;opacity:.35;cursor:default':'border-color:rgba(110,168,215,.4);color:var(--cy);background:rgba(110,168,215,.08)'));
+    nextBtn.textContent='Next →';if(p>=total-1)nextBtn.disabled=true;nextBtn.addEventListener('click',function(){window._dfPn(p+1);});
+    bar.appendChild(prevBtn);bar.appendChild(info);bar.appendChild(nextBtn);feedEl.appendChild(bar);
+  }
+  window._dfPn=function(p){var total=Math.max(1,Math.ceil(allDays.length/PAGE));if(p<0||p>=total)return;renderPage(p);document.getElementById('daily-feed').scrollIntoView({behavior:'smooth',block:'nearest'});};
+  fetch('chart-data.json').then(function(x){return x.json();}).then(function(data){
+    allDays=(data.days||[]).slice().reverse();
+    var statsEl=document.getElementById('daily-stats');
+    statsEl.appendChild(statCard((data.total_new_all_time||0).toLocaleString(),'Total new','cy'));
+    statsEl.appendChild(statCard(allDays.length,'Days tracked','gn'));
+    statsEl.appendChild(statCard(data.last_updated||'—','Last fetch','or'));
+    if(!allDays.length){var msg=mk('div','padding:20px;color:var(--tx3);font-size:12px');msg.textContent='Feed activates after first workflow run.';document.getElementById('daily-feed').appendChild(msg);return;}
+    renderPage(0);
+  }).catch(function(){var msg=mk('div','padding:20px;color:var(--tx3);font-size:12px');msg.textContent='Add NETAPI_TOKEN to GitHub Secrets to activate.';document.getElementById('daily-feed').appendChild(msg);});
+})();
+</script>
+
+
+<!-- REG PERIOD + TLD + DEPLOYMENT SECTION -->
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x23F1;&#xFE0F; Registration Period Distribution</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">How long operators register domains for. Longer registration = greater investment = more serious/organised campaign.</p>
+  <div id="period-stats" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px"></div>
+  <div style="position:relative;height:140px;margin-bottom:8px">
+    <canvas id="period-chart"></canvas>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F310; Top TLD Zones</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Domain zone distribution with average registration period per TLD. Cheap short-reg TLDs signal bulk throwaway infrastructure.</p>
+  <div id="tld-table"></div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:32px">
+  <div class="sec"><h2>&#x1F4E1; Deployment Status at Registration</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Whether domains had an IP at time of fetch. No IP = registered but not yet deployed (parked, pre-staged, or bulk spam).</p>
+  <div id="deploy-stats" style="display:flex;gap:12px;flex-wrap:wrap"></div>
+</div>
+
+<script>
+(function(){
+  function waitForData(cb,_dl){
+    if(!_dl)_dl=Date.now()+15000;
+    if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
+    if(Date.now()>_dl)return;
+    setTimeout(function(){waitForData(cb,_dl);},250);
+  }
+  function el(tag,attrs,text){
+    var e=document.createElement(tag);
+    Object.keys(attrs||{}).forEach(function(k){e.setAttribute(k,attrs[k]);});
+    if(text!==undefined)e.textContent=text;
+    return e;
+  }
+  function card(v,l){
+    var c=el('div',{style:'border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px'});
+    c.appendChild(el('div',{style:'font-size:1.5rem;font-weight:800;color:var(--cy);line-height:1'},v));
+    c.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px'},l));
+    return c;
+  }
+  function hexToRgb(hex){
+    hex=(hex||'888888').replace('#','');
+    if(hex.length===3)hex=hex.split('').map(function(c){return c+c;}).join('');
+    var n=parseInt(hex,16)||0;
+    return [(n>>16)&255,(n>>8)&255,n&255].join(',');
+  }
+
+  waitForData(function(data){
+    var acc=(getComputedStyle(document.documentElement).getPropertyValue('--cy')||'').trim()||'#888';
+
+    // --- Registration period chart ---
+    var rp=data.reg_periods||{};
+    var total=Object.values(rp).reduce(function(a,b){return a+b;},0)||1;
+    var pgt1=data.pct_gt_1yr||0, pgt2=data.pct_gt_2yr||0;
+    var psEl=document.getElementById('period-stats');
+    if(psEl){
+      psEl.appendChild(card(pgt1+'%','>1 year registered'));
+      psEl.appendChild(card(pgt2+'%','>2 years registered'));
+      psEl.appendChild(card(data.avg_registration_days+'d','avg registration period'));
+    }
+    var pCtx=document.getElementById('period-chart');
+    if(pCtx&&total>1){
+      var labels=['< 1 year','= 1 year','2 years','3+ years'];
+      var vals=[rp.lt_1yr||0,rp.eq_1yr||0,rp.yr_2||0,rp.yr_3plus||0];
+      var pcts=vals.map(function(v){return Math.round(v/total*100);});
+      new Chart(pCtx,{
+        type:'bar',
+        data:{
+          labels:labels,
+          datasets:[{
+            label:'Domains',
+            data:pcts,
+            backgroundColor:['rgba('+hexToRgb(acc)+',0.25)','rgba('+hexToRgb(acc)+',0.4)','rgba('+hexToRgb(acc)+',0.6)','rgba('+hexToRgb(acc)+',0.85)'],
+            borderColor:'rgba('+hexToRgb(acc)+',0.7)',
+            borderWidth:1,borderRadius:4
+          }]
+        },
+        options:{
+          responsive:true,maintainAspectRatio:false,
+          plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return' '+c.parsed.y+'% of domains';} } } },
+          scales:{
+            x:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.4)',font:{size:11}}},
+            y:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.4)',font:{size:10},callback:function(v){return v+'%';}}}
+          }
+        }
+      });
+    }
+
+    // --- TLD table ---
+    var tlds=data.tld_stats||{};
+    var tEl=document.getElementById('tld-table');
+    if(tEl){
+      var tKeys=Object.keys(tlds).sort(function(a,b){return tlds[b].count-tlds[a].count;});
+      if(!tKeys.length){
+        tEl.appendChild(el('p',{style:'color:var(--tx3);font-size:13px'},'TLD data will appear after next daily fetch.'));
+      } else {
+        var maxC=tlds[tKeys[0]].count||1;
+        var wrap=el('div',{style:'max-width:640px'});
+        var hdr=el('div',{style:'display:flex;gap:12px;padding:0 0 8px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:4px'});
+        ['TLD','','Count','Avg Period'].forEach(function(h,i){
+          var widths=['50px','1fr','80px','90px'];
+          var d=el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);'+(i===1?'flex:1':'width:'+widths[i])},h);
+          hdr.appendChild(d);
+        });
+        wrap.appendChild(hdr);
+        tKeys.slice(0,20).forEach(function(tld){
+          var info=tlds[tld];
+          var pct=(info.count/maxC*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:12px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          var tldEl=el('div',{style:'width:50px;font-size:12px;font-weight:700;color:var(--cy);font-family:monospace'},'.'+tld);
+          var barWrap=el('div',{style:'flex:1;height:3px;background:var(--bdr);border-radius:2px;overflow:hidden'});
+          var barFill=el('div',{style:'height:3px;border-radius:2px;background:var(--cy);opacity:.65;width:'+pct+'%'});
+          var cnt=el('div',{style:'width:80px;font-size:11px;color:var(--tx2);text-align:right'},info.count.toLocaleString());
+          var days=el('div',{style:'width:90px;font-size:11px;color:var(--tx3);text-align:right'},info.avg_days+'d avg');
+          barWrap.appendChild(barFill);
+          row.appendChild(tldEl); row.appendChild(barWrap);
+          row.appendChild(cnt); row.appendChild(days);
+          wrap.appendChild(row);
+        });
+        tEl.appendChild(wrap);
+      }
+    }
+
+    // --- Deployment stats ---
+    var dpEl=document.getElementById('deploy-stats');
+    if(dpEl){
+      var dep=data.deployed_count||0, noip=data.no_ip_count||0;
+      var rate=data.deployment_rate||0;
+      dpEl.appendChild(card(dep.toLocaleString(),'deployed (has IP)'));
+      dpEl.appendChild(card(noip.toLocaleString(),'no IP at registration'));
+      dpEl.appendChild(card(rate+'%','deployment rate'));
+    }
+  });
+})();
+</script>
+<!-- REVENUE AND ANALYTICS SECTION -->
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F4B0; Estimated Registrar Revenue</h2><div class="ln"></div></div>
+
+  <div id="rev-stats" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px"></div>
+  <div style="position:relative;height:160px;margin-bottom:8px">
+    <canvas id="rev-chart"></canvas>
+  </div>
+  <p style="font-size:11px;color:var(--tx3);margin-top:8px">&#x26A0;&#xFE0F; Estimates use average public TLD prices. Actual revenue will differ.</p>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:32px">
+  <div class="sec"><h2>&#x1F30D; Hosting Geography</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">IP country at time of domain registration. No IP means domain was not yet deployed when fetched.</p>
+  <div id="country-list"></div>
+</div>
+
+<script>
+(function(){
+  function waitForData(cb,_dl){
+    if(!_dl)_dl=Date.now()+15000;
+    if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
+    if(Date.now()>_dl)return;
+    setTimeout(function(){waitForData(cb,_dl);},250);
+  }
+
+  function el(tag,attrs,text){
+    var e=document.createElement(tag);
+    Object.keys(attrs||{}).forEach(function(k){e.setAttribute(k,attrs[k]);});
+    if(text!==undefined)e.textContent=text;
+    return e;
+  }
+
+  function hexToRgb(hex){
+    hex=(hex||'888888').replace('#','');
+    if(hex.length===3)hex=hex.split('').map(function(c){return c+c;}).join('');
+    var n=parseInt(hex,16)||0;
+    return [(n>>16)&255,(n>>8)&255,n&255].join(',');
+  }
+
+  waitForData(function(data){
+    var css=getComputedStyle(document.documentElement);
+    var acc=(css.getPropertyValue('--cy')||'').trim()||'#888888';
+
+    // --- Stat cards ---
+    var revEl=document.getElementById('rev-stats');
+    if(revEl){
+      var totalRev=Math.round(data.total_revenue_estimate||0);
+      var avgLife=data.avg_registration_days||365;
+      var totalDom=data.total_new_all_time||0;
+      [
+        ['$'+totalRev.toLocaleString(),'Est. Total Revenue'],
+        [avgLife+'d','Avg. Reg. Period'],
+        [totalDom.toLocaleString(),'Total Domains']
+      ].forEach(function(pair){
+        var card=el('div',{style:'border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px'});
+        var vd=el('div',{style:'font-size:1.5rem;font-weight:800;color:var(--cy);line-height:1'},pair[0]);
+        var ld=el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px'},pair[1]);
+        card.appendChild(vd);
+        card.appendChild(ld);
+        revEl.appendChild(card);
+      });
+    }
+
+    // --- Revenue chart ---
+    var months={};
+    (data.days||[]).forEach(function(d){
+      var m=d.date.slice(0,7);
+      months[m]=(months[m]||0)+(d.revenue||0);
+    });
+    var mKeys=Object.keys(months).sort();
+    var ctx=document.getElementById('rev-chart');
+    if(ctx&&mKeys.length){
+      new Chart(ctx,{
+        type:'bar',
+        data:{
+          labels:mKeys,
+          datasets:[{
+            label:'Est. Revenue USD',
+            data:mKeys.map(function(m){return Math.round(months[m]);}),
+            backgroundColor:'rgba('+hexToRgb(acc)+',0.3)',
+            borderColor:'rgba('+hexToRgb(acc)+',0.7)',
+            borderWidth:1,borderRadius:3
+          }]
+        },
+        options:{
+          responsive:true,maintainAspectRatio:false,
+          plugins:{
+            legend:{display:false},
+            tooltip:{callbacks:{label:function(c){return' $'+c.parsed.y.toLocaleString();}}}
+          },
+          scales:{
+            x:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.35)',font:{size:10}}},
+            y:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.35)',font:{size:10},
+              callback:function(v){return'$'+v.toLocaleString();}}}
+          }
+        }
+      });
+    }
+
+    // --- Country list ---
+    var countries=data.ip_countries||{};
+    var ctEl=document.getElementById('country-list');
+    if(!ctEl)return;
+    var keys=Object.keys(countries).filter(function(k){return k&&countries[k];});
+    if(!keys.length){
+      ctEl.appendChild(el('p',{style:'color:var(--tx3);font-size:13px'},'No IP data yet — will populate after next daily fetch.'));
+      return;
+    }
+    var tot=keys.reduce(function(a,k){return a+countries[k];},0);
+    var sorted=keys.sort(function(a,b){return countries[b]-countries[a];});
+    var wrap=el('div',{style:'max-width:560px'});
+    sorted.forEach(function(k){
+      var n=countries[k];
+      var pct=(n/tot*100).toFixed(1);
+      var row=el('div',{style:'display:flex;align-items:center;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04)'});
+      var code=el('div',{style:'width:34px;font-size:12px;font-weight:700;color:var(--tx1);font-family:monospace'},k||'—');
+      var barWrap=el('div',{style:'flex:1;height:4px;background:var(--bdr);border-radius:2px;overflow:hidden'});
+      var barFill=el('div',{style:'height:4px;border-radius:2px;width:'+pct+'%;background:var(--cy);opacity:.7'});
+      var num=el('div',{style:'font-size:11px;color:var(--tx2);min-width:110px;text-align:right'});
+      num.textContent=n.toLocaleString()+' ('+pct+'%)';
+      barWrap.appendChild(barFill);
+      row.appendChild(code);
+      row.appendChild(barWrap);
+      row.appendChild(num);
+      wrap.appendChild(row);
+    });
+    ctEl.appendChild(wrap);
+  });
+})();
+</script>
+
+<!-- ADVANCED ANALYTICS SECTION -->
+
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F5A7; Top Shared IPs</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">IP addresses hosting the most phishing domains. High-count IPs indicate bulletproof hosting infrastructure shared across campaigns.</p>
+  <div id="shared-ips-list"></div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F4B9; Revenue by TLD Zone</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Estimated registration revenue split by TLD. Shows which zones generate most income for the registrar from phishing operators.</p>
+  <div id="tld-revenue-table"></div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x26A1; Domain Freshness</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">How old were domains at time of first fetch. Same-day and within-week catches indicate early warning capability.</p>
+  <div id="freshness-stats" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px"></div>
+  <div style="position:relative;height:100px">
+    <canvas id="freshness-chart"></canvas>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:32px">
+  <div class="sec"><h2>&#x1F4C8; Registration Burst Days</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Days with abnormally high registration volume — likely campaign start dates. Multiple-of-average spikes indicate coordinated bulk registration events.</p>
+  <div id="burst-days-list"></div>
+</div>
+
+<script>
+(function(){
+  function waitForData(cb,_dl){
+    if(!_dl)_dl=Date.now()+15000;
+    if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
+    if(Date.now()>_dl)return;
+    setTimeout(function(){waitForData(cb,_dl);},250);
+  }
+  function el(tag,attrs,text){
+    var e=document.createElement(tag);
+    Object.keys(attrs||{}).forEach(function(k){e.setAttribute(k,attrs[k]);});
+    if(text!==undefined)e.textContent=text;
+    return e;
+  }
+  function card(v,l){
+    var c=el('div',{style:'border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px'});
+    c.appendChild(el('div',{style:'font-size:1.5rem;font-weight:800;color:var(--cy);line-height:1'},v));
+    c.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px'},l));
+    return c;
+  }
+  function hexToRgb(hex){
+    hex=(hex||'888888').replace('#','');
+    if(hex.length===3)hex=hex.split('').map(function(c){return c+c;}).join('');
+    var n=parseInt(hex,16)||0;
+    return [(n>>16)&255,(n>>8)&255,n&255].join(',');
+  }
+  function noDataMsg(el,msg){
+    el.appendChild(document.createElement('p')).textContent=msg||'Data will appear after next daily fetch.';
+    el.firstChild.setAttribute('style','color:var(--tx3);font-size:13px');
+  }
+
+  waitForData(function(data){
+    var acc=(getComputedStyle(document.documentElement).getPropertyValue('--cy')||'').trim()||'#888888';
+
+    // ── Shared IPs ────────────────────────────────────────────────────────────
+    var ipsEl=document.getElementById('shared-ips-list');
+    if(ipsEl){
+      var ips=data.top_shared_ips||{};
+      var ipKeys=Object.keys(ips).filter(function(k){return k&&ips[k]>1;});
+      if(!ipKeys.length){noDataMsg(ipsEl,'No shared IP data yet.');}
+      else{
+        var maxN=ips[ipKeys[0]]||1;
+        var wrap=el('div',{style:'max-width:640px'});
+        var hdr=el('div',{style:'display:flex;gap:12px;padding:0 0 8px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:4px'});
+        ['IP','','Domains'].forEach(function(h,i){
+          hdr.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);'+(i===1?'flex:1':'width:'+(i===0?'130px':'80px'))},h));
+        });
+        wrap.appendChild(hdr);
+        ipKeys.slice(0,20).forEach(function(ip){
+          var n=ips[ip];
+          var pct=(n/maxN*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:12px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          var ipEl=el('div',{style:'width:130px;font-size:11px;font-weight:600;color:var(--tx1);font-family:monospace;word-break:break-all'},ip);
+          var barWrap=el('div',{style:'flex:1;height:3px;background:var(--bdr);border-radius:2px;overflow:hidden'});
+          var barFill=el('div',{style:'height:3px;border-radius:2px;background:var(--cy);opacity:.55;width:'+pct+'%'});
+          var cnt=el('div',{style:'width:80px;font-size:11px;color:var(--tx2);text-align:right'},n.toLocaleString()+' domains');
+          barWrap.appendChild(barFill);
+          row.appendChild(ipEl); row.appendChild(barWrap); row.appendChild(cnt);
+          wrap.appendChild(row);
+        });
+        ipsEl.appendChild(wrap);
+      }
+    }
+
+    // ── Revenue by TLD ────────────────────────────────────────────────────────
+    var tldRevEl=document.getElementById('tld-revenue-table');
+    if(tldRevEl){
+      var tldRev=data.revenue_by_tld||{};
+      var tldKeys=Object.keys(tldRev).sort(function(a,b){return tldRev[b].revenue-tldRev[a].revenue;});
+      if(!tldKeys.length){noDataMsg(tldRevEl,'TLD revenue data will appear after next fetch.');}
+      else{
+        var maxR=tldRev[tldKeys[0]].revenue||1;
+        var wrap=el('div',{style:'max-width:680px'});
+        var hdr=el('div',{style:'display:flex;gap:10px;padding:0 0 8px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:4px'});
+        [['TLD','50px'],['','1fr'],['Count','70px'],['$/reg','55px'],['Revenue','85px'],['% total','65px']].forEach(function(h){
+          hdr.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);'+(h[1]==='1fr'?'flex:1':'width:'+h[1])},h[0]));
+        });
+        wrap.appendChild(hdr);
+        tldKeys.slice(0,20).forEach(function(tld){
+          var info=tldRev[tld];
+          var pct=(info.revenue/maxR*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:10px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          row.appendChild(el('div',{style:'width:50px;font-size:12px;font-weight:700;color:var(--cy);font-family:monospace'},'.'+tld));
+          var barWrap=el('div',{style:'flex:1;height:3px;background:var(--bdr);border-radius:2px;overflow:hidden'});
+          var barFill=el('div',{style:'height:3px;border-radius:2px;background:var(--cy);opacity:.6;width:'+pct+'%'});
+          barWrap.appendChild(barFill);
+          row.appendChild(barWrap);
+          row.appendChild(el('div',{style:'width:70px;font-size:11px;color:var(--tx2);text-align:right'},info.count.toLocaleString()));
+          row.appendChild(el('div',{style:'width:55px;font-size:11px;color:var(--tx3);text-align:right'},'$'+info.price));
+          row.appendChild(el('div',{style:'width:85px;font-size:11px;color:var(--tx1);font-weight:600;text-align:right'},'$'+Math.round(info.revenue).toLocaleString()));
+          row.appendChild(el('div',{style:'width:65px;font-size:11px;color:var(--tx3);text-align:right'},info.pct+'%'));
+          wrap.appendChild(row);
+        });
+        tldRevEl.appendChild(wrap);
+      }
+    }
+
+    // ── Domain Freshness ──────────────────────────────────────────────────────
+    var freshEl=document.getElementById('freshness-stats');
+    var freshCtx=document.getElementById('freshness-chart');
+    if(freshEl){
+      var cb=data.catch_age_buckets||{};
+      var fp=data.fresh_pct||0;
+      var ca=data.avg_catch_age_days||0;
+      freshEl.appendChild(card(fp+'%','caught ≤7d old'));
+      freshEl.appendChild(card(ca+'d','avg catch age'));
+      freshEl.appendChild(card((cb.same_day||0).toLocaleString(),'same-day catches'));
+    }
+    if(freshCtx){
+      var labels=['Same day','≤7 days','≤30 days','Older'];
+      var cb2=data.catch_age_buckets||{};
+      var vals=[cb2.same_day||0,cb2.within_week||0,cb2.within_month||0,cb2.older||0];
+      var tot=vals.reduce(function(a,b){return a+b;},0)||1;
+      var pcts=vals.map(function(v){return Math.round(v/tot*100);});
+      new Chart(freshCtx,{
+        type:'bar',
+        data:{labels:labels,datasets:[{
+          label:'% of domains',
+          data:pcts,
+          backgroundColor:['rgba('+hexToRgb(acc)+',0.85)','rgba('+hexToRgb(acc)+',0.6)','rgba('+hexToRgb(acc)+',0.35)','rgba('+hexToRgb(acc)+',0.15)'],
+          borderColor:'rgba('+hexToRgb(acc)+',0.5)',
+          borderWidth:1,borderRadius:4
+        }]},
+        options:{
+          responsive:true,maintainAspectRatio:false,
+          plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return' '+c.parsed.y+'%';} } } },
+          scales:{
+            x:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.4)',font:{size:11}}},
+            y:{grid:{color:'rgba(255,255,255,0.04)'},ticks:{color:'rgba(255,255,255,0.4)',font:{size:10},callback:function(v){return v+'%';}}}
+          }
+        }
+      });
+    }
+
+    // ── Burst Days ────────────────────────────────────────────────────────────
+    var burstEl=document.getElementById('burst-days-list');
+    if(burstEl){
+      var bd=data.burst_days||[];
+      if(!bd.length){noDataMsg(burstEl,'Burst day data will appear after next fetch.');}
+      else{
+        var maxC=bd[0]?bd[0].count:1;
+        var wrap=el('div',{style:'max-width:520px'});
+        var hdr=el('div',{style:'display:flex;gap:12px;padding:0 0 8px;border-bottom:1px solid rgba(255,255,255,0.08);margin-bottom:4px'});
+        [['Date','100px'],['','1fr'],['Domains','80px'],['×avg','55px']].forEach(function(h){
+          hdr.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);'+(h[1]==='1fr'?'flex:1':'width:'+h[1])},h[0]));
+        });
+        wrap.appendChild(hdr);
+        bd.forEach(function(item,idx){
+          var pct=(item.count/maxC*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:12px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          row.appendChild(el('div',{style:'width:100px;font-size:11px;font-weight:600;color:'+(idx===0?'var(--cy)':'var(--tx1)')+';font-family:monospace'},item.date));
+          var barWrap=el('div',{style:'flex:1;height:3px;background:var(--bdr);border-radius:2px;overflow:hidden'});
+          var barFill=el('div',{style:'height:3px;border-radius:2px;background:var(--cy);opacity:'+(idx===0?'.9':'.5')+';width:'+pct+'%'});
+          barWrap.appendChild(barFill);
+          row.appendChild(barWrap);
+          row.appendChild(el('div',{style:'width:80px;font-size:11px;color:var(--tx1);text-align:right;font-weight:'+(item.x_avg>2?'700':'400')},item.count.toLocaleString()));
+          var xEl=el('div',{style:'width:55px;font-size:11px;text-align:right;color:'+(item.x_avg>=3?'var(--cy)':item.x_avg>=2?'var(--tx1)':'var(--tx3)')},item.x_avg+'×');
+          row.appendChild(xEl);
+          wrap.appendChild(row);
+        });
+        burstEl.appendChild(wrap);
+      }
+    }
+  });
+})();
+</script>
+
+<!-- REGISTRANT + BRAND SECTION -->
+
+<div class="wrap" style="padding-top:32px;padding-bottom:0">
+  <div class="sec"><h2>&#x1F575; Registrant Fingerprinting</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Email addresses and phone numbers used to register phishing domains. Repeated contacts across hundreds of domains identify serial abuse operators — direct IOCs for attribution.</p>
+  <div id="registrant-summary" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px"></div>
+  <div style="display:flex;gap:32px;flex-wrap:wrap">
+    <div style="flex:1;min-width:280px">
+      <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-bottom:10px">Top Registrant Emails</div>
+      <div id="email-list"></div>
+    </div>
+    <div style="flex:0 0 220px">
+      <div style="font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-bottom:10px">Top Registrant Phones</div>
+      <div id="phone-list"></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:32px;padding-bottom:32px">
+  <div class="sec"><h2>&#x1F3AF; Brand &amp; Keyword Heatmap</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">Brand names and phishing keywords found in domain labels. Shows which ecosystems are most targeted: crypto wallets, exchanges, DeFi protocols, and support scams.</p>
+  <div id="brand-heatmap"></div>
+</div>
+
+<script>
+(function(){
+  function waitForData(cb,_dl){
+    if(!_dl)_dl=Date.now()+15000;
+    if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
+    if(Date.now()>_dl)return;
+    setTimeout(function(){waitForData(cb,_dl);},250);
+  }
+  function el(tag,attrs,text){
+    var e=document.createElement(tag);
+    Object.keys(attrs||{}).forEach(function(k){e.setAttribute(k,attrs[k]);});
+    if(text!==undefined)e.textContent=text;
+    return e;
+  }
+  function card(v,l){
+    var c=el('div',{style:'border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px'});
+    c.appendChild(el('div',{style:'font-size:1.5rem;font-weight:800;color:var(--cy);line-height:1'},v));
+    c.appendChild(el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px'},l));
+    return c;
+  }
+  function noData(container,msg){
+    var p=el('p',{style:'color:var(--tx3);font-size:13px'},msg||'Data will appear after next daily fetch.');
+    container.appendChild(p);
+  }
+
+  waitForData(function(data){
+    var acc=(getComputedStyle(document.documentElement).getPropertyValue('--cy')||'').trim()||'#888888';
+
+    // ── Registrant summary cards ──────────────────────────────────────────────
+    var sumEl=document.getElementById('registrant-summary');
+    if(sumEl){
+      var serial=data.serial_email_count||0;
+      var emailCount=Object.keys(data.top_registrant_emails||{}).length;
+      var phoneCount=Object.keys(data.top_registrant_phones||{}).length;
+      sumEl.appendChild(card(serial.toLocaleString(),'serial registrants (≥10 domains)'));
+      sumEl.appendChild(card(emailCount.toLocaleString(),'unique email registrants'));
+      sumEl.appendChild(card(phoneCount.toLocaleString(),'unique phone registrants'));
+    }
+
+    // ── Email list ────────────────────────────────────────────────────────────
+    var emailEl=document.getElementById('email-list');
+    if(emailEl){
+      var emails=data.top_registrant_emails||{};
+      var eKeys=Object.keys(emails).sort(function(a,b){return emails[b]-emails[a];});
+      if(!eKeys.length){noData(emailEl,'No email data yet.');}
+      else{
+        var maxE=emails[eKeys[0]]||1;
+        eKeys.slice(0,15).forEach(function(em){
+          var n=emails[em];
+          var pct=(n/maxE*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:10px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          var emSpan=el('div',{style:'flex:1;font-size:10px;color:'+(n>=50?'var(--cy)':n>=10?'var(--tx1)':'var(--tx3)')+';font-family:monospace;word-break:break-all;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap'},em);
+          var cnt=el('div',{style:'font-size:11px;font-weight:'+(n>=10?'700':'400')+';color:var(--tx2);flex-shrink:0;margin-left:8px'},n+'×');
+          row.appendChild(emSpan);
+          row.appendChild(cnt);
+          emailEl.appendChild(row);
+        });
+      }
+    }
+
+    // ── Phone list ────────────────────────────────────────────────────────────
+    var phoneEl=document.getElementById('phone-list');
+    if(phoneEl){
+      var phones=data.top_registrant_phones||{};
+      var pKeys=Object.keys(phones).sort(function(a,b){return phones[b]-phones[a];});
+      if(!pKeys.length){noData(phoneEl,'No phone data yet.');}
+      else{
+        pKeys.slice(0,10).forEach(function(ph){
+          var n=phones[ph];
+          var row=el('div',{style:'display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.03)'});
+          row.appendChild(el('div',{style:'flex:1;font-size:11px;color:var(--tx1);font-family:monospace'},ph));
+          row.appendChild(el('div',{style:'font-size:11px;font-weight:700;color:var(--tx2);flex-shrink:0'},n+'×'));
+          phoneEl.appendChild(row);
+        });
+      }
+    }
+
+    // ── Brand heatmap ─────────────────────────────────────────────────────────
+    var brandEl=document.getElementById('brand-heatmap');
+    if(brandEl){
+      var bm=data.brand_heatmap||{};
+      var bKeys=Object.keys(bm).sort(function(a,b){return bm[b]-bm[a];});
+      if(!bKeys.length){noData(brandEl,'Brand data will appear after next fetch.');}
+      else{
+        var maxB=bm[bKeys[0]]||1;
+        var wrap=el('div',{style:'display:flex;flex-wrap:wrap;gap:8px;max-width:800px'});
+        bKeys.forEach(function(kw){
+          var n=bm[kw];
+          var scale=0.7+0.6*(n/maxB);
+          var alpha=0.25+0.65*(n/maxB);
+          var chip=el('div',{style:'display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border:1px solid rgba('+
+            getComputedStyle(document.documentElement).getPropertyValue('--cy').replace('#','')+','+alpha+');border-radius:4px;cursor:default;transition:opacity .2s'});
+          var label=el('span',{style:'font-family:monospace;font-size:'+(10+4*(n/maxB)).toFixed(1)+'px;font-weight:'+(n>=100?700:n>=20?600:400)+';color:var(--cy);opacity:'+alpha.toFixed(2)},kw);
+          var count=el('span',{style:'font-size:9px;color:var(--tx3)'},n.toLocaleString());
+          chip.appendChild(label);
+          chip.appendChild(count);
+          wrap.appendChild(chip);
+        });
+        brandEl.appendChild(wrap);
+      }
+    }
+  });
+})();
+</script>
+
+<!-- IOC + CORRELATION + VISUAL UPGRADE SECTION -->
+
+<div class="wrap pd-section" style="padding-top:32px;padding-bottom:0">
+  <div class="sec">
+    <h2><span class="pd-live-dot"></span>&#x1F6A8; Serial Registrant IOCs</h2>
+    <div class="ln"></div>
+  </div>
+  <p class="sec-sub" style="margin-bottom:20px">
+    Registrant emails appearing across multiple phishing domains — direct operator fingerprints.
+    High repeat count = organised, sustained campaign. Import into SIEM/EDR for attribution.
+  </p>
+  <div id="ioc-summary" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px"></div>
+  <div id="ioc-registrants-list"></div>
+</div>
+
+<div class="wrap pd-section" style="padding-top:32px;padding-bottom:32px">
+  <div class="sec"><h2>&#x2705; Blocklist Correlation</h2><div class="ln"></div></div>
+  <p class="sec-sub" style="margin-bottom:20px">
+    Cross-reference with the main Destroylist blocklist. Confirmed phishing domains validated
+    by independent verification pipeline. Unranked % = new infrastructure with no prior web presence.
+  </p>
+  <div id="correlation-stats" style="display:flex;gap:12px;flex-wrap:wrap"></div>
+</div>
+
+<script>
+(function(){
+  // ── CSS variable extraction for glow ──────────────────────────────────────
+  function setCyRgb(){
+    var cy=(getComputedStyle(document.documentElement).getPropertyValue('--cy')||'').trim().replace('#','');
+    if(!cy||cy.length<6)return;
+    var n=parseInt(cy,16);
+    document.documentElement.style.setProperty('--cy-r',String((n>>16)&255));
+    document.documentElement.style.setProperty('--cy-g',String((n>>8)&255));
+    document.documentElement.style.setProperty('--cy-b',String(n&255));
+  }
+  setCyRgb();
+
+  // ── CountUp animation ─────────────────────────────────────────────────────
+  function countUp(el,target,opts){
+    opts=opts||{};
+    var pre=opts.pre||'',suf=opts.suf||'',dur=opts.dur||1100,dec=opts.dec||0;
+    var start=0,step=target/(dur/16);
+    var fmt=function(v){
+      if(dec)return pre+(v.toFixed(dec))+suf;
+      return pre+Math.round(v).toLocaleString()+suf;
+    };
+    var tick=function(){
+      start=Math.min(start+step,target);
+      el.textContent=fmt(start);
+      if(start<target)requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  // ── Observe + animate all stat value elements ─────────────────────────────
+  function animateCards(root){
+    var els=(root||document).querySelectorAll('[style*="font-size:1.5rem"]');
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(!e.isIntersecting)return;
+        obs.unobserve(e.target);
+        var el=e.target;
+        var txt=(el.textContent||'').trim();
+        // parse number from text like "$1,234" "45%" "365d" "1,234"
+        var m=txt.match(/^([$]?)([\d,\.]+)([%d]?)$/);
+        if(!m)return;
+        var pre=m[1],raw=parseFloat(m[2].replace(/,/g,'')),suf=m[3];
+        if(isNaN(raw)||raw<=0)return;
+        countUp(el,raw,{pre:pre,suf:suf,dur:900+Math.random()*400});
+        // add glow to parent card
+        var card=el.parentElement;
+        if(card)card.classList.add('pd-card');
+        if(raw>=1000&&card)card.classList.add('pd-pulse');
+      });
+    },{threshold:0.3});
+    els.forEach(function(el){obs.observe(el);});
+  }
+
+  function el(tag,attrs,text){
+    var e=document.createElement(tag);
+    Object.keys(attrs||{}).forEach(function(k){e.setAttribute(k,attrs[k]);});
+    if(text!==undefined)e.textContent=text;
+    return e;
+  }
+  function card(v,l,pulse){
+    var c=el('div',{style:'border:1px solid var(--bdr);border-radius:6px;padding:14px 18px;min-width:140px',class:'pd-card'+(pulse?' pd-pulse':'')});
+    var vd=el('div',{style:'font-size:1.5rem;font-weight:800;color:var(--cy);line-height:1'},v);
+    var ld=el('div',{style:'font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3);margin-top:4px'},l);
+    c.appendChild(vd); c.appendChild(ld);
+    return c;
+  }
+
+  function waitForData(cb,_dl){
+    if(!_dl)_dl=Date.now()+15000;
+    if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}
+    if(Date.now()>_dl)return;
+    setTimeout(function(){waitForData(cb,_dl);},250);
+  }
+
+  waitForData(function(data){
+    // ── IOC summary cards ──────────────────────────────────────────────────
+    var iocSum=document.getElementById('ioc-summary');
+    if(iocSum){
+      var serial=data.serial_email_count||0;
+      var emails=Object.keys(data.top_registrant_emails||{}).length;
+      var phones=Object.keys(data.top_registrant_phones||{}).length;
+      iocSum.appendChild(card(serial.toLocaleString(),'serial registrants (≥10 domains)',serial>0));
+      iocSum.appendChild(card(emails.toLocaleString(),'unique email contacts',false));
+      iocSum.appendChild(card(phones.toLocaleString(),'unique phone contacts',false));
+    }
+
+    // ── IOC registrants table ─────────────────────────────────────────────
+    var iocList=document.getElementById('ioc-registrants-list');
+    if(iocList){
+      var emails=data.top_registrant_emails||{};
+      var eKeys=Object.keys(emails).sort(function(a,b){return emails[b]-emails[a];}).slice(0,12);
+      if(!eKeys.length){
+        var p=el('p',{style:'color:var(--tx3);font-size:13px'},'IOC data will appear after first workflow run.');
+        iocList.appendChild(p);
+      } else {
+        var maxE=emails[eKeys[0]]||1;
+        eKeys.forEach(function(em,idx){
+          var n=emails[em];
+          var pct=(n/maxE*100).toFixed(0);
+          var row=el('div',{style:'display:flex;align-items:center;gap:14px;padding:8px 10px;border-bottom:1px solid rgba(255,255,255,0.04)',class:'pd-ioc-row'});
+
+          // rank
+          var rank=el('div',{style:'width:22px;font-size:11px;color:var(--tx3);text-align:right;flex-shrink:0'},String(idx+1));
+
+          // email (partially redacted after @)
+          var parts=em.split('@');
+          var display=parts.length===2
+            ? parts[0].slice(0,Math.min(parts[0].length,12))+(parts[0].length>12?'…':'')+'@'+parts[1]
+            : em.slice(0,24)+(em.length>24?'…':'');
+          var emEl=el('div',{style:'flex:1;font-size:11px;font-family:monospace;color:'+(n>=50?'var(--cy)':n>=10?'var(--tx1)':'var(--tx2)')+';min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap',title:em},display);
+
+          // bar
+          var barWrap=el('div',{style:'width:80px;height:3px;background:var(--bdr);border-radius:2px;overflow:hidden;flex-shrink:0'});
+          var barFill=el('div',{style:'height:3px;border-radius:2px;background:var(--cy);opacity:.7;width:'+pct+'%'});
+          barWrap.appendChild(barFill);
+
+          // count badge
+          var badge=el('div',{style:'flex-shrink:0;font-size:11px;font-weight:700;color:'+(n>=50?'var(--cy)':n>=20?'var(--tx1)':'var(--tx3)')+';min-width:40px;text-align:right'},n+'×');
+
+          row.appendChild(rank); row.appendChild(emEl); row.appendChild(barWrap); row.appendChild(badge);
+          iocList.appendChild(row);
+        });
+      }
+    }
+
+    // ── Correlation stats ──────────────────────────────────────────────────
+    var corrEl=document.getElementById('correlation-stats');
+    if(corrEl){
+      var cc=data.correlation_count||0;
+      var cp=data.correlation_pct||0;
+      var ur=data.unranked_pct||0;
+      var rc=data.ranked_count||0;
+      corrEl.appendChild(card(cc.toLocaleString(),'confirmed in blocklist',cc>100));
+      corrEl.appendChild(card(cp+'%','correlation rate',false));
+      corrEl.appendChild(card(ur+'%','zero Majestic rank',false));
+      corrEl.appendChild(card(rc.toLocaleString(),'known/ranked domains',false));
+    }
+
+    // ── Trigger countUp on all existing stat cards ─────────────────────────
+    animateCards(document);
+  });
+})();
+</script>
+
+<!-- PHISHDESTROY MANIFESTO -->
+<div style="margin:0;line-height:0"><img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="display:block;max-height:4px;object-fit:cover;object-position:center"></div>
+<div style="background:var(--s1);border-top:1px solid rgba(218,54,51,.25);border-bottom:1px solid rgba(218,54,51,.25);padding:48px 28px 44px">
+<div style="max-width:1100px;margin:0 auto">
+
+  <!-- header -->
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px">
+    <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#da3633;flex-shrink:0;animation:blink 1.4s step-end infinite"></span>
+    <span style="font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(218,54,51,.8);font-family:monospace">PhishDestroy / Statement</span>
+    <div style="flex:1;height:1px;background:rgba(218,54,51,.2)"></div>
+  </div>
+
+  <!-- opening -->
+  <div style="margin-bottom:32px">
+    <h2 style="font-size:26px;font-weight:300;line-height:1.25;letter-spacing:-.02em;color:#f0f6fc;max-width:820px">
+      While someone is still looking for the right regulator —<br>
+      <strong style="font-weight:800;color:#da3633">right now, someone is losing their savings.</strong>
+    </h2>
+  </div>
+
+  <!-- two-col grid -->
+  <div style="display:grid;grid-template-columns:1fr 320px;gap:32px;align-items:start">
+
+    <!-- left: text -->
+    <div>
+      <p style="font-size:13px;line-height:1.85;color:var(--tx2);margin-bottom:16px">
+        This is not a complaint to ICANN. ICANN is a technical body — it standardises DNS resolution and allocates IP space.
+        It was not designed to stop wire fraud. The RAA §3.18 acknowledgement requirement exists on paper.
+        In practice, enforcement is a multi-year process of letters and reviews,
+        measured in months while victims are measured in dollars lost per hour.
+        <strong style="color:var(--tx)">That is the wrong regulator for this problem.</strong>
+      </p>
+      <p style="font-size:13px;line-height:1.85;color:var(--tx2);margin-bottom:16px">
+        <strong style="color:var(--tx)">This is about money flows.</strong>
+        Every domain in this dataset generated a registration fee. Every renewal generated another.
+        Every day an abuse report sat unanswered, the registrar collected revenue from an active fraud operation.
+        That is not a compliance gap — <strong style="color:#da3633">that is a business model.</strong>
+      </p>
+      <p style="font-size:13px;line-height:1.85;color:var(--tx2);margin-bottom:20px">
+        Registrars are not passive infrastructure. They are the
+        <strong style="color:var(--tx)">first and only chokepoint</strong>
+        that can kill a fraud domain in 24 hours — no court order required.
+        Their choice not to act is a decision with a revenue motive attached.
+        The <span style="color:var(--or);font-weight:700">"not our jurisdiction"</span> defence does not survive
+        contact with one question: <strong style="color:#f0f6fc">then why are you cashing the check?</strong>
+      </p>
+
+      
+      <!-- registrar choice block -->
+      <div style="background:var(--s2);border:1px solid var(--bdr);border-radius:7px;padding:16px 18px;margin-bottom:20px">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);font-family:monospace;margin-bottom:10px">The Deliberate Choice</div>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2);margin-bottom:10px">
+          Exclude the newcomers — the inexperienced operator who found a registrar via a Google ad or picked the cheapest option.
+          <strong style="color:var(--tx)">Organised scam teams don't pick registrars by price.</strong>
+          They pick by track record: which registrar ignores abuse reports, which privacy shield survives a takedown attempt,
+          which reseller delivers domains fast with no questions asked.
+        </p>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2);margin-bottom:10px">
+          In CIS-language fraud forums and Telegram channels, registrar recommendations circulate as operational intelligence.
+          There are black-market resellers — <span style="color:var(--or);font-weight:600">"bulletproof domain" brokers</span> —
+          who specifically source from NICENIC, NameSilo, and similar registrars and sell to scam teams pre-configured.
+          These resellers exist <em style="color:var(--tx);font-style:normal">because</em> these registrars reliably do not act on abuse reports.
+          That is the product being sold.
+        </p>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2)">
+          When the same operator fingerprints — email clusters, favicon hashes, server stacks — appear across hundreds of domains
+          registered at the same registrar over months: that is not coincidence.
+          <strong style="color:#da3633">That registrar's non-enforcement is documented institutional knowledge in the criminal ecosystem.</strong>
+          The question is not why scammers keep buying from NICENIC or NameSilo.
+          The question is why NICENIC and NameSilo keep selling to them.
+        </p>
+      </div>
+
+
+      <!-- volume of reports block -->
+      <div style="background:var(--s2);border:1px solid var(--bdr);border-radius:7px;padding:16px 18px;margin-bottom:20px">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);font-family:monospace;margin-bottom:10px">"We Never Received Any Reports"</div>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2);margin-bottom:10px">
+          PhishDestroy is not the only source. Every major registrar receives abuse reports from
+          APWG, PhishTank, national CERTs, ISACs, brand protection teams, and individual researchers — continuously, in volume.
+          There is no global centralised body that audits whether those reports are actually processed,
+          no mandatory disclosure requirement, no independent verification.
+          <strong style="color:var(--tx)">A registrar can claim to have received nothing, and there is currently no mechanism to prove otherwise at speed.</strong>
+        </p>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2);margin-bottom:10px">
+          NameSilo received documented abuse reports from PhishDestroy alone — more than 20, with full evidence packages,
+          timestamped, on record. Their public position was that they had received nothing.
+          <strong style="color:#da3633">That is not a miscommunication. That is a lie.</strong>
+        </p>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2);margin-bottom:10px">
+          The same pattern is predictable across Russian-connected registrars: when confronted,
+          the default response will be "we never received any reports." It is the only legally useful position —
+          because receiving a report and ignoring it is not the same as never receiving one.
+        </p>
+        <div style="background:rgba(218,54,51,.07);border:1px solid rgba(218,54,51,.25);border-radius:5px;padding:12px 15px">
+          <p style="font-size:12px;line-height:1.75;color:var(--tx)">
+            <strong style="color:#da3633">Receiving an abuse report and ignoring it is not negligence.</strong>
+            Negligence is an accident. Receiving documented evidence of an active fraud domain,
+            taking no action, and collecting the renewal fee is a choice.
+            That choice has a name: <strong style="color:#da3633">complicity.</strong>
+          </p>
+        </div>
+      </div>
+
+<!-- namesilo callout -->
+      <div style="border-left:3px solid #da3633;padding:12px 16px;background:rgba(218,54,51,.05);border-radius:0 5px 5px 0;margin-bottom:20px">
+        <p style="font-size:12px;line-height:1.75;color:var(--tx2)">
+          When NameSilo responded to documented abuse of <code style="font-size:11px;color:#f0f6fc">xmrwallet[.]com</code> —
+          a Monero drainer with $10&ndash;20M in confirmed victim losses —
+          by <strong style="color:#da3633">offering to clear its VirusTotal detections</strong>
+          rather than suspending the domain: that was not a mistake. That was a choice.
+        </p>
+      </div>
+
+      <!-- audience -->
+      <div style="margin-bottom:6px">
+        <span style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);font-family:monospace">Real audience for this data</span>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px">
+        <span style="font-size:11px;font-family:monospace;font-weight:700;padding:5px 12px;border:1px solid rgba(110,168,215,.3);border-radius:4px;color:var(--cy);background:rgba(110,168,215,.06)">FBI IC3</span>
+        <span style="font-size:11px;font-family:monospace;font-weight:700;padding:5px 12px;border:1px solid rgba(110,168,215,.3);border-radius:4px;color:var(--cy);background:rgba(110,168,215,.06)">FinCEN</span>
+        <span style="font-size:11px;font-family:monospace;font-weight:700;padding:5px 12px;border:1px solid rgba(110,168,215,.3);border-radius:4px;color:var(--cy);background:rgba(110,168,215,.06)">Europol EC3</span>
+        <span style="font-size:11px;font-family:monospace;font-weight:700;padding:5px 12px;border:1px solid rgba(110,168,215,.3);border-radius:4px;color:var(--cy);background:rgba(110,168,215,.06)">CISA / NCSC</span>
+        <span style="font-size:11px;font-family:monospace;font-weight:700;padding:5px 12px;border:1px solid rgba(110,168,215,.3);border-radius:4px;color:var(--cy);background:rgba(110,168,215,.06)">Interpol IGCI</span>
+        <span style="font-size:11px;font-family:monospace;font-weight:700;padding:5px 12px;border:1px solid rgba(192,160,96,.3);border-radius:4px;color:var(--or);background:rgba(192,160,96,.06)">Journalists</span>
+        <span style="font-size:11px;font-family:monospace;font-weight:700;padding:5px 12px;border:1px solid rgba(192,160,96,.3);border-radius:4px;color:var(--or);background:rgba(192,160,96,.06)">Legislators</span>
+        <span style="font-size:11px;font-family:monospace;font-weight:700;padding:5px 12px;border:1px solid rgba(192,160,96,.3);border-radius:4px;color:var(--or);background:rgba(192,160,96,.06)">Threat Intel Teams</span>
+      </div>
+
+      
+      <!-- one domain trick -->
+      <div style="background:var(--s2);border:1px solid var(--bdr);border-radius:7px;padding:16px 18px;margin-bottom:20px">
+        <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);font-family:monospace;margin-bottom:10px">One Domain Suspended Is Not Enforcement</div>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2);margin-bottom:10px">
+          There is a measurable difference between registrars that treat abuse as a
+          <strong style="color:var(--tx)">compliance checkbox</strong> and those that treat it as a
+          <strong style="color:var(--tx)">business policy</strong>.
+          Responsible registrars — the ones that do not want fraud operators as clients —
+          respond to a confirmed abuse report by <strong style="color:var(--gn)">suspending the entire account</strong>:
+          every domain registered by that operator, in one action.
+          They have seen the account. They know what it is.
+        </p>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2);margin-bottom:10px">
+          The registrars documented in this investigation respond differently.
+          A complaint arrives. One domain — the reported one — may eventually be suspended.
+          The other 200, 500, or 1,000 domains on the same account
+          <strong style="color:#da3633">continue operating.</strong>
+          The operator registers new ones the same day.
+          The registrar has seen the pattern. They have chosen to look away.
+        </p>
+        <p style="font-size:12px;line-height:1.8;color:var(--tx2);margin-bottom:10px">
+          KYC and reseller vetting requirements exist on paper.
+          In practice they are either absent or trivially bypassed —
+          a formality that provides legal cover without creating any actual barrier
+          to a fraud operator opening an account and registering domains at scale.
+          Our non-public investigation into registrar intake processes, conducted prior to this report,
+          found no meaningful friction at the account-creation stage for the registrars examined here.
+        </p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px">
+          <div style="background:rgba(63,185,80,.06);border:1px solid rgba(63,185,80,.2);border-radius:5px;padding:10px 14px">
+            <div style="font-size:9px;font-weight:700;letter-spacing:.08em;color:var(--gn);font-family:monospace;margin-bottom:6px;text-transform:uppercase">Responsible registrar</div>
+            <ul style="font-size:11px;color:var(--tx2);line-height:1.9;padding-left:14px;margin:0">
+              <li>Abuse report received</li>
+              <li>Account reviewed — pattern identified</li>
+              <li><strong style="color:var(--gn)">Entire account suspended</strong></li>
+              <li>All domains on account killed</li>
+              <li>Operator loses infrastructure</li>
+            </ul>
+          </div>
+          <div style="background:rgba(218,54,51,.06);border:1px solid rgba(218,54,51,.2);border-radius:5px;padding:10px 14px">
+            <div style="font-size:9px;font-weight:700;letter-spacing:.08em;color:#da3633;font-family:monospace;margin-bottom:6px;text-transform:uppercase">Complicit registrar</div>
+            <ul style="font-size:11px;color:var(--tx2);line-height:1.9;padding-left:14px;margin:0">
+              <li>Abuse report received (maybe)</li>
+              <li>Account reviewed — pattern ignored</li>
+              <li><strong style="color:#da3633">One domain suspended</strong></li>
+              <li>499 domains continue operating</li>
+              <li>Operator registers replacements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+<!-- receipt quote -->
+      <div style="background:rgba(110,168,215,.06);border:1px solid rgba(110,168,215,.2);border-radius:6px;padding:14px 18px">
+        <p style="font-size:14px;font-weight:700;color:var(--cy);font-family:monospace;margin-bottom:4px">Every domain in this dataset is a receipt.</p>
+        <p style="font-size:11px;color:var(--tx3)">The receipt exists whether the registrar acknowledges the transaction or not.</p>
+      </div>
+    </div>
+
+    <!-- right: loop visualization -->
+    <div style="background:var(--s2);border:1px solid var(--bdr);border-radius:8px;padding:20px 18px;font-family:monospace">
+      <div style="font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--tx3);margin-bottom:18px;text-align:center">The Abuse-Ignore Loop</div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:0">
+
+        <div style="width:100%;background:rgba(110,168,215,.08);border:1px solid rgba(110,168,215,.2);border-radius:5px;padding:10px 14px;text-align:center">
+          <div style="font-size:16px;margin-bottom:3px">📋</div>
+          <div style="font-size:11px;font-weight:700;color:var(--cy)">Register domain</div>
+          <div style="font-size:10px;color:var(--tx3);margin-top:2px">Registrar collects fee</div>
+        </div>
+
+        <div style="font-size:18px;color:var(--tx3);line-height:1.4">↓</div>
+
+        <div style="width:100%;background:rgba(218,54,51,.06);border:1px solid rgba(218,54,51,.2);border-radius:5px;padding:10px 14px;text-align:center">
+          <div style="font-size:16px;margin-bottom:3px">📭</div>
+          <div style="font-size:11px;font-weight:700;color:#da3633">Abuse report filed</div>
+          <div style="font-size:10px;color:var(--tx3);margin-top:2px">Ignored / auto-closed</div>
+        </div>
+
+        <div style="font-size:18px;color:var(--tx3);line-height:1.4">↓</div>
+
+        <div style="width:100%;background:rgba(218,54,51,.08);border:1px solid rgba(218,54,51,.3);border-radius:5px;padding:10px 14px;text-align:center">
+          <div style="font-size:16px;margin-bottom:3px">🔴</div>
+          <div style="font-size:11px;font-weight:700;color:#da3633">Domain stays live</div>
+          <div style="font-size:10px;color:var(--tx3);margin-top:2px">Phishing continues</div>
+        </div>
+
+        <div style="font-size:18px;color:var(--tx3);line-height:1.4">↓</div>
+
+        <div style="width:100%;background:rgba(192,160,96,.06);border:1px solid rgba(192,160,96,.2);border-radius:5px;padding:10px 14px;text-align:center">
+          <div style="font-size:16px;margin-bottom:3px">💸</div>
+          <div style="font-size:11px;font-weight:700;color:var(--or)">Victim loses money</div>
+          <div style="font-size:10px;color:var(--tx3);margin-top:2px">Real person, real losses</div>
+        </div>
+
+        <div style="font-size:18px;color:var(--tx3);line-height:1.4">↓</div>
+
+        <div style="width:100%;background:rgba(63,185,80,.06);border:1px solid rgba(63,185,80,.2);border-radius:5px;padding:10px 14px;text-align:center">
+          <div style="font-size:16px;margin-bottom:3px">💰</div>
+          <div style="font-size:11px;font-weight:700;color:var(--gn)">Operator renews domain</div>
+          <div style="font-size:10px;color:var(--tx3);margin-top:2px">Registrar collects again</div>
+        </div>
+
+        <div style="font-size:18px;color:var(--tx3);line-height:1.4">↺</div>
+
+        <div style="font-size:10px;color:var(--tx3);text-align:center;margin-top:4px;line-height:1.6">
+          Ignore = profit.<br>Not a bug. A feature.
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /grid -->
+</div><!-- /inner -->
+</div>
+<!-- /PHISHDESTROY MANIFESTO -->
+
+<script>
+(function(){
+  function waitCD(cb){if(typeof _chartData!=='undefined'&&_chartData){cb(_chartData);return;}setTimeout(function(){waitCD(cb);},300);}
+  waitCD(function(d){
+    var el=document.getElementById("hero-live");if(!el)return;
+    function stat(val,label,color,live){
+      var w=document.createElement("div");w.setAttribute("style","display:flex;flex-direction:column;gap:2px");
+      var top=document.createElement("div");top.setAttribute("style","display:flex;align-items:baseline;gap:6px");
+      var n=document.createElement("span");n.setAttribute("style","font-size:1.6rem;font-weight:800;color:var(--"+color+");line-height:1");n.textContent=val;top.appendChild(n);
+      if(live){var dot=document.createElement("span");dot.setAttribute("style","font-size:9px;font-weight:700;color:var(--gn);border:1px solid rgba(63,185,80,.3);padding:1px 5px;border-radius:3px;font-family:monospace;animation:blink 2s step-end infinite");dot.textContent="LIVE";top.appendChild(dot);}
+      var l=document.createElement("div");l.setAttribute("style","font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3)");l.textContent=label;
+      w.appendChild(top);w.appendChild(l);return w;
+    }
+    el.appendChild(stat((d.total_new_all_time||0).toLocaleString(),"Total registered","cy",true));
+    el.appendChild(stat("$"+Math.round(d.total_revenue_estimate||0).toLocaleString(),"Est. revenue","gn",true));
+    el.appendChild(stat((d.deployment_rate||0)+"%","Deployment rate","or",false));
+    el.appendChild(stat((d.serial_email_count||0).toLocaleString(),"Serial registrants","rd",false));
+    var ud=document.createElement("div");ud.setAttribute("style","display:flex;flex-direction:column;gap:2px;justify-content:center;margin-left:8px;padding-left:12px;border-left:1px solid rgba(255,255,255,.06)");
+    var ul=document.createElement("div");ul.setAttribute("style","font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3)");ul.textContent="Last updated";
+    var uv=document.createElement("div");uv.setAttribute("style","font-size:12px;font-family:monospace;color:var(--tx2)");uv.textContent=d.last_updated||"--";
+    ud.appendChild(ul);ud.appendChild(uv);el.appendChild(ud);
+  });
+})();
+</script>
+</body>
+</html>

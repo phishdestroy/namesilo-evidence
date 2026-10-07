@@ -1,0 +1,2773 @@
+{
+  "domains": {
+    "totalDomains": 10,
+    "topDomains": [
+      {
+        "domain": "www.xmrwallet.com",
+        "count": 109,
+        "methods": {
+          "POST": 50,
+          "GET": 59
+        },
+        "statusCodes": {
+          "200": 108
+        }
+      },
+      {
+        "domain": "www.googletagmanager.com",
+        "count": 12,
+        "methods": {
+          "GET": 12
+        },
+        "statusCodes": {
+          "200": 12
+        }
+      },
+      {
+        "domain": "region1.analytics.google.com",
+        "count": 5,
+        "methods": {
+          "POST": 5
+        },
+        "statusCodes": {}
+      },
+      {
+        "domain": "www.google.com",
+        "count": 3,
+        "methods": {
+          "POST": 3
+        },
+        "statusCodes": {
+          "200": 3
+        }
+      },
+      {
+        "domain": "www.google-analytics.com",
+        "count": 3,
+        "methods": {
+          "GET": 3
+        },
+        "statusCodes": {}
+      },
+      {
+        "domain": "www.google.ro",
+        "count": 2,
+        "methods": {
+          "GET": 2
+        },
+        "statusCodes": {
+          "200": 2
+        }
+      },
+      {
+        "domain": "signaler-pa.clients6.google.com",
+        "count": 2,
+        "methods": {
+          "OPTIONS": 1,
+          "POST": 1
+        },
+        "statusCodes": {
+          "200": 1,
+          "401": 1
+        }
+      },
+      {
+        "domain": "stats.g.doubleclick.net",
+        "count": 1,
+        "methods": {
+          "POST": 1
+        },
+        "statusCodes": {}
+      },
+      {
+        "domain": "cdn.buymeacoffee.com",
+        "count": 1,
+        "methods": {
+          "GET": 1
+        },
+        "statusCodes": {
+          "200": 1
+        }
+      },
+      {
+        "domain": "cdn.jsdelivr.net",
+        "count": 1,
+        "methods": {
+          "GET": 1
+        },
+        "statusCodes": {
+          "200": 1
+        }
+      }
+    ],
+    "allDomains": {
+      "www.xmrwallet.com": {
+        "domain": "www.xmrwallet.com",
+        "count": 109,
+        "methods": {
+          "POST": 50,
+          "GET": 59
+        },
+        "statusCodes": {
+          "200": 108
+        }
+      },
+      "region1.analytics.google.com": {
+        "domain": "region1.analytics.google.com",
+        "count": 5,
+        "methods": {
+          "POST": 5
+        },
+        "statusCodes": {}
+      },
+      "www.googletagmanager.com": {
+        "domain": "www.googletagmanager.com",
+        "count": 12,
+        "methods": {
+          "GET": 12
+        },
+        "statusCodes": {
+          "200": 12
+        }
+      },
+      "www.google.com": {
+        "domain": "www.google.com",
+        "count": 3,
+        "methods": {
+          "POST": 3
+        },
+        "statusCodes": {
+          "200": 3
+        }
+      },
+      "www.google.ro": {
+        "domain": "www.google.ro",
+        "count": 2,
+        "methods": {
+          "GET": 2
+        },
+        "statusCodes": {
+          "200": 2
+        }
+      },
+      "www.google-analytics.com": {
+        "domain": "www.google-analytics.com",
+        "count": 3,
+        "methods": {
+          "GET": 3
+        },
+        "statusCodes": {}
+      },
+      "signaler-pa.clients6.google.com": {
+        "domain": "signaler-pa.clients6.google.com",
+        "count": 2,
+        "methods": {
+          "OPTIONS": 1,
+          "POST": 1
+        },
+        "statusCodes": {
+          "200": 1,
+          "401": 1
+        }
+      },
+      "stats.g.doubleclick.net": {
+        "domain": "stats.g.doubleclick.net",
+        "count": 1,
+        "methods": {
+          "POST": 1
+        },
+        "statusCodes": {}
+      },
+      "cdn.buymeacoffee.com": {
+        "domain": "cdn.buymeacoffee.com",
+        "count": 1,
+        "methods": {
+          "GET": 1
+        },
+        "statusCodes": {
+          "200": 1
+        }
+      },
+      "cdn.jsdelivr.net": {
+        "domain": "cdn.jsdelivr.net",
+        "count": 1,
+        "methods": {
+          "GET": 1
+        },
+        "statusCodes": {
+          "200": 1
+        }
+      }
+    }
+  },
+  "methods": {
+    "methodCounts": [
+      {
+        "method": "GET",
+        "count": 78,
+        "percentage": "56.1"
+      },
+      {
+        "method": "POST",
+        "count": 60,
+        "percentage": "43.2"
+      },
+      {
+        "method": "OPTIONS",
+        "count": 1,
+        "percentage": "0.7"
+      }
+    ],
+    "methodsByTime": {
+      "4": {
+        "POST": 60,
+        "GET": 78,
+        "OPTIONS": 1
+      }
+    }
+  },
+  "statusCodes": {
+    "statusCounts": [
+      {
+        "status": "200",
+        "count": 128,
+        "percentage": "92.1"
+      },
+      {
+        "status": "401",
+        "count": 1,
+        "percentage": "0.7"
+      }
+    ],
+    "statusGroups": [
+      {
+        "group": "2xx",
+        "count": 128,
+        "percentage": "92.1"
+      },
+      {
+        "group": "3xx",
+        "count": 0,
+        "percentage": "0.0"
+      },
+      {
+        "group": "4xx",
+        "count": 1,
+        "percentage": "0.7"
+      },
+      {
+        "group": "5xx",
+        "count": 0,
+        "percentage": "0.0"
+      },
+      {
+        "group": "other",
+        "count": 0,
+        "percentage": "0.0"
+      }
+    ]
+  },
+  "parameters": {
+    "topParameters": [
+      {
+        "name": "session_id",
+        "count": 47,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 4
+      },
+      {
+        "name": "session_key",
+        "count": 47,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 3
+      },
+      {
+        "name": "gtm",
+        "count": 14,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com",
+          "www.google.ro",
+          "www.googletagmanager.com",
+          "stats.g.doubleclick.net"
+        ],
+        "domainCount": 5,
+        "uniqueValues": 3
+      },
+      {
+        "name": "tid",
+        "count": 11,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com",
+          "www.google.ro",
+          "stats.g.doubleclick.net"
+        ],
+        "domainCount": 4,
+        "uniqueValues": 2
+      },
+      {
+        "name": "gcd",
+        "count": 11,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com",
+          "www.google.ro",
+          "stats.g.doubleclick.net"
+        ],
+        "domainCount": 4,
+        "uniqueValues": 1
+      },
+      {
+        "name": "npa",
+        "count": 11,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com",
+          "www.google.ro",
+          "stats.g.doubleclick.net"
+        ],
+        "domainCount": 4,
+        "uniqueValues": 1
+      },
+      {
+        "name": "dma_cps",
+        "count": 11,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com",
+          "www.google.ro",
+          "stats.g.doubleclick.net"
+        ],
+        "domainCount": 4,
+        "uniqueValues": 1
+      },
+      {
+        "name": "dma",
+        "count": 11,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com",
+          "www.google.ro",
+          "stats.g.doubleclick.net"
+        ],
+        "domainCount": 4,
+        "uniqueValues": 1
+      },
+      {
+        "name": "frm",
+        "count": 11,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com",
+          "www.google.ro",
+          "stats.g.doubleclick.net"
+        ],
+        "domainCount": 4,
+        "uniqueValues": 1
+      },
+      {
+        "name": "tag_exp",
+        "count": 11,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com",
+          "www.google.ro",
+          "stats.g.doubleclick.net"
+        ],
+        "domainCount": 4,
+        "uniqueValues": 3
+      },
+      {
+        "name": "page",
+        "count": 10,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "sort",
+        "count": 10,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "v",
+        "count": 8,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.ro",
+          "stats.g.doubleclick.net"
+        ],
+        "domainCount": 3,
+        "uniqueValues": 2
+      },
+      {
+        "name": "cid",
+        "count": 8,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.ro",
+          "stats.g.doubleclick.net"
+        ],
+        "domainCount": 3,
+        "uniqueValues": 1
+      },
+      {
+        "name": "dl",
+        "count": 8,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com"
+        ],
+        "domainCount": 2,
+        "uniqueValues": 1
+      },
+      {
+        "name": "dt",
+        "count": 8,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com"
+        ],
+        "domainCount": 2,
+        "uniqueValues": 1
+      },
+      {
+        "name": "tfd",
+        "count": 8,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com"
+        ],
+        "domainCount": 2,
+        "uniqueValues": 8
+      },
+      {
+        "name": "en",
+        "count": 7,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com"
+        ],
+        "domainCount": 2,
+        "uniqueValues": 2
+      },
+      {
+        "name": "origin",
+        "count": 6,
+        "domains": [
+          "www.googletagmanager.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "id",
+        "count": 6,
+        "domains": [
+          "www.googletagmanager.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 2
+      },
+      {
+        "name": "_p",
+        "count": 5,
+        "domains": [
+          "region1.analytics.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 3
+      },
+      {
+        "name": "ul",
+        "count": 5,
+        "domains": [
+          "region1.analytics.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "sr",
+        "count": 5,
+        "domains": [
+          "region1.analytics.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "pscdl",
+        "count": 5,
+        "domains": [
+          "region1.analytics.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "_eu",
+        "count": 5,
+        "domains": [
+          "region1.analytics.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 2
+      },
+      {
+        "name": "_s",
+        "count": 5,
+        "domains": [
+          "region1.analytics.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 2
+      },
+      {
+        "name": "sid",
+        "count": 5,
+        "domains": [
+          "region1.analytics.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "sct",
+        "count": 5,
+        "domains": [
+          "region1.analytics.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "seg",
+        "count": 5,
+        "domains": [
+          "region1.analytics.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 2
+      },
+      {
+        "name": "dr",
+        "count": 5,
+        "domains": [
+          "region1.analytics.google.com",
+          "www.google.com"
+        ],
+        "domainCount": 2,
+        "uniqueValues": 2
+      },
+      {
+        "name": "address",
+        "count": 3,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 2
+      },
+      {
+        "name": "viewkey",
+        "count": 3,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 2
+      },
+      {
+        "name": "isnew",
+        "count": 3,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 2
+      },
+      {
+        "name": "timestamp",
+        "count": 3,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 3
+      },
+      {
+        "name": "verification",
+        "count": 3,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 3
+      },
+      {
+        "name": "scrsrc",
+        "count": 3,
+        "domains": [
+          "www.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "rnd",
+        "count": 3,
+        "domains": [
+          "www.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 3
+      },
+      {
+        "name": "auid",
+        "count": 3,
+        "domains": [
+          "www.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "navt",
+        "count": 3,
+        "domains": [
+          "www.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "apve",
+        "count": 3,
+        "domains": [
+          "www.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "apvf",
+        "count": 3,
+        "domains": [
+          "www.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "apvc",
+        "count": 3,
+        "domains": [
+          "www.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "tids",
+        "count": 3,
+        "domains": [
+          "www.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "tft",
+        "count": 3,
+        "domains": [
+          "www.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 3
+      },
+      {
+        "name": "aip",
+        "count": 3,
+        "domains": [
+          "www.google.ro",
+          "stats.g.doubleclick.net"
+        ],
+        "domainCount": 2,
+        "uniqueValues": 1
+      },
+      {
+        "name": "cx",
+        "count": 3,
+        "domains": [
+          "www.googletagmanager.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "new_acc",
+        "count": 3,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 2
+      },
+      {
+        "name": "_et",
+        "count": 2,
+        "domains": [
+          "region1.analytics.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 2
+      },
+      {
+        "name": "t",
+        "count": 2,
+        "domains": [
+          "www.google.ro"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "slf_rd",
+        "count": 2,
+        "domains": [
+          "www.google.ro"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      }
+    ],
+    "domainParameters": {
+      "www.xmrwallet.com": {
+        "domain": "www.xmrwallet.com",
+        "params": [
+          {
+            "name": "session_id",
+            "count": 47,
+            "uniqueValues": 4
+          },
+          {
+            "name": "session_key",
+            "count": 47,
+            "uniqueValues": 3
+          },
+          {
+            "name": "page",
+            "count": 10,
+            "uniqueValues": 1
+          },
+          {
+            "name": "sort",
+            "count": 10,
+            "uniqueValues": 1
+          },
+          {
+            "name": "address",
+            "count": 3,
+            "uniqueValues": 2
+          },
+          {
+            "name": "viewkey",
+            "count": 3,
+            "uniqueValues": 2
+          },
+          {
+            "name": "isnew",
+            "count": 3,
+            "uniqueValues": 2
+          },
+          {
+            "name": "timestamp",
+            "count": 3,
+            "uniqueValues": 3
+          },
+          {
+            "name": "verification",
+            "count": 3,
+            "uniqueValues": 3
+          },
+          {
+            "name": "new_acc",
+            "count": 3,
+            "uniqueValues": 2
+          },
+          {
+            "name": "data",
+            "count": 2,
+            "uniqueValues": 2
+          },
+          {
+            "name": "used",
+            "count": 1,
+            "uniqueValues": 1
+          }
+        ]
+      },
+      "region1.analytics.google.com": {
+        "domain": "region1.analytics.google.com",
+        "params": [
+          {
+            "name": "v",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "tid",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "gtm",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "_p",
+            "count": 5,
+            "uniqueValues": 3
+          },
+          {
+            "name": "gcd",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "npa",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "dma_cps",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "dma",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "cid",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "ul",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "sr",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "frm",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "pscdl",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "_eu",
+            "count": 5,
+            "uniqueValues": 2
+          },
+          {
+            "name": "_s",
+            "count": 5,
+            "uniqueValues": 2
+          },
+          {
+            "name": "tag_exp",
+            "count": 5,
+            "uniqueValues": 3
+          },
+          {
+            "name": "sid",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "sct",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "seg",
+            "count": 5,
+            "uniqueValues": 2
+          },
+          {
+            "name": "dl",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "dt",
+            "count": 5,
+            "uniqueValues": 1
+          },
+          {
+            "name": "tfd",
+            "count": 5,
+            "uniqueValues": 5
+          },
+          {
+            "name": "en",
+            "count": 4,
+            "uniqueValues": 2
+          },
+          {
+            "name": "dr",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "_et",
+            "count": 2,
+            "uniqueValues": 2
+          },
+          {
+            "name": "_gaz",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "_fv",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "_nsi",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "_ss",
+            "count": 1,
+            "uniqueValues": 1
+          }
+        ]
+      },
+      "www.googletagmanager.com": {
+        "domain": "www.googletagmanager.com",
+        "params": [
+          {
+            "name": "origin",
+            "count": 6,
+            "uniqueValues": 1
+          },
+          {
+            "name": "id",
+            "count": 6,
+            "uniqueValues": 2
+          },
+          {
+            "name": "cx",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "gtm",
+            "count": 3,
+            "uniqueValues": 1
+          }
+        ]
+      },
+      "www.google.com": {
+        "domain": "www.google.com",
+        "params": [
+          {
+            "name": "frm",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "en",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "dl",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "scrsrc",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "rnd",
+            "count": 3,
+            "uniqueValues": 3
+          },
+          {
+            "name": "dt",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "auid",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "navt",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "npa",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "gtm",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "gcd",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "dma_cps",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "dma",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "tag_exp",
+            "count": 3,
+            "uniqueValues": 3
+          },
+          {
+            "name": "apve",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "apvf",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "apvc",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "tids",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "tid",
+            "count": 3,
+            "uniqueValues": 1
+          },
+          {
+            "name": "tft",
+            "count": 3,
+            "uniqueValues": 3
+          },
+          {
+            "name": "tfd",
+            "count": 3,
+            "uniqueValues": 3
+          },
+          {
+            "name": "dr",
+            "count": 2,
+            "uniqueValues": 1
+          }
+        ]
+      },
+      "www.google.ro": {
+        "domain": "www.google.ro",
+        "params": [
+          {
+            "name": "v",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "t",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "slf_rd",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "_r",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "tid",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "cid",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "gtm",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "aip",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "dma",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "dma_cps",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "gcd",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "npa",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "frm",
+            "count": 2,
+            "uniqueValues": 1
+          },
+          {
+            "name": "tag_exp",
+            "count": 2,
+            "uniqueValues": 2
+          },
+          {
+            "name": "z",
+            "count": 2,
+            "uniqueValues": 2
+          }
+        ]
+      },
+      "www.google-analytics.com": {
+        "domain": "www.google-analytics.com",
+        "params": []
+      },
+      "signaler-pa.clients6.google.com": {
+        "domain": "signaler-pa.clients6.google.com",
+        "params": [
+          {
+            "name": "key",
+            "count": 2,
+            "uniqueValues": 1
+          }
+        ]
+      },
+      "stats.g.doubleclick.net": {
+        "domain": "stats.g.doubleclick.net",
+        "params": [
+          {
+            "name": "v",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "tid",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "cid",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "gtm",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "aip",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "dma",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "dma_cps",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "gcd",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "npa",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "frm",
+            "count": 1,
+            "uniqueValues": 1
+          },
+          {
+            "name": "tag_exp",
+            "count": 1,
+            "uniqueValues": 1
+          }
+        ]
+      },
+      "cdn.buymeacoffee.com": {
+        "domain": "cdn.buymeacoffee.com",
+        "params": []
+      },
+      "cdn.jsdelivr.net": {
+        "domain": "cdn.jsdelivr.net",
+        "params": []
+      }
+    },
+    "potentialInjectionPoints": [
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/dashboard.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/dashboard.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/auth.php",
+        "method": "POST",
+        "param": "viewkey",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/login.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/login.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/logout.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/logout.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/receive.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/receive.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/send.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/send.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/transactions.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/transactions.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/account.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/account.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/receive.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/receive.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/send.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/send.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getsubaddresses.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getsubaddresses.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/gettransactions.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getoutputs.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getoutputs.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/dashboard.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/dashboard.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/dashboard.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/dashboard.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/auth.php",
+        "method": "POST",
+        "param": "viewkey",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/create.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/create.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/logout.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/logout.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/account.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/account.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "signaler-pa.clients6.google.com",
+        "url": "https://signaler-pa.clients6.google.com/punctual/v1/chooseServer?key=AIzaSyBWW50ghQ5qHpMg1gxHV7U9t0wHE0qIUk4",
+        "param": "key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "signaler-pa.clients6.google.com",
+        "url": "https://signaler-pa.clients6.google.com/punctual/v1/chooseServer?key=AIzaSyBWW50ghQ5qHpMg1gxHV7U9t0wHE0qIUk4",
+        "param": "key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/support_login.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/support_login.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/receive.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/receive.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/send.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/send.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/transactions.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/transactions.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/dashboard.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/dashboard.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getheightsync.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/getbalance.php",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/dashboard.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/dashboard.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/auth.php",
+        "method": "POST",
+        "param": "viewkey",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/login.html",
+        "method": "POST",
+        "param": "session_id",
+        "type": "sensitive"
+      },
+      {
+        "domain": "www.xmrwallet.com",
+        "url": "https://www.xmrwallet.com/login.html",
+        "method": "POST",
+        "param": "session_key",
+        "type": "sensitive"
+      }
+    ]
+  },
+  "paths": {
+    "domainPaths": {
+      "www.xmrwallet.com": {
+        "domain": "www.xmrwallet.com",
+        "topPaths": [
+          {
+            "path": "/gettransactions.php",
+            "count": 9,
+            "methods": {
+              "POST": 9
+            },
+            "statusCodes": {
+              "200": 9
+            }
+          },
+          {
+            "path": "/getheightsync.php",
+            "count": 9,
+            "methods": {
+              "POST": 9
+            },
+            "statusCodes": {
+              "200": 8
+            }
+          },
+          {
+            "path": "/",
+            "count": 9,
+            "methods": {
+              "GET": 9
+            },
+            "statusCodes": {
+              "200": 9
+            }
+          },
+          {
+            "path": "/getbalance.php",
+            "count": 6,
+            "methods": {
+              "POST": 6
+            },
+            "statusCodes": {
+              "200": 6
+            }
+          },
+          {
+            "path": "/dashboard.html",
+            "count": 5,
+            "methods": {
+              "POST": 5
+            },
+            "statusCodes": {
+              "200": 5
+            }
+          },
+          {
+            "path": "/getprice.php",
+            "count": 3,
+            "methods": {
+              "GET": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/auth.php",
+            "count": 3,
+            "methods": {
+              "POST": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/favicon-16x16.png",
+            "count": 3,
+            "methods": {
+              "GET": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/android-icon-192x192.png",
+            "count": 3,
+            "methods": {
+              "GET": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/js/app.js",
+            "count": 3,
+            "methods": {
+              "GET": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/app.html",
+            "count": 3,
+            "methods": {
+              "GET": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/favicon.ico",
+            "count": 3,
+            "methods": {
+              "GET": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/js/scripts.min.js",
+            "count": 3,
+            "methods": {
+              "GET": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/js/jquery.js",
+            "count": 3,
+            "methods": {
+              "GET": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/receive.html",
+            "count": 3,
+            "methods": {
+              "POST": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/send.html",
+            "count": 3,
+            "methods": {
+              "POST": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/login.html",
+            "count": 2,
+            "methods": {
+              "POST": 2
+            },
+            "statusCodes": {
+              "200": 2
+            }
+          },
+          {
+            "path": "/logout.php",
+            "count": 2,
+            "methods": {
+              "POST": 2
+            },
+            "statusCodes": {
+              "200": 2
+            }
+          },
+          {
+            "path": "/transactions.html",
+            "count": 2,
+            "methods": {
+              "POST": 2
+            },
+            "statusCodes": {
+              "200": 2
+            }
+          },
+          {
+            "path": "/account.html",
+            "count": 2,
+            "methods": {
+              "POST": 2
+            },
+            "statusCodes": {
+              "200": 2
+            }
+          }
+        ],
+        "pathCount": 50
+      },
+      "region1.analytics.google.com": {
+        "domain": "region1.analytics.google.com",
+        "topPaths": [
+          {
+            "path": "/g/collect",
+            "count": 5,
+            "methods": {
+              "POST": 5
+            },
+            "statusCodes": {}
+          }
+        ],
+        "pathCount": 1
+      },
+      "www.googletagmanager.com": {
+        "domain": "www.googletagmanager.com",
+        "topPaths": [
+          {
+            "path": "/gtag/js",
+            "count": 6,
+            "methods": {
+              "GET": 6
+            },
+            "statusCodes": {
+              "200": 6
+            }
+          },
+          {
+            "path": "/static/service_worker/6240/sw.js",
+            "count": 3,
+            "methods": {
+              "GET": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          },
+          {
+            "path": "/static/service_worker/6240/sw_iframe.html",
+            "count": 3,
+            "methods": {
+              "GET": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          }
+        ],
+        "pathCount": 3
+      },
+      "www.google.com": {
+        "domain": "www.google.com",
+        "topPaths": [
+          {
+            "path": "/ccm/collect",
+            "count": 3,
+            "methods": {
+              "POST": 3
+            },
+            "statusCodes": {
+              "200": 3
+            }
+          }
+        ],
+        "pathCount": 1
+      },
+      "www.google.ro": {
+        "domain": "www.google.ro",
+        "topPaths": [
+          {
+            "path": "/ads/ga-audiences",
+            "count": 2,
+            "methods": {
+              "GET": 2
+            },
+            "statusCodes": {
+              "200": 2
+            }
+          }
+        ],
+        "pathCount": 1
+      },
+      "www.google-analytics.com": {
+        "domain": "www.google-analytics.com",
+        "topPaths": [
+          {
+            "path": "/analytics.js",
+            "count": 3,
+            "methods": {
+              "GET": 3
+            },
+            "statusCodes": {}
+          }
+        ],
+        "pathCount": 1
+      },
+      "signaler-pa.clients6.google.com": {
+        "domain": "signaler-pa.clients6.google.com",
+        "topPaths": [
+          {
+            "path": "/punctual/v1/chooseServer",
+            "count": 2,
+            "methods": {
+              "OPTIONS": 1,
+              "POST": 1
+            },
+            "statusCodes": {
+              "200": 1,
+              "401": 1
+            }
+          }
+        ],
+        "pathCount": 1
+      },
+      "stats.g.doubleclick.net": {
+        "domain": "stats.g.doubleclick.net",
+        "topPaths": [
+          {
+            "path": "/g/collect",
+            "count": 1,
+            "methods": {
+              "POST": 1
+            },
+            "statusCodes": {}
+          }
+        ],
+        "pathCount": 1
+      },
+      "cdn.buymeacoffee.com": {
+        "domain": "cdn.buymeacoffee.com",
+        "topPaths": [
+          {
+            "path": "/buttons/v2/default-yellow.png",
+            "count": 1,
+            "methods": {
+              "GET": 1
+            },
+            "statusCodes": {
+              "200": 1
+            }
+          }
+        ],
+        "pathCount": 1
+      },
+      "cdn.jsdelivr.net": {
+        "domain": "cdn.jsdelivr.net",
+        "topPaths": [
+          {
+            "path": "/npm/chart.js@3.9.1/dist/chart.min.js",
+            "count": 1,
+            "methods": {
+              "GET": 1
+            },
+            "statusCodes": {
+              "200": 1
+            }
+          }
+        ],
+        "pathCount": 1
+      }
+    }
+  },
+  "headers": {
+    "topHeaders": [
+      {
+        "name": "Host",
+        "count": 130,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com",
+          "cdn.buymeacoffee.com",
+          "cdn.jsdelivr.net"
+        ],
+        "domainCount": 7,
+        "uniqueValues": 7
+      },
+      {
+        "name": "User-Agent",
+        "count": 130,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com",
+          "cdn.buymeacoffee.com",
+          "cdn.jsdelivr.net"
+        ],
+        "domainCount": 7,
+        "uniqueValues": 1
+      },
+      {
+        "name": "Accept",
+        "count": 130,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com",
+          "cdn.buymeacoffee.com",
+          "cdn.jsdelivr.net"
+        ],
+        "domainCount": 7,
+        "uniqueValues": 6
+      },
+      {
+        "name": "Accept-Language",
+        "count": 130,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com",
+          "cdn.buymeacoffee.com",
+          "cdn.jsdelivr.net"
+        ],
+        "domainCount": 7,
+        "uniqueValues": 1
+      },
+      {
+        "name": "Accept-Encoding",
+        "count": 130,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com",
+          "cdn.buymeacoffee.com",
+          "cdn.jsdelivr.net"
+        ],
+        "domainCount": 7,
+        "uniqueValues": 2
+      },
+      {
+        "name": "Sec-GPC",
+        "count": 130,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com",
+          "cdn.buymeacoffee.com",
+          "cdn.jsdelivr.net"
+        ],
+        "domainCount": 7,
+        "uniqueValues": 1
+      },
+      {
+        "name": "Connection",
+        "count": 130,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com",
+          "cdn.buymeacoffee.com",
+          "cdn.jsdelivr.net"
+        ],
+        "domainCount": 7,
+        "uniqueValues": 1
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "count": 130,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com",
+          "cdn.buymeacoffee.com",
+          "cdn.jsdelivr.net"
+        ],
+        "domainCount": 7,
+        "uniqueValues": 8
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "count": 130,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com",
+          "cdn.buymeacoffee.com",
+          "cdn.jsdelivr.net"
+        ],
+        "domainCount": 7,
+        "uniqueValues": 4
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "count": 130,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com",
+          "cdn.buymeacoffee.com",
+          "cdn.jsdelivr.net"
+        ],
+        "domainCount": 7,
+        "uniqueValues": 4
+      },
+      {
+        "name": "Cookie",
+        "count": 110,
+        "domains": [
+          "www.xmrwallet.com",
+          "signaler-pa.clients6.google.com"
+        ],
+        "domainCount": 2,
+        "uniqueValues": 64
+      },
+      {
+        "name": "Referer",
+        "count": 108,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 4
+      },
+      {
+        "name": "Origin",
+        "count": 55,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.google.com",
+          "signaler-pa.clients6.google.com"
+        ],
+        "domainCount": 3,
+        "uniqueValues": 3
+      },
+      {
+        "name": "X-Requested-With",
+        "count": 53,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "Content-Type",
+        "count": 51,
+        "domains": [
+          "www.xmrwallet.com",
+          "signaler-pa.clients6.google.com"
+        ],
+        "domainCount": 2,
+        "uniqueValues": 3
+      },
+      {
+        "name": "Content-Length",
+        "count": 51,
+        "domains": [
+          "www.xmrwallet.com",
+          "signaler-pa.clients6.google.com"
+        ],
+        "domainCount": 2,
+        "uniqueValues": 10
+      },
+      {
+        "name": "Alt-Used",
+        "count": 15,
+        "domains": [
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "cdn.jsdelivr.net"
+        ],
+        "domainCount": 4,
+        "uniqueValues": 4
+      },
+      {
+        "name": "Sec-Fetch-Storage-Access",
+        "count": 11,
+        "domains": [
+          "www.googletagmanager.com",
+          "www.google.ro"
+        ],
+        "domainCount": 2,
+        "uniqueValues": 1
+      },
+      {
+        "name": "Upgrade-Insecure-Requests",
+        "count": 9,
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com"
+        ],
+        "domainCount": 2,
+        "uniqueValues": 1
+      },
+      {
+        "name": "Sec-Fetch-User",
+        "count": 6,
+        "domains": [
+          "www.xmrwallet.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "Service-Worker",
+        "count": 3,
+        "domains": [
+          "www.googletagmanager.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "Access-Control-Request-Method",
+        "count": 1,
+        "domains": [
+          "signaler-pa.clients6.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "Access-Control-Request-Headers",
+        "count": 1,
+        "domains": [
+          "signaler-pa.clients6.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "Authorization",
+        "count": 1,
+        "domains": [
+          "signaler-pa.clients6.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      },
+      {
+        "name": "X-Goog-AuthUser",
+        "count": 1,
+        "domains": [
+          "signaler-pa.clients6.google.com"
+        ],
+        "domainCount": 1,
+        "uniqueValues": 1
+      }
+    ],
+    "securityHeaders": [
+      {
+        "name": "Content-Security-Policy",
+        "description": "Controls resources the user agent is allowed to load",
+        "present": 108,
+        "missing": 21,
+        "percentage": "83.7",
+        "domains": [
+          "www.xmrwallet.com"
+        ]
+      },
+      {
+        "name": "X-XSS-Protection",
+        "description": "Stops pages from loading when XSS is detected",
+        "present": 127,
+        "missing": 2,
+        "percentage": "98.4",
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com"
+        ]
+      },
+      {
+        "name": "X-Frame-Options",
+        "description": "Protects against clickjacking",
+        "present": 113,
+        "missing": 16,
+        "percentage": "87.6",
+        "domains": [
+          "www.xmrwallet.com",
+          "www.google.com",
+          "signaler-pa.clients6.google.com"
+        ]
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "description": "Prevents MIME-sniffing",
+        "present": 122,
+        "missing": 7,
+        "percentage": "94.6",
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "www.google.com",
+          "www.google.ro",
+          "signaler-pa.clients6.google.com",
+          "cdn.jsdelivr.net"
+        ]
+      },
+      {
+        "name": "Strict-Transport-Security",
+        "description": "Forces HTTPS connections",
+        "present": 116,
+        "missing": 13,
+        "percentage": "89.9",
+        "domains": [
+          "www.xmrwallet.com",
+          "www.googletagmanager.com",
+          "signaler-pa.clients6.google.com",
+          "cdn.jsdelivr.net"
+        ]
+      },
+      {
+        "name": "Referrer-Policy",
+        "description": "Controls information in the Referer header",
+        "present": 108,
+        "missing": 21,
+        "percentage": "83.7",
+        "domains": [
+          "www.xmrwallet.com"
+        ]
+      },
+      {
+        "name": "Feature-Policy",
+        "description": "Controls browser features",
+        "present": 0,
+        "missing": 129,
+        "percentage": "0.0",
+        "domains": []
+      },
+      {
+        "name": "Permissions-Policy",
+        "description": "Controls browser features (replacing Feature-Policy)",
+        "present": 0,
+        "missing": 129,
+        "percentage": "0.0",
+        "domains": []
+      }
+    ]
+  },
+  "timeline": {
+    "timelineData": [
+      {
+        "timeStamp": 1771427153377,
+        "date": "2026-02-18T15:05:53.377Z",
+        "count": 82,
+        "methods": [
+          {
+            "method": "GET",
+            "count": 60
+          },
+          {
+            "method": "POST",
+            "count": 21
+          },
+          {
+            "method": "OPTIONS",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "timeStamp": 1771427213377,
+        "date": "2026-02-18T15:06:53.377Z",
+        "count": 57,
+        "methods": [
+          {
+            "method": "POST",
+            "count": 39
+          },
+          {
+            "method": "GET",
+            "count": 18
+          }
+        ]
+      }
+    ],
+    "intervalSize": 60000
+  },
+  "lastUpdated": 1771427272677,
+  "totalRequests": 139
+}

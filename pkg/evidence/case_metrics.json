@@ -1,0 +1,396 @@
+{
+  "generated_utc": "2026-06-03T07:21:17+00:00",
+  "sources": {
+    "raw_csv": "1479_full.csv",
+    "csv_profile": "csv_profile_1479.json",
+    "scan_stats": "report_stats.json",
+    "evidence_manifest": "evidence_manifest.json",
+    "evidence_data": "evidence_data.json"
+  },
+  "input": {
+    "csv_rows": 5269356,
+    "csv_bytes": 364911632,
+    "columns": [
+      "registrar",
+      "url",
+      "registered_at",
+      "expiring_at",
+      "majestic_rank",
+      "emails",
+      "phones",
+      "ip",
+      "ip_country"
+    ],
+    "has_ip": 3397413,
+    "no_ip": 1871943,
+    "emails_present": 221862,
+    "phones_present": 119819,
+    "majestic_rank_present": 6646,
+    "top_tlds": [
+      [
+        ".com",
+        2198391
+      ],
+      [
+        ".sbs",
+        378383
+      ],
+      [
+        ".xyz",
+        372257
+      ],
+      [
+        ".net",
+        250943
+      ],
+      [
+        ".cfd",
+        227370
+      ],
+      [
+        ".org",
+        223677
+      ],
+      [
+        ".info",
+        222058
+      ],
+      [
+        ".top",
+        128160
+      ],
+      [
+        ".click",
+        98744
+      ],
+      [
+        ".link",
+        70138
+      ],
+      [
+        ".vip",
+        69679
+      ],
+      [
+        ".icu",
+        66506
+      ],
+      [
+        ".cyou",
+        59494
+      ],
+      [
+        ".help",
+        51019
+      ],
+      [
+        ".lat",
+        44072
+      ]
+    ],
+    "top_ip_countries": [
+      [
+        "US",
+        965744
+      ],
+      [
+        "DE",
+        652418
+      ],
+      [
+        "HK",
+        88979
+      ],
+      [
+        "SG",
+        84477
+      ],
+      [
+        "NL",
+        80739
+      ],
+      [
+        "CA",
+        71425
+      ],
+      [
+        "GB",
+        45365
+      ],
+      [
+        "BG",
+        23756
+      ],
+      [
+        "RU",
+        22206
+      ],
+      [
+        "FR",
+        20730
+      ],
+      [
+        "UA",
+        16046
+      ],
+      [
+        "IN",
+        15374
+      ]
+    ],
+    "registered_years": [
+      [
+        "2025",
+        2086447
+      ],
+      [
+        "2024",
+        1080126
+      ],
+      [
+        "2026",
+        765254
+      ],
+      [
+        "2023",
+        259510
+      ],
+      [
+        "2022",
+        155560
+      ],
+      [
+        "2021",
+        135796
+      ],
+      [
+        "2020",
+        120558
+      ],
+      [
+        "2019",
+        96697
+      ],
+      [
+        "2018",
+        90913
+      ],
+      [
+        "2017",
+        75884
+      ]
+    ]
+  },
+  "scan": {
+    "total_namesilo": 5269357,
+    "scanned": 3397413,
+    "no_dns": 1871944,
+    "dead": 2255310,
+    "active": 1129114,
+    "cloudflare": 363185,
+    "page_types": {
+      "active_content": 504738,
+      "redirect_external": 55458,
+      "empty": 272125,
+      "low_content": 163099,
+      "active_with_forms": 63871,
+      "default_server": 6097,
+      "server_error": 26497,
+      "parking": 21756,
+      "coming_soon": 7712,
+      "not_found": 6549,
+      "for_sale": 8,
+      "redirect_loop": 1204
+    },
+    "parking": {
+      "namesilo": 7438,
+      "godaddy": 2013,
+      "uniregistry": 1392,
+      "sedo": 1273,
+      "dan": 66,
+      "parkingcrew": 61,
+      "above": 12,
+      "afternic": 4
+    }
+  },
+  "findings": {
+    "brand_phishing_domains": 3726,
+    "indonesian_gambling_domains": 24349,
+    "chinese_adult_piracy_domains": 10571,
+    "namesilo_self_parked_domains": 7438,
+    "namesilo_self_parked_gambling_adult": 144,
+    "single_server_fingerprint_domains": 328230,
+    "cloudflare_flagged_phishing_on_that_server": 2062
+  },
+  "top_clusters": [
+    {
+      "hash": "428694214",
+      "count": 5151,
+      "sample_domains": [
+        "18jms.sbs",
+        "ccjapian.sbs",
+        "hsh9.hair",
+        "hxyy.hair",
+        "seaige.hair"
+      ]
+    },
+    {
+      "hash": "-606577425",
+      "count": 3915,
+      "sample_domains": [
+        "91jq157jq.work",
+        "91jq178jq.work",
+        "91jq186jq.work",
+        "91jq187jq.work",
+        "91jq189jq.work"
+      ]
+    },
+    {
+      "hash": "-186475843",
+      "count": 3858,
+      "sample_domains": [
+        "337bj24.xyz",
+        "qpp91qpp.xyz",
+        "qqd8qqd.xyz",
+        "qqp3qqp.xyz",
+        "qqz8qqz.xyz"
+      ]
+    },
+    {
+      "hash": "1108795842",
+      "count": 3726,
+      "sample_domains": [
+        "turangiqjplzn.com",
+        "upperhuttqmxplz.com",
+        "vertientesmnlpqw.com",
+        "wanakazqjplm.com",
+        "wellingtonplxqzn.com"
+      ]
+    },
+    {
+      "hash": "-1901236982",
+      "count": 2798,
+      "sample_domains": [
+        "332t332.xyz",
+        "332y332.xyz",
+        "335a335.xyz",
+        "335y335.xyz",
+        "336f336.xyz"
+      ]
+    },
+    {
+      "hash": "-1854647327",
+      "count": 2341,
+      "sample_domains": [
+        "nego178.com",
+        "bola108.org",
+        "anda89.com",
+        "apidewa99.com",
+        "bisa77.net"
+      ]
+    },
+    {
+      "hash": "84092912",
+      "count": 2296,
+      "sample_domains": [
+        "apace99.com",
+        "kompak138.org",
+        "mafiabola99.org",
+        "mentos69.org",
+        "monata138.org"
+      ]
+    },
+    {
+      "hash": "-143797184",
+      "count": 2278,
+      "sample_domains": [
+        "kimmikka.com",
+        "puputoto.net",
+        "kudawinx.com",
+        "lalatwin.com",
+        "borototo.net"
+      ]
+    },
+    {
+      "hash": "1311399074",
+      "count": 1767,
+      "sample_domains": [
+        "pio4d.net",
+        "pio88.net",
+        "piototo.net",
+        "politogel.net",
+        "yang4d.net"
+      ]
+    },
+    {
+      "hash": "1280084436",
+      "count": 1742,
+      "sample_domains": [
+        "ibukota33.org",
+        "ix88.org",
+        "savaya555.org",
+        "bosslot168.net",
+        "dewi168login.com"
+      ]
+    },
+    {
+      "hash": "661119750",
+      "count": 1697,
+      "sample_domains": [
+        "zidan123.com",
+        "jiwa4d.net",
+        "made4d.net",
+        "gio4d.org",
+        "luxury178.org"
+      ]
+    },
+    {
+      "hash": "2072365914",
+      "count": 1518,
+      "sample_domains": [
+        "csav4.help",
+        "dahaiav5.help",
+        "ggmt7.skin",
+        "hchs2.skin",
+        "mmpk5.skin"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "check": "CSV row count vs report total",
+      "csv_profile": 5269356,
+      "report_stats": 5269357,
+      "delta": -1
+    },
+    {
+      "check": "CSV no-IP count vs manifest no-DNS count",
+      "csv_profile": 1871943,
+      "manifest": 1871944,
+      "delta": -1
+    },
+    {
+      "check": "Manifest gambling finding vs evidence_data total_gambling",
+      "manifest": 24349,
+      "evidence_data": 19198,
+      "delta": 5151
+    },
+    {
+      "check": "final_report unique scanned vs report_stats total_scanned",
+      "final_report": 2503213,
+      "report_stats": 3397413,
+      "delta": -894200
+    },
+    {
+      "check": "report_clean dead vs report_stats dead",
+      "report_clean": 3242664,
+      "report_stats": 2255310,
+      "delta": 987354
+    }
+  ],
+  "privacy": {
+    "raw_csv_contains_contact_fields": true,
+    "public_pack_omits_contact_samples": true,
+    "operational_secrets_omitted": true
+  }
+}
