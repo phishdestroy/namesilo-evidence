@@ -10,7 +10,7 @@ Keywords: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, ica
 <h3 align="center">You made this investigation necessary.<br/>Now you cannot make it disappear.</h3>
 
 <p align="center">
-<b>NameSilo (NASDAQ: URL)</b> — a publicly traded registrar with a 32.2% dead domain rate,<br/>
+<b>NameSilo (NASDAQ: URL)</b> — a publicly traded registrar with a 32.2% never-activated (no IP) domain rate,<br/>
 a ten-year fraud under active protection, and a documented pattern of suppressing<br/>
 the researchers who exposed it.<br/>
 Every takedown. Every lawyer. Every deleted tweet.<br/>
@@ -155,7 +155,7 @@ This investigation is part of a series documenting ICANN-accredited registrars t
 |--|--|--|--|--|--|--|
 | 1 | **NICENIC INTERNATIONAL GROUP** | #3765 | 403,909 | **82,575 (44.0% of alive)** | 🇷🇺 #2 hosting country (8.5%) | [nicenic-evidence](https://github.com/phishdestroy/nicenic-evidence) · [Live Report](https://phishdestroy.github.io/nicenic-evidence/) |
 | 2 | **Trustname.com / Fewmoretaps ÖÜ** | #4318 | 18,719 | **3,292 HIGH (35.4% of alive)** | 🇷🇺 Russian-operated, Estonian shell | [trustname-evidence](https://github.com/phishdestroy/trustname-evidence) · [Live Report](https://phishdestroy.github.io/trustname-evidence/) |
-| 3 | **NameSilo, LLC** *(this)* | #1479 | 5,653,085 | **122,152 HIGH (3.63%)** | 🇷🇺 Russian team members, suppression campaign | [namesilo-evidence](https://github.com/phishdestroy/namesilo-evidence) · [Live Report](https://phishdestroy.github.io/namesilo-evidence/) |
+| 3 | **NameSilo, LLC** *(this)* | #1479 | 5,408,575 (Oct 2026) | **122,152 HIGH (2.26% of zone)** | 🇷🇺 Russian team members, suppression campaign | [namesilo-evidence](https://github.com/phishdestroy/namesilo-evidence) · [Live Report](https://phishdestroy.github.io/namesilo-evidence/) |
 
 ---
 
@@ -381,7 +381,7 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 | **Brand impersonation** | Domain name + page title + favicon hash → known brand list | 3,726 phishing / 201 brand impersonations |
 | **PrivacyGuardian domains** | RDAP validation against rdap.namesilo.com · 4,974,265 candidates | 164,027 confirmed PG-shielded |
 | **Threat feed cross-check** | 25+ independent feeds: Spamhaus DBL, SURBL, PhishTank, URLhaus, ThreatFox… | 183,419 malicious / 109,196 hard (3+ sources) |
-| **Dead domain rate** | Compared against 7 other registrars · 130M total domains | 32.2% vs 14–21% baseline |
+| **Dead domain rate (no IP, never activated)** | Compared against 7 other registrars · 130M total domains | 32.2% vs 14–21% baseline |
 | **Trustpilot reviews** | Wayback Machine snapshots vs. live scrape · Jan 2026 → May 2026 | 129 reviews deleted |
 | **PR Newswire connection** | Both xmrwallet and NameSilo used Cision/PR Newswire · verified dates | Same-day publish Jan 21–22, 2026 |
 | **Abuse report receipts** | Delivery-confirmed submissions through NameSilo's own portal | 20+ reports · 0 action |
@@ -409,7 +409,7 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 | Malicious behind PrivacyGuardian | **183,419** |
 | Hard-confirmed (3+ sources) | **109,196** |
 | Brand impersonations | **201** |
-| Dead rate vs. industry | **32.2% vs 14–21%** |
+| Dead rate (no IP) vs. industry | **32.2% vs 14–21%** |
 | xmrwallet victim losses | **$10M–$20M** |
 | Abuse reports filed, ignored | **20+** |
 | Registrars that suspended | **3 of 4** |
@@ -512,18 +512,21 @@ cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
 | **Total IOC domains** | **204,935** |
 | HIGH severity | 122,152 |
 | MEDIUM severity | 82,783 |
-| Zone total | 5,653,085 |
-| Hit rate | 3.63% |
+| Zone total (2026-10-07; live count above) | 5,408,575 |
+| Hit rate (all IOC / zone) | 3.79% |
 
 ### By Category
 
 | Category | Domains |
 |:--|--:|
-| `MALWARE` | 61,986 |
+| `MALWARE` | 61,985 |
 | `BRAND_IMPERSONATION` | 53,434 |
-| `PHISHING_CRYPTO` | 33,885 |
+| `PHISHING_CRYPTO` | 33,882 |
 | `PHISHING_FINANCE` | 27,922 |
-| `PHISHING_CONFIRMED` | 18,637 |
+| `PHISHING_CONFIRMED` | 18,636 |
+| `SUSPICIOUS` | 4,754 |
+| `PHISHING` | 3,992 |
+| `PHISHING_SCAM` | 330 |
 
 ### Download Threat Intelligence
 

@@ -1,12 +1,12 @@
 # PhishDestroy — NameSilo Investigation
 
-> Authorized defensive security investigation into NameSilo, LLC (IANA #1479), a US-based ICANN-accredited domain registrar. Complete zone scan of 5,269,357 domains. Filed with ICANN Contractual Compliance on March 18, 2026.
+> Authorized defensive security investigation into NameSilo, LLC (IANA #1479), a US-based ICANN-accredited domain registrar. Complete zone scan of 5,269,357 domains (March 2026 census). Filed with ICANN Contractual Compliance on March 18, 2026.
 
 ## What This Is
 
 This site documents systemic abuse-facilitation by NameSilo, LLC (IANA #1479). Key findings:
 
-- 5,269,357 NameSilo domains scanned — complete zone file census, no sampling
+- 5,269,357 NameSilo domains scanned — complete zone file census (March 2026), no sampling
 - 87.3% of domains are dead (no DNS / timeout) or parked — 1,871,944 with no DNS, 2,255,310 dead/timeout, remainder parked or garbage content
 - 183,419 confirmed-malicious domains shielded behind NameSilo's own WHOIS privacy service (PrivacyGuardian.org)
 - 3,726 brand-phishing domains identified via MurmurHash3 favicon fingerprinting
@@ -40,7 +40,7 @@ The anchor case: xmrwallet[.]com — a Monero wallet drainer operating since ~20
 - Evidence manifest (SHA-256 hashes): https://phishdestroy.github.io/namesilo-evidence/evidence/evidence_manifest.json
 - PrivacyGuardian malicious domains (JSON): https://github.com/phishdestroy/namesilo-evidence/raw/main/pkg/evidence/pg_criminal_domains.json
 
-## Key Numbers
+## Key Numbers (March 2026 census)
 
 - Total domains scanned: 5,269,357
 - Junk/abuse rate: 87.3% (4,600,249 domains)
@@ -50,7 +50,7 @@ The anchor case: xmrwallet[.]com — a Monero wallet drainer operating since ~20
 - Malicious behind PrivacyGuardian: 183,419
 - Hard-confirmed malicious (3+ sources): 109,196
 - Brand impersonations: 201
-- Dead domain rate: 32.2% (vs 14–21% industry average)
+- Dead domain rate (no IP, never activated): 32.2% (vs 14–21% industry average)
 - Abuse reports filed with NameSilo: 20+ (delivery-receipted)
 - Other registrars that suspended same domain: 3 (PDR, WebNic, NICENIC)
 
