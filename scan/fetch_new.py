@@ -89,6 +89,16 @@ for row in reader:
     })
     all_domains.add(domain)
 
+# One record per domain, so row-based and domain-based stats share a denominator
+_seen_d = set()
+for _k in sorted(by_date):
+    _uniq = []
+    for _r in by_date[_k]:
+        if _r['d'] not in _seen_d:
+            _seen_d.add(_r['d'])
+            _uniq.append(_r)
+    by_date[_k] = _uniq
+
 dates = sorted(by_date.keys())
 if not dates:
     print("No data returned"); exit(0)
@@ -98,22 +108,6 @@ print(f"  {len(all_domains):,} unique domains across {len(dates)} days ({dates[0
 # ── Revenue & lifetime ────────────────────────────────────────────────────────
 def day_revenue(records):
     return round(sum(get_price(r['d']) for r in records), 2)
-
-def avg_lifetime_days(by_date_map):
-    durations = []
-    for records in by_date_map.values():
-        for r in records:
-            reg, exp = r.get('e',''), ''
-            # expiring_at is in row, but stored as 'e' key via backfill
-            # For newly fetched data, reg_date is the key, expiring_at is r['e']
-            try:
-                if r['e'] and len(r['e']) == 10:
-                    d1 = datetime.strptime(records[0] if isinstance(records[0], str) else r['d'], '%Y-%m-%d') if False else None
-                    # compute from by_date key
-            except Exception:
-                pass
-    # Simpler: compute from raw records stored per date
-    return 365  # fallback
 
 # Compute avg lifetime from expiring_at - registered_at
 durations = []
@@ -204,8 +198,8 @@ for reg_date, records in by_date.items():
     try:
         d1  = datetime.strptime(reg_date, '%Y-%m-%d')
         age = (today_dt - d1).days
-        catch_ages_list.append(age)
         n   = len(records)
+        catch_ages_list.extend([age] * n)
         if age == 0:    catch_buckets['same_day']     += n
         elif age <= 7:  catch_buckets['within_week']  += n
         elif age <= 30: catch_buckets['within_month'] += n
@@ -293,7 +287,7 @@ _monthly_snap = {
     'correlation_pct':    correlation_pct,
     'serial_registrants': serial_email_count,
     'top_tld':            list(tld_stats.keys())[0] if tld_stats else '',
-    'top_country':        list(country_counts.keys())[0] if country_counts else '',
+    'top_country':        country_counts.most_common(1)[0][0] if country_counts else '',
     'top_brand':          list(brand_heatmap.keys())[0] if brand_heatmap else '',
 }
 (_snap_dir / f'{TODAY[:7]}.json').write_text(json.dumps(_monthly_snap, indent=2), encoding='utf-8')
@@ -350,7 +344,10 @@ for month_key, doms in by_month.items():
     _mf.write_text('\n'.join(sorted(_existing_m | doms)) + '\n', encoding='utf-8')
 
 # ── all.txt ───────────────────────────────────────────────────────────────────
-Path('data/all.txt').write_text('\n'.join(sorted(all_domains)) + '\n', encoding='utf-8')
+_all_path = Path('data/all.txt')
+_prev_all = set(_all_path.read_text(encoding='utf-8').split()) if _all_path.exists() else set()
+new_since_last = len(all_domains - _prev_all) if _prev_all else 0
+_all_path.write_text('\n'.join(sorted(all_domains)) + '\n', encoding='utf-8')
 
 # ── data/index.json ───────────────────────────────────────────────────────────
 # Build index_days from all TXT files on disk
@@ -373,9 +370,15 @@ for d in dates:
         'revenue': day_revenue(by_date[d]),
         'path': f'data/new/{d[:4]}/{d[5:7]}/{d}.txt'}
 index_days = sorted(_disk_days.values(), key=lambda x: x['date'])
+_ever_listed = set(all_domains)
+if _data_new.exists():
+    for _txt in _data_new.rglob('[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].txt'):
+        _ever_listed.update(_l.strip() for _l in _txt.read_text(encoding='utf-8').splitlines() if _l.strip())
 index = {
     'days':                   index_days,
-    'total_new_all_time':     sum(d['count'] for d in index_days),
+    'total_new_all_time':     len(_ever_listed),
+    'total_domains':          len(all_domains),
+    'new_since_last_fetch':   new_since_last,
     'total_revenue_estimate': round(total_revenue, 2),
     'avg_registration_days':  avg_lifetime,
     'ip_countries':           dict(country_counts.most_common(10)),
@@ -420,7 +423,7 @@ for em, cnt in email_counts.most_common(50):
     domains_for_email = [
         r['d'] for records in by_date.values()
         for r in records
-        if r.get('m','').split(',')[0].strip().lower() == em
+        if em in {x.strip().lower() for x in r.get('m','').split(',')}
     ]
     serial_regs.append({'email': em, 'count': cnt, 'domains': sorted(set(domains_for_email))[:100]})
 
@@ -477,37 +480,50 @@ for _kw, _doms in brand_domains_export.items():
     encoding='utf-8')
 
 # ── STIX 2.1 bundle (industry-standard threat intel) ──────────────────────────
-def _stix_id(prefix):
-    import uuid
-    return f'{prefix}--{uuid.uuid4()}'
+import uuid as _uuid
+REGISTRAR_NAMES = {'4318': 'Trustname', '3765': 'NICENIC', '1479': 'NameSilo'}
+_REG_NAME = REGISTRAR_NAMES.get(str(REGISTRAR_ID), f'registrar {REGISTRAR_ID}')
+
+def _stix_id(prefix, key):
+    # uuid5 keeps ids stable between runs (no daily churn of the whole bundle)
+    return f'{prefix}--{_uuid.uuid5(_uuid.NAMESPACE_URL, f"phishdestroy:{REGISTRAR_ID}:{prefix}:{key}")}'
 
 _stix_objs = []
 
 # Identity (producer)
-_identity_id = 'identity--phishdestroy-' + REGISTRAR_ID
+_identity_id = _stix_id('identity', 'phishdestroy')
 _stix_objs.append({
     'type': 'identity',
     'spec_version': '2.1',
     'id': _identity_id,
     'created':  f'{TODAY}T00:00:00.000Z',
     'modified': f'{TODAY}T00:00:00.000Z',
-    'name': 'PhishDestroy — NameSilo Investigation',
+    'name': f'PhishDestroy — {_REG_NAME} Investigation',
     'identity_class': 'organization',
     'sectors': ['non-profit'],
     'contact_information': 'https://phishdestroy.io',
 })
 
-# Indicators: each malicious domain
-_max_stix = 5000
-for _d in sorted(all_domains)[:_max_stix]:
+# Indicators: only domains classified HIGH in ioc/ (never the raw registrar
+# zone — most registered domains are not confirmed phishing). Capped so the
+# bundle stays a few MB; the full lists live in ioc/*.txt.
+_MAX_STIX = 10000
+_ioc_list = Path('ioc/domains_high.txt')
+if not _ioc_list.exists():
+    _ioc_list = Path('ioc/domains_all_malicious.txt')
+_ioc_domains = sorted({
+    ln.strip().lower() for ln in _ioc_list.read_text(encoding='utf-8', errors='replace').splitlines()
+    if ln.strip() and not ln.lstrip().startswith('#')
+}) if _ioc_list.exists() else []
+for _d in _ioc_domains[:_MAX_STIX]:
     _stix_objs.append({
         'type': 'indicator',
         'spec_version': '2.1',
-        'id': _stix_id('indicator'),
+        'id': _stix_id('indicator', _d),
         'created':  f'{TODAY}T00:00:00.000Z',
         'modified': f'{TODAY}T00:00:00.000Z',
         'created_by_ref': _identity_id,
-        'name': f'Phishing domain: {_d}',
+        'name': f'Malicious domain: {_d}',
         'indicator_types': ['malicious-activity'],
         'pattern': f"[domain-name:value = '{_d}']",
         'pattern_type': 'stix',
@@ -520,16 +536,16 @@ for _ip_item in shared_ip_export[:200]:
     _stix_objs.append({
         'type': 'indicator',
         'spec_version': '2.1',
-        'id': _stix_id('indicator'),
+        'id': _stix_id('indicator', _ip_item['ip']),
         'created':  f'{TODAY}T00:00:00.000Z',
         'modified': f'{TODAY}T00:00:00.000Z',
         'created_by_ref': _identity_id,
-        'name': f'Bulletproof hosting IP: {_ip_item["ip"]} ({_ip_item["count"]} domains)',
-        'indicator_types': ['malicious-activity'],
+        'name': f'Shared hosting IP: {_ip_item["ip"]} ({_ip_item["count"]} domains)',
+        'indicator_types': ['anomalous-activity'],
         'pattern': f"[ipv4-addr:value = '{_ip_item['ip']}']",
         'pattern_type': 'stix',
         'valid_from': f'{TODAY}T00:00:00.000Z',
-        'labels': ['shared-hosting', 'bulletproof'],
+        'labels': ['shared-hosting'],
     })
 
 # Observable: each serial registrant email
@@ -537,12 +553,12 @@ for _reg in serial_regs[:200]:
     _stix_objs.append({
         'type': 'indicator',
         'spec_version': '2.1',
-        'id': _stix_id('indicator'),
+        'id': _stix_id('indicator', _reg['email']),
         'created':  f'{TODAY}T00:00:00.000Z',
         'modified': f'{TODAY}T00:00:00.000Z',
         'created_by_ref': _identity_id,
         'name': f'Serial registrant: {_reg["email"]} ({_reg["count"]} domains)',
-        'indicator_types': ['malicious-activity'],
+        'indicator_types': ['anomalous-activity'],
         'pattern': f"[email-addr:value = '{_reg['email']}']",
         'pattern_type': 'stix',
         'valid_from': f'{TODAY}T00:00:00.000Z',
@@ -551,11 +567,11 @@ for _reg in serial_regs[:200]:
 
 _stix_bundle = {
     'type': 'bundle',
-    'id': _stix_id('bundle'),
+    'id': _stix_id('bundle', TODAY),
     'objects': _stix_objs,
 }
 (ioc_dir / 'stix-bundle.json').write_text(
-    json.dumps(_stix_bundle, indent=2), encoding='utf-8')
+    json.dumps(_stix_bundle, separators=(',', ':')), encoding='utf-8')
 
 print(f"IOC: {len(serial_regs)} serial registrants | {len(shared_ip_export)} shared IPs | STIX: {len(_stix_objs)} objects")
 
@@ -600,13 +616,13 @@ if _readme_path.exists():
     # Headline number cards (HTML inline for centering on GitHub)
     _parts.append('<table><tr>')
     _parts.append(f'<td align="center"><b>📦 Domains tracked</b><br/><sub><code>{_fmt_num(len(all_domains))}</code></sub></td>')
-    _parts.append(f'<td align="center"><b>💰 Est. revenue</b><br/><sub><code>${total_revenue:,.0f}</code></sub></td>')
+    _parts.append(f'<td align="center"><b>💰 Est. annual value</b><br/><sub><code>${total_revenue:,.0f}</code></sub></td>')
     _parts.append(f'<td align="center"><b>📡 Deployed</b><br/><sub><code>{deploy_rate}%</code></sub></td>')
     if _ioc_all:
         _parts.append(f'<td align="center"><b>✅ IOC classified</b><br/><sub><code>{_fmt_num(_ioc_all)}</code> ({_fmt_num(_ioc_high)} HIGH)</sub></td>')
     else:
         _parts.append(f'<td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>{correlation_pct}%</code> ({_fmt_num(correlation_count)})</sub></td>')
-    _parts.append(f'<td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>{fresh_pct}%</code></sub></td>')
+    _parts.append(f'<td align="center"><b>⚡ Registered ≤7d</b><br/><sub><code>{fresh_pct}%</code></sub></td>')
     _parts.append(f'<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>{_fmt_num(serial_email_count)}</code></sub></td>')
     _parts.append('</tr></table>')
     _parts.append('')
@@ -615,7 +631,7 @@ if _readme_path.exists():
     if tld_stats:
         _parts.append('### 🏷️ Top TLD Zones')
         _parts.append('')
-        _parts.append('| TLD | Count | Avg Reg Period | Est. Revenue |')
+        _parts.append('| TLD | Count | Avg reg→expiry | Est. annual value |')
         _parts.append('|:--|--:|--:|--:|')
         for _tld, _info in list(tld_stats.items())[:10]:
             _rev = revenue_by_tld.get(_tld, {}).get('revenue', 0)
@@ -673,9 +689,9 @@ if _readme_path.exists():
     _parts.append('| [`data/all.txt`](data/all.txt) | TXT | All tracked domains |')
     _parts.append('| [`data/index.json`](data/index.json) | JSON | Full analytics snapshot |')
     _parts.append('| [`data/ioc/serial_registrants.json`](data/ioc/serial_registrants.json) | JSON | Repeat registrants + their domains |')
-    _parts.append('| [`data/ioc/shared_ips.json`](data/ioc/shared_ips.json) | JSON | Bulletproof hosting clusters |')
+    _parts.append('| [`data/ioc/shared_ips.json`](data/ioc/shared_ips.json) | JSON | Shared hosting clusters |')
     _parts.append('| [`data/ioc/brand_domains.json`](data/ioc/brand_domains.json) | JSON | Domains by targeted brand |')
-    _parts.append('| [`data/ioc/stix-bundle.json`](data/ioc/stix-bundle.json) | STIX 2.1 | MISP/OpenCTI ready bundle |')
+    _parts.append('| [`data/ioc/stix-bundle.json`](data/ioc/stix-bundle.json) | STIX 2.1 | MISP/OpenCTI bundle (HIGH IOC domains, up to 10k) |')
     _parts.append('| [`data/ioc/serial_emails.txt`](data/ioc/serial_emails.txt) | TXT | grep-friendly: `email⇥count` |')
     _parts.append('| [`data/ioc/shared_ips.txt`](data/ioc/shared_ips.txt) | TXT | grep-friendly: `ip⇥count⇥country` |')
     _parts.append('')
@@ -707,9 +723,9 @@ if _readme_path.exists():
 stats_dir = Path('stats')
 stats_dir.mkdir(exist_ok=True)
 
-today_recs    = by_date.get(TODAY, [])
-today_count   = len(set(r['d'] for r in today_recs))
-today_revenue = day_revenue(today_recs)
+# Registration data lags 2-3 days, so "registered today" is always ~0;
+# report what this fetch actually added instead.
+today_count   = new_since_last
 
 def badge(label, message, color, label_color='0c1018'):
     return json.dumps({
@@ -718,7 +734,7 @@ def badge(label, message, color, label_color='0c1018'):
     })
 
 (stats_dir / 'today.json').write_text(
-    badge('new today', f'{today_count:,}', 'da3633'), encoding='utf-8')
+    badge('new since last fetch', f'{today_count:,}', 'da3633'), encoding='utf-8')
 (stats_dir / 'total.json').write_text(
     badge('total domains', f'{len(all_domains):,}', 'da3633'), encoding='utf-8')
 (stats_dir / 'last_fetch.json').write_text(
@@ -726,9 +742,9 @@ def badge(label, message, color, label_color='0c1018'):
 (stats_dir / 'latest_reg.json').write_text(
     badge('latest reg', dates[-1], '0075ca'), encoding='utf-8')
 (stats_dir / 'revenue.json').write_text(
-    badge('est. revenue', f'${total_revenue:,.0f}', 'e3b341'), encoding='utf-8')
+    badge('est. annual value', f'${total_revenue:,.0f}', 'e3b341'), encoding='utf-8')
 (stats_dir / 'lifetime.json').write_text(
-    badge('avg reg. period', f'{avg_lifetime}d', '6e40c9'), encoding='utf-8')
+    badge('avg reg→expiry', f'{avg_lifetime}d', '6e40c9'), encoding='utf-8')
 
 if country_counts:
     top3 = ' · '.join(f'{c}:{n:,}' for c, n in country_counts.most_common(3) if c)
@@ -740,11 +756,12 @@ if ip_counts:
     (stats_dir / 'top_ip.json').write_text(
         badge('top IP domains', top_ip_msg, '8b5cf6'), encoding='utf-8')
 
+_dep_pct = round(deploy_rate)
 (stats_dir / 'no_ip.json').write_text(
-    badge('no DNS at reg', f'{no_ip_count:,} ({100-deploy_rate:.0f}%)', 'e3b341'), encoding='utf-8')
+    badge('no DNS at reg', f'{no_ip_count:,} ({100-_dep_pct}%)', 'e3b341'), encoding='utf-8')
 
 (stats_dir / 'deployed.json').write_text(
-    badge('deployed', f'{deployed_count:,} ({deploy_rate:.0f}%)', '2ea44f'), encoding='utf-8')
+    badge('deployed', f'{deployed_count:,} ({_dep_pct}%)', '2ea44f'), encoding='utf-8')
 
 if total_with_period:
     longreg_msg = f'>1yr: {pct_gt1}% · >2yr: {pct_gt2}%'
@@ -762,7 +779,7 @@ if revenue_by_tld:
         badge('top $ TLD', f'.{top_tld_item[0]}: ${top_tld_item[1]["revenue"]:,.0f}', 'e3b341'), encoding='utf-8')
 
 (stats_dir / 'freshness.json').write_text(
-    badge('fresh catch', f'{fresh_pct}% ≤7d old', '2ea44f'), encoding='utf-8')
+    badge('registered ≤7d', f'{fresh_pct}%', '2ea44f'), encoding='utf-8')
 
 if serial_email_count:
     (stats_dir / 'serial_regs.json').write_text(
@@ -780,4 +797,4 @@ if correlation_count:
     (stats_dir / 'correlation.json').write_text(
         badge('in blocklist', f'{correlation_pct}% confirmed phishing', '2ea44f'), encoding='utf-8')
 
-print(f"Done: {len(all_domains):,} domains | ${total_revenue:,.2f} est. revenue | {avg_lifetime}d avg | today: {today_count:,} | deployed: {deploy_rate:.0f}% | >1yr: {pct_gt1}% | >2yr: {pct_gt2}% | fresh: {fresh_pct}%")
+print(f"Done: {len(all_domains):,} domains | ${total_revenue:,.2f} est. annual value | {avg_lifetime}d avg | new: {today_count:,} | deployed: {deploy_rate:.0f}% | >1yr: {pct_gt1}% | >2yr: {pct_gt2}% | fresh: {fresh_pct}%")
