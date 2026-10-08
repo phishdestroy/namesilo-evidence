@@ -48,73 +48,73 @@ All of it is in the record. All of it makes this louder.<br/>
 
 <!-- LIVE_STATS:START -->
 
-> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-07`
+> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-08`
 
 <table><tr>
-<td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,408,575</code></sub></td>
-<td align="center"><b>💰 Est. revenue</b><br/><sub><code>$39,528,059</code></sub></td>
-<td align="center"><b>📡 Deployed</b><br/><sub><code>58.7%</code></sub></td>
+<td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,419,135</code></sub></td>
+<td align="center"><b>💰 Est. annual value</b><br/><sub><code>$39,616,678</code></sub></td>
+<td align="center"><b>📡 Deployed</b><br/><sub><code>56.7%</code></sub></td>
 <td align="center"><b>✅ IOC classified</b><br/><sub><code>204,935</code> (122,152 HIGH)</sub></td>
-<td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>0.6%</code></sub></td>
-<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,320</code></sub></td>
+<td align="center"><b>⚡ Registered ≤7d</b><br/><sub><code>0.6%</code></sub></td>
+<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,196</code></sub></td>
 </tr></table>
 
 ### 🏷️ Top TLD Zones
 
-| TLD | Count | Avg Reg Period | Est. Revenue |
+| TLD | Count | Avg reg→expiry | Est. annual value |
 |:--|--:|--:|--:|
-| `.com` | 2,431,433 | 1,802d | $21,858,583 |
-| `.sbs` | 354,823 | 633d | $1,770,567 |
-| `.xyz` | 348,480 | 796d | $519,235 |
-| `.net` | 265,266 | 1,521d | $2,650,007 |
-| `.info` | 241,337 | 670d | $962,935 |
-| `.org` | 238,993 | 1,494d | $2,387,540 |
-| `.cfd` | 230,690 | 669d | $1,151,143 |
-| `.click` | 94,400 | 527d | $376,656 |
-| `.wiki` | 81,030 | 369d | $1,214,640 |
-| `.vip` | 67,738 | 643d | $338,013 |
+| `.com` | 2,438,397 | 1,804d | $21,921,189 |
+| `.sbs` | 354,712 | 633d | $1,770,013 |
+| `.xyz` | 349,020 | 795d | $520,040 |
+| `.net` | 265,573 | 1,523d | $2,653,074 |
+| `.info` | 241,628 | 671d | $964,096 |
+| `.org` | 239,703 | 1,497d | $2,394,633 |
+| `.cfd` | 230,730 | 669d | $1,151,343 |
+| `.click` | 94,692 | 528d | $377,821 |
+| `.wiki` | 81,430 | 369d | $1,220,636 |
+| `.vip` | 67,853 | 645d | $338,586 |
 
 ### 🌍 Top Hosting Countries
 
 ```
-US  ██████████████████  1,018,378 (51.8%)
-DE  ██████░░░░░░░░░░░░    374,737 (19.1%)
-SG  █░░░░░░░░░░░░░░░░░    103,647 (5.3%)
-HK  █░░░░░░░░░░░░░░░░░     79,410 (4.0%)
-NL  █░░░░░░░░░░░░░░░░░     58,494 (3.0%)
-CA  ░░░░░░░░░░░░░░░░░░     52,061 (2.6%)
-GB  ░░░░░░░░░░░░░░░░░░     37,491 (1.9%)
-FR  ░░░░░░░░░░░░░░░░░░     22,337 (1.1%)
+US  ██████████████████    990,414 (52.9%)
+DE  █████░░░░░░░░░░░░░    323,857 (17.3%)
+SG  █░░░░░░░░░░░░░░░░░    104,545 (5.6%)
+HK  █░░░░░░░░░░░░░░░░░     82,719 (4.4%)
+NL  █░░░░░░░░░░░░░░░░░     57,874 (3.1%)
+CA  ░░░░░░░░░░░░░░░░░░     47,679 (2.5%)
+GB  ░░░░░░░░░░░░░░░░░░     35,435 (1.9%)
+FR  ░░░░░░░░░░░░░░░░░░     22,150 (1.2%)
 ```
 
 ### 📈 Registration Burst Days
 
 | Date | Domains | × Average |
 |:--|--:|--:|
-| `2025-07-19` | 16,448 | **34.7×** 🚨 |
-| `2025-12-01` | 14,446 | **30.5×** 🚨 |
-| `2026-06-30` | 13,559 | **28.6×** 🚨 |
-| `2026-09-04` | 13,537 | **28.6×** 🚨 |
-| `2026-07-01` | 12,815 | **27.0×** 🚨 |
+| `2025-07-19` | 16,444 | **34.6×** 🚨 |
+| `2025-12-01` | 14,449 | **30.4×** 🚨 |
+| `2026-06-30` | 13,567 | **28.6×** 🚨 |
+| `2026-09-04` | 13,537 | **28.5×** 🚨 |
+| `2026-07-01` | 12,819 | **27.0×** 🚨 |
 
 ### 🎯 Top Targeted Brands & Keywords
 
-`login (11,350)` &middot; `support (6,403)` &middot; `crypto (6,357)` &middot; `connect (5,911)` &middot; `trust (5,723)` &middot; `secure (5,649)` &middot; `official (4,928)` &middot; `account (4,007)` &middot; `farm (3,547)` &middot; `bridge (3,298)` &middot; `update (3,158)` &middot; `claim (2,991)` &middot; `vault (2,738)` &middot; `wallet (2,149)` &middot; `token (1,939)`
+`login (11,352)` &middot; `support (6,405)` &middot; `crypto (6,360)` &middot; `connect (5,916)` &middot; `trust (5,724)` &middot; `secure (5,639)` &middot; `official (4,942)` &middot; `account (4,017)` &middot; `farm (3,564)` &middot; `bridge (3,319)` &middot; `update (3,176)` &middot; `claim (2,993)` &middot; `vault (2,747)` &middot; `wallet (2,153)` &middot; `token (1,947)`
 
 ### 🕵️ Top Serial Registrants — 50 emails with ≥5 domains
 
 | # | Registrant Email (redacted) | Domains |
 |--:|:--|--:|
-| 1 | `chi***@mail.com` | **10,672** |
-| 2 | `diz***@992fun.com` | **9,024** |
-| 3 | `inf***@brandbucket.com` | **5,433** |
-| 4 | `sal***@brandbucket.com` | **5,433** |
-| 5 | `ser***@atom.com` | **5,230** |
-| 6 | `sup***@webador.com` | **4,806** |
-| 7 | `992***@gmail.com` | **2,068** |
-| 8 | `diz***@91jqx.com` | **1,736** |
-| 9 | `sup***@trackingspaces.com` | **1,607** |
-| 10 | `shu***@outlook.com` | **1,354** |
+| 1 | `chi***@mail.com` | **10,783** |
+| 2 | `diz***@992fun.com` | **9,105** |
+| 3 | `inf***@brandbucket.com` | **5,314** |
+| 4 | `sal***@brandbucket.com` | **5,314** |
+| 5 | `ser***@atom.com` | **5,136** |
+| 6 | `sup***@webador.com` | **4,893** |
+| 7 | `992***@gmail.com` | **2,419** |
+| 8 | `sup***@trackingspaces.com` | **2,195** |
+| 9 | `diz***@91jqx.com` | **1,852** |
+| 10 | `diz***@ncao18.com` | **1,697** |
 
 ### 📥 Download Threat Intelligence
 
@@ -123,9 +123,9 @@ FR  ░░░░░░░░░░░░░░░░░░     22,337 (1.1%)
 | [`data/all.txt`](data/all.txt) | TXT | All tracked domains |
 | [`data/index.json`](data/index.json) | JSON | Full analytics snapshot |
 | [`data/ioc/serial_registrants.json`](data/ioc/serial_registrants.json) | JSON | Repeat registrants + their domains |
-| [`data/ioc/shared_ips.json`](data/ioc/shared_ips.json) | JSON | Bulletproof hosting clusters |
+| [`data/ioc/shared_ips.json`](data/ioc/shared_ips.json) | JSON | Shared hosting clusters |
 | [`data/ioc/brand_domains.json`](data/ioc/brand_domains.json) | JSON | Domains by targeted brand |
-| [`data/ioc/stix-bundle.json`](data/ioc/stix-bundle.json) | STIX 2.1 | MISP/OpenCTI ready bundle |
+| [`data/ioc/stix-bundle.json`](data/ioc/stix-bundle.json) | STIX 2.1 | MISP/OpenCTI bundle (HIGH IOC domains, up to 10k) |
 | [`data/ioc/serial_emails.txt`](data/ioc/serial_emails.txt) | TXT | grep-friendly: `email⇥count` |
 | [`data/ioc/shared_ips.txt`](data/ioc/shared_ips.txt) | TXT | grep-friendly: `ip⇥count⇥country` |
 
