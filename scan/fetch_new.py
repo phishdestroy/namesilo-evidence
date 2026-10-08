@@ -260,11 +260,20 @@ unranked_pct   = round(unranked_count / len(all_domains) * 100, 1) if all_domain
 correlation_count = 0
 correlation_pct   = 0.0
 try:
-    _ml_req = urllib.request.Request(
-        'https://raw.githubusercontent.com/phishdestroy/destroylist/main/list.txt',
-        headers={'User-Agent': 'PhishDestroy/2.0'})
-    with urllib.request.urlopen(_ml_req, timeout=30) as _ml_resp:
-        _main_domains = set(_ml_resp.read().decode('utf-8', errors='replace').strip().splitlines())
+    # Main list: live host first, GitHub kept as a fallback.
+    _main_domains = None
+    for _ml_url in (os.environ.get('PD_MAINLIST_URL')
+                    or 'https://gitlab.com/phishdestroy/destroylist/-/raw/main/list.txt',
+                    'https://raw.githubusercontent.com/phishdestroy/destroylist/main/list.txt'):
+        try:
+            _ml_req = urllib.request.Request(_ml_url, headers={'User-Agent': 'PhishDestroy/2.0'})
+            with urllib.request.urlopen(_ml_req, timeout=30) as _ml_resp:
+                _main_domains = set(_ml_resp.read().decode('utf-8', errors='replace').strip().splitlines())
+            break
+        except Exception as _ml_err:
+            print(f"Main list fetch failed ({_ml_url}): {_ml_err}")
+    if _main_domains is None:
+        raise RuntimeError('main destroylist unavailable from every host')
     _overlap = all_domains & _main_domains
     correlation_count = len(_overlap)
     correlation_pct   = round(correlation_count / len(all_domains) * 100, 1) if all_domains else 0
