@@ -1,6 +1,6 @@
 # How xmrwallet.com Steals Your Monero — Complete Technical Breakdown
 
-> **Mirrored from [phishdestroy.io](https://phishdestroy.io/xmrwallet-namesilo-exposed) and [github.com/phishdestroy/DO-NOT-USE-xmrwallet-com](https://github.com/phishdestroy/DO-NOT-USE-xmrwallet-com) so it cannot be deleted.**
+> **Mirrored from [phishdestroy.io](https://phishdestroy.io/xmrwallet-namesilo-exposed) and [github.com/phishdestroy/DO-NOT-USE-xmrwallet-com](https://gitlab.com/phishdestroy/DO-NOT-USE-xmrwallet-com) so it cannot be deleted.**
 
 This document is a full technical dissection of the theft architecture embedded in xmrwallet.com's production code. Every claim below is backed by network captures, source-level analysis, and archived evidence. The site has operated for over 10 years under the protection of its registrar, NameSilo, LLC (IANA #1479) LLC.
 

@@ -201,5 +201,5 @@ Several observations raise concerns about review authenticity:
 
 ---
 
-*Collected by PhishDestroy Research | https://github.com/phishdestroy/destroylist*  
+*Collected by PhishDestroy Research | https://gitlab.com/phishdestroy/destroylist*  
 *Evidence base: live network capture 2026-02-18 + public review platforms*

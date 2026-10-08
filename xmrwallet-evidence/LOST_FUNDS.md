@@ -59,8 +59,8 @@ Screenshot everything. Save the URLs.
 - Canadian Anti-Fraud Centre → https://www.antifraudcentre-centreantifraude.ca
 
 **Our investigation (operator deleted issues #35 + #36 — full archive preserved):**
-→ https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/deleted.html
-→ https://github.com/phishdestroy/DO-NOT-USE-xmrwallet-com/issues
+→ https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/deleted.html
+→ https://gitlab.com/phishdestroy/DO-NOT-USE-xmrwallet-com/-/issues
 
 ---
 

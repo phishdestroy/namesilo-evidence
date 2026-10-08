@@ -1,5 +1,14 @@
+> [!NOTE]
+> **This project now lives on GitLab.**
+> On 2026-10-08 the `phishdestroy` organization on GitHub became unavailable. The reason is not yet known.
+> All repositories were restored here from their latest GitHub state (source commit `041831b`).
+> Development continues on GitLab.
+>
+> 📜 Last public GitHub snapshot: [Wayback Machine](https://web.archive.org/web/2026/https://github.com/phishdestroy)
+> · 🔁 Old links: replace `github.com` with `gitlab.com`
+
 <div align="center">
-<img src="https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/docs/assets/banner.gif" width="100%"/>
+<img src="https://gitlab.com/phishdestroy/namesilo-evidence/-/raw/main/docs/assets/banner.gif" width="100%"/>
 </div>
 
 <!--
@@ -127,7 +136,7 @@ FR  ░░░░░░░░░░░░░░░░░░     22,337 (1.1%)
 ---
 
 [![🔴 LIVE SITE](https://img.shields.io/badge/%F0%9F%94%B4%20LIVE-phishdestroy.eth.limo-FF3333?style=for-the-badge)](https://phishdestroy.eth.limo/)
-[![Evidence Portal](https://img.shields.io/badge/Evidence_Portal-GitHub_Pages-161b22?style=for-the-badge&logo=github)](https://phishdestroy.github.io/namesilo-evidence/)
+[![Evidence Portal](https://img.shields.io/badge/Evidence_Portal-GitHub_Pages-161b22?style=for-the-badge&logo=github)](https://phishdestroy.gitlab.io/namesilo-evidence/)
 [![ICANN Filed](https://img.shields.io/badge/ICANN-Compliance_Filed-e36209?style=for-the-badge)](https://www.icann.org/compliance)
 [![MIT License](https://img.shields.io/badge/License-MIT-238636?style=for-the-badge)](LICENSE)
 
@@ -153,9 +162,9 @@ This investigation is part of a series documenting ICANN-accredited registrars t
 
 | # | Registrar | IANA | Zone | Confirmed Malicious | Russian Connection | Investigation |
 |--|--|--|--|--|--|--|
-| 1 | **NICENIC INTERNATIONAL GROUP** | #3765 | 403,909 | **82,575 (44.0% of alive)** | 🇷🇺 #2 hosting country (8.5%) | [nicenic-evidence](https://github.com/phishdestroy/nicenic-evidence) · [Live Report](https://phishdestroy.github.io/nicenic-evidence/) |
-| 2 | **Trustname.com / Fewmoretaps ÖÜ** | #4318 | 18,719 | **3,292 HIGH (35.4% of alive)** | 🇷🇺 Russian-operated, Estonian shell | [trustname-evidence](https://github.com/phishdestroy/trustname-evidence) · [Live Report](https://phishdestroy.github.io/trustname-evidence/) |
-| 3 | **NameSilo, LLC** *(this)* | #1479 | 5,408,575 (Oct 2026) | **122,152 HIGH (2.26% of zone)** | 🇷🇺 Russian team members, suppression campaign | [namesilo-evidence](https://github.com/phishdestroy/namesilo-evidence) · [Live Report](https://phishdestroy.github.io/namesilo-evidence/) |
+| 1 | **NICENIC INTERNATIONAL GROUP** | #3765 | 403,909 | **82,575 (44.0% of alive)** | 🇷🇺 #2 hosting country (8.5%) | [nicenic-evidence](https://gitlab.com/phishdestroy/nicenic-evidence) · [Live Report](https://phishdestroy.gitlab.io/nicenic-evidence/) |
+| 2 | **Trustname.com / Fewmoretaps ÖÜ** | #4318 | 18,719 | **3,292 HIGH (35.4% of alive)** | 🇷🇺 Russian-operated, Estonian shell | [trustname-evidence](https://gitlab.com/phishdestroy/trustname-evidence) · [Live Report](https://phishdestroy.gitlab.io/trustname-evidence/) |
+| 3 | **NameSilo, LLC** *(this)* | #1479 | 5,408,575 (Oct 2026) | **122,152 HIGH (2.26% of zone)** | 🇷🇺 Russian team members, suppression campaign | [namesilo-evidence](https://gitlab.com/phishdestroy/namesilo-evidence) · [Live Report](https://phishdestroy.gitlab.io/namesilo-evidence/) |
 
 ---
 
@@ -457,15 +466,15 @@ If NameSilo disputes any finding: submit documented evidence via [phishdestroy.i
 
 ## Links by Content
 
-### 🌐 Live Reports — [phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence/)
+### 🌐 Live Reports — [phishdestroy.gitlab.io/namesilo-evidence](https://phishdestroy.gitlab.io/namesilo-evidence/)
 
 | Report | What's inside |
 |:-------|:-------------|
-| [Zone Scan Report](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html) | Charts, IOC breakdown, methodology, chain of custody |
-| [Favicon Cluster Analysis](https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html) | 12 operator clusters identified via MurmurHash3 |
-| [107k IOC Domain List](https://phishdestroy.github.io/namesilo-evidence/namesilo-domains.html) | Searchable table — flags, favicons, categories |
-| [PrivacyGuardian Shield](https://phishdestroy.github.io/namesilo-evidence/namesilo-privacyguardian.html) | 183,419 malicious domains behind NameSilo's own WHOIS privacy |
-| [Review Manipulation](https://phishdestroy.github.io/namesilo-evidence/namesilo-reviews.html) | 129 deleted Trustpilot reviews · bot network · PR Newswire link |
+| [Zone Scan Report](https://phishdestroy.gitlab.io/namesilo-evidence/namesilo-scan.html) | Charts, IOC breakdown, methodology, chain of custody |
+| [Favicon Cluster Analysis](https://phishdestroy.gitlab.io/namesilo-evidence/namesilo-clusters.html) | 12 operator clusters identified via MurmurHash3 |
+| [107k IOC Domain List](https://phishdestroy.gitlab.io/namesilo-evidence/namesilo-domains.html) | Searchable table — flags, favicons, categories |
+| [PrivacyGuardian Shield](https://phishdestroy.gitlab.io/namesilo-evidence/namesilo-privacyguardian.html) | 183,419 malicious domains behind NameSilo's own WHOIS privacy |
+| [Review Manipulation](https://phishdestroy.gitlab.io/namesilo-evidence/namesilo-reviews.html) | 129 deleted Trustpilot reviews · bot network · PR Newswire link |
 
 ### 📁 Case Documents — [`case/`](case/)
 
@@ -500,7 +509,7 @@ If NameSilo disputes any finding: submit documented evidence via [phishdestroy.i
 
 Verify integrity:
 ```bash
-git clone [https://github.com/phishdestroy/namesilo-evidence.git](https://github.com/phishdestroy/namesilo-evidence.git)
+git clone [https://gitlab.com/phishdestroy/namesilo-evidence.git](https://gitlab.com/phishdestroy/namesilo-evidence)
 cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
 
 ---
@@ -533,12 +542,12 @@ cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
 | File | Format | Description |
 |:--|:--:|:--|
 | [`ioc/indicators.csv`](ioc/indicators.csv) | CSV | Full IOC: domain, category, severity, date, sources |
-| [`ioc/domains_high.txt`](https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/ioc/domains_high.txt) | TXT | HIGH severity only (122,152) |
-| [`ioc/domains_all_malicious.txt`](https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/ioc/domains_all_malicious.txt) | TXT | All IOC (204,935) |
-| [feed-ioc.html](https://phishdestroy.github.io/namesilo-evidence/feed-ioc.html) | HTML | Searchable table with feed source badges |
+| [`ioc/domains_high.txt`](https://gitlab.com/phishdestroy/namesilo-evidence/-/raw/main/ioc/domains_high.txt) | TXT | HIGH severity only (122,152) |
+| [`ioc/domains_all_malicious.txt`](https://gitlab.com/phishdestroy/namesilo-evidence/-/raw/main/ioc/domains_all_malicious.txt) | TXT | All IOC (204,935) |
+| [feed-ioc.html](https://phishdestroy.gitlab.io/namesilo-evidence/feed-ioc.html) | HTML | Searchable table with feed source badges |
 
 **Sources used:** Hagezi TIF (2.1M), BlocklistProject Malware/Phishing (2.5M+120K), Maltrail (914K), mitchellkrogza PhishDB (385K), MetaMask, ScamBlock, CERT.pl, Phishing.Database, uBlock, Dandelion, firebog.net, brand keyword scan.
 
-> Live report: [https://phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence)
+> Live report: [https://phishdestroy.gitlab.io/namesilo-evidence](https://phishdestroy.gitlab.io/namesilo-evidence)
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">

@@ -65,7 +65,7 @@ print(base64.b64decode(vk_b64).decode())
 
 ## GitHub Issues (deleted by operator — archived)
 
-- Archive: https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/deleted.html
-- Issue #35 cached copy (full HTML): https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/cache-issue35/
-- Issue #36 cached copy (full HTML): https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/cache-issue36/
-- Full local archive with screenshots and code: https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/deleted.html
+- Archive: https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/deleted.html
+- Issue #35 cached copy (full HTML): https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/cache-issue35/
+- Issue #36 cached copy (full HTML): https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/cache-issue36/
+- Full local archive with screenshots and code: https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/deleted.html

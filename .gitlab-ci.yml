@@ -1,0 +1,11 @@
+# GitLab Pages — replaces the former GitHub Pages deployment.
+pages:
+  image: alpine:3.20
+  variables:
+    GIT_DEPTH: "1"
+  script:
+    - rm -rf public && cp -r docs public
+  artifacts:
+    paths: [public]
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

@@ -2,7 +2,7 @@
 
 > **Classification:** Investigative Intelligence Dossier
 > **Subject:** Operator of xmrwallet.com — an active Monero wallet-draining service
-> **Compiled from:** [PhishDestroy.io](https://phishdestroy.io) investigation, the [DO-NOT-USE-xmrwallet-com](https://github.com/phishdestroy/DO-NOT-USE-xmrwallet-com) GitHub repository, direct email correspondence with the operator, public WHOIS/DNS records, archived victim reports, and on-chain transaction analysis.
+> **Compiled from:** [PhishDestroy.io](https://phishdestroy.io) investigation, the [DO-NOT-USE-xmrwallet-com](https://gitlab.com/phishdestroy/DO-NOT-USE-xmrwallet-com) GitHub repository, direct email correspondence with the operator, public WHOIS/DNS records, archived victim reports, and on-chain transaction analysis.
 > **Period of investigation:** 2018 – May 2026
 > **Status:** ACTIVE THREAT — xmrwallet.com remains operational as of this writing.
 

@@ -38,10 +38,10 @@ One inbox. One operator. Three domains.
 
 ## Main investigation
 
-- [Full Evidence](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/)
-- [Deleted Issues Archive](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/deleted.html)
+- [Full Evidence](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/)
+- [Deleted Issues Archive](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/deleted.html)
 - [xmrwallet.com still active — report to abuse@namesilo.com](mailto:abuse@namesilo.com)
 
 ---
 
-*Investigation by [PhishDestroy Research](https://github.com/phishdestroy)*
+*Investigation by [PhishDestroy Research](https://gitlab.com/phishdestroy)*

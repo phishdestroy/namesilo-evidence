@@ -36,8 +36,8 @@ The .onion address remains **active** as of February 2026. Unlike clearnet domai
 
 ## Full investigation
 
-- [Full Evidence](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/)
-- [Deleted Issues Archive](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/deleted.html)
+- [Full Evidence](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/)
+- [Deleted Issues Archive](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/deleted.html)
 - [VirusTotal — 6/93 flag clearnet as malicious](https://www.virustotal.com/gui/domain/www.xmrwallet.com)
 
 ## Use safe wallets instead
@@ -47,4 +47,4 @@ The .onion address remains **active** as of February 2026. Unlike clearnet domai
 
 ---
 
-*Investigation by [PhishDestroy Research](https://github.com/phishdestroy)*
+*Investigation by [PhishDestroy Research](https://gitlab.com/phishdestroy)*

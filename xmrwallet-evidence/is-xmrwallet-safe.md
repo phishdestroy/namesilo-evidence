@@ -64,9 +64,9 @@ Your private view key is stolen on every login. Your transactions are hijacked s
 
 ## Full evidence
 
-- [Complete Technical Analysis](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/)
-- [Deleted Issues Archive](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/deleted.html)
+- [Complete Technical Analysis](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/)
+- [Deleted Issues Archive](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/deleted.html)
 
 ---
 
-*Investigation by [PhishDestroy Research](https://github.com/phishdestroy)*
+*Investigation by [PhishDestroy Research](https://gitlab.com/phishdestroy)*
