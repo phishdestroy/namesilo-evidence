@@ -1,6 +1,6 @@
 > [!NOTE]
 > **This project now lives on GitLab.**
-> On 2026-10-07 the `phishdestroy` organization on GitHub was blocked; the reason is not yet known
+> On 2026-10-07 the `phishdestroy` account on GitHub was blocked; the reason is not yet known
 > ([our statement](https://gitlab.com/phishdestroy)). This repository was restored here from its latest
 > GitHub state (source commit `041831b`) and development continues on GitLab.
 >
