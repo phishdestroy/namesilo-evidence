@@ -48,14 +48,14 @@ All of it is in the record. All of it makes this louder.<br/>
 
 <!-- LIVE_STATS:START -->
 
-> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-08`
+> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-09`
 
 <table><tr>
 <td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,419,135</code></sub></td>
 <td align="center"><b>💰 Est. annual value</b><br/><sub><code>$39,616,678</code></sub></td>
 <td align="center"><b>📡 Deployed</b><br/><sub><code>56.7%</code></sub></td>
 <td align="center"><b>✅ IOC classified</b><br/><sub><code>204,935</code> (122,152 HIGH)</sub></td>
-<td align="center"><b>⚡ Registered ≤7d</b><br/><sub><code>0.6%</code></sub></td>
+<td align="center"><b>⚡ Registered ≤7d</b><br/><sub><code>0.5%</code></sub></td>
 <td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,196</code></sub></td>
 </tr></table>
 
