@@ -22,8 +22,9 @@ fetch:
       git config user.name "PhishDestroy Bot"
       export LC_ALL=C
       git add data/ stats/ ioc/ docs/ioc/ docs/chart-data.json docs/feed-ioc.json README.md
-      if git diff --staged --quiet; then
-        echo "No changes"
+      # Runs every 6 hours; commit only when NetAPI actually delivered new data
+      if git diff --staged --quiet -- data/all.txt data/new/; then
+        echo "No new data from NetAPI since the last run"
         exit 0
       fi
       AFTER=$(wc -l < data/all.txt 2>/dev/null || echo 0)
