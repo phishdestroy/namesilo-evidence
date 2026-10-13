@@ -28,7 +28,7 @@ PhishDestroy Research
 
 — an independent cybersecurity team that tracks, documents, and destroys phishing infrastructure. Full evidence:
 
-phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com
+phishdestroy.github.io/DO-NOT-USE-xmrwallet-com
 
 . Repository:
 

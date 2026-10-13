@@ -39,9 +39,9 @@ You don't delete evidence you can technically rebut.
 
 | Archive | Link |
 |---------|------|
-| Full archived page (all evidence) | [deleted.html](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/deleted.html) |
-| Issue #35 — full cached HTML | [cache-issue35](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/cache-issue35/) |
-| Issue #36 — full cached HTML | [cache-issue36](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/cache-issue36/) |
+| Full archived page (all evidence) | [deleted.html](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/deleted.html) |
+| Issue #35 — full cached HTML | [cache-issue35](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/cache-issue35/) |
+| Issue #36 — full cached HTML | [cache-issue36](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/cache-issue36/) |
 
 ## Timeline of destruction
 
@@ -56,10 +56,10 @@ You don't delete evidence you can technically rebut.
 
 ## Report
 
-- [Full Investigation](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/)
+- [Full Investigation](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/)
 - Report xmrwallet.com: abuse@namesilo.com
 - FBI IC3: https://ic3.gov
 
 ---
 
-*Investigation by [PhishDestroy Research](https://gitlab.com/phishdestroy)*
+*Investigation by [PhishDestroy Research](https://github.com/phishdestroy)*

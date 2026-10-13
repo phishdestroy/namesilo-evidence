@@ -20,9 +20,9 @@ Investigation web interface for the NameSilo (IANA #1479) abuse case.
 
 ## Live Report
 
-[![Live Report](https://img.shields.io/badge/%E2%96%B6_LIVE_REPORT-GitHub_Pages-3fb950?style=for-the-badge&labelColor=0c1018)](https://phishdestroy.gitlab.io/namesilo-evidence/)
+[![Live Report](https://img.shields.io/badge/%E2%96%B6_LIVE_REPORT-GitHub_Pages-3fb950?style=for-the-badge&labelColor=0c1018)](https://phishdestroy.github.io/namesilo-evidence/)
 
-https://phishdestroy.gitlab.io/namesilo-evidence/
+https://phishdestroy.github.io/namesilo-evidence/
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 

@@ -469,7 +469,7 @@ The same evidence package was sent to all registrars holding operator-linked mir
 ## 8. EVIDENCE F — Technical proof
 
 **Full breakdown:** [phishdestroy.io/xmrwallet-namesilo-exposed](https://phishdestroy.io/xmrwallet-namesilo-exposed)
-**GitHub technical repo:** [github.com/phishdestroy/DO-NOT-USE-xmrwallet-com](https://gitlab.com/phishdestroy/DO-NOT-USE-xmrwallet-com)
+**GitHub technical repo:** [github.com/phishdestroy/DO-NOT-USE-xmrwallet-com](https://github.com/phishdestroy/DO-NOT-USE-xmrwallet-com)
 
 ### How xmrwallet[.]com steals funds
 
@@ -591,8 +591,8 @@ This story lives on every surface that will hold it. If any mirror goes down, th
 | Surface | URL | Type | Can they delete it? |
 |---|---|---|---|
 | **Canonical site** | [phishdestroy.io/namesilo-killed-our-twitter](https://phishdestroy.io/namesilo-killed-our-twitter) | HTML | Only via hosting provider |
-| **GitHub repo** | [github.com/phishdestroy/namesilo-evidence](https://gitlab.com/phishdestroy/namesilo-evidence) | Markdown + evidence/ | DMCA only (US) |
-| **GitHub Pages** | [phishdestroy.gitlab.io/namesilo-evidence](https://phishdestroy.gitlab.io/namesilo-evidence/) | HTML mirror | Same as above |
+| **GitHub repo** | [github.com/phishdestroy/namesilo-evidence](https://github.com/phishdestroy/namesilo-evidence) | Markdown + evidence/ | DMCA only (US) |
+| **GitHub Pages** | [phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence/) | HTML mirror | Same as above |
 | **Codeberg** | codeberg.org/phishdestroy/namesilo-evidence | Full repo mirror | Germany — DMCA doesn't apply |
 | **GitLab** | gitlab.com/phishdestroy/namesilo-evidence | Full repo mirror | Different company, different process |
 | **SourceHut** | sr.ht/~phishdestroy/namesilo-evidence | Full repo mirror | Minimal platform, different jurisdiction |
@@ -605,7 +605,7 @@ This story lives on every surface that will hold it. If any mirror goes down, th
 | **Wayback Machine** | *Submit all URLs after push* | Every page | Extremely hard to remove |
 | **archive.today** | *Submit all URLs after push* | Every page | **Europe — US DMCA doesn't work** |
 | **Technical breakdown** | [phishdestroy.io/xmrwallet-namesilo-exposed](https://phishdestroy.io/xmrwallet-namesilo-exposed) | HTML | Only via hosting provider |
-| **GitHub (technical)** | [github.com/phishdestroy/DO-NOT-USE-xmrwallet-com](https://gitlab.com/phishdestroy/DO-NOT-USE-xmrwallet-com) | Technical evidence | DMCA only (US) |
+| **GitHub (technical)** | [github.com/phishdestroy/DO-NOT-USE-xmrwallet-com](https://github.com/phishdestroy/DO-NOT-USE-xmrwallet-com) | Technical evidence | DMCA only (US) |
 | **IPFS** | *CID to be published after pinning* | Immutable, decentralized | **No. Content-addressed. Anyone can re-pin.** |
 | **Arweave** | *TX ID to be published after upload* | Permanent storage | **No. Pay once, stored forever. No takedowns.** |
 | **Filecoin** | *Via web3.storage deals* | Redundant storage | **No. Decentralized storage deals.** |
@@ -641,7 +641,7 @@ Because NameSilo, LLC (IANA #1479) and the operator are actively attempting to e
 
 **Layer 5 — Wayback pre-formed save links:**
 - `https://web.archive.org/save/https://phishdestroy.io/namesilo-killed-our-twitter`
-- `https://web.archive.org/save/https://gitlab.com/phishdestroy/namesilo-evidence`
+- `https://web.archive.org/save/https://github.com/phishdestroy/namesilo-evidence`
 - `https://web.archive.org/save/https://phishdestroy.medium.com/namesilo-lied-to-defend-a-20m-crypto-scam-then-took-down-our-twitter-4904d15d531e`
 - `https://web.archive.org/save/https://codeberg.org/phishdestroy/namesilo-evidence`
 - `https://web.archive.org/save/https://gitlab.com/phishdestroy/namesilo-evidence`
@@ -652,13 +652,13 @@ If you want to help keep this alive:
 
 ```bash
 # Clone and pin to IPFS
-git clone https://gitlab.com/phishdestroy/namesilo-evidence
+git clone https://github.com/phishdestroy/namesilo-evidence.git
 cd namesilo-evidence
 ipfs add -r evidence/ PROOFS.md README.md
 # Share the CID
 
 # Submit to Wayback Machine
-curl -s "https://web.archive.org/save/https://gitlab.com/phishdestroy/namesilo-evidence"
+curl -s "https://web.archive.org/save/https://github.com/phishdestroy/namesilo-evidence"
 
 # Submit to archive.today
 # Paste URL at https://archive.ph/
@@ -685,7 +685,7 @@ Contact: **[abuse@phishdestroy.io](mailto:abuse@phishdestroy.io)** — subject l
 ## 14. How to verify
 
 ```bash
-git clone https://gitlab.com/phishdestroy/namesilo-evidence
+git clone https://github.com/phishdestroy/namesilo-evidence.git
 cd namesilo-evidence/evidence
 sha256sum -c ../EVIDENCE_HASHES.txt
 ```

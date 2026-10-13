@@ -29,4 +29,4 @@ File ICANN complaint: https://www.icann.org/compliance/complaint
 ## Articles
 - Medium: https://phishdestroy.medium.com/xmrwallet-com-2953f35b8a79
 - dev.to: https://dev.to/phishdestroy/xmrwallet-com-scam
-- GitHub Pages: https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/
+- GitHub Pages: https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/

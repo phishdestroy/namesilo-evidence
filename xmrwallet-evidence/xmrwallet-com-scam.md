@@ -25,10 +25,10 @@
 
 ## Evidence
 
-- [Full Technical Analysis](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/)
-- [Deleted Issues Archive](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/deleted.html)
-- [Issue #35 — TX Hijacking (cached)](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/cache-issue35/)
-- [Issue #36 — View Key Theft (cached)](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/cache-issue36/)
+- [Full Technical Analysis](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/)
+- [Deleted Issues Archive](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/deleted.html)
+- [Issue #35 — TX Hijacking (cached)](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/cache-issue35/)
+- [Issue #36 — View Key Theft (cached)](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/cache-issue36/)
 - [VirusTotal](https://www.virustotal.com/gui/domain/www.xmrwallet.com)
 
 ## The operator deleted GitHub Issues #35 and #36
@@ -55,4 +55,4 @@ Instead of proving innocence — the operator destroyed evidence. Classic fraud 
 
 ---
 
-*Investigation by [PhishDestroy Research](https://gitlab.com/phishdestroy)*
+*Investigation by [PhishDestroy Research](https://github.com/phishdestroy)*

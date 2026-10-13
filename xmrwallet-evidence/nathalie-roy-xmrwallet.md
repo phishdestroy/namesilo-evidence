@@ -47,11 +47,11 @@ xmrwallet.com — a fraudulent Monero web wallet that:
 
 ## Evidence
 
-- [Full Technical Investigation](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/)
-- [Deleted Issues Archive](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/deleted.html)
-- [Issue #35 cached](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/cache-issue35/)
-- [Issue #36 cached](https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/cache-issue36/)
+- [Full Technical Investigation](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/)
+- [Deleted Issues Archive](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/deleted.html)
+- [Issue #35 cached](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/cache-issue35/)
+- [Issue #36 cached](https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/cache-issue36/)
 
 ---
 
-*Investigation by [PhishDestroy Research](https://gitlab.com/phishdestroy) — OSINT only, no unauthorized access*
+*Investigation by [PhishDestroy Research](https://github.com/phishdestroy) — OSINT only, no unauthorized access*

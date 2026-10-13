@@ -27,4 +27,4 @@ A: Have you tried turning it off and on again?
 
 It's a scam. Use https://getmonero.org
 
-Full technical proof (operator deleted originals, archived here): https://phishdestroy.gitlab.io/DO-NOT-USE-xmrwallet-com/deleted.html
+Full technical proof (operator deleted originals, archived here): https://phishdestroy.github.io/DO-NOT-USE-xmrwallet-com/deleted.html

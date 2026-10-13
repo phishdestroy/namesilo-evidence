@@ -139,7 +139,7 @@ If your firm has a formal disagreement process with NameSilo, LLC (IANA #1479) a
 
 - **Full public technical breakdown:** [phishdestroy.io/xmrwallet-namesilo-exposed](https://phishdestroy.io/xmrwallet-namesilo-exposed)
 - **Earlier Medium write-up of the scam itself:** [phishdestroy.medium.com/xmrwallet-com-2953f35b8a79](https://phishdestroy.medium.com/xmrwallet-com-2953f35b8a79)
-- **Earlier GitHub evidence repository:** [github.com/phishdestroy/DO-NOT-USE-xmrwallet-com](https://gitlab.com/phishdestroy/DO-NOT-USE-xmrwallet-com)
+- **Earlier GitHub evidence repository:** [github.com/phishdestroy/DO-NOT-USE-xmrwallet-com](https://github.com/phishdestroy/DO-NOT-USE-xmrwallet-com)
 - **Operator's first email (the "we are not phishing" denial):** [`evidence/01-operator-email-feb16.png`](evidence/01-operator-email-feb16.png)
 - **PhishDestroy's reply (technical breakdown + escalation warning):** [`evidence/01-phishdestroy-reply-feb16.png`](evidence/01-phishdestroy-reply-feb16.png)
 

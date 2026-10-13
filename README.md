@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://gitlab.com/phishdestroy/namesilo-evidence/-/raw/main/docs/assets/banner.gif" width="100%"/>
+<img src="https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/docs/assets/banner.gif" width="100%"/>
 </div>
 
 <!--
@@ -39,73 +39,73 @@ All of it is in the record. All of it makes this louder.<br/>
 
 <!-- LIVE_STATS:START -->
 
-> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-12`
+> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-07`
 
 <table><tr>
-<td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,470,913</code></sub></td>
-<td align="center"><b>💰 Est. annual value</b><br/><sub><code>$40,081,521</code></sub></td>
-<td align="center"><b>📡 Deployed</b><br/><sub><code>54.5%</code></sub></td>
+<td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,408,575</code></sub></td>
+<td align="center"><b>💰 Est. revenue</b><br/><sub><code>$39,528,059</code></sub></td>
+<td align="center"><b>📡 Deployed</b><br/><sub><code>58.7%</code></sub></td>
 <td align="center"><b>✅ IOC classified</b><br/><sub><code>204,935</code> (122,152 HIGH)</sub></td>
-<td align="center"><b>⚡ Registered ≤7d</b><br/><sub><code>0.7%</code></sub></td>
-<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,133</code></sub></td>
+<td align="center"><b>⚡ Fresh (≤7d)</b><br/><sub><code>0.6%</code></sub></td>
+<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,320</code></sub></td>
 </tr></table>
 
 ### 🏷️ Top TLD Zones
 
-| TLD | Count | Avg reg→expiry | Est. annual value |
+| TLD | Count | Avg Reg Period | Est. Revenue |
 |:--|--:|--:|--:|
-| `.com` | 2,468,595 | 1,804d | $22,192,669 |
-| `.sbs` | 354,939 | 633d | $1,771,146 |
-| `.xyz` | 349,732 | 794d | $521,101 |
-| `.net` | 268,667 | 1,527d | $2,683,983 |
-| `.info` | 243,582 | 671d | $971,892 |
-| `.org` | 242,895 | 1,501d | $2,426,521 |
-| `.cfd` | 231,269 | 669d | $1,154,032 |
-| `.click` | 95,318 | 530d | $380,319 |
-| `.wiki` | 86,689 | 369d | $1,299,468 |
-| `.vip` | 68,163 | 654d | $340,133 |
+| `.com` | 2,431,433 | 1,802d | $21,858,583 |
+| `.sbs` | 354,823 | 633d | $1,770,567 |
+| `.xyz` | 348,480 | 796d | $519,235 |
+| `.net` | 265,266 | 1,521d | $2,650,007 |
+| `.info` | 241,337 | 670d | $962,935 |
+| `.org` | 238,993 | 1,494d | $2,387,540 |
+| `.cfd` | 230,690 | 669d | $1,151,143 |
+| `.click` | 94,400 | 527d | $376,656 |
+| `.wiki` | 81,030 | 369d | $1,214,640 |
+| `.vip` | 67,738 | 643d | $338,013 |
 
 ### 🌍 Top Hosting Countries
 
 ```
-US  ██████████████████    935,158 (52.9%)
-DE  █████░░░░░░░░░░░░░    287,899 (16.3%)
-SG  ██░░░░░░░░░░░░░░░░    109,825 (6.2%)
-HK  █░░░░░░░░░░░░░░░░░     87,390 (4.9%)
-NL  █░░░░░░░░░░░░░░░░░     61,523 (3.5%)
-CA  ░░░░░░░░░░░░░░░░░░     46,727 (2.6%)
-GB  ░░░░░░░░░░░░░░░░░░     27,305 (1.5%)
-FR  ░░░░░░░░░░░░░░░░░░     25,653 (1.4%)
+US  ██████████████████  1,018,378 (51.8%)
+DE  ██████░░░░░░░░░░░░    374,737 (19.1%)
+SG  █░░░░░░░░░░░░░░░░░    103,647 (5.3%)
+HK  █░░░░░░░░░░░░░░░░░     79,410 (4.0%)
+NL  █░░░░░░░░░░░░░░░░░     58,494 (3.0%)
+CA  ░░░░░░░░░░░░░░░░░░     52,061 (2.6%)
+GB  ░░░░░░░░░░░░░░░░░░     37,491 (1.9%)
+FR  ░░░░░░░░░░░░░░░░░░     22,337 (1.1%)
 ```
 
 ### 📈 Registration Burst Days
 
 | Date | Domains | × Average |
 |:--|--:|--:|
-| `2025-07-19` | 15,493 | **32.3×** 🚨 |
-| `2025-12-01` | 14,476 | **30.2×** 🚨 |
-| `2026-06-30` | 13,623 | **28.4×** 🚨 |
-| `2026-09-04` | 13,539 | **28.3×** 🚨 |
-| `2026-07-01` | 12,841 | **26.8×** 🚨 |
+| `2025-07-19` | 16,448 | **34.7×** 🚨 |
+| `2025-12-01` | 14,446 | **30.5×** 🚨 |
+| `2026-06-30` | 13,559 | **28.6×** 🚨 |
+| `2026-09-04` | 13,537 | **28.6×** 🚨 |
+| `2026-07-01` | 12,815 | **27.0×** 🚨 |
 
 ### 🎯 Top Targeted Brands & Keywords
 
-`login (11,343)` &middot; `support (6,434)` &middot; `crypto (6,384)` &middot; `connect (5,966)` &middot; `trust (5,762)` &middot; `secure (5,623)` &middot; `official (4,981)` &middot; `account (4,026)` &middot; `farm (3,619)` &middot; `bridge (3,367)` &middot; `update (3,161)` &middot; `claim (2,972)` &middot; `vault (2,780)` &middot; `wallet (2,180)` &middot; `token (1,969)`
+`login (11,350)` &middot; `support (6,403)` &middot; `crypto (6,357)` &middot; `connect (5,911)` &middot; `trust (5,723)` &middot; `secure (5,649)` &middot; `official (4,928)` &middot; `account (4,007)` &middot; `farm (3,547)` &middot; `bridge (3,298)` &middot; `update (3,158)` &middot; `claim (2,991)` &middot; `vault (2,738)` &middot; `wallet (2,149)` &middot; `token (1,939)`
 
 ### 🕵️ Top Serial Registrants — 50 emails with ≥5 domains
 
 | # | Registrant Email (redacted) | Domains |
 |--:|:--|--:|
-| 1 | `chi***@mail.com` | **10,826** |
-| 2 | `diz***@992fun.com` | **9,177** |
-| 3 | `diz***@ncao18.com` | **5,208** |
-| 4 | `sup***@webador.com` | **4,771** |
-| 5 | `sup***@trackingspaces.com` | **3,154** |
-| 6 | `ser***@atom.com` | **3,106** |
-| 7 | `992***@gmail.com` | **2,427** |
-| 8 | `ser***@trackorderzone.com` | **2,164** |
-| 9 | `diz***@91jqx.com` | **1,892** |
-| 10 | `ser***@orderlookup.live` | **1,616** |
+| 1 | `chi***@mail.com` | **10,672** |
+| 2 | `diz***@992fun.com` | **9,024** |
+| 3 | `inf***@brandbucket.com` | **5,433** |
+| 4 | `sal***@brandbucket.com` | **5,433** |
+| 5 | `ser***@atom.com` | **5,230** |
+| 6 | `sup***@webador.com` | **4,806** |
+| 7 | `992***@gmail.com` | **2,068** |
+| 8 | `diz***@91jqx.com` | **1,736** |
+| 9 | `sup***@trackingspaces.com` | **1,607** |
+| 10 | `shu***@outlook.com` | **1,354** |
 
 ### 📥 Download Threat Intelligence
 
@@ -114,9 +114,9 @@ FR  ░░░░░░░░░░░░░░░░░░     25,653 (1.4%)
 | [`data/all.txt`](data/all.txt) | TXT | All tracked domains |
 | [`data/index.json`](data/index.json) | JSON | Full analytics snapshot |
 | [`data/ioc/serial_registrants.json`](data/ioc/serial_registrants.json) | JSON | Repeat registrants + their domains |
-| [`data/ioc/shared_ips.json`](data/ioc/shared_ips.json) | JSON | Shared hosting clusters |
+| [`data/ioc/shared_ips.json`](data/ioc/shared_ips.json) | JSON | Bulletproof hosting clusters |
 | [`data/ioc/brand_domains.json`](data/ioc/brand_domains.json) | JSON | Domains by targeted brand |
-| [`data/ioc/stix-bundle.json`](data/ioc/stix-bundle.json) | STIX 2.1 | MISP/OpenCTI bundle (HIGH IOC domains, up to 10k) |
+| [`data/ioc/stix-bundle.json`](data/ioc/stix-bundle.json) | STIX 2.1 | MISP/OpenCTI ready bundle |
 | [`data/ioc/serial_emails.txt`](data/ioc/serial_emails.txt) | TXT | grep-friendly: `email⇥count` |
 | [`data/ioc/shared_ips.txt`](data/ioc/shared_ips.txt) | TXT | grep-friendly: `ip⇥count⇥country` |
 
@@ -127,7 +127,7 @@ FR  ░░░░░░░░░░░░░░░░░░     25,653 (1.4%)
 ---
 
 [![🔴 LIVE SITE](https://img.shields.io/badge/%F0%9F%94%B4%20LIVE-phishdestroy.eth.limo-FF3333?style=for-the-badge)](https://phishdestroy.eth.limo/)
-[![Evidence Portal](https://img.shields.io/badge/Evidence_Portal-GitHub_Pages-161b22?style=for-the-badge&logo=github)](https://phishdestroy.gitlab.io/namesilo-evidence/)
+[![Evidence Portal](https://img.shields.io/badge/Evidence_Portal-GitHub_Pages-161b22?style=for-the-badge&logo=github)](https://phishdestroy.github.io/namesilo-evidence/)
 [![ICANN Filed](https://img.shields.io/badge/ICANN-Compliance_Filed-e36209?style=for-the-badge)](https://www.icann.org/compliance)
 [![MIT License](https://img.shields.io/badge/License-MIT-238636?style=for-the-badge)](LICENSE)
 
@@ -153,9 +153,9 @@ This investigation is part of a series documenting ICANN-accredited registrars t
 
 | # | Registrar | IANA | Zone | Confirmed Malicious | Russian Connection | Investigation |
 |--|--|--|--|--|--|--|
-| 1 | **NICENIC INTERNATIONAL GROUP** | #3765 | 403,909 | **82,575 (44.0% of alive)** | 🇷🇺 #2 hosting country (8.5%) | [nicenic-evidence](https://gitlab.com/phishdestroy/nicenic-evidence) · [Live Report](https://phishdestroy.gitlab.io/nicenic-evidence/) |
-| 2 | **Trustname.com / Fewmoretaps ÖÜ** | #4318 | 18,719 | **3,292 HIGH (35.4% of alive)** | 🇷🇺 Russian-operated, Estonian shell | [trustname-evidence](https://gitlab.com/phishdestroy/trustname-evidence) · [Live Report](https://phishdestroy.gitlab.io/trustname-evidence/) |
-| 3 | **NameSilo, LLC** *(this)* | #1479 | 5,408,575 (Oct 2026) | **122,152 HIGH (2.26% of zone)** | 🇷🇺 Russian team members, suppression campaign | [namesilo-evidence](https://gitlab.com/phishdestroy/namesilo-evidence) · [Live Report](https://phishdestroy.gitlab.io/namesilo-evidence/) |
+| 1 | **NICENIC INTERNATIONAL GROUP** | #3765 | 403,909 | **82,575 (44.0% of alive)** | 🇷🇺 #2 hosting country (8.5%) | [nicenic-evidence](https://github.com/phishdestroy/nicenic-evidence) · [Live Report](https://phishdestroy.github.io/nicenic-evidence/) |
+| 2 | **Trustname.com / Fewmoretaps ÖÜ** | #4318 | 18,719 | **3,292 HIGH (35.4% of alive)** | 🇷🇺 Russian-operated, Estonian shell | [trustname-evidence](https://github.com/phishdestroy/trustname-evidence) · [Live Report](https://phishdestroy.github.io/trustname-evidence/) |
+| 3 | **NameSilo, LLC** *(this)* | #1479 | 5,408,575 (Oct 2026) | **122,152 HIGH (2.26% of zone)** | 🇷🇺 Russian team members, suppression campaign | [namesilo-evidence](https://github.com/phishdestroy/namesilo-evidence) · [Live Report](https://phishdestroy.github.io/namesilo-evidence/) |
 
 ---
 
@@ -457,15 +457,15 @@ If NameSilo disputes any finding: submit documented evidence via [phishdestroy.i
 
 ## Links by Content
 
-### 🌐 Live Reports — [phishdestroy.gitlab.io/namesilo-evidence](https://phishdestroy.gitlab.io/namesilo-evidence/)
+### 🌐 Live Reports — [phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence/)
 
 | Report | What's inside |
 |:-------|:-------------|
-| [Zone Scan Report](https://phishdestroy.gitlab.io/namesilo-evidence/namesilo-scan.html) | Charts, IOC breakdown, methodology, chain of custody |
-| [Favicon Cluster Analysis](https://phishdestroy.gitlab.io/namesilo-evidence/namesilo-clusters.html) | 12 operator clusters identified via MurmurHash3 |
-| [107k IOC Domain List](https://phishdestroy.gitlab.io/namesilo-evidence/namesilo-domains.html) | Searchable table — flags, favicons, categories |
-| [PrivacyGuardian Shield](https://phishdestroy.gitlab.io/namesilo-evidence/namesilo-privacyguardian.html) | 183,419 malicious domains behind NameSilo's own WHOIS privacy |
-| [Review Manipulation](https://phishdestroy.gitlab.io/namesilo-evidence/namesilo-reviews.html) | 129 deleted Trustpilot reviews · bot network · PR Newswire link |
+| [Zone Scan Report](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html) | Charts, IOC breakdown, methodology, chain of custody |
+| [Favicon Cluster Analysis](https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html) | 12 operator clusters identified via MurmurHash3 |
+| [107k IOC Domain List](https://phishdestroy.github.io/namesilo-evidence/namesilo-domains.html) | Searchable table — flags, favicons, categories |
+| [PrivacyGuardian Shield](https://phishdestroy.github.io/namesilo-evidence/namesilo-privacyguardian.html) | 183,419 malicious domains behind NameSilo's own WHOIS privacy |
+| [Review Manipulation](https://phishdestroy.github.io/namesilo-evidence/namesilo-reviews.html) | 129 deleted Trustpilot reviews · bot network · PR Newswire link |
 
 ### 📁 Case Documents — [`case/`](case/)
 
@@ -500,7 +500,7 @@ If NameSilo disputes any finding: submit documented evidence via [phishdestroy.i
 
 Verify integrity:
 ```bash
-git clone [https://gitlab.com/phishdestroy/namesilo-evidence.git](https://gitlab.com/phishdestroy/namesilo-evidence)
+git clone [https://github.com/phishdestroy/namesilo-evidence.git](https://github.com/phishdestroy/namesilo-evidence.git)
 cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
 
 ---
@@ -533,12 +533,12 @@ cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
 | File | Format | Description |
 |:--|:--:|:--|
 | [`ioc/indicators.csv`](ioc/indicators.csv) | CSV | Full IOC: domain, category, severity, date, sources |
-| [`ioc/domains_high.txt`](https://gitlab.com/phishdestroy/namesilo-evidence/-/raw/main/ioc/domains_high.txt) | TXT | HIGH severity only (122,152) |
-| [`ioc/domains_all_malicious.txt`](https://gitlab.com/phishdestroy/namesilo-evidence/-/raw/main/ioc/domains_all_malicious.txt) | TXT | All IOC (204,935) |
-| [feed-ioc.html](https://phishdestroy.gitlab.io/namesilo-evidence/feed-ioc.html) | HTML | Searchable table with feed source badges |
+| [`ioc/domains_high.txt`](https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/ioc/domains_high.txt) | TXT | HIGH severity only (122,152) |
+| [`ioc/domains_all_malicious.txt`](https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/ioc/domains_all_malicious.txt) | TXT | All IOC (204,935) |
+| [feed-ioc.html](https://phishdestroy.github.io/namesilo-evidence/feed-ioc.html) | HTML | Searchable table with feed source badges |
 
 **Sources used:** Hagezi TIF (2.1M), BlocklistProject Malware/Phishing (2.5M+120K), Maltrail (914K), mitchellkrogza PhishDB (385K), MetaMask, ScamBlock, CERT.pl, Phishing.Database, uBlock, Dandelion, firebog.net, brand keyword scan.
 
-> Live report: [https://phishdestroy.gitlab.io/namesilo-evidence](https://phishdestroy.gitlab.io/namesilo-evidence)
+> Live report: [https://phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence)
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
