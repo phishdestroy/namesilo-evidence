@@ -66,6 +66,7 @@ NAV=[('WORKSPACE',[
  ('RESOURCES',[
  ('Downloads & mirrors','index.html#resources','down','resources')])]
 
+RELATED=[('NameSilo','namesilo-evidence','IANA #1479'),('NICENIC','nicenic-evidence','IANA #3765'),('Trustname','trustname-evidence','IANA #4318'),('ShortDot','shortdot-evidence','7 gTLD registry')]
 def sidebar(page):
  links=''
  for heading,rows in NAV:
@@ -74,6 +75,10 @@ def sidebar(page):
    current=(key=='overview' and page=='index') or key==page or (key=='reports' and page in ['namesilo-scan','namesilo-clusters','namesilo-reviews'])
    extra='<span class="pd-count">6</span>' if key=='reports' else ''
    links+=f'<a class="pd-nav-link{" pd-active" if current else ""}" data-nav="{key}" href="{href}">{icon(i)}<span>{title}</span>{extra}</a>'
+ own=CONFIG['source_repository'].split('/')[-1]
+ links+='<div class="pd-nav-label">RELATED INVESTIGATIONS</div>'
+ for name,repo,sub in RELATED:
+  if repo!=own:links+=f'<a class="pd-nav-link" href="https://phishdestroy.github.io/{repo}/" title="{name} abuse investigation · {sub}">{icon("shield")}<span>{name} investigation</span></a>'
  return f'''<aside class="pd-sidebar" id="pd-sidebar" aria-label="Research navigation">
  <a class="pd-brand" href="index.html#overview" aria-label="PhishDestroy research overview"><span class="pd-brand-mark"><svg viewBox="0 0 36 42" fill="none" aria-hidden="true"><path d="m18 2 15 6v12c0 10-15 20-15 20S3 30 3 20V8Z" stroke="currentColor" stroke-width="1.7"/><path d="m11 13 7-3 7 3v7l-7 9-7-9Z" fill="currentColor"/><path d="m14 19 3 3 6-7" stroke="#162014" stroke-width="2"/></svg></span><span class="pd-wordmark">PhishDestroy<small>Research intelligence</small></span></a>
  <a href="index.html#overview" class="pd-project"><div class="pd-project-logo">N</div><div><strong>NameSilo Investigation</strong><span>Registrar · IANA #1479</span></div>{icon('chevron')}</a>
