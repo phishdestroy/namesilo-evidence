@@ -1,0 +1,65 @@
+{
+  "behavioral-patterns.html": {
+    "original_ids": 13,
+    "retained_ids": 13,
+    "missing_ids": [],
+    "original_fields": [],
+    "missing_fields": []
+  },
+  "feed-ioc.html": {
+    "original_ids": 10,
+    "retained_ids": 10,
+    "missing_ids": [],
+    "original_fields": [
+      "search"
+    ],
+    "missing_fields": []
+  },
+  "index.html": {
+    "original_ids": 31,
+    "retained_ids": 31,
+    "missing_ids": [],
+    "original_fields": [],
+    "missing_fields": []
+  },
+  "namesilo-clusters.html": {
+    "original_ids": 4,
+    "retained_ids": 4,
+    "missing_ids": [],
+    "original_fields": [],
+    "missing_fields": []
+  },
+  "namesilo-domains.html": {
+    "original_ids": 4,
+    "retained_ids": 4,
+    "missing_ids": [],
+    "original_fields": [
+      "q"
+    ],
+    "missing_fields": []
+  },
+  "namesilo-privacyguardian.html": {
+    "original_ids": 6,
+    "retained_ids": 6,
+    "missing_ids": [],
+    "original_fields": [
+      "catF",
+      "srch"
+    ],
+    "missing_fields": []
+  },
+  "namesilo-reviews.html": {
+    "original_ids": 0,
+    "retained_ids": 0,
+    "missing_ids": [],
+    "original_fields": [],
+    "missing_fields": []
+  },
+  "namesilo-scan.html": {
+    "original_ids": 29,
+    "retained_ids": 29,
+    "missing_ids": [],
+    "original_fields": [],
+    "missing_fields": []
+  }
+}

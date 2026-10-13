@@ -1,27 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="referrer" content="no-referrer">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="no-referrer" name="referrer"/>
 <title>Favicon Clusters &amp; Server Fingerprints — NameSilo IANA #1479 | PhishDestroy</title>
-<meta name="description" content="Forensic favicon cluster analysis and server fingerprint mapping of 5,269,357 NameSilo domains. 12 criminal networks identified by MurmurHash3. SHA-256 verified evidence.">
-<meta name="robots" content="index, follow">
-<meta name="author" content="PhishDestroy">
-<meta name="keywords" content="NameSilo, IANA 1479, favicon clustering, server fingerprint, MurmurHash3, phishing infrastructure, Indonesian gambling domains, Chinese adult piracy, domain abuse, IOC, registrar compliance">
-<meta property="og:title" content="Favicon Clusters &amp; Server Fingerprints — NameSilo IANA #1479">
-<meta property="og:description" content="12 criminal networks identified by favicon fingerprint. 328,230-domain single-server cluster. SHA-256 evidence chain. PhishDestroy investigation June 2026.">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="PhishDestroy">
-<meta property="og:url" content="https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html">
-<meta property="og:image" content="https://phishdestroy.github.io/namesilo-evidence/assets/og-final-investigation.png">
-<meta property="article:author" content="PhishDestroy">
-<meta property="article:published_time" content="2026-06-03T07:21:17Z">
-<meta property="article:section" content="Cybersecurity">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Favicon Clusters &amp; Server Fingerprints — NameSilo IANA #1479">
-<meta name="twitter:description" content="12 criminal networks identified by favicon fingerprint. 328,230-domain single-server cluster. PhishDestroy investigation.">
-<link rel="canonical" href="https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html">
+<meta content="Explore PhishDestroy’s NameSilo research: original reports, evidence, searchable domain lists, live analytics and downloadable intelligence." name="description"/>
+<meta content="index, follow" name="robots"/>
+<meta content="PhishDestroy" name="author"/>
+<meta content="NameSilo, IANA 1479, favicon clustering, server fingerprint, MurmurHash3, phishing infrastructure, Indonesian gambling domains, Chinese adult piracy, domain abuse, IOC, registrar compliance" name="keywords"/>
+<meta content="Favicon Clusters &amp; Server Fingerprints — NameSilo IANA #1479" property="og:title"/>
+<meta content="Explore PhishDestroy’s NameSilo research: original reports, evidence, searchable domain lists, live analytics and downloadable intelligence." property="og:description"/>
+<meta content="article" property="og:type"/>
+<meta content="PhishDestroy" property="og:site_name"/>
+<meta content="https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html" property="og:url"/>
+<meta content="https://phishdestroy.github.io/namesilo-evidence/assets/og-final-investigation.png" property="og:image"/>
+<meta content="PhishDestroy" property="article:author"/>
+<meta content="2026-06-03T07:21:17Z" property="article:published_time"/>
+<meta content="Cybersecurity" property="article:section"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Favicon Clusters &amp; Server Fingerprints — NameSilo IANA #1479" name="twitter:title"/>
+<meta content="Explore PhishDestroy’s NameSilo research: original reports, evidence, searchable domain lists, live analytics and downloadable intelligence." name="twitter:description"/>
+<link href="https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html" rel="canonical"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,9 +49,9 @@
   }
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{
   --bg:#000;--s1:#070b12;--s2:#0c1018;--s3:#111720;
@@ -198,615 +199,585 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--bdr);display:
   .cluster-grid{grid-template-columns:1fr}
 }
 </style>
-</head>
-<body>
-<div style="padding:6px 16px;font-size:12px;font-family:monospace;border-bottom:1px solid rgba(255,255,255,.06);color:#8b949e;background:var(--s1,#070b12)"><a href="https://phishdestroy.io" style="color:#6ea8d7;text-decoration:none">phishdestroy.io</a> &nbsp;&middot;&nbsp; <a href="https://phishdestroy.io/namesilo-investigation/" style="color:#6ea8d7;text-decoration:none">Full Investigation</a></div>
-<button class="mob-nav" id="mobBtn" aria-label="Open navigation">&#9776;</button>
+<link href="assets/pd-mark.svg" rel="icon" type="image/svg+xml"/><meta content="#111416" name="theme-color"/><link href="assets/theme.css" rel="stylesheet"/><script src="assets/source-config.js"></script><script src="assets/data-bridge.js"></script></head>
+<body class="pd-workspace" data-page="namesilo-clusters"><a class="pd-skip" href="#pd-main">Skip to content</a><aside aria-label="Research navigation" class="pd-sidebar" id="pd-sidebar">
+<a aria-label="PhishDestroy research overview" class="pd-brand" href="index.html#overview"><span class="pd-brand-mark"><svg aria-hidden="true" fill="none" viewbox="0 0 36 42"><path d="m18 2 15 6v12c0 10-15 20-15 20S3 30 3 20V8Z" stroke="currentColor" stroke-width="1.7"></path><path d="m11 13 7-3 7 3v7l-7 9-7-9Z" fill="currentColor"></path><path d="m14 19 3 3 6-7" stroke="#162014" stroke-width="2"></path></svg></span><span class="pd-wordmark">PhishDestroy<small>Research intelligence</small></span></a>
+<a class="pd-project" href="index.html#overview"><div class="pd-project-logo">N</div><div><strong>NameSilo Investigation</strong><span>Registrar · IANA #1479</span></div><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></a>
+<nav aria-label="Main navigation"><div class="pd-nav-label">WORKSPACE</div><a class="pd-nav-link" data-nav="overview" href="index.html#overview"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><rect height="7" rx="1.4" width="7" x="3" y="3"></rect><rect height="7" rx="1.4" width="7" x="14" y="3"></rect><rect height="7" rx="1.4" width="7" x="3" y="14"></rect><rect height="7" rx="1.4" width="7" x="14" y="14"></rect></svg><span>Overview</span></a><a class="pd-nav-link pd-active" data-nav="reports" href="index.html#reports"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"></path><path d="M14 3v6h6M8 13h8M8 17h5"></path></svg><span>Investigation reports</span><span class="pd-count">6</span></a><a class="pd-nav-link" data-nav="evidence" href="index.html#evidence"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M5 10a7 7 0 0 1 14 0M3 13v-3a9 9 0 0 1 18 0v3M8 13v-3a4 4 0 0 1 8 0v4a10 10 0 0 1-2 6M12 10v5a9 9 0 0 1-2 6M5 14a13 13 0 0 1-1 5M8 16a10 10 0 0 1-1 5M19 14a14 14 0 0 1-1 6"></path></svg><span>Evidence library</span></a><a class="pd-nav-link" data-nav="timeline" href="index.html#timeline"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg><span>Timeline</span></a><div class="pd-nav-label">INTELLIGENCE</div><a class="pd-nav-link" data-nav="analytics" href="index.html#analytics"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M3 12h4l3-7 4 14 3-7h4"></path></svg><span>Live analytics</span></a><a class="pd-nav-link" data-nav="feed-ioc" href="feed-ioc.html"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></svg><span>IOC explorer</span></a><a class="pd-nav-link" data-nav="namesilo-domains" href="namesilo-domains.html"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="m12 3 9 5v9l-9 5-9-5V8Z"></path><path d="m3 8 9 5 9-5M12 13v9M7 5.8l9 5"></path></svg><span>Domain list</span></a><a class="pd-nav-link" data-nav="namesilo-privacyguardian" href="namesilo-privacyguardian.html"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z"></path><path d="m8 12 3 3 5-6"></path></svg><span>PrivacyGuardian</span></a><a class="pd-nav-link" data-nav="behavioral-patterns" href="behavioral-patterns.html"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><rect height="6" rx="1" width="6" x="9" y="2"></rect><rect height="6" rx="1" width="6" x="2" y="16"></rect><rect height="6" rx="1" width="6" x="16" y="16"></rect><path d="M12 8v4M5 16v-4h14v4"></path></svg><span>Behavioral patterns</span></a><div class="pd-nav-label">RESOURCES</div><a class="pd-nav-link" data-nav="resources" href="index.html#resources"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"></path></svg><span>Downloads &amp; mirrors</span></a></nav>
+<div class="pd-sidebar-bottom"><div class="pd-integrity"><strong><span class="pd-dot"></span>Open research. Public evidence.</strong><p>Original sources, reproducible data<br/>and a traceable investigation.</p></div><div class="pd-sidebar-links"><span>TLP:CLEAR</span><a href="https://github.com/phishdestroy/namesilo-evidence" rel="noopener" target="_blank">GitHub <svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M15 3h6v6M21 3l-9 9M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"></path></svg></a></div></div>
+</aside><div class="pd-mobile-overlay" id="pd-overlay"></div><div class="pd-shell"><header class="pd-topbar"><button aria-controls="pd-sidebar" aria-expanded="false" aria-label="Open navigation" class="pd-icon-btn pd-mobile-menu" id="pd-menu" type="button"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button><div class="pd-breadcrumb"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z"></path><path d="m8 12 3 3 5-6"></path></svg><a href="index.html">Research</a><span>/</span><b>Favicon Cluster Analysis</b></div><div class="pd-top-actions"><span class="pd-status" data-state="loading" id="pd-status"><span class="pd-dot"></span><span id="pd-status-text">Connecting to source</span></span><button aria-label="Search reports and sections" class="pd-search-trigger" data-command-open="" type="button"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><span>Search investigation...</span><kbd>⌘ K</kbd></button><button aria-label="Refresh source data" class="pd-icon-btn" data-refresh="" title="Refresh source data" type="button"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M20 10a8 8 0 0 0-14-5L3 8m0-5v5h5M4 14a8 8 0 0 0 14 5l3-3m0 5v-5h-5"></path></svg></button><a aria-label="Open source repository" class="pd-icon-btn" href="https://github.com/phishdestroy/namesilo-evidence" rel="noopener" target="_blank" title="Open source repository"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 4v-3.4a3 3 0 0 0-.8-2.3c2.8-.3 5.8-1.4 5.8-6.3a5 5 0 0 0-1.3-3.5 4.6 4.6 0 0 0-.1-3.5s-1.1-.4-3.6 1.3a12 12 0 0 0-6.5 0C6 .6 4.9 1 4.9 1a4.6 4.6 0 0 0-.1 3.5A5 5 0 0 0 3.5 8c0 4.9 3 6 5.8 6.3a3 3 0 0 0-.8 2.3V21"></path></svg></a></div></header><main class="pd-main" id="pd-main" tabindex="-1"><div class="pd-update-banner" hidden="" id="pd-update-banner"><span>A newer source dataset is available.</span><button class="pd-btn primary" data-refresh="" type="button">Refresh data</button></div><div class="pd-snapshot-banner"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"></path><path d="M14 3v6h6M8 13h8M8 17h5"></path></svg><span>Original PhishDestroy research · Content and report dates preserved.</span><a href="https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html" rel="noopener" target="_blank">View source ↗</a></div><div class="pd-report-content">
+<div class="pd-source-bar" style="padding:6px 16px;font-size:12px;font-family:monospace;border-bottom:1px solid rgba(255,255,255,.06);color:#8b949e;background:var(--s1,#070b12)"><a href="https://phishdestroy.io" style="color:#6ea8d7;text-decoration:none">phishdestroy.io</a>  ·  <a href="https://phishdestroy.io/namesilo-investigation/" style="color:#6ea8d7;text-decoration:none">Full Investigation</a></div>
+<button aria-label="Open navigation" class="mob-nav" id="mobBtn">☰</button>
 <div class="sb-overlay" id="sbOverlay"></div>
 <div class="layout">
-
-<aside class="sb">
-  <div class="brand">
-    <strong>PhishDestroy</strong>
-    <span>Registrar Abuse Intel</span>
-    <em>IANA #1479 · June 2026</em>
-  </div>
-  <nav class="nav-g">
-    <div class="nav-label">This Page</div>
-    <a href="#clusters">&#11041; Favicon Clusters</a>
-    <a href="#fingerprints">&#11041; Server Fingerprints</a>
-    <div class="nav-label">Report</div>
-    <a href="namesilo-scan.html">&larr; Main Report</a>
-    <a href="namesilo-scan.html#exhibit-a">Exhibit A &mdash; Phishing</a>
-    <a href="namesilo-scan.html#exhibit-b">Exhibit B &mdash; Gambling</a>
-    <a href="namesilo-scan.html#exhibit-d">Exhibit D &mdash; Chinese</a>
-    <div class="nav-label">Data</div>
-    <a href="namesilo-domains.html">&#8862; Full IOC Domain List</a>
-  </nav>
-  <div class="sb-footer">
-    <a href="https://phishdestroy.eth.limo/" target="_blank" rel="noopener">&#8599; phishdestroy.eth.limo</a>
-    <a href="https://github.com/PhishDestroy/namesilo-scanner" target="_blank" rel="noopener">&#8599; GitHub Repository</a>
-    <a href="evidence/evidence_manifest.json" target="_blank" rel="noopener">&#8599; evidence_manifest.json</a>
-  </div>
-</aside>
-
+<details class="pd-report-toc"><summary>On this page — report sections</summary><aside class="sb">
+<div class="brand">
+<strong>PhishDestroy</strong>
+<span>Registrar Abuse Intel</span>
+<em>IANA #1479 · June 2026</em>
+</div>
+<nav class="nav-g">
+<div class="nav-label">This Page</div>
+<a href="#clusters">⬡ Favicon Clusters</a>
+<a href="#fingerprints">⬡ Server Fingerprints</a>
+<div class="nav-label">Report</div>
+<a href="namesilo-scan.html">← Main Report</a>
+<a href="namesilo-scan.html#exhibit-a">Exhibit A — Phishing</a>
+<a href="namesilo-scan.html#exhibit-b">Exhibit B — Gambling</a>
+<a href="namesilo-scan.html#exhibit-d">Exhibit D — Chinese</a>
+<div class="nav-label">Data</div>
+<a href="namesilo-domains.html">⊞ Full IOC Domain List</a>
+</nav>
+<div class="sb-footer">
+<a href="https://phishdestroy.eth.limo/" rel="noopener noreferrer" target="_blank">↗ phishdestroy.eth.limo</a>
+<a href="https://github.com/PhishDestroy/namesilo-scanner" rel="noopener noreferrer" target="_blank">↗ GitHub Repository</a>
+<a href="evidence/evidence_manifest.json" rel="noopener noreferrer" target="_blank">↗ evidence_manifest.json</a>
+</div>
+</aside></details>
 <main class="main">
-
-  <header class="hero">
-    <div class="hero-inner">
-      <div class="hero-badges">
-        <span class="hb cy">IANA #1479</span>
-        <span class="hb tlp">TLP:CLEAR</span>
-        <span class="hb tlp">Forensic Evidence</span>
-      </div>
-      <h1><strong>Favicon Clusters</strong> &amp;<br>Server Fingerprints</h1>
-      <p class="hero-sub">Visual operator identification &middot; MurmurHash3 favicon clustering &middot; SHA-256 server fingerprinting &middot; NameSilo complete zone</p>
-    </div>
-  </header>
-
-  <div class="content">
-
-    <div class="stat-row" style="margin-top:32px">
-      <div class="stat c-vi">
-        <div class="lbl">Top 12 favicon clusters</div>
-        <div class="val">41,527</div>
-      </div>
-      <div class="stat c-rd">
-        <div class="lbl">Single-FP network</div>
-        <div class="val">328,230</div>
-      </div>
-      <div class="stat c-or">
-        <div class="lbl">CF-confirmed phishing</div>
-        <div class="val">2,062</div>
-      </div>
-      <div class="stat c-cy">
-        <div class="lbl">Top 8 server FPs (domains)</div>
-        <div class="val">775,710</div>
-      </div>
-    </div>
-
-    <!-- FAVICON CLUSTERS -->
-    <div class="st" id="clusters">
-      <h2>Favicon Cluster Analysis &mdash; Top 12 Operators</h2>
-      <div class="ln"></div>
-    </div>
-    <p style="font-size:12px;color:var(--tx2);max-width:760px;line-height:1.85;margin-bottom:20px">
+<header class="hero">
+<div class="hero-inner">
+<div class="hero-badges">
+<span class="hb cy">IANA #1479</span>
+<span class="hb tlp">TLP:CLEAR</span>
+<span class="hb tlp">Forensic Evidence</span>
+</div>
+<h1 id="section-favicon-clusters-server-fingerprints"><strong>Favicon Clusters</strong> &amp;<br/>Server Fingerprints</h1>
+<p class="hero-sub">Visual operator identification · MurmurHash3 favicon clustering · SHA-256 server fingerprinting · NameSilo complete zone</p>
+</div>
+</header>
+<div class="content">
+<div class="stat-row" style="margin-top:32px">
+<div class="stat c-vi">
+<div class="lbl">Top 12 favicon clusters</div>
+<div class="val">41,527</div>
+</div>
+<div class="stat c-rd">
+<div class="lbl">Single-FP network</div>
+<div class="val">328,230</div>
+</div>
+<div class="stat c-or">
+<div class="lbl">CF-confirmed phishing</div>
+<div class="val">2,062</div>
+</div>
+<div class="stat c-cy">
+<div class="lbl">Top 8 server FPs (domains)</div>
+<div class="val">775,710</div>
+</div>
+</div>
+<!-- FAVICON CLUSTERS -->
+<div class="st" id="clusters">
+<h2 id="section-favicon-cluster-analysis-top-12-operators">Favicon Cluster Analysis — Top 12 Operators</h2>
+<div class="ln"></div>
+</div>
+<p style="font-size:12px;color:var(--tx2);max-width:760px;line-height:1.85;margin-bottom:20px">
       MurmurHash3 of <code style="font-family:'JetBrains Mono',monospace;font-size:11px;padding:1px 5px;background:var(--bg);border:1px solid var(--bdr);color:var(--cy)">/favicon.ico</code> bytes. Identical hash = identical favicon = same operator. Each card is a distinct criminal network. Favicons loaded live via Google favicon proxy from representative sample domains.
     </p>
-
-    <div class="cluster-grid">
-
-      <!-- helper macro repeated per cluster -->
-
-      <!-- 01 Chinese Adult Redirect -->
-      <div class="cluster-card vi">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">428694214</div>
-            <img src="https://www.google.com/s2/favicons?domain=18jms.sbs&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#01 &nbsp;<span class="b vi">Chinese Adult</span></div>
-            <div class="cc-count">5,151</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;428694214</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">redirect_external <span>2,607</span></span>
-            <span class="ct">empty <span>2,115</span></span>
-            <span class="ct">low_content <span>429</span></span>
-          </div>
-          <div class="cc-ioc-lbl">Sample IOCs</div>
-          <div class="cc-iocs">
-            <span class="ioc vi">18jms.sbs</span>
-            <span class="ioc vi">hsh9.hair</span>
-            <span class="ioc vi">ccjapian.sbs</span>
-            <span class="ioc vi">seaige.hair</span>
-            <span class="ioc-more">+5,147 more</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 02 Chinese Adult 91JQ -->
-      <div class="cluster-card vi">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">-606577425</div>
-            <img src="https://www.google.com/s2/favicons?domain=91jq157jq.work&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#02 &nbsp;<span class="b vi">Chinese Adult (91JQ)</span></div>
-            <div class="cc-count">3,915</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;-606577425</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">active_content <span>3,822</span></span>
-            <span class="ct">empty <span>52</span></span>
-            <span class="ct">low_content <span>39</span></span>
-          </div>
-          <div class="cc-ioc-lbl">Sample IOCs</div>
-          <div class="cc-iocs">
-            <span class="ioc vi">91jq157jq.work</span>
-            <span class="ioc vi">91jq178jq.work</span>
-            <span class="ioc vi">91jq186jq.work</span>
-            <span class="ioc vi">91jq187jq.work</span>
-            <span class="ioc-more">+3,911 more</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 03 Chinese Piracy 992kp -->
-      <div class="cluster-card vi">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">-186475843</div>
-            <img src="https://www.google.com/s2/favicons?domain=337bj24.xyz&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#03 &nbsp;<span class="b vi">Chinese Piracy (992kp)</span></div>
-            <div class="cc-count">3,858</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;-186475843</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">active_content <span>3,738</span></span>
-            <span class="ct">empty <span>81</span></span>
-            <span class="ct">low_content <span>32</span></span>
-          </div>
-          <div class="cc-ioc-lbl">Sample IOCs</div>
-          <div class="cc-iocs">
-            <span class="ioc vi">337bj24.xyz</span>
-            <span class="ioc vi">qpp91qpp.xyz</span>
-            <span class="ioc vi">qqd8qqd.xyz</span>
-            <span class="ioc vi">qqp3qqp.xyz</span>
-            <span class="ioc-more">+3,854 more</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 04 Brand Phishing -->
-      <div class="cluster-card rd">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">1108795842</div>
-            <img src="https://www.google.com/s2/favicons?domain=turangiqjplzn.com&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#04 &nbsp;<span class="b rd">Brand Phishing</span></div>
-            <div class="cc-count">3,726</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;1108795842</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">empty / Login page <span>3,726</span></span>
-          </div>
-          <div class="phish-note">All 3,726 domains serve an identical credential-harvesting &ldquo;Login&rdquo; page. 200+ global brands targeted.</div>
-          <div class="cc-ioc-lbl">Sample IOCs</div>
-          <div class="cc-iocs">
-            <span class="ioc rd">turangiqjplzn.com</span>
-            <span class="ioc rd">adidas-eg-tkwse.icu</span>
-            <span class="ioc rd">aeroflot-jqvzmla.rest</span>
-            <span class="ioc rd">afterpay-blqzen.rest</span>
-            <span class="ioc-more">+3,722 more</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 05 Chinese Adult nc18 -->
-      <div class="cluster-card vi">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">-1901236982</div>
-            <img src="https://www.google.com/s2/favicons?domain=332t332.xyz&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#05 &nbsp;<span class="b vi">Chinese Adult (nc18)</span></div>
-            <div class="cc-count">2,798</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;-1901236982</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">active_content <span>2,646</span></span>
-            <span class="ct">low_content <span>102</span></span>
-            <span class="ct">empty <span>48</span></span>
-          </div>
-          <div class="cc-ioc-lbl">Sample IOCs</div>
-          <div class="cc-iocs">
-            <span class="ioc vi">332t332.xyz</span>
-            <span class="ioc vi">332y332.xyz</span>
-            <span class="ioc vi">335a335.xyz</span>
-            <span class="ioc vi">336f336.xyz</span>
-            <span class="ioc-more">+2,794 more</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 06 Indonesian Gambling NEGO/BOLA -->
-      <div class="cluster-card or">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">-1854647327</div>
-            <img src="https://www.google.com/s2/favicons?domain=nego178.com&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#06 &nbsp;<span class="b or">Indonesian Gambling</span></div>
-            <div class="cc-count">2,341</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;-1854647327</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">active_content <span>2,225</span></span>
-            <span class="ct">active_with_forms <span>59</span></span>
-            <span class="ct">redirect_external <span>53</span></span>
-          </div>
-          <div class="cc-ioc-lbl">NEGO / BOLA Network</div>
-          <div class="cc-iocs">
-            <span class="ioc or">nego178.com</span>
-            <span class="ioc or">bola108.org</span>
-            <span class="ioc or">anda89.com</span>
-            <span class="ioc or">apidewa99.com</span>
-            <span class="ioc-more">+2,337 more</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 07 Indonesian Gambling APACE/KOMPAK -->
-      <div class="cluster-card or">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">84092912</div>
-            <img src="https://www.google.com/s2/favicons?domain=apace99.com&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#07 &nbsp;<span class="b or">Indonesian Gambling</span></div>
-            <div class="cc-count">2,296</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;84092912</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">active_content <span>2,243</span></span>
-            <span class="ct">redirect_external <span>53</span></span>
-          </div>
-          <div class="cc-ioc-lbl">APACE / KOMPAK Network</div>
-          <div class="cc-iocs">
-            <span class="ioc or">apace99.com</span>
-            <span class="ioc or">kompak138.org</span>
-            <span class="ioc or">mafiabola99.org</span>
-            <span class="ioc or">mentos69.org</span>
-            <span class="ioc-more">+2,292 more</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 08 Indonesian Gambling KIMMIKKA -->
-      <div class="cluster-card or">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">-143797184</div>
-            <img src="https://www.google.com/s2/favicons?domain=kimmikka.com&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#08 &nbsp;<span class="b or">Indonesian Gambling</span></div>
-            <div class="cc-count">2,278</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;-143797184</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">active_content <span>2,244</span></span>
-            <span class="ct">redirect_external <span>34</span></span>
-          </div>
-          <div class="cc-ioc-lbl">Kimmikka / Puputoto Network</div>
-          <div class="cc-iocs">
-            <span class="ioc or">kimmikka.com</span>
-            <span class="ioc or">puputoto.net</span>
-            <span class="ioc or">kudawinx.com</span>
-            <span class="ioc or">lalatwin.com</span>
-            <span class="ioc-more">+2,274 more</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 09 Indonesian Gambling PIO4D -->
-      <div class="cluster-card or">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">1311399074</div>
-            <img src="https://www.google.com/s2/favicons?domain=pio4d.net&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#09 &nbsp;<span class="b or">Indonesian Gambling</span></div>
-            <div class="cc-count">1,767</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;1311399074</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">active_content <span>1,712</span></span>
-            <span class="ct">redirect_external <span>53</span></span>
-          </div>
-          <div class="cc-ioc-lbl">Pio4D / Politogel Network</div>
-          <div class="cc-iocs">
-            <span class="ioc or">pio4d.net</span>
-            <span class="ioc or">piototo.net</span>
-            <span class="ioc or">politogel.net</span>
-            <span class="ioc or">yang4d.net</span>
-            <span class="ioc-more">+1,763 more</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 10 Indonesian Gambling IBUKOTA -->
-      <div class="cluster-card or">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">1280084436</div>
-            <img src="https://www.google.com/s2/favicons?domain=ibukota33.org&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#10 &nbsp;<span class="b or">Indonesian Gambling</span></div>
-            <div class="cc-count">1,742</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;1280084436</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">active_content <span>1,143</span></span>
-            <span class="ct">active_with_forms <span>559</span></span>
-            <span class="ct">redirect_external <span>40</span></span>
-          </div>
-          <div class="cc-ioc-lbl">IBUKOTA / IX88 Network</div>
-          <div class="cc-iocs">
-            <span class="ioc or">ibukota33.org</span>
-            <span class="ioc or">ix88.org</span>
-            <span class="ioc or">bosslot168.net</span>
-            <span class="ioc or">dewi168login.com</span>
-            <span class="ioc-more">+1,738 more</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 11 Indonesian Gambling JIWA4D -->
-      <div class="cluster-card or">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">661119750</div>
-            <img src="https://www.google.com/s2/favicons?domain=jiwa4d.net&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#11 &nbsp;<span class="b or">Indonesian Gambling</span></div>
-            <div class="cc-count">1,697</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;661119750</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">active_content <span>1,656</span></span>
-            <span class="ct">redirect_external <span>41</span></span>
-          </div>
-          <div class="cc-ioc-lbl">JIWA4D / Made4D Network</div>
-          <div class="cc-iocs">
-            <span class="ioc or">jiwa4d.net</span>
-            <span class="ioc or">made4d.net</span>
-            <span class="ioc or">gio4d.org</span>
-            <span class="ioc or">luxury178.org</span>
-            <span class="ioc-more">+1,693 more</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 12 Chinese Adult 360nav -->
-      <div class="cluster-card vi">
-        <div class="cc-head">
-          <div class="fav-wrap">
-            <div class="fav-ph">2072365914</div>
-            <img src="https://www.google.com/s2/favicons?domain=csav4.help&sz=64"
-                 onerror="this.style.display='none'" alt="">
-          </div>
-          <div class="cc-meta">
-            <div class="cc-rank">#12 &nbsp;<span class="b vi">Chinese Adult</span></div>
-            <div class="cc-count">1,518</div>
-            <div style="font-size:11px;color:var(--tx2)">domains</div>
-            <div class="cc-hash">mmh3&nbsp;2072365914</div>
-          </div>
-        </div>
-        <div class="cc-body">
-          <div class="cc-types">
-            <span class="ct">redirect_external <span>1,416</span></span>
-            <span class="ct">active_with_forms <span>102</span></span>
-          </div>
-          <div class="cc-ioc-lbl">Sample IOCs</div>
-          <div class="cc-iocs">
-            <span class="ioc vi">csav4.help</span>
-            <span class="ioc vi">ggmt7.skin</span>
-            <span class="ioc vi">hchs2.skin</span>
-            <span class="ioc vi">dahaiav5.help</span>
-            <span class="ioc-more">+1,514 more</span>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /cluster-grid -->
-
-    <!-- SERVER FINGERPRINTS -->
-    <div class="st" id="fingerprints">
-      <h2>Server Fingerprint Analysis</h2>
-      <div class="ln"></div>
-    </div>
-    <p style="font-size:12px;color:var(--tx2);max-width:760px;line-height:1.85;margin-bottom:16px">
+<div class="cluster-grid">
+<!-- helper macro repeated per cluster -->
+<!-- 01 Chinese Adult Redirect -->
+<div class="cluster-card vi">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">428694214</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=18jms.sbs&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#01  <span class="b vi">Chinese Adult</span></div>
+<div class="cc-count">5,151</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 428694214</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">redirect_external <span>2,607</span></span>
+<span class="ct">empty <span>2,115</span></span>
+<span class="ct">low_content <span>429</span></span>
+</div>
+<div class="cc-ioc-lbl">Sample IOCs</div>
+<div class="cc-iocs">
+<span class="ioc vi">18jms.sbs</span>
+<span class="ioc vi">hsh9.hair</span>
+<span class="ioc vi">ccjapian.sbs</span>
+<span class="ioc vi">seaige.hair</span>
+<span class="ioc-more">+5,147 more</span>
+</div>
+</div>
+</div>
+<!-- 02 Chinese Adult 91JQ -->
+<div class="cluster-card vi">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">-606577425</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=91jq157jq.work&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#02  <span class="b vi">Chinese Adult (91JQ)</span></div>
+<div class="cc-count">3,915</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 -606577425</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">active_content <span>3,822</span></span>
+<span class="ct">empty <span>52</span></span>
+<span class="ct">low_content <span>39</span></span>
+</div>
+<div class="cc-ioc-lbl">Sample IOCs</div>
+<div class="cc-iocs">
+<span class="ioc vi">91jq157jq.work</span>
+<span class="ioc vi">91jq178jq.work</span>
+<span class="ioc vi">91jq186jq.work</span>
+<span class="ioc vi">91jq187jq.work</span>
+<span class="ioc-more">+3,911 more</span>
+</div>
+</div>
+</div>
+<!-- 03 Chinese Piracy 992kp -->
+<div class="cluster-card vi">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">-186475843</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=337bj24.xyz&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#03  <span class="b vi">Chinese Piracy (992kp)</span></div>
+<div class="cc-count">3,858</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 -186475843</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">active_content <span>3,738</span></span>
+<span class="ct">empty <span>81</span></span>
+<span class="ct">low_content <span>32</span></span>
+</div>
+<div class="cc-ioc-lbl">Sample IOCs</div>
+<div class="cc-iocs">
+<span class="ioc vi">337bj24.xyz</span>
+<span class="ioc vi">qpp91qpp.xyz</span>
+<span class="ioc vi">qqd8qqd.xyz</span>
+<span class="ioc vi">qqp3qqp.xyz</span>
+<span class="ioc-more">+3,854 more</span>
+</div>
+</div>
+</div>
+<!-- 04 Brand Phishing -->
+<div class="cluster-card rd">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">1108795842</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=turangiqjplzn.com&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#04  <span class="b rd">Brand Phishing</span></div>
+<div class="cc-count">3,726</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 1108795842</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">empty / Login page <span>3,726</span></span>
+</div>
+<div class="phish-note">All 3,726 domains serve an identical credential-harvesting “Login” page. 200+ global brands targeted.</div>
+<div class="cc-ioc-lbl">Sample IOCs</div>
+<div class="cc-iocs">
+<span class="ioc rd">turangiqjplzn.com</span>
+<span class="ioc rd">adidas-eg-tkwse.icu</span>
+<span class="ioc rd">aeroflot-jqvzmla.rest</span>
+<span class="ioc rd">afterpay-blqzen.rest</span>
+<span class="ioc-more">+3,722 more</span>
+</div>
+</div>
+</div>
+<!-- 05 Chinese Adult nc18 -->
+<div class="cluster-card vi">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">-1901236982</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=332t332.xyz&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#05  <span class="b vi">Chinese Adult (nc18)</span></div>
+<div class="cc-count">2,798</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 -1901236982</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">active_content <span>2,646</span></span>
+<span class="ct">low_content <span>102</span></span>
+<span class="ct">empty <span>48</span></span>
+</div>
+<div class="cc-ioc-lbl">Sample IOCs</div>
+<div class="cc-iocs">
+<span class="ioc vi">332t332.xyz</span>
+<span class="ioc vi">332y332.xyz</span>
+<span class="ioc vi">335a335.xyz</span>
+<span class="ioc vi">336f336.xyz</span>
+<span class="ioc-more">+2,794 more</span>
+</div>
+</div>
+</div>
+<!-- 06 Indonesian Gambling NEGO/BOLA -->
+<div class="cluster-card or">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">-1854647327</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=nego178.com&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#06  <span class="b or">Indonesian Gambling</span></div>
+<div class="cc-count">2,341</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 -1854647327</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">active_content <span>2,225</span></span>
+<span class="ct">active_with_forms <span>59</span></span>
+<span class="ct">redirect_external <span>53</span></span>
+</div>
+<div class="cc-ioc-lbl">NEGO / BOLA Network</div>
+<div class="cc-iocs">
+<span class="ioc or">nego178.com</span>
+<span class="ioc or">bola108.org</span>
+<span class="ioc or">anda89.com</span>
+<span class="ioc or">apidewa99.com</span>
+<span class="ioc-more">+2,337 more</span>
+</div>
+</div>
+</div>
+<!-- 07 Indonesian Gambling APACE/KOMPAK -->
+<div class="cluster-card or">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">84092912</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=apace99.com&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#07  <span class="b or">Indonesian Gambling</span></div>
+<div class="cc-count">2,296</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 84092912</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">active_content <span>2,243</span></span>
+<span class="ct">redirect_external <span>53</span></span>
+</div>
+<div class="cc-ioc-lbl">APACE / KOMPAK Network</div>
+<div class="cc-iocs">
+<span class="ioc or">apace99.com</span>
+<span class="ioc or">kompak138.org</span>
+<span class="ioc or">mafiabola99.org</span>
+<span class="ioc or">mentos69.org</span>
+<span class="ioc-more">+2,292 more</span>
+</div>
+</div>
+</div>
+<!-- 08 Indonesian Gambling KIMMIKKA -->
+<div class="cluster-card or">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">-143797184</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=kimmikka.com&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#08  <span class="b or">Indonesian Gambling</span></div>
+<div class="cc-count">2,278</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 -143797184</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">active_content <span>2,244</span></span>
+<span class="ct">redirect_external <span>34</span></span>
+</div>
+<div class="cc-ioc-lbl">Kimmikka / Puputoto Network</div>
+<div class="cc-iocs">
+<span class="ioc or">kimmikka.com</span>
+<span class="ioc or">puputoto.net</span>
+<span class="ioc or">kudawinx.com</span>
+<span class="ioc or">lalatwin.com</span>
+<span class="ioc-more">+2,274 more</span>
+</div>
+</div>
+</div>
+<!-- 09 Indonesian Gambling PIO4D -->
+<div class="cluster-card or">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">1311399074</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=pio4d.net&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#09  <span class="b or">Indonesian Gambling</span></div>
+<div class="cc-count">1,767</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 1311399074</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">active_content <span>1,712</span></span>
+<span class="ct">redirect_external <span>53</span></span>
+</div>
+<div class="cc-ioc-lbl">Pio4D / Politogel Network</div>
+<div class="cc-iocs">
+<span class="ioc or">pio4d.net</span>
+<span class="ioc or">piototo.net</span>
+<span class="ioc or">politogel.net</span>
+<span class="ioc or">yang4d.net</span>
+<span class="ioc-more">+1,763 more</span>
+</div>
+</div>
+</div>
+<!-- 10 Indonesian Gambling IBUKOTA -->
+<div class="cluster-card or">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">1280084436</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=ibukota33.org&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#10  <span class="b or">Indonesian Gambling</span></div>
+<div class="cc-count">1,742</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 1280084436</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">active_content <span>1,143</span></span>
+<span class="ct">active_with_forms <span>559</span></span>
+<span class="ct">redirect_external <span>40</span></span>
+</div>
+<div class="cc-ioc-lbl">IBUKOTA / IX88 Network</div>
+<div class="cc-iocs">
+<span class="ioc or">ibukota33.org</span>
+<span class="ioc or">ix88.org</span>
+<span class="ioc or">bosslot168.net</span>
+<span class="ioc or">dewi168login.com</span>
+<span class="ioc-more">+1,738 more</span>
+</div>
+</div>
+</div>
+<!-- 11 Indonesian Gambling JIWA4D -->
+<div class="cluster-card or">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">661119750</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=jiwa4d.net&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#11  <span class="b or">Indonesian Gambling</span></div>
+<div class="cc-count">1,697</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 661119750</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">active_content <span>1,656</span></span>
+<span class="ct">redirect_external <span>41</span></span>
+</div>
+<div class="cc-ioc-lbl">JIWA4D / Made4D Network</div>
+<div class="cc-iocs">
+<span class="ioc or">jiwa4d.net</span>
+<span class="ioc or">made4d.net</span>
+<span class="ioc or">gio4d.org</span>
+<span class="ioc or">luxury178.org</span>
+<span class="ioc-more">+1,693 more</span>
+</div>
+</div>
+</div>
+<!-- 12 Chinese Adult 360nav -->
+<div class="cluster-card vi">
+<div class="cc-head">
+<div class="fav-wrap">
+<div class="fav-ph">2072365914</div>
+<img alt="" onerror="this.style.display='none'" src="https://www.google.com/s2/favicons?domain=csav4.help&amp;sz=64"/>
+</div>
+<div class="cc-meta">
+<div class="cc-rank">#12  <span class="b vi">Chinese Adult</span></div>
+<div class="cc-count">1,518</div>
+<div style="font-size:11px;color:var(--tx2)">domains</div>
+<div class="cc-hash">mmh3 2072365914</div>
+</div>
+</div>
+<div class="cc-body">
+<div class="cc-types">
+<span class="ct">redirect_external <span>1,416</span></span>
+<span class="ct">active_with_forms <span>102</span></span>
+</div>
+<div class="cc-ioc-lbl">Sample IOCs</div>
+<div class="cc-iocs">
+<span class="ioc vi">csav4.help</span>
+<span class="ioc vi">ggmt7.skin</span>
+<span class="ioc vi">hchs2.skin</span>
+<span class="ioc vi">dahaiav5.help</span>
+<span class="ioc-more">+1,514 more</span>
+</div>
+</div>
+</div>
+</div><!-- /cluster-grid -->
+<!-- SERVER FINGERPRINTS -->
+<div class="st" id="fingerprints">
+<h2 id="section-server-fingerprint-analysis">Server Fingerprint Analysis</h2>
+<div class="ln"></div>
+</div>
+<p style="font-size:12px;color:var(--tx2);max-width:760px;line-height:1.85;margin-bottom:16px">
       SHA-256 of (<code style="font-family:'JetBrains Mono',monospace;font-size:11px;padding:1px 5px;background:var(--bg);border:1px solid var(--bdr);color:var(--cy)">Server</code> + <code style="font-family:'JetBrains Mono',monospace;font-size:11px;padding:1px 5px;background:var(--bg);border:1px solid var(--bdr);color:var(--cy)">X-Powered-By</code> + <code style="font-family:'JetBrains Mono',monospace;font-size:11px;padding:1px 5px;background:var(--bg);border:1px solid var(--bdr);color:var(--cy)">ETag</code> response headers), truncated to 12 hex chars. Identical fingerprint = same server configuration = one operator or shared infrastructure.
     </p>
-
-    <div class="alert rd">
-      <strong>Critical finding:</strong> Fingerprint <code style="font-family:'JetBrains Mono',monospace;color:var(--rd)">811e0897f489</code> appears on <strong>328,230 domains &mdash; 9.7% of the entire scanned set.</strong> Of these, 2,062 are independently confirmed as phishing by Cloudflare. This is the largest single-infrastructure abuse operation identified in this dataset.
+<div class="alert rd">
+<strong>Critical finding:</strong> Fingerprint <code style="font-family:'JetBrains Mono',monospace;color:var(--rd)">811e0897f489</code> appears on <strong>328,230 domains — 9.7% of the entire scanned set.</strong> Of these, 2,062 are independently confirmed as phishing by Cloudflare. This is the largest single-infrastructure abuse operation identified in this dataset.
     </div>
-
-    <section class="panel" style="padding:0">
-      <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Fingerprint</th>
-            <th class="nr">Domains</th>
-            <th class="nr">% Scanned</th>
-            <th>Classification</th>
-            <th>Sample Domains</th>
-            <th style="width:90px">Scale</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="background:rgba(218,54,51,.04)">
-            <td class="mono" style="color:var(--tx3)">01</td>
-            <td class="mono rd-txt">811e0897f489</td>
-            <td class="nr rd-txt">328,230</td>
-            <td class="nr rd-txt">9.7%</td>
-            <td><span class="b rd">2,062 CF-phishing</span></td>
-            <td>
-              <div class="fp-samples">
-                <span class="fp-s">wtfporn.sbs</span>
-                <span class="fp-s">raffi777hunter.com</span>
-                <span class="fp-s">hadiahutama.life</span>
-                <span class="fp-s">cmhqqlxu.info</span>
-                <span class="fp-s">radome49.sbs</span>
-              </div>
-            </td>
-            <td><div class="bar rd"><span style="width:100%"></span></div></td>
-          </tr>
-          <tr>
-            <td class="mono" style="color:var(--tx3)">02</td>
-            <td class="mono">c7d46cc45975</td>
-            <td class="nr">126,956</td>
-            <td class="nr">3.7%</td>
-            <td><span class="b nt">unclassified</span></td>
-            <td><div class="fp-samples"><span class="fp-s">hanime2.sbs</span></div></td>
-            <td><div class="bar"><span style="width:38.7%"></span></div></td>
-          </tr>
-          <tr style="background:rgba(192,160,96,.03)">
-            <td class="mono" style="color:var(--tx3)">03</td>
-            <td class="mono or-txt">d8c33640a2fc</td>
-            <td class="nr or-txt">96,493</td>
-            <td class="nr or-txt">2.8%</td>
-            <td><span class="b or">adult / gambling</span></td>
-            <td>
-              <div class="fp-samples">
-                <span class="fp-s">pokerasik.com</span>
-                <span class="fp-s">qq888jp.com</span>
-                <span class="fp-s">noho.top</span>
-                <span class="fp-s">wyylde.top</span>
-              </div>
-            </td>
-            <td><div class="bar or"><span style="width:29.4%"></span></div></td>
-          </tr>
-          <tr>
-            <td class="mono" style="color:var(--tx3)">04</td>
-            <td class="mono">4492f7f3e69c</td>
-            <td class="nr">56,242</td>
-            <td class="nr">1.7%</td>
-            <td><span class="b nt">unclassified</span></td>
-            <td><div class="fp-samples"><span class="fp-s">cookwaris.com</span></div></td>
-            <td><div class="bar"><span style="width:17.1%"></span></div></td>
-          </tr>
-          <tr>
-            <td class="mono" style="color:var(--tx3)">05</td>
-            <td class="mono">d035bde8b6a8</td>
-            <td class="nr">51,490</td>
-            <td class="nr">1.5%</td>
-            <td><span class="b nt">parking / redirect</span></td>
-            <td>
-              <div class="fp-samples">
-                <span class="fp-s">wickedpaedia.com</span>
-                <span class="fp-s">wickedpediame.com</span>
-              </div>
-            </td>
-            <td><div class="bar"><span style="width:15.7%"></span></div></td>
-          </tr>
-          <tr>
-            <td class="mono" style="color:var(--tx3)">06</td>
-            <td class="mono">0e4ae99dea17</td>
-            <td class="nr">47,765</td>
-            <td class="nr">1.4%</td>
-            <td><span class="b nt">unclassified</span></td>
-            <td><div class="fp-samples"><span class="fp-s">&mdash;</span></div></td>
-            <td><div class="bar"><span style="width:14.5%"></span></div></td>
-          </tr>
-          <tr>
-            <td class="mono" style="color:var(--tx3)">07</td>
-            <td class="mono">24be2aa9d598</td>
-            <td class="nr">36,018</td>
-            <td class="nr">1.1%</td>
-            <td><span class="b nt">unclassified</span></td>
-            <td><div class="fp-samples"><span class="fp-s">wifehaose.com</span></div></td>
-            <td><div class="bar"><span style="width:11%"></span></div></td>
-          </tr>
-          <tr style="background:rgba(192,160,96,.03)">
-            <td class="mono" style="color:var(--tx3)">08</td>
-            <td class="mono or-txt">310865488d64</td>
-            <td class="nr or-txt">32,786</td>
-            <td class="nr or-txt">1.0%</td>
-            <td><span class="b or">Indonesian gambling</span></td>
-            <td>
-              <div class="fp-samples">
-                <span class="fp-s">china21a.com</span>
-                <span class="fp-s">crown-128.com</span>
-                <span class="fp-s">cipung222.com</span>
-                <span class="fp-s">coin-333.com</span>
-              </div>
-            </td>
-            <td><div class="bar or"><span style="width:10%"></span></div></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <footer>
-      <div class="f-l">
-        <strong>PhishDestroy</strong>
-        <p>Independent registrar abuse intelligence &middot; <a href="https://phishdestroy.eth.limo/" style="color:var(--cy)" target="_blank" rel="noopener">phishdestroy.eth.limo</a></p>
-        <p>NameSilo IANA #1479 Abuse Intelligence Report &middot; June 2026 &middot; <a href="https://creativecommons.org/licenses/by/4.0/" style="color:var(--cy)" target="_blank" rel="noopener">CC-BY 4.0</a></p>
-      </div>
-      <div class="f-r">
-        <a href="namesilo-scan.html">&larr; Main Report</a>
-        <a href="namesilo-domains.html">&#8862; Full IOC Domain List</a>
-        <a href="https://github.com/PhishDestroy/namesilo-scanner" target="_blank" rel="noopener">&#8599; GitHub Repository</a>
-      </div>
-    <a href="https://phishdestroy.eth.limo" target="_blank" rel="noopener" style="color:var(--cy,#0cf);text-decoration:none;font-size:13px;opacity:.8">&#9657; phishdestroy.eth.limo</a>
+<section class="panel" style="padding:0">
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Fingerprint</th>
+<th class="nr">Domains</th>
+<th class="nr">% Scanned</th>
+<th>Classification</th>
+<th>Sample Domains</th>
+<th style="width:90px">Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background:rgba(218,54,51,.04)">
+<td class="mono" style="color:var(--tx3)">01</td>
+<td class="mono rd-txt">811e0897f489</td>
+<td class="nr rd-txt">328,230</td>
+<td class="nr rd-txt">9.7%</td>
+<td><span class="b rd">2,062 CF-phishing</span></td>
+<td>
+<div class="fp-samples">
+<span class="fp-s">wtfporn.sbs</span>
+<span class="fp-s">raffi777hunter.com</span>
+<span class="fp-s">hadiahutama.life</span>
+<span class="fp-s">cmhqqlxu.info</span>
+<span class="fp-s">radome49.sbs</span>
+</div>
+</td>
+<td><div class="bar rd"><span style="width:100%"></span></div></td>
+</tr>
+<tr>
+<td class="mono" style="color:var(--tx3)">02</td>
+<td class="mono">c7d46cc45975</td>
+<td class="nr">126,956</td>
+<td class="nr">3.7%</td>
+<td><span class="b nt">unclassified</span></td>
+<td><div class="fp-samples"><span class="fp-s">hanime2.sbs</span></div></td>
+<td><div class="bar"><span style="width:38.7%"></span></div></td>
+</tr>
+<tr style="background:rgba(192,160,96,.03)">
+<td class="mono" style="color:var(--tx3)">03</td>
+<td class="mono or-txt">d8c33640a2fc</td>
+<td class="nr or-txt">96,493</td>
+<td class="nr or-txt">2.8%</td>
+<td><span class="b or">adult / gambling</span></td>
+<td>
+<div class="fp-samples">
+<span class="fp-s">pokerasik.com</span>
+<span class="fp-s">qq888jp.com</span>
+<span class="fp-s">noho.top</span>
+<span class="fp-s">wyylde.top</span>
+</div>
+</td>
+<td><div class="bar or"><span style="width:29.4%"></span></div></td>
+</tr>
+<tr>
+<td class="mono" style="color:var(--tx3)">04</td>
+<td class="mono">4492f7f3e69c</td>
+<td class="nr">56,242</td>
+<td class="nr">1.7%</td>
+<td><span class="b nt">unclassified</span></td>
+<td><div class="fp-samples"><span class="fp-s">cookwaris.com</span></div></td>
+<td><div class="bar"><span style="width:17.1%"></span></div></td>
+</tr>
+<tr>
+<td class="mono" style="color:var(--tx3)">05</td>
+<td class="mono">d035bde8b6a8</td>
+<td class="nr">51,490</td>
+<td class="nr">1.5%</td>
+<td><span class="b nt">parking / redirect</span></td>
+<td>
+<div class="fp-samples">
+<span class="fp-s">wickedpaedia.com</span>
+<span class="fp-s">wickedpediame.com</span>
+</div>
+</td>
+<td><div class="bar"><span style="width:15.7%"></span></div></td>
+</tr>
+<tr>
+<td class="mono" style="color:var(--tx3)">06</td>
+<td class="mono">0e4ae99dea17</td>
+<td class="nr">47,765</td>
+<td class="nr">1.4%</td>
+<td><span class="b nt">unclassified</span></td>
+<td><div class="fp-samples"><span class="fp-s">—</span></div></td>
+<td><div class="bar"><span style="width:14.5%"></span></div></td>
+</tr>
+<tr>
+<td class="mono" style="color:var(--tx3)">07</td>
+<td class="mono">24be2aa9d598</td>
+<td class="nr">36,018</td>
+<td class="nr">1.1%</td>
+<td><span class="b nt">unclassified</span></td>
+<td><div class="fp-samples"><span class="fp-s">wifehaose.com</span></div></td>
+<td><div class="bar"><span style="width:11%"></span></div></td>
+</tr>
+<tr style="background:rgba(192,160,96,.03)">
+<td class="mono" style="color:var(--tx3)">08</td>
+<td class="mono or-txt">310865488d64</td>
+<td class="nr or-txt">32,786</td>
+<td class="nr or-txt">1.0%</td>
+<td><span class="b or">Indonesian gambling</span></td>
+<td>
+<div class="fp-samples">
+<span class="fp-s">china21a.com</span>
+<span class="fp-s">crown-128.com</span>
+<span class="fp-s">cipung222.com</span>
+<span class="fp-s">coin-333.com</span>
+</div>
+</td>
+<td><div class="bar or"><span style="width:10%"></span></div></td>
+</tr>
+</tbody>
+</table>
+</section>
+<footer>
+<div class="f-l">
+<strong>PhishDestroy</strong>
+<p>Independent registrar abuse intelligence · <a href="https://phishdestroy.eth.limo/" rel="noopener noreferrer" style="color:var(--cy)" target="_blank">phishdestroy.eth.limo</a></p>
+<p>NameSilo IANA #1479 Abuse Intelligence Report · June 2026 · <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener noreferrer" style="color:var(--cy)" target="_blank">CC-BY 4.0</a></p>
+</div>
+<div class="f-r">
+<a href="namesilo-scan.html">← Main Report</a>
+<a href="namesilo-domains.html">⊞ Full IOC Domain List</a>
+<a href="https://github.com/PhishDestroy/namesilo-scanner" rel="noopener noreferrer" target="_blank">↗ GitHub Repository</a>
+</div>
+<a href="https://phishdestroy.eth.limo" rel="noopener noreferrer" style="color:var(--cy,#0cf);text-decoration:none;font-size:13px;opacity:.8" target="_blank">▹ phishdestroy.eth.limo</a>
 </footer>
-
-  </div>
+</div>
 </main>
 </div>
 
-<script>
+</div><footer class="pd-source-footer"><div>Research, findings and source material: <a href="https://phishdestroy.github.io/namesilo-evidence/" rel="noopener" target="_blank">PhishDestroy</a>. Historical report figures retain their original dates; live analytics show the source fetch date.<br/><a href="https://phishdestroy.io" rel="noopener" target="_blank">phishdestroy.io</a>   ·   <a href="https://phishdestroy.eth.limo" rel="noopener" target="_blank">phishdestroy.eth.limo</a></div><div>TLP:CLEAR   ·   <a href="LICENSE">MIT License</a>   ·   2026</div></footer></main></div><dialog aria-label="Search investigation" class="pd-dialog" id="pd-command"><div class="pd-command-input"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><input aria-label="Search reports and sections" autocomplete="off" id="pd-command-input" placeholder="Search reports, evidence, analytics..." type="search"/><button aria-label="Close dialog" class="pd-icon-btn" data-close-dialog="" type="button"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><div class="pd-command-results" id="pd-command-results"></div><div class="pd-command-foot"><span>↑ ↓ to navigate · Enter to open</span><span>Esc to close</span></div></dialog>
+<dialog aria-labelledby="pd-download-title" class="pd-dialog" id="pd-downloads"><div class="pd-dialog-head"><h2 id="pd-download-title">Download intelligence</h2><button aria-label="Close dialog" class="pd-icon-btn" data-close-dialog="" type="button"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><p class="pd-export-description">Choose a format. Files come directly from the original PhishDestroy repository and retain its update schedule.</p><div class="pd-export-options"><a class="pd-export-option" href="https://phishdestroy.github.io/namesilo-evidence/ioc/indicators.csv" rel="noopener" target="_blank"><span class="pd-export-format">CSV</span><span><strong>SIEM-ready indicators</strong><small>Domain, severity, category and feed sources</small></span><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"></path></svg></a><a class="pd-export-option" href="https://phishdestroy.github.io/namesilo-evidence/ioc/domains_all_malicious.txt" rel="noopener" target="_blank"><span class="pd-export-format">TXT</span><span><strong>All malicious domains</strong><small>Plain-text blocklist · full classified set</small></span><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"></path></svg></a><a class="pd-export-option" href="https://phishdestroy.github.io/namesilo-evidence/ioc/domains_high.txt" rel="noopener" target="_blank"><span class="pd-export-format">TXT</span><span><strong>High-confidence domains</strong><small>HIGH severity · ready for your security tools</small></span><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"></path></svg></a><a class="pd-export-option" href="https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/data/index.json" rel="noopener" target="_blank"><span class="pd-export-format">JSON</span><span><strong>Full analytics snapshot</strong><small>Registration, geography and infrastructure data</small></span><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"></path></svg></a><a class="pd-export-option" href="https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/data/ioc/stix-bundle.json" rel="noopener" target="_blank"><span class="pd-export-format">STIX</span><span><strong>STIX 2.1 intelligence bundle</strong><small>For MISP and OpenCTI integrations</small></span><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"></path></svg></a><a class="pd-export-option" href="https://phishdestroy.github.io/namesilo-evidence/evidence/evidence_manifest.json" rel="noopener" target="_blank"><span class="pd-export-format">JSON</span><span><strong>Evidence manifest</strong><small>Source evidence and SHA-256 checksums</small></span><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"></path></svg></a></div></dialog>
+<dialog aria-labelledby="pd-evidence-title" class="pd-dialog pd-lightbox" id="pd-lightbox"><div class="pd-dialog-head"><h2 id="pd-evidence-title">Evidence viewer</h2><button aria-label="Close dialog" class="pd-icon-btn" data-close-dialog="" type="button"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><div class="pd-lightbox-stage" id="pd-image-stage"><img alt="" id="pd-evidence-image"/></div><div class="pd-lightbox-tools"><button aria-label="Previous evidence" class="pd-icon-btn" id="pd-image-prev" type="button">←</button><span id="pd-image-count"></span><button aria-label="Next evidence" class="pd-icon-btn" id="pd-image-next" type="button">→</button><button class="pd-btn" id="pd-image-zoom" type="button">Original size</button><a id="pd-image-original" rel="noopener" target="_blank">Open original ↗</a></div></dialog>
+<button aria-label="Back to top" class="pd-backtop" hidden="" id="pd-backtop" type="button"><svg aria-hidden="true" class="pd-icon" viewbox="0 0 24 24"><path d="m6 14 6-6 6 6"></path></svg></button><div class="pd-toast" hidden="" id="pd-toast" role="status"></div><script>
 (function(){
   var btn=document.getElementById('mobBtn');
   var sb=document.querySelector('.sb');
@@ -834,6 +805,5 @@ footer{margin-top:60px;padding-top:20px;border-top:1px solid var(--bdr);display:
   },{threshold:0.4});
   document.querySelectorAll('[id]').forEach(function(s){obs.observe(s);});
 })();
-</script>
-</body>
+</script><script defer="" src="assets/app.js"></script></body>
 </html>
