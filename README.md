@@ -37,73 +37,73 @@ All of it is in the record. All of it makes this louder.<br/>
 
 <!-- LIVE_STATS:START -->
 
-> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-22`
+> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-23`
 
 <table><tr>
-<td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,431,467</code></sub></td>
-<td align="center"><b>💰 Est. annual value</b><br/><sub><code>$40,287,970</code></sub></td>
-<td align="center"><b>📡 Deployed</b><br/><sub><code>54.1%</code></sub></td>
+<td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,404,900</code></sub></td>
+<td align="center"><b>💰 Est. annual value</b><br/><sub><code>$40,123,775</code></sub></td>
+<td align="center"><b>📡 Deployed</b><br/><sub><code>54.3%</code></sub></td>
 <td align="center"><b>✅ IOC classified</b><br/><sub><code>204,935</code> (122,152 HIGH)</sub></td>
-<td align="center"><b>⚡ Registered ≤7d</b><br/><sub><code>0.6%</code></sub></td>
-<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,020</code></sub></td>
+<td align="center"><b>⚡ Registered ≤7d</b><br/><sub><code>0.5%</code></sub></td>
+<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,019</code></sub></td>
 </tr></table>
 
 ### 🏷️ Top TLD Zones
 
 | TLD | Count | Avg reg→expiry | Est. annual value |
 |:--|--:|--:|--:|
-| `.com` | 2,526,908 | 1,763d | $22,716,903 |
-| `.sbs` | 345,385 | 630d | $1,723,471 |
-| `.xyz` | 330,774 | 796d | $492,853 |
-| `.net` | 273,107 | 1,507d | $2,728,339 |
-| `.org` | 244,416 | 1,487d | $2,441,716 |
-| `.info` | 235,940 | 668d | $941,401 |
-| `.cfd` | 223,308 | 666d | $1,114,307 |
-| `.wiki` | 94,768 | 369d | $1,420,572 |
-| `.click` | 91,853 | 523d | $366,493 |
-| `.vip` | 71,266 | 684d | $355,617 |
+| `.com` | 2,516,348 | 1,763d | $22,621,969 |
+| `.sbs` | 343,561 | 630d | $1,714,369 |
+| `.xyz` | 326,767 | 796d | $486,883 |
+| `.net` | 272,429 | 1,505d | $2,721,566 |
+| `.org` | 243,765 | 1,487d | $2,435,212 |
+| `.info` | 234,929 | 667d | $937,367 |
+| `.cfd` | 221,867 | 666d | $1,107,116 |
+| `.wiki` | 95,564 | 369d | $1,432,504 |
+| `.click` | 90,966 | 521d | $362,954 |
+| `.vip` | 71,176 | 685d | $355,168 |
 
 ### 🌍 Top Hosting Countries
 
 ```
-US  ██████████████████    925,969 (53.3%)
-DE  █████░░░░░░░░░░░░░    261,474 (15.0%)
-SG  ██░░░░░░░░░░░░░░░░    115,025 (6.6%)
-HK  █░░░░░░░░░░░░░░░░░     81,808 (4.7%)
-NL  █░░░░░░░░░░░░░░░░░     59,945 (3.5%)
-CA  ░░░░░░░░░░░░░░░░░░     48,528 (2.8%)
-GB  ░░░░░░░░░░░░░░░░░░     25,475 (1.5%)
-FR  ░░░░░░░░░░░░░░░░░░     25,336 (1.5%)
+US  ██████████████████    909,407 (52.3%)
+DE  █████░░░░░░░░░░░░░    260,287 (15.0%)
+SG  ██░░░░░░░░░░░░░░░░    115,178 (6.6%)
+HK  █░░░░░░░░░░░░░░░░░     81,593 (4.7%)
+NL  █░░░░░░░░░░░░░░░░░     59,891 (3.4%)
+CA  ░░░░░░░░░░░░░░░░░░     48,751 (2.8%)
+AU  ░░░░░░░░░░░░░░░░░░     39,744 (2.3%)
+GB  ░░░░░░░░░░░░░░░░░░     25,351 (1.5%)
 ```
 
 ### 📈 Registration Burst Days
 
 | Date | Domains | × Average |
 |:--|--:|--:|
-| `2025-07-19` | 15,662 | **33.0×** 🚨 |
-| `2025-12-01` | 14,788 | **31.1×** 🚨 |
-| `2026-06-30` | 14,163 | **29.8×** 🚨 |
-| `2026-09-04` | 13,547 | **28.5×** 🚨 |
-| `2026-05-20` | 13,199 | **27.8×** 🚨 |
+| `2025-07-19` | 15,660 | **33.1×** 🚨 |
+| `2025-12-01` | 14,788 | **31.3×** 🚨 |
+| `2026-06-30` | 14,179 | **30.0×** 🚨 |
+| `2026-09-04` | 13,547 | **28.7×** 🚨 |
+| `2026-05-20` | 13,263 | **28.1×** 🚨 |
 
 ### 🎯 Top Targeted Brands & Keywords
 
-`login (10,517)` &middot; `crypto (6,185)` &middot; `support (6,082)` &middot; `connect (5,647)` &middot; `trust (5,641)` &middot; `secure (5,306)` &middot; `official (4,919)` &middot; `account (3,833)` &middot; `farm (3,597)` &middot; `bridge (3,369)` &middot; `update (2,931)` &middot; `vault (2,794)` &middot; `claim (2,742)` &middot; `wallet (2,126)` &middot; `token (1,865)`
+`login (10,397)` &middot; `crypto (6,137)` &middot; `support (6,017)` &middot; `connect (5,616)` &middot; `trust (5,598)` &middot; `secure (5,250)` &middot; `official (4,895)` &middot; `account (3,804)` &middot; `farm (3,576)` &middot; `bridge (3,354)` &middot; `update (2,895)` &middot; `vault (2,800)` &middot; `claim (2,692)` &middot; `wallet (2,110)` &middot; `token (1,846)`
 
 ### 🕵️ Top Serial Registrants — 50 emails with ≥5 domains
 
 | # | Registrant Email (redacted) | Domains |
 |--:|:--|--:|
-| 1 | `chi***@mail.com` | **10,806** |
-| 2 | `diz***@992fun.com` | **9,163** |
+| 1 | `chi***@mail.com` | **10,799** |
+| 2 | `diz***@992fun.com` | **9,161** |
 | 3 | `diz***@ncao18.com` | **5,638** |
-| 4 | `sup***@webador.com` | **4,482** |
-| 5 | `ser***@atom.com` | **3,046** |
-| 6 | `sup***@trackingspaces.com` | **2,915** |
-| 7 | `ded***@gmail.com` | **2,713** |
-| 8 | `sup***@boardmentor.study` | **2,642** |
+| 4 | `sup***@webador.com` | **4,437** |
+| 5 | `ser***@atom.com` | **3,047** |
+| 6 | `sup***@trackingspaces.com` | **2,863** |
+| 7 | `ded***@gmail.com` | **2,843** |
+| 8 | `sup***@boardmentor.study` | **2,699** |
 | 9 | `992***@gmail.com` | **2,418** |
-| 10 | `ser***@trackorderzone.com` | **2,287** |
+| 10 | `ser***@trackorderzone.com` | **2,237** |
 
 ### 📥 Download Threat Intelligence
 
