@@ -10,7 +10,7 @@ Keywords: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, ica
 <h3 align="center">You made this investigation necessary.<br/>Now you cannot make it disappear.</h3>
 
 <p align="center">
-<b>NameSilo, LLC (IANA #1479)</b> — a registrar whose comparison dataset recorded no IP for 32.2% of domains,<br/>
+<b>NameSilo (NASDAQ: URL)</b> — a publicly traded registrar with a 32.2% never-activated (no IP) domain rate,<br/>
 a ten-year fraud under active protection, and a documented pattern of suppressing<br/>
 the researchers who exposed it.<br/>
 Every takedown. Every lawyer. Every deleted tweet.<br/>
@@ -149,14 +149,12 @@ GB  ░░░░░░░░░░░░░░░░░░     25,118 (1.4%)
 
 ## 🕸️ Network of Complicit Registrars
 
-This investigation is part of a series examining abuse handling at current and former ICANN-accredited registrars. The figures below describe the respective investigation snapshots.
-
-**Enforcement update:** ICANN [terminated Trustname / Fewmoretaps OÜ’s accreditation](https://www.icann.org/uploads/compliance_notice/attachment/1367/hedlund-to-nestsiarovich-27aug26.pdf) effective **11 September 2026** for repeated abuse-handling failures. We welcome that outcome and expect the same evidence-based scrutiny wherever recurring failures are documented.
+This investigation is part of a series documenting ICANN-accredited registrars that systematically obstruct anti-phishing enforcement or directly profit from fraud infrastructure.
 
 | # | Registrar | IANA | Zone | Confirmed Malicious | Russian Connection | Investigation |
 |--|--|--|--|--|--|--|
 | 1 | **NICENIC INTERNATIONAL GROUP** | #3765 | 403,909 | **82,575 (44.0% of alive)** | 🇷🇺 #2 hosting country (8.5%) | [nicenic-evidence](https://github.com/phishdestroy/nicenic-evidence) · [Live Report](https://phishdestroy.github.io/nicenic-evidence/) |
-| 2 | **Trustname.com / Fewmoretaps OÜ** (accreditation terminated) | #4318 | 18,719 | **4,275 HIGH + MEDIUM (35.4% of 12,088 active; June 2026)** | 🇷🇺 Russian-operated, Estonian shell | [trustname-evidence](https://github.com/phishdestroy/trustname-evidence) · [Live Report](https://phishdestroy.github.io/trustname-evidence/) |
+| 2 | **Trustname.com / Fewmoretaps ÖÜ** | #4318 | 18,719 | **3,292 HIGH (35.4% of alive)** | 🇷🇺 Russian-operated, Estonian shell | [trustname-evidence](https://github.com/phishdestroy/trustname-evidence) · [Live Report](https://phishdestroy.github.io/trustname-evidence/) |
 | 3 | **NameSilo, LLC** *(this)* | #1479 | 5,408,575 (Oct 2026) | **122,152 HIGH (2.26% of zone)** | 🇷🇺 Russian team members, suppression campaign | [namesilo-evidence](https://github.com/phishdestroy/namesilo-evidence) · [Live Report](https://phishdestroy.github.io/namesilo-evidence/) |
 
 ---
@@ -378,19 +376,17 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 | **Every NameSilo domain** | Complete zone file — 5,269,357 entries (March 2026 Census) | ✓ Full census |
 | **HTTP response per domain** | aiohttp/asyncio · 5s timeout · AWS Lambda 400× + GCP Cloud Run 20×400 | 1,129,114 active |
 | **Page content classification** | active / parking / redirect / phishing / gambling / empty | 87.3% junk |
-| **Shared favicon clusters** | MurmurHash3 on favicon bytes · candidate relationships requiring corroboration | 12 clusters found |
+| **Operator identity via favicon** | MurmurHash3 on favicon bytes · identical hash = same operator | 12 clusters found |
 | **Server infrastructure fingerprint** | SHA-256(Server header + X-Powered-By + ETag) → 12-char hex | 328,230-domain cluster |
 | **Brand impersonation** | Domain name + page title + favicon hash → known brand list | 3,726 phishing / 201 brand impersonations |
 | **PrivacyGuardian domains** | RDAP validation against rdap.namesilo.com · 4,974,265 candidates | 164,027 confirmed PG-shielded |
 | **Threat feed cross-check** | 25+ independent feeds: Spamhaus DBL, SURBL, PhishTank, URLhaus, ThreatFox… | 183,419 malicious / 109,196 hard (3+ sources) |
-| **No-IP rate at observation time** | Compared against 7 other registrars · 130M total domains | 32.2% vs 14–21% baseline |
+| **Dead domain rate (no IP, never activated)** | Compared against 7 other registrars · 130M total domains | 32.2% vs 14–21% baseline |
 | **Trustpilot reviews** | Wayback Machine snapshots vs. live scrape · Jan 2026 → May 2026 | 129 reviews deleted |
 | **PR Newswire connection** | Both xmrwallet and NameSilo used Cision/PR Newswire · verified dates | Same-day publish Jan 21–22, 2026 |
 | **Abuse report receipts** | Delivery-confirmed submissions through NameSilo's own portal | 20+ reports · 0 action |
 
 </div>
-
-> **Interpretation:** a domain with no observed IP is not proof that it was never activated. Shared favicons, server headers, or CDN addresses can reflect common software or hosting; they do not independently establish common ownership or control.
 
 > Full scan pipeline and raw data: [`pkg/raw_data/`](pkg/raw_data/) — gzip archives, up to 499 MB uncompressed
 
@@ -466,8 +462,8 @@ If NameSilo disputes any finding: submit documented evidence via [phishdestroy.i
 | Report | What's inside |
 |:-------|:-------------|
 | [Zone Scan Report](https://phishdestroy.github.io/namesilo-evidence/namesilo-scan.html) | Charts, IOC breakdown, methodology, chain of custody |
-| [Favicon Cluster Analysis](https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html) | 12 favicon clusters for further attribution analysis |
-| [IOC Domain Browser](https://phishdestroy.github.io/namesilo-evidence/namesilo-domains.html) | Searchable table — flags, favicons, categories |
+| [Favicon Cluster Analysis](https://phishdestroy.github.io/namesilo-evidence/namesilo-clusters.html) | 12 operator clusters identified via MurmurHash3 |
+| [107k IOC Domain List](https://phishdestroy.github.io/namesilo-evidence/namesilo-domains.html) | Searchable table — flags, favicons, categories |
 | [PrivacyGuardian Shield](https://phishdestroy.github.io/namesilo-evidence/namesilo-privacyguardian.html) | 183,419 malicious domains behind NameSilo's own WHOIS privacy |
 | [Review Manipulation](https://phishdestroy.github.io/namesilo-evidence/namesilo-reviews.html) | 129 deleted Trustpilot reviews · bot network · PR Newswire link |
 
