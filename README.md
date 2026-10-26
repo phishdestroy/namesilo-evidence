@@ -39,14 +39,23 @@ All of it is in the record. All of it makes this louder.<br/>
 
 > 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-26`
 
-<table><tr>
-<td align="center"><b>📦 Domains tracked</b><br/><sub><code>5,323,882</code></sub></td>
-<td align="center"><b>💰 Est. annual value</b><br/><sub><code>$39,696,505</code></sub></td>
-<td align="center"><b>📡 Deployed</b><br/><sub><code>55.3%</code></sub></td>
-<td align="center"><b>✅ IOC classified</b><br/><sub><code>204,935</code> (122,152 HIGH)</sub></td>
-<td align="center"><b>⚡ Registered ≤7d</b><br/><sub><code>0.6%</code></sub></td>
-<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>1,019</code></sub></td>
-</tr></table>
+<table align="center">
+<tr>
+<td align="center"><b>📦 Domains tracked</b><br/><strong>5,323,882</strong></td>
+<td align="center"><b>💰 Est. annual value</b><br/><strong>$39,696,505</strong></td>
+</tr>
+<tr>
+<td align="center"><b>📡 Deployed</b><br/><strong>55.3%</strong></td>
+<td align="center"><b>✅ IOC classified</b><br/><strong>204,935</strong> (122,152 HIGH)</td>
+</tr>
+<tr>
+<td align="center"><b>⚡ Registered ≤7d</b><br/><strong>0.6%</strong></td>
+<td align="center"><b>🕵️ Serial regs</b><br/><strong>1,019</strong></td>
+</tr>
+</table>
+
+<details>
+<summary><strong>Live analytics · TLDs, hosting, registrations and downloads</strong></summary>
 
 ### 🏷️ Top TLD Zones
 
@@ -120,6 +129,8 @@ GB  ░░░░░░░░░░░░░░░░░░     25,118 (1.4%)
 
 > 📊 Live web dashboard: see Pages link at top · Updated daily 02:00 UTC
 
+</details>
+
 <!-- LIVE_STATS:END -->
 
 ---
@@ -147,6 +158,23 @@ GB  ░░░░░░░░░░░░░░░░░░     25,118 (1.4%)
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 
+## 📑 Table of Contents
+
+- [🕸️ Network of Complicit Registrars](#user-content-️-network-of-complicit-registrars)
+- [🇷🇺 Russian Connection & Complicity Record](#user-content--russian-connection--complicity-record)
+- [Why NameSilo Earned This Investigation](#user-content-why-namesilo-earned-this-investigation)
+- [What Happened](#user-content-what-happened)
+- [What We Verified](#user-content-what-we-verified)
+- [Investigation Scale (March 2026 Census)](#user-content-investigation-scale-march-2026-census)
+- [⚖️ Legal Notice & Responsible Disclosure](#user-content-️-legal-notice--responsible-disclosure)
+- [Links by Content](#user-content-links-by-content)
+- [IOC Data — Live](#user-content-ioc-data--live)
+
+---
+
+<details>
+<summary><strong>🕸️ Network of Complicit Registrars</strong></summary>
+
 ## 🕸️ Network of Complicit Registrars
 
 This investigation is part of a series documenting ICANN-accredited registrars that systematically obstruct anti-phishing enforcement or directly profit from fraud infrastructure.
@@ -157,7 +185,12 @@ This investigation is part of a series documenting ICANN-accredited registrars t
 | 2 | **Trustname.com / Fewmoretaps ÖÜ** | #4318 | 18,719 | **3,292 HIGH (35.4% of alive)** | 🇷🇺 Russian-operated, Estonian shell | [trustname-evidence](https://github.com/phishdestroy/trustname-evidence) · [Live Report](https://phishdestroy.github.io/trustname-evidence/) |
 | 3 | **NameSilo, LLC** *(this)* | #1479 | 5,408,575 (Oct 2026) | **122,152 HIGH (2.26% of zone)** | 🇷🇺 Russian team members, suppression campaign | [namesilo-evidence](https://github.com/phishdestroy/namesilo-evidence) · [Live Report](https://phishdestroy.github.io/namesilo-evidence/) |
 
+</details>
+
 ---
+
+<details>
+<summary><strong>🇷🇺 Russian Connection &amp; Complicity Record</strong></summary>
 
 ## 🇷🇺 Russian Connection & Complicity Record
 
@@ -198,6 +231,10 @@ NameSilo's **PrivacyGuardian** privacy-shield service covers hundreds of thousan
 
 > *"NameSilo didn’t just ignore the report. They offered to help the fraudster. That is no longer a compliance failure — it is complicity."*
 
+</details>
+
+<details>
+<summary><strong>Why NameSilo Earned This Investigation</strong></summary>
 
 ## Why NameSilo Earned This Investigation
 
@@ -345,6 +382,11 @@ Every deletion attempt is itself evidence. Every threat goes into the dossier. E
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
+</details>
+
+<details>
+<summary><strong>What Happened</strong></summary>
+
 ## What Happened
 
 **NameSilo, LLC (IANA #1479)** — US-based, ICANN-accredited, CSE-listed registrar (ticker: URL) — publicly defended **xmrwallet[.]com**, a Monero wallet drainer operating continuously since ~2016, with estimated victim losses of **$10–20M**.
@@ -366,6 +408,11 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 ---
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+</details>
+
+<details>
+<summary><strong>What We Verified</strong></summary>
 
 ## What We Verified
 
@@ -394,6 +441,11 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
+</details>
+
+<details>
+<summary><strong>Investigation Scale (March 2026 Census)</strong></summary>
+
 ## Investigation Scale (March 2026 Census)
 
 <div align="center">
@@ -421,6 +473,11 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+</details>
+
+<details>
+<summary><strong>⚖️ Legal Notice &amp; Responsible Disclosure</strong></summary>
 
 ## ⚖️ Legal Notice & Responsible Disclosure
 
@@ -454,6 +511,11 @@ If NameSilo disputes any finding: submit documented evidence via [phishdestroy.i
 | 📜 License | **MIT** |
 | 🏷 TLP | **CLEAR** — unlimited distribution |
 | 🌐 Contact | [phishdestroy.io](https://phishdestroy.io) |
+
+</details>
+
+<details>
+<summary><strong>Links by Content</strong></summary>
 
 ## Links by Content
 
@@ -504,7 +566,12 @@ git clone https://github.com/phishdestroy/namesilo-evidence.git
 cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
 ```
 
+</details>
+
 ---
+
+<details>
+<summary><strong>IOC Data — Live</strong></summary>
 
 ## IOC Data — Live
 
@@ -543,3 +610,6 @@ cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
 > Live report: [https://phishdestroy.github.io/namesilo-evidence](https://phishdestroy.github.io/namesilo-evidence)
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+</details>
+

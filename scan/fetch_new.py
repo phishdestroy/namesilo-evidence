@@ -614,17 +614,22 @@ if _readme_path.exists():
     _parts.append('')
 
     # Headline number cards (HTML inline for centering on GitHub)
-    _parts.append('<table><tr>')
-    _parts.append(f'<td align="center"><b>📦 Domains tracked</b><br/><sub><code>{_fmt_num(len(all_domains))}</code></sub></td>')
-    _parts.append(f'<td align="center"><b>💰 Est. annual value</b><br/><sub><code>${total_revenue:,.0f}</code></sub></td>')
-    _parts.append(f'<td align="center"><b>📡 Deployed</b><br/><sub><code>{deploy_rate}%</code></sub></td>')
+    _parts.append('<table align="center"><tr>')
+    _parts.append(f'<td align="center"><b>📦 Domains tracked</b><br/><strong>{_fmt_num(len(all_domains))}</strong></td>')
+    _parts.append(f'<td align="center"><b>💰 Est. annual value</b><br/><strong>${total_revenue:,.0f}</strong></td>')
+    _parts.append('</tr><tr>')
+    _parts.append(f'<td align="center"><b>📡 Deployed</b><br/><strong>{deploy_rate}%</strong></td>')
     if _ioc_all:
-        _parts.append(f'<td align="center"><b>✅ IOC classified</b><br/><sub><code>{_fmt_num(_ioc_all)}</code> ({_fmt_num(_ioc_high)} HIGH)</sub></td>')
+        _parts.append(f'<td align="center"><b>✅ IOC classified</b><br/><strong>{_fmt_num(_ioc_all)}</strong> ({_fmt_num(_ioc_high)} HIGH)</td>')
     else:
-        _parts.append(f'<td align="center"><b>✅ Confirmed phishing</b><br/><sub><code>{correlation_pct}%</code> ({_fmt_num(correlation_count)})</sub></td>')
-    _parts.append(f'<td align="center"><b>⚡ Registered ≤7d</b><br/><sub><code>{fresh_pct}%</code></sub></td>')
-    _parts.append(f'<td align="center"><b>🕵️ Serial regs</b><br/><sub><code>{_fmt_num(serial_email_count)}</code></sub></td>')
+        _parts.append(f'<td align="center"><b>✅ Confirmed phishing</b><br/><strong>{correlation_pct}%</strong> ({_fmt_num(correlation_count)})</td>')
+    _parts.append('</tr><tr>')
+    _parts.append(f'<td align="center"><b>⚡ Registered ≤7d</b><br/><strong>{fresh_pct}%</strong></td>')
+    _parts.append(f'<td align="center"><b>🕵️ Serial regs</b><br/><strong>{_fmt_num(serial_email_count)}</strong></td>')
     _parts.append('</tr></table>')
+    _parts.append('')
+    _parts.append('<details>')
+    _parts.append('<summary><strong>Live analytics · TLDs, hosting, registrations and downloads</strong></summary>')
     _parts.append('')
 
     # Top TLDs table
@@ -696,6 +701,8 @@ if _readme_path.exists():
     _parts.append('| [`data/ioc/shared_ips.txt`](data/ioc/shared_ips.txt) | TXT | grep-friendly: `ip⇥count⇥country` |')
     _parts.append('')
     _parts.append('> 📊 Live web dashboard: see Pages link at top · Updated daily 02:00 UTC')
+    _parts.append('')
+    _parts.append('</details>')
     _parts.append('')
     _parts.append('<!-- LIVE_STATS:END -->')
 
