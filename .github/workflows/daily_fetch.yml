@@ -2,8 +2,13 @@ name: Daily Fetch
 
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "17 2,8,14,20 * * *"
   workflow_dispatch:
+
+# Serialize manual and scheduled writes to the same dataset.
+concurrency:
+  group: daily-domain-fetch-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   fetch:

@@ -5,6 +5,7 @@
   var source = (window.PD_SOURCE_CONFIG && window.PD_SOURCE_CONFIG.raw_docs_base) || 'https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/docs/';
   var requests = new Map();
   var states = {};
+  var versions = {};
   var feeds = ['chart-data.json', 'feed-ioc.json'];
   function notify(name, data, mode) {
     var state = {name:name, mode:mode, updated:data.last_updated || data.generated_at || data.generated || data.updated || '', checkedAt:new Date().toISOString()};
@@ -29,8 +30,10 @@
       if (!response.ok) throw new Error('Both source and saved snapshot are unavailable');
       data = await response.json();
     }
+    var body = JSON.stringify(data);
+    versions[name] = body;
     notify(name,data,mode);
-    return JSON.stringify(data);
+    return body;
   }
   window.fetch = function(input, init) {
     var url = typeof input === 'string' ? input : input instanceof URL ? input.href : input.url;
@@ -53,7 +56,8 @@
       finally {clearTimeout(timer);}
       if (!response.ok) return;
       var data = await response.json();
-      if (data.last_updated && data.last_updated !== current.updated) {
+      // A registrar dataset can change more than once on the same UTC date.
+      if (JSON.stringify(data) !== versions['chart-data.json']) {
         var banner = document.getElementById('pd-update-banner');
         if (banner) banner.hidden = false;
       }
