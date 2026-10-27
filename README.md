@@ -33,8 +33,7 @@ All of it is in the record. All of it makes this louder.<br/>
 </details>
 </div>
 
----
-
+<p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
 <!-- LIVE_STATS:START -->
 
 > 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-26`
@@ -129,14 +128,15 @@ GB  ░░░░░░░░░░░░░░░░░░     25,272 (1.4%)
 
 <!-- LIVE_STATS:END -->
 
----
-
+<p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
 <div align="center">
 
-[![🔴 LIVE SITE](https://img.shields.io/badge/%F0%9F%94%B4%20LIVE-phishdestroy.eth.limo-FF3333?style=for-the-badge)](https://phishdestroy.eth.limo/)
-[![Evidence Portal](https://img.shields.io/badge/Evidence_Portal-GitHub_Pages-161b22?style=for-the-badge&logo=github)](https://phishdestroy.github.io/namesilo-evidence/)
-[![ICANN Filed](https://img.shields.io/badge/ICANN-Compliance_Filed-e36209?style=for-the-badge)](https://www.icann.org/compliance)
-[![MIT License](https://img.shields.io/badge/License-MIT-238636?style=for-the-badge)](LICENSE)
+<p align="center">
+<a href="https://phishdestroy.eth.limo/"><img src="https://img.shields.io/badge/%F0%9F%94%B4%20LIVE-phishdestroy.eth.limo-FF3333?style=for-the-badge" alt="🔴 LIVE SITE" /></a>
+<a href="https://phishdestroy.github.io/namesilo-evidence/"><img src="https://img.shields.io/badge/Evidence_Portal-GitHub_Pages-161b22?style=for-the-badge&amp;logo=github" alt="Evidence Portal" /></a>
+<a href="https://www.icann.org/compliance"><img src="https://img.shields.io/badge/ICANN-Compliance_Filed-e36209?style=for-the-badge" alt="ICANN Filed" /></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-238636?style=for-the-badge" alt="MIT License" /></a>
+</p>
 
 <br/>
 
@@ -149,12 +149,20 @@ GB  ░░░░░░░░░░░░░░░░░░     25,272 (1.4%)
 
 </div>
 
----
-
+<p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 
-## 📑 Table of Contents
+<p align="center"><sub><b>NAMESILO / INVESTIGATION INDEX</b></sub></p>
+
+<p align="center">
+<a href="#user-content-why-namesilo-earned-this-investigation"><img src="assets/readme-polish/investigation.svg" width="248" height="56" alt="READ INVESTIGATION: Background &amp; evidence" /></a>
+<a href="#user-content-what-we-verified"><img src="assets/readme-polish/findings.svg" width="248" height="56" alt="KEY FINDINGS: Results &amp; source material" /></a>
+<a href="https://phishdestroy.github.io/namesilo-evidence/#analytics"><img src="assets/readme-polish/analytics.svg" width="248" height="56" alt="LIVE ANALYTICS: Explore the dataset" /></a>
+</p>
+
+<details>
+<summary><strong>Full table of contents</strong> · 9 sections</summary>
 
 - [🕸️ Network of Complicit Registrars](#user-content-️-network-of-complicit-registrars)
 - [🇷🇺 Russian Connection & Complicity Record](#user-content--russian-connection--complicity-record)
@@ -166,10 +174,12 @@ GB  ░░░░░░░░░░░░░░░░░░     25,272 (1.4%)
 - [Links by Content](#user-content-links-by-content)
 - [IOC Data — Live](#user-content-ioc-data--live)
 
----
+</details>
+
+<p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
 
 <details>
-<summary><strong>🕸️ Network of Complicit Registrars</strong></summary>
+<summary><img src="assets/readme-polish/section-01.svg" width="26" height="24" alt="" />&nbsp; <strong>🕸️ Network of Complicit Registrars</strong></summary>
 
 ## 🕸️ Network of Complicit Registrars
 
@@ -183,10 +193,9 @@ This investigation is part of a series documenting ICANN-accredited registrars t
 
 </details>
 
----
 
 <details>
-<summary><strong>🇷🇺 Russian Connection &amp; Complicity Record</strong></summary>
+<summary><img src="assets/readme-polish/section-02.svg" width="26" height="24" alt="" />&nbsp; <strong>🇷🇺 Russian Connection &amp; Complicity Record</strong></summary>
 
 ## 🇷🇺 Russian Connection & Complicity Record
 
@@ -230,7 +239,7 @@ NameSilo's **PrivacyGuardian** privacy-shield service covers hundreds of thousan
 </details>
 
 <details>
-<summary><strong>Why NameSilo Earned This Investigation</strong></summary>
+<summary><img src="assets/readme-polish/section-03.svg" width="26" height="24" alt="" />&nbsp; <strong>Why NameSilo Earned This Investigation</strong></summary>
 
 ## Why NameSilo Earned This Investigation
 
@@ -380,8 +389,10 @@ Every deletion attempt is itself evidence. Every threat goes into the dossier. E
 
 </details>
 
+<p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
+
 <details>
-<summary><strong>What Happened</strong></summary>
+<summary><img src="assets/readme-polish/section-04.svg" width="26" height="24" alt="" />&nbsp; <strong>What Happened</strong></summary>
 
 ## What Happened
 
@@ -408,7 +419,7 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 </details>
 
 <details>
-<summary><strong>What We Verified</strong></summary>
+<summary><img src="assets/readme-polish/section-05.svg" width="26" height="24" alt="" />&nbsp; <strong>What We Verified</strong></summary>
 
 ## What We Verified
 
@@ -440,7 +451,7 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 </details>
 
 <details>
-<summary><strong>Investigation Scale (March 2026 Census)</strong></summary>
+<summary><img src="assets/readme-polish/section-06.svg" width="26" height="24" alt="" />&nbsp; <strong>Investigation Scale (March 2026 Census)</strong></summary>
 
 ## Investigation Scale (March 2026 Census)
 
@@ -472,8 +483,10 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 
 </details>
 
+<p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
+
 <details>
-<summary><strong>⚖️ Legal Notice &amp; Responsible Disclosure</strong></summary>
+<summary><img src="assets/readme-polish/section-07.svg" width="26" height="24" alt="" />&nbsp; <strong>⚖️ Legal Notice &amp; Responsible Disclosure</strong></summary>
 
 ## ⚖️ Legal Notice & Responsible Disclosure
 
@@ -511,7 +524,7 @@ If NameSilo disputes any finding: submit documented evidence via [phishdestroy.i
 </details>
 
 <details>
-<summary><strong>Links by Content</strong></summary>
+<summary><img src="assets/readme-polish/section-08.svg" width="26" height="24" alt="" />&nbsp; <strong>Links by Content</strong></summary>
 
 ## Links by Content
 
@@ -564,10 +577,9 @@ cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
 
 </details>
 
----
 
 <details>
-<summary><strong>IOC Data — Live</strong></summary>
+<summary><img src="assets/readme-polish/section-09.svg" width="26" height="24" alt="" />&nbsp; <strong>IOC Data — Live</strong></summary>
 
 ## IOC Data — Live
 
