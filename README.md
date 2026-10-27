@@ -36,7 +36,7 @@ All of it is in the record. All of it makes this louder.<br/>
 <p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
 <!-- LIVE_STATS:START -->
 
-> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-26`
+> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-27`
 
 <table align="center"><tr>
 <td align="center"><b>📦 Domains tracked</b><br/><strong>5,299,169</strong></td>
@@ -45,7 +45,7 @@ All of it is in the record. All of it makes this louder.<br/>
 <td align="center"><b>📡 Deployed</b><br/><strong>55.6%</strong></td>
 <td align="center"><b>✅ IOC classified</b><br/><strong>204,935</strong> (122,152 HIGH)</td>
 </tr><tr>
-<td align="center"><b>⚡ Registered ≤7d</b><br/><strong>0.7%</strong></td>
+<td align="center"><b>⚡ Registered ≤7d</b><br/><strong>0.5%</strong></td>
 <td align="center"><b>🕵️ Serial regs</b><br/><strong>1,014</strong></td>
 </tr></table>
 
