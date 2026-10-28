@@ -10,7 +10,7 @@ Keywords: namesilo, xmrwallet, monero-drainer, crypto-scam, registrar-abuse, ica
 <h3 align="center">You made this investigation necessary.<br/>Now you cannot make it disappear.</h3>
 
 <p align="center">
-<b>NameSilo (NASDAQ: URL)</b> — a publicly traded registrar with a 32.2% never-activated (no IP) domain rate,<br/>
+<b>NameSilo (parent: NameSilo Technologies Corp., CSE: URL)</b> — a registrar with a 32.2% no-IP rate in the investigation snapshot,<br/>
 a ten-year fraud under active protection, and a documented pattern of suppressing<br/>
 the researchers who exposed it.<br/>
 Every takedown. Every lawyer. Every deleted tweet.<br/>
@@ -201,7 +201,7 @@ This investigation is part of a series documenting ICANN-accredited registrars t
 
 ### Russian Presence — The Team Behind the "American" Registrar
 
-NameSilo LLC is registered in Phoenix, Arizona. NameSilo Technologies Corp is listed on the Canadian Securities Exchange (CSE: BZI via Brisio Innovations). But the **actual engineering team is a Russian/CIS outsourcing operation** spread across Russia, Belarus, Ukraine, Serbia, Argentina, and Latvia. At least **13+ Russian-speaking employees** have been identified in the current and recent team:
+NameSilo LLC is registered in Phoenix, Arizona. NameSilo Technologies Corp is listed on the [Canadian Securities Exchange (CSE: URL)](https://thecse.com/listings/namesilo-technologies-corp/). But the **actual engineering team is a Russian/CIS outsourcing operation** spread across Russia, Belarus, Ukraine, Serbia, Argentina, and Latvia. At least **13+ Russian-speaking employees** have been identified in the current and recent team:
 
 | Person | Role | Location | Previous Employment |
 |--|--|--|--|
@@ -231,7 +231,7 @@ NameSilo's **PrivacyGuardian** privacy-shield service covers hundreds of thousan
 - **Suppressed media coverage** — coordinated deletion of tweets, articles, and references documenting NameSilo’s complicity.
 - **108,000 pages deindexed from Bing** in a documented suppression campaign targeting coverage of this investigation.
 - Abuse reports with full evidence packages — wallet addresses, victim transaction hashes, phishing kit source, live domain screenshots — **met with inaction or active interference.**
-- As a NASDAQ-listed company, NameSilo’s knowing failure to act on documented fraud infrastructure creates **potential securities and regulatory exposure.**
+- As part of a CSE-listed group, NameSilo’s knowing failure to act on documented fraud infrastructure creates **potential securities and regulatory exposure.**
 - Direct requests with evidence: **ignored, delayed, or actively countered.**
 
 > *"NameSilo didn’t just ignore the report. They offered to help the fraudster. That is no longer a compliance failure — it is complicity."*
@@ -396,7 +396,7 @@ Every deletion attempt is itself evidence. Every threat goes into the dossier. E
 
 ## What Happened
 
-**NameSilo, LLC (IANA #1479)** — US-based, ICANN-accredited, CSE-listed registrar (ticker: URL) — publicly defended **xmrwallet[.]com**, a Monero wallet drainer operating continuously since ~2016, with estimated victim losses of **$10–20M**.
+**NameSilo, LLC (IANA #1479)** — US-based, ICANN-accredited registrar whose parent, NameSilo Technologies Corp., is listed on the CSE (URL) — publicly defended **xmrwallet[.]com**, a Monero wallet drainer operating continuously since ~2016, with estimated victim losses of **$10–20M**.
 
 PhishDestroy submitted 20+ delivery-receipted abuse reports over three years. NameSilo took no action. On **March 13, 2026**, their official corporate account published a statement calling the operator "the victim," denying all reports ever arrived, and committing in writing to helping him **remove his VirusTotal detections**. Three other registrars (PDR, WebNic, NICENIC) reviewed the same evidence and suspended the domain within days. NameSilo wrote a press release for him.
 
@@ -435,7 +435,7 @@ When we proved every sentence false using the operator's own emails, NameSilo us
 | **Brand impersonation** | Domain name + page title + favicon hash → known brand list | 3,726 phishing / 201 brand impersonations |
 | **PrivacyGuardian domains** | RDAP validation against rdap.namesilo.com · 4,974,265 candidates | 164,027 confirmed PG-shielded |
 | **Threat feed cross-check** | 25+ independent feeds: Spamhaus DBL, SURBL, PhishTank, URLhaus, ThreatFox… | 183,419 malicious / 109,196 hard (3+ sources) |
-| **Dead domain rate (no IP, never activated)** | Compared against 7 other registrars · 130M total domains | 32.2% vs 14–21% baseline |
+| **No-IP rate in the investigation snapshot** | Compared against 7 other registrars · 130M total domains | 32.2% vs 14–21% baseline |
 | **Trustpilot reviews** | Wayback Machine snapshots vs. live scrape · Jan 2026 → May 2026 | 129 reviews deleted |
 | **PR Newswire connection** | Both xmrwallet and NameSilo used Cision/PR Newswire · verified dates | Same-day publish Jan 21–22, 2026 |
 | **Abuse report receipts** | Delivery-confirmed submissions through NameSilo's own portal | 20+ reports · 0 action |

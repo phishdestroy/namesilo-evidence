@@ -45,7 +45,7 @@ python3 submit_missing.py < out/missing.txt
 
 The `--no-archive-today` flag is recommended in environments where Cloudflare blocks the discovery requests; you'll lose archive.ph as a *discovery* source but can still use it as a *submission* target.
 
-For full methodology, see [`../TWITTER_ARCHIVE.md`](../TWITTER_ARCHIVE.md).
+For full methodology, see [`https://github.com/phishdestroy/x-twitter-archive-CarlyGriggs13`](https://github.com/phishdestroy/x-twitter-archive-CarlyGriggs13).
 
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
