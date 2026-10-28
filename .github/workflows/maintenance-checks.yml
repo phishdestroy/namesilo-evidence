@@ -13,6 +13,18 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
+        with:
+          # Validation uses the renderer and IOC inputs, not the registration archive.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/
+            /scan/
+            /template/
+            /docs/
+            /ioc/
+            /data/ioc/
+            /site.config.json
+            /README.md
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
