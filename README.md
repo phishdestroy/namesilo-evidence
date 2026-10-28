@@ -43,7 +43,7 @@ All of it is in the record. All of it makes this louder.<br/>
 <td align="center"><b>💰 Est. annual value</b><br/><strong>$39,375,547</strong></td>
 </tr><tr>
 <td align="center"><b>📡 Deployed</b><br/><strong>55.9%</strong></td>
-<td align="center"><b>✅ IOC classified</b><br/><strong>204,935</strong> (122,152 HIGH)</td>
+<td align="center"><b>✅ IOC classified</b><br/><strong>204,934</strong> (122,152 HIGH)</td>
 </tr><tr>
 <td align="center"><b>⚡ Registered ≤7d</b><br/><strong>0.5%</strong></td>
 <td align="center"><b>🕵️ Serial regs</b><br/><strong>1,033</strong></td>
@@ -610,7 +610,7 @@ cd namesilo-evidence/evidence && sha256sum -c ../EVIDENCE_HASHES.txt
 |:--|:--:|:--|
 | [`ioc/indicators.csv`](ioc/indicators.csv) | CSV | Full IOC: domain, category, severity, date, sources |
 | [`ioc/domains_high.txt`](https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/ioc/domains_high.txt) | TXT | HIGH severity only (122,152) |
-| [`ioc/domains_all_malicious.txt`](https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/ioc/domains_all_malicious.txt) | TXT | All IOC (204,935) |
+| [`ioc/domains_all_malicious.txt`](https://raw.githubusercontent.com/phishdestroy/namesilo-evidence/main/ioc/domains_all_malicious.txt) | TXT | All IOC (204,934) |
 | [feed-ioc.html](https://phishdestroy.github.io/namesilo-evidence/feed-ioc.html) | HTML | Searchable table with feed source badges |
 
 **Sources used:** Hagezi TIF (2.1M), BlocklistProject Malware/Phishing (2.5M+120K), Maltrail (914K), mitchellkrogza PhishDB (385K), MetaMask, ScamBlock, CERT.pl, Phishing.Database, uBlock, Dandelion, firebog.net, brand keyword scan.

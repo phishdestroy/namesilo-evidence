@@ -3,7 +3,7 @@
 
 The lists are cumulative: brand/serial classification is merged with the
 persisted feed cross-reference sources and with whatever is already published.
-A rebuild may only add entries, never drop them — an earlier version rewrote
+Apart from reviewed exclusions, a rebuild only adds entries — an earlier version rewrote
 the lists from brand/serial data alone and silently discarded ~196k domains
 that came from the feed cross-reference.
 """
@@ -11,6 +11,10 @@ that came from the feed cross-reference.
 import json, csv, io
 from pathlib import Path
 from datetime import date
+from ioc_exclusions import apply_exclusions, excluded_domains
+
+apply_exclusions()
+EXCLUDED = excluded_domains()
 
 DATA_IOC = Path("data/ioc")
 IOC_DIR  = Path("ioc")
@@ -27,7 +31,7 @@ def read_list(path):
         line = line.strip().lower()
         if line and not line.startswith("#"):
             out.add(line)
-    return out
+    return out - EXCLUDED
 
 
 brand_file = DATA_IOC / "brand_domains.json"
@@ -48,8 +52,8 @@ feed_confirmed = read_list(DATA_IOC / "feed_confirmed.txt") | read_list(DATA_IOC
 published_high = read_list(IOC_DIR / "domains_high.txt")
 published_all  = read_list(IOC_DIR / "domains_all_malicious.txt")
 
-high_doms = brand_doms | feed_high | published_high
-all_doms  = high_doms | serial_doms | feed_confirmed | published_all
+high_doms = (brand_doms | feed_high | published_high) - EXCLUDED
+all_doms  = (high_doms | serial_doms | feed_confirmed | published_all) - EXCLUDED
 
 
 def write_blocklist(path, title, doms):
@@ -70,7 +74,7 @@ if csv_path.exists():
     with csv_path.open(encoding="utf-8-sig", errors="replace", newline="") as fh:
         for r in csv.DictReader(fh):
             d = (r.get("domain") or "").strip().lower()
-            if d:
+            if d and d not in EXCLUDED:
                 existing[d] = {c: (r.get(c) or "") for c in COLS}
                 existing[d]["domain"] = d
 

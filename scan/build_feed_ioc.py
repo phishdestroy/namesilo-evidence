@@ -9,6 +9,7 @@ at the highest-severity MAX_ENTRIES rows and reports the full total.
 
 import csv, json, sys
 from pathlib import Path
+from ioc_exclusions import apply_exclusions, excluded_domains
 
 CSV_PATH = Path("ioc/indicators.csv")
 OUT_PATH = Path("docs/feed-ioc.json")
@@ -55,6 +56,8 @@ def split_feeds(value):
 
 
 def main():
+    apply_exclusions()
+    excluded = excluded_domains()
     if not CSV_PATH.exists():
         print(f"[!] {CSV_PATH} not found", file=sys.stderr)
         return 1
@@ -63,7 +66,7 @@ def main():
     with CSV_PATH.open(encoding="utf-8-sig", errors="replace", newline="") as fh:
         for row in csv.DictReader(fh):
             domain = pick(row, DOMAIN_COLS).lower().strip(".")
-            if not domain or domain in seen:
+            if not domain or domain in seen or domain in excluded:
                 continue
             seen.add(domain)
             e = {"domain": domain, "severity": norm_sev(row)}
@@ -93,7 +96,7 @@ def main():
             continue
         for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
             d = line.strip().lower().strip(".")
-            if not d or d.startswith("#") or d in seen:
+            if not d or d.startswith("#") or d in seen or d in excluded:
                 continue
             seen.add(d)
             e = {"domain": d, "severity": sev}

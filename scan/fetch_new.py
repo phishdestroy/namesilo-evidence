@@ -5,6 +5,10 @@ import os, re, gzip, csv, io, json, urllib.request, urllib.parse, urllib.error
 from pathlib import Path
 from datetime import date, datetime
 from collections import defaultdict, Counter
+from ioc_exclusions import apply_exclusions
+
+# Apply reviewed IOC corrections before exports and statistics read the feeds.
+apply_exclusions()
 
 REGISTRAR_ID = os.environ["REGISTRAR_ID"]
 TOKEN        = os.environ["NETAPI_TOKEN"]
