@@ -36,7 +36,7 @@ All of it is in the record. All of it makes this louder.<br/>
 <p align="center"><img src="assets/readme-polish/divider.svg" width="100%" alt="" /></p>
 <!-- LIVE_STATS:START -->
 
-> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-28`
+> 🔴 **LIVE INVESTIGATION FEED** &middot; Auto-updated &middot; Last fetch `2026-10-29`
 
 <table align="center"><tr>
 <td align="center"><b>📦 Domains tracked</b><br/><strong>5,233,530</strong></td>
