@@ -68769,7 +68769,7 @@
   ],
   "total_new_all_time": 6438183,
   "total_domains": 5197574,
-  "new_since_last_fetch": 20085,
+  "new_since_last_fetch": 0,
   "total_revenue_estimate": 39024353.49,
   "avg_registration_days": 1253,
   "ip_countries": {
@@ -69140,7 +69140,7 @@
   },
   "unranked_pct": 99.9,
   "ranked_count": 6174,
-  "correlation_count": 4568,
+  "correlation_count": 4569,
   "correlation_pct": 0.1,
   "last_updated": "2026-10-30",
   "latest_reg": "2026-10-29"
