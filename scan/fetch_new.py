@@ -483,6 +483,18 @@ for _kw, _doms in brand_domains_export.items():
     '\n'.join(_brand_lines) + '\n' if _brand_lines else '',
     encoding='utf-8')
 
+# DNS split (same names as shortdot-evidence): domains with an IP in the NetAPI
+# dataset vs without. Gzipped — millions of names exceed GitHub's file limits
+# as plain text; mtime=0 keeps the archive byte-identical when nothing changed.
+def _write_gz_list(path, domains):
+    with open(path, 'wb') as _fh:
+        with gzip.GzipFile(filename=path.name[:-3], mode='wb', fileobj=_fh, mtime=0) as _gz:
+            _gz.write(('\n'.join(sorted(domains)) + '\n').encode('utf-8'))
+
+_deployed_doms = {r['d'] for r in all_recs_flat if r.get('i')}
+_write_gz_list(ioc_dir / 'deployed_all.txt.gz', _deployed_doms)
+_write_gz_list(ioc_dir / 'phantom_all.txt.gz', {r['d'] for r in all_recs_flat} - _deployed_doms)
+
 # ── STIX 2.1 bundle (industry-standard threat intel) ──────────────────────────
 import uuid as _uuid
 REGISTRAR_NAMES = {'4318': 'Trustname', '3765': 'NICENIC', '1479': 'NameSilo'}
@@ -696,6 +708,8 @@ if _readme_path.exists():
     _parts.append('| File | Format | Description |')
     _parts.append('|:--|:--:|:--|')
     _parts.append('| [`data/all.txt`](data/all.txt) | TXT | All tracked domains |')
+    _parts.append(f'| [`data/ioc/deployed_all.txt.gz`](data/ioc/deployed_all.txt.gz) | TXT.GZ | {deployed_count:,} domains with an IP (DNS resolves, per NetAPI) |')
+    _parts.append(f'| [`data/ioc/phantom_all.txt.gz`](data/ioc/phantom_all.txt.gz) | TXT.GZ | {no_ip_count:,} domains without an IP (no DNS A record) |')
     _parts.append('| [`data/index.json`](data/index.json) | JSON | Full analytics snapshot |')
     _parts.append('| [`data/ioc/serial_registrants.json`](data/ioc/serial_registrants.json) | JSON | Repeat registrants + their domains |')
     _parts.append('| [`data/ioc/shared_ips.json`](data/ioc/shared_ips.json) | JSON | Shared hosting clusters |')

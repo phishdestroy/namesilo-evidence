@@ -21,6 +21,8 @@ data/
     ├── serial_emails.txt             # Plain-text: email⇥count
     ├── shared_ips.txt                # Plain-text: ip⇥count⇥country
     ├── brand_domains.txt             # Plain-text: keyword⇥domain
+    ├── deployed_all.txt.gz           # Domains with an IP in the NetAPI dataset (DNS resolves)
+    ├── phantom_all.txt.gz            # Domains without an IP (no DNS A record)
     └── stix-bundle.json              # STIX 2.1 bundle (MISP/OpenCTI ready)
 ```
 
