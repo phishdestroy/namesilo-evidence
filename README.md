@@ -114,6 +114,8 @@ GB  ░░░░░░░░░░░░░░░░░░     27,831 (1.4%)
 | File | Format | Description |
 |:--|:--:|:--|
 | [`data/all.txt`](data/all.txt) | TXT | All tracked domains |
+| [`data/ioc/deployed_all.txt.gz`](data/ioc/deployed_all.txt.gz) | TXT.GZ | 3,219,264 domains with an IP (DNS resolves, per NetAPI) |
+| [`data/ioc/phantom_all.txt.gz`](data/ioc/phantom_all.txt.gz) | TXT.GZ | 1,544,115 domains without an IP (no DNS A record) |
 | [`data/index.json`](data/index.json) | JSON | Full analytics snapshot |
 | [`data/ioc/serial_registrants.json`](data/ioc/serial_registrants.json) | JSON | Repeat registrants + their domains |
 | [`data/ioc/shared_ips.json`](data/ioc/shared_ips.json) | JSON | Shared hosting clusters |
