@@ -17,7 +17,7 @@
     var response, data, mode = 'source';
     try {
       var controller = new AbortController();
-      var timer = setTimeout(function(){controller.abort();},15000);
+      var timer = setTimeout(function(){controller.abort();},8000);
       try { response = await nativeFetch(source + name, {cache:'no-cache', signal:controller.signal}); }
       finally { clearTimeout(timer); }
       if (!response.ok) throw new Error('Source HTTP ' + response.status);
