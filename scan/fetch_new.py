@@ -353,6 +353,41 @@ _prev_all = set(_all_path.read_text(encoding='utf-8').split()) if _all_path.exis
 new_since_last = len(all_domains - _prev_all) if _prev_all else 0
 _all_path.write_text('\n'.join(sorted(all_domains)) + '\n', encoding='utf-8')
 
+# ── Collection log: what each fetch added ─────────────────────────────────────
+# data/new/ files domains under their registration date, and the registrar
+# dataset reports registrations a day or two late, so whatever a fetch adds
+# lands in earlier days. Keep the same domains by collection date as well:
+# data/fetched/<date>.txt lists the domains first seen by that day's fetches,
+# data/fetch_log.json indexes those files (exported as index['fetch_log']).
+FETCH_LOG_KEEP  = 90   # collection days kept in the repository
+_fetched_dir    = Path('data/fetched')
+_fetch_log_path = Path('data/fetch_log.json')
+fetch_log = []
+try:
+    if _fetch_log_path.exists():
+        try:
+            fetch_log = [e for e in json.loads(_fetch_log_path.read_text(encoding='utf-8'))
+                         if isinstance(e, dict) and len(str(e.get('date', ''))) == 10]
+        except ValueError:
+            fetch_log = []   # unreadable log: start over, the dated files stay
+    _fetched_now = (all_domains - _prev_all) if _prev_all else set()
+    if _fetched_now:
+        _fetched_dir.mkdir(parents=True, exist_ok=True)
+        _fetched_txt = _fetched_dir / f'{TODAY}.txt'
+        if _fetched_txt.exists():   # several fetches a day: keep the earlier additions
+            _fetched_now |= set(_fetched_txt.read_text(encoding='utf-8').split())
+        _fetched_txt.write_text('\n'.join(sorted(_fetched_now)) + '\n', encoding='utf-8')
+        fetch_log = [e for e in fetch_log if e['date'] != TODAY]
+        fetch_log.append({'date': TODAY, 'count': len(_fetched_now),
+                          'path': f'data/fetched/{TODAY}.txt'})
+    fetch_log.sort(key=lambda e: e['date'])
+    for _old in fetch_log[:-FETCH_LOG_KEEP]:
+        (_fetched_dir / f"{_old['date']}.txt").unlink(missing_ok=True)
+    fetch_log = fetch_log[-FETCH_LOG_KEEP:]
+    _fetch_log_path.write_text(json.dumps(fetch_log, indent=2) + '\n', encoding='utf-8')
+except Exception as _fe:   # the log is auxiliary: never fail the fetch over it
+    print(f"::warning::Collection log not updated: {_fe}")
+
 # ── data/index.json ───────────────────────────────────────────────────────────
 # Build index_days from all TXT files on disk
 _disk_days = {}
@@ -383,6 +418,7 @@ index = {
     'total_new_all_time':     len(_ever_listed),
     'total_domains':          len(all_domains),
     'new_since_last_fetch':   new_since_last,
+    'fetch_log':              fetch_log,
     'total_revenue_estimate': round(total_revenue, 2),
     'avg_registration_days':  avg_lifetime,
     'ip_countries':           dict(country_counts.most_common(10)),
