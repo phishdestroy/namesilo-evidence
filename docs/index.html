@@ -933,7 +933,7 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
       statsEl.appendChild(statCard('+'+log[0].count.toLocaleString(),'New · fetched '+log[0].date,'rd'));
       function cap(t){var c=mk('div','font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--tx2);margin:0 0 8px');c.textContent=t;return c;}
       var note=mk('p','font-size:11px;color:var(--tx2);line-height:1.65;max-width:780px;margin:0 0 12px');
-      note.textContent='Domains each fetch saw for the first time. The registrar dataset reports registrations a day or two late, so the same domains are filed under their registration date in the list below.';
+      note.textContent='Domains that were not in the previous fetch: new registrations and domains with older registration dates that entered the registrar dataset only now. This counts what a fetch added, not registrations per day: a row after a gap covers every day since the previous row. Each domain is also filed under its registration date in the list below.';
       var box=mk('div','border:1px solid var(--bdr);border-radius:8px;overflow:hidden;font-family:monospace;margin-bottom:28px');
       function draw(){
         while(box.firstChild)box.removeChild(box.firstChild);
@@ -952,6 +952,8 @@ onHover:function(e,els){document.getElementById('chart-wrap').style.cursor=els.l
           dateEl.textContent=d.date;row.appendChild(dateEl);
           var cntEl=mk('span','color:var(--tx3);font-size:12px');
           cntEl.textContent='+'+d.count.toLocaleString()+' domains';row.appendChild(cntEl);
+          var prev=log[i+1],gap=prev?Math.round((Date.parse(d.date)-Date.parse(prev.date))/864e5):1;
+          if(gap>1){var gapEl=mk('span','color:var(--or);font-size:11px');gapEl.textContent='over '+gap+' days, since '+prev.date;row.appendChild(gapEl);}
           var a=mk('a','margin-left:auto;font-size:11px;color:var(--cy);border:1px solid rgba(110,168,215,.2);padding:3px 10px;border-radius:4px');
           a.href=BASE+d.path;a.download='';a.textContent='⇓ .txt';row.appendChild(a);
           box.appendChild(row);
