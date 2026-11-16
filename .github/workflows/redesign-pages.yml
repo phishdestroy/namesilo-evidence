@@ -41,7 +41,7 @@ jobs:
         run: python -m pip install -r template/requirements.txt
       - name: Configure Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Refresh source files and rebuild the design
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
