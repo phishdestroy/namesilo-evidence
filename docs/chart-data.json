@@ -68943,7 +68943,7 @@
   ],
   "total_new_all_time": 6680246,
   "total_domains": 4538511,
-  "new_since_last_fetch": 11524,
+  "new_since_last_fetch": 0,
   "fetch_log": [
     {
       "date": "2026-11-01",
@@ -69274,12 +69274,12 @@
   },
   "catch_age_buckets": {
     "same_day": 0,
-    "within_week": 31015,
-    "within_month": 146103,
-    "older": 4361393
+    "within_week": 25251,
+    "within_month": 143422,
+    "older": 4369838
   },
-  "avg_catch_age_days": 1069,
-  "fresh_pct": 0.7,
+  "avg_catch_age_days": 1070,
+  "fresh_pct": 0.6,
   "burst_days": [
     {
       "date": "2026-06-30",
@@ -69393,6 +69393,6 @@
   "ranked_count": 5835,
   "correlation_count": 3513,
   "correlation_pct": 0.1,
-  "last_updated": "2026-11-18",
+  "last_updated": "2026-11-19",
   "latest_reg": "2026-11-17"
 }
