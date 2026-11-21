@@ -83,5 +83,10 @@
     "date": "2026-11-20",
     "count": 17273,
     "path": "data/fetched/2026-11-20.txt"
+  },
+  {
+    "date": "2026-11-21",
+    "count": 6173,
+    "path": "data/fetched/2026-11-21.txt"
   }
 ]
