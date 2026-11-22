@@ -27,14 +27,14 @@ jobs:
     timeout-minutes: 15
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - name: Checkout latest source
         uses: actions/checkout@v7
         with:
           ref: ${{ github.event.repository.default_branch }}
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Install template dependencies
@@ -55,4 +55,12 @@ jobs:
           path: docs
       - name: Deploy GitHub Pages
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+      - name: Wait before retrying the Pages deployment
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+      - name: Retry GitHub Pages deployment
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v5
