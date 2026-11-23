@@ -1,11 +1,11 @@
 {
   "month": "2026-11",
-  "generated": "2026-11-22",
+  "generated": "2026-11-23",
   "total_domains": 4489911,
   "total_revenue": 35224373.45,
   "avg_reg_days": 1297,
   "deployment_rate": 73.3,
-  "fresh_pct": 0.8,
+  "fresh_pct": 0.7,
   "unranked_pct": 99.9,
   "correlation_pct": 0.1,
   "serial_registrants": 1485,
