@@ -68979,7 +68979,7 @@
   ],
   "total_new_all_time": 6717149,
   "total_domains": 4482934,
-  "new_since_last_fetch": 6566,
+  "new_since_last_fetch": 0,
   "fetch_log": [
     {
       "date": "2026-11-01",
@@ -69452,7 +69452,7 @@
   },
   "unranked_pct": 99.9,
   "ranked_count": 5896,
-  "correlation_count": 3388,
+  "correlation_count": 3389,
   "correlation_pct": 0.1,
   "last_updated": "2026-11-24",
   "latest_reg": "2026-11-22"
